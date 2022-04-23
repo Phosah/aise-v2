@@ -28,18 +28,42 @@
     </div>
     <div class="max-w-7xl mx-auto my-20">
       <div class="flex items-center space-x-12">
-        <div class="p-8 bg-black text-white">
+        <div class="p-8 bg-black text-white rounded-md">
           <h2 class="text-6xl">Web 3</h2>
           <h2 class="mb-8 text-6xl">Projects</h2>
           <div class="mb-8">Explore</div>
           <img src="../assets/web3-projects.png" alt="Web 3 Projects">
         </div>
-        <div class="p-8">
+        <div class="p-8 bg-white rounded-md">
           <h2 class="text-6xl">Other</h2>
           <h2 class="mb-8 text-6xl">Projects</h2>
           <div class="mb-8">Explore</div>
           <img src="../assets/other-projects.png" alt="Other Projects">
         </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto my-20">
+      <h1 class="mb-10 text-9xl">Clients</h1>
+      <div class="flex items-center justify-between mb-10">
+        <div><img src="../assets/jumia.png" alt="jumia"></div>
+        <div><img src="../assets/andela.png" alt="andela"></div>
+        <div><img src="../assets/wiflix.png" alt="wiflix"></div>
+        <div><img src="../assets/flutterwave.png" alt="flutterwave"></div>
+        <div><img src="../assets/sokowatch.png" alt="sokowatch"></div>
+      </div>
+      <div class="flex items-center justify-between mb-10">
+        <div><img src="../assets/jumia.png" alt="jumia"></div>
+        <div><img src="../assets/andela.png" alt="andela"></div>
+        <div><img src="../assets/wiflix.png" alt="wiflix"></div>
+        <div><img src="../assets/flutterwave.png" alt="flutterwave"></div>
+        <div><img src="../assets/sokowatch.png" alt="sokowatch"></div>
+      </div>
+      <div class="flex items-center justify-between mb-10">
+        <div><img src="../assets/jumia.png" alt="jumia"></div>
+        <div><img src="../assets/andela.png" alt="andela"></div>
+        <div><img src="../assets/wiflix.png" alt="wiflix"></div>
+        <div><img src="../assets/flutterwave.png" alt="flutterwave"></div>
+        <div><img src="../assets/sokowatch.png" alt="sokowatch"></div>
       </div>
     </div>
   </main>

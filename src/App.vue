@@ -1,7 +1,10 @@
 <script setup>
-
+import Navbar from "@/components/Navbar.vue"
 </script>
 
 <template>
-  <div class="bg-blue-500">HelloWorld</div>
+  <Navbar />
+  <div>
+    <router-view></router-view>
+  </div>
 </template>

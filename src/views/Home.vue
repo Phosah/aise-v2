@@ -1,4 +1,5 @@
 <script setup>
+import BookAppointment from '../components/BookAppointment.vue';
 
 </script>
 
@@ -43,22 +44,22 @@
       </div>
     </div>
     <div class="max-w-7xl mx-auto my-20">
-      <h1 class="mb-10 text-9xl">Clients</h1>
-      <div class="flex items-center justify-between mb-10">
+      <h1 class="mb-20 text-9xl">Clients</h1>
+      <div class="flex items-center justify-between mb-20">
         <div><img src="../assets/jumia.png" alt="jumia"></div>
         <div><img src="../assets/andela.png" alt="andela"></div>
         <div><img src="../assets/wiflix.png" alt="wiflix"></div>
         <div><img src="../assets/flutterwave.png" alt="flutterwave"></div>
         <div><img src="../assets/sokowatch.png" alt="sokowatch"></div>
       </div>
-      <div class="flex items-center justify-between mb-10">
+      <div class="flex items-center justify-between mb-20">
         <div><img src="../assets/jumia.png" alt="jumia"></div>
         <div><img src="../assets/andela.png" alt="andela"></div>
         <div><img src="../assets/wiflix.png" alt="wiflix"></div>
         <div><img src="../assets/flutterwave.png" alt="flutterwave"></div>
         <div><img src="../assets/sokowatch.png" alt="sokowatch"></div>
       </div>
-      <div class="flex items-center justify-between mb-10">
+      <div class="flex items-center justify-between mb-20">
         <div><img src="../assets/jumia.png" alt="jumia"></div>
         <div><img src="../assets/andela.png" alt="andela"></div>
         <div><img src="../assets/wiflix.png" alt="wiflix"></div>
@@ -66,5 +67,29 @@
         <div><img src="../assets/sokowatch.png" alt="sokowatch"></div>
       </div>
     </div>
+    <div class="max-w-7xl mx-auto my-20">
+      <h1 class="mb-20 text-9xl">Testimonials</h1>
+      <div class="flex items-center justify-between mb-14">
+        <div class="flex items-center space-x-8">
+          <img src="../assets/testimonials-1.png" alt="Testimonials">
+          <div>
+            <h3>Anthony Miclet</h3>
+            <p>Co-Founder Daba</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-12">
+          <div class="flex items-center justify-center w-20 h-20 border border-brand-black-2 rounded-full"><img
+              src="../assets/left-arrow.png" alt="Left arrow"></div>
+          <div>1/8</div>
+          <div class="flex items-center justify-center w-20 h-20 border border-brand-black-2 rounded-full"><img
+              src="../assets/right-arrow.png" alt="Right arrow"></div>
+        </div>
+      </div>
+      <p class="text-6xl leading-snug">Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula
+        dapibus
+        mauris sit ut
+        eu. Eget turpis urna maecenas cras. Nisl dictum.</p>
+    </div>
+    <BookAppointment />
   </main>
 </template>

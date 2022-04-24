@@ -1,6 +1,5 @@
 <script setup>
 import BookAppointment from '../components/BookAppointment.vue';
-
 </script>
 
 <template>
@@ -67,7 +66,7 @@ import BookAppointment from '../components/BookAppointment.vue';
         <div><img src="../assets/sokowatch.png" alt="sokowatch"></div>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto my-20">
+    <div class="max-w-7xl mx-auto mt-20 mb-52">
       <h1 class="mb-20 text-9xl">Testimonials</h1>
       <div class="flex items-center justify-between mb-14">
         <div class="flex items-center space-x-8">

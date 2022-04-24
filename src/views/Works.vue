@@ -1,4 +1,5 @@
 <script setup>
+import BookAppointment from '../components/BookAppointment.vue';
 </script>
 
 <template>
@@ -15,5 +16,6 @@
             <div><img src="../assets/web3-photo-3.png" alt="Web3 Project"></div>
             <div><img src="../assets/web3-photo-4.png" alt="Web3 Project"></div>
         </div>
+        <BookAppointment />
     </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
-    <section class="bg-brand-black-2">
-        <div class="flex flex-col items-center max-w-7xl mx-auto py-32 md:py-20 md:px-16 text-white">
+    <section class="bg-brand-black-2 py-20">
+        <div class="flex flex-col items-center max-w-7xl mx-auto py-40 md:py-20 md:px-16 text-white">
             <div class="mb-24">
                 <!-- <img src="../assets/project-talk.png" alt="Project talk-dark" /> -->
                 <img src="../assets/project-talk.png" alt="Project talk" />
@@ -20,22 +20,25 @@
                 <div class="px-8 py-5 font-bold rounded-sm text-white bg-transparent border border-white">Send an
                     Email</div>
                 <!-- Calendly link widget begin -->
-                <a class="px-8 py-5 font-bold rounded-sm text-brand-black-1 bg-white" href
+                <a class="px-8 py-5 font-bold rounded-sm text-brand-black-1 bg-white"
                     onclick="Calendly.initPopupWidget({url: 'https://calendly.com/aiseidahor'});return false;">Book an
                     appointment</a>
                 <!-- Calendly link widget end -->
             </div>
         </div>
+        <Footer />
     </section>
 </template>
 
 <script>
+import Footer from "./Footer.vue";
 export default {
-    name: 'BookAppointment',
+    name: "BookAppointment",
     computed: {
         // themeColor() {
         //     return this.$store.state.themeColor;
         // }
     },
+    components: { Footer }
 }
 </script>

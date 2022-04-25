@@ -15,7 +15,7 @@
       Research, Empathy and Data-driven insights. I help companies build teams and digital products.</div>
     <div class="bg-brand-black-1 text-white">
       <div class="max-w-7xl mx-auto px-4 md:px-16 py-20">
-        <h2 class="mb-16 text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-white">MY DESIGN
+        <h2 class="mb-16 text-4xl md:text-6xl lg:text-7xl text-white">MY DESIGN
           GUIDELINES</h2>
         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           <template v-for="(guideline, index) in guidelines" :key="index">
@@ -25,6 +25,16 @@
         </div>
       </div>
     </div>
+    <section class="max-w-7xl mx-auto my-32">
+      <h2 class="mb-8 text-4xl md:text-6xl lg:text-7xl ">My Favourite Animes</h2>
+      <div class="grid grid-cols-4 gap-x-6">
+        <div><img class="w-full" src="../assets/naruto.png" alt="Naruto"></div>
+        <div><img class="w-full" src="../assets/attack-on-titan.png" alt="Attack on titan"></div>
+        <div><img class="w-full" src="../assets/one-piece.png" alt="One Piece"></div>
+        <div><img class="w-full" src="../assets/bleach.png" alt="Bleach"></div>
+      </div>
+    </section>
+    <BookAppointment />
   </main>
 </template>
 
@@ -33,9 +43,10 @@ import DesignGuidelines from '@/components/DesignGuidelines.vue'
 import img1 from '@/assets/empower.png'
 import img2 from '@/assets/respectful.png'
 import img3 from '@/assets/business-goals.png'
+import BookAppointment from '../components/BookAppointment.vue'
 export default {
   name: "About",
-  components: { DesignGuidelines },
+  components: { DesignGuidelines, BookAppointment },
   data() {
     return {
       guidelines: [

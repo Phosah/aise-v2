@@ -57,6 +57,11 @@ import img3 from '@/assets/business-goals.png'
 import BookAppointment from '../components/BookAppointment.vue'
 import WorkExperiences from '../components/WorkExperiences.vue'
 import arcLogo from '@/assets/arc.png'
+import dabaLogo from '@/assets/daba.png'
+import bentoLogo from '@/assets/bento.png'
+import bitpowrLogo from '@/assets/bitpowr.png'
+import collectAfricaLogo from '@/assets/collect-africa.png'
+import kufutaLogo from '@/assets/kufuta.png'
 export default {
   name: "About",
   components: { DesignGuidelines, BookAppointment, WorkExperiences },
@@ -115,35 +120,35 @@ export default {
           position: "Senior Product Designer | Web3"
         },
         {
-          img: arcLogo,
+          img: dabaLogo,
           alt: "Daba",
           duration: "Aug 2021 - Present",
           name: "Daba",
           position: "Senior Product Designer | Fintech"
         },
         {
-          img: arcLogo,
+          img: bentoLogo,
           alt: "Bento Africa",
           duration: "Sep 2021 - Feb 2022",
           name: "Bento Africa",
           position: "Product Designer | SAAS, Fintech"
         },
         {
-          img: arcLogo,
+          img: bitpowrLogo,
           alt: "Bitpowr",
           duration: "Feb 2021 - Feb 2022",
           name: "Bitpowr",
           position: "Senior Product Designer | Web3"
         },
         {
-          img: arcLogo,
+          img: collectAfricaLogo,
           alt: "Collect Africa",
           duration: "Jan 2021 - Jul 2021",
           name: "Collect Africa",
           position: "Design Consultant | Fintech"
         },
         {
-          img: arcLogo,
+          img: kufutaLogo,
           alt: "Kufuta",
           duration: "Jun 2020 - Jan 2021",
           name: "Kufuta",

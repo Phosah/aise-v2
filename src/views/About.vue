@@ -25,8 +25,19 @@
         </div>
       </div>
     </div>
+    <section class="max-w-7xl mx-auto my-20">
+      <h2 class="mb-8 text-4xl md:text-6xl lg:text-7xl">Work Experience</h2>
+      <div class="flex items-center space-x-16 mb-20">
+        <h3 class="flex-1 text-3xl">A glimpse at my professional journey, asides freelance</h3>
+        <p class="flex-1">Aise is a design practice focused on digital experiences. With every single one of our
+          clients, we bring
+          forth a deep passion for creative problem solving — which is what we deliver in the form of custom and
+          memorable experiences.</p>
+      </div>
+      <WorkExperiences :works="worksArr" />
+    </section>
     <section class="max-w-7xl mx-auto my-32">
-      <h2 class="mb-8 text-4xl md:text-6xl lg:text-7xl ">My Favourite Animes</h2>
+      <h2 class="mb-8 text-4xl md:text-6xl lg:text-7xl">My Favourite Animes</h2>
       <div class="grid grid-cols-4 gap-x-6">
         <div><img class="w-full" src="../assets/naruto.png" alt="Naruto"></div>
         <div><img class="w-full" src="../assets/attack-on-titan.png" alt="Attack on titan"></div>
@@ -44,9 +55,11 @@ import img1 from '@/assets/empower.png'
 import img2 from '@/assets/respectful.png'
 import img3 from '@/assets/business-goals.png'
 import BookAppointment from '../components/BookAppointment.vue'
+import WorkExperiences from '../components/WorkExperiences.vue'
+import arcLogo from '@/assets/arc.png'
 export default {
   name: "About",
-  components: { DesignGuidelines, BookAppointment },
+  components: { DesignGuidelines, BookAppointment, WorkExperiences },
   data() {
     return {
       guidelines: [
@@ -92,18 +105,56 @@ export default {
           text: "Transparent design is clear about intentions, honest in actions and free of dark patterns.",
           border: "border-t-4 rounded-md"
         },
+      ],
+      worksArr: [
+        {
+          img: arcLogo,
+          alt: "Arc",
+          duration: "Jul 2021 - Present",
+          name: "Arc",
+          position: "Senior Product Designer | Web3"
+        },
+        {
+          img: arcLogo,
+          alt: "Daba",
+          duration: "Aug 2021 - Present",
+          name: "Daba",
+          position: "Senior Product Designer | Fintech"
+        },
+        {
+          img: arcLogo,
+          alt: "Bento Africa",
+          duration: "Sep 2021 - Feb 2022",
+          name: "Bento Africa",
+          position: "Product Designer | SAAS, Fintech"
+        },
+        {
+          img: arcLogo,
+          alt: "Bitpowr",
+          duration: "Feb 2021 - Feb 2022",
+          name: "Bitpowr",
+          position: "Senior Product Designer | Web3"
+        },
+        {
+          img: arcLogo,
+          alt: "Collect Africa",
+          duration: "Jan 2021 - Jul 2021",
+          name: "Collect Africa",
+          position: "Design Consultant | Fintech"
+        },
+        {
+          img: arcLogo,
+          alt: "Kufuta",
+          duration: "Jun 2020 - Jan 2021",
+          name: "Kufuta",
+          position: "Product Designer | Ecommerce"
+        },
       ]
+
     }
   }
 }
 </script>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
 </style>

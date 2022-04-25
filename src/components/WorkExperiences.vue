@@ -1,0 +1,20 @@
+<script setup>
+const props = defineProps({
+    works: {
+        type: Array
+    }
+})
+</script>
+
+<template>
+    <div v-for="(work, ix) in works" :key="ix">
+        <div class="flex items-center space-x-4">
+            <img :src="work.img" :alt="work.alt">
+            <div>
+                <p class="mb-2">{{ work.duration }}</p>
+                <h1 class="mb-2">{{ work.name }}</h1>
+                <p>{{ work.position }}</p>
+            </div>
+        </div>
+    </div>
+</template>

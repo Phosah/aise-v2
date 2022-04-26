@@ -21,7 +21,7 @@ const props = defineProps({
     </div> -->
     <div class="grid grid-cols-2 gap-x-12">
         <div v-for="(work, ix) in works" :key="ix" :class="{ 'border-r border-brand-gray-3': ix % 2 === 0 }"
-            class="pb-10">
+            class="pb-8">
             <div class="flex items-center space-x-4">
                 <img :src="work.img" :alt="work.alt">
                 <div>

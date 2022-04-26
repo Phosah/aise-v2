@@ -213,9 +213,40 @@
         <section class="max-w-7xl mx-auto my-20">
             <h1 class="mb-4 text-6xl font-bold">Value Proposition - Business</h1>
             <p class="mb-4">Here you list the products and services your value proposition is built on, describing in
-                which way the
-                product features and services are pain relievers and outline how they are gain creators</p>
+                which way the product features and services are pain relievers and outline how they are gain creators
+            </p>
             <div><img class="w-full" src="../assets/value-proposition-business.png" alt="Value Proposition"></div>
+        </section>
+        <section class="max-w-7xl mx-auto my-20">
+            <h1 class="mb-4 text-6xl font-bold">User Journey Map</h1>
+            <p class="mb-4">This same journey is similar to that of farms but we would be taking pool into account as
+                that was the first test we made in the MVP that held the foundation of the product. This helped us
+                analyze the user's experience and improve the product.</p>
+            <div><img class="w-full" src="../assets/user-map.png" alt="User Map"></div>
+        </section>
+        <section class="max-w-7xl mx-auto my-20">
+            <h1 class="mb-4 text-6xl font-bold">Design Decisions</h1>
+            <p class="mb-12">From the research carried out, the data analysis from responses, and brainstorming session
+                with those
+                analyses, a design was carried out t properly account for every problem and pain points faced by the
+                users in an inclusive manner and the design was split into two aspects both can stand as individuals
+                products but merged into one to improve value to users</p>
+            <div>
+                <h3 class="text-4xl font-bold">Dashboard</h3>
+                <p class="mb-4">From the dashboard, you get to see your stand in the protocol with your NET APY the most
+                    obvious
+                    showing you the earnings all your investments (lending and borrowing) are yielding you at the end of
+                    the year.You also get to see the state of your bowwi=owing limit which is a major factor as the
+                    borrowing
+                    limit determines if the assets would be liquidated to pay off the debt when the token price borrowed
+                    is getting greater than the collateralized amount</p>
+                <p class="mb-4">From the dashboard, you get to see your supply and borrow market and can be accessed
+                    with a toggle
+                    from one to the other</p>
+                <p class="mb-8">We also aim to bring clarity to terminologies used so we introduced tooltips to do major
+                    explanations.</p>
+                <div><img class="w-full" src="../assets/dashboard.png" alt="Dashboard"></div>
+            </div>
         </section>
     </main>
 </template>

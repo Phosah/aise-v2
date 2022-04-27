@@ -1,4 +1,6 @@
 <script setup>
+import OtherProjects from "../components/OtherProjects.vue";
+import BookAppointmentLight from "../components/BookAppointmentLight.vue";
 
 </script>
 
@@ -227,26 +229,98 @@
         <section class="max-w-7xl mx-auto my-20">
             <h1 class="mb-4 text-6xl font-bold">Design Decisions</h1>
             <p class="mb-12">From the research carried out, the data analysis from responses, and brainstorming session
-                with those
-                analyses, a design was carried out t properly account for every problem and pain points faced by the
-                users in an inclusive manner and the design was split into two aspects both can stand as individuals
-                products but merged into one to improve value to users</p>
-            <div>
-                <h3 class="text-4xl font-bold">Dashboard</h3>
+                with those analyses, a design was carried out t properly account for every problem and pain points faced
+                by the users in an inclusive manner and the design was split into two aspects both can stand as
+                individuals products but merged into one to improve value to users</p>
+            <div class="my-20">
+                <h3 class="mb-4 text-4xl font-bold">Dashboard</h3>
                 <p class="mb-4">From the dashboard, you get to see your stand in the protocol with your NET APY the most
-                    obvious
-                    showing you the earnings all your investments (lending and borrowing) are yielding you at the end of
-                    the year.You also get to see the state of your bowwi=owing limit which is a major factor as the
-                    borrowing
-                    limit determines if the assets would be liquidated to pay off the debt when the token price borrowed
-                    is getting greater than the collateralized amount</p>
+                    obvious showing you the earnings all your investments (lending and borrowing) are yielding you at
+                    the end of the year.You also get to see the state of your bowwi=owing limit which is a major factor
+                    as the borrowing limit determines if the assets would be liquidated to pay off the debt when the
+                    token price borrowed is getting greater than the collateralized amount</p>
                 <p class="mb-4">From the dashboard, you get to see your supply and borrow market and can be accessed
-                    with a toggle
-                    from one to the other</p>
-                <p class="mb-8">We also aim to bring clarity to terminologies used so we introduced tooltips to do major
+                    with a toggle from one to the other</p>
+                <p class="">We also aim to bring clarity to terminologies used so we introduced tooltips to do major
                     explanations.</p>
-                <div><img class="w-full" src="../assets/dashboard.png" alt="Dashboard"></div>
+                <div class="my-8"><img class="w-full" src="../assets/dashboard.png" alt="Dashboard"></div>
+            </div>
+            <div class="my-20">
+                <h3 class="mb-4 text-4xl font-bold">Borrow Market</h3>
+                <p class="mb-4">All users can borrow any crypto asset of their choice from the listings provided by the
+                    protocol but with the provision of collateral of another token</p>
+                <p class="mb-4">Now we decided to make this as seamless as possible whereby normally you can get to lend
+                    to the protocol and this lent amount can be converted into collateral for any borrow transaction.
+                    But that requires the lending step. So now you can provide collateral directly from your wallet with
+                    the available assets and this would stand in as collateral for you.</p>
+                <p class="mb-8">You can use multiple assets based of your available balance and the amount requested to
+                    borrow as collateral for just one asset</p>
+                <p class=""> We also provide you with analysis and metrics of that borrow pools activities and standings
+                    so you
+                    get
+                    to see your repayment APY and the strength of that borrow pool</p>
+                <div class="my-8"><img class="w-full" src="../assets/borrow-market.png" alt="Borrow Market"></div>
+            </div>
+            <div class="my-20">
+                <h3 class="mb-4 text-4xl font-bold">Supply Market</h3>
+                <p class="mb-4">Here you get to select out of the assets stated on the protocol for supply or lending
+                    and you can
+                    lend/supply your tokens to earn APY</p>
+                <p class="mb-4">Now if you see a supply that you want to invest in and you don't have that token, with
+                    our instant swap
+                    feature you can supply any asset of your choice and this gets converted to the token that is to be
+                    supplied and you can partake in that supply market with just one transaction fee no matter the
+                    quantity
+                    of the assets supplied with.</p>
+                <div class="my-8"><img class="w-full" src="../assets/supply-market.png" alt="Borrow Market"></div>
+            </div>
+            <div class="flex items-center space-x-14 my-20">
+                <div class="flex-1"><img class="w-full" src="../assets/repay-loan.png" alt="Repay Loan"></div>
+                <div class="flex-1">
+                    <h3 class="mb-4 text-4xl font-bold">Repay Loan</h3>
+                    <p class="mb-4">You can decide to repay your loan when you are ready with assets from your wallet or
+                        with your collateralized amount, by doing this, your collateral is used to pay the loan and the
+                        balance is converted to the assets used to invest in if it was multiple assets or if it was from
+                        your supply market, the percentage distribution of the supplied tokens would determine the
+                        amount that goes to what assets.</p>
+                </div>
+            </div>
+            <div class="my-20">
+                <h3 class="mb-4 text-4xl font-bold">Liquidation Notification</h3>
+                <p class="mb-4">One of the biggest risks with Lending protocols is that your assets can be liquidated if
+                    the
+                    collateralized amount goes below a safe point that the protocol determines most times 80% in value
+                    and
+                    this is to ensure the protocol doesn't lose or incur a permanent loss</p>
+                <p class="mb-4">But we aim to keep the users in the loop at all times for a better experience.
+                    Liquidation is greatly
+                    affected by how the supplied collateral tokens are performing. there can be a dip in the asset which
+                    would affect the value of token talk and reduce the collateralized value and this can cause
+                    liquidation.</p>
+                <p class="mb-8">We are aware of all this and decided to go the extra mile to remind our users, and since
+                    this is a web3
+                    decentralized application, we have few ways of contacting the user so we ask the users to provide
+                    their
+                    email and phone number, not for login but solely for reminder purposes of when liquidation point is
+                    close so they can either repay their loans and salvage their collateral or top up their collateral
+                    and
+                    maintain a safe liquidation point.</p>
+                <div class="my-8"><img class="w-full" src="../assets/liquidation-notification.png"
+                        alt="Liquidation Notification"></div>
             </div>
         </section>
+        <section class="max-w-7xl mx-auto my-20">
+            <h1 class="mb-4 text-6xl font-bold">Design Decisions</h1>
+            <p class="mb-4">Decentralization is undoubtedly a major trend in financial markets all over the world. The
+                arrival of DeFi
+                has changed the way people and institutions perceive finance. We have been witnessing many radical
+                improvements in financial technology. The understanding of risks associated with decentralized exchanges
+                can
+                provide vital insights for identifying possibilities for improvement.</p>
+            <p>I enjoyed this project and the loads of learning attached to it, the psychology in bridging the world of
+                experts and novices together to a unified value proposition was the peak of my experience</p>
+        </section>
+        <OtherProjects />
+        <BookAppointmentLight />
     </main>
 </template>

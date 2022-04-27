@@ -13,6 +13,9 @@ import photo4 from "../assets/borrow-market.png"
 import photo5 from "../assets/supply-market.png"
 import photo6 from "../assets/liquidation-notification.png"
 import photo7 from "../assets/repay-loan.png"
+import Persona from "../components/Persona.vue"
+import persona1 from "../assets/persona-1.png"
+import persona2 from "../assets/persona-2.png"
 
 const info = {
     title: "Xerxes",
@@ -95,6 +98,35 @@ const repay = {
     img: photo7,
     alt: "Repay Loan"
 }
+const user1 = {
+    img: persona1,
+    alt: "Persona",
+    about: "Wade Warren is a 26yrs old Human Resource manager who invests a lot in crypto, he isn't so experienced with trading and other forms of investments so he buys to hold long term, most of his holdings are in Ethereum and Doge",
+    goals: [
+        "Wade needs a way to have funds to use for another personal run around and at the same time HODL his tokens because he doesn't want to lose out on any Rise",
+        "Wade also needs a way to borrow and be sure of the terms he is getting into based on bank lending schemes he is a bit untrusting",
+        "Wade needs a way to earn passive income with his tokens as he  is holding long term"
+    ],
+    points: [
+        "Not knowing how to get cash to spend so he ends up borrowing funds from friends to meet personal needs and sometimes the friends might not have the funds so he is stuck."
+    ]
+}
+const user2 = {
+    img: persona2,
+    alt: "Persona",
+    about: "Rebecca Richards is a 29yrs old Sales agent at Chipper Cash she stays in Amsterdam. She is more of a take-profit seller and holds short-term until the token has yielded a substantial profit. She controls a diversified portfolio to maximize her luck",
+    goals: [
+        "Rebecca needs a way to borrow funds when in need of cash and at the same time not risk her chances of a potential profit",
+        "Rebecca wants a way to borrow funds when they are high with a more stable token when she predicts the tokens will dip so she can leverage off the dip and earn profit as well",
+        "Rebecca needs a way to earn passive income with his tokens as he  is holding long term"
+    ],
+    points: [
+        "Overpriced interest placed on loans",
+        "Often when the price of a token collateralized falls in the market your collateralization limit might cross the safe point without her being aware and she might lose her collateral due to the protocol of liquidating it to avoid loss."
+    ]
+
+
+}
 </script>
 
 <template>
@@ -139,66 +171,8 @@ const repay = {
             <p class="mb-6">Based on the generative user research I conducted, I created user personas that capture the
                 essence of
                 both user categories so its easier to personalize the experience to addressing the users pain points</p>
-            <div class="flex items-center space-x-12 mb-20">
-                <div class="w-1/3"><img src="../assets/persona-1.png" alt="Persona"></div>
-                <div class="w-2/3">
-                    <div class="mb-6">
-                        <h3 class="mb-4 text-3xl">About</h3>
-                        <p>Wade Warren is a 26yrs old Human Resource manager who invests a lot in crypto, he isn't so
-                            experienced with trading and other forms of investments so he buys to hold long term, most
-                            of his holdings are in Ethereum and Doge</p>
-                    </div>
-                    <div class="mb-6">
-                        <h3 class="mb-4 text-3xl">Goals</h3>
-                        <ul class="pl-6 list-disc">
-                            <li>Wade needs a way to have funds to use for another personal run around and at the same
-                                time HODL his tokens because he doesn't want to lose out on any Rise</li>
-                            <li> Wade also needs a way to borrow and be sure of the terms he is getting into based on
-                                bank lending schemes he is a bit untrusting</li>
-                            <li>Wade needs a way to earn passive income with his tokens as he is holding long term</li>
-                        </ul>
-                    </div>
-                    <div class="mb-6">
-                        <h3 class="mb-4 text-3xl">Pain Points</h3>
-                        <ul class="pl-6 list-disc">
-                            <li>Not knowing how to get cash to spend so he ends up borrowing funds from friends to meet
-                                personal needs and sometimes the friends might not have the funds so he is stuck.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="flex items-center space-x-12">
-                <div class="w-1/3"><img src="../assets/persona-2.png" alt="Persona"></div>
-                <div class="w-2/3">
-                    <div class="mb-6">
-                        <h3 class="mb-4 text-3xl">About</h3>
-                        <p>Rebecca Richards is a 29yrs old Sales agent at Chipper Cash she stays in Amsterdam. She is
-                            more of a take-profit seller and holds short-term until the token has yielded a substantial
-                            profit. She controls a diversified portfolio to maximize her luck</p>
-                    </div>
-                    <div class="mb-6">
-                        <h3 class="mb-4 text-3xl">Goals</h3>
-                        <ul class="pl-6 list-disc">
-                            <li>Rebecca needs a way to borrow funds when in need of cash and at the same time not risk
-                                her chances of a potential profit</li>
-                            <li>Rebecca wants a way to borrow funds when they are high with a more stable token when she
-                                predicts the tokens will dip so she can leverage off the dip and earn profit as well
-                            </li>
-                            <li>Rebecca needs a way to earn passive income with his tokens as he is holding long term
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="mb-6">
-                        <h3 class="mb-4 text-3xl">Pain Points</h3>
-                        <ul class="pl-6 list-disc">
-                            <li>Overpriced interest placed on loans</li>
-                            <li>Often when the price of a token collateralized falls in the market your
-                                collateralization limit might cross the safe point without her being aware and she might
-                                lose her collateral due to the protocol of liquidating it to avoid loss.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <Persona :persona="user1" />
+            <Persona :persona="user2" />
         </section>
         <section class="my-20">
             <div class="max-w-7xl mx-auto">

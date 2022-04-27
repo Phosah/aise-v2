@@ -16,6 +16,6 @@ const info = {
 </script>
 <template>
     <div>
-        <Header />
+        <Header :headerInfo="info" />
     </div>
 </template>

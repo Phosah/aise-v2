@@ -3,6 +3,10 @@ import OtherProjects from "../components/OtherProjects.vue";
 import BookAppointmentLight from "../components/BookAppointmentLight.vue";
 import Header from "../components/Header.vue";
 import xerxesCover from "../assets/xerxes-cover.png";
+import LayoutOne from "../components/LayoutOne.vue";
+import photo1 from "../assets/xerxes-photo-1.png"
+import photo2 from "../assets/xerxes-photo-2.png"
+import LayoutTwo from "../components/LayoutTwo.vue"
 
 const info = {
     title: "Xerxes",
@@ -16,65 +20,35 @@ const info = {
     duration: "1 month",
     year: "2021"
 }
+const problems = {
+    title: "Problems Faced by Users",
+    paragraphs: [
+        "For every crypto investor, there has been one major statement we get advised with before we being and that is “Don't put in more than you can lose”. But this is one piece of advice we know but like me, a lot of users fail to uphold.",
+        "The frequent dips in cryptocurrencies have been that of major benefits and also losses on a lot of users which often places users in a tight spot especially those who have a dire need for their investments.",
+        "A lot of users tend to embrace the HODL stance and keep their funds for two major reasons; The faith in the tokens to rise back based on its historical proofs and the pain of selling now and incurring all the loss.",
+        "This has kept a lot of users facing serious financial problems, those who have to starve or lack some basic amenities because their funds are tied up suffer from it."
+    ],
+    img: photo1,
+    alt: "Xerxes",
+}
+const aims = {
+    title: "What Does Xerxes aim to Achieve?",
+    paragraphs: [
+        "Crypto Investments do not need to be one that financially cripples you, the goal is financial liberation both short and long term.",
+        "Xerxes hopes to bring a solution that allows users access to lending systems whereby you can borrow tokens either stable coins or others with the collateralization of your crypto investments and sort out whatever financial needs, you don't need to tell us without ever having to sell and be on the losing side of the dip",
+        "Also what is a DeFi Protocol without investment opportunities, so we aim to make the system embrace the decentralized nature of web3, hence we aim to facilitate a peer-peer lending system where the borrowers would be incentivized with profit for borrowing their extra cash to those who need it in a secured nature.",
+    ],
+    img: photo2,
+    alt: "Xerxes",
+}
 </script>
 
 <template>
     <main>
         <Header :headerInfo="info" />
         <section class="max-w-7xl mx-auto my-20">
-            <div class="flex items-center space-x-12 my-20">
-                <div class="flex-1">
-                    <h3 class="mb-6 text-3xl font-bold">Problems Faced by Users</h3>
-                    <p class="mb-4">For every crypto investor, there has been one major statement we get advised with
-                        before we being
-                        and
-                        that is “Don't put in more than you can lose”. But this is one piece of advice we know but like
-                        me,
-                        a lot of users fail to uphold.</p>
-
-                    <p class="mb-4">The frequent dips in cryptocurrencies have been that of major benefits and also
-                        losses on a lot
-                        of
-                        users which often places users in a tight spot especially those who have a dire need for their
-                        investments.</p>
-
-                    <p class="mb-4">A lot of users tend to embrace the HODL stance and keep their funds for two major
-                        reasons; The
-                        faith
-                        in the tokens to rise back based on its historical proofs and the pain of selling now and
-                        incurring
-                        all the loss.</p>
-
-                    <p>This has kept a lot of users facing serious financial problems, those who have to starve or lack
-                        some basic amenities because their funds are tied up suffer from it.</p>
-                </div>
-                <div class="flex-1"><img class="w-full" src="../assets/xerxes-photo-1.png" alt="Xerxes photo"></div>
-            </div>
-            <div class="flex items-center space-x-12 my-20">
-                <div class="flex-1"><img class="w-full" src="../assets/xerxes-photo-2.png" alt="Xerxes photo"></div>
-                <div class="flex-1">
-                    <h3 class="mb-6 text-3xl font-bold">What Does Xerxes aim to Achieve?</h3>
-                    <p class="mb-4">Crypto Investments do not need to be one that financially cripples you, the goal is
-                        financial liberation
-                        both short and long term.</p>
-
-                    <p class="mb-4">Xerxes hopes to bring a solution that allows users access to lending systems whereby
-                        you can borrow
-                        tokens either stable coins or others with the collateralization of your crypto investments and
-                        sort out
-                        whatever financial needs, you don't need to tell us without ever having to sell and be on the
-                        losing
-                        side of the dip</p>
-
-                    <p class="mb-4">Also what is a DeFi Protocol without investment opportunities, so we aim to make the
-                        system embrace the
-                        decentralized nature of web3, hence we aim to facilitate a peer-peer lending system where the
-                        borrowers
-                        would be incentivized with profit for borrowing their extra cash to those who need it in a
-                        secured
-                        nature.</p>
-                </div>
-            </div>
+            <LayoutOne :page="problems" />
+            <LayoutTwo :page="aims" />
         </section>
         <section class="max-w-7xl mx-auto my-20">
             <h1 class="mb-6 text-6xl font-bold">Research Time</h1>

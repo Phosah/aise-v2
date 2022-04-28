@@ -124,8 +124,6 @@ const user2 = {
         "Overpriced interest placed on loans",
         "Often when the price of a token collateralized falls in the market your collateralization limit might cross the safe point without her being aware and she might lose her collateral due to the protocol of liquidating it to avoid loss."
     ]
-
-
 }
 </script>
 

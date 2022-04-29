@@ -7,6 +7,14 @@ import photo1 from "../assets/pegasus-photo-2.png"
 import Persona from "../components/Persona.vue"
 import persona7 from "../assets/persona-7.png"
 import persona8 from "../assets/persona-8.png"
+import photo2 from "../assets/pegasus-photo-3.png"
+import LayoutThree from '../components/LayoutThree.vue';
+import photo3 from "../assets/pegasus-photo-6.png"
+import photo4 from "../assets/pegasus-photo-7.png"
+import photo5 from "../assets/pegasus-photo-8.png"
+import photo6 from "../assets/pegasus-photo-9.png"
+import OtherProjects from "../components/OtherProjects.vue"
+import BookAppointmentLight from '../components/BookAppointmentLight.vue';
 const info = {
     title: "Pegasus",
     text: "The easiest way for you to gain access to multiple token holdings at once by the purchase of one super token",
@@ -60,9 +68,62 @@ const user2 = {
         "Not knowing the tokens in a particular index and what index to buy",
         "Not heard of a good investment package for indexes"
     ]
-
-
-
+}
+const dashboard = {
+    title: "Dynamic Dashboard",
+    paragraphs: [
+        "On the dashboard the goal is to guide the users through their investment positions and the ability to make more investment decisions, so we provided the users with the latest and trending news in the crypto space that they can consume daily as this is very vital in every trader lives to stay in touch with his tokens and others making waves",
+        "Also, we give you a quick visual representation of your investment stand and amount you have."
+    ],
+    img: photo2,
+    alt: "Pegasus"
+}
+const investments = {
+    title: "Index Investments",
+    paragraphs: [
+        "The users are provided with the index investment screens. An index investment is a way to invest in multiple coins or tokens by just investing in one",
+        "So here we provide the user with the ability to invest in an index just like he wants to invest in any protocol, he gets to have a glance at how the index is doing and the possible tokens involved.",
+        "the top section is to give you a glimpse of the top indexes to fasten your decision",
+        "The index details page shows all the data associated with the index, the tokens associated, and the growth overtime"
+    ],
+}
+const community = {
+    title: "Community Index",
+    paragraphs: [
+        "We have a team of financial advisors but we also believe in the power of the community and want them also to benefit so we also give the ability for community contributions, where users are allowed to create their portfolio which would be turned into an index token that other users can see how well that index has grown and can decide to invest in it",
+        "The index value would be determined by all the underlying assets' value and their percentage composition.",
+        "And this index would be available for anyone to buy but would not be given the verified tag."
+    ],
+    img: photo3,
+    alt: "Pegasus"
+}
+const vault = {
+    title: "Vault",
+    paragraphs: [
+        "The vault is a way for you to gain extra income. Here you can lock up your investment in form of an index mainly and other tokens and those tokens based on the strategies set up in the protocol for that particular vault would be used to generate extra earnings for those who locked up their tokens.",
+        "You can deposit to the vault and also withdraw your locked up funds at anytime",
+        "We give you the ability to monitor the vault activities to help build a room for trust and transparency in the protocols activities"
+    ],
+    img: photo4,
+    alt: "Pegasus"
+}
+const poolInvestment = {
+    title: "Pool Investment",
+    paragraphs: [
+        "In the liquidity pool, users are provided with ranges of pool investments usually tokens that are being swapped or bridged on the protocol and you get to invest in them and earn a reward in APY.  You also can start a new pool and create a pool with a token combination of your choice.",
+        "If the pool you are about to create already exists we would add you to the existing pool and you become one of the pool LP holders.",
+    ],
+    img: photo5,
+    alt: "Pegasus"
+}
+const transactionHistory = {
+    title: "Transaction History",
+    paragraphs: [
+        "Most users on other protocols fail to have a good record of all the activities carried out by them or by the protocol with their assets and this makes it difficult to track financial activities. Hence we provide a one-place view of all the activities carried out on the protocol by you or the protocol with your tokens. You see all the swap activities, the earnings from the pool and the vault, etc",
+        "This can also be used as a form of bank statement for those who plan to travel as most crypto holders find it difficult to provide one when requested as their funds are not easily accessible for track record purposes on the protocols they engage with"
+    ],
+    img: photo6,
+    alt: "Pegasus"
 }
 </script>
 
@@ -130,5 +191,58 @@ const user2 = {
             <Persona :persona="user1" />
             <Persona :persona="user2" />
         </section>
+        <section class="my-20">
+            <div class="max-w-7xl mx-auto">
+                <h1 class="mb-6 text-6xl font-bold">How might we</h1>
+                <p class="mb-6">At this stage I had to put together all the information I gathered so I could generate
+                    some How might we questions that guides the ideation process, which helps us to do with thinking of
+                    a solution based on the identified problem</p>
+            </div>
+            <div><img class="w-full" src="../assets/proposition.png" alt="Proposition"></div>
+        </section>
+        <section class="max-w-7xl mx-auto my-20">
+            <h1 class="mb-4 text-6xl font-bold">User Journey Map</h1>
+            <p class="mb-4">The user journey map for the purchasing of an index as the core of the product was the first
+                to be done as it would help us identify the users experience within the process for us to create the
+                best experience and product</p>
+            <div><img class="w-full" src="../assets/value-proposition-customers.png" alt="Value Proposition"></div>
+        </section>
+        <section class="my-20 bg-brand-blue-1 text-white">
+            <div class="max-w-7xl mx-auto py-20">
+                <h1 class="mb-6 text-6xl font-bold">Design Decisions</h1>
+                <p class="mb-4">From the research carried out, the data analysis from responses, and brainstorming
+                    session with those analyses, a design was carried out t properly account for every problem and
+                    pain
+                    points faced by the users in an inclusive manner and the design was split into two aspects both
+                    can
+                    stand as individuals products but merged into one to improve value to users</p>
+                <LayoutOne :page="dashboard" />
+                <LayoutThree :page="investments" />
+                <div class="flex items-center space-x-12 my-20">
+                    <div class="flex-1"><img class="w-full" src="../assets/pegasus-photo-4.png" alt="Pegasus"></div>
+                    <div class="flex-1"><img class="w-full" src="../assets/pegasus-photo-5.png" alt="Pegasus"></div>
+                </div>
+                <LayoutThree :page="community" />
+                <LayoutThree :page="vault" />
+                <LayoutOne :page="poolInvestment" />
+                <LayoutOne :page="transactionHistory" />
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto my-20">
+            <h1 class="mb-4 text-6xl font-bold">Key Takeaways</h1>
+            <p>Because we are still very early days in the development of Pegasus and it's an MVP, there are still many
+                outstanding areas and features that we plan on developing. There are plans to take the index
+                opportunities to another step by introducing features including;</p>
+            <ul class="mb-4 pl-6 list-disc">
+                <li>Lending Module</li>
+                <li>Asset Vaults smart contract can be lent out for any purpose in a flash loan.</li>
+                <li>DAO to vote on token makeup and distribution</li>
+            </ul>
+            <p>This was an interesting project that helped me connect more with utilizing human psychology skills to
+                understand users better in order to provide an inclusive solution that meets both user's needs and
+                business goals</p>
+        </section>
+        <OtherProjects />
+        <BookAppointmentLight />
     </div>
 </template>

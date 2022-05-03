@@ -130,9 +130,9 @@ const transactionHistory = {
 <template>
     <div>
         <Header :headerInfo="info" />
-        <section class="flex items-center space-x-12 max-w-7xl mx-auto my-20">
+        <section class="flex items-center space-x-12 max-w-7xl mx-auto my-40 px-6">
             <div class="flex-1">
-                <h3 class="mb-6 text-3xl font-bold">Problems associated</h3>
+                <h3 class="mb-6 text-3xl font-bold font-new-paris-kingsize">Problems associated</h3>
                 <p class="mb-4">With the creation of Bitcoin, thousands of other tokens have been created and they a lot
                     of them have been seen to pose great investment opportunities. As of April 2019, there are 2,100
                     tokens listed on CoinMarketCap that represent over $160 billion in value.</p>
@@ -150,11 +150,11 @@ const transactionHistory = {
             </div>
             <div class="flex-1"><img src="../assets/pegasus-photo-1.png" alt="Pegasus"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
+        <section class="max-w-7xl mx-auto my-40 px-6">
             <LayoutTwo :page="goals" />
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-4 text-6xl font-bold">Research Began</h1>
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-4 text-6xl font-bold font-new-paris-kingsize">Research Began</h1>
             <p class="mb-4">A series of research was done as related to indexes in which several analogous inspirations
                 were used especially from the web2 space as this was a product feature known to industries about the
                 stock market and insurance already. This was finally backed up with competitive research on DeFi
@@ -164,8 +164,8 @@ const transactionHistory = {
                 to validate the data for quantitative analysis. Below holds some of the questions and the collated
                 results.</p>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-4 text-6xl font-bold">Research Findings</h1>
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-4 text-6xl font-bold font-new-paris-kingsize">Research Findings</h1>
             <p class="mb-4">After the research was done below were the findings and validations of some assumptions had
                 earlier on</p>
             <ul class="pl-6 list-disc">
@@ -183,33 +183,34 @@ const transactionHistory = {
                     to yield more profit</li>
             </ul>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-6 text-6xl font-bold">User Personas</h1>
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">User Personas</h1>
             <p class="mb-6">Based on the generative user research I conducted, I created user personas that capture the
                 essence of
                 both user categories so its easier to personalize the experience to addressing the users pain points</p>
             <Persona :persona="user1" />
             <Persona :persona="user2" />
         </section>
-        <section class="my-20">
-            <div class="max-w-7xl mx-auto">
-                <h1 class="mb-6 text-6xl font-bold">How might we</h1>
-                <p class="mb-6">At this stage I had to put together all the information I gathered so I could generate
+        <section class="my-40">
+            <div class="max-w-7xl mx-auto px-6">
+                <h1 class="mb-8 text-6xl font-bold font-new-paris-kingsize">How might we</h1>
+                <p class="mb-12">At this stage I had to put together all the information I gathered so I could generate
                     some How might we questions that guides the ideation process, which helps us to do with thinking of
                     a solution based on the identified problem</p>
             </div>
             <div><img class="w-full" src="../assets/proposition.png" alt="Proposition"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-4 text-6xl font-bold">User Journey Map</h1>
-            <p class="mb-4">The user journey map for the purchasing of an index as the core of the product was the first
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">User Journey Map</h1>
+            <p class="mb-10 text-base">The user journey map for the purchasing of an index as the core of the product
+                was the first
                 to be done as it would help us identify the users experience within the process for us to create the
                 best experience and product</p>
             <div><img class="w-full" src="../assets/value-proposition-customers.png" alt="Value Proposition"></div>
         </section>
-        <section class="my-20 bg-brand-blue-1 text-white">
-            <div class="max-w-7xl mx-auto py-20">
-                <h1 class="mb-6 text-6xl font-bold">Design Decisions</h1>
+        <section class="my-20 px-6 bg-brand-blue-1 text-white">
+            <div class="max-w-7xl mx-auto py-40">
+                <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Design Decisions</h1>
                 <p class="mb-4">From the research carried out, the data analysis from responses, and brainstorming
                     session with those analyses, a design was carried out t properly account for every problem and
                     pain
@@ -228,8 +229,8 @@ const transactionHistory = {
                 <LayoutOne :page="transactionHistory" />
             </div>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-4 text-6xl font-bold">Key Takeaways</h1>
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-4 text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
             <p>Because we are still very early days in the development of Pegasus and it's an MVP, there are still many
                 outstanding areas and features that we plan on developing. There are plans to take the index
                 opportunities to another step by introducing features including;</p>

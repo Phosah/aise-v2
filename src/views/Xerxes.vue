@@ -174,8 +174,8 @@ const user2 = {
         </section>
         <section class="my-40">
             <div class="max-w-7xl mx-auto px-6">
-                <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">How might we</h1>
-                <p class="mb-10">At this stage I had to put together all the information I gathered so I could generate
+                <h1 class="mb-8 text-6xl font-bold font-new-paris-kingsize">How might we</h1>
+                <p class="mb-12">At this stage I had to put together all the information I gathered so I could generate
                     some How might we questions that guides the ideation process, which helps us to do with thinking of
                     a solution based on the identified problem</p>
             </div>

@@ -126,15 +126,16 @@ const launchpool = {
     alt: "Launchpool"
 }
 </script>
+
 <template>
     <div>
         <Header :headerInfo="info" />
-        <section class="max-w-7xl mx-auto my-20">
+        <section class="max-w-7xl mx-auto my-20 px-6">
             <LayoutOne :page="problems" />
             <div class="flex items-center space-x-12 my-20">
                 <div class="flex-1"><img class="w-full" src="../assets/athena-photo-2.png" alt="Athena Photo"></div>
                 <div class="flex-1">
-                    <h3 class="mb-6 text-3xl font-bold">What Does Athena aim to Achieve?</h3>
+                    <h3 class="mb-6 text-3xl font-new-paris-kingsize">What Does Athena aim to Achieve?</h3>
                     <div>
                         <p class="mb-4">Athena hopes to bring a solution that allows users to easily carry out
                             transactions in the shortest time possible, with transparent and predictable pricing coupled
@@ -155,8 +156,8 @@ const launchpool = {
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-6 text-6xl font-bold">Research Began</h1>
+        <section class="max-w-7xl mx-auto my-40">
+            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Research Began</h1>
             <p class="mb-4">After listening carefully to stakeholders and the product owners, since they are the first
                 source of information source as they were the ones with the project idea and brief and have to an extent
                 gotten down a bit of research of their own, I began with the UX phase which started with series of
@@ -178,8 +179,8 @@ const launchpool = {
                 understand the
                 processes of the existing market and how to improve the value we would serve to the users.</p>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-6 text-6xl font-bold">Research Findings</h1>
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Research Findings</h1>
             <p class="mb-6">After the research was done below were the findings and validations of some assumptions had
                 earlier on</p>
             <ul class="pl-6 list-disc">
@@ -202,48 +203,50 @@ const launchpool = {
                     protocols</li>
             </ul>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-6 text-6xl font-bold">User Personas</h1>
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">User Personas</h1>
             <p class="mb-6">Based on the generative user research I conducted, I created user personas that capture the
                 essence of
                 both user categories so its easier to personalize the experience to addressing the users pain points</p>
             <Persona :persona="user1" />
             <Persona :persona="user2" />
         </section>
-        <section class="my-20">
+        <section class="my-40 px-6">
             <div class="max-w-7xl mx-auto">
-                <h1 class="mb-6 text-6xl font-bold">How might we</h1>
-                <p class="mb-6">At this stage I had to put together all the information I gathered so I could generate
+                <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">How might we</h1>
+                <p class="mb-10">At this stage I had to put together all the information I gathered so I could generate
                     some How might we questions that guides the ideation process, which helps us to do with thinking of
                     a solution based on the identified problem</p>
             </div>
             <div><img class="w-full" src="../assets/proposition.png" alt="Proposition"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-4 text-6xl font-bold">Value Proposition - Customers</h1>
-            <p class="mb-4">In the customer's profile, you describe the job your customer is trying to get done by
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Value Proposition - Customers</h1>
+            <p class="mb-10 text-base">In the customer's profile, you describe the job your customer is trying to get
+                done by
                 highlighting customers pains and gains, it's used to track users needs and position the company’s to
                 know more about the customers needs to properly create value</p>
             <div><img class="w-full" src="../assets/value-proposition-customers.png" alt="Value Proposition"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-4 text-6xl font-bold">Value Proposition - Business</h1>
-            <p class="mb-4">Here you list the products and services your value proposition is built on, describing in
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Value Proposition - Business</h1>
+            <p class="mb-10 text-base">Here you list the products and services your value proposition is built on,
+                describing in
                 which way the product features and services are pain relievers and outline how they are gain creators
             </p>
             <div><img class="w-full" src="../assets/value-proposition-business.png" alt="Value Proposition"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-4 text-6xl font-bold">User Journey Map</h1>
-            <p class="mb-4">This same journey is similar to that of farms but we would be taking pool into account as
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-8 text-6xl font-bold font-new-paris-kingsize">User Journey Map</h1>
+            <p class="mb-12">This same journey is similar to that of farms but we would be taking pool into account as
                 that was the first test we made in the MVP that held the foundation of the product. This helped us
                 analyze the user's experience and improve the product.</p>
             <div><img class="w-full" src="../assets/user-map.png" alt="User Map"></div>
         </section>
-        <section class="my-20 bg-brand-gray-4 text-white">
-            <div class="max-w-7xl mx-auto py-20">
-                <div class="my-20">
-                    <h1 class="mb-6 text-6xl font-bold">Design Decisions</h1>
+        <section class="my-40 px-6 bg-brand-gray-4 text-white">
+            <div class="max-w-7xl mx-auto py-20 px-6">
+                <div class="my-40">
+                    <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Design Decisions</h1>
                     <p class="mb-4">From the research carried out, the data analysis from responses, and brainstorming
                         session with those analyses, a design was carried out t properly account for every problem and
                         pain
@@ -261,8 +264,8 @@ const launchpool = {
                         </div>
                     </div>
                 </div>
-                <div class="my-20">
-                    <h1 class="mb-6 text-6xl font-bold">DEX Screens</h1>
+                <div class="my-40">
+                    <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">DEX Screens</h1>
                     <LayoutThree :page="dashboard" />
                     <LayoutThree :page="swapBridge" />
                     <LayoutThree :page="pools" />
@@ -271,8 +274,8 @@ const launchpool = {
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-6 text-6xl font-bold">Launchpad & Launchpool</h1>
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Launchpad & Launchpool</h1>
             <LayoutThree :page="launchpad" />
             <div class="flex items-center space-x-12 my-20">
                 <div class="flex-1"><img class="w-full" src="../assets/athena-photo-9.png" alt="Launchpad"></div>
@@ -280,17 +283,17 @@ const launchpool = {
             </div>
             <LayoutThree :page="launchpool" />
         </section>
-        <section class="my-20">
-            <div class="max-w-7xl mx-auto">
-                <h1 class="mb-6 text-6xl font-bold">How might we</h1>
-                <p class="mb-6">At this stage I had to put together all the information I gathered so I could generate
+        <section class="my-40">
+            <div class="max-w-7xl mx-auto px-6">
+                <h1 class="mb-8 text-6xl font-bold font-new-paris-kingsize">How might we</h1>
+                <p class="mb-12">At this stage I had to put together all the information I gathered so I could generate
                     some How might we questions that guides the ideation process, which helps us to do with thinking of
                     a solution based on the identified problem</p>
             </div>
             <div><img class="w-full" src="../assets/athena-photo-11.png" alt="Mobile responsiveness"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-4 text-6xl font-bold">Key Takeaways</h1>
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-4 text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
             <p class="mb-4">Decentralization is undoubtedly a major trend in financial markets all over the world. The
                 arrival of DeFi
                 has changed the way people and institutions perceive finance. We have been witnessing many radical

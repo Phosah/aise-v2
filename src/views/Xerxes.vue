@@ -130,12 +130,12 @@ const user2 = {
 <template>
     <main>
         <Header :headerInfo="info" />
-        <section class="max-w-7xl mx-auto my-20">
+        <section class="max-w-7xl mx-auto my-20 px-6">
             <LayoutOne :page="problems" />
             <LayoutTwo :page="aims" />
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-6 text-6xl font-bold">Research Time</h1>
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Research Time</h1>
             <p class="mb-4">During the research phase, we engaged with a lot of users in the web2 space and also the
                 web3 space
                 because the goal of the project is to understand the psychology of users wanting to borrow funds and
@@ -148,8 +148,8 @@ const user2 = {
                 and some sharing the vision session with the product owners I was able to identify some business needs
                 and at the same time identify the pain points of the users and able to come up with some deductions.</p>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-6 text-6xl font-bold">Deductions</h1>
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Deductions</h1>
             <p class="mb-6">The research has shown that it was crucial for the success of the project to identify the
                 painpoints and translate them into solutions</p>
             <ul class="pl-6 list-disc">
@@ -164,46 +164,48 @@ const user2 = {
                 <li class="mb-3"> Clarity on terms used in the lending/borrowing cycle</li>
             </ul>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-6 text-6xl font-bold">User Personas</h1>
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">User Personas</h1>
             <p class="mb-6">Based on the generative user research I conducted, I created user personas that capture the
                 essence of
                 both user categories so its easier to personalize the experience to addressing the users pain points</p>
             <Persona :persona="user1" />
             <Persona :persona="user2" />
         </section>
-        <section class="my-20">
-            <div class="max-w-7xl mx-auto">
-                <h1 class="mb-6 text-6xl font-bold">How might we</h1>
-                <p class="mb-6">At this stage I had to put together all the information I gathered so I could generate
+        <section class="my-40">
+            <div class="max-w-7xl mx-auto px-6">
+                <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">How might we</h1>
+                <p class="mb-10">At this stage I had to put together all the information I gathered so I could generate
                     some How might we questions that guides the ideation process, which helps us to do with thinking of
                     a solution based on the identified problem</p>
             </div>
             <div><img class="w-full" src="../assets/proposition.png" alt="Proposition"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-4 text-6xl font-bold">Value Proposition - Customers</h1>
-            <p class="mb-4">In the customer's profile, you describe the job your customer is trying to get done by
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Value Proposition - Customers</h1>
+            <p class="mb-10 text-base">In the customer's profile, you describe the job your customer is trying to get
+                done by
                 highlighting customers pains and gains, it's used to track users needs and position the company’s to
                 know more about the customers needs to properly create value</p>
             <div><img class="w-full" src="../assets/value-proposition-customers.png" alt="Value Proposition"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-4 text-6xl font-bold">Value Proposition - Business</h1>
-            <p class="mb-4">Here you list the products and services your value proposition is built on, describing in
+        <section class="max-w-7xl mx-auto my-20 px-6">
+            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Value Proposition - Business</h1>
+            <p class="mb-10 text-base">Here you list the products and services your value proposition is built on,
+                describing in
                 which way the product features and services are pain relievers and outline how they are gain creators
             </p>
             <div><img class="w-full" src="../assets/value-proposition-business.png" alt="Value Proposition"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-4 text-6xl font-bold">User Journey Map</h1>
-            <p class="mb-4">This same journey is similar to that of farms but we would be taking pool into account as
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-8 text-6xl font-bold font-new-paris-kingsize">User Journey Map</h1>
+            <p class="mb-12">This same journey is similar to that of farms but we would be taking pool into account as
                 that was the first test we made in the MVP that held the foundation of the product. This helped us
                 analyze the user's experience and improve the product.</p>
             <div><img class="w-full" src="../assets/user-map.png" alt="User Map"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-4 text-6xl font-bold">Design Decisions</h1>
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-4 text-6xl font-bold font-new-paris-kingsize">Design Decisions</h1>
             <p class="mb-12">From the research carried out, the data analysis from responses, and brainstorming session
                 with those analyses, a design was carried out t properly account for every problem and pain points faced
                 by the users in an inclusive manner and the design was split into two aspects both can stand as
@@ -214,8 +216,8 @@ const user2 = {
             <LayoutTwo :page="repay" />
             <LayoutThree :page="liquidation" />
         </section>
-        <section class="max-w-7xl mx-auto my-20">
-            <h1 class="mb-4 text-6xl font-bold">Key Takeaways</h1>
+        <section class="max-w-7xl mx-auto my-40 px-6">
+            <h1 class="mb-4 text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
             <p class="mb-4">Decentralization is undoubtedly a major trend in financial markets all over the world. The
                 arrival of DeFi
                 has changed the way people and institutions perceive finance. We have been witnessing many radical

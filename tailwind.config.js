@@ -20,6 +20,9 @@ module.exports = {
           },
         },
       },
+      fontFamily: {
+        playfair: ["Playfair Display", "sans-serif"],
+      },
     },
   },
   plugins: [],

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-between max-w-7xl mx-auto px-4 md:px-16 py-3 text-white font-semibold">
+    <div class="flex justify-between max-w-7xl mx-auto px-4 md:px-16 py-3 text-white">
         <a class="pb-2 text-xl border-b-4 border-transparent hover:border-b-4 hover:border-white"
             href="https://www.linkedin.com/in/aise-idahor-4353b1188/" target="_blank">LinkedIn</a>
         <a class="pb-2 text-xl border-b-4 border-transparent hover:border-b-4 hover:border-white"

@@ -5,6 +5,7 @@ import Athena from "../views/Athena.vue";
 import Works from "../views/Works.vue";
 import Xerxes from "../views/Xerxes.vue";
 import Pegasus from "../views/Pegasus.vue";
+import Test from "../views/Test.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +39,11 @@ const router = createRouter({
       path: "/pegasus",
       name: "Pegasus",
       component: Pegasus,
+    },
+    {
+      path: "/test",
+      name: "test",
+      component: Test,
     },
     {
       path: "/about",

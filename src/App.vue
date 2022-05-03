@@ -3,8 +3,68 @@ import Navbar from "@/components/Navbar.vue"
 </script>
 
 <template>
-  <Navbar />
-  <div>
-    <router-view></router-view>
-  </div>
+  <main class="font-euclid-circular text-sm">
+    <Navbar />
+    <div>
+      <router-view></router-view>
+    </div>
+  </main>
 </template>
+
+<style>
+@font-face {
+  font-family: "NewParisHeadline";
+  font-weight: 400;
+  src: local("NewParisHeadline"),
+    url("./fonts/NewParisHeadlines-Bold.ttf") format("OpenType");
+}
+
+@font-face {
+  font-family: "NewParisKingSize";
+  font-weight: 300;
+  src: local("NewParisKingSize"), url("./fonts/NewParisKingSize-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  font-weight: 400;
+  src: local("EuclidCircularA"), url("./fonts/EuclidCircularA-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  font-weight: 700;
+  src: local("EuclidCircularA"), url("./fonts/EuclidCircularA-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  font-weight: 300;
+  src: local("EuclidCircularA"), url("./fonts/EuclidCircularA-Light.ttf");
+}
+
+.font-new-paris-headline {
+  font-family: "NewParisHeadline", serif;
+  font-weight: 700;
+}
+
+.font-new-paris-kingsize {
+  font-family: "NewParisKingSize", serif;
+  font-weight: 700;
+}
+
+.font-euclid-circular {
+  font-family: "Euclid Circular A", sans-serif;
+  font-weight: 400;
+}
+
+.font-euclid-circular-light {
+  font-family: "Euclid Circular A", sans-serif;
+  font-weight: 300;
+}
+
+.font-euclid-circular-bold {
+  font-family: "Euclid Circular A", sans-serif;
+  font-weight: 700;
+}
+</style>

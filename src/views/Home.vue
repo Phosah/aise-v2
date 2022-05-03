@@ -26,7 +26,7 @@ import BookAppointment from '../components/BookAppointment.vue';
         </p>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto my-20">
+    <section class="max-w-7xl mx-auto my-20">
       <div class="flex items-center space-x-12">
         <div class="p-8 bg-black text-white rounded-md">
           <h2 class="text-6xl">Web 3</h2>
@@ -41,8 +41,8 @@ import BookAppointment from '../components/BookAppointment.vue';
           <img src="../assets/other-projects.png" alt="Other Projects">
         </div>
       </div>
-    </div>
-    <div class="max-w-7xl mx-auto my-20">
+    </section>
+    <section class="max-w-7xl mx-auto my-20">
       <h1 class="mb-20 text-9xl">Clients</h1>
       <div class="flex items-center justify-between mb-20">
         <div><img src="../assets/jumia.png" alt="jumia"></div>
@@ -65,8 +65,8 @@ import BookAppointment from '../components/BookAppointment.vue';
         <div><img src="../assets/flutterwave.png" alt="flutterwave"></div>
         <div><img src="../assets/sokowatch.png" alt="sokowatch"></div>
       </div>
-    </div>
-    <div class="max-w-7xl mx-auto mt-20 mb-52">
+    </section>
+    <section class="max-w-7xl mx-auto mt-20 mb-52">
       <h1 class="mb-20 text-9xl">Testimonials</h1>
       <div class="flex items-center justify-between mb-14">
         <div class="flex items-center space-x-8">
@@ -88,7 +88,7 @@ import BookAppointment from '../components/BookAppointment.vue';
         dapibus
         mauris sit ut
         eu. Eget turpis urna maecenas cras. Nisl dictum.</p>
-    </div>
+    </section>
     <BookAppointment />
   </main>
 </template>

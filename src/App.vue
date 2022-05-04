@@ -21,7 +21,13 @@ import Navbar from "@/components/Navbar.vue"
 
 @font-face {
   font-family: "NewParisKingSize";
-  font-weight: 300;
+  font-weight: 400;
+  src: local("NewParisKingSize"), url("./fonts/NewParisKingSize-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NewParisKingSize";
+  font-weight: 700;
   src: local("NewParisKingSize"), url("./fonts/NewParisKingSize-Bold.ttf");
 }
 
@@ -57,6 +63,11 @@ import Navbar from "@/components/Navbar.vue"
 .font-new-paris-kingsize {
   font-family: "NewParisKingSize", serif;
   font-weight: 700;
+}
+
+.font-new-paris-kingsize-regular {
+  font-family: "NewParisKingSize", serif;
+  font-weight: 400;
 }
 
 .font-euclid-circular {

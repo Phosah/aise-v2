@@ -129,6 +129,21 @@ const clientsArr = [
       </div>
     </section>
     <section class="max-w-7xl mx-auto my-40 px-6">
+      <div class="flex items-center space-x-12">
+        <div class="flex-1">
+          <h3 class="font-new-paris-kingsize mb-6 text-5xl font-new-paris-kingsize">Over 100 <span
+              class="font-new-paris-kingsize-regular">Design Shots</span></h3>
+          <div class="mb-4">
+            <p class="pr-16 leading-relaxed">Explore a showcase of visuals designs from a wide range of design niches
+              done for projects and clients
+              all over the world ranging from web designs to mobile designs.</p>
+          </div>
+          <button class="my-6 px-10 py-3 border border-brand-black-1 rounded-md">Dribble</button>
+        </div>
+        <div class="flex-1"><img class="w-full" src="../assets/design-shots.png" alt="Designs"></div>
+      </div>
+    </section>
+    <section class="max-w-7xl mx-auto my-40 px-6">
       <Clients :clients="clientsArr" />
     </section>
     <section class="max-w-7xl mx-auto mt-40 mb-52 px-6">

@@ -11,25 +11,29 @@ const worksArr = [
         img: athenaCover,
         alt: "Athena",
         title: "Athena",
-        content: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users"
+        content: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users",
+        link: "/athena"
     },
     {
         img: aistakeCover,
         alt: "Aistake Finance",
         title: "Aistake Finance",
-        content: "Staking with multiple validators on the Solana network at the same time while still having the ability to stake with the community using the best validators"
+        content: "Staking with multiple validators on the Solana network at the same time while still having the ability to stake with the community using the best validators",
+        link: "/aistakefinance"
     },
     {
         img: pegasusCover,
         alt: "Pegasus",
         title: "Pegasus",
-        content: "The easiest way for you to gain access to multiple token holdings at once by the purchase of one super token"
+        content: "The easiest way for you to gain access to multiple token holdings at once by the purchase of one super token",
+        link: "/pegasus"
     },
     {
         img: xerxesCover,
         alt: "Xerxes",
         title: "Xerxes",
-        content: "A decentralized Lending and Borrowing Protocol, providing income to Lenders and Loaning opportunities for borrowers with need any crypto asset of your choice"
+        content: "A decentralized Lending and Borrowing Protocol, providing income to Lenders and Loaning opportunities for borrowers with need any crypto asset of your choice",
+        link: "/xerxes"
     },
 ]
 </script>

@@ -5,6 +5,7 @@ defineProps({
         required: true
     }
 })
+const link = "/athena"
 </script>
 
 <template>
@@ -18,8 +19,10 @@ defineProps({
                     <div class="text-center text-white">
                         <h1 class="mb-6 text-5xl font-new-paris-kingsize">{{ work.title }}</h1>
                         <p class="mb-8">{{ work.content }}</p>
-                        <button class="px-10 py-3 rounded-md border border-white bg-transparent">View Case
-                            Study</button>
+                        <button class="px-10 py-3 rounded-md border border-white bg-transparent">
+                            <router-link :to="work.link">View Case
+                                Study</router-link>
+                        </button>
                     </div>
                 </div>
             </div>

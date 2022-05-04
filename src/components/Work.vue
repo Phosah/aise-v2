@@ -11,7 +11,7 @@ defineProps({
     <section>
         <div>
             <div v-for="(work, ix) in works" :key="ix" class="relative h-screen flex justify-center items-center">
-                <div class="absolute inset-0 opacity-80"><img class="object-cover w-full h-full" :src="work.img"
+                <div class="absolute inset-0 opacity-95"><img class="object-cover w-full h-full" :src="work.img"
                         :alt="work.alt">
                 </div>
                 <div class="w-2/3 flex items-center justify-center absolute z-50">

@@ -49,5 +49,6 @@ const worksArr = [
             <div><img src="../assets/web3-photo-4.png" alt="Web3 Project"></div>
         </div> -->
         <Work :works="worksArr" />
+        <BookAppointment />
     </div>
 </template>

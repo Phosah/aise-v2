@@ -7,13 +7,13 @@
         <div class="flex items-center justify-between">
             <div class="flex items-center space-x-12">
                 <div>
-                    <router-link to="/works">Works</router-link>
+                    <router-link to="/works">Web 3 Works</router-link>
+                </div>
+                <div>
+                    <router-link to="/works">Other Works</router-link>
                 </div>
                 <div>
                     <router-link to="/about">About me</router-link>
-                </div>
-                <div>
-                    <router-link to="/works">Resume</router-link>
                 </div>
                 <div>
                     <router-link to="/works">Visual Shots</router-link>

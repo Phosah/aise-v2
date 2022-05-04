@@ -43,6 +43,12 @@ import Navbar from "@/components/Navbar.vue"
   src: local("EuclidCircularA"), url("./fonts/EuclidCircularA-Light.ttf");
 }
 
+@font-face {
+  font-family: "Euclid Circular A";
+  font-weight: 500;
+  src: local("EuclidCircularA"), url("./fonts/EuclidCircularA-Medium.ttf");
+}
+
 .font-new-paris-headline {
   font-family: "NewParisHeadline", serif;
   font-weight: 700;
@@ -61,6 +67,11 @@ import Navbar from "@/components/Navbar.vue"
 .font-euclid-circular-light {
   font-family: "Euclid Circular A", sans-serif;
   font-weight: 300;
+}
+
+.font-euclid-circular-medium {
+  font-family: "Euclid Circular A", sans-serif;
+  font-weight: 500;
 }
 
 .font-euclid-circular-bold {

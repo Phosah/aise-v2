@@ -14,7 +14,7 @@ import Navbar from "@/components/Navbar.vue"
 <style>
 @font-face {
   font-family: "NewParisHeadline";
-  font-weight: 400;
+  font-weight: 700;
   src: local("NewParisHeadline"),
     url("./fonts/NewParisHeadlines-Bold.ttf") format("OpenType");
 }

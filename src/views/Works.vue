@@ -42,12 +42,6 @@ const worksArr = [
         <div class="flex justify-center max-w-7xl mx-auto mt-10 mb-20">
             <h1 class="text-9xl font-new-paris-kingsize">Projects</h1>
         </div>
-        <!-- <div>
-            <div><img src="../assets/web3-photo-1.png" alt="Web3 Project"></div>
-            <div><img src="../assets/web3-photo-2.png" alt="Web3 Project"></div>
-            <div><img src="../assets/web3-photo-3.png" alt="Web3 Project"></div>
-            <div><img src="../assets/web3-photo-4.png" alt="Web3 Project"></div>
-        </div> -->
         <Work :works="worksArr" />
         <BookAppointment />
     </div>

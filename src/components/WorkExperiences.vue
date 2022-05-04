@@ -7,18 +7,6 @@ const props = defineProps({
 </script>
 
 <template>
-    <!-- <div class="grid grid-cols-2 gap-x-14">
-        <div class="" v-for="(work, ix) in works" :key="ix">
-            <div class="flex items-center space-x-4">
-                <img :src="work.img" :alt="work.alt">
-                <div>
-                    <p class="mb-2">{{ work.duration }}</p>
-                    <h1 class="mb-2">{{ work.name }}</h1>
-                    <p>{{ work.position }}</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="grid grid-cols-2 gap-x-12">
         <div v-for="(work, ix) in works" :key="ix" :class="{ 'border-r border-brand-gray-3': ix % 2 === 0 }"
             class="pb-8">
@@ -26,7 +14,7 @@ const props = defineProps({
                 <img :src="work.img" :alt="work.alt">
                 <div>
                     <p class="mb-2">{{ work.duration }}</p>
-                    <h1 class="mb-2">{{ work.name }}</h1>
+                    <h1 class="mb-2 text-xl font-euclid-circular-medium">{{ work.name }}</h1>
                     <p>{{ work.position }}</p>
                 </div>
             </div>

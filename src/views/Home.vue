@@ -113,7 +113,7 @@ const clientsArr = [
       </div>
     </div>
     <section class="max-w-7xl mx-auto my-40 px-6">
-      <div class="flex items-center space-x-12">
+      <div class="flex items-start space-x-12">
         <div class="flex-1 p-8 bg-black text-white rounded-md">
           <h2 class="text-6xl font-new-paris-kingsize">Web 3</h2>
           <h2 class="mb-8 text-6xl font-new-paris-kingsize">Projects</h2>

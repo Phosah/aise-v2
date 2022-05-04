@@ -40,7 +40,7 @@
       <WorkExperiences :works="worksArr" />
     </section>
     <Anime :animes="animesArr" />
-    <BookAppointment />
+    <BookAppointment :class="bgColor" />
   </main>
 </template>
 
@@ -70,6 +70,7 @@ export default {
   components: { DesignGuidelines, BookAppointment, WorkExperiences, Anime },
   data() {
     return {
+      bgColor: "bg-brand-black-1",
       guidelines: [
         {
           imageUrl: img1,

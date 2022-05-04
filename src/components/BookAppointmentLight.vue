@@ -1,5 +1,5 @@
 <template>
-    <section class="py-20 px-6 text-brand-black-3">
+    <section class="py-20 px-6 text-brand-black-3" :class="bgColor">
         <div class="flex flex-col items-center max-w-7xl mx-auto py-40 md:py-20 md:px-16">
             <div class="mb-24">
                 <!-- <img src="../assets/project-talk.png" alt="Project talk-dark" /> -->
@@ -36,11 +36,12 @@
 import FooterLight from "./FooterLight.vue";
 export default {
     name: "BookAppointment",
-    computed: {
-        // themeColor() {
-        //     return this.$store.state.themeColor;
-        // }
-    },
-    components: { FooterLight }
+    components: { FooterLight },
+    props: {
+        bgColor: {
+            type: String,
+            default: ""
+        }
+    }
 }
 </script>

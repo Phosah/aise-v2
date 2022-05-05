@@ -23,6 +23,9 @@ module.exports = {
       fontFamily: {
         playfair: ["Playfair Display", "sans-serif"],
       },
+      fontSize: {
+        "10xl": "10rem",
+      },
     },
   },
   plugins: [],

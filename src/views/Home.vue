@@ -86,16 +86,16 @@ const clientsArr = [
   <main class="text-brand-black-2">
     <section class="my-40">
       <div class="flex items-center max-w-7xl mx-auto mt-20 px-6">
-        <h1 class="w-2/3 text-9xl font-new-paris-kingsize">Product</h1>
+        <h1 class="flex-1 text-10xl font-new-paris-kingsize">Product</h1>
         <p class="w-1/3 leading-relaxed text-brand-gray-2">Hello There! I am Aise, a Product designer in the web3 space
           focused on
           maximizing business
           need and user satisfaction through the creation of simple digital experiences.</p>
       </div>
-      <div class="flex justify-center max-w-7xl mx-auto mt-10 px-6">
-        <h1 class="text-9xl font-new-paris-kingsize">Designer</h1>
+      <div class="flex justify-center max-w-7xl mx-auto mt-20 px-6">
+        <h1 class="text-10xl font-new-paris-kingsize">Designer</h1>
       </div>
-      <div class="max-w-7xl mx-auto mt-10">
+      <div class="max-w-7xl mx-auto mt-20">
         <div class="flex justify-end">
           <img class="w-1/2" src="../assets/aise-photo-1.png" alt="Aise photo">
         </div>

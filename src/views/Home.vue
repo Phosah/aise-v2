@@ -97,7 +97,8 @@ const clientsArr = [
       </div>
       <div class="max-w-7xl mx-auto mt-20">
         <div class="flex justify-end">
-          <img class="w-1/2" src="../assets/aise-photo-1.png" alt="Aise photo">
+          <div class="w-1/2 pl-12"><img class="w-32 h-32" src="../assets/random1.png" alt="Random img"></div>
+          <div class="w-1/2"><img class="w-full" src="../assets/aise-photo-1.png" alt="Aise photo"></div>
         </div>
       </div>
     </section>
@@ -111,20 +112,21 @@ const clientsArr = [
           Managemnt tools etc.
         </p>
       </div>
+      <div class="w-1/2 flex justify-end"><img class="w-32 h-32" src="../assets/random1.png" alt="Random img"></div>
     </div>
     <section class="max-w-7xl mx-auto my-40 px-6">
       <div class="flex items-start space-x-12">
-        <div class="flex-1 p-8 bg-black text-white rounded-md">
+        <div class="flex-1 flex flex-col p-8 bg-black text-white rounded-md">
           <h2 class="text-6xl font-new-paris-kingsize">Web 3</h2>
           <h2 class="mb-8 text-6xl font-new-paris-kingsize">Projects</h2>
           <div class="mb-8">Explore</div>
-          <img src="../assets/web3-projects.png" alt="Web 3 Projects">
+          <img src="../assets/gif1.gif" alt="Web 3 Projects">
         </div>
         <div class="flex-1 p-8 bg-white rounded-md">
           <h2 class="text-6xl font-new-paris-kingsize">Other</h2>
           <h2 class="mb-8 text-6xl font-new-paris-kingsize">Projects</h2>
           <div class="mb-8">Explore</div>
-          <img class="w-full" src="../assets/other-projects.png" alt="Other Projects">
+          <img class="w-full" src="../assets/gif2.gif" alt="Other Projects">
         </div>
       </div>
     </section>
@@ -140,7 +142,7 @@ const clientsArr = [
           </div>
           <button class="my-6 px-10 py-3 border border-brand-black-1 rounded-md">Dribble</button>
         </div>
-        <div class="flex-1"><img class="w-full" src="../assets/design-shots.png" alt="Designs"></div>
+        <div class="flex-1"><img class="w-full" src="../assets/gif3.gif" alt="Designs"></div>
       </div>
     </section>
     <section class="max-w-7xl mx-auto my-40 px-6">

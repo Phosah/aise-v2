@@ -7,9 +7,9 @@ defineProps({
 })
 </script>
 <template>
-    <div class="flex items-center space-x-12 mb-20">
-        <div class="w-1/3 rounded-md"><img class="rounded-md" :src="persona.img" :alt="persona.alt"></div>
-        <div class="w-2/3">
+    <div class="md:flex md:items-center md:space-x-12 mb-20">
+        <div class="md:w-1/3 rounded-md"><img class="rounded-md" :src="persona.img" :alt="persona.alt"></div>
+        <div class="md:w-2/3">
             <div class="mb-8">
                 <h3 class="mb-4 text-2xl font-new-paris-kingsize">About</h3>
                 <p>{{ persona.about }}</p>

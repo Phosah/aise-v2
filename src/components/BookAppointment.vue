@@ -17,7 +17,7 @@
                         future</span>
                 </p>
             </div>
-            <div class="flex items-center space-x-8">
+            <div class="md:flex items-center space-x-8">
 
                 <div class="px-8 py-5 font-bold rounded-sm text-white bg-transparent border border-white">Send an
                     Email</div>

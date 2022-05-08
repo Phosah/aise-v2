@@ -130,8 +130,8 @@ const transactionHistory = {
 <template>
     <div>
         <Header :headerInfo="info" />
-        <section class="flex items-center space-x-12 max-w-7xl mx-auto my-40 px-6">
-            <div class="flex-1">
+        <section class="md:flex md:items-center md:space-x-12 max-w-7xl mx-auto my-40 px-6">
+            <div class="md:flex-1">
                 <h3 class="mb-6 text-3xl font-bold font-new-paris-kingsize">Problems associated</h3>
                 <p class="mb-4">With the creation of Bitcoin, thousands of other tokens have been created and they a lot
                     of them have been seen to pose great investment opportunities. As of April 2019, there are 2,100
@@ -148,7 +148,7 @@ const transactionHistory = {
                 <p>These inconveniences even have financial repercussions when one considers how fees accumulate as a
                     result of token-by-token exchange trades and withdrawals.</p>
             </div>
-            <div class="flex-1"><img src="../assets/pegasus-photo-1.png" alt="Pegasus"></div>
+            <div class="md:flex-1"><img src="../assets/pegasus-photo-1.png" alt="Pegasus"></div>
         </section>
         <section class="max-w-7xl mx-auto my-40 px-6">
             <LayoutTwo :page="goals" />

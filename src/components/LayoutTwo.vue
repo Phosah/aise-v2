@@ -7,7 +7,7 @@ defineProps({
 })
 </script>
 <template>
-    <div class="flex items-center space-x-12 my-32">
+    <div class="md:flex md:items-center md:space-x-12 md:my-40 my-20">
         <div class="flex-1"><img class="w-full" :src="page.img" :alt="page.alt"></div>
         <div class="flex-1">
             <h3 class="font-new-paris-kingsize mb-6 text-3xl font-bold">{{ page.title }}</h3>

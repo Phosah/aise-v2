@@ -1,4 +1,5 @@
 <script setup>
+import { onMounted, ref } from "vue"
 import BookAppointment from '../components/BookAppointment.vue';
 import Work from '../components/Work.vue';
 import athenaCover from "../assets/athena-cover.png"
@@ -36,6 +37,11 @@ const worksArr = [
         link: "/xerxes"
     },
 ]
+
+const root = ref(null)
+onMounted(() => {
+    console.log(root.value)
+})
 </script>
 
 <template>

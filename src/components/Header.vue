@@ -12,7 +12,7 @@ defineProps({
             <h1 class="font-new-paris-kingsize mb-6 text-6xl">{{ headerInfo.title }}</h1>
             <p>{{ headerInfo.text }}</p>
         </div>
-        <div><img :src="headerInfo.img" :alt="headerInfo.alt"></div>
+        <div><img class="w-full" :src="headerInfo.img" :alt="headerInfo.alt"></div>
         <section class="max-w-7xl mx-auto my-20 px-6 flex space-x-32">
             <div class="w-3/4">
                 <h2 class="mb-16 pl-10 text-3xl font-bold border-l-4 border-brand-black-3">{{ headerInfo.mainContent }}

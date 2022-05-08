@@ -132,9 +132,9 @@ const launchpool = {
         <Header :headerInfo="info" />
         <section class="max-w-7xl mx-auto my-20 px-6">
             <LayoutOne :page="problems" />
-            <div class="flex items-center space-x-12 my-20">
-                <div class="flex-1"><img class="w-full" src="../assets/athena-photo-2.png" alt="Athena Photo"></div>
-                <div class="flex-1">
+            <div class="md:flex md:items-center md:space-x-12 my-20">
+                <div class="md:flex-1"><img class="w-full" src="../assets/athena-photo-2.png" alt="Athena Photo"></div>
+                <div class="md:flex-1">
                     <h3 class="mb-6 text-3xl font-new-paris-kingsize">What Does Athena aim to Achieve?</h3>
                     <div>
                         <p class="mb-4">Athena hopes to bring a solution that allows users to easily carry out
@@ -156,7 +156,7 @@ const launchpool = {
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto my-40">
+        <section class="max-w-7xl mx-auto my-40 px-6">
             <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Research Began</h1>
             <p class="mb-4">After listening carefully to stakeholders and the product owners, since they are the first
                 source of information source as they were the ones with the project idea and brief and have to an extent

@@ -1,12 +1,13 @@
 <template>
   <main class="text-brand-black-2">
     <div class="flex flex-col items-center justify-center max-w-7xl mx-auto my-20 px-6 ">
-      <h1 class="mb-10 text-9xl font-new-paris-kingsize-regular">About Me</h1>
+      <h1 class="mb-10 text-6xl md:text-9xl font-new-paris-kingsize-regular">About Me</h1>
       <p class="w-2/3 text-center text-brand-gray-2">I am a Product designer based in Nigeria who simplifies complex
         problems, loves to
         travel, play video games (im kinda like the Fifa Champion) and oh yes i love good ANIME</p>
     </div>
-    <div class="max-w-6xl mx-auto my-40 px-6 text-5xl text-brand-gray-2 leading-snug">I design digital products and
+    <div class="max-w-6xl mx-auto my-40 px-6 text-2xl md:text-5xl text-brand-gray-2 md:leading-snug">I design digital
+      products and
       websites for startups,
       brands, and entrepreneurs
       with cool projects. Let's turn the boring to awesome with some slick upgrades. I am currently the Senior product
@@ -29,10 +30,12 @@
     </div>
     <section class="max-w-7xl mx-auto my-40 px-6">
       <h2 class="mb-8 text-4xl md:text-6xl lg:text-7xl font-new-paris-kingsize-regular">Work Experience</h2>
-      <div class="flex items-center space-x-16 mb-20">
-        <h3 class="flex-1 text-3xl font-new-paris-kingsize-regular">A glimpse at my professional journey, asides
+      <div class="md:flex md:items-center md:space-x-16 mb-20">
+        <h3 class="md:flex-1 mb-8 md:mb-0 text-2xl md:text-3xl font-new-paris-kingsize-regular">A glimpse at my
+          professional
+          journey, asides
           freelance</h3>
-        <p class="flex-1">Aise is a design practice focused on digital experiences. With every single one of our
+        <p class="md:flex-1">Aise is a design practice focused on digital experiences. With every single one of our
           clients, we bring
           forth a deep passion for creative problem solving — which is what we deliver in the form of custom and
           memorable experiences.</p>

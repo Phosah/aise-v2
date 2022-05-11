@@ -86,14 +86,14 @@ const clientsArr = [
   <main class="text-brand-black-2">
     <section class="my-40">
       <div class="flex items-center max-w-7xl mx-auto mt-20 px-6">
-        <h1 class="flex-1 text-10xl font-new-paris-kingsize">Product</h1>
+        <h1 class="flex-1 text-6xl md:text-10xl font-new-paris-kingsize">Product</h1>
         <p class="w-1/3 leading-relaxed text-brand-gray-2">Hello There! I am Aise, a Product designer in the web3 space
           focused on
           maximizing business
           need and user satisfaction through the creation of simple digital experiences.</p>
       </div>
       <div class="flex justify-center max-w-7xl mx-auto mt-20 px-6">
-        <h1 class="text-10xl font-new-paris-kingsize">Designer</h1>
+        <h1 class="text-6xl md:text-10xl font-new-paris-kingsize">Designer</h1>
       </div>
       <div class="max-w-7xl mx-auto mt-20">
         <div class="flex justify-end">
@@ -131,8 +131,8 @@ const clientsArr = [
       </div>
     </section>
     <section class="max-w-7xl mx-auto my-40 px-6">
-      <div class="flex items-center space-x-12">
-        <div class="flex-1">
+      <div class="md:flex md:items-center md:space-x-12">
+        <div class="md:flex-1 mb-8 md:mb-0">
           <h3 class="font-new-paris-kingsize mb-6 text-5xl font-new-paris-kingsize">Over 100 <span
               class="font-new-paris-kingsize-regular">Design Shots</span></h3>
           <div class="mb-4">
@@ -142,14 +142,14 @@ const clientsArr = [
           </div>
           <button class="my-6 px-10 py-3 border border-brand-black-1 rounded-md">Dribble</button>
         </div>
-        <div class="flex-1"><img class="w-full" src="../assets/gif3.gif" alt="Designs"></div>
+        <div class="md:flex-1"><img class="w-full" src="../assets/gif3.gif" alt="Designs"></div>
       </div>
     </section>
     <section class="max-w-7xl mx-auto my-40 px-6">
       <Clients :clients="clientsArr" />
     </section>
     <section class="max-w-7xl mx-auto mt-40 mb-52 px-6">
-      <h1 class="mb-20 text-9xl font-new-paris-kingsize">Testimonials</h1>
+      <h1 class="mb-20 text-5xl md:text-9xl font-new-paris-kingsize">Testimonials</h1>
       <div class="flex items-center justify-between mb-14">
         <div class="flex items-center space-x-8">
           <img src="../assets/testimonials-1.png" alt="Testimonials">

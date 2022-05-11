@@ -133,7 +133,8 @@ const launchpool = {
         <section class="max-w-7xl mx-auto my-20 px-6">
             <LayoutOne :page="problems" />
             <div class="md:flex md:items-center md:space-x-12 my-20">
-                <div class="md:flex-1"><img class="w-full" src="../assets/athena-photo-2.png" alt="Athena Photo"></div>
+                <div class="md:flex-1 mb-8 md:mb-0"><img class="w-full" src="../assets/athena-photo-2.png"
+                        alt="Athena Photo"></div>
                 <div class="md:flex-1">
                     <h3 class="mb-6 text-3xl font-new-paris-kingsize">What Does Athena aim to Achieve?</h3>
                     <div>
@@ -220,16 +221,16 @@ const launchpool = {
             </div>
             <div><img class="w-full" src="../assets/proposition.png" alt="Proposition"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-40 px-6">
-            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Value Proposition - Customers</h1>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h1 class="mb-6 text-5xl md:text-6xl font-bold font-new-paris-kingsize">Value Proposition - Customers</h1>
             <p class="mb-10 text-base">In the customer's profile, you describe the job your customer is trying to get
                 done by
                 highlighting customers pains and gains, it's used to track users needs and position the company’s to
                 know more about the customers needs to properly create value</p>
             <div><img class="w-full" src="../assets/value-proposition-customers.png" alt="Value Proposition"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-40 px-6">
-            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Value Proposition - Business</h1>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h1 class="mb-6 text-5xl md:text-6xl font-bold font-new-paris-kingsize">Value Proposition - Business</h1>
             <p class="mb-10 text-base">Here you list the products and services your value proposition is built on,
                 describing in
                 which way the product features and services are pain relievers and outline how they are gain creators

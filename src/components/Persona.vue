@@ -8,7 +8,8 @@ defineProps({
 </script>
 <template>
     <div class="md:flex md:items-center md:space-x-12 mb-20">
-        <div class="md:w-1/3 rounded-md"><img class="rounded-md" :src="persona.img" :alt="persona.alt"></div>
+        <div class="md:w-1/3 mb-8 md:mb-0 rounded-md"><img class="rounded-md" :src="persona.img" :alt="persona.alt">
+        </div>
         <div class="md:w-2/3">
             <div class="mb-8">
                 <h3 class="mb-4 text-2xl font-new-paris-kingsize">About</h3>

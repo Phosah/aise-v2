@@ -47,10 +47,10 @@ onMounted(() => {
 <template>
     <div>
         <div class="flex items-center max-w-7xl mx-auto mt-20 px-6">
-            <h1 class="w-2/3 text-9xl font-new-paris-kingsize">Web3</h1>
+            <h1 class="w-2/3 text-6xl md:text-9xl font-new-paris-kingsize">Web3</h1>
         </div>
         <div class="flex justify-center max-w-7xl mx-auto mt-10 mb-20">
-            <h1 class="text-9xl font-new-paris-kingsize">Projects</h1>
+            <h1 class="text-6xl md:text-9xl font-new-paris-kingsize">Projects</h1>
         </div>
         <Work :works="worksArr" />
         <BookAppointment />

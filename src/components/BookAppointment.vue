@@ -17,14 +17,20 @@
                         future</span>
                 </p>
             </div>
-            <div class="md:flex items-center space-x-8">
+            <div class="md:flex md:items-center md:space-x-8">
 
-                <div class="px-8 py-5 font-bold rounded-sm text-white bg-transparent border border-white">Send an
+                <div
+                    class="mb-8 md:mb-0 px-8 py-5 text-center font-bold rounded-sm text-white bg-transparent border border-white">
+                    Send an
                     Email</div>
                 <!-- Calendly link widget begin -->
-                <a class="px-8 py-5 font-bold rounded-sm text-brand-black-1 bg-white"
-                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/aiseidahor'});return false;">Book an
-                    appointment</a>
+                <div>
+                    <a class="block px-8 py-5 font-bold rounded-sm text-brand-black-1 bg-white"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/aiseidahor'});return false;">Book
+                        an
+                        appointment
+                    </a>
+                </div>
                 <!-- Calendly link widget end -->
             </div>
         </div>

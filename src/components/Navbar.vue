@@ -3,21 +3,21 @@
 
 <template>
     <div class="md:flex md:items-center md:justify-between max-w-7xl mx-auto py-10 px-6">
-        <div class="">
+        <div class="mb-8">
             <router-link to="/"><img src="../assets/logo.png" alt="" /></router-link>
         </div>
         <div class="flex items-center justify-between">
             <div class="md:flex md:items-center md:space-x-12">
-                <div>
+                <div class="mb-8">
                     <router-link to="/works">Web 3 Works</router-link>
                 </div>
-                <div>
+                <div class="mb-8">
                     <router-link to="/">Other Works</router-link>
                 </div>
-                <div>
+                <div class="mb-8">
                     <router-link to="/about">About me</router-link>
                 </div>
-                <div>
+                <div class="mb-8">
                     <router-link to="/works">Visual Shots</router-link>
                 </div>
             </div>

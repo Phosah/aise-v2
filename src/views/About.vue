@@ -1,7 +1,7 @@
 <template>
   <main class="text-brand-black-2">
     <div class="flex flex-col items-center justify-center max-w-7xl mx-auto my-20 px-6 ">
-      <h1 class="mb-10 text-6xl md:text-9xl font-new-paris-kingsize-regular">About Me</h1>
+      <h1 class="mb-10 text-6xl md:text-9xl font-new-paris-kingsize">About Me</h1>
       <p class="w-2/3 text-center text-brand-gray-2">I am a Product designer based in Nigeria who simplifies complex
         problems, loves to
         travel, play video games (im kinda like the Fifa Champion) and oh yes i love good ANIME</p>
@@ -29,7 +29,7 @@
       </div>
     </div>
     <section class="max-w-7xl mx-auto my-40 px-6">
-      <h2 class="mb-8 text-4xl md:text-6xl lg:text-7xl font-new-paris-kingsize-regular">Work Experience</h2>
+      <h2 class="mb-8 text-4xl md:text-6xl lg:text-7xl font-new-paris-kingsize">Work Experience</h2>
       <div class="md:flex md:items-center md:space-x-16 mb-20">
         <h3 class="md:flex-1 mb-8 md:mb-0 text-2xl md:text-3xl font-new-paris-kingsize-regular">A glimpse at my
           professional

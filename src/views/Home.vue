@@ -85,9 +85,10 @@ const clientsArr = [
 <template>
   <main class="text-brand-black-2">
     <section class="my-40">
-      <div class="flex items-center max-w-7xl mx-auto mt-20 px-6">
-        <h1 class="flex-1 text-6xl md:text-10xl font-new-paris-kingsize">Product</h1>
-        <p class="w-1/3 leading-relaxed text-brand-gray-2">Hello There! I am Aise, a Product designer in the web3 space
+      <div class="md:flex md:items-center max-w-7xl mx-auto mt-20 px-6">
+        <h1 class="md:flex-1 text-6xl md:text-10xl font-new-paris-kingsize text-center">Product</h1>
+        <p class="md:w-1/3 leading-relaxed text-brand-gray-2">Hello There! I am Aise, a Product designer in the web3
+          space
           focused on
           maximizing business
           need and user satisfaction through the creation of simple digital experiences.</p>
@@ -96,14 +97,15 @@ const clientsArr = [
         <h1 class="text-6xl md:text-10xl font-new-paris-kingsize">Designer</h1>
       </div>
       <div class="max-w-7xl mx-auto mt-20">
-        <div class="flex justify-end">
-          <div class="w-1/2 pl-12"><img class="w-32 h-32" src="../assets/random1.png" alt="Random img"></div>
-          <div class="w-1/2"><img class="w-full" src="../assets/aise-photo-1.png" alt="Aise photo"></div>
+        <div class="md:flex justify-end">
+          <div class="hidden md:block md:w-1/2 pl-12"><img class="w-32 h-32" src="../assets/random1.png"
+              alt="Random img"></div>
+          <div class="md:w-1/2"><img class="w-full" src="../assets/aise-photo-1.png" alt="Aise photo"></div>
         </div>
       </div>
     </section>
-    <div class="flex max-w-7xl mx-auto px-6">
-      <div class="w-1/2 px-12">
+    <div class="md:flex max-w-7xl mx-auto px-6">
+      <div class="md:w-1/2 px-12">
         <h2 class="mb-6 text-4xl font-new-paris-kingsize">What I do</h2>
         <p class="pl-6 border-l-2 border-brand-black-2 border-opacity-30 leading-relaxed">I am a Web3 designer who
           simplifies complex
@@ -112,17 +114,18 @@ const clientsArr = [
           Managemnt tools etc.
         </p>
       </div>
-      <div class="w-1/2 flex justify-end"><img class="w-32 h-32" src="../assets/random1.png" alt="Random img"></div>
+      <div class="hidden md:w-1/2 md:flex md:justify-end"><img class="w-32 h-32" src="../assets/random1.png"
+          alt="Random img"></div>
     </div>
     <section class="max-w-7xl mx-auto my-40 px-6">
-      <div class="flex items-start space-x-12">
-        <div class="flex-1 flex flex-col p-8 bg-black text-white rounded-md">
+      <div class="md:flex md:items-start md:space-x-12">
+        <div class="md:flex-1 flex flex-col mb-8 p-8 bg-black text-white rounded-md">
           <h2 class="text-6xl font-new-paris-kingsize">Web 3</h2>
           <h2 class="mb-8 text-6xl font-new-paris-kingsize">Projects</h2>
           <div class="mb-8">Explore</div>
           <img src="../assets/gif1.gif" alt="Web 3 Projects">
         </div>
-        <div class="flex-1 p-8 bg-white rounded-md">
+        <div class="md:flex-1 p-8 bg-white rounded-md">
           <h2 class="text-6xl font-new-paris-kingsize">Other</h2>
           <h2 class="mb-8 text-6xl font-new-paris-kingsize">Projects</h2>
           <div class="mb-8">Explore</div>
@@ -150,7 +153,7 @@ const clientsArr = [
     </section>
     <section class="max-w-7xl mx-auto mt-40 mb-52 px-6">
       <h1 class="mb-20 text-5xl md:text-9xl font-new-paris-kingsize">Testimonials</h1>
-      <div class="flex items-center justify-between mb-14">
+      <div class="md:flex md:items-center md:justify-between mb-14">
         <div class="flex items-center space-x-8">
           <img src="../assets/testimonials-1.png" alt="Testimonials">
           <div>
@@ -158,7 +161,7 @@ const clientsArr = [
             <p>Co-Founder Daba</p>
           </div>
         </div>
-        <div class="flex items-center space-x-12">
+        <div class="hidden md:flex items-center space-x-12">
           <div class="flex items-center justify-center w-20 h-20 border border-brand-black-2 rounded-full"><img
               src="../assets/left-arrow.png" alt="Left arrow"></div>
           <div>1/8</div>
@@ -166,11 +169,8 @@ const clientsArr = [
               src="../assets/right-arrow.png" alt="Right arrow"></div>
         </div>
       </div>
-      <p class="text-5xl text-brand-gray-2 leading-snug">Ultricies massa malesuada viverra cras lobortis. Tempor orci
-        hac ligula
-        dapibus
-        mauris sit ut
-        eu. Eget turpis urna maecenas cras. Nisl dictum.</p>
+      <p class="text-xl md:text-5xl text-brand-gray-2 md:leading-snug">Ultricies massa malesuada viverra cras lobortis.
+        Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.</p>
     </section>
     <BookAppointment />
   </main>

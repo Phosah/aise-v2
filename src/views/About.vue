@@ -6,6 +6,9 @@
         problems, loves to
         travel, play video games (im kinda like the Fifa Champion) and oh yes i love good ANIME</p>
     </div>
+    <div class="flex items-center justify-center max-w-7xl mx-auto my-20 px-6">
+      <img src="../assets/random1.png" alt="Scroll img">
+    </div>
     <div class="max-w-6xl mx-auto my-40 px-6 text-2xl md:text-5xl text-brand-gray-2 md:leading-snug">I design digital
       products and
       websites for startups,
@@ -27,7 +30,12 @@
       </div>
     </div>
     <section class="max-w-7xl mx-auto my-40 px-6">
-      <h2 class="mb-8 text-4xl md:text-6xl lg:text-7xl font-new-paris-kingsize">Work Experience</h2>
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-4xl md:text-6xl lg:text-7xl font-new-paris-kingsize">Work Experience</h2>
+        <button
+          class="py-3 px-16 rounded-md border border-brand-black-1 text-brand-black-1 font-euclid-circular-bold">Download
+          Resume</button>
+      </div>
       <div class="md:flex md:items-center md:space-x-16 mb-20">
         <h3 class="md:flex-1 mb-8 md:mb-0 text-2xl md:text-3xl font-new-paris-kingsize-regular">A glimpse at my
           professional

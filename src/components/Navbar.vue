@@ -23,7 +23,7 @@
             </div>
         </div>
         <button
-            class="py-3 px-16 rounded-sm border border-brand-black-1 text-brand-black-1 font-euclid-circular-bold">Lets
+            class="py-3 px-16 rounded-md border border-brand-black-1 text-brand-black-1 font-euclid-circular-bold">Lets
             Talk</button>
     </div>
 </template>

@@ -9,13 +9,11 @@
     <div class="max-w-6xl mx-auto my-40 px-6 text-2xl md:text-5xl text-brand-gray-2 md:leading-snug">I design digital
       products and
       websites for startups,
-      brands, and entrepreneurs
+      brands and entrepreneurs
       with cool projects. Let's turn the boring to awesome with some slick upgrades. I am currently the Senior product
       Designer at ARC a web3 aggregator where i change lives in the web3 space through Research, Empathy and Data-driven
       insights. I help companies build teams and digital products.I design digital products and websites for startups,
-      brands, and entrepreneurs with cool projects. Let's turn the boring to awesome with some slick upgrades. I am
-      currently the Senior product Designer at ARC a web3 aggregator where i change lives in the web3 space through
-      Research, Empathy and Data-driven insights. I help companies build teams and digital products.</div>
+      brands, and entrepreneurs with cool projects.</div>
     <div class="bg-brand-black-1 text-white">
       <div class="max-w-7xl mx-auto px-4 md:px-20 py-40">
         <h2 class="mb-20 text-4xl md:text-6xl lg:text-7xl text-white font-new-paris-kingsize-regular">MY DESIGN

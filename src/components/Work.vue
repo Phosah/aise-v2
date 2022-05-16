@@ -5,14 +5,13 @@ defineProps({
         required: true
     }
 })
-// const link = "/athena"
 </script>
 
 <template>
     <section>
         <div>
             <div v-for="(work, ix) in works" :key="ix" class="relative h-screen flex justify-center items-center">
-                <div class="absolute inset-0 opacity-95"><img class="object-cover w-full h-full" :src="work.img"
+                <div class="header absolute inset-0 opacity-60"><img class="object-cover w-full h-full" :src="work.img"
                         :alt="work.alt">
                 </div>
                 <div class="w-2/3 flex items-center justify-center absolute z-50">
@@ -29,3 +28,9 @@ defineProps({
         </div>
     </section>
 </template>
+
+<style>
+.header {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))
+}
+</style>

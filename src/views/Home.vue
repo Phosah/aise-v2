@@ -17,6 +17,7 @@ import logo12 from "../assets/haastrup-logo.png"
 import logo13 from "../assets/fambase-logo.png"
 import logo14 from "../assets/trustbreed-logo.png"
 import logo15 from "../assets/momo-logo.png"
+import testimonials1 from "../assets/testimonials-1.png"
 
 const clientsArr = [
   {
@@ -80,7 +81,26 @@ const clientsArr = [
     alt: "momo"
   },
 ]
-
+const testimonialsArr = [
+  {
+    img: testimonials1,
+    name: "Anthony Miclet",
+    title: "Co-Founder Daba",
+    comment: "Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum."
+  },
+  {
+    img: testimonials1,
+    name: "Sarah Angelo",
+    title: "Co-Founder Daba",
+    comment: " Eget turpis urna maecenas cras. Nisl dictum. Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu."
+  },
+  {
+    img: testimonials1,
+    name: "Anthony Miclet",
+    title: "Co-Founder Daba",
+    comment: "Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum. Ultricies massa malesuada viverra cras lobortis. "
+  },
+] 
 </script>
 
 <template>
@@ -152,7 +172,7 @@ const clientsArr = [
     <section class="max-w-7xl mx-auto my-40 px-6">
       <Clients :clients="clientsArr" />
     </section>
-    <Testimonials />
+    <Testimonials :stories="testimonialsArr" />
     <BookAppointment />
   </main>
 </template>

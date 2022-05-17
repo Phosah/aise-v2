@@ -1,18 +1,16 @@
 <script setup>
 import  {ref}  from "vue";
-
 const props = defineProps({
-    stories: {
-        type: Array,
-        required: true
-    },
-    num: {
-      type: Number, 
-      required: true
-    }
+  stories: {
+    type: Array,
+    required: true
+  },
+  num: {
+    type: Number, 
+    required: true
+  }
 })
 const emit = defineEmits(['showNext', 'showPrev'])
-
 const prev = () => {
   emit('showPrev')
 }

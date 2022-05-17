@@ -102,24 +102,13 @@ const testimonialsArr = [
     comment: "Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum. Ultricies massa malesuada viverra cras lobortis. "
   },
 ]
-const sum = ref(testimonialsArr.length -1);
+const sum = testimonialsArr.length -1;
 const num = ref(0)
 const next = () => {
-  if(num.value <= sum.value) {
-    num.value ++;
-  } else {
-    num.value = 0
-  }
-  console.log('current num : ' + num.value)
+  if(num.value < sum) {num.value++;} else {num.value = 0}
 }
-
 const prev = () => {
-  if(num.value < 0) {
-    num.value = sum.value
-    } else {
-    num.value--;
-  }
-  console.log('prev number: ' + num.value)
+  if(num.value <= 0){ num.value = sum} else {num.value--}
 }
 </script>
 

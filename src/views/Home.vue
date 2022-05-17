@@ -18,6 +18,7 @@ import logo13 from "../assets/fambase-logo.png"
 import logo14 from "../assets/trustbreed-logo.png"
 import logo15 from "../assets/momo-logo.png"
 import testimonials1 from "../assets/testimonials-1.png"
+import { ref } from 'vue';
 
 const clientsArr = [
   {
@@ -100,7 +101,26 @@ const testimonialsArr = [
     title: "Co-Founder Daba",
     comment: "Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum. Ultricies massa malesuada viverra cras lobortis. "
   },
-] 
+]
+const sum = ref(testimonialsArr.length -1);
+const num = ref(0)
+const next = () => {
+  if(num.value <= sum.value) {
+    num.value ++;
+  } else {
+    num.value = 0
+  }
+  console.log('current num : ' + num.value)
+}
+
+const prev = () => {
+  if(num.value < 0) {
+    num.value = sum.value
+    } else {
+    num.value--;
+  }
+  console.log('prev number: ' + num.value)
+}
 </script>
 
 <template>
@@ -172,7 +192,7 @@ const testimonialsArr = [
     <section class="max-w-7xl mx-auto my-40 px-6">
       <Clients :clients="clientsArr" />
     </section>
-    <Testimonials :stories="testimonialsArr" />
+    <Testimonials :stories="testimonialsArr" :num="num" @showNext="next" @showPrev="prev"/>
     <BookAppointment />
   </main>
 </template>

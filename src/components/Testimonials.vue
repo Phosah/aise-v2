@@ -5,24 +5,16 @@ const props = defineProps({
     stories: {
         type: Array,
         required: true
+    },
+    num: {
+      type: Number, 
+      required: true
     }
 })
-const num = ref(0)
-function next() {
-    if(num.value <= 2) {
-      num.value ++;
-    } else {
-      num.value = 0
-    }
-    console.log(num.value)
-}
-function prev() {
-    if(num.value < 0) {
-      num.value = 2
-      } else {
-      num.value--;
-    }
-    console.log(num.value)
+const emit = defineEmits(['showNext', 'showPrev'])
+
+const prev = () => {
+  emit('showPrev')
 }
 </script>
 
@@ -41,7 +33,7 @@ function prev() {
           <div @click="prev" class="flex items-center justify-center w-20 h-20 border border-brand-black-2 rounded-full"><img
               src="../assets/left-arrow.png" alt="Left arrow"></div>
           <div>1/8</div>
-          <div @click="next" class="flex items-center justify-center w-20 h-20 border border-brand-black-2 rounded-full"><img
+          <div @click="$emit('showNext')" class="flex items-center justify-center w-20 h-20 border border-brand-black-2 rounded-full"><img
               src="../assets/right-arrow.png" alt="Right arrow"></div>
         </div>
       </div>

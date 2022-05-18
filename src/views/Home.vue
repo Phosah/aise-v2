@@ -92,13 +92,13 @@ const testimonialsArr = [
   {
     img: testimonials1,
     name: "Sarah Angelo",
-    title: "Co-Founder Daba",
+    title: "Co-Founder Rockstar",
     comment: " Eget turpis urna maecenas cras. Nisl dictum. Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu."
   },
   {
     img: testimonials1,
-    name: "Anthony Miclet",
-    title: "Co-Founder Daba",
+    name: "Fredrick Williams",
+    title: "Co-Founder Dodger",
     comment: "Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum. Ultricies massa malesuada viverra cras lobortis. "
   },
 ]
@@ -127,10 +127,7 @@ const prev = () => {
         <h1 class="text-6xl md:text-10xl font-new-paris-kingsize">Designer</h1>
       </div>
       <div class="max-w-7xl mx-auto mt-20">
-        <div class="md:flex justify-end">
-          <div class="hidden md:block md:w-1/2 pl-12"><img class="w-32 h-32" src="../assets/random1.png"
-              alt="Random img"></div>
-          <div class="md:w-1/2"><img class="w-full" src="../assets/aise-photo-1.png" alt="Aise photo"></div>
+        <div class="md:flex justify-end">♠
         </div>
       </div>
     </section>

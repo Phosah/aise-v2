@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="dark:bg-brand-black-1 text-brand-black-4 dark:text-white">
+        <div class="dark:bg-brand-black-1 bg-white text-brand-black-4 dark:text-white">
             <!-- Header -->
             <section class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
                 <!-- <Works :work="this.$store.state.worksArr[4]" hideLink /> -->

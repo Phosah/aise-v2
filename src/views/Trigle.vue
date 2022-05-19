@@ -742,29 +742,24 @@
                     </div>
                 </div>
             </section>
-            <!-- <OtherProjects /> -->
-            <!-- <BookAppointment /> -->
+            <OtherProjects />
+            <BookAppointmentLight />
         </div>
     </div>
 </template>
 
 <script>
-// import BookAppointment from '../components/BookAppointment'
+import BookAppointmentLight from '../components/BookAppointmentLight.vue'
+// import BookAppointmentLight from '../components/BookAppointmentLight'
 // import Works from '../components/Works.vue';
-// import OtherProjects from '../components/OtherProjects.vue';
+import OtherProjects from '../components/OtherProjects.vue';
 
 export default {
-    name: 'Trigle',
-    // components: { BookAppointment, Works, OtherProjects },
+    name: "Trigle",
+    components: { BookAppointmentLight, OtherProjects },
     data() {
-        return {
-        }
+        return {};
     },
-    // computed: {
-    //     themeColor() {
-    //         return this.$store.state.themeColor;
-    //     }
-    // },
 }
 </script>
 

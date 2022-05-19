@@ -12,7 +12,7 @@
                     <router-link to="/works">Web 3 Works</router-link>
                 </div>
                 <div class="mb-8 md:mb-0">
-                    <router-link to="/">Other Works</router-link>
+                    <router-link to="/otherworks">Other Works</router-link>
                 </div>
                 <div class="mb-8 md:mb-0">
                     <router-link to="/about">About me</router-link>

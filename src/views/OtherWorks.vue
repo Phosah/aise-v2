@@ -10,10 +10,10 @@ import xerxesCover from "../assets/xerxes-cover-2.png"
 const worksArr = [
     {
         img: athenaCover,
-        alt: "Athena",
-        title: "Athena",
+        alt: "Doorstep Logistics",
+        title: "Doorstep Logistics",
         content: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users",
-        link: "/athena"
+        link: "/doorstep"
     },
     {
         img: aistakeCover,
@@ -47,7 +47,7 @@ onMounted(() => {
 <template>
     <div>
         <div class="flex items-center max-w-7xl mx-auto mt-20 px-6">
-            <h1 class="w-2/3 text-6xl md:text-9xl font-new-paris-kingsize">Web3</h1>
+            <h1 class="w-2/3 text-6xl md:text-9xl font-new-paris-kingsize">Other</h1>
         </div>
         <div class="flex justify-center max-w-7xl mx-auto mt-10 mb-20">
             <h1 class="text-6xl md:text-9xl font-new-paris-kingsize">Projects</h1>

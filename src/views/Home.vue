@@ -149,13 +149,27 @@ const prev = () => {
         <div class="md:flex-1 flex flex-col mb-8 p-8 bg-black text-white rounded-md">
           <h2 class="text-6xl font-new-paris-kingsize">Web 3</h2>
           <h2 class="mb-8 text-6xl font-new-paris-kingsize">Projects</h2>
-          <div class="mb-8">Explore</div>
+          <div>
+            <router-link to="/works">
+              <div class="flex items-center gap-x-8 mb-8">
+                <div class="text-xl">Explore</div>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </div>
+            </router-link>
+          </div>
           <img src="../assets/gif1.gif" alt="Web 3 Projects">
         </div>
-        <div class="md:flex-1 p-8 bg-white rounded-md">
+        <div class="md:flex-1 p-8 bg-white rounded-md mb-8">
           <h2 class="text-6xl font-new-paris-kingsize">Other</h2>
           <h2 class="mb-8 text-6xl font-new-paris-kingsize">Projects</h2>
-          <div class="mb-8">Explore</div>
+          <div>
+            <router-link to="/otherworks">
+              <div class="flex items-center gap-x-8 mb-8">
+                <div class="text-xl">Explore</div>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </div>
+            </router-link>
+          </div>
           <img class="w-full" src="../assets/gif2.gif" alt="Other Projects">
         </div>
       </div>

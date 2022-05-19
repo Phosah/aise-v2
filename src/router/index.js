@@ -7,6 +7,7 @@ import Xerxes from "../views/Xerxes.vue";
 import Pegasus from "../views/Pegasus.vue";
 import Test from "../views/Test.vue";
 import About from "../views/About.vue";
+import OtherWorks from "../views/OtherWorks.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,6 +51,11 @@ const router = createRouter({
       path: "/about",
       name: "about",
       component: About,
+    },
+    {
+      path: "/otherworks",
+      name: "OtherWorks",
+      component: OtherWorks,
     },
   ],
 });

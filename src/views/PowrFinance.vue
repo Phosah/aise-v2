@@ -1,11 +1,9 @@
 <template>
     <div>
-        <div class="dark:bg-brand-black-4 text-brand-black-4 dark:text-white">
-            <!-- Header -->
+        <div class="bg-white dark:bg-brand-black-3 text-brand-black-3 dark:text-white">
             <section class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
                 <!-- <Works :work="this.$store.state.worksArr[0]" hideLink /> -->
             </section>
-            <!-- End of Header -->
             <!-- Main -->
             <section class="max-w-7xl mx-auto py-20 px-16">
                 <div class="max-w-5xl mx-auto md:px-16">
@@ -16,7 +14,7 @@
                         class="mb-14 md:text-lg lg:text-xl"
                     >The growth and expansion of businesses and services are heavily dependent on seamless intercontinental financial transactions</p>
                     <div
-                        class="mb-14 md:w-10/12 pl-6 border-l-4 border-brand-black-4 dark:border-white text-xl md:text-2xl lg:text-4xl font-bold leading-normal lg:leading-normal"
+                        class="mb-14 md:w-10/12 pl-6 border-l-4 border-brand-black-3 dark:border-white text-xl md:text-2xl lg:text-4xl font-bold leading-normal lg:leading-normal"
                     >Power Finance is a solution that enables Businesses and Freelancers send and receive money from any country of your choice seamlessly</div>
                     <p
                         class="md:w-4/5 lg:w-5/6 md:text-lg lg:text-xl md:leading-8"
@@ -125,7 +123,7 @@
                 >Assessing who my user audiences are has helped me understand who I’m designing for, behaviors, and familiarities so that I can better align and approach design to capture the defined user audiences. Based on the results, I gathered data to back up my design decisions to maximize value for the users.</p>
                 <div class="md:flex md:space-x-6 mb-20 text-sm">
                     <div
-                        class="flex-1 mb-8 md:mb-0 pr-4 border-dashed border-b md:border-b-0 md:border-r border-brand-black-4 dark:border-white"
+                        class="flex-1 mb-8 md:mb-0 pr-4 border-dashed border-b md:border-b-0 md:border-r border-brand-black-3 dark:border-white"
                     >
                         <h3 class="mb-3 text-4xl md:text-5xl lg:text-7xl font-bold">70%</h3>
                         <p class="mb-1 font-bold">Of business men</p>
@@ -134,7 +132,7 @@
                         >Send money abroad to their clients using banks or 3rd party agents</p>
                     </div>
                     <div
-                        class="flex-1 mb-8 md:mb-0 pr-4 border-dashed border-b md:border-b-0 md:border-r border-brand-black-4 dark:border-white"
+                        class="flex-1 mb-8 md:mb-0 pr-4 border-dashed border-b md:border-b-0 md:border-r border-brand-black-3 dark:border-white"
                     >
                         <h3 class="mb-3 text-4xl md:text-5xl lg:text-7xl font-bold">55%</h3>
                         <p class="mb-1 font-bold">Of business men</p>
@@ -142,7 +140,7 @@
                             class="mb-6 md:mb-0"
                         >Prefer receiving their payment in cryptocurrency from clients</p>
                     </div>
-                    <div class="flex-1 pr-4 border-brand-black-4">
+                    <div class="flex-1 pr-4 border-brand-black-3">
                         <h3 class="mb-3 text-4xl md:text-5xl lg:text-7xl font-bold">63%</h3>
                         <p class="mb-1 font-bold">Of business men</p>
                         <p>Receive cash from customers and need a way to transfer cash abroad</p>
@@ -552,20 +550,20 @@
                 <p>This project is open to massive expansion and growth, the product aims to expand to cover sectors like payroll whereby organizations with employees working in multiple countries can all be registered and payments can be disbursed once and payroll run with each of them receiving their cash in their local currency or crypto if selected</p>
             </section>
 
-            <!-- <OtherProjects /> -->
-            <!-- <BookAppointment /> -->
+            <OtherProjects />
+            <BookAppointmentLight />
         </div>
     </div>
 </template>
 
 <script>
 // import Works from '../components/Works.vue'
-// import BookAppointment from '../components/BookAppointment.vue'
+import BookAppointmentLight from '../components/BookAppointmentLight.vue'
 // import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
 // import UserPersona from '../components/UserPersona.vue'
-// import OtherProjects from '../components/OtherProjects.vue'
+import OtherProjects from '../components/OtherProjects.vue'
 export default {
-    // components: { Works, BookAppointment, CompetitionAnalysis, UserPersona, OtherProjects },
+    components: { BookAppointmentLight, OtherProjects },
     data() {
         return {
             analysisArray: [

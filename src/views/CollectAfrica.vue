@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="dark:bg-brand-black-1 text-brand-black-4 dark:text-white">
+        <div class="bg-white dark:bg-brand-black-1 text-brand-black-3 dark:text-white">
             <!-- Header  -->
             <section class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
                 <!-- <Works :work="this.$store.state.worksArr[1]" hideLink /> -->
@@ -16,7 +16,7 @@
                         class="mb-14 md:text-lg lg:text-xl"
                     >Reinventing payment systems and account management for both large and small scale businesses across Africa</p>
                     <div
-                        class="mb-14 md:w-10/12 pl-6 border-l-4 border-brand-black-4 dark:border-white text-xl md:text-2xl lg:text-4xl font-bold leading-normal lg:leading-normal"
+                        class="mb-14 md:w-10/12 pl-6 border-l-4 border-brand-black-3 dark:border-white text-xl md:text-2xl lg:text-4xl font-bold leading-normal lg:leading-normal"
                     >Collect is a Fintech solution solving payments problems for large and small scale businesses all over Africa, with goals to make businesses harness their potentials and achieve greater heights</div>
                     <p
                         class="md:w-4/5 lg:w-5/6 md:text-lg lg:text-xl md:leading-8"
@@ -684,21 +684,21 @@
                     </div>
                 </div>
             </section>
-            <!-- <OtherProjects />
-            <BookAppointment /> -->
+            <OtherProjects />
+            <BookAppointmentLight />
         </div>
     </div>
 </template>
 
 <script>
-// import BookAppointment from '@/components/BookAppointment'
+import BookAppointmentLight from '../components/BookAppointmentLight.vue'
 // import Carousel from '@/components/Carousel'
 // import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
 // import UserPersona from '../components/UserPersona.vue'
 // import Works from '../components/Works.vue'
-// import OtherProjects from '../components/OtherProjects.vue'
+import OtherProjects from '../components/OtherProjects.vue'
 export default {
-    // components: { Carousel, BookAppointment, CompetitionAnalysis, UserPersona, Works, OtherProjects },
+    components: { BookAppointmentLight, OtherProjects },
     data() {
         return {
             cards: [

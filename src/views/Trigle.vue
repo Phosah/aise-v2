@@ -1,12 +1,9 @@
 <template>
     <div>
-        <div class="dark:bg-brand-black-1 text-brand-black-4 dark:text-white">
-            <!-- Header -->
+        <div class="bg-white dark:bg-brand-black-1 text-brand-black-3 dark:text-white">
             <section class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
                 <!-- <Works :work="this.$store.state.worksArr[3]" hideLink /> -->
             </section>
-            <!-- End of Header -->
-            <!-- Main -->
             <section class="max-w-7xl mx-auto py-10 md:py-20 px-16">
                 <div class="max-w-5xl mx-auto md:px-16">
                     <h1
@@ -16,7 +13,7 @@
                         class="mb-14 md:text-lg lg:text-xl"
                     >Bringing simplicity and flexibility to having your meals</p>
                     <div
-                        class="mb-14 md:w-10/12 pl-6 border-l-4 border-brand-black-4 dark:border-white text-xl md:text-2xl lg:text-4xl font-bold leading-normal lg:leading-normal"
+                        class="mb-14 md:w-10/12 pl-6 border-l-4 border-brand-black-3 dark:border-white text-xl md:text-2xl lg:text-4xl font-bold leading-normal lg:leading-normal"
                     >Trigle is a restaurant finding app with a framework developed for both tourists, and residents to find restaurants closest to them depending on the location</div>
                     <p
                         class="md:w-4/5 lg:w-5/6 md:text-lg lg:text-xl md:leading-8"
@@ -170,25 +167,25 @@
                             <div class="flex items-center space-x-2 w-7/12 mb-4">
                                 <p>2017</p>
                                 <div
-                                    class="flex justify-end py-2 px-3 bg-brand-gray-light-2 dark:bg-brand-gray-dark-1 w-full font-semibold rounded-md"
+                                    class="flex justify-end py-2 px-3 bg-brand-gray-5 dark:bg-brand-gray-dark-1 w-full font-semibold rounded-md"
                                 >$337</div>
                             </div>
                             <div class="flex items-center space-x-2 w-8/12 mb-4">
                                 <p>2021</p>
                                 <div
-                                    class="flex justify-end py-2 px-3 bg-brand-orange-3 w-full font-semibold text-white rounded-md"
+                                    class="flex justify-end py-2 px-3 bg-brand-orange-1 w-full font-semibold text-white rounded-md"
                                 >$375</div>
                             </div>
                             <div class="flex items-center space-x-2 w-10/12 mb-4">
                                 <p>2025</p>
                                 <div
-                                    class="flex justify-end py-2 px-3 bg-brand-gray-light-2 dark:bg-brand-gray-dark-1 w-full font-semibold rounded-md"
+                                    class="flex justify-end py-2 px-3 bg-brand-gray-5 dark:bg-brand-gray-dark-1 w-full font-semibold rounded-md"
                                 >$470</div>
                             </div>
                             <div class="flex items-center space-x-2 mb-4">
                                 <p>2030</p>
                                 <div
-                                    class="flex justify-end py-2 px-3 bg-brand-gray-light-2 dark:bg-brand-gray-dark-1 w-full font-semibold rounded-md"
+                                    class="flex justify-end py-2 px-3 bg-brand-gray-5 dark:bg-brand-gray-dark-1 w-full font-semibold rounded-md"
                                 >$650</div>
                             </div>
                         </div>
@@ -213,22 +210,22 @@
                         class="md:flex md:flex-wrap md:justify-center md:space-x-4 text-white font-semibold"
                     >
                         <div
-                            class="mb-4 py-4 px-5 rounded-xl bg-gradient-to-r from-brand-blue-3 via-brand-blue-4 to-brand-blue-5"
+                            class="mb-4 py-4 px-5 rounded-xl bg-gradient-to-r from-brand-blue-2 via-brand-blue-3 to-brand-blue-4"
                         >Stackholder meetings</div>
                         <div
-                            class="mb-4 py-4 px-5 rounded-xl bg-gradient-to-r from-brand-green-2 to-brand-green-3"
+                            class="mb-4 py-4 px-5 rounded-xl bg-gradient-to-r from-brand-green-1 to-brand-green-2"
                         >Reviews</div>
                         <div
                             class="mb-4 py-4 px-5 rounded-xl bg-gradient-to-r from-brand-pink-1 to-brand-pink-2"
                         >UX design</div>
                         <div
-                            class="mb-4 py-4 px-5 rounded-xl bg-gradient-to-r from-brand-orange-4 to-brand-orange-5"
+                            class="mb-4 py-4 px-5 rounded-xl bg-gradient-to-r from-brand-orange-2 to-brand-orange-3"
                         >UI design</div>
                         <div
-                            class="mb-4 py-4 px-5 rounded-xl bg-gradient-to-r from-brand-purple-2 to-brand-purple-3"
+                            class="mb-4 py-4 px-5 rounded-xl bg-gradient-to-r from-brand-purple-1 to-brand-purple-2"
                         >Testing</div>
                         <div
-                            class="mb-4 py-4 px-5 rounded-xl bg-gradient-to-r from-brand-red-2 to-brand-red-3"
+                            class="mb-4 py-4 px-5 rounded-xl bg-gradient-to-r from-brand-red-1 to-brand-red-2"
                         >Documentation</div>
                     </div>
                 </div>
@@ -422,19 +419,19 @@
                     >Although I was the sole designer of this project I didn't work alone, it was a strong team effort that included the project manager, content manager, Stakeholders, and three skilled developers. We communicated and brainstormed throughout the entire process</p>
                     <div class="grid md:grid-cols-3 gap-4">
                         <div
-                            class="md:mb-10 p-6 bg-brand-gray-light-1 dark:bg-brand-gray-dark-1 rounded-md"
+                            class="md:mb-10 p-6 bg-brand-gray-5 dark:bg-brand-gray-dark-1 rounded-md"
                         >
                             Create a way to access to
                             <span class="font-bold">multiple restaurants</span> at the same time
                         </div>
                         <div
-                            class="md:mb-10 p-6 bg-brand-gray-light-1 dark:bg-brand-gray-dark-1 rounded-md"
+                            class="md:mb-10 p-6 bg-brand-gray-5 dark:bg-brand-gray-dark-1 rounded-md"
                         >
                             How might we be able to
                             <span class="font-bold">book a space</span> for hangouts with friends
                         </div>
                         <div
-                            class="md:mb-10 p-6 bg-brand-gray-light-1 dark:bg-brand-gray-dark-1 rounded-md"
+                            class="md:mb-10 p-6 bg-brand-gray-5 dark:bg-brand-gray-dark-1 rounded-md"
                         >
                             Get clear
                             <span class="font-bold">directions to such restaurants</span> without a third party help
@@ -480,13 +477,13 @@
                     <img
                         v-if="themeColor === 'light'"
                         class="w-full"
-                        src="../assets/other-works/map-ordering.png"
+                        src="../assets/other-works/map-ordering-dark.png"
                         alt="User Journey map (Ordering)"
                     />
                     <img
                         v-else
                         class="w-full"
-                        src="../assets/other-works/map-ordering-dark.png"
+                        src="../assets/other-works/map-ordering.png"
                         alt="User Journey map (Ordering)"
                     />
                 </div>
@@ -494,13 +491,13 @@
                     <img
                         v-if="themeColor === 'light'"
                         class="w-full"
-                        src="../assets/other-works/map-booking.png"
+                        src="../assets/other-works/map-booking-dark.png"
                         alt="User Journey map (Booking)"
                     />
                     <img
                         v-else
                         class="w-full"
-                        src="../assets/other-works/map-booking-dark.png"
+                        src="../assets/other-works/map-booking.png"
                         alt="User Journey map (Booking)"
                     />
                 </div>
@@ -637,11 +634,11 @@
                     class="mb-24 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair text-center"
                 >+70 design screens</h1>
                 <div>
-                    <img v-if="themeColor === 'light'" src="../assets/other-works/screens.png" alt="Screens" />
-                    <img v-else src="../assets/other-works/screens-dark.png" alt="Screens" />
+                    <img v-if="themeColor === 'light'" src="../assets/other-works/screens-dark.png" alt="Screens" />
+                    <img v-else src="../assets/other-works/screens.png" alt="Screens" />
                 </div>
             </section>
-            <section class="py-36 bg-brand-black-6 dark:bg-brand-gray-dark-1">
+            <section class="py-36 bg-brand-black-4 dark:bg-brand-gray-dark-1">
                 <div class="hidden md:block">
                     <div class="flex flex-wrap items-center justify-center space-x-4 mb-14">
                         <div class="flex-1">
@@ -730,13 +727,13 @@
                         <img
                             v-if="themeColor === 'light'"
                             class="mx-auto md:w-full"
-                            src="../assets/other-works/success-1.png"
+                            src="../assets/other-works/success-photo-dark.png"
                             alt="Success"
                         />
                         <img
                             v-else
                             class="mx-auto md:w-full"
-                            src="../assets/other-works/success-1-dark.png"
+                            src="../assets/other-works/success-photo.png"
                             alt="Success"
                         />
                     </div>
@@ -750,7 +747,6 @@
 
 <script>
 import BookAppointmentLight from '../components/BookAppointmentLight.vue'
-// import BookAppointmentLight from '../components/BookAppointmentLight'
 // import Works from '../components/Works.vue';
 import OtherProjects from '../components/OtherProjects.vue';
 

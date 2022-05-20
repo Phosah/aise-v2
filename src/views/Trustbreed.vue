@@ -1,11 +1,9 @@
 <template>
     <div>
-        <div class="dark:bg-brand-black-1 text-brand-black-4 dark:text-white">
-            <!-- Header -->
-            <section class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
+        <div class="bg-white dark:bg-brand-black-1 text-brand-black-3 dark:text-white">
+            <header class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
                 <!-- <Works :work="this.$store.state.worksArr[2]" hideLink /> -->
-            </section>
-            <!-- End of Header -->
+            </header>
             <section class="max-w-7xl mx-auto py-10 md:py-20 px-16">
                 <div class="max-w-5xl mx-auto md:px-16">
                     <h1 class="mb-4 lg:mb-7 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair">TrustBreed
@@ -13,7 +11,7 @@
                     <p class="mb-14 md:text-lg lg:text-xl">As a customer, have your voice heard and get the best of
                         services from the companies / products that serve you.</p>
                     <div
-                        class="mb-14 md:w-10/12 pl-6 border-l-4 border-brand-black-4 dark:border-white text-xl md:text-2xl lg:text-4xl font-bold leading-normal lg:leading-normal">
+                        class="mb-14 md:w-10/12 pl-6 border-l-4 border-brand-black-3 dark:border-white text-xl md:text-2xl lg:text-4xl font-bold leading-normal lg:leading-normal">
                         Trustbreed is a customer support tool to help users of any and every product get the best of
                         services from their respective providers</div>
                     <p class="md:w-4/5 lg:w-5/6 md:text-lg lg:text-xl md:leading-8">Trustbreed was born to help
@@ -34,7 +32,7 @@
             <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
                 <h2 class="mb-8 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">My Approach</h2>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 text-white text-sm md:text-base">
-                    <div class="p-8 rounded-lg bg-brand-orange-6">
+                    <div class="p-8 rounded-lg bg-brand-orange-4">
                         <div class="h-64 bg-one bg-contain bg-center bg-no-repeat">
                             <h3 class="text-lg md:text-xl lg:text-2xl mb-6 font-bold font-playfair">Discover</h3>
                             <ul class="list-disc pl-6">
@@ -44,7 +42,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="p-8 rounded-lg bg-brand-blue-6">
+                    <div class="p-8 rounded-lg bg-brand-blue-5">
                         <div class="h-64 bg-two bg-contain bg-center bg-no-repeat">
                             <h3 class="text-lg md:text-xl lg:text-2xl mb-6 font-bold font-playfair">User research</h3>
                             <ul class="list-disc pl-6">
@@ -65,7 +63,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="p-8 rounded-lg bg-brand-red-4">
+                    <div class="p-8 rounded-lg bg-brand-red-3">
                         <div class="h-64 bg-four bg-contain bg-center bg-no-repeat">
                             <h3 class="text-lg md:text-xl lg:text-2xl mb-6 font-bold font-playfair">Usability Testing
                             </h3>
@@ -76,7 +74,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="h-80 p-8 rounded-lg bg-brand-purple-4">
+                    <div class="h-80 p-8 rounded-lg bg-brand-purple-3">
                         <div class="h-64 bg-five bg-contain bg-center bg-no-repeat">
                             <h4 class="text-lg lg:text-2xl mb-6 font-bold font-playfair">Visual Design</h4>
                             <ul class="list-disc pl-6">
@@ -258,8 +256,8 @@
                     users, getting a clearer idea about pain points and what support would they expect from the product.
                 </p>
                 <div>
-                    <img v-if="themeColor === 'light'" src="../assets/other-works/user-map.png" alt="User map" />
-                    <img v-else src="../assets/other-works/user-map-dark.png" alt="User map" />
+                    <img v-if="themeColor === 'light'" src="../assets/other-works/user-map-dark.png" alt="User map" />
+                    <img v-else src="../assets/other-works/user-map.png" alt="User map" />
                 </div>
             </section>
             <section>
@@ -371,8 +369,8 @@
                         only necessary information and buttons. After collecting the information, I created a rainbow
                         sheet to identify valuable insights.</p>
                 </div>
-                <div class="hidden md:block rounded-lg rounded-t-lg bg-brand-black-5 text-sm text-white">
-                    <div class="flex space-x-10 px-6 py-4 bg-brand-black-7 rounded-t-lg">
+                <div class="hidden md:block rounded-lg rounded-t-lg bg-brand-gray-7 text-sm text-white">
+                    <div class="flex space-x-10 px-6 py-4 bg-brand-gray-8 rounded-t-lg">
                         <p class="flex-1">Test Feedbacks</p>
                         <p class="flex-1">Possible Solutions</p>
                     </div>
@@ -400,7 +398,7 @@
                 </div>
                 <!-- Mobile version -->
                 <div class="block md:hidden text-sm text-white">
-                    <div class="mb-10 divide-y divide-white divide-opacity-5 rounded-lg bg-brand-black-5">
+                    <div class="mb-10 divide-y divide-white divide-opacity-5 rounded-lg bg-brand-gray-7">
                         <p class="px-6 py-4 bg-brand-black-7 rounded-t-lg">Test Feedbacks</p>
                         <p class="p-6">Was constantly looking for the search field to easily search for companies and
                             could not find it</p>
@@ -409,7 +407,7 @@
                         <p class="p-6">On the dashboard, the 4 categories take too much space</p>
                         <p class="p-6">Wanted to make a video of the service I received but could not</p>
                     </div>
-                    <div class="divide-y divide-white divide-opacity-5 rounded-lg bg-brand-black-5">
+                    <div class="divide-y divide-white divide-opacity-5 rounded-lg bg-brand-gray-7">
                         <p class="px-6 py-4 bg-brand-black-7 rounded-t-lg">Possible Solutions</p>
                         <p class="p-6">The search box should be brought lower to within the section so its easier to
                             spot by users</p>
@@ -430,8 +428,8 @@
                     for following and going through my documented processes. Feel free to connect with me on LinkedIn,
                     Behance, Dribbble, and Twitter.</p>
             </section>
-            <!-- <OtherProjects /> -->
-            <!-- <BookAppointment /> -->
+            <OtherProjects />
+            <BookAppointmentLight />
         </div>
     </div>
 </template>
@@ -439,10 +437,10 @@
 <script>
 // import Works from '@/components/Works'
 // import Carousel from '@/components/Carousel'
-// import BookAppointment from '../components/BookAppointment.vue'
-// import OtherProjects from '../components/OtherProjects.vue'
+import BookAppointmentLight from '../components/BookAppointmentLight.vue'
+import OtherProjects from '../components/OtherProjects.vue'
 export default {
-    // components: { Works, Carousel, BookAppointment, OtherProjects },
+    components: { BookAppointmentLight, OtherProjects },
     data() {
         return {
             work: {

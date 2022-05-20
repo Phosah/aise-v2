@@ -1,11 +1,9 @@
 <template>
     <div>
-        <div class="dark:bg-brand-black-1 bg-white text-brand-black-4 dark:text-white">
-            <!-- Header -->
-            <section class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
+        <div class="dark:bg-brand-black-1 bg-white text-brand-black-3 dark:text-white">
+            <header class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
                 <!-- <Works :work="this.$store.state.worksArr[4]" hideLink /> -->
-            </section>
-            <!-- End of Header -->
+            </header>
             <section class="max-w-7xl mx-auto py-20 px-16">
                 <div class="max-w-5xl mx-auto md:px-16">
                     <h1
@@ -15,7 +13,7 @@
                         class="mb-14 md:text-lg lg:text-xl"
                     >The fastest way to ship your packages and parcels around the world</p>
                     <div
-                        class="mb-14 md:w-10/12 pl-6 border-l-4 border-brand-black-4 dark:border-white text-xl md:text-2xl lg:text-4xl font-bold leading-normal lg:leading-normal"
+                        class="mb-14 md:w-10/12 pl-6 border-l-4 border-brand-black-3 dark:border-white text-xl md:text-2xl lg:text-4xl font-bold leading-normal lg:leading-normal"
                     >Doorstep is a solution that helps to simplify logistics and shipping services to ensure quick delivery of packages in a simplified processes</div>
                     <p
                         class="md:w-4/5 lg:w-5/6 md:text-lg lg:text-xl md:leading-8"
@@ -67,13 +65,13 @@
                         <img
                             v-if="themeColor === 'light'"
                             class="w-full"
-                            src="../assets/other-works/problem-photo.png"
+                            src="../assets/other-works/problem-photo-dark.png"
                             alt="Project"
                         />
                         <img
                             v-else
                             class="w-full"
-                            src="../assets/other-works/problem-photo-dark.png"
+                            src="../assets/other-works/problem-photo.png"
                             alt="Project"
                         />
                     </div>
@@ -96,16 +94,16 @@
                     class="md:flex md:flex-wrap md:justify-center md:space-x-4 text-white font-semibold"
                 >
                     <div
-                        class="mb-4 py-4 px-8 rounded-xl bg-gradient-to-r from-brand-blue-3 via-brand-blue-4 to-brand-blue-5"
+                        class="mb-4 py-4 px-8 rounded-xl bg-gradient-to-r from-brand-blue-2 via-brand-blue-3 to-brand-blue-4"
                     >Week 1: Interviews</div>
                     <div
-                        class="mb-4 py-4 px-8 rounded-xl bg-gradient-to-r from-brand-orange-4 to-brand-orange-5"
+                        class="mb-4 py-4 px-8 rounded-xl bg-gradient-to-r from-brand-orange-2 to-brand-orange-3"
                     >Week 2: Research</div>
                     <div
-                        class="mb-4 py-4 px-8 rounded-xl bg-gradient-to-r from-brand-purple-2 to-brand-purple-3"
+                        class="mb-4 py-4 px-8 rounded-xl bg-gradient-to-r from-brand-purple-1 to-brand-purple-2"
                     >Week 3: Brainstorming & IA</div>
                     <div
-                        class="mb-4 py-4 px-8 rounded-xl bg-gradient-to-r from-brand-red-2 to-brand-red-3"
+                        class="mb-4 py-4 px-8 rounded-xl bg-gradient-to-r from-brand-red-1 to-brand-red-2"
                     >Week 4: Visual design</div>
                 </div>
             </section>
@@ -147,13 +145,13 @@
                         <img
                             v-if="themeColor === 'light'"
                             class="w-full"
-                            src="../assets/other-works/research-photo.png"
+                            src="../assets/other-works/research-photo-dark.png"
                             alt="Quantitative research"
                         />
                         <img
                             v-else
                             class="w-full"
-                            src="../assets/other-works/research-photo-dark.png"
+                            src="../assets/other-works/research-photo.png"
                             alt="Quantitative research"
                         />
                     </div>
@@ -189,7 +187,7 @@
                 </div>
                 <!-- End of Mobile version -->
             </section>
-            <section class="max-w-7xl mx-auto py-20 px-4 md:px-16 text-white bg-brand-black-4">
+            <section class="max-w-7xl mx-auto py-20 px-4 md:px-16 text-white bg-brand-black-3">
                 <h2
                     class="mb-16 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair text-center"
                 >Personas</h2>
@@ -206,9 +204,9 @@
                                 </div>
                             </div>
                             <div
-                                class="lg:w-52 mb-6 p-6 rounded-md bg-brand-black-5"
+                                class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7"
                             >Rarely use logistics services</div>
-                            <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-black-5">
+                            <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7">
                                 <h4 class="mb-4 font-bold text-sm">About Jonathan</h4>
                                 <p class>
                                     Jonathan is an Accountant with over 3 years working experience, he is a graduate of the Convenant university Ota.
@@ -217,19 +215,19 @@
                             </div>
                         </div>
                         <div class="sm:flex-1">
-                            <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-black-5">
+                            <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7">
                                 <h4 class="mb-4 font-bold text-sm">Demographics</h4>
                                 <p class>27 years old</p>
                                 <p class>Lives in Lagos, Nigeria</p>
                                 <p class>Single</p>
                             </div>
-                            <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-black-5">
+                            <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7">
                                 <h4 class="mb-4 font-bold text-sm">Goals and needs</h4>
                                 <p
                                     class
                                 >A means to be able to send packages to his siblings abroad and be aware of everything going on along the delivery</p>
                             </div>
-                            <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-black-5">
+                            <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7">
                                 <h4 class="mb-4 font-bold text-sm">Pain points</h4>
                                 <p
                                     class
@@ -249,9 +247,9 @@
                                 </div>
                             </div>
                             <div
-                                class="lg:w-52 mb-6 p-6 rounded-md bg-brand-black-5"
+                                class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7"
                             >Very frequency in using logistics services</div>
-                            <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-black-5">
+                            <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7">
                                 <h4 class="mb-4 font-bold text-sm">About Damilola</h4>
                                 <p
                                     class
@@ -259,19 +257,19 @@
                             </div>
                         </div>
                         <div class="sm:flex-1">
-                            <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-black-5">
+                            <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7">
                                 <h4 class="mb-4 font-bold text-sm">Demographics</h4>
                                 <p class>32 years old</p>
                                 <p class>Lives in Kenya, Nairobi</p>
                                 <p class>Married</p>
                             </div>
-                            <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-black-5">
+                            <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7">
                                 <h4 class="mb-4 font-bold text-sm">Goals and needs</h4>
                                 <p
                                     class
                                 >A means to be able to send my goods to to my business partners at flexible timings based on urgency</p>
                             </div>
-                            <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-black-5">
+                            <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7">
                                 <h4 class="mb-4 font-bold text-sm">Pain points</h4>
                                 <p
                                     class
@@ -290,15 +288,15 @@
                                 src="../assets/other-works/fedex.png"
                                 alt="FedEx"
                             />
-                            <img v-else src="../assets/other-works/fedex-dark.png" alt="FedEx" />
+                            <img v-else src="../assets/other-works/fedex.png" alt="FedEx" />
                         </div>
                         <div>
                             <img v-if="themeColor === 'light'" src="../assets/other-works/dhl.png" alt="DHL" />
-                            <img v-else src="../assets/other-works/dhl-dark.png" alt="DHL" />
+                            <img v-else src="../assets/other-works/dhl.png" alt="DHL" />
                         </div>
                         <div>
                             <img v-if="themeColor === 'light'" src="../assets/other-works/ups.png" alt="UPS" />
-                            <img v-else src="../assets/other-works/ups-dark.png" alt="UPS" />
+                            <img v-else src="../assets/other-works/ups.png" alt="UPS" />
                         </div>
                         <div>
                             <img
@@ -306,7 +304,7 @@
                                 src="../assets/other-works/xpologistics.png"
                                 alt="XPOLogistics"
                             />
-                            <img v-else src="../assets/other-works/xpologistics-dark.png" alt="XPOLogistics" />
+                            <img v-else src="../assets/other-works/xpologistics.png" alt="XPOLogistics" />
                         </div>
                         <div>
                             <img
@@ -314,11 +312,11 @@
                                 src="../assets/other-works/expeditors.png"
                                 alt="Expeditors"
                             />
-                            <img v-else src="../assets/other-works/expeditors-dark.png" alt="Expeditors" />
+                            <img v-else src="../assets/other-works/expeditors.png" alt="Expeditors" />
                         </div>
                         <div>
                             <img v-if="themeColor === 'light'" src="../assets/other-works/gig.png" alt="Gig" />
-                            <img v-else src="../assets/other-works/gig-dark.png" alt="Gig" />
+                            <img v-else src="../assets/other-works/gig.png" alt="Gig" />
                         </div>
                     </div>
                     <div class="flex-1">
@@ -370,7 +368,7 @@
                 <div class="md:flex md:space-x-6 text-sm md:text-base">
                     <div class="md:flex-1 mb-12 md:mb-0">
                         <div class="flex items-center mb-10">
-                            <div class="w-16 h-16 rounded-full bg-brand-green-1"></div>
+                            <div class="w-16 h-16 rounded-full bg-brand-green-3"></div>
                             <h3
                                 class="transform -translate-x-4 text-xl md:text-2xl lg:text-3xl font-bold font-playfair"
                             >Business goal</h3>
@@ -378,7 +376,7 @@
                         <div class="flex space-x-5 mb-6">
                             <div class>
                                 <img
-                                    class="p-2 rounded-full bg-brand-green-1"
+                                    class="p-2 rounded-full bg-brand-green-3"
                                     src="../assets/other-works/tick-white.png"
                                     alt="Tick"
                                 />
@@ -390,7 +388,7 @@
                         <div class="flex space-x-5">
                             <div>
                                 <img
-                                    class="p-2 rounded-full bg-brand-green-1"
+                                    class="p-2 rounded-full bg-brand-green-3"
                                     src="../assets/other-works/tick-white.png"
                                     alt="Tick"
                                 />
@@ -400,7 +398,7 @@
                     </div>
                     <div class="md:flex-1 mb-12 md:mb-0">
                         <div class="flex items-center mb-10">
-                            <div class="w-16 h-16 rounded-full bg-brand-green-1"></div>
+                            <div class="w-16 h-16 rounded-full bg-brand-green-3"></div>
                             <h3
                                 class="transform -translate-x-4 text-xl md:text-2xl lg:text-3xl font-bold font-playfair"
                             >Target users</h3>
@@ -408,7 +406,7 @@
                         <div class="flex space-x-5 mb-6">
                             <div>
                                 <img
-                                    class="p-2 rounded-full bg-brand-green-1"
+                                    class="p-2 rounded-full bg-brand-green-3"
                                     src="../assets/other-works/tick-white.png"
                                     alt="Tick"
                                 />
@@ -418,7 +416,7 @@
                         <div class="flex space-x-5">
                             <div>
                                 <img
-                                    class="p-2 rounded-full bg-brand-green-1"
+                                    class="p-2 rounded-full bg-brand-green-3"
                                     src="../assets/other-works/tick-white.png"
                                     alt="Tick"
                                 />
@@ -428,7 +426,7 @@
                     </div>
                     <div class="md:flex-1 mb-12 md:mb-0">
                         <div class="flex items-center mb-10">
-                            <div class="w-16 h-16 rounded-full bg-brand-green-1"></div>
+                            <div class="w-16 h-16 rounded-full bg-brand-green-3"></div>
                             <h3
                                 class="transform -translate-x-4 text-xl md:text-2xl lg:text-3xl font-bold font-playfair"
                             >Platforms</h3>
@@ -436,7 +434,7 @@
                         <div class="flex space-x-5 mb-6">
                             <div>
                                 <img
-                                    class="p-2 rounded-full bg-brand-green-1"
+                                    class="p-2 rounded-full bg-brand-green-3"
                                     src="../assets/other-works/tick-white.png"
                                     alt="Tick"
                                 />
@@ -446,7 +444,7 @@
                         <div class="flex space-x-5">
                             <div>
                                 <img
-                                    class="p-2 rounded-full bg-brand-green-1"
+                                    class="p-2 rounded-full bg-brand-green-3"
                                     src="../assets/other-works/tick-white.png"
                                     alt="Tick"
                                 />
@@ -538,8 +536,8 @@
                     <img src="../assets/other-works/conclusion.png" alt="Conclusion" />
                 </div>
             </section>
-            <!-- <OtherProjects /> -->
-            <!-- <BookAppointment /> -->
+            <OtherProjects />
+            <BookAppointmentLight />
         </div>
     </div>
 </template>
@@ -547,11 +545,11 @@
 <script>
 // import Works from '../components/Works'
 // import ProjectResponsibilities from '../components/ProjectResponsibilities'
-// import BookAppointment from '../components/BookAppointment'
-// import OtherProjects from '../components/OtherProjects.vue'
+import BookAppointmentLight from '../components/BookAppointmentLight.vue'
+import OtherProjects from '../components/OtherProjects.vue'
 export default {
     name: "Doorstep",
-    // components: { Works, ProjectResponsibilities, BookAppointment, OtherProjects },
+    components: { BookAppointmentLight, OtherProjects },
     data() {
         return {
             projects: [
@@ -608,13 +606,13 @@ export default {
                     ]
                 }
             ]
-        }
+        };
     },
-    computed: {
-        themeColor() {
-            // return this.$store.state.themeColor;
-        }
-    },
+    // computed: {
+    //     themeColor() {
+    //         // return this.$store.state.themeColor;
+    //     }
+    // },
 }
 </script>
 

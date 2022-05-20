@@ -10,6 +10,7 @@ module.exports = {
             3: "#B1ABAB",
             4: "#252525",
             5: "#F5F6FA",
+            7: "#1A1A1A",
           },
           black: {
             1: "#0E0F14",
@@ -31,6 +32,7 @@ module.exports = {
           green: {
             1: "#ADD100",
             2: "#7B920A",
+            3: "#006F43",
           },
           pink: {
             1: "#EC008C",

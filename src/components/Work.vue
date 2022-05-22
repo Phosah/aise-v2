@@ -10,8 +10,8 @@ defineProps({
 <template>
     <section>
         <div class="bg-gradient-to-tr from-slate-300 to-slate-600">
-            <div v-for="(work, ix) in works" :key="ix" class="relative h-screen flex justify-center items-center -opacity-60">
-                <div class="header-cover absolute inset-0 mix-blend-multiply"><img class="object-cover w-full h-full" :src="work.img"
+            <div v-for="(work, ix) in works" :key="ix" class="relative h-screen flex justify-center items-center">
+                <div class="absolute inset-0 mix-blend-multiply"><img class="object-cover w-full h-full sticky top-0" :src="work.img"
                         :alt="work.alt">
                 </div>
                 <div class="w-2/3 flex items-center justify-center absolute z-50">
@@ -30,7 +30,4 @@ defineProps({
 </template>
 
 <style>
-.header-cover {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))
-}
 </style>

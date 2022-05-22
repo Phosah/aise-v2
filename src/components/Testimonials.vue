@@ -1,5 +1,5 @@
 <script setup>
-import  {ref}  from "vue";
+import  {computed, ref}  from "vue";
 const props = defineProps({
   stories: {
     type: Array,
@@ -8,12 +8,17 @@ const props = defineProps({
   num: {
     type: Number, 
     required: true
+  },
+  ix: {
+    type: Number, 
+    required: true
   }
 })
 const emit = defineEmits(['showNext', 'showPrev'])
 const prev = () => {
   emit('showPrev')
 }
+
 </script>
 
 <template>
@@ -28,13 +33,14 @@ const prev = () => {
           </div>
         </div>
         <div class="hidden md:flex items-center space-x-12">
-          <div @click="prev" class="flex items-center justify-center w-20 h-20 border border-brand-black-2 rounded-full"><img
+          <div @click="prev" class="flex items-center justify-center w-20 h-20 border border-brand-black-2 rounded-full hover:bg-slate-300"><img
               src="../assets/left-arrow.png" alt="Left arrow"></div>
-          <div>1/8</div>
-          <div @click="$emit('showNext')" class="flex items-center justify-center w-20 h-20 border border-brand-black-2 rounded-full"><img
+          <div>{{ix}}/{{stories.length}}</div>
+          <div @click="$emit('showNext')" class="flex items-center justify-center w-20 h-20 border border-brand-black-2 rounded-full hover:bg-slate-300"><img
               src="../assets/right-arrow.png" alt="Right arrow"></div>
         </div>
       </div>
+         {{stories[num]}}
       <p class="text-xl md:text-5xl text-brand-gray-2 md:leading-snug">{{stories[num].comment}}</p>
     </section>
 </template>

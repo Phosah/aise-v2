@@ -18,7 +18,7 @@ import logo13 from "../assets/fambase-logo.png"
 import logo14 from "../assets/trustbreed-logo.png"
 import logo15 from "../assets/momo-logo.png"
 import testimonials1 from "../assets/testimonials-1.png"
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 
 const clientsArr = [
   {
@@ -102,14 +102,36 @@ const testimonialsArr = [
     comment: "Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum. Ultricies massa malesuada viverra cras lobortis. "
   },
 ]
-const sum = testimonialsArr.length -1;
+const sum = testimonialsArr.length - 1;
 const num = ref(0)
+const elemIdx = ref(1);
 const next = () => {
-  if(num.value < sum) {num.value++;} else {num.value = 0}
+  if(num.value < sum) {
+    num.value++;
+    elemIdx.value++;
+  } else {
+    num.value = 0
+    elemIdx.value = 1;
+  }
 }
 const prev = () => {
-  if(num.value <= 0){ num.value = sum} else {num.value--}
+  if(num.value <= 0){
+    num.value = sum
+    elemIdx.value = sum + 1;
+  } else {
+    num.value--;
+    elemIdx.value--;
+  }
 }
+// const getIndex = () => {
+//   testimonialsArr.findIndex(elemIdx => {
+//     return elemIdx.name === "Fredrick Williams";
+//   });
+//   console.log(elemIdx.value)
+// }
+// onMounted(() => {
+//   getIndex();
+// })
 </script>
 
 <template>
@@ -192,7 +214,7 @@ const prev = () => {
     <section class="max-w-7xl mx-auto my-40 px-6">
       <Clients :clients="clientsArr" />
     </section>
-    <Testimonials :stories="testimonialsArr" :num="num" @showNext="next" @showPrev="prev"/>
+    <Testimonials :stories="testimonialsArr" :num="num" @showNext="next" @showPrev="prev" :ix="elemIdx"/>
     <BookAppointment />
   </main>
 </template>

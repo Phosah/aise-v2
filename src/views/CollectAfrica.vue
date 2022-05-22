@@ -1,11 +1,9 @@
 <template>
     <div>
         <div class="bg-white dark:bg-brand-black-1 text-brand-black-3 dark:text-white">
-            <!-- Header  -->
-            <section class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
+            <header class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
                 <!-- <Works :work="this.$store.state.worksArr[1]" hideLink /> -->
-            </section>
-            <!-- End of Header  -->
+            </header>
             <!-- Main section -->
             <section class="max-w-7xl mx-auto py-10 md:py-20 px-16">
                 <div class="max-w-5xl mx-auto md:px-16">

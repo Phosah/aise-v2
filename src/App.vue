@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar.vue"
 </script>
 
 <template>
-  <main class="font-euclid-circular text-sm">
+  <main class="font-euclid-circular">
     <Navbar />
     <div>
       <router-view></router-view>

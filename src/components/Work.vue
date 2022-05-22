@@ -9,9 +9,9 @@ defineProps({
 
 <template>
     <section>
-        <div>
-            <div v-for="(work, ix) in works" :key="ix" class="relative h-screen flex justify-center items-center">
-                <div class="header-cover absolute inset-0 opacity-60"><img class="object-cover w-full h-full" :src="work.img"
+        <div class="bg-gradient-to-tr from-slate-300 to-slate-600">
+            <div v-for="(work, ix) in works" :key="ix" class="relative h-screen flex justify-center items-center -opacity-60">
+                <div class="header-cover absolute inset-0 mix-blend-multiply"><img class="object-cover w-full h-full" :src="work.img"
                         :alt="work.alt">
                 </div>
                 <div class="w-2/3 flex items-center justify-center absolute z-50">

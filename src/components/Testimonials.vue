@@ -40,7 +40,6 @@ const prev = () => {
               src="../assets/right-arrow.png" alt="Right arrow"></div>
         </div>
       </div>
-         {{stories[num]}}
       <p class="text-xl md:text-5xl text-brand-gray-2 md:leading-snug">{{stories[num].comment}}</p>
     </section>
 </template>

@@ -151,8 +151,12 @@ const prev = () => {
       <div class="flex justify-center max-w-7xl mx-auto mt-20 px-6">
         <h1 class="text-6xl md:text-10xl font-new-paris-kingsize">Designer</h1>
       </div>
-      <div class="max-w-7xl mx-auto mt-20">
-        <div class="md:flex justify-end">♠
+      <div class="md:flex justify-end max-w-7xl mx-auto mt-20">
+        <div class="flex-1">
+          <img class="w-32 h-32" src="../assets/random1.png" alt="Scroll down">
+        </div>
+        <div class="flex-1">
+          <img src="../assets/aise-photo-1.png" alt="Aise photo">
         </div>
       </div>
     </section>
@@ -209,7 +213,7 @@ const prev = () => {
               done for projects and clients
               all over the world ranging from web designs to mobile designs.</p>
           </div>
-          <button class="my-6 px-10 py-3 border border-brand-black-1 rounded-md">Dribble</button>
+          <a href="https://dribbble.com/Aise_Idahor" class="inline-block my-6 px-10 py-3 border border-brand-black-1 rounded-md">Dribble</a>
         </div>
         <div class="md:flex-1"><img class="w-full" src="../assets/gif3.gif" alt="Designs"></div>
       </div>

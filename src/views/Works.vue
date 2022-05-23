@@ -37,7 +37,8 @@ const worksArr = [
         link: "/xerxes"
     },
 ]
-
+const bgColor = "bg-brand-black-2 text-white"
+const themeMode =  "dark"
 const root = ref(null)
 onMounted(() => {
     console.log(root.value)
@@ -53,6 +54,6 @@ onMounted(() => {
             <h1 class="text-6xl md:text-9xl font-new-paris-kingsize">Projects</h1>
         </div>
         <Work :works="worksArr" />
-        <BookAppointment />
+        <BookAppointment :class="bgColor" :mode="themeMode" :footerMode="themeMode" />
     </div>
 </template>

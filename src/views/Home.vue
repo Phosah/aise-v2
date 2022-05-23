@@ -103,6 +103,8 @@ const testimonialsArr = [
     comment: "Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum. Ultricies massa malesuada viverra cras lobortis. "
   },
 ]
+const bgColor = "bg-brand-black-2 text-white"
+const themeMode =  "dark"
 const sum = testimonialsArr.length - 1;
 const num = ref(0)
 const elemIdx = ref(1);
@@ -216,6 +218,6 @@ const prev = () => {
       <Clients :clients="clientsArr" />
     </section>
     <Testimonials :stories="testimonialsArr" :num="num" @showNext="next" @showPrev="prev" :ix="elemIdx"/>
-    <BookAppointment :class="bgColor" />
+    <BookAppointment :class="bgColor" :mode="themeMode" :footerMode="themeMode" />
   </main>
 </template>

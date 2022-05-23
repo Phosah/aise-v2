@@ -49,7 +49,7 @@
       <WorkExperiences :works="worksArr" />
     </section>
     <Anime :animes="animesArr" />
-    <BookAppointment :class="bgColor" :mode="themeMode" />
+    <BookAppointment :class="bgColor" :mode="themeMode" :footerMode="themeMode" />
   </main>
 </template>
 

@@ -7,6 +7,8 @@ import pegasusCover from "../assets/pegasus-cover.png"
 import xerxesCover from "../assets/xerxes-cover-2.png"
 import BookAppointment from "../components/BookAppointment.vue";
 
+const bgColor = "bg-brand-black-2 text-white"
+const themeMode =  "dark"
 const worksArr = [
     {
         img: athenaCover,
@@ -60,6 +62,6 @@ onMounted(() => {
             <h1 class="text-6xl md:text-9xl font-new-paris-kingsize">Projects</h1>
         </div>
         <Work :works="worksArr" />
-        <BookAppointment />
+        <BookAppointment :class="bgColor" :mode="themeMode" :footerMode="themeMode" />
     </div>
 </template>

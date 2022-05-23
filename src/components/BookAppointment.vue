@@ -31,15 +31,15 @@
                 <!-- Calendly link widget end -->
             </div>
         </div>
-        <FooterLight />
+        <Footer :mode="footerMode" />
     </section>
 </template>
 
 <script>
-import FooterLight from "./FooterLight.vue";
+import Footer from "./Footer.vue";
 export default {
     name: "BookAppointment",
-    components: { FooterLight },
+    components: { Footer },
     props: {
         bgColor: {
             type: String,
@@ -48,6 +48,15 @@ export default {
         mode: {
             type: String,
             required: true
+        },
+        footerMode: {
+            type: String,
+            required: true
+        }
+    },
+    data() {
+        return {
+            // themeMode: "light"
         }
     }
 }

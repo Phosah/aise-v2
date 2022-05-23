@@ -1,24 +1,83 @@
+<script>
+// import Works from '@/components/Works'
+// import Carousel from '@/components/Carousel'
+import BookAppointment from '../components/BookAppointment.vue'
+import OtherProjects from '../components/OtherProjects.vue'
+import HeaderInfo from '../components/HeaderInfo.vue'
+export default {
+    components: { BookAppointment, OtherProjects, HeaderInfo },
+    data() {
+        return {
+            work: {
+                bgColor: "bg-brand-red-5",
+                title: "Trustbreed",
+                subtitle: "Customer Service, B2C",
+                imgPosition: "lg:w-2/3 absolute md:-bottom-40 md:-right-60 lg:-bottom-24 lg:-right-24",
+                // img: require("../assets/trustbreed-home.png"),
+                alt: "Trustbreed",
+            },
+            cards: [
+                {
+                    title: "1. Have you ever been dissapointed with the services provided to you by any company",
+                    imgName: "trustbreed-survey-photo-1.png"
+                },
+                {
+                    title: "2. What do you do when you have a poor service",
+                    imgName: "trustbreed-survey-photo-2.png"
+                },
+                {
+                    title: "3. How frequently does the company solve your problem when you complain",
+                    imgName: "trustbreed-survey-photo-3.png"
+                },
+                {
+                    title: "4. On a scale of 1-5 how difficult is it to pick the best service providers",
+                    imgName: "trustbreed-survey-photo-4.png"
+                },
+                {
+                    title: "5. What source do you trust when deciding to try a new company",
+                    imgName: "trustbreed-survey-photo-5.png"
+                }
+            ],
+            cardsDark: [
+                {
+                    title: "1. Have you ever been dissapointed with the services provided to you by any company",
+                    imgName: "trustbreed-survey-photo-dark-1.png"
+                },
+                {
+                    title: "2. What do you do when you have a poor service",
+                    imgName: "trustbreed-survey-photo-dark-2.png"
+                },
+                {
+                    title: "3. How frequently does the company solve your problem when you complain",
+                    imgName: "trustbreed-survey-photo-dark-3.png"
+                },
+                {
+                    title: "4. On a scale of 1-5 how difficult is it to pick the best service providers",
+                    imgName: "trustbreed-survey-photo-dark-4.png"
+                },
+                {
+                    title: "5. What source do you trust when deciding to try a new company",
+                    imgName: "trustbreed-survey-photo-dark-5.png"
+                }
+            ],
+             details: {
+                title: "TrustBreed",
+                shortDesc: "As a customer, have your voice heard and get the best of services from the companies / products that serve you.",
+                LongDesc: "Trustbreed is a customer support tool to help users of any and every product get the best of services from their respective providers",
+                paragraph: "Trustbreed was born to help users/customers as a result of users being tired of receiving sub-standard services for their hard-earned money from products/companies they patronize to serve them."
+            }
+        }
+    },
+}
+</script>
+
 <template>
     <div>
         <div class="bg-white dark:bg-brand-black-1 text-brand-black-3 dark:text-white">
             <header class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
                 <!-- <Works :work="this.$store.state.worksArr[2]" hideLink /> -->
             </header>
-            <section class="max-w-7xl mx-auto py-10 md:py-20 px-16">
-                <div class="max-w-5xl mx-auto md:px-16">
-                    <h1 class="mb-4 lg:mb-7 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair">TrustBreed
-                    </h1>
-                    <p class="mb-14 md:text-lg lg:text-xl">As a customer, have your voice heard and get the best of
-                        services from the companies / products that serve you.</p>
-                    <div
-                        class="mb-14 md:w-10/12 pl-6 border-l-4 border-brand-black-3 dark:border-white text-xl md:text-2xl lg:text-4xl font-bold leading-normal lg:leading-normal">
-                        Trustbreed is a customer support tool to help users of any and every product get the best of
-                        services from their respective providers</div>
-                    <p class="md:w-4/5 lg:w-5/6 md:text-lg lg:text-xl md:leading-8">Trustbreed was born to help
-                        users/customers as a result of users being tired of receiving sub-standard services for their
-                        hard-earned money from products/companies they patronize to serve them.</p>
-                </div>
-            </section>
+            <HeaderInfo :headerDetails="details" />
             <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">My Role</h2>
                 <p class="mb-4">For this project, my role was to explore ways to ensure users' complaints are heard and
@@ -433,77 +492,6 @@
         </div>
     </div>
 </template>
-
-<script>
-// import Works from '@/components/Works'
-// import Carousel from '@/components/Carousel'
-import BookAppointment from '../components/BookAppointment.vue'
-import OtherProjects from '../components/OtherProjects.vue'
-export default {
-    components: { BookAppointment, OtherProjects },
-    data() {
-        return {
-            work: {
-                bgColor: "bg-brand-red-5",
-                title: "Trustbreed",
-                subtitle: "Customer Service, B2C",
-                imgPosition: "lg:w-2/3 absolute md:-bottom-40 md:-right-60 lg:-bottom-24 lg:-right-24",
-                // img: require("../assets/trustbreed-home.png"),
-                alt: "Trustbreed",
-            },
-            cards: [
-                {
-                    title: "1. Have you ever been dissapointed with the services provided to you by any company",
-                    imgName: "trustbreed-survey-photo-1.png"
-                },
-                {
-                    title: "2. What do you do when you have a poor service",
-                    imgName: "trustbreed-survey-photo-2.png"
-                },
-                {
-                    title: "3. How frequently does the company solve your problem when you complain",
-                    imgName: "trustbreed-survey-photo-3.png"
-                },
-                {
-                    title: "4. On a scale of 1-5 how difficult is it to pick the best service providers",
-                    imgName: "trustbreed-survey-photo-4.png"
-                },
-                {
-                    title: "5. What source do you trust when deciding to try a new company",
-                    imgName: "trustbreed-survey-photo-5.png"
-                }
-            ],
-            cardsDark: [
-                {
-                    title: "1. Have you ever been dissapointed with the services provided to you by any company",
-                    imgName: "trustbreed-survey-photo-dark-1.png"
-                },
-                {
-                    title: "2. What do you do when you have a poor service",
-                    imgName: "trustbreed-survey-photo-dark-2.png"
-                },
-                {
-                    title: "3. How frequently does the company solve your problem when you complain",
-                    imgName: "trustbreed-survey-photo-dark-3.png"
-                },
-                {
-                    title: "4. On a scale of 1-5 how difficult is it to pick the best service providers",
-                    imgName: "trustbreed-survey-photo-dark-4.png"
-                },
-                {
-                    title: "5. What source do you trust when deciding to try a new company",
-                    imgName: "trustbreed-survey-photo-dark-5.png"
-                }
-            ]
-        }
-    },
-    // computed: {
-    //     themeColor() {
-    //         return this.$store.state.themeColor;
-    //     }
-    // },
-}
-</script>
 
 <style>
 div {

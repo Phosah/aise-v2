@@ -1,25 +1,86 @@
+<script>
+// import Works from '../components/Works'
+// import ProjectResponsibilities from '../components/ProjectResponsibilities'
+import BookAppointment from '../components/BookAppointment.vue'
+import OtherProjects from '../components/OtherProjects.vue'
+import HeaderInfo from '../components/HeaderInfo.vue'
+export default {
+    name: "Doorstep",
+    components: { BookAppointment, OtherProjects, HeaderInfo },
+    data() {
+        return {
+            projects: [
+                {
+                    // icon: require("../assets/discover-icon.png"),
+                    title: "Discover",
+                    text: "Discovery was the first phase in the UX-design process that involved",
+                    bgColor: "bg-brand-purple-1",
+                    // tick: require("../assets/tick-purple.png"),
+                    items: [
+                        "Design strategy",
+                        "Stakeholder interview",
+                        "Market strategy",
+                        "Competitor analysis"
+                    ]
+                },
+                {
+                    // icon: require("../assets/define-icon.png"),
+                    title: "Define",
+                    text: "Defining a product is a phase in the UX-design process that involves",
+                    bgColor: "bg-brand-blue-2",
+                    // tick: require("../assets/tick-blue.png"),
+                    items: [
+                        "User Research",
+                        "User personas",
+                        "Data Gathering",
+                        "Empathy mapping"
+                    ]
+                },
+                {
+                    // icon: require("../assets/ideate-icon.png"),
+                    title: "Ideate",
+                    text: "This part of the design process was where the product structure to shape",
+                    bgColor: "bg-brand-orange-2",
+                    // tick: require("../assets/tick-yellow.png"),
+                    items: [
+                        "Brainstorming",
+                        "User flow",
+                        "Information architecture",
+                        "Card sorting"
+                    ]
+                },
+                {
+                    // icon: require("../assets/visual-icon.png"),
+                    title: "Visual Design",
+                    text: "The research and structuring was brought to life visually to solve the problem",
+                    bgColor: "bg-brand-red-1",
+                    // tick: require("../assets/tick-red.png"),
+                    items: [
+                        "Wireframe",
+                        "Style guide generation",
+                        "High fidelity design",
+                        "Prototype"
+                    ]
+                }
+            ],
+            details: {
+                title: "Doorstep Logistics",
+                shortDesc: "The fastest way to ship your packages and parcels around the world",
+                LongDesc: "Doorstep is a solution that helps to simplify logistics and shipping services to ensure quick delivery of packages in a simplified processes",
+                paragraph: "Sending of documents and parcels have been in high demand as a result of expanding businesses and inter country trading. It gets to solve this by its provision of an integration sync with the tracking ID of the platform to constantly keep you in the loop."
+            }
+        };
+    },
+}
+</script>
+
 <template>
     <div>
         <div class="dark:bg-brand-black-1 bg-white text-brand-black-3 dark:text-white">
             <header class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
                 <!-- <Works :work="this.$store.state.worksArr[4]" hideLink /> -->
             </header>
-            <section class="max-w-7xl mx-auto py-20 px-16">
-                <div class="max-w-5xl mx-auto md:px-16">
-                    <h1
-                        class="mb-4 lg:mb-7 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
-                    >Doorstep Logistics</h1>
-                    <p
-                        class="mb-14 md:text-lg lg:text-xl"
-                    >The fastest way to ship your packages and parcels around the world</p>
-                    <div
-                        class="mb-14 md:w-10/12 pl-6 border-l-4 border-brand-black-3 dark:border-white text-xl md:text-2xl lg:text-4xl font-bold leading-normal lg:leading-normal"
-                    >Doorstep is a solution that helps to simplify logistics and shipping services to ensure quick delivery of packages in a simplified processes</div>
-                    <p
-                        class="md:w-4/5 lg:w-5/6 md:text-lg lg:text-xl md:leading-8"
-                    >Sending of documents and parcels have been in high demand as a result of expanding businesses and inter country trading. It gets to solve this by its provision of an integration sync with the tracking ID of the platform to constantly keep you in the loop.</p>
-                </div>
-            </section>
+            <HeaderInfo :headerDetails="details" />
             <section class="max-w-7xl mx-auto pt-20 px-4 md:px-16">
                 <div class="hidden md:flex items-center justify-between space-x-12">
                     <div class="flex-1">
@@ -541,80 +602,6 @@
         </div>
     </div>
 </template>
-
-<script>
-// import Works from '../components/Works'
-// import ProjectResponsibilities from '../components/ProjectResponsibilities'
-import BookAppointment from '../components/BookAppointment.vue'
-import OtherProjects from '../components/OtherProjects.vue'
-export default {
-    name: "Doorstep",
-    components: { BookAppointment, OtherProjects },
-    data() {
-        return {
-            projects: [
-                {
-                    // icon: require("../assets/discover-icon.png"),
-                    title: "Discover",
-                    text: "Discovery was the first phase in the UX-design process that involved",
-                    bgColor: "bg-brand-purple-1",
-                    // tick: require("../assets/tick-purple.png"),
-                    items: [
-                        "Design strategy",
-                        "Stakeholder interview",
-                        "Market strategy",
-                        "Competitor analysis"
-                    ]
-                },
-                {
-                    // icon: require("../assets/define-icon.png"),
-                    title: "Define",
-                    text: "Defining a product is a phase in the UX-design process that involves",
-                    bgColor: "bg-brand-blue-2",
-                    // tick: require("../assets/tick-blue.png"),
-                    items: [
-                        "User Research",
-                        "User personas",
-                        "Data Gathering",
-                        "Empathy mapping"
-                    ]
-                },
-                {
-                    // icon: require("../assets/ideate-icon.png"),
-                    title: "Ideate",
-                    text: "This part of the design process was where the product structure to shape",
-                    bgColor: "bg-brand-orange-2",
-                    // tick: require("../assets/tick-yellow.png"),
-                    items: [
-                        "Brainstorming",
-                        "User flow",
-                        "Information architecture",
-                        "Card sorting"
-                    ]
-                },
-                {
-                    // icon: require("../assets/visual-icon.png"),
-                    title: "Visual Design",
-                    text: "The research and structuring was brought to life visually to solve the problem",
-                    bgColor: "bg-brand-red-1",
-                    // tick: require("../assets/tick-red.png"),
-                    items: [
-                        "Wireframe",
-                        "Style guide generation",
-                        "High fidelity design",
-                        "Prototype"
-                    ]
-                }
-            ]
-        };
-    },
-    // computed: {
-    //     themeColor() {
-    //         // return this.$store.state.themeColor;
-    //     }
-    // },
-}
-</script>
 
 <style>
 div {

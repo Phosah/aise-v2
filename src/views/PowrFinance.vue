@@ -1,3 +1,234 @@
+<script>
+// import Works from '../components/Works.vue'
+import BookAppointment from '../components/BookAppointment.vue'
+// import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
+// import UserPersona from '../components/UserPersona.vue'
+import OtherProjects from '../components/OtherProjects.vue'
+import HeaderInfo from '../components/HeaderInfo.vue'
+export default {
+    components: { BookAppointment, OtherProjects, HeaderInfo },
+    data() {
+        return {
+            analysisArray: [
+                {
+                    title: "Wise",
+                    overview: 'Overview',
+                    overviewMessage: 'The heart of Wise is: helping people manage their money internationally more cheaply, quickly, and transparently. This are done by giving their users the ability to: Receive money from any country, Spend money in the city and transfer money to any country of your choice.',
+                    objectives: 'Key Objectives',
+                    objectivesItems: [
+                        "Providing services at cheap prices",
+                        "Enabling usage of funds both online and offline in any country"
+                    ],
+                    advantages: 'Market Advantage',
+                    advantagesList: [
+                        'Built a high level of trust with low fees and transparency',
+                    ],
+                    position: 'Market Positioning',
+                    positioningList: [
+                        "Display of trust compared to conventional banks",
+                        "Leverage big online and offline publications.",
+                        "Collaborated affiliations with other brands",
+                        "SEO Optimization",
+                        "UX and Design",
+                        "Social media & Referrals"
+                    ],
+                    // img: require('../assets/wise.png'),
+                    alt: 'Wise',
+                    strength: 'Strength',
+                    strengthList: [
+                        "Available in over 60 countries, increasing its userbase.",
+                        "Strong financial health with a net worth of above $5 billion, which shows the market’s trust in it.",
+                        "Low cost and transaction fees"
+                    ],
+                    weakness: 'Weakness',
+                    weaknessList: [
+                        "With approximately 8 million users worldwide, it has the potential to be much higher. If the company markets properly",
+                        "The private status of the company limits its growth."
+                    ],
+                    opprtunities: "Oppurtunities",
+                    opportunitiesList: [
+                        "Exploiting blockchain technology to improve its payment process",
+                        "Globalization",
+                        "Going public",
+                        "Constant evolution by frequently analyzing customers needs."
+                    ],
+                    threats: 'Threats',
+                    threatsList: [
+                        "New competitors can easily enter the market and challenge them",
+                        "ffline transfer systems like Western Union and Moneygram pose a threat as well."
+                    ]
+                },
+                {
+                    title: "Payoneer",
+                    overview: 'Overview',
+                    overviewMessage: 'Payoneer is the world’s go-to partner for digital commerce, everywhere. From borderless payments to boundless growth, Payoneer promises any business, in any market, the technology, connections, and confidence to participate and flourish in the new global economy. ',
+                    objectives: 'Key Objectives',
+                    objectivesItems: [
+                        "Providing borderless payment",
+                        "Facilitate digital commerce"
+                    ],
+                    advantages: 'Market Advantage',
+                    advantagesList: [
+                        'Solid customer support',
+                        "Payment portal for most E-commerce vendors"
+                    ],
+                    position: 'Market Positioning',
+                    positioningList: [
+                        "Display of trust with solid customer service",
+                        "Merchant service payment plan",
+                        "Ease of bill payment.",
+                        "Collaborated affiliations with other brands",
+                        "Clean and usable Design",
+                        "Global Expansion"
+                    ],
+                    // img: require('../assets/payoneer.png'),
+                    alt: 'Payoneer',
+                    strength: 'Strength',
+                    strengthList: [
+                        "Payoneer provides services to both developed economies and developing countries, increasing its userbase to over 4m",
+                        "They have over 300 employees for the customer service, assisting the users in more than 70 different languages",
+                        "A diverse range of financial services",
+                        "The computer interface of Payoneer is user-friendly, simple, and easy to use.",
+                        "It allows users to integrate their Payoneer account with the major freelancing platforms like Fiverr, Freelancer, Upwork, People Per Hour, and many other platforms and this increases userbase."
+                    ],
+                    weakness: 'Weakness',
+                    weaknessList: [
+                        "Strict Approval Policies",
+                        "Payoneer also has the control to require extra from the users, to freeze their account, and stop sending or receiving payments.",
+                        "No transaction can be done without the internet which is an issue in developing countries.",
+                        "Payoneer only allows users to make payments either to the bank accounts or to other users.",
+                        "High fee structure.",
+                        "Payoneer has a minimum monthly payment requirement of $20,000"
+                    ],
+                    opportunities: "Oppurtunities",
+                    opportunitiesList: [
+                        "Exploiting new technology advancements like blockchain to improve its processes and speed transfer",
+                        "The fast expansion of internet services across the world.",
+                        "Going public",
+                        "Constant evolution by frequently analyzing customers needs",
+                        "Improved marketing campaigns to increase the userbase"
+
+                    ],
+                    threats: 'Threats',
+                    threatsList: [
+                        "The customer prefers a local provider rather than an international service provider.",
+                        "New competitors can easily enter the market and challenge them.",
+                        "Financial fraud and account hacking activities have also increased in recent years.",
+                        "Unfavorable international regulations",
+                        "Payoneer has a high amount of investment capital, making it vulnerable to loosing investors if the economy declines",
+                    ]
+                },
+                {
+                    title: "Paypal",
+                    overview: 'Overview',
+                    overviewMessage: 'The heart of Wise is: helping people manage their money internationally more cheaply, quickly, and transparently. This are done by giving their users the ability to: Receive money from any country, Spend money in the city and transfer money to any country of your choice.',
+                    objectives: 'Key Objectives',
+                    objectivesItems: [
+                        "Providing services at cheap prices",
+                        "Enabling usage of funds both online and offline in any country",
+
+
+                    ],
+                    advantages: 'Market Advantage',
+                    advantagesList: [
+                        'Established a house hold name for e-commerce activities which has improved trust in the product',
+                    ],
+                    position: 'Market Positioning',
+                    positioningList: [
+                        "Portrays as the only online global payment system in the world",
+                        "Old and reliable.",
+                        "Large userbase signifying trust in the market",
+                        "Ecommerce payment portal",
+                    ],
+                    // img: require('../assets/paypal.png'),
+                    alt: 'Paypal',
+                    strength: 'Strength',
+                    strengthList: [
+                        "PayPal doesn’t charge an annual maintenance fee to use its Mastercard.",
+                        "Global Presence",
+                        "Large customer base",
+                        "High business alliance of PayPal with companies like Facebook to handle all its payment transactions",
+                        "You don’t need to register an account to use PayPal",
+                        "Selection of who pays the fees from PayPal charges"
+                    ],
+                    weakness: 'Weakness',
+                    weaknessList: [
+                        "PayPal is not using a database-driven ordering system",
+                        "Bad communication between PayPal and its customer",
+                        "PayPal has been accused of Withheld funds, freezing and termination of PayPal accounts",
+                        "Dependent on internet connections",
+                    ],
+                    opportunities: "Oppurtunities",
+                    opportunitiesList: [
+                        "The acquisition is one of the opportunities for PayPal as it can bring more customers to PayPal especially with a company that also run IT business",
+                        "Move towards Cashless or fewer cash Economies",
+                        "Digital currency and technological advancement",
+                    ],
+                    threats: 'Threats',
+                    threatsList: [
+                        "PayPal does not invest in advertising on the internet causes the brand image of PayPal is not very well. So it also needs to strengthen its brand through the Web",
+                        "In the image of the public, PayPal’s brand is closely associated with smaller merchants, low-cost auctions, and P2P money transfers. As a result, some larger firms might not want their brands associated with PayPal brand image",
+                        "Hacking and Fraud threats",
+                        "Unfavorable international regulations",
+                    ]
+                }
+            ],
+            personasArray: [
+                {
+                    // img: require('../assets/user-persona-2.png'),
+                    alt: "User Persona",
+                    name: "Anabelle Richie",
+                    info: "Anabelle is a 25-year-old front-end developer that stays in Nigeria and has been freelancing for a living for the past 3 years with over 120 clients from all over the world including America, Europe, and Asia.",
+                    goal: "Goals and needs",
+                    goalsList: [
+                        "Anabelle freelances and wants to expand her reach to higher-paying countries for her talents and skills, hence she is seeking the most secure means of receiving funds from abroad",
+                        "She is also looking for a way to save her money, occasionally as a freelancer when she gets paid in whatever currency but she leverages on crypto  for long term savings",
+                    ],
+                    frustration: "Frustrations",
+                    frustrationsList: [
+                        "Extremely high rates that her DOm account provided by banks charge her",
+                        "Her Bank converts her pay at a lesser amount that she would get on the black market or other platforms",
+                        "Payments might take days to deliver."
+                    ],
+                    behaviour: "Behaviours",
+                    behavioursList: [
+                        "Kate spends most of her time using the laptop for coding. She uses it for her jobs and communication purposes",
+                        "She gets paid based on the hours of work she does and keeps track of her payment and expenses on her bank mobile app"
+                    ]
+                },
+                {
+                    // img: require("../assets/user-persona-3.png"),
+                    alt: "User Persona",
+                    name: "Austine Chidozie",
+                    info: "Austine is a 32-year-old importer who imports spare parts of top automobiles in the world to be used for repair purposes in West Africa. Spends most of his time in Ghana where he lives with his wife and daughter.",
+                    goal: "Goals and needs",
+                    goalsList: [
+                        "Austine is a businessman that constantly makes purchases from China and Germany for spare parts and needs a way to make payment to his overseas business partners.",
+                        "He also makes send money to some friends and family both in Nigeria and other countries hence need a way to separate his business account and his personal",
+                        "He needs to have access to generating invoices and also applying for loans."
+                    ],
+                    frustration: "Frustrations",
+                    frustrationsList: [
+                        "One of his major pains is having multiple accounts that is being controlled by different apps, one for personal and one for business and he needs a way to have his accounts in one app and easy to switch in one space",
+                        "There are times when I need to make some orders and I just see some massive business opportunities that are above my budget, I need a way to have quick leverage for that purchase that I can payback"
+                    ],
+                    behaviour: "Behaviours",
+                    behavioursList: [
+                        "Austine is a busy person, he does not like his time being wasted, so he needs to be able to maximize his time, since time is money, hence he needs to be able to make payments on the go and"
+                    ]
+                }
+            ],
+            details: {
+                title: "Powr Finance",
+                shortDesc: "The growth and expansion of businesses and services are heavily dependent on seamless intercontinental financial transactions",
+                LongDesc: "Power Finance is a solution that enables Businesses and Freelancers send and receive money from any country of your choice seamlessly",
+                paragraph: "Powr finance is a fintech app that was designed to scale and grow African businesses by providing them by providing seamless transaction services while catering for other solutions needed to grow like, savings, lending, and currency conversion services, which involve crypto settlements.."
+            }
+        }
+    },
+}
+</script>
+
 <template>
     <div>
         <div class="bg-white dark:bg-brand-black-3 text-brand-black-3 dark:text-white">
@@ -5,22 +236,7 @@
                 <!-- <Works :work="this.$store.state.worksArr[0]" hideLink /> -->
             </section>
             <!-- Main -->
-            <section class="max-w-7xl mx-auto py-20 px-16">
-                <div class="max-w-5xl mx-auto md:px-16">
-                    <h1
-                        class="mb-4 lg:mb-7 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
-                    >Powr Finance</h1>
-                    <p
-                        class="mb-14 md:text-lg lg:text-xl"
-                    >The growth and expansion of businesses and services are heavily dependent on seamless intercontinental financial transactions</p>
-                    <div
-                        class="mb-14 md:w-10/12 pl-6 border-l-4 border-brand-black-3 dark:border-white text-xl md:text-2xl lg:text-4xl font-bold leading-normal lg:leading-normal"
-                    >Power Finance is a solution that enables Businesses and Freelancers send and receive money from any country of your choice seamlessly</div>
-                    <p
-                        class="md:w-4/5 lg:w-5/6 md:text-lg lg:text-xl md:leading-8"
-                    >Powr finance is a fintech app that was designed to scale and grow African businesses by providing them by providing seamless transaction services while catering for other solutions needed to grow like, savings, lending, and currency conversion services, which involve crypto settlements..</p>
-                </div>
-            </section>
+            <HeaderInfo :headerDetails="details" />
             <section class="max-w-7xl mx-auto py-10 px-4 md:px-16 text-sm md:text-base">
                 <div class="mb-20">
                     <h2
@@ -555,235 +771,6 @@
         </div>
     </div>
 </template>
-
-<script>
-// import Works from '../components/Works.vue'
-import BookAppointment from '../components/BookAppointment.vue'
-// import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
-// import UserPersona from '../components/UserPersona.vue'
-import OtherProjects from '../components/OtherProjects.vue'
-export default {
-    components: { BookAppointment, OtherProjects },
-    data() {
-        return {
-            analysisArray: [
-                {
-                    title: "Wise",
-                    overview: 'Overview',
-                    overviewMessage: 'The heart of Wise is: helping people manage their money internationally more cheaply, quickly, and transparently. This are done by giving their users the ability to: Receive money from any country, Spend money in the city and transfer money to any country of your choice.',
-                    objectives: 'Key Objectives',
-                    objectivesItems: [
-                        "Providing services at cheap prices",
-                        "Enabling usage of funds both online and offline in any country"
-                    ],
-                    advantages: 'Market Advantage',
-                    advantagesList: [
-                        'Built a high level of trust with low fees and transparency',
-                    ],
-                    position: 'Market Positioning',
-                    positioningList: [
-                        "Display of trust compared to conventional banks",
-                        "Leverage big online and offline publications.",
-                        "Collaborated affiliations with other brands",
-                        "SEO Optimization",
-                        "UX and Design",
-                        "Social media & Referrals"
-                    ],
-                    // img: require('../assets/wise.png'),
-                    alt: 'Wise',
-                    strength: 'Strength',
-                    strengthList: [
-                        "Available in over 60 countries, increasing its userbase.",
-                        "Strong financial health with a net worth of above $5 billion, which shows the market’s trust in it.",
-                        "Low cost and transaction fees"
-                    ],
-                    weakness: 'Weakness',
-                    weaknessList: [
-                        "With approximately 8 million users worldwide, it has the potential to be much higher. If the company markets properly",
-                        "The private status of the company limits its growth."
-                    ],
-                    opprtunities: "Oppurtunities",
-                    opportunitiesList: [
-                        "Exploiting blockchain technology to improve its payment process",
-                        "Globalization",
-                        "Going public",
-                        "Constant evolution by frequently analyzing customers needs."
-                    ],
-                    threats: 'Threats',
-                    threatsList: [
-                        "New competitors can easily enter the market and challenge them",
-                        "ffline transfer systems like Western Union and Moneygram pose a threat as well."
-                    ]
-                },
-                {
-                    title: "Payoneer",
-                    overview: 'Overview',
-                    overviewMessage: 'Payoneer is the world’s go-to partner for digital commerce, everywhere. From borderless payments to boundless growth, Payoneer promises any business, in any market, the technology, connections, and confidence to participate and flourish in the new global economy. ',
-                    objectives: 'Key Objectives',
-                    objectivesItems: [
-                        "Providing borderless payment",
-                        "Facilitate digital commerce"
-                    ],
-                    advantages: 'Market Advantage',
-                    advantagesList: [
-                        'Solid customer support',
-                        "Payment portal for most E-commerce vendors"
-                    ],
-                    position: 'Market Positioning',
-                    positioningList: [
-                        "Display of trust with solid customer service",
-                        "Merchant service payment plan",
-                        "Ease of bill payment.",
-                        "Collaborated affiliations with other brands",
-                        "Clean and usable Design",
-                        "Global Expansion"
-                    ],
-                    // img: require('../assets/payoneer.png'),
-                    alt: 'Payoneer',
-                    strength: 'Strength',
-                    strengthList: [
-                        "Payoneer provides services to both developed economies and developing countries, increasing its userbase to over 4m",
-                        "They have over 300 employees for the customer service, assisting the users in more than 70 different languages",
-                        "A diverse range of financial services",
-                        "The computer interface of Payoneer is user-friendly, simple, and easy to use.",
-                        "It allows users to integrate their Payoneer account with the major freelancing platforms like Fiverr, Freelancer, Upwork, People Per Hour, and many other platforms and this increases userbase."
-                    ],
-                    weakness: 'Weakness',
-                    weaknessList: [
-                        "Strict Approval Policies",
-                        "Payoneer also has the control to require extra from the users, to freeze their account, and stop sending or receiving payments.",
-                        "No transaction can be done without the internet which is an issue in developing countries.",
-                        "Payoneer only allows users to make payments either to the bank accounts or to other users.",
-                        "High fee structure.",
-                        "Payoneer has a minimum monthly payment requirement of $20,000"
-                    ],
-                    opportunities: "Oppurtunities",
-                    opportunitiesList: [
-                        "Exploiting new technology advancements like blockchain to improve its processes and speed transfer",
-                        "The fast expansion of internet services across the world.",
-                        "Going public",
-                        "Constant evolution by frequently analyzing customers needs",
-                        "Improved marketing campaigns to increase the userbase"
-
-                    ],
-                    threats: 'Threats',
-                    threatsList: [
-                        "The customer prefers a local provider rather than an international service provider.",
-                        "New competitors can easily enter the market and challenge them.",
-                        "Financial fraud and account hacking activities have also increased in recent years.",
-                        "Unfavorable international regulations",
-                        "Payoneer has a high amount of investment capital, making it vulnerable to loosing investors if the economy declines",
-                    ]
-                },
-                {
-                    title: "Paypal",
-                    overview: 'Overview',
-                    overviewMessage: 'The heart of Wise is: helping people manage their money internationally more cheaply, quickly, and transparently. This are done by giving their users the ability to: Receive money from any country, Spend money in the city and transfer money to any country of your choice.',
-                    objectives: 'Key Objectives',
-                    objectivesItems: [
-                        "Providing services at cheap prices",
-                        "Enabling usage of funds both online and offline in any country",
-
-
-                    ],
-                    advantages: 'Market Advantage',
-                    advantagesList: [
-                        'Established a house hold name for e-commerce activities which has improved trust in the product',
-                    ],
-                    position: 'Market Positioning',
-                    positioningList: [
-                        "Portrays as the only online global payment system in the world",
-                        "Old and reliable.",
-                        "Large userbase signifying trust in the market",
-                        "Ecommerce payment portal",
-                    ],
-                    // img: require('../assets/paypal.png'),
-                    alt: 'Paypal',
-                    strength: 'Strength',
-                    strengthList: [
-                        "PayPal doesn’t charge an annual maintenance fee to use its Mastercard.",
-                        "Global Presence",
-                        "Large customer base",
-                        "High business alliance of PayPal with companies like Facebook to handle all its payment transactions",
-                        "You don’t need to register an account to use PayPal",
-                        "Selection of who pays the fees from PayPal charges"
-                    ],
-                    weakness: 'Weakness',
-                    weaknessList: [
-                        "PayPal is not using a database-driven ordering system",
-                        "Bad communication between PayPal and its customer",
-                        "PayPal has been accused of Withheld funds, freezing and termination of PayPal accounts",
-                        "Dependent on internet connections",
-                    ],
-                    opportunities: "Oppurtunities",
-                    opportunitiesList: [
-                        "The acquisition is one of the opportunities for PayPal as it can bring more customers to PayPal especially with a company that also run IT business",
-                        "Move towards Cashless or fewer cash Economies",
-                        "Digital currency and technological advancement",
-                    ],
-                    threats: 'Threats',
-                    threatsList: [
-                        "PayPal does not invest in advertising on the internet causes the brand image of PayPal is not very well. So it also needs to strengthen its brand through the Web",
-                        "In the image of the public, PayPal’s brand is closely associated with smaller merchants, low-cost auctions, and P2P money transfers. As a result, some larger firms might not want their brands associated with PayPal brand image",
-                        "Hacking and Fraud threats",
-                        "Unfavorable international regulations",
-                    ]
-                }
-            ],
-            personasArray: [
-                {
-                    // img: require('../assets/user-persona-2.png'),
-                    alt: "User Persona",
-                    name: "Anabelle Richie",
-                    info: "Anabelle is a 25-year-old front-end developer that stays in Nigeria and has been freelancing for a living for the past 3 years with over 120 clients from all over the world including America, Europe, and Asia.",
-                    goal: "Goals and needs",
-                    goalsList: [
-                        "Anabelle freelances and wants to expand her reach to higher-paying countries for her talents and skills, hence she is seeking the most secure means of receiving funds from abroad",
-                        "She is also looking for a way to save her money, occasionally as a freelancer when she gets paid in whatever currency but she leverages on crypto  for long term savings",
-                    ],
-                    frustration: "Frustrations",
-                    frustrationsList: [
-                        "Extremely high rates that her DOm account provided by banks charge her",
-                        "Her Bank converts her pay at a lesser amount that she would get on the black market or other platforms",
-                        "Payments might take days to deliver."
-                    ],
-                    behaviour: "Behaviours",
-                    behavioursList: [
-                        "Kate spends most of her time using the laptop for coding. She uses it for her jobs and communication purposes",
-                        "She gets paid based on the hours of work she does and keeps track of her payment and expenses on her bank mobile app"
-                    ]
-                },
-                {
-                    // img: require("../assets/user-persona-3.png"),
-                    alt: "User Persona",
-                    name: "Austine Chidozie",
-                    info: "Austine is a 32-year-old importer who imports spare parts of top automobiles in the world to be used for repair purposes in West Africa. Spends most of his time in Ghana where he lives with his wife and daughter.",
-                    goal: "Goals and needs",
-                    goalsList: [
-                        "Austine is a businessman that constantly makes purchases from China and Germany for spare parts and needs a way to make payment to his overseas business partners.",
-                        "He also makes send money to some friends and family both in Nigeria and other countries hence need a way to separate his business account and his personal",
-                        "He needs to have access to generating invoices and also applying for loans."
-                    ],
-                    frustration: "Frustrations",
-                    frustrationsList: [
-                        "One of his major pains is having multiple accounts that is being controlled by different apps, one for personal and one for business and he needs a way to have his accounts in one app and easy to switch in one space",
-                        "There are times when I need to make some orders and I just see some massive business opportunities that are above my budget, I need a way to have quick leverage for that purchase that I can payback"
-                    ],
-                    behaviour: "Behaviours",
-                    behavioursList: [
-                        "Austine is a busy person, he does not like his time being wasted, so he needs to be able to maximize his time, since time is money, hence he needs to be able to make payments on the go and"
-                    ]
-                }
-            ]
-        }
-    },
-    // computed: {
-    //     themeColor() {
-    //         return this.$store.state.themeColor;
-    //     }
-    // }
-}
-</script>
 
 <style>
 div {

@@ -1,3 +1,183 @@
+<script>
+import BookAppointment from '../components/BookAppointment.vue'
+// import Carousel from '@/components/Carousel'
+// import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
+// import UserPersona from '../components/UserPersona.vue'
+// import Works from '../components/Works.vue'
+import OtherProjects from '../components/OtherProjects.vue'
+import HeaderInfo from '../components/HeaderInfo.vue'
+export default {
+    components: { BookAppointment, OtherProjects, HeaderInfo },
+    data() {
+        return {
+            cards: [
+                {
+                    imgName: "collectafrica-survey-photo-1.png"
+                },
+                {
+                    imgName: "collectafrica-survey-photo-2.png"
+                },
+                {
+                    imgName: "collectafrica-survey-photo-3.png"
+                },
+                {
+                    imgName: "collectafrica-survey-photo-4.png"
+                }
+            ],
+            cardsDark: [
+                {
+                    imgName: "collectafrica-survey-photo-dark-1.png"
+                },
+                {
+                    imgName: "collectafrica-survey-photo-dark-2.png"
+                },
+                {
+                    imgName: "collectafrica-survey-photo-dark-3.png"
+                },
+                {
+                    imgName: "collectafrica-survey-photo-dark-4.png"
+                }
+            ],
+            analysisArray: [
+                {
+                    overview: 'Paystack Overview',
+                    overviewMessage: 'Paystack is a technology company solving payments problems for ambitious businesses. Our mission is to help businesses in Africa become profitable, envied, and loved.By providing global and local payments for businesses.',
+                    objectives: 'Key Objectives',
+                    objectivesItems: [
+                        "Providing worldwide payment services",
+                        "EEnabling payments methods integrated with all commerce services",
+                    ],
+                    advantages: 'Market Advantage',
+                    advantagesList: [
+                        'Structured themselves as a solution where you can get paid by customers from anywhere in the world',
+                    ],
+                    // img: require('../assets/paystack.png'),
+                    alt: 'Paypal',
+                    strength: 'Strength',
+                    strengthList: [
+                        "You can accept payments from internationally-issued cards or via Apple Pay.",
+                        "Ecommerce integrations to accept credit cards, debit cards, and money transfers.",
+                        "Ability to set a one-time or recurring payments service on the e-commerce app or website.",
+                        "Ability to Split Payments.",
+                        "High security."
+                    ],
+                    weakness: 'Weakness',
+                    weaknessList: [
+                        "Slightly Higher Transaction fees",
+                        "The private status of the company limits its growth.",
+                        "A poor mobile app that can increase the user base for small businesses and small stores.",
+                    ],
+                    opportunities: "Oppurtunities",
+                    opportunitiesList: [
+                        "Small markets and business owners that have just phones with a good and optimized app would be able to increase the userbase.",
+                    ],
+                    threats: 'Threats',
+                    threatsList: [
+                        "Unfavorable government regulations.",
+                        "Other competitors",
+                    ]
+                },
+                {
+                    overview: 'Stripe Overview',
+                    overviewMessage: 'Stripe brings together everything that’s required to build websites and apps that accept payments and send payouts globally. Stripe’s products power payments for online and in-person retailers, subscriptions businesses, software platforms and marketplaces, and everything in between.',
+                    objectives: 'Key Objectives',
+                    objectivesItems: [
+                        "Providing payment gateway for eCommerce platforms",
+                        "Providing billing and payments for SaaS businesses",
+                        "Help marketplaces receive payments using their custom-built API",
+                        "Provide Financial reporting"
+                    ],
+                    advantages: 'Market Strategy',
+                    advantagesList: [
+                        'Stripe ensures maintaining contact with the audience by organizing an annual event where the users are familiarised with the new launches of Stripe and the company listen to the feedback of the users',
+                        "Strengthening Brand Recognition and Loyalty with their blog and posts"
+                    ],
+                    // img: require('../assets/stripe.png'),
+                    alt: 'Stripe',
+                    strength: 'Strength',
+                    strengthList: [
+                        "Integration with eCommerce platforms",
+                        "Power payments for your store and marketplace with Stripes API",
+                        "Deliver exceptional customer experience.",
+                        "Issue of corporate cards and covers almost all financial services including billings and invoicing.",
+                        "Strong Partners’ Program:"
+                    ],
+                    weakness: 'Weakness',
+                    weaknessList: [
+                        "Their foreign currency conversion rate is 2% which is double that of some competitors.",
+                        "Global presence",
+                        "Integrations with open source API become a challenge to businesses and individuals who lack tech skills to develop and customize their products.",
+                    ],
+                    opportunities: "Oppurtunities",
+                    opportunitiesList: [
+                        "Global Expansion:",
+                        "Do not properly optimize/account for small businesses whose operations occur over the phone"
+                    ],
+                    threats: 'Threats',
+                    threatsList: [
+                        "Increasing Competition:",
+                        "Negative Reviews on Lack of Customer Support",
+                    ]
+                }
+            ],
+            personasArray: [
+                {
+                    // img: require('../assets/user-persona-3.png'),
+                    alt: "User Persona",
+                    name: "Marvin Oluimde",
+                    info: "Marvin is a 32 year old business man in Lagos that runs a small business where he sells and delivers  wristwatches withing and out of Lagos from his little store at Obalende Market",
+                    goalsList: [
+                        "Marvin needs a medium to receive payments from his customers all over the country who order his watches",
+                        "Marvin is looking for a way to easily receive payments from other vendors who purchase similar from him regularly to resell",
+                        "Receive payments from customers who want to pay with card or cash and  without mixing business account with personal."
+                    ],
+                    frustration: "Frustrations",
+                    frustrationsList: [
+                        "Customers who come to the shop to pay, sometimes bank doesn't show the credit alert, thereby delaying the customer from leaving",
+                        "Inability to fully organize and handle his account.",
+                        "Finds it difficult to balance his account."
+                    ],
+                    behaviour: "Behaviours",
+                    behavioursList: [
+                        "Marvin usually send his account via WhatsApp to old customers who make orders and make the delivery when they pay, and always send when they need",
+                        "For customers who come to his store he either receives cash and or those who transfer he gives his bank account number and waits for an alert before selling."
+                    ]
+                },
+                {
+                    // img: require("../assets/user-persona-4.png"),
+                    alt: "User Persona",
+                    name: "Jennson Mobiles",
+                    info: "Jennson mobile is an electronics company that deals in selling and repairs of all phones ranging from android to ios, they have over 50 staff and 20 outlets all over the country",
+                    goal: "Goals and needs",
+                    goalsList: [
+                        "Jennson mobile needs a medium to receive payments from customers all over the country who do business with them",
+                        "They are looking for a way to easily balance their accounts and reconcile payments in one place despite having stores all over the country",
+                        "Create invoices for services rendered",
+                        "Manage users roles"
+                    ],
+                    frustration: "Frustrations",
+                    frustrationsList: [
+                        "Customers cant purchase from his business website easily without the agents always having to send the account details for each payment",
+                        "Inability to manage financial accounts, leading to unbalanced records",
+                        "Finds it difficult to manage customers and maintain relationships",
+                    ],
+                    behaviour: "Behaviours",
+                    behavioursList: [
+                        "Jennson Mobiles staff usually just receive payments and because they need to receive alerts and not all can have company emails or phones to do so, each branch has an account where they control and receive alerts to confirm payments, and at the end of a period remit to the main company account."
+                    ]
+                }
+            ],
+            details: {
+                title: "Collect Africa",
+                shortDesc: "Reinventing payment systems and account management for both large and small scale businesses across Africa",
+                LongDesc: "Collect is a Fintech solution solving payments problems for large and small scale businesses all over Africa, with goals to make businesses harness their potentials and achieve greater heights",
+                paragraph: "Collect aims to build a technology to help Africa’s best and modern businesses achieve greater heights by making it easy for businesses to accept secure payments from multiple local and global payment channels, and then we give you the tools to ensure customer management and retention."
+            }
+        }
+    },
+}
+</script>
+
 <template>
     <div>
         <div class="bg-white dark:bg-brand-black-1 text-brand-black-3 dark:text-white">
@@ -5,22 +185,7 @@
                 <!-- <Works :work="this.$store.state.worksArr[1]" hideLink /> -->
             </header>
             <!-- Main section -->
-            <section class="max-w-7xl mx-auto py-10 md:py-20 px-16">
-                <div class="max-w-5xl mx-auto md:px-16">
-                    <h1
-                        class="mb-4 lg:mb-7 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
-                    >Collect Africa</h1>
-                    <p
-                        class="mb-14 md:text-lg lg:text-xl"
-                    >Reinventing payment systems and account management for both large and small scale businesses across Africa</p>
-                    <div
-                        class="mb-14 md:w-10/12 pl-6 border-l-4 border-brand-black-3 dark:border-white text-xl md:text-2xl lg:text-4xl font-bold leading-normal lg:leading-normal"
-                    >Collect is a Fintech solution solving payments problems for large and small scale businesses all over Africa, with goals to make businesses harness their potentials and achieve greater heights</div>
-                    <p
-                        class="md:w-4/5 lg:w-5/6 md:text-lg lg:text-xl md:leading-8"
-                    >Collect aims to build a technology to help Africa’s best and modern businesses achieve greater heights by making it easy for businesses to accept secure payments from multiple local and global payment channels, and then we give you the tools to ensure customer management and retention.</p>
-                </div>
-            </section>
+            <HeaderInfo :headerDetails="details" />
             <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
                 <div class="md:flex md:items-center text-xs">
                     <div
@@ -687,184 +852,6 @@
         </div>
     </div>
 </template>
-
-<script>
-import BookAppointment from '../components/BookAppointment.vue'
-// import Carousel from '@/components/Carousel'
-// import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
-// import UserPersona from '../components/UserPersona.vue'
-// import Works from '../components/Works.vue'
-import OtherProjects from '../components/OtherProjects.vue'
-export default {
-    components: { BookAppointment, OtherProjects },
-    data() {
-        return {
-            cards: [
-                {
-                    imgName: "collectafrica-survey-photo-1.png"
-                },
-                {
-                    imgName: "collectafrica-survey-photo-2.png"
-                },
-                {
-                    imgName: "collectafrica-survey-photo-3.png"
-                },
-                {
-                    imgName: "collectafrica-survey-photo-4.png"
-                }
-            ],
-            cardsDark: [
-                {
-                    imgName: "collectafrica-survey-photo-dark-1.png"
-                },
-                {
-                    imgName: "collectafrica-survey-photo-dark-2.png"
-                },
-                {
-                    imgName: "collectafrica-survey-photo-dark-3.png"
-                },
-                {
-                    imgName: "collectafrica-survey-photo-dark-4.png"
-                }
-            ],
-            analysisArray: [
-                {
-                    overview: 'Paystack Overview',
-                    overviewMessage: 'Paystack is a technology company solving payments problems for ambitious businesses. Our mission is to help businesses in Africa become profitable, envied, and loved.By providing global and local payments for businesses.',
-                    objectives: 'Key Objectives',
-                    objectivesItems: [
-                        "Providing worldwide payment services",
-                        "EEnabling payments methods integrated with all commerce services",
-                    ],
-                    advantages: 'Market Advantage',
-                    advantagesList: [
-                        'Structured themselves as a solution where you can get paid by customers from anywhere in the world',
-                    ],
-                    // img: require('../assets/paystack.png'),
-                    alt: 'Paypal',
-                    strength: 'Strength',
-                    strengthList: [
-                        "You can accept payments from internationally-issued cards or via Apple Pay.",
-                        "Ecommerce integrations to accept credit cards, debit cards, and money transfers.",
-                        "Ability to set a one-time or recurring payments service on the e-commerce app or website.",
-                        "Ability to Split Payments.",
-                        "High security."
-                    ],
-                    weakness: 'Weakness',
-                    weaknessList: [
-                        "Slightly Higher Transaction fees",
-                        "The private status of the company limits its growth.",
-                        "A poor mobile app that can increase the user base for small businesses and small stores.",
-                    ],
-                    opportunities: "Oppurtunities",
-                    opportunitiesList: [
-                        "Small markets and business owners that have just phones with a good and optimized app would be able to increase the userbase.",
-                    ],
-                    threats: 'Threats',
-                    threatsList: [
-                        "Unfavorable government regulations.",
-                        "Other competitors",
-                    ]
-                },
-                {
-                    overview: 'Stripe Overview',
-                    overviewMessage: 'Stripe brings together everything that’s required to build websites and apps that accept payments and send payouts globally. Stripe’s products power payments for online and in-person retailers, subscriptions businesses, software platforms and marketplaces, and everything in between.',
-                    objectives: 'Key Objectives',
-                    objectivesItems: [
-                        "Providing payment gateway for eCommerce platforms",
-                        "Providing billing and payments for SaaS businesses",
-                        "Help marketplaces receive payments using their custom-built API",
-                        "Provide Financial reporting"
-                    ],
-                    advantages: 'Market Strategy',
-                    advantagesList: [
-                        'Stripe ensures maintaining contact with the audience by organizing an annual event where the users are familiarised with the new launches of Stripe and the company listen to the feedback of the users',
-                        "Strengthening Brand Recognition and Loyalty with their blog and posts"
-                    ],
-                    // img: require('../assets/stripe.png'),
-                    alt: 'Stripe',
-                    strength: 'Strength',
-                    strengthList: [
-                        "Integration with eCommerce platforms",
-                        "Power payments for your store and marketplace with Stripes API",
-                        "Deliver exceptional customer experience.",
-                        "Issue of corporate cards and covers almost all financial services including billings and invoicing.",
-                        "Strong Partners’ Program:"
-                    ],
-                    weakness: 'Weakness',
-                    weaknessList: [
-                        "Their foreign currency conversion rate is 2% which is double that of some competitors.",
-                        "Global presence",
-                        "Integrations with open source API become a challenge to businesses and individuals who lack tech skills to develop and customize their products.",
-                    ],
-                    opportunities: "Oppurtunities",
-                    opportunitiesList: [
-                        "Global Expansion:",
-                        "Do not properly optimize/account for small businesses whose operations occur over the phone"
-                    ],
-                    threats: 'Threats',
-                    threatsList: [
-                        "Increasing Competition:",
-                        "Negative Reviews on Lack of Customer Support",
-                    ]
-                }
-            ],
-            personasArray: [
-                {
-                    // img: require('../assets/user-persona-3.png'),
-                    alt: "User Persona",
-                    name: "Marvin Oluimde",
-                    info: "Marvin is a 32 year old business man in Lagos that runs a small business where he sells and delivers  wristwatches withing and out of Lagos from his little store at Obalende Market",
-                    goalsList: [
-                        "Marvin needs a medium to receive payments from his customers all over the country who order his watches",
-                        "Marvin is looking for a way to easily receive payments from other vendors who purchase similar from him regularly to resell",
-                        "Receive payments from customers who want to pay with card or cash and  without mixing business account with personal."
-                    ],
-                    frustration: "Frustrations",
-                    frustrationsList: [
-                        "Customers who come to the shop to pay, sometimes bank doesn't show the credit alert, thereby delaying the customer from leaving",
-                        "Inability to fully organize and handle his account.",
-                        "Finds it difficult to balance his account."
-                    ],
-                    behaviour: "Behaviours",
-                    behavioursList: [
-                        "Marvin usually send his account via WhatsApp to old customers who make orders and make the delivery when they pay, and always send when they need",
-                        "For customers who come to his store he either receives cash and or those who transfer he gives his bank account number and waits for an alert before selling."
-                    ]
-                },
-                {
-                    // img: require("../assets/user-persona-4.png"),
-                    alt: "User Persona",
-                    name: "Jennson Mobiles",
-                    info: "Jennson mobile is an electronics company that deals in selling and repairs of all phones ranging from android to ios, they have over 50 staff and 20 outlets all over the country",
-                    goal: "Goals and needs",
-                    goalsList: [
-                        "Jennson mobile needs a medium to receive payments from customers all over the country who do business with them",
-                        "They are looking for a way to easily balance their accounts and reconcile payments in one place despite having stores all over the country",
-                        "Create invoices for services rendered",
-                        "Manage users roles"
-                    ],
-                    frustration: "Frustrations",
-                    frustrationsList: [
-                        "Customers cant purchase from his business website easily without the agents always having to send the account details for each payment",
-                        "Inability to manage financial accounts, leading to unbalanced records",
-                        "Finds it difficult to manage customers and maintain relationships",
-                    ],
-                    behaviour: "Behaviours",
-                    behavioursList: [
-                        "Jennson Mobiles staff usually just receive payments and because they need to receive alerts and not all can have company emails or phones to do so, each branch has an account where they control and receive alerts to confirm payments, and at the end of a period remit to the main company account."
-                    ]
-                }
-            ],
-        }
-    },
-    // computed: {
-    //     themeColor() {
-    //         return this.$store.state.themeColor;
-    //     }
-    // }
-}
-</script>
 
 <style>
 div {

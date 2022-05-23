@@ -1,8 +1,24 @@
 <script setup>
+import { ref } from "vue";
+
+let prevScrollpos = window.pageYOffset;
+console.log(prevScrollpos)
+window.onscroll = function() {
+let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+    console.log("Less than 0")
+  } else {
+    document.getElementById("navbar").style.top = "-150px";
+    console.log("Greater than 0");
+  }
+  prevScrollpos = currentScrollPos;
+  console.log(currentScrollPos)
+}
 </script>
 
 <template>
-    <div class="bg-white fixed top-0 right-0 left-0">
+    <div id="navbar" class="bg-white top-0 right-0 left-0">
         <div class="md:flex md:items-center md:justify-between max-w-7xl mx-auto py-10 px-6 bg-transparent">
             <div class="mb-8 md:mb-0">
                 <router-link to="/"><img src="../assets/logo.png" alt="" /></router-link>

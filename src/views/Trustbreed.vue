@@ -429,7 +429,7 @@
                     Behance, Dribbble, and Twitter.</p>
             </section>
             <OtherProjects />
-            <BookAppointmentLight />
+            <BookAppointment />
         </div>
     </div>
 </template>
@@ -437,10 +437,10 @@
 <script>
 // import Works from '@/components/Works'
 // import Carousel from '@/components/Carousel'
-import BookAppointmentLight from '../components/BookAppointmentLight.vue'
+import BookAppointment from '../components/BookAppointment.vue'
 import OtherProjects from '../components/OtherProjects.vue'
 export default {
-    components: { BookAppointmentLight, OtherProjects },
+    components: { BookAppointment, OtherProjects },
     data() {
         return {
             work: {

@@ -551,19 +551,19 @@
             </section>
 
             <OtherProjects />
-            <BookAppointmentLight />
+            <BookAppointment />
         </div>
     </div>
 </template>
 
 <script>
 // import Works from '../components/Works.vue'
-import BookAppointmentLight from '../components/BookAppointmentLight.vue'
+import BookAppointment from '../components/BookAppointment.vue'
 // import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
 // import UserPersona from '../components/UserPersona.vue'
 import OtherProjects from '../components/OtherProjects.vue'
 export default {
-    components: { BookAppointmentLight, OtherProjects },
+    components: { BookAppointment, OtherProjects },
     data() {
         return {
             analysisArray: [

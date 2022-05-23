@@ -14,7 +14,7 @@ import photo5 from "../assets/athena-photo-6.png"
 import photo6 from "../assets/athena-photo-7.png"
 import photo7 from "../assets/athena-photo-8.png"
 import OtherProjects from "../components/OtherProjects.vue"
-import BookAppointmentLight from "../components/BookAppointmentLight.vue"
+import BookAppointment from "../components/BookAppointment.vue"
 const info = {
     title: "Athena",
     text: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users",
@@ -305,6 +305,6 @@ const launchpool = {
                 experts and novices together to a unified value proposition was the peak of my experience</p>
         </section>
         <OtherProjects />
-        <BookAppointmentLight />
+        <BookAppointment />
     </div>
 </template>

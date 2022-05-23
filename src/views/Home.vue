@@ -1,5 +1,5 @@
 <script setup>
-import BookAppointment from '../components/BookAppointment.vue';
+// import BookAppointment from '../components/BookAppointment.vue';
 import Clients from '../components/Clients.vue';
 import Testimonials from '../components/Testimonials.vue'
 import logo1 from "../assets/arc-logo.png"
@@ -19,6 +19,7 @@ import logo14 from "../assets/trustbreed-logo.png"
 import logo15 from "../assets/momo-logo.png"
 import testimonials1 from "../assets/testimonials-1.png"
 import { onMounted, ref } from 'vue';
+import BookAppointment from '../components/BookAppointment.vue';
 
 const clientsArr = [
   {
@@ -215,6 +216,6 @@ const prev = () => {
       <Clients :clients="clientsArr" />
     </section>
     <Testimonials :stories="testimonialsArr" :num="num" @showNext="next" @showPrev="prev" :ix="elemIdx"/>
-    <BookAppointment />
+    <BookAppointment :class="bgColor" />
   </main>
 </template>

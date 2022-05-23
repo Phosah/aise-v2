@@ -1,6 +1,6 @@
 <script setup>
 import OtherProjects from "../components/OtherProjects.vue";
-import BookAppointmentLight from "../components/BookAppointmentLight.vue";
+import BookAppointment from "../components/BookAppointment.vue";
 import Header from "../components/Header.vue";
 import xerxesCover from "../assets/xerxes-cover.png";
 import LayoutOne from "../components/LayoutOne.vue";
@@ -228,6 +228,6 @@ const user2 = {
                 experts and novices together to a unified value proposition was the peak of my experience</p>
         </section>
         <OtherProjects />
-        <BookAppointmentLight />
+        <BookAppointment />
     </main>
 </template>

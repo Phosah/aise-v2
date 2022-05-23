@@ -537,7 +537,7 @@
                 </div>
             </section>
             <OtherProjects />
-            <BookAppointmentLight />
+            <BookAppointment />
         </div>
     </div>
 </template>
@@ -545,11 +545,11 @@
 <script>
 // import Works from '../components/Works'
 // import ProjectResponsibilities from '../components/ProjectResponsibilities'
-import BookAppointmentLight from '../components/BookAppointmentLight.vue'
+import BookAppointment from '../components/BookAppointment.vue'
 import OtherProjects from '../components/OtherProjects.vue'
 export default {
     name: "Doorstep",
-    components: { BookAppointmentLight, OtherProjects },
+    components: { BookAppointment, OtherProjects },
     data() {
         return {
             projects: [

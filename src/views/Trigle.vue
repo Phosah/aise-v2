@@ -740,19 +740,19 @@
                 </div>
             </section>
             <OtherProjects />
-            <BookAppointmentLight />
+            <BookAppointment />
         </div>
     </div>
 </template>
 
 <script>
-import BookAppointmentLight from '../components/BookAppointmentLight.vue'
+import BookAppointment from '../components/BookAppointment.vue'
 // import Works from '../components/Works.vue';
 import OtherProjects from '../components/OtherProjects.vue';
 
 export default {
     name: "Trigle",
-    components: { BookAppointmentLight, OtherProjects },
+    components: { BookAppointment, OtherProjects },
     data() {
         return {};
     },

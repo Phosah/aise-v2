@@ -1,9 +1,9 @@
 <template>
-    <section class="bg-brand-black-2 py-20 px-6">
-        <div class="flex flex-col items-center max-w-7xl mx-auto py-40 md:py-20 md:px-16 text-white">
+    <section class="py-20 px-6" :class="bgColor">
+        <div class="flex flex-col items-center max-w-7xl mx-auto py-40 md:py-20 md:px-16">
             <div class="mb-24">
-                <!-- <img src="../assets/project-talk.png" alt="Project talk-dark" /> -->
-                <img src="../assets/project-talk.png" alt="Project talk" />
+                <img v-if="mode == light" src="../assets/project-talk-dark.png" alt="Project talk" />
+                <img v-else src="../assets/project-talk.png" alt="Project talk" />
             </div>
             <div class="md:w-5/6 mx-auto px-16 md:px-0">
                 <h3
@@ -12,41 +12,43 @@
                     talk about your project</h3>
                 <p class="mb-16 md:text-xl font-euclid-circular-light text-center">
                     It takes any designer to design a product, but it takes creative
-                    <span class="font-euclid-circular-bold">identification of users needs, and business goals
-                        to design the
+                    <span class="font-euclid-circular-bold">identification of users needs and business goals to design
+                        the
                         future</span>
                 </p>
             </div>
             <div class="md:flex md:items-center md:space-x-8">
 
-                <div
-                    class="mb-8 md:mb-0 px-8 py-5 text-center font-bold rounded-sm text-white bg-transparent border border-white">
-                    Send an
+                <div :class="mode === light ? 'border-brand-black-3' : 'border-white'"
+                    class="mb-8 md:mb-0 px-8 py-5 text-center font-bold rounded-sm bg-transparent border ">
+                    Send
+                    an
                     Email</div>
                 <!-- Calendly link widget begin -->
-                <div>
-                    <a class="block px-8 py-5 font-bold rounded-sm text-brand-black-1 bg-white"
-                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/aiseidahor'});return false;">Book
-                        an
-                        appointment
-                    </a>
-                </div>
+                <a :class="mode === light ? 'bg-brand-black-3 text-white' : 'bg-white text-brand-black-1' " class="block px-8 py-5 font-bold rounded-sm"
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/aiseidahor'});return false;">Book an
+                    appointment</a>
                 <!-- Calendly link widget end -->
             </div>
         </div>
-        <Footer />
+        <FooterLight />
     </section>
 </template>
 
 <script>
-import Footer from "./Footer.vue";
+import FooterLight from "./FooterLight.vue";
 export default {
     name: "BookAppointment",
-    computed: {
-        // themeColor() {
-        //     return this.$store.state.themeColor;
-        // }
-    },
-    components: { Footer }
+    components: { FooterLight },
+    props: {
+        bgColor: {
+            type: String,
+            default: ""
+        },
+        mode: {
+            type: String,
+            required: true
+        }
+    }
 }
 </script>

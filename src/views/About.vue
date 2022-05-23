@@ -49,7 +49,7 @@
       <WorkExperiences :works="worksArr" />
     </section>
     <Anime :animes="animesArr" />
-    <BookAppointment :class="bgColor" />
+    <BookAppointment :class="bgColor" :mode="themeMode" />
   </main>
 </template>
 
@@ -79,7 +79,8 @@ export default {
   components: { DesignGuidelines, BookAppointment, WorkExperiences, Anime },
   data() {
     return {
-      bgColor: "bg-brand-black-1",
+      bgColor: "bg-brand-black-1 text-white",
+      themeMode: "dark",
       guidelines: [
         {
           imageUrl: img1,

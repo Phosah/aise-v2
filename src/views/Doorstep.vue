@@ -10,7 +10,13 @@ import icon3 from "../assets/other-works/ideate-icon.png"
 import icon4 from "../assets/other-works/visual-design-icon.png"
 import photo1 from "../assets/other-works/project-photo.png"
 import photo2 from "../assets/other-works/problem-photo.png"
+import photo3 from "../assets/other-works/trigle-research.png"
+import photo4 from "../assets/other-works/research-photo.png"
 import LayoutOne from '../components/LayoutOne.vue'
+import LayoutTwo from '../components/LayoutTwo.vue'
+import ProjectPersona from "../components/ProjectPersona.vue"
+import photo5 from "../assets/other-works/personas-1.png"
+import photo6 from "../assets/other-works/personas-2.png"
 
 const projects = [
     {
@@ -79,7 +85,7 @@ const responsibilities = {
         "During the course of this project i was incharge of the ux and ui process which occasionally involved stakeholder interviews and surveys"
     ],
     img: photo1,
-    alt: "Define"
+    alt: "Project"
 }
 const problem = {
     title: "The Problem",
@@ -87,8 +93,51 @@ const problem = {
         "The difficulty of knowing how to send a package and knowing the dimensions and and weights of packages and parcels which are usually a major criteria in creating a shipping request. Also a major problem was tracking each major milestone in the packages journey"
     ],
     img: photo2,
-    alt: "Define"
+    alt: "Problem"
 }
+const interviews = {
+    title: "User Interview",
+    paragraphs: [
+        "Interviews & surveys are aimed at getting an indepth approach of how our targeted users would engage the product, determine their pain points, challenges, what they would love to have on the platform and structure all to get the best solution for their problems.",
+        "I gathered the data from the interviews and structured out their pains and needs to have a structure for an empathy mapping"
+    ],
+    img: photo3,
+    alt: "users"
+}
+const research = {
+    title: "Quantitative research result",
+    paragraphs: [
+        "From the findings of our survey and interviews carried out along with an online research of users complaints from users of competitors products, the largest pain was the identifying of the dimensions of the package to be sent which is usually a requirement to detemine shipment cost",
+    ],
+    img: photo4,
+    alt: "quantitative research"
+}
+const personasArr = [
+    {
+        img: photo5,
+        name: "Jonathan Ini",
+        profession: "Accountant",
+        info: "Rarely use logistics services",
+        about: "Jonathan is an Accountant with over 3 years working experience, he is a graduate of the Convenant university Ota. He is a calm, inquisitive, career driven and a lover of family",
+        age: 27,
+        address: "Lagos, Nigeria",
+        maritalStatus: "Single",
+        goals: "A means to be able to send packages to his siblings abroad and be aware of everything going on along the delivery",
+        points: "Its really difficult to know the exact or approximate dimensions of your shipments due to the fact i dont know alot about dimensioning"
+    },
+    {
+        img: photo6,
+        name: "Damilola Peters",
+        profession: "Businessman",
+        info: "Very frequency in using logistics services",
+        about: "Damilola is an Entrepreneur into fabric exportation. He has been into the exportation business for 8 years and wishes to expand his business from just Asia to Europe aswell",
+        age: 32,
+        address: "Kenya, Nairobi",
+        maritalStatus: "Married",
+        goals: "A means to be able to send my goods to to my business partners at flexible timings based on urgency",
+        points: "The fact that i would have to wait sometimes for days befor the container gets filled with other peoples products so all can be shipped together slows my business down"
+    },
+]
 </script>
 
 <template>
@@ -145,21 +194,8 @@ const problem = {
                 >Week 4: Visual design</div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-20 px-4 md:px-16">
-            <div class="hidden md:flex items-center justify-between space-x-12">
-                <div class="flex-1 mb-12">
-                    <img class="w-full" src="../assets/other-works/trigle-research.png" alt="Research" />
-                </div>
-                <div class="flex-1 text-sm md:text-base">
-                    <h2
-                        class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                    >User Interviews</h2>
-                    <p
-                        class="mb-6"
-                    >Interviews & surveys are aimed at getting an indepth approach of how our targeted users would engage the product, determine their pain points, challenges, what they would love to have on the platform and structure all to get the best solution for their problems.</p>
-                    <p>I gathered the data from the interviews and structured out their pains and needs to have a structure for an empathy mapping</p>
-                </div>
-            </div>
+        <section class="max-w-7xl mx-auto px-4 md:px-16">
+            <LayoutTwo :page="interviews" :headerFont="headerFont"/>
             <!-- Mobile version -->
             <div class="block md:hidden text-sm md:text-base">
                 <div class="mb-12">
@@ -177,29 +213,8 @@ const problem = {
             </div>
             <!-- End of Mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto py-20 px-4 md:px-16">
-            <div class="hidden md:flex items-center justify-between space-x-12">
-                <div class="flex-1 mb-12">
-                    <img
-                        v-if="themeColor === 'light'"
-                        class="w-full"
-                        src="../assets/other-works/research-photo-dark.png"
-                        alt="Quantitative research"
-                    />
-                    <img
-                        v-else
-                        class="w-full"
-                        src="../assets/other-works/research-photo.png"
-                        alt="Quantitative research"
-                    />
-                </div>
-                <div class="flex-1 text-sm">
-                    <h2
-                        class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                    >Quantitative research result</h2>
-                    <p>From the findings of our survey and interviews carried out along with an online research of users complaints from users of competitors products, the largest pain was the identifying of the dimensions of the package to be sent which is usually a requirement to detemine shipment cost</p>
-                </div>
-            </div>
+        <section class="max-w-7xl mx-auto px-4 md:px-16">
+            <LayoutTwo :page="research" :headerFont="headerFont"/>
             <!-- Mobile version -->
             <div class="block md:hidden text-sm md:text-base">
                 <div class="mb-12">
@@ -225,98 +240,7 @@ const problem = {
             </div>
             <!-- End of Mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto py-20 px-4 md:px-16 text-white bg-brand-black-3">
-            <h2
-                class="mb-16 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair text-center"
-            >Personas</h2>
-            <div class="lg:flex lg:space-x-14 lg:justify-center text-xs">
-                <div class="sm:flex sm:space-x-6 mb-12 lg:mb-0">
-                    <div class="sm:flex-1">
-                        <div class="flex space-x-4 items-center mb-6">
-                            <div>
-                                <img src="../assets/other-works/personas-1.png" alt="Man" />
-                            </div>
-                            <div>
-                                <h4 class="mb-2 font-bold text-sm">Jonathan Ini</h4>
-                                <p class>Accountant</p>
-                            </div>
-                        </div>
-                        <div
-                            class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7"
-                        >Rarely use logistics services</div>
-                        <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7">
-                            <h4 class="mb-4 font-bold text-sm">About Jonathan</h4>
-                            <p class>
-                                Jonathan is an Accountant with over 3 years working experience, he is a graduate of the Convenant university Ota.
-                                <br />He is a calm, inquisitive, career driven and a lover of family
-                            </p>
-                        </div>
-                    </div>
-                    <div class="sm:flex-1">
-                        <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7">
-                            <h4 class="mb-4 font-bold text-sm">Demographics</h4>
-                            <p class>27 years old</p>
-                            <p class>Lives in Lagos, Nigeria</p>
-                            <p class>Single</p>
-                        </div>
-                        <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7">
-                            <h4 class="mb-4 font-bold text-sm">Goals and needs</h4>
-                            <p
-                                class
-                            >A means to be able to send packages to his siblings abroad and be aware of everything going on along the delivery</p>
-                        </div>
-                        <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7">
-                            <h4 class="mb-4 font-bold text-sm">Pain points</h4>
-                            <p
-                                class
-                            >Its really difficult to know the exact or approximate dimensions of your shipments due to the fact i dont know alot about dimensioning</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="sm:flex sm:space-x-6">
-                    <div class="sm:flex-1">
-                        <div class="flex space-x-4 items-center mb-6">
-                            <div>
-                                <img src="../assets/other-works/personas-2.png" alt="Man" />
-                            </div>
-                            <div>
-                                <h4 class="mb-2 font-bold text-sm">Damilola Peters</h4>
-                                <p class>Businessman</p>
-                            </div>
-                        </div>
-                        <div
-                            class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7"
-                        >Very frequency in using logistics services</div>
-                        <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7">
-                            <h4 class="mb-4 font-bold text-sm">About Damilola</h4>
-                            <p
-                                class
-                            >Damilola is an Entrepreneur into fabric exportation. He has been into the exportation business for 8 years and wishes to expand his business from just Asia to Europe aswell</p>
-                        </div>
-                    </div>
-                    <div class="sm:flex-1">
-                        <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7">
-                            <h4 class="mb-4 font-bold text-sm">Demographics</h4>
-                            <p class>32 years old</p>
-                            <p class>Lives in Kenya, Nairobi</p>
-                            <p class>Married</p>
-                        </div>
-                        <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7">
-                            <h4 class="mb-4 font-bold text-sm">Goals and needs</h4>
-                            <p
-                                class
-                            >A means to be able to send my goods to to my business partners at flexible timings based on urgency</p>
-                        </div>
-                        <div class="lg:w-52 mb-6 p-6 rounded-md bg-brand-gray-7">
-                            <h4 class="mb-4 font-bold text-sm">Pain points</h4>
-                            <p
-                                class
-                            >The fact that i would have to wait sometimes for days befor the container gets filled with other peoples products so all can be shipped together slows my business down</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <ProjectPersona :personas="personasArr" />
         <section class="max-w-7xl mx-auto py-20 px-4 md:px-16">
             <div class="hidden sm:flex items-center space-x-12 text-sm md:text-base">
                 <div class="flex-1 grid grid-cols-3 gap-4">

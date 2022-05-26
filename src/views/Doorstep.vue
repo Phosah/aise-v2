@@ -1,21 +1,25 @@
 <script>
 // import Works from '../components/Works'
-// import ProjectResponsibilities from '../components/ProjectResponsibilities'
+import ProjectResponsibility from '../components/ProjectResponsibility.vue'
 import BookAppointment from '../components/BookAppointment.vue'
 import OtherProjects from '../components/OtherProjects.vue'
 import HeaderInfo from '../components/HeaderInfo.vue'
+import icon1 from "../assets/other-works/discover-icon.png"
+import icon2 from "../assets/other-works/define-icon.png"
+import icon3 from "../assets/other-works/ideate-icon.png"
+import icon4 from "../assets/other-works/visual-design-icon.png"
 export default {
     name: "Doorstep",
-    components: { BookAppointment, OtherProjects, HeaderInfo },
+    components: { BookAppointment, OtherProjects, HeaderInfo, ProjectResponsibility },
     data() {
         return {
             projects: [
                 {
-                    // icon: require("../assets/discover-icon.png"),
+                    icon: icon1,
                     title: "Discover",
                     text: "Discovery was the first phase in the UX-design process that involved",
-                    bgColor: "bg-brand-purple-1",
-                    // tick: require("../assets/tick-purple.png"),
+                    bgColor: "bg-brand-purple-4 bg-opacity-10",
+                    tickColor: "text-brand-purple-4",
                     items: [
                         "Design strategy",
                         "Stakeholder interview",
@@ -24,11 +28,11 @@ export default {
                     ]
                 },
                 {
-                    // icon: require("../assets/define-icon.png"),
+                    icon: icon2,
                     title: "Define",
                     text: "Defining a product is a phase in the UX-design process that involves",
-                    bgColor: "bg-brand-blue-2",
-                    // tick: require("../assets/tick-blue.png"),
+                    bgColor: "bg-brand-blue-6 bg-opacity-10",
+                    tickColor: "text-brand-blue-6",
                     items: [
                         "User Research",
                         "User personas",
@@ -37,11 +41,11 @@ export default {
                     ]
                 },
                 {
-                    // icon: require("../assets/ideate-icon.png"),
+                    icon: icon3,
                     title: "Ideate",
                     text: "This part of the design process was where the product structure to shape",
-                    bgColor: "bg-brand-orange-2",
-                    // tick: require("../assets/tick-yellow.png"),
+                    bgColor: "bg-brand-yellow-1 bg-opacity-10",
+                    tickColor: "text-brand-yellow-1",
                     items: [
                         "Brainstorming",
                         "User flow",
@@ -50,11 +54,11 @@ export default {
                     ]
                 },
                 {
-                    // icon: require("../assets/visual-icon.png"),
+                    icon: icon4,
                     title: "Visual Design",
                     text: "The research and structuring was brought to life visually to solve the problem",
-                    bgColor: "bg-brand-red-1",
-                    // tick: require("../assets/tick-red.png"),
+                    bgColor: "bg-brand-red-4 bg-opacity-10",
+                    tickColor: "text-brand-red-4",
                     items: [
                         "Wireframe",
                         "Style guide generation",
@@ -105,13 +109,7 @@ export default {
                 </div>
                 <!-- End of mobile version -->
             </section>
-            <!-- <section class="max-w-7xl mx-auto py-20 px-4 md:px-16">
-                <div class="grid md:grid-cols-2 gap-10 text-sm md:text-base">
-                    <template v-for="(project, index) in projects" :key="index">
-                        <ProjectResponsibilities :project="project" />
-                    </template>
-                </div>
-            </section> -->
+            <ProjectResponsibility :projects="projects" />
             <section class="max-w-7xl mx-auto py-20 px-4 md:px-16">
                 <div
                     class="md:flex md:items-center md:justify-between md:space-x-12 text-sm md:text-base"

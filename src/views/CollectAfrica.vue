@@ -184,7 +184,7 @@ export default {
             <header class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
                 <!-- <Works :work="this.$store.state.worksArr[1]" hideLink /> -->
             </header>
-            <!-- Main section -->
+            <!-- Main -->
             <HeaderInfo :headerDetails="details" />
             <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
                 <div class="md:flex md:items-center text-xs">

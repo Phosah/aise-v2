@@ -17,6 +17,9 @@ import LayoutTwo from '../components/LayoutTwo.vue'
 import ProjectPersona from "../components/ProjectPersona.vue"
 import photo5 from "../assets/other-works/personas-1.png"
 import photo6 from "../assets/other-works/personas-2.png"
+import photo7 from "../assets/other-works/solution-1.png"
+import photo8 from "../assets/other-works/solution-2.png"
+import photo9 from "../assets/other-works/solution-3.png"
 
 const projects = [
     {
@@ -138,6 +141,24 @@ const personasArr = [
         points: "The fact that i would have to wait sometimes for days befor the container gets filled with other peoples products so all can be shipped together slows my business down"
     },
 ]
+const dashboard = {
+    title: "Main Dashboard", 
+    paragraphs: ["This shows the dashboard of the users showing all their shipments analysis and various activities in a simplified manner that presents the informations to you at a glance"], 
+    img: photo7,
+    alt: "Dashboard"
+}
+const tracking = {
+    title: "Tracking page", 
+    paragraphs: ["This page is where shipmensts are searched for and tracked in a simplified manner displaying to you the status of your shipment and the expected delivery date shown first as the most important things, then if you want to get more info, a table with the various listings of every location or update is shown"], 
+    img: photo8,
+    alt: "Dashboard"
+}
+const shipments = {
+    title: "Create Shipments", 
+    paragraphs: ["Based on the users research on their pain points, the shipment creation process starts from a page to upload your shipment and from your upload, it is scanned and the dimensions is estimated for you with little artificial intelligence, that solves the problem of getting stuck on dimensions"], 
+    img: photo9,
+    alt: "Dashboard"
+}
 </script>
 
 <template>
@@ -241,7 +262,7 @@ const personasArr = [
             <!-- End of Mobile version -->
         </section>
         <ProjectPersona :personas="personasArr" />
-        <section class="max-w-7xl mx-auto py-20 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-40 px-4 md:px-16">
             <div class="hidden sm:flex items-center space-x-12 text-sm md:text-base">
                 <div class="flex-1 grid grid-cols-3 gap-4">
                     <div>
@@ -416,24 +437,14 @@ const personasArr = [
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-20 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto py-40 px-4 md:px-16 text-sm md:text-base">
             <div class="mb-12 md:mb-16 md:w-2/3 mx-auto text-center">
                 <h2
                     class="mb-6 text-3xl md:text-6xl font-semibold font-playfair text-center"
                 >The Solution</h2>
                 <p>Below shows a few of the screens that portrayed the soltions to the stated problem in the most user friendly manner</p>
             </div>
-            <div class="hidden md:flex items-center justify-between space-x-12 py-20">
-                <div class="flex-1">
-                    <h2
-                        class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                    >Main dashboard</h2>
-                    <p>This shows the dashboard of the users showing all their shipments analysis and various activities in a simplified manner that presents the informations to you at a glance</p>
-                </div>
-                <div class="flex-1">
-                    <img class="w-full" src="../assets/other-works/solution-1.png" alt="Solution" />
-                </div>
-            </div>
+            <LayoutOne :page="dashboard" :headerFont="headerFont"/>
             <!-- Mobile version -->
             <div class="block md:hidden mb-24">
                 <div class="mb-12">
@@ -446,33 +457,9 @@ const personasArr = [
                     >This shows the dashboard of the users showing all their shipments analysis and various activities in a simplified manner that presents the informations to you at a glance</p>
                 </div>
             </div>
-            <!--  -->
-            <div
-                class="md:flex md:items-center md:justify-between md:space-x-12 mb-24 md:mb-0 md:py-20"
-            >
-                <div class="md:flex-1 mb-12 md:mb-0">
-                    <img class="w-full" src="../assets/other-works/solution-2.png" alt="Solution" />
-                </div>
-                <div class="md:flex-1 text-center md:text-left">
-                    <h2
-                        class="mb-4 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                    >Tracking page</h2>
-                    <p
-                        class
-                    >This page is where shipmensts are searched for and tracked in a simplified manner displaying to you the status of your shipment and the expected delivery date shown first as the most important things, then if you want to get more info, a table with the various listings of every location or update is shown</p>
-                </div>
-            </div>
-            <div class="hidden md:flex items-center justify-between space-x-12 py-20">
-                <div class="flex-1">
-                    <h2
-                        class="mb-4 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                    >Create shipments</h2>
-                    <p>Based on the users research on their pain points, the shipment creation process starts from a page to upload your shipment and from your upload, it is scanned and the dimensions is estimated for you with little artificial intelligence, that solves the problem of getting stuck on dimensions</p>
-                </div>
-                <div class="flex-1">
-                    <img class="w-full" src="../assets/other-works/solution-3.png" alt="Solution" />
-                </div>
-            </div>
+            <!-- End of mobile version -->
+            <LayoutTwo :page="tracking" :headerFont="headerFont" />
+            <LayoutOne :page="shipments" :headerFont="headerFont"/>
             <!-- Mobile version -->
             <div class="block md:hidden">
                 <div class="mb-12">
@@ -487,7 +474,7 @@ const personasArr = [
             </div>
             <!-- End of Mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto py-20 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto pb-20 px-4 md:px-16 text-sm md:text-base">
             <div class="mb-20 md:w-5/6 mx-auto text-center">
                 <h2
                     class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
@@ -498,7 +485,9 @@ const personasArr = [
                 <img src="../assets/other-works/conclusion.png" alt="Conclusion" />
             </div>
         </section>
-        <OtherProjects />
+        <section class="pt-40">
+            <OtherProjects />
+        </section>
         <BookAppointment />
     </div>
 </template>

@@ -1,13 +1,10 @@
-<script>
-export default {
-    name: 'ProjectResponsibility',
-    props: {
-        projects: {
-            type: Array,
-            required: true
-        }
-    },
-}
+<script setup>
+defineProps({
+    projects: {
+        type: Array, 
+        required: true
+    }
+})
 </script>
 
 <template>

@@ -66,6 +66,13 @@ module.exports = {
       fontSize: {
         "10xl": "10rem",
       },
+      backgroundImage: {
+        one: "url('../src/assets/other-works/1.png')",
+        two: "url('../src/assets/other-works/2.png')",
+        three: "url('../src/assets/other-works/3.png')",
+        four: "url('../src/assets/other-works/4.png')",
+        five: "url('../src/assets/other-works/5.png')",
+      },
     },
   },
   plugins: [],

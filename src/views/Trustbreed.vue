@@ -1,74 +1,86 @@
-<script>
+<script setup>
 // import Works from '@/components/Works'
-// import Carousel from '@/components/Carousel'
+import Carousel from '@/components/Carousel.vue'
 import BookAppointment from '../components/BookAppointment.vue'
 import OtherProjects from '../components/OtherProjects.vue'
 import HeaderInfo from '../components/HeaderInfo.vue'
-export default {
-    components: { BookAppointment, OtherProjects, HeaderInfo },
-    data() {
-        return {
-            work: {
-                bgColor: "bg-brand-red-5",
-                title: "Trustbreed",
-                subtitle: "Customer Service, B2C",
-                imgPosition: "lg:w-2/3 absolute md:-bottom-40 md:-right-60 lg:-bottom-24 lg:-right-24",
-                // img: require("../assets/trustbreed-home.png"),
-                alt: "Trustbreed",
-            },
-            cards: [
-                {
-                    title: "1. Have you ever been dissapointed with the services provided to you by any company",
-                    imgName: "trustbreed-survey-photo-1.png"
-                },
-                {
-                    title: "2. What do you do when you have a poor service",
-                    imgName: "trustbreed-survey-photo-2.png"
-                },
-                {
-                    title: "3. How frequently does the company solve your problem when you complain",
-                    imgName: "trustbreed-survey-photo-3.png"
-                },
-                {
-                    title: "4. On a scale of 1-5 how difficult is it to pick the best service providers",
-                    imgName: "trustbreed-survey-photo-4.png"
-                },
-                {
-                    title: "5. What source do you trust when deciding to try a new company",
-                    imgName: "trustbreed-survey-photo-5.png"
-                }
-            ],
-            cardsDark: [
-                {
-                    title: "1. Have you ever been dissapointed with the services provided to you by any company",
-                    imgName: "trustbreed-survey-photo-dark-1.png"
-                },
-                {
-                    title: "2. What do you do when you have a poor service",
-                    imgName: "trustbreed-survey-photo-dark-2.png"
-                },
-                {
-                    title: "3. How frequently does the company solve your problem when you complain",
-                    imgName: "trustbreed-survey-photo-dark-3.png"
-                },
-                {
-                    title: "4. On a scale of 1-5 how difficult is it to pick the best service providers",
-                    imgName: "trustbreed-survey-photo-dark-4.png"
-                },
-                {
-                    title: "5. What source do you trust when deciding to try a new company",
-                    imgName: "trustbreed-survey-photo-dark-5.png"
-                }
-            ],
-             details: {
-                title: "TrustBreed",
-                shortDesc: "As a customer, have your voice heard and get the best of services from the companies / products that serve you.",
-                LongDesc: "Trustbreed is a customer support tool to help users of any and every product get the best of services from their respective providers",
-                paragraph: "Trustbreed was born to help users/customers as a result of users being tired of receiving sub-standard services for their hard-earned money from products/companies they patronize to serve them."
-            }
-        }
-    },
+import LayoutOne from '../components/LayoutOne.vue';
+import photo1 from "../assets/other-works/problem-statement-photo.png"
+import photo2 from "../assets/other-works/trustbreed-survey-photo-1.png"
+import photo3 from "../assets/other-works/trustbreed-survey-photo-2.png"
+import photo4 from "../assets/other-works/trustbreed-survey-photo-3.png"
+import photo5 from "../assets/other-works/trustbreed-survey-photo-4.png"
+import photo6 from "../assets/other-works/trustbreed-survey-photo-5.png"
+
+const work = {
+    bgColor: "bg-brand-red-5",
+    title: "Trustbreed",
+    subtitle: "Customer Service, B2C",
+    imgPosition: "lg:w-2/3 absolute md:-bottom-40 md:-right-60 lg:-bottom-24 lg:-right-24",
+    // img: require("../assets/trustbreed-home.png"),
+    alt: "Trustbreed",
 }
+const cards = [
+    {
+        title: "1. Have you ever been dissapointed with the services provided to you by any company",
+        img: photo2
+    },
+    {
+        title: "2. What do you do when you have a poor service",
+        img: photo3
+    },
+    {
+        title: "3. How frequently does the company solve your problem when you complain",
+        img: photo4
+    },
+    {
+        title: "4. On a scale of 1-5 how difficult is it to pick the best service providers",
+        img: photo5
+    },
+    {
+        title: "5. What source do you trust when deciding to try a new company",
+        img: photo6
+    }
+]
+const cardsDark = [
+    {
+        title: "1. Have you ever been dissapointed with the services provided to you by any company",
+        imgName: "trustbreed-survey-photo-dark-1.png"
+    },
+    {
+        title: "2. What do you do when you have a poor service",
+        imgName: "trustbreed-survey-photo-dark-2.png"
+    },
+    {
+        title: "3. How frequently does the company solve your problem when you complain",
+        imgName: "trustbreed-survey-photo-dark-3.png"
+    },
+    {
+        title: "4. On a scale of 1-5 how difficult is it to pick the best service providers",
+        imgName: "trustbreed-survey-photo-dark-4.png"
+    },
+    {
+        title: "5. What source do you trust when deciding to try a new company",
+        imgName: "trustbreed-survey-photo-dark-5.png"
+    }
+]
+const details = {
+    title: "TrustBreed",
+    shortDesc: "As a customer, have your voice heard and get the best of services from the companies / products that serve you.",
+    LongDesc: "Trustbreed is a customer support tool to help users of any and every product get the best of services from their respective providers",
+    paragraph: "Trustbreed was born to help users/customers as a result of users being tired of receiving sub-standard services for their hard-earned money from products/companies they patronize to serve them."
+}
+const problem = {
+    title: "Problem Statement",
+    paragraphs: [
+        "As a user / a customer, you have just one reason for patronizing a product or a service, and the result is the solution to their problems which results in user satisfaction.",
+        "Over a couple of years, there has been a massive growth of user complaints from a lot of products in which most of the complaints were caught with deaf ears by the service providers and users having to adapt or manage substandard services provided especially in a monopolized system, while some other users felt their illiteracy was the reason for their struggles and accepted their fate and endured the bad services.",
+        "The second problem is the ability of users to find the best products to pick to solve their needs in a pool of similar products"
+    ],
+    img: photo1,
+    alt: "problem fixing"
+}
+const headerFont = "font-playfair text-4xl"
 </script>
 
 <template>
@@ -146,40 +158,25 @@ export default {
                 </div>
             </section>
             <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
-                <div class="md:flex md:items-center md:justify-between md:space-x-12 text-sm md:text-base">
-                    <div class="md:flex-1 mb-10 md:mb-0">
-                        <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Problem Statement</h2>
-                        <p class="mb-6">As a user / a customer, you have just one reason for patronizing a product or a
-                            service, and the result is the solution to their problems which results in user
-                            satisfaction.</p>
-                        <p class="mb-6">Over a couple of years, there has been a massive growth of user complaints from
-                            a lot of products in which most of the complaints were caught with deaf ears by the service
-                            providers and users having to adapt or manage substandard services provided especially in a
-                            monopolized system, while some other users felt their illiteracy was the reason for their
-                            struggles and accepted their fate and endured the bad services.</p>
-                        <p>The second problem is the ability of users to find the best products to pick to solve their
-                            needs in a pool of similar products</p>
-                    </div>
-                    <div class="md:flex-1">
-                        <img class="w-full" src="../assets/other-works/problem-statement-photo.png" alt="Problem fixing" />
-                    </div>
-                </div>
+                <LayoutOne :page="problem" :headerFont="headerFont" />
             </section>
             <section
-                class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 bg-brand-black-1 text-white text-sm md:text-base">
-                <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">UX competitive analysis</h2>
-                <p class="mb-10">I was given two potential competitors by the founders and stakeholders began my study
-                    on them and built their marketing profile, SWOT profile, and conducted a UX analysis of their
-                    products. The goal was to identify what type of problems users face with competitors’ products, as
-                    well as understand what the users might expect from my product.</p>
-                <div class="mb-16">
-                    <img class="w-full" src="../assets/other-works/ux-competition-analysis-1.png" alt />
-                </div>
-                <div>
-                    <img class="w-full" src="../assets/other-works/ux-competition-analysis-1.png" alt />
+                class="py-10 md:py-20 bg-brand-black-1 text-white text-sm md:text-base">
+                <div class="max-w-7xl mx-auto px-4 md:px-16">
+                    <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">UX competitive analysis</h2>
+                    <p class="mb-10">I was given two potential competitors by the founders and stakeholders began my study
+                        on them and built their marketing profile, SWOT profile, and conducted a UX analysis of their
+                        products. The goal was to identify what type of problems users face with competitors’ products, as
+                        well as understand what the users might expect from my product.</p>
+                    <div class="mb-16">
+                        <img class="w-full" src="../assets/other-works/ux-competition-analysis-1.png" alt />
+                    </div>
+                    <div>
+                        <img class="w-full" src="../assets/other-works/ux-competition-analysis-1.png" alt />
+                    </div>
                 </div>
             </section>
-            <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
+            <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16 text-sm md:text-base">
                 <div class="md:w-2/3 mb-12">
                     <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">User Stories</h2>
                     <p>The user stories capture feelings, needs, and expectations of potential users toward creating
@@ -232,12 +229,12 @@ export default {
                     the collated results</p>
                 <div>
                     <!-- Carousel -->
-                    <div v-if="themeColor === 'light'">
+                    <div>
                         <Carousel :cards="cards" />
                     </div>
-                    <div v-else>
+                    <!-- <div v-else>
                         <Carousel :cards="cardsDark" />
-                    </div>
+                    </div> -->
                     <!-- End of Carousel -->
                 </div>
             </section>
@@ -492,9 +489,3 @@ export default {
         </div>
     </div>
 </template>
-
-<style>
-div {
-    font-family: "Euclid Circular A", sans-serif;
-}
-</style>

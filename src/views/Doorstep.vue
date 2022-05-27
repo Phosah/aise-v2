@@ -159,6 +159,7 @@ const shipments = {
     img: photo9,
     alt: "Dashboard"
 }
+const pos = "text-center"
 </script>
 
 <template>
@@ -486,7 +487,7 @@ const shipments = {
             </div>
         </section>
         <section class="pt-40">
-            <OtherProjects />
+            <OtherProjects :headerCenter="pos" />
         </section>
         <BookAppointment />
     </div>

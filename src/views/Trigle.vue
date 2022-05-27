@@ -1,23 +1,76 @@
-<script>
+<script setup>
 import BookAppointment from '../components/BookAppointment.vue'
 // import Works from '../components/Works.vue';
 import OtherProjects from '../components/OtherProjects.vue';
 import HeaderInfo from '../components/HeaderInfo.vue';
+import photo1 from "../assets/other-works/trigle-problem.png"
+import photo2 from "../assets/other-works/home-screen-photo.png"
+import photo3 from "../assets/other-works/restaurant-page-photo.png"
+import photo4 from "../assets/other-works/samuel.png"
+import photo5 from "../assets/other-works/ari.png"
+import LayoutOne from "../components/LayoutOne.vue"
+import LayoutTwo from '../components/LayoutTwo.vue';
+import UserExperience from '../components/UserExperience.vue';
 
-export default {
-    name: "Trigle",
-    components: { BookAppointment, OtherProjects, HeaderInfo },
-    data() {
-        return {
-            details: {
-                title: "Trigle App Design",
-                shortDesc: "Bringing simplicity and flexibility to having your meals",
-                LongDesc: "Trigle is a restaurant finding app with a framework developed for both tourists, and residents to find restaurants closest to them depending on the location",
-                paragraph: "It gets to solve this by its provision of an Augmented reality (AR) system which when given access to your camera, displays a live view of your current location with accurate steps and paths that leads you to that meal you have been salivating over."
-            }
-        };
-    },
+const details = {
+    title: "Trigle App Design",
+    shortDesc: "Bringing simplicity and flexibility to having your meals",
+    LongDesc: "Trigle is a restaurant finding app with a framework developed for both tourists, and residents to find restaurants closest to them depending on the location",
+    paragraph: "It gets to solve this by its provision of an Augmented reality (AR) system which when given access to your camera, displays a live view of your current location with accurate steps and paths that leads you to that meal you have been salivating over."
 }
+const problem = {
+    title: "The problem",
+    paragraphs: [
+        "We live in times where so much is happening online, which keeps us locked in the world of our mobile phones becoming where everyone wants (needs) to be able to access their daily needs. This has greatly reduced the exploration that occurs from the regular strolling to see new places hence directions even in our environment are a bit unknown, so we are caught up with little knowledge of restaurants for good meals and hangouts.",
+        "Also due to the busy routine of work, there is little time to prepare your meals most times and we all need to have our healthy meal either for sustenance or for leisure with friends or having that special dinner with a loved one. But due to the lack of exploration the knowledge of good restaurants to go to or order a meal from becomes difficult."
+    ],
+    img: photo1,
+    alt: "Ladies operating a mobile phone"
+}
+const headerFont = "font-playfair text-4xl"
+const home = {
+    title: "Home screen",
+    paragraphs: [
+        "The home screen is comprises of all the restaurants listed on the platform and broken down into categories of specilaization for users to utilize the quick filter selection to navigate through",
+        "Also the home welcomes first time users to complete profile and by doing so gives you points which could be used when accumulated to make an order, this process was created to gamify the app, this tends to make the users comfortable making orders knowing there is a bouns reward on te way"
+    ],
+    img: photo2,
+    alt: "Phone"
+}
+const restaurant = {
+    title: "Restaurant page",
+    paragraphs: [
+        "This view is for the selected restaurant, you get to have banner of a meal the reason is to give an expectation of what the restaurant offers, which in turn increases possibilities of making a purchase from that restaurant. A good banner increases order by 50%",
+        "The second screen indicates when the user scrolls upwards, to prevent indicators of the restaurant you are on to leave leaving you guessing where you are again, the micro interaction works in such a way that the logo and name changes poition to the top onscroll"
+    ],
+    img: photo3,
+    alt: "Phone"
+}
+const pos = "text-center"
+const personasArr = [
+    {
+        img: photo4,
+        alt: "Man",
+        name: "Samuel LeJourn",
+        info: "Samuel is an Accountant with over 3 years of working experience, he is a graduate of the Covenant University Ota. He is calm, inquisitive, career-driven and a lover of family",
+        age: 23,
+        profession: "Engineer",
+        maritalStatus: "Single",
+        goals: "Samuel moves from site to site depending on the job and most times it carries me interstates, hence Samuel needs to be able to get a good meal of my choice regardless of being new in town",
+        points: "Difficulty in communicating with foreigners in the new environment so getting recommendations is difficult, then after getting recommendations, getting directions to the restaurants gets difficult"
+    },
+    {
+        img: photo5,
+        alt: "Man",
+        name: "Farida Alasha",
+        info: "Ari is a graphic illustrator that lives in New York With over 3 years of working experience and over 200 successful designs. She is a lover of memes and appreciates the company of friends",
+        age: 20,
+        profession: "Illustrator",
+        maritalStatus: "Single",
+        goals: "Ari needs to be able to explore around the city to see various forms of like and their meals are a key part of that life and having a place(s) where she can sit with friends and share the moments",
+        points: "Knowledge of varieties of restaurants to hang out with friends or meet new people so she ends up exploring the same old places over again, it gets tiring. Also difficulty in navigating to a new restaurant even when an address is given, the use of google maps are not as easy as the app makes it sound"
+    }
+]
 </script>
 
 <template>
@@ -27,23 +80,8 @@ export default {
                 <!-- <Works :work="this.$store.state.worksArr[3]" hideLink /> -->
             </section>
             <HeaderInfo :headerDetails="details" />
-            <section class="max-w-7xl mx-auto px-4 md:px-16 py-10 md:py-20">
-                <div class="hidden md:flex items-center justify-between space-x-12">
-                    <div class="flex-1">
-                        <h2 class="mb-6 text-3xl lg:text-4xl font-bold font-playfair">The problem</h2>
-                        <p
-                            class="mb-8"
-                        >We live in times where so much is happening online, which keeps us locked in the world of our mobile phones becoming where everyone wants (needs) to be able to access their daily needs. This has greatly reduced the exploration that occurs from the regular strolling to see new places hence directions even in our environment are a bit unknown, so we are caught up with little knowledge of restaurants for good meals and hangouts.</p>
-                        <p>Also due to the busy routine of work, there is little time to prepare your meals most times and we all need to have our healthy meal either for sustenance or for leisure with friends or having that special dinner with a loved one. But due to the lack of exploration the knowledge of good restaurants to go to or order a meal from becomes difficult.</p>
-                    </div>
-                    <div class="flex-1">
-                        <img
-                            class="w-full"
-                            src="../assets/other-works/trigle-problem.png"
-                            alt="Guys and lady smiling and operating their mobiles."
-                        />
-                    </div>
-                </div>
+            <section class="max-w-7xl mx-auto px-4 md:px-16">
+                <LayoutOne :page="problem" :headerFont="headerFont" />
                 <!-- Mobile version -->
                 <div class="block md:hidden">
                     <div class="mb-10">
@@ -105,7 +143,7 @@ export default {
                     </div>
                 </div>
             </section>
-            <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:pl-16 md:px-16">
+            <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:pl-16 md:px-16">
                 <div class="hidden md:flex items-center justify-between space-x-12">
                     <div class="flex-1">
                         <h2
@@ -199,7 +237,7 @@ export default {
                     </div>
                 </div>
             </section>
-            <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
+            <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16">
                 <div class>
                     <div class="mb-16 md:w-5/6 mx-auto text-center text-sm md:text-base">
                         <h1
@@ -256,84 +294,7 @@ export default {
                     </div>
                 </div>
             </section>
-            <section class="hidden md:block max-w-7xl mx-auto py-10 md:py-20 px-16">
-                <div class="flex items-center justify-between space-x-10 mb-16">
-                    <div class="w-1/3">
-                        <img class="w-full" src="../assets/other-works/samuel.png" alt />
-                    </div>
-                    <div class="w-2/3">
-                        <h2 class="mb-4 text-3xl lg:text-4xl font-bold font-playfair">Samuel LeJourn</h2>
-                        <p
-                            class
-                        >Samuel is an Accountant with over 3 years of working experience, he is a graduate of the Covenant University Ota. He is calm, inquisitive, career-driven and a lover of family</p>
-                    </div>
-                </div>
-                <div class="flex justify-between space-x-10">
-                    <div class="w-1/3 pl-12">
-                        <p class="mb-2">
-                            <span class="text-lg font-bold">Age:</span> 20 years old
-                        </p>
-                        <p class="mb-2">
-                            <span class="text-lg font-bold">Occupation:</span> Engineer
-                        </p>
-                        <p class="mb-2">
-                            <span class="text-lg font-bold">Status:</span> Single
-                        </p>
-                    </div>
-                    <div class="flex space-x-6 w-2/3">
-                        <div>
-                            <h4 class="text-lg font-bold mb-4">Goals and needs</h4>
-                            <p
-                                class="text-sm"
-                            >Samuel moves from site to site depending on the job and most times it carries me interstates, hence Samuel needs to be able to get a good meal of my choice regardless of being new in town</p>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold mb-4">Pain points</h4>
-                            <p
-                                class="text-sm"
-                            >Difficulty in communicating with foreigners in the new environment so getting recommendations is difficult, then after getting recommendations, getting directions to the restaurants gets difficult</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="hidden md:block max-w-7xl mx-auto py-10 md:py-20 px-16">
-                <div class="flex items-center justify-between space-x-10 mb-16">
-                    <div class="w-1/3">
-                        <img class="w-full" src="../assets/other-works/ari.png" alt />
-                    </div>
-                    <div class="w-2/3">
-                        <h2 class="mb-4 text-3xl lg:text-4xl font-bold font-playfair">Farida Alasha</h2>
-                        <p>Ari is a graphic illustrator that lives in New York With over 3 years of working experience and over 200 successful designs. She is a lover of memes and appreciates the company of friends</p>
-                    </div>
-                </div>
-                <div class="flex justify-between space-x-10">
-                    <div class="w-1/3 pl-12">
-                        <p class="mb-2">
-                            <span class="text-lg font-bold">Age:</span> 24 years old
-                        </p>
-                        <p class="mb-2">
-                            <span class="text-lg font-bold">Occupation:</span> Illustrator
-                        </p>
-                        <p class="mb-2">
-                            <span class="text-lg font-bold">Status:</span> Single
-                        </p>
-                    </div>
-                    <div class="flex space-x-6 w-2/3">
-                        <div>
-                            <h3 class="text-lg font-bold mb-4">Goals and needs</h3>
-                            <p
-                                class="text-sm"
-                            >Ari needs to be able to explore around the city to see various forms of like and their meals are a key part of that life and having a place(s) where she can sit with friends and share the moments</p>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold mb-4">Pain points</h3>
-                            <p
-                                class="text-sm"
-                            >Knowledge of varieties of restaurants to hang out with friends or meet new people so she ends up exploring the same old places over again, it gets tiring. Also difficulty in navigating to a new restaurant even when an address is given, the use of google maps are not as easy as the app makes it sound</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <UserExperience :personas="personasArr"/>
             <!-- Mobile version -->
             <section class="block md:hidden max-w-7xl mx-auto py-10 md:py-20 px-4">
                 <div class="flex items-center space-x-4 mb-16">
@@ -416,7 +377,7 @@ export default {
                 </div>
             </section>
             <!-- End of Mobile version -->
-            <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
+            <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16">
                 <div class>
                     <h2
                         class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
@@ -479,7 +440,7 @@ export default {
                     </div>
                 </div>
             </section>
-            <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
+            <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16">
                 <div class="mb-28">
                     <img
                         v-if="themeColor === 'light'"
@@ -530,7 +491,7 @@ export default {
                     </div>
                 </div>
                 <div
-                    class="hidden md:flex items-center justify-center space-x-16 w-2/3 mx-auto mt-10"
+                    class="hidden md:flex items-center justify-center space-x-16 w-2/3 mx-auto mt-20"
                 >
                     <div>
                         <img class src="../assets/other-works/phone-4.png" alt="Phone" />
@@ -545,35 +506,11 @@ export default {
                 </div>
                 <!-- End of mobile version -->
             </section>
-            <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
-                <div class="sm:flex sm:items-center sm:justify-between sm:space-x-12">
-                    <div class="mb-12 md:mb-0 sm:flex-1 text-sm md:text-base">
-                        <h2 class="mb-6 text-3xl lg:text-5xl font-bold font-playfair">Home screen</h2>
-                        <p
-                            class="mb-6"
-                        >The home screen is comprises of all the restaurants listed on the platform and broken down into categories of specilaization for users to utilize the quick filter selection to navigate through</p>
-                        <p>Also the home welcomes first time users to complete profile and by doing so gives you points which could be used when accumulated to make an order, this process was created to gamify the app, this tends to make the users comfortable making orders knowing there is a bouns reward on te way</p>
-                    </div>
-                    <div class="sm:flex-1">
-                        <img class="w-full" src="../assets/other-works/home-screen-photo.png" alt="Phones" />
-                    </div>
-                </div>
+            <section class="max-w-7xl mx-auto px-4 md:px-16">
+                <LayoutOne :page="home" :headerFont="headerFont" />
             </section>
-            <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
-                <div class="hidden sm:flex items-center justify-between space-x-12">
-                    <div class="flex-1">
-                        <img class="w-full" src="../assets/other-works/restaurant-page-photo.png" alt="Phones" />
-                    </div>
-                    <div class="flex-1">
-                        <h2
-                            class="mb-6 md:text-3xl lg:text-4xl font-bold font-playfair"
-                        >Restaurant page</h2>
-                        <p
-                            class="mb-6"
-                        >This view is for the selected restaurant, you get to have banner of a meal the reason is to give an expectation of what the restaurant offers, which in turn increases possibilities of making a purchase from that restaurant. A good banner increases order by 50%</p>
-                        <p>The second screen indicates when the user scrolls upwards, to prevent indicators of the restaurant you are on to leave leaving you guessing where you are again, the micro interaction works in such a way that the logo and name changes poition to the top onscroll</p>
-                    </div>
-                </div>
+            <section class="max-w-7xl mx-auto px-4 md:px-16">
+                <LayoutTwo :page="restaurant" :headerFont="headerFont" />
                 <!-- Mobile version -->
                 <div class="block sm:hidden">
                     <div class="mb-12">
@@ -610,7 +547,7 @@ export default {
                     </div>
                 </div>
             </section>
-            <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
+            <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16">
                 <div class="mb-20 text-center text-sm md:text-base">
                     <h1
                         class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair text-center"
@@ -645,7 +582,7 @@ export default {
                     <img v-else src="../assets/other-works/screens.png" alt="Screens" />
                 </div>
             </section>
-            <section class="py-36 bg-brand-black-4 dark:bg-brand-gray-dark-1">
+            <section class="py-40 bg-brand-black-4 dark:bg-brand-gray-dark-1">
                 <div class="hidden md:block">
                     <div class="flex flex-wrap items-center justify-center space-x-4 mb-14">
                         <div class="flex-1">
@@ -713,7 +650,7 @@ export default {
                     </div>
                 </div>
             </section>
-            <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
+            <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16">
                 <div
                     class="md:flex md:items-center md:justify-between md:space-x-12 text-sm md:text-base"
                 >
@@ -746,14 +683,8 @@ export default {
                     </div>
                 </div>
             </section>
-            <OtherProjects />
+            <OtherProjects :headerCenter="pos"/>
             <BookAppointment />
         </div>
     </div>
 </template>
-
-<style>
-div {
-    font-family: "Euclid Circular A", sans-serif;
-}
-</style>

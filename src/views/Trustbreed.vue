@@ -5,12 +5,15 @@ import BookAppointment from '../components/BookAppointment.vue'
 import OtherProjects from '../components/OtherProjects.vue'
 import HeaderInfo from '../components/HeaderInfo.vue'
 import LayoutOne from '../components/LayoutOne.vue';
+import UserPersona from '../components/UserPersona.vue';
 import photo1 from "../assets/other-works/problem-statement-photo.png"
 import photo2 from "../assets/other-works/trustbreed-survey-photo-1.png"
 import photo3 from "../assets/other-works/trustbreed-survey-photo-2.png"
 import photo4 from "../assets/other-works/trustbreed-survey-photo-3.png"
 import photo5 from "../assets/other-works/trustbreed-survey-photo-4.png"
 import photo6 from "../assets/other-works/trustbreed-survey-photo-5.png"
+import photo7 from "../assets/other-works/user-personas-1.png"
+import photo8 from "../assets/other-works/user-personas-2.png"
 
 const work = {
     bgColor: "bg-brand-red-5",
@@ -81,6 +84,32 @@ const problem = {
     alt: "problem fixing"
 }
 const headerFont = "font-playfair text-4xl"
+const personasArr = [
+    {
+        img: photo7,
+        alt: "User",
+        name: "Jasmine Kent",
+        age: 37,
+        profession: "Product Manager",
+        maritalStatus: "Married",
+        about: "Jasmine is a 37yrs old project manager who always has to be online due to the remote nature of her job. She works from 9 to 5 from Mondays to Fridays and has a couple of side projects over the weekend",
+        behaviour: "She is calm and collected, patient and like things done quickly as she believes time is precious and should be properly utilized",
+        goals: "Need to be able to get answers to problems she faces with digital products as she works from home so 90% of services she patronizes are online",
+        concerns: "Privacy of her messages on services she is having issues with and the time of responses of those issues being as fast as possible"
+    },
+    {
+        img: photo8,
+        alt: "User",
+        name: "Richard Lawson",
+        age: 24,
+        profession: "Engineer",
+        maritalStatus: "Single",
+        about: "Richard is a 24yrs old Engineer, he spends a lot of time reading articles and making online purchases for his hardware and engineering materials to be able to work properly",
+        behaviour: "He is calm, intelligent and a bit hyper active at his actions",
+        goals: "Need to be able to get answers to problems she faces with digital products as she works from home so 90% of services she patronizes are online",
+        concerns: "Privacy of her messages on services she is having issues with and the time of responses of those issues being as fast as possible"
+    },
+]
 </script>
 
 <template>
@@ -238,71 +267,7 @@ const headerFont = "font-playfair text-4xl"
                     <!-- End of Carousel -->
                 </div>
             </section>
-            <section class="max-w-7xl mx-auto py-10 md:py-20 md:px-16 text-sm md:text-base">
-                <div class="mb-8 px-4">
-                    <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">User Personas</h2>
-                    <p>Based on the generative user research I conducted, I created user personas that capture the
-                        essence of my target group. Jasmine and Richard helped me to always keep the needs of the users
-                        at the forefront.</p>
-                </div>
-                <div class="md:flex md:space-x-12 md:items-end mb-28">
-                    <div class="md:w-1/3 self-stretch flex flex-col justify-end relative h-110 md:h-auto mb-8 md:mb-0">
-                        <img class="w-full h-full absolute inset-0 object-cover object-top"
-                            src="../assets/other-works/user-personas-1.png" alt />
-                        <div class="pl-6 pb-8 text-white z-10">
-                            <h2 class="mb-4 text-2xl md:text-3xl lg:text-4xl font-semibold font-playfair">Jasmine Kent
-                            </h2>
-                            <p class="mb-4">Age: 37 years old</p>
-                            <p class="mb-4">Occupation: Product Manager</p>
-                            <p class>Status: Married</p>
-                        </div>
-                    </div>
-                    <div class="md:w-2/3 px-4 pb-8">
-                        <h3 class="mb-3 text-lg md:text-xl lg:text-2xl font-bold font-playfair">About</h3>
-                        <p class="mb-8">Jasmine is a 37yrs old project manager who always has to be online due to the
-                            remote nature of her job. She works from 9 to 5 from Mondays to Fridays and has a couple of
-                            side projects over the weekend</p>
-                        <h3 class="mb-3 text-lg md:text-xl lg:text-2xl font-bold font-playfair">Behaviour & Attitude
-                        </h3>
-                        <p class="mb-8">She is calm and collected, patient and like things done quickly as she believes
-                            time is precious and should be properly utilized</p>
-                        <h3 class="mb-3 text-lg md:text-xl lg:text-2xl font-bold font-playfair">Goals</h3>
-                        <p class="mb-8">Need to be able to get answers to problems she faces with digital products as
-                            she works from home so 90% of services she patronizes are online</p>
-                        <h3 class="mb-3 text-lg md:text-xl lg:text-2xl font-bold font-playfair">Concerns</h3>
-                        <p class>Privacy of her messages on services she is having issues with and the time of responses
-                            of those issues being as fast as possible</p>
-                    </div>
-                </div>
-                <div class="md:flex md:space-x-12">
-                    <div class="md:w-1/3 self-stretch flex flex-col justify-end relative h-110 md:h-auto mb-8 md:mb-0">
-                        <img class="w-full h-full absolute inset-0 object-cover object-top"
-                            src="../assets/other-works/user-personas-2.png" alt />
-                        <div class="pl-6 pb-8 text-white z-10">
-                            <h2 class="mb-4 text-2xl md:text-3xl lg:text-4xl font-semibold font-playfair">Richard Lawson
-                            </h2>
-                            <p class="mb-4">Age: 24 years old</p>
-                            <p class="mb-4">Occupation: Engineer</p>
-                            <p class>Status: Single</p>
-                        </div>
-                    </div>
-                    <div class="md:w-2/3 px-4 pb-8">
-                        <h4 class="mb-3 text-lg md:text-xl lg:text-2xl font-bold font-playfair">About</h4>
-                        <p class="mb-8">Richard is a 24yrs old Engineer, he spends a lot of time reading articles and
-                            making online purchases for his hardware and engineering materials to be able to work
-                            properly</p>
-                        <h4 class="mb-3 text-lg md:text-xl lg:text-2xl font-bold font-playfair">Behaviour & Attitude
-                        </h4>
-                        <p class="mb-8">He is calm, intelligent and a bit hyper active at his actions</p>
-                        <h4 class="mb-3 text-lg md:text-xl lg:text-2xl font-bold font-playfair">Goals</h4>
-                        <p class="mb-8">Need to be able to get answers to problems she faces with digital products as
-                            she works from home so 90% of services she patronizes are online</p>
-                        <h4 class="mb-4 text-xl lg:text-3xl font-bold font-playfair">Concerns</h4>
-                        <p>Privacy of her messages on services she is having issues with and the time of responses of
-                            those issues being as fast as possible</p>
-                    </div>
-                </div>
-            </section>
+            <UserPersona :personas="personasArr" />
             <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Mental models and user journey
                     map</h2>

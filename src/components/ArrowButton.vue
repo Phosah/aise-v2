@@ -4,7 +4,7 @@
     >
         <img
             class="transparent opacity-75 h-6"
-            :src="img"
+            :src="arrow"
             :alt="arrowType + ' arrow'"
         />
     </button>
@@ -15,7 +15,7 @@ export default {
     name: "ArrowButton",
     props: {
         arrowType: String,
-        img: String,
+        arrow: String,
     },
 }
 </script>

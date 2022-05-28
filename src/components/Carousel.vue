@@ -13,13 +13,13 @@
             <div class="flex-1 flex items-center justify-end space-x-4">
                 <ArrowButton
                     arrowType="left"
-                    :img="left"
+                    :arrow="left"
                     @click="showPrevElement"
                     :disabled="this.reachedMaxLeft"
                 />
                 <ArrowButton
                     arrowType="right"
-                    :img="right"
+                    :arrow="right"
                     @click="showNextElement"
                     :disabled="this.reachedMaxRight"
                 />

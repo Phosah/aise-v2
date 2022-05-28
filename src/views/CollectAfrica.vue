@@ -2,7 +2,7 @@
 import BookAppointment from '../components/BookAppointment.vue'
 // import Carousel from '@/components/Carousel'
 // import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
-// import UserPersona from '../components/UserPersona.vue'
+// import UserFigure from '../components/UserFigure.vue'
 // import Works from '../components/Works.vue'
 import OtherProjects from '../components/OtherProjects.vue'
 import HeaderInfo from '../components/HeaderInfo.vue'
@@ -499,7 +499,7 @@ export default {
                     >To empathize with users’ needs, to guide my decision-making process, I created user personas for two individuals based on research findings.</p>
                 </div>
                 <!-- <div v-for="(persona, ix) in personasArray" :key="ix">
-                    <UserPersona :persona="persona" />
+                    <UserFigure :persona="persona" />
                 </div> -->
             </section>
             <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">

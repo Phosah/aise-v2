@@ -5,7 +5,7 @@ import BookAppointment from '../components/BookAppointment.vue'
 import OtherProjects from '../components/OtherProjects.vue'
 import HeaderInfo from '../components/HeaderInfo.vue'
 import LayoutOne from '../components/LayoutOne.vue';
-import UserPersona from '../components/UserPersona.vue';
+import UserFigure from '../components/UserFigure.vue';
 import photo1 from "../assets/other-works/problem-statement-photo.png"
 import photo2 from "../assets/other-works/trustbreed-survey-photo-1.png"
 import photo3 from "../assets/other-works/trustbreed-survey-photo-2.png"
@@ -266,17 +266,13 @@ const complaints = {
                     services helped me to further refine the problem statement. Below holds some of the questions and
                     the collated results</p>
                 <div>
-                    <!-- Carousel -->
-                    <div>
-                        <Carousel :cards="cards" />
-                    </div>
+                    <Carousel :cards="cards" />
                     <!-- <div v-else>
                         <Carousel :cards="cardsDark" />
                     </div> -->
-                    <!-- End of Carousel -->
                 </div>
             </section>
-            <UserPersona :personas="personasArr" />
+            <UserFigure :personas="personasArr" />
             <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16 text-sm md:text-base">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Mental models and user journey
                     map</h2>

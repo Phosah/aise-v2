@@ -26,7 +26,7 @@ defineProps({
                     <p class>Status: {{persona.maritalStatus}}</p>
                 </div>
             </div>
-            <div class="md:w-2/3 px-4 pb-8">
+            <div class="md:w-2/3 px-4 pb-8 md:pb-0">
                 <h3 class="mb-3 text-lg md:text-xl lg:text-2xl font-bold font-playfair">About</h3>
                 <p class="mb-8">{{persona.about}}</p>
                 <h3 class="mb-3 text-lg md:text-xl lg:text-2xl font-bold font-playfair">Behaviour & Attitude

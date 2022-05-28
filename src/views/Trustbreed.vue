@@ -14,6 +14,7 @@ import photo5 from "../assets/other-works/trustbreed-survey-photo-4.png"
 import photo6 from "../assets/other-works/trustbreed-survey-photo-5.png"
 import photo7 from "../assets/other-works/user-personas-1.png"
 import photo8 from "../assets/other-works/user-personas-2.png"
+import photo9 from "../assets/other-works/complaint-screen.png"
 
 const work = {
     bgColor: "bg-brand-red-5",
@@ -110,6 +111,14 @@ const personasArr = [
         concerns: "Privacy of her messages on services she is having issues with and the time of responses of those issues being as fast as possible"
     },
 ]
+const complaints = {
+    title: "Complaint Screens",
+    paragraphs: [
+        "The complaint creation is the centerpiece of the product whereby every user can come into trustbreed and make a complaint about a company that has rendered them poor service. If the company doesn’t exist on trustbreed, you can create them and the company is verified finally listed. Every complaint submitted would be followed up by trustbreeds agents till the issue is resolved through constant communication with the company and the users"
+    ],
+    img: photo9,
+    alt: "complaint screens"
+}
 </script>
 
 <template>
@@ -268,7 +277,7 @@ const personasArr = [
                 </div>
             </section>
             <UserPersona :personas="personasArr" />
-            <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
+            <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16 text-sm md:text-base">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Mental models and user journey
                     map</h2>
                 <p class="mb-6">To understand better the challenges surfers are facing in diﬀerent situations, based on
@@ -325,20 +334,7 @@ const personasArr = [
                         <img class="w-full" src="../assets/other-works/onboarding-screen.png" alt="Onboarding screens" />
                     </div>
                 </div>
-                <div class="md:flex md:items-center md:justify-between md:space-x-12 py-10 md:py-20">
-                    <div class="md:flex-1 mb-8 md:mb-0">
-                        <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Complaints screens
-                        </h2>
-                        <p class>The complaint creation is the centerpiece of the product whereby every user can come
-                            into trustbreed and make a complaint about a company that has rendered them poor service. If
-                            the company doesn’t exist on trustbreed, you can create them and the company is verified
-                            before finally listed. Every complaint submitted would be followed up by trustbreeds agents
-                            till the issue is resolved through constant communication with the company and the users</p>
-                    </div>
-                    <div class="md:flex-1">
-                        <img class="ml-auto" src="../assets/other-works/complaint-screen.png" alt="Complaint screen" />
-                    </div>
-                </div>
+                <LayoutOne :page="complaints" :headerFont="headerFont" />
                 <div class="pt-10 md:pt-20">
                     <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Compare Companies</h2>
                     <p class="mb-10">A lot of users are on the lookout for the best product for their needs, due to the
@@ -441,7 +437,7 @@ const personasArr = [
                 </div>
                 <!-- End of Mobile version -->
             </section>
-            <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
+            <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16 text-sm md:text-base">
                 <h3 class="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold font-playfair">Conclusion</h3>
                 <p class="md:mb-16">Throughout the design process, I learned how to prioritize and be very careful in
                     user experience in the product, a product that is built upon the basis of bad user experiences of

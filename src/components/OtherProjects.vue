@@ -6,8 +6,8 @@ defineProps({
 })
 </script>
 <template>
-    <h1 :class="headerCenter" class="max-w-7xl mx-auto mb-4 px-6 text-6xl font-bold font-new-paris-kingsize">Other Projects</h1>
-    <div class="md:flex md:items-start md:space-x-12 max-w-7xl mx-auto my-20 px-6">
+    <h1 :class="headerCenter" class="max-w-7xl mx-auto mb-4 px-6 md:px-16 text-6xl font-bold font-new-paris-kingsize">Other Projects</h1>
+    <div class="md:flex md:items-start md:space-x-12 max-w-7xl mx-auto my-20 px-6 md:px-16">
         <div class="md:flex-1">
             <img class="mb-4 w-full" src="../assets/other-projects-1.png" alt="Other projects">
             <div>

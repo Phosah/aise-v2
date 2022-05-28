@@ -13,11 +13,13 @@
             <div class="flex-1 flex items-center justify-end space-x-4">
                 <ArrowButton
                     arrowType="left"
+                    :img="left"
                     @click="showPrevElement"
                     :disabled="this.reachedMaxLeft"
                 />
                 <ArrowButton
                     arrowType="right"
+                    :img="right"
                     @click="showNextElement"
                     :disabled="this.reachedMaxRight"
                 />
@@ -30,6 +32,8 @@
 import Card from "./Card.vue";
 import ArrowButton from "./ArrowButton.vue";
 import Indicator from "./Indicator.vue";
+import arrowL from "../assets/other-works/left.svg"
+import arrowR from "../assets/other-works/right.svg"
 export default {
     name: "Carousel",
     props: {
@@ -44,7 +48,9 @@ export default {
         return {
             currentElementIndex: 0,
             isDisabled: false,
-            disabledClass: "opacity-15 bg-green-400"
+            disabledClass: "opacity-15 bg-green-400",
+            left: arrowL,
+            right: arrowR
         }
     },
     computed: {

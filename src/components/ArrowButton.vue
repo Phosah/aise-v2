@@ -2,11 +2,11 @@
     <button
         class="btn rounded-full p-2 bg-white border dark:border-brand-black-1 transition-all duration-500 ease-in"
     >
-        <!-- <img
+        <img
             class="transparent opacity-75 h-6"
-            :src="require(`../assets/other-works/${arrowType}.svg`)"
+            :src="img"
             :alt="arrowType + ' arrow'"
-        /> -->
+        />
     </button>
 </template>
 
@@ -15,7 +15,8 @@ export default {
     name: "ArrowButton",
     props: {
         arrowType: String,
-    }
+        img: String,
+    },
 }
 </script>
 

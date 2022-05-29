@@ -303,7 +303,7 @@ const conclusion = {
     img: photo22,
     alt: "conclusion"
 }
-const headerCenter = 'text-center'
+const headerCenter = 'text-center font-playfair'
 </script>
 
 <template>

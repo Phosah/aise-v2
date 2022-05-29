@@ -267,9 +267,6 @@ const complaints = {
                     the collated results</p>
                 <div>
                     <Carousel :cards="cards" />
-                    <!-- <div v-else>
-                        <Carousel :cards="cardsDark" />
-                    </div> -->
                 </div>
             </section>
             <UserFigure :personas="personasArr" />
@@ -282,8 +279,7 @@ const complaints = {
                     users, getting a clearer idea about pain points and what support would they expect from the product.
                 </p>
                 <div>
-                    <img v-if="themeColor === 'light'" src="../assets/other-works/user-map-dark.png" alt="User map" />
-                    <img v-else src="../assets/other-works/user-map.png" alt="User map" />
+                    <img src="../assets/other-works/user-map.png" alt="User map" />
                 </div>
             </section>
             <section>

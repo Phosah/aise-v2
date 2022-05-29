@@ -18,7 +18,7 @@ import photo8 from '../assets/aistake-photo-8.png'
 import photo9 from "../assets/aistake-photo-9.png"
 import photo10 from "../assets/aistake-photo-10.png"
 import OtherProjects from "../components/OtherProjects.vue"
-import BookAppointment from '../components/BookAppointment.vue';
+import Footer from '../components/Footer.vue';
 const info = {
     title: "Aistake Finance",
     text: "Staking with multiple validators on the Solana network at the same time while still having the ability to stake with the community using the best validators",
@@ -250,6 +250,6 @@ const pool = {
                 experts and novices together to a unified value proposition was the peak of my experience</p>
         </section>
         <OtherProjects />
-        <BookAppointment />
+        <Footer />
     </div>
 </template>

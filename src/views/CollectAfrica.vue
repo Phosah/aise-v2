@@ -1,5 +1,5 @@
 <script setup>
-import BookAppointment from '../components/BookAppointment.vue'
+import Footer from '../components/Footer.vue'
 import Carousel from '../components/Carousel.vue'
 import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
 import UserPersona from '../components/UserPersona.vue'
@@ -714,7 +714,7 @@ const headerCenter = 'text-center font-playfair'
                 <LayoutOne :page="conclusion" :headerFont="headerFont" />
             </section>
             <OtherProjects :headerCenter="headerCenter" />
-            <BookAppointment />
+            <Footer />
         </div>
     </div>
 </template>

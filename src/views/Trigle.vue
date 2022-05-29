@@ -1,5 +1,5 @@
 <script setup>
-import BookAppointment from '../components/BookAppointment.vue'
+import Footer from '../components/Footer.vue'
 // import Works from '../components/Works.vue';
 import OtherProjects from '../components/OtherProjects.vue';
 import HeaderInfo from '../components/HeaderInfo.vue';
@@ -684,7 +684,7 @@ const personasArr = [
                 </div>
             </section>
             <OtherProjects :headerCenter="pos"/>
-            <BookAppointment />
+            <Footer />
         </div>
     </div>
 </template>

@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, ref } from "vue"
-import BookAppointment from '../components/BookAppointment.vue';
+import Footer from '../components/Footer.vue';
 import Work from '../components/Work.vue';
 import athenaCover from "../assets/athena-cover.png"
 import aistakeCover from "../assets/aistake-finance-cover.png"
@@ -54,6 +54,6 @@ onMounted(() => {
             <h1 class="text-6xl md:text-9xl font-new-paris-kingsize">Projects</h1>
         </div>
         <Work :works="worksArr" />
-        <BookAppointment :class="bgColor" :mode="themeMode" :footerMode="themeMode" />
+        <Footer :class="bgColor" :mode="themeMode" :OldFooterMode="themeMode" />
     </div>
 </template>

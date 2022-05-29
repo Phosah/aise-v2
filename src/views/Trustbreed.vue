@@ -1,7 +1,7 @@
 <script setup>
 // import Works from '@/components/Works'
 import Carousel from '@/components/Carousel.vue'
-import BookAppointment from '../components/BookAppointment.vue'
+import Footer from '../components/Footer.vue'
 import OtherProjects from '../components/OtherProjects.vue'
 import HeaderInfo from '../components/HeaderInfo.vue'
 import LayoutOne from '../components/LayoutOne.vue';
@@ -438,7 +438,7 @@ const complaints = {
                     Behance, Dribbble, and Twitter.</p>
             </section>
             <OtherProjects />
-            <BookAppointment />
+            <Footer />
         </div>
     </div>
 </template>

@@ -49,7 +49,7 @@
       <WorkExperiences :works="worksArr" />
     </section>
     <Anime :animes="animesArr" />
-    <BookAppointment :class="bgColor" :mode="themeMode" :footerMode="themeMode" />
+    <Footer :class="bgColor" :mode="themeMode" :OldFooterMode="themeMode" />
   </main>
 </template>
 
@@ -61,7 +61,7 @@ import img3 from '@/assets/business-goals.png'
 import img4 from "../assets/empathy.png"
 import img5 from "../assets/inclusivity.png"
 import img6 from "../assets/transparent.png"
-import BookAppointment from '../components/BookAppointment.vue'
+import Footer from '../components/Footer.vue'
 import WorkExperiences from '../components/WorkExperiences.vue'
 import arcLogo from '@/assets/arc.png'
 import dabaLogo from '@/assets/daba.png'
@@ -76,7 +76,7 @@ import onePiece from "../assets/one-piece.png"
 import bleach from "../assets/bleach.png"
 export default {
   name: "About",
-  components: { DesignGuidelines, BookAppointment, WorkExperiences, Anime },
+  components: { DesignGuidelines, Footer, WorkExperiences, Anime },
   data() {
     return {
       bgColor: "bg-brand-black-1 text-white",

@@ -5,7 +5,7 @@ import athenaCover from "../assets/athena-cover.png"
 import aistakeCover from "../assets/aistake-finance-cover.png"
 import pegasusCover from "../assets/pegasus-cover.png"
 import xerxesCover from "../assets/xerxes-cover-2.png"
-import BookAppointment from "../components/BookAppointment.vue";
+import Footer from "../components/Footer.vue";
 
 const bgColor = "bg-brand-black-2 text-white"
 const themeMode =  "dark"
@@ -62,6 +62,6 @@ onMounted(() => {
             <h1 class="text-6xl md:text-9xl font-new-paris-kingsize">Projects</h1>
         </div>
         <Work :works="worksArr" />
-        <BookAppointment :class="bgColor" :mode="themeMode" :footerMode="themeMode" />
+        <Footer :class="bgColor" :mode="themeMode" :OldFooterMode="themeMode" />
     </div>
 </template>

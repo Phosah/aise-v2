@@ -14,7 +14,7 @@ import photo4 from "../assets/pegasus-photo-7.png"
 import photo5 from "../assets/pegasus-photo-8.png"
 import photo6 from "../assets/pegasus-photo-9.png"
 import OtherProjects from "../components/OtherProjects.vue"
-import BookAppointment from '../components/BookAppointment.vue';
+import Footer from '../components/Footer.vue';
 const info = {
     title: "Pegasus",
     text: "The easiest way for you to gain access to multiple token holdings at once by the purchase of one super token",
@@ -244,6 +244,6 @@ const transactionHistory = {
                 business goals</p>
         </section>
         <OtherProjects />
-        <BookAppointment />
+        <Footer />
     </div>
 </template>

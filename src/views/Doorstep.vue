@@ -1,7 +1,7 @@
 <script setup>
 // import Works from '../components/Works'
 import ProjectResponsibility from '../components/ProjectResponsibility.vue'
-import BookAppointment from '../components/BookAppointment.vue'
+import Footer from '../components/Footer.vue'
 import OtherProjects from '../components/OtherProjects.vue'
 import HeaderInfo from '../components/HeaderInfo.vue'
 import icon1 from "../assets/other-works/discover-icon.png"
@@ -489,7 +489,7 @@ const pos = "text-center"
         <section class="pt-40">
             <OtherProjects :headerCenter="pos" />
         </section>
-        <BookAppointment />
+        <Footer />
     </div>
 </template>
 

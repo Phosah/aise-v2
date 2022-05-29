@@ -1,5 +1,4 @@
 <script setup>
-// import BookAppointment from '../components/BookAppointment.vue';
 import Clients from '../components/Clients.vue';
 import Testimonials from '../components/Testimonials.vue'
 import logo1 from "../assets/arc-logo.png"
@@ -18,8 +17,8 @@ import logo13 from "../assets/fambase-logo.png"
 import logo14 from "../assets/trustbreed-logo.png"
 import logo15 from "../assets/momo-logo.png"
 import testimonials1 from "../assets/testimonials-1.png"
-import { onMounted, ref } from 'vue';
-import BookAppointment from '../components/BookAppointment.vue';
+import { ref } from 'vue';
+import Footer from '../components/Footer.vue';
 
 const clientsArr = [
   {
@@ -126,20 +125,11 @@ const prev = () => {
     elemIdx.value--;
   }
 }
-// const getIndex = () => {
-//   testimonialsArr.findIndex(elemIdx => {
-//     return elemIdx.name === "Fredrick Williams";
-//   });
-//   console.log(elemIdx.value)
-// }
-// onMounted(() => {
-//   getIndex();
-// })
 </script>
 
 <template>
   <main class="text-brand-black-2">
-    <section class="my-40">
+    <section class="mt-40">
       <div class="md:flex md:items-center max-w-7xl mx-auto mt-20 px-6">
         <h1 class="md:flex-1 text-6xl md:text-10xl font-new-paris-kingsize text-center">Product</h1>
         <p class="md:w-1/3 leading-relaxed text-brand-gray-2">Hello There! I am Aise, a Product designer in the web3
@@ -149,13 +139,13 @@ const prev = () => {
           need and user satisfaction through the creation of simple digital experiences.</p>
       </div>
       <div class="flex justify-center max-w-7xl mx-auto mt-20 px-6">
-        <h1 class="text-6xl md:text-10xl font-new-paris-kingsize">Designer</h1>
+        <h1 class="z-10 text-6xl md:text-10xl font-new-paris-kingsize">Designer</h1>
       </div>
-      <div class="md:flex justify-end max-w-7xl mx-auto mt-20">
+      <div class="md:flex justify-end max-w-7xl mx-auto mt-20 px-6">
         <div class="flex-1">
           <img class="w-32 h-32" src="../assets/random1.png" alt="Scroll down">
         </div>
-        <div class="flex-1">
+        <div class="flex-1 transform -translate-y-40">
           <img src="../assets/aise-photo-1.png" alt="Aise photo">
         </div>
       </div>
@@ -218,10 +208,10 @@ const prev = () => {
         <div class="md:flex-1"><img class="w-full" src="../assets/gif3.gif" alt="Designs"></div>
       </div>
     </section>
-    <section class="max-w-7xl mx-auto my-40 px-6">
+    <section class="max-w-7xl mx-auto my-52 px-6">
       <Clients :clients="clientsArr" />
     </section>
     <Testimonials :stories="testimonialsArr" :num="num" @showNext="next" @showPrev="prev" :ix="elemIdx"/>
-    <BookAppointment :class="bgColor" :mode="themeMode" :footerMode="themeMode" />
+    <Footer :class="bgColor" :mode="themeMode" :OldFooterMode="themeMode" />
   </main>
 </template>

@@ -1,6 +1,6 @@
 <script setup>
 import BookAppointment from '../components/BookAppointment.vue'
-// import Carousel from '@/components/Carousel'
+import Carousel from '../components/Carousel.vue'
 // import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
 // import UserFigure from '../components/UserFigure.vue'
 // import Works from '../components/Works.vue'
@@ -17,18 +17,22 @@ import photo5 from '../assets/other-works/process-ideation.png'
 import photo6 from '../assets/other-works/process-ideation.png'
 import photo7 from '../assets/other-works/process-feedback.png'
 import photo8 from '../assets/other-works/process-iteration.png'
+import photo9 from '../assets/other-works/collectafrica-survey-photo-1.png'
+import photo10 from '../assets/other-works/collectafrica-survey-photo-2.png'
+import photo11 from '../assets/other-works/collectafrica-survey-photo-3.png'
+import photo12 from '../assets/other-works/collectafrica-survey-photo-4.png'
 const cards = [
     {
-        imgName: "collectafrica-survey-photo-1.png"
+        img: photo9
     },
     {
-        imgName: "collectafrica-survey-photo-2.png"
+        img: photo10
     },
     {
-        imgName: "collectafrica-survey-photo-3.png"
+        img: photo11
     },
     {
-        imgName: "collectafrica-survey-photo-4.png"
+        img: photo12
     }
 ]
 const cardsDark = [
@@ -310,7 +314,7 @@ const headerFont = 'font-playfair text-4xl'
             </section>
             <Process :steps="processArr" />
             <section
-                class="max-w-7xl mx-auto pb-20 py-10 md:py-20 px-4 md:px-16 text-sm md:text-base"
+                class="max-w-7xl mx-auto pb-20 py-10 md:py-40 px-4 md:px-16 text-sm md:text-base"
             >
                 <div class="mb-12">
                     <h1
@@ -319,14 +323,7 @@ const headerFont = 'font-playfair text-4xl'
                     <p>I conducted some research alongside the product manager to discover what we are building, despite having a brief given we conducted some research to validate, and have a deeper understanding of the pain points of the users and bridge it with the business goals. The UX phase began with getting to know the users and their behaviors and the research goal was aimed at getting a clear idea of the problem as it directly affects the users, and uncovering their needs and frustrations to better understand how to create a better experience for them. This enabled me to get a better understanding of the pain points of our users and empathize more. Research started with interviews to get some qualitative data and from the data gotten, we decided to work towards an MVP, and from the gotten pain points we needed some quantitative data to identify the most sorted solutions of our target market to properly roll out an MVP</p>
                 </div>
                 <div>
-                    <!-- Carousel -->
-                    <div v-if="themeColor === 'light'">
-                        <Carousel :cards="cards" />
-                    </div>
-                    <div v-else>
-                        <Carousel :cards="cardsDark" />
-                    </div>
-                    <!-- End of Carousel -->
+                    <Carousel :cards="cards" />
                 </div>
             </section>
             <section class="max-w-7xl mx-auto px-4 md:px-16 pb-20 text-sm md:text-base">

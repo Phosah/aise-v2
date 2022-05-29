@@ -1,8 +1,8 @@
 <script setup>
 import BookAppointment from '../components/BookAppointment.vue'
 import Carousel from '../components/Carousel.vue'
-// import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
-// import UserFigure from '../components/UserFigure.vue'
+import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
+import UserPersona from '../components/UserPersona.vue'
 // import Works from '../components/Works.vue'
 import OtherProjects from '../components/OtherProjects.vue'
 import HeaderInfo from '../components/HeaderInfo.vue'
@@ -21,6 +21,16 @@ import photo9 from '../assets/other-works/collectafrica-survey-photo-1.png'
 import photo10 from '../assets/other-works/collectafrica-survey-photo-2.png'
 import photo11 from '../assets/other-works/collectafrica-survey-photo-3.png'
 import photo12 from '../assets/other-works/collectafrica-survey-photo-4.png'
+import photo13 from '../assets/other-works/paypal.png'
+import photo14 from '../assets/other-works/stripe.png'
+import photo15 from '../assets/other-works/user-persona-3.png'
+import photo16 from '../assets/other-works/user-persona-4.png'
+import photo17 from '../assets/other-works/opportunities-graph-2.png'
+import photo18 from '../assets/other-works/simplified-dashboard.png'
+import photo19 from '../assets/other-works/customer-management.png'
+import photo20 from '../assets/other-works/user-management.png'
+import photo21 from '../assets/other-works/payment-link.png'
+import photo22 from '../assets/other-works/collect-conclusion.png'
 const cards = [
     {
         img: photo9
@@ -62,7 +72,7 @@ const analysisArray = [
         advantagesList: [
             'Structured themselves as a solution where you can get paid by customers from anywhere in the world',
         ],
-        // img: require('../assets/paystack.png'),
+        img: photo13,
         alt: 'Paypal',
         strength: 'Strength',
         strengthList: [
@@ -103,7 +113,7 @@ const analysisArray = [
             'Stripe ensures maintaining contact with the audience by organizing an annual event where the users are familiarised with the new launches of Stripe and the company listen to the feedback of the users',
             "Strengthening Brand Recognition and Loyalty with their blog and posts"
         ],
-        // img: require('../assets/stripe.png'),
+        img: photo14,
         alt: 'Stripe',
         strength: 'Strength',
         strengthList: [
@@ -133,7 +143,7 @@ const analysisArray = [
 ]
 const personasArray = [
     {
-        // img: require('../assets/user-persona-3.png'),
+        img: photo15,
         alt: "User Persona",
         name: "Marvin Oluimde",
         info: "Marvin is a 32 year old business man in Lagos that runs a small business where he sells and delivers  wristwatches withing and out of Lagos from his little store at Obalende Market",
@@ -155,7 +165,7 @@ const personasArray = [
         ]
     },
     {
-        // img: require("../assets/user-persona-4.png"),
+        img: photo16,
         alt: "User Persona",
         name: "Jennson Mobiles",
         info: "Jennson mobile is an electronics company that deals in selling and repairs of all phones ranging from android to ios, they have over 50 staff and 20 outlets all over the country",
@@ -242,6 +252,58 @@ const processArr = [
     },
 ]
 const headerFont = 'font-playfair text-4xl'
+const volume = {
+    title: "Estimated transaction volume of $8tn in 2025",
+    paragraphs: [
+        "With 10% of this tranascation relating with the African market, the opportunities available is endless"
+    ],
+    img: photo17,
+    alt: "volume graph"
+}
+const dashboard = {
+    title: "Simplified Dashboard",
+    paragraphs: [
+        "As a user, your first daily interaction is with the dashboard where you receive a summary of reports and lasted activities that have happened in your company as regards financial activities, hence the design of the dashboard had to be optimized to be easy to read, prioritize the data visualization to display info from the highest priority to the least and still give room to take major actions in the product."
+    ],
+    img: photo18,
+    alt: "dashboard"
+}
+const customer = {
+    title: "Customer Management",
+    paragraphs: [
+        "A good customer and business relationship improves the bonds customers have with businesses which in turn makes them stay longer with a business that relates with them better and the business would know how best to serve the customers as you can directly message the customers and they receive the messages in the mails and SMS and every reply you receive in the customer's thread on your dashboard",
+        "You can add new customers, delete customers, place customers on services and even send them messages on events like popular holidays and birthdays to ensure an even greater bond."
+    ],
+    img: photo19,
+    alt: "customer"
+}
+const user = {
+    title: "User Management",
+    paragraphs: [
+        "Both large and small scale organizations usually have multiple people handling the affairs, it can be as little as two or as much as 1 thousand and for those who have branches all over the world makes it even bigger whereby you can have even more people for one role e.g Accountants. So to properly ensure the business is optimized, you can add members of your organization to your product and assign roles or create new ones, and customize the permissions available for each role and what actions exch role can carry out or data they can see"
+    ],
+    img: photo20,
+    alt: "User"
+}
+const payment = {
+    title: "Payment Link",
+    paragraphs: [
+        "A pay link is a one time link created by an organization that customers can use to make payments repetitive times or can be shared with multiple customers to make payments using several payment methods that the customer(s) feels comfortable with, this helps the business from always having to create invoices every time and saves time and stress. The business can decide to set the amount to be paid or that privilege can be left to the customer",
+        "This is also used a lot and integrated with eCommerce systems where this would be used as a portal to make payment for purchased goods which would be integrated into the eCommerce platforms"
+    ],
+    img: photo21,
+    alt: "payment"
+}
+const conclusion = {
+    title: "Conclusion",
+    paragraphs: [
+        "It's hard enough to get a single person or business to trust you to help handle their finances when dealing with businesses and financial activities I have discovered that transparency and ease of use are of top priority in getting the best of results and user retention. And also the understanding of business goals to ensure the business makes a profit has to be placed as another priority hence a lot of calls with stakeholders and the aligning of design and business goals has to be established from the start.",
+        "I enjoyed this project and I got to realize how we can help people who run businesses if they focus on the business itself they have more time and strategic juice to focus and take their organization to greater heights"
+    ],
+    img: photo22,
+    alt: "conclusion"
+}
+const headerCenter = 'text-center'
 </script>
 
 <template>
@@ -360,26 +422,26 @@ const headerFont = 'font-playfair text-4xl'
                         class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
                     >Brainstorming</h1>
                     <p
-                        class="md:w-2/3 mb-6 text-sm md:text-base"
+                        class="md:w-2/3 mb-12 text-sm md:text-base"
                     >In this stage, we came together to come up with the best possible approach. after brainstorming, I continued by sketching out some of the most promising ideas to distill sown the ideas and get feedback from the team. This phase was shored and it comprised of how might we questions, in which some mock-ups were drafted out</p>
-                    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-12">
                         <div
-                            class="md:mb-10 p-6 bg-brand-gray-light-1 dark:bg-brand-gray-dark-1 rounded-md"
+                            class="p-6 bg-brand-gray-5 rounded-md"
                         >How might we allow businesses receive payments from foreign countries</div>
                         <div
-                            class="md:mb-10 p-6 bg-brand-gray-light-1 dark:bg-brand-gray-dark-1 rounded-md"
+                            class="p-6 bg-brand-gray-5 rounded-md"
                         >How might we all businesses set up reocurring payments for customers</div>
                         <div
-                            class="md:mb-10 p-6 bg-brand-gray-light-1 dark:bg-brand-gray-dark-1 rounded-md"
+                            class="p-6 bg-brand-gray-5 rounded-md"
                         >How might we help businesses manage their businesses</div>
                         <div
-                            class="md:mb-10 p-6 bg-brand-gray-light-1 dark:bg-brand-gray-dark-1 rounded-md"
+                            class="p-6 bg-brand-gray-5 rounded-md"
                         >How might we help organize the business to account for branches</div>
                         <div
-                            class="md:mb-10 p-6 bg-brand-gray-light-1 dark:bg-brand-gray-dark-1 rounded-md"
+                            class="p-6 bg-brand-gray-5 rounded-md"
                         >How might we let businesses maintaing proper financial records</div>
                         <div
-                            class="md:mb-10 p-6 bg-brand-gray-light-1 dark:bg-brand-gray-dark-1 rounded-md"
+                            class="p-6 bg-brand-gray-5 rounded-md"
                         >How can we let businesses balance account and reconcile payments</div>
                     </div>
                 </div>
@@ -393,9 +455,9 @@ const headerFont = 'font-playfair text-4xl'
                         class="mb-6"
                     >Understanding our competitors on how they provide solutions for similar user needs has helped me define what creative solutions could be designed and improved for our product.</p>
                 </div>
-                <!-- <div v-for="(analysis, ix) in analysisArray" :key="ix">
+                <div v-for="(analysis, ix) in analysisArray" :key="ix">
                     <CompetitionAnalysis :analysis="analysis" />
-                </div> -->
+                </div>
             </section>
             <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm">
                 <div class="mb-12">
@@ -406,9 +468,9 @@ const headerFont = 'font-playfair text-4xl'
                         class="mb-6"
                     >To empathize with users’ needs, to guide my decision-making process, I created user personas for two individuals based on research findings.</p>
                 </div>
-                <!-- <div v-for="(persona, ix) in personasArray" :key="ix">
-                    <UserFigure :persona="persona" />
-                </div> -->
+                <div v-for="(persona, ix) in personasArray" :key="ix">
+                    <UserPersona :persona="persona" />
+                </div>
             </section>
             <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
                 <div class="mb-12">
@@ -416,7 +478,7 @@ const headerFont = 'font-playfair text-4xl'
                         class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
                     >Business Opportunities</h1>
                     <p
-                        class="mb-6"
+                        class="mb-20"
                     >For every startup, the main goal is to make money, if not what's the use, so to be the next unicorn, you cannot design without accounting for what and where would fetch finances and the best ways of going about it that would still give value to the users.</p>
                 </div>
                 <div class="mb-10">
@@ -439,26 +501,7 @@ const headerFont = 'font-playfair text-4xl'
                     >With over $33billion in cumulative revenue of e-commerce transactions and with an increasing pace estimated at $48billion in 2025, if 5% of those transactions are handled by Collect in the first year of launch considering its newness to the market and striving for acceptance, that would result in 1.65million dollars, now with an estimate of 1% in transaction fee (by the way that the lowest ever) would result in $16.5 million dollars from eCommerce in the first launch</p>
                     <p>Now who said anything about just commerce, Softwares are sprouting on a daily and subscriptions are made by their customers and this requires a portal to monitor payments, small businesses like gym, and even down to the laundry service that gives you a periodic service requires payments and this also is an opportunity base to harness.</p>
                 </div>
-                <div class="md:flex items-center space-x-6 mb-10">
-                    <div class="md:flex-1 mb-12 md:mb-0">
-                        <h4
-                            class="mb-4 text-2xl md:text-3xl lg:text-4xl font-bold"
-                        >Estimated transaction volume of $8tn in 2025</h4>
-                        <p>With 10% of this tranascation relating with the African market, the opportunities available is endless</p>
-                    </div>
-                    <div class="md:flex-1">
-                        <img
-                            v-if="themeColor === 'light'"
-                            src="../assets/other-works/opportunities-graph-2.png"
-                            alt="Opportunities graph"
-                        />
-                        <img
-                            v-else
-                            src="../assets/other-works/opportunities-graph-dark-2.png"
-                            alt="Opportunities graph"
-                        />
-                    </div>
-                </div>
+                <LayoutOne :page="volume" :headerFont="headerFont" />
             </section>
             <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
                 <div class="mb-20">
@@ -589,43 +632,8 @@ const headerFont = 'font-playfair text-4xl'
                         />
                     </div>
                 </div>
-                <div
-                    class="md:flex md:items-center md:justify-between md:space-x-12 py-10 md:py-20"
-                >
-                    <div class="md:flex-1 mb-10 md:mb-0">
-                        <h2
-                            class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                        >Simplified Dashboard</h2>
-                        <p
-                            class
-                        >As a user, your first daily interaction is with the dashboard where you receive a summary of reports and lasted activities that have happened in your company as regards financial activities, hence the design of the dashboard had to be optimized to be easy to read, prioritize the data visualization to display info from the highest priority to the least and still give room to take major actions in the product.</p>
-                    </div>
-                    <div class="md:flex-1">
-                        <img
-                            class="w-full"
-                            src="../assets/other-works/simplified-dashboard.png"
-                            alt="Simplified dashboard"
-                        />
-                    </div>
-                </div>
-                <div class="hidden md:flex items-center justify-between space-x-12 py-10 md:py-20">
-                    <div class="flex-1">
-                        <img
-                            class="w-full"
-                            src="../assets/other-works/customer-management.png"
-                            alt="Simplified dashboard"
-                        />
-                    </div>
-                    <div class="flex-1">
-                        <h2
-                            class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                        >Customer Management</h2>
-                        <p
-                            class
-                        >A good customer and business relationship improves the bonds customers have with businesses which in turn makes them stay longer with a business that relates with them better and the business would know how best to serve the customers as you can directly message the customers and they receive the messages in the mails and SMS and every reply you receive in the customer's thread on your dashboard</p>
-                        <p>You can add new customers, delete customers, place customers on services and even send them messages on events like popular holidays and birthdays to ensure an even greater bond.</p>
-                    </div>
-                </div>
+                <LayoutOne :page="dashboard" :headerFont="headerFont" />
+                <LayoutTwo :page="customer" :headerFont="headerFont"/>
                 <!-- Mobile version -->
                 <div class="block md:hidden py-10 md:py-20">
                     <div class="mb-10">
@@ -659,39 +667,8 @@ const headerFont = 'font-playfair text-4xl'
                         />
                     </div>
                 </div>
-                <div
-                    class="md:flex md:items-center md:justify-between md:space-x-12 py-10 md:py-20"
-                >
-                    <div class="md:flex-1 mb-10 md:mb-0">
-                        <h2
-                            class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                        >User Management</h2>
-                        <p
-                            class
-                        >Both large and small scale organizations usually have multiple people handling the affairs, it can be as little as two or as much as 1 thousand and for those who have branches all over the world makes it even bigger whereby you can have even more people for one role e.g Accountants. So to properly ensure the business is optimized, you can add members of your organization to your product and assign roles or create new ones, and customize the permissions available for each role and what actions exch role can carry out or data they can see</p>
-                    </div>
-                    <div class="md:flex-1">
-                        <img
-                            class="w-full"
-                            src="../assets/other-works/user-management.png"
-                            alt="User management"
-                        />
-                    </div>
-                </div>
-                <div class="hidden md:flex items-center justify-between space-x-12 py-10 md:py-20">
-                    <div class="flex-1">
-                        <img class="w-full" src="../assets/other-works/payment-link.png" alt="Payment link" />
-                    </div>
-                    <div class="flex-1">
-                        <h2
-                            class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                        >Payment Link</h2>
-                        <p
-                            class="mb-6"
-                        >A pay link is a one time link created by an organization that customers can use to make payments repetitive times or can be shared with multiple customers to make payments using several payment methods that the customer(s) feels comfortable with, this helps the business from always having to create invoices every time and saves time and stress. The business can decide to set the amount to be paid or that privilege can be left to the customer</p>
-                        <p>This is also used a lot and integrated with eCommerce systems where this would be used as a portal to make payment for purchased goods which would be integrated into the eCommerce platforms</p>
-                    </div>
-                </div>
+                <LayoutOne :page="user" :headerFont="headerFont" />
+                <LayoutTwo :page="payment" :headerFont="headerFont" />
                 <!-- Mobile version -->
                 <div class="block md:hidden py-10 md:py-20">
                     <div class="mb-10">
@@ -734,35 +711,10 @@ const headerFont = 'font-playfair text-4xl'
                 </div>
             </section>
             <section class="max-w-7xl mx-auto pt-10 md:pt-20 px-4 md:px-16 text-sm md:text-base">
-                <div
-                    class="md:flex md:items-center md:justify-between md:space-x-12 py-10 md:py-20"
-                >
-                    <div class="md:flex-1 mb-10 md:mb-0">
-                        <h2
-                            class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                        >Conclusion</h2>
-                        <p
-                            class="mb-6"
-                        >It's hard enough to get a single person or business to trust you to help handle their finances when dealing with businesses and financial activities I have discovered that transparency and ease of use are of top priority in getting the best of results and user retention. And also the understanding of business goals to ensure the business makes a profit has to be placed as another priority hence a lot of calls with stakeholders and the aligning of design and business goals has to be established from the start.</p>
-                        <p>I enjoyed this project and I got to realize how we can help people who run businesses if they focus on the business itself they have more time and strategic juice to focus and take their organization to greater heights</p>
-                    </div>
-                    <div class="md:flex-1">
-                        <img
-                            class="w-full"
-                            src="../assets/other-works/collect-conclusion.png"
-                            alt="Collect conclusion"
-                        />
-                    </div>
-                </div>
+                <LayoutOne :page="conclusion" :headerFont="headerFont" />
             </section>
-            <OtherProjects />
+            <OtherProjects :headerCenter="headerCenter" />
             <BookAppointment />
         </div>
     </div>
 </template>
-
-<style>
-div {
-    font-family: "Euclid Circular A", sans-serif;
-}
-</style>

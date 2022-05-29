@@ -506,20 +506,6 @@ const headerFont = "font-playfair text-4xl"
                         >Estimated transaction volume of $8tn in 2025</h2>
                         <p>With 10% of this tranascation relating with the African market, the opportunities available is endless</p>
                     </div>
-                    <div class>
-                        <img
-                            v-if="themeColor === 'light'"
-                            class="w-full"
-                            src="../assets/other-works/opportunities-graph-2-mobile.png"
-                            alt="Opportunities graph"
-                        />
-                        <img
-                            v-else
-                            class="w-full"
-                            src="../assets/other-works/opportunities-graph-dark-2-mobile.png"
-                            alt="Opportunities graph"
-                        />
-                    </div>
                 </div>
                 <!-- End of Mobile version -->
             </section>

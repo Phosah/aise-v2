@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import BookAppointment from '../components/BookAppointment.vue'
 // import Carousel from '@/components/Carousel'
 // import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
@@ -6,176 +6,238 @@ import BookAppointment from '../components/BookAppointment.vue'
 // import Works from '../components/Works.vue'
 import OtherProjects from '../components/OtherProjects.vue'
 import HeaderInfo from '../components/HeaderInfo.vue'
-export default {
-    components: { BookAppointment, OtherProjects, HeaderInfo },
-    data() {
-        return {
-            cards: [
-                {
-                    imgName: "collectafrica-survey-photo-1.png"
-                },
-                {
-                    imgName: "collectafrica-survey-photo-2.png"
-                },
-                {
-                    imgName: "collectafrica-survey-photo-3.png"
-                },
-                {
-                    imgName: "collectafrica-survey-photo-4.png"
-                }
-            ],
-            cardsDark: [
-                {
-                    imgName: "collectafrica-survey-photo-dark-1.png"
-                },
-                {
-                    imgName: "collectafrica-survey-photo-dark-2.png"
-                },
-                {
-                    imgName: "collectafrica-survey-photo-dark-3.png"
-                },
-                {
-                    imgName: "collectafrica-survey-photo-dark-4.png"
-                }
-            ],
-            analysisArray: [
-                {
-                    overview: 'Paystack Overview',
-                    overviewMessage: 'Paystack is a technology company solving payments problems for ambitious businesses. Our mission is to help businesses in Africa become profitable, envied, and loved.By providing global and local payments for businesses.',
-                    objectives: 'Key Objectives',
-                    objectivesItems: [
-                        "Providing worldwide payment services",
-                        "EEnabling payments methods integrated with all commerce services",
-                    ],
-                    advantages: 'Market Advantage',
-                    advantagesList: [
-                        'Structured themselves as a solution where you can get paid by customers from anywhere in the world',
-                    ],
-                    // img: require('../assets/paystack.png'),
-                    alt: 'Paypal',
-                    strength: 'Strength',
-                    strengthList: [
-                        "You can accept payments from internationally-issued cards or via Apple Pay.",
-                        "Ecommerce integrations to accept credit cards, debit cards, and money transfers.",
-                        "Ability to set a one-time or recurring payments service on the e-commerce app or website.",
-                        "Ability to Split Payments.",
-                        "High security."
-                    ],
-                    weakness: 'Weakness',
-                    weaknessList: [
-                        "Slightly Higher Transaction fees",
-                        "The private status of the company limits its growth.",
-                        "A poor mobile app that can increase the user base for small businesses and small stores.",
-                    ],
-                    opportunities: "Oppurtunities",
-                    opportunitiesList: [
-                        "Small markets and business owners that have just phones with a good and optimized app would be able to increase the userbase.",
-                    ],
-                    threats: 'Threats',
-                    threatsList: [
-                        "Unfavorable government regulations.",
-                        "Other competitors",
-                    ]
-                },
-                {
-                    overview: 'Stripe Overview',
-                    overviewMessage: 'Stripe brings together everything that’s required to build websites and apps that accept payments and send payouts globally. Stripe’s products power payments for online and in-person retailers, subscriptions businesses, software platforms and marketplaces, and everything in between.',
-                    objectives: 'Key Objectives',
-                    objectivesItems: [
-                        "Providing payment gateway for eCommerce platforms",
-                        "Providing billing and payments for SaaS businesses",
-                        "Help marketplaces receive payments using their custom-built API",
-                        "Provide Financial reporting"
-                    ],
-                    advantages: 'Market Strategy',
-                    advantagesList: [
-                        'Stripe ensures maintaining contact with the audience by organizing an annual event where the users are familiarised with the new launches of Stripe and the company listen to the feedback of the users',
-                        "Strengthening Brand Recognition and Loyalty with their blog and posts"
-                    ],
-                    // img: require('../assets/stripe.png'),
-                    alt: 'Stripe',
-                    strength: 'Strength',
-                    strengthList: [
-                        "Integration with eCommerce platforms",
-                        "Power payments for your store and marketplace with Stripes API",
-                        "Deliver exceptional customer experience.",
-                        "Issue of corporate cards and covers almost all financial services including billings and invoicing.",
-                        "Strong Partners’ Program:"
-                    ],
-                    weakness: 'Weakness',
-                    weaknessList: [
-                        "Their foreign currency conversion rate is 2% which is double that of some competitors.",
-                        "Global presence",
-                        "Integrations with open source API become a challenge to businesses and individuals who lack tech skills to develop and customize their products.",
-                    ],
-                    opportunities: "Oppurtunities",
-                    opportunitiesList: [
-                        "Global Expansion:",
-                        "Do not properly optimize/account for small businesses whose operations occur over the phone"
-                    ],
-                    threats: 'Threats',
-                    threatsList: [
-                        "Increasing Competition:",
-                        "Negative Reviews on Lack of Customer Support",
-                    ]
-                }
-            ],
-            personasArray: [
-                {
-                    // img: require('../assets/user-persona-3.png'),
-                    alt: "User Persona",
-                    name: "Marvin Oluimde",
-                    info: "Marvin is a 32 year old business man in Lagos that runs a small business where he sells and delivers  wristwatches withing and out of Lagos from his little store at Obalende Market",
-                    goalsList: [
-                        "Marvin needs a medium to receive payments from his customers all over the country who order his watches",
-                        "Marvin is looking for a way to easily receive payments from other vendors who purchase similar from him regularly to resell",
-                        "Receive payments from customers who want to pay with card or cash and  without mixing business account with personal."
-                    ],
-                    frustration: "Frustrations",
-                    frustrationsList: [
-                        "Customers who come to the shop to pay, sometimes bank doesn't show the credit alert, thereby delaying the customer from leaving",
-                        "Inability to fully organize and handle his account.",
-                        "Finds it difficult to balance his account."
-                    ],
-                    behaviour: "Behaviours",
-                    behavioursList: [
-                        "Marvin usually send his account via WhatsApp to old customers who make orders and make the delivery when they pay, and always send when they need",
-                        "For customers who come to his store he either receives cash and or those who transfer he gives his bank account number and waits for an alert before selling."
-                    ]
-                },
-                {
-                    // img: require("../assets/user-persona-4.png"),
-                    alt: "User Persona",
-                    name: "Jennson Mobiles",
-                    info: "Jennson mobile is an electronics company that deals in selling and repairs of all phones ranging from android to ios, they have over 50 staff and 20 outlets all over the country",
-                    goal: "Goals and needs",
-                    goalsList: [
-                        "Jennson mobile needs a medium to receive payments from customers all over the country who do business with them",
-                        "They are looking for a way to easily balance their accounts and reconcile payments in one place despite having stores all over the country",
-                        "Create invoices for services rendered",
-                        "Manage users roles"
-                    ],
-                    frustration: "Frustrations",
-                    frustrationsList: [
-                        "Customers cant purchase from his business website easily without the agents always having to send the account details for each payment",
-                        "Inability to manage financial accounts, leading to unbalanced records",
-                        "Finds it difficult to manage customers and maintain relationships",
-                    ],
-                    behaviour: "Behaviours",
-                    behavioursList: [
-                        "Jennson Mobiles staff usually just receive payments and because they need to receive alerts and not all can have company emails or phones to do so, each branch has an account where they control and receive alerts to confirm payments, and at the end of a period remit to the main company account."
-                    ]
-                }
-            ],
-            details: {
-                title: "Collect Africa",
-                shortDesc: "Reinventing payment systems and account management for both large and small scale businesses across Africa",
-                LongDesc: "Collect is a Fintech solution solving payments problems for large and small scale businesses all over Africa, with goals to make businesses harness their potentials and achieve greater heights",
-                paragraph: "Collect aims to build a technology to help Africa’s best and modern businesses achieve greater heights by making it easy for businesses to accept secure payments from multiple local and global payment channels, and then we give you the tools to ensure customer management and retention."
-            }
-        }
+import LayoutOne from '../components/LayoutOne.vue'
+import photo1 from '../assets/other-works/the-problem.png'
+import photo2 from '../assets/other-works/the-goal.png'
+import LayoutTwo from '../components/LayoutTwo.vue'
+import Process from '../components/Process.vue'
+import photo3 from '../assets/other-works/process-research.png'
+import photo4 from '../assets/other-works/process-analysis.png'
+import photo5 from '../assets/other-works/process-ideation.png'
+import photo6 from '../assets/other-works/process-ideation.png'
+import photo7 from '../assets/other-works/process-feedback.png'
+import photo8 from '../assets/other-works/process-iteration.png'
+const cards = [
+    {
+        imgName: "collectafrica-survey-photo-1.png"
     },
+    {
+        imgName: "collectafrica-survey-photo-2.png"
+    },
+    {
+        imgName: "collectafrica-survey-photo-3.png"
+    },
+    {
+        imgName: "collectafrica-survey-photo-4.png"
+    }
+]
+const cardsDark = [
+    {
+        imgName: "collectafrica-survey-photo-dark-1.png"
+    },
+    {
+        imgName: "collectafrica-survey-photo-dark-2.png"
+    },
+    {
+        imgName: "collectafrica-survey-photo-dark-3.png"
+    },
+    {
+        imgName: "collectafrica-survey-photo-dark-4.png"
+    }
+]
+const analysisArray = [
+    {
+        overview: 'Paystack Overview',
+        overviewMessage: 'Paystack is a technology company solving payments problems for ambitious businesses. Our mission is to help businesses in Africa become profitable, envied, and loved.By providing global and local payments for businesses.',
+        objectives: 'Key Objectives',
+        objectivesItems: [
+            "Providing worldwide payment services",
+            "EEnabling payments methods integrated with all commerce services",
+        ],
+        advantages: 'Market Advantage',
+        advantagesList: [
+            'Structured themselves as a solution where you can get paid by customers from anywhere in the world',
+        ],
+        // img: require('../assets/paystack.png'),
+        alt: 'Paypal',
+        strength: 'Strength',
+        strengthList: [
+            "You can accept payments from internationally-issued cards or via Apple Pay.",
+            "Ecommerce integrations to accept credit cards, debit cards, and money transfers.",
+            "Ability to set a one-time or recurring payments service on the e-commerce app or website.",
+            "Ability to Split Payments.",
+            "High security."
+        ],
+        weakness: 'Weakness',
+        weaknessList: [
+            "Slightly Higher Transaction fees",
+            "The private status of the company limits its growth.",
+            "A poor mobile app that can increase the user base for small businesses and small stores.",
+        ],
+        opportunities: "Oppurtunities",
+        opportunitiesList: [
+            "Small markets and business owners that have just phones with a good and optimized app would be able to increase the userbase.",
+        ],
+        threats: 'Threats',
+        threatsList: [
+            "Unfavorable government regulations.",
+            "Other competitors",
+        ]
+    },
+    {
+        overview: 'Stripe Overview',
+        overviewMessage: 'Stripe brings together everything that’s required to build websites and apps that accept payments and send payouts globally. Stripe’s products power payments for online and in-person retailers, subscriptions businesses, software platforms and marketplaces, and everything in between.',
+        objectives: 'Key Objectives',
+        objectivesItems: [
+            "Providing payment gateway for eCommerce platforms",
+            "Providing billing and payments for SaaS businesses",
+            "Help marketplaces receive payments using their custom-built API",
+            "Provide Financial reporting"
+        ],
+        advantages: 'Market Strategy',
+        advantagesList: [
+            'Stripe ensures maintaining contact with the audience by organizing an annual event where the users are familiarised with the new launches of Stripe and the company listen to the feedback of the users',
+            "Strengthening Brand Recognition and Loyalty with their blog and posts"
+        ],
+        // img: require('../assets/stripe.png'),
+        alt: 'Stripe',
+        strength: 'Strength',
+        strengthList: [
+            "Integration with eCommerce platforms",
+            "Power payments for your store and marketplace with Stripes API",
+            "Deliver exceptional customer experience.",
+            "Issue of corporate cards and covers almost all financial services including billings and invoicing.",
+            "Strong Partners’ Program:"
+        ],
+        weakness: 'Weakness',
+        weaknessList: [
+            "Their foreign currency conversion rate is 2% which is double that of some competitors.",
+            "Global presence",
+            "Integrations with open source API become a challenge to businesses and individuals who lack tech skills to develop and customize their products.",
+        ],
+        opportunities: "Oppurtunities",
+        opportunitiesList: [
+            "Global Expansion:",
+            "Do not properly optimize/account for small businesses whose operations occur over the phone"
+        ],
+        threats: 'Threats',
+        threatsList: [
+            "Increasing Competition:",
+            "Negative Reviews on Lack of Customer Support",
+        ]
+    }
+]
+const personasArray = [
+    {
+        // img: require('../assets/user-persona-3.png'),
+        alt: "User Persona",
+        name: "Marvin Oluimde",
+        info: "Marvin is a 32 year old business man in Lagos that runs a small business where he sells and delivers  wristwatches withing and out of Lagos from his little store at Obalende Market",
+        goalsList: [
+            "Marvin needs a medium to receive payments from his customers all over the country who order his watches",
+            "Marvin is looking for a way to easily receive payments from other vendors who purchase similar from him regularly to resell",
+            "Receive payments from customers who want to pay with card or cash and  without mixing business account with personal."
+        ],
+        frustration: "Frustrations",
+        frustrationsList: [
+            "Customers who come to the shop to pay, sometimes bank doesn't show the credit alert, thereby delaying the customer from leaving",
+            "Inability to fully organize and handle his account.",
+            "Finds it difficult to balance his account."
+        ],
+        behaviour: "Behaviours",
+        behavioursList: [
+            "Marvin usually send his account via WhatsApp to old customers who make orders and make the delivery when they pay, and always send when they need",
+            "For customers who come to his store he either receives cash and or those who transfer he gives his bank account number and waits for an alert before selling."
+        ]
+    },
+    {
+        // img: require("../assets/user-persona-4.png"),
+        alt: "User Persona",
+        name: "Jennson Mobiles",
+        info: "Jennson mobile is an electronics company that deals in selling and repairs of all phones ranging from android to ios, they have over 50 staff and 20 outlets all over the country",
+        goal: "Goals and needs",
+        goalsList: [
+            "Jennson mobile needs a medium to receive payments from customers all over the country who do business with them",
+            "They are looking for a way to easily balance their accounts and reconcile payments in one place despite having stores all over the country",
+            "Create invoices for services rendered",
+            "Manage users roles"
+        ],
+        frustration: "Frustrations",
+        frustrationsList: [
+            "Customers cant purchase from his business website easily without the agents always having to send the account details for each payment",
+            "Inability to manage financial accounts, leading to unbalanced records",
+            "Finds it difficult to manage customers and maintain relationships",
+        ],
+        behaviour: "Behaviours",
+        behavioursList: [
+            "Jennson Mobiles staff usually just receive payments and because they need to receive alerts and not all can have company emails or phones to do so, each branch has an account where they control and receive alerts to confirm payments, and at the end of a period remit to the main company account."
+        ]
+    }
+]
+const details = {
+    title: "Collect Africa",
+    shortDesc: "Reinventing payment systems and account management for both large and small scale businesses across Africa",
+    LongDesc: "Collect is a Fintech solution solving payments problems for large and small scale businesses all over Africa, with goals to make businesses harness their potentials and achieve greater heights",
+    paragraph: "Collect aims to build a technology to help Africa’s best and modern businesses achieve greater heights by making it easy for businesses to accept secure payments from multiple local and global payment channels, and then we give you the tools to ensure customer management and retention."
 }
+const problem = {
+    title: "Understanding The Problem",
+    paragraphs: [
+        "A lot of businesses struggle with carrying out transactions seamlessly wherby receiving payments for services can be a bit burdensome when there is a delay validating the transaction especially when its a foreign payment.",
+        "Businesses also find it difficult in documenting their transactions and keeping records of their account and properly balance it, it gets worse when you have multiple business outlets in various states and countries, having a unified accounting system in place becomes difficult. All these prevent companies and businesses from achieving their highest potentials"
+    ],
+    img: photo1,
+    alt: "Problem fixing"
+}
+const goal = {
+    title: "The Goal",
+    paragraphs: [
+        "The goal was to create a unique solution, focusing on businesses and having a one-stop product to help them manage their financial activities, make sending money to wherever in the world easy, and receiving money from customers in whatever country as seamless as possible.",
+        "We aim to help businesses with several outlets, and instead of having to always go to the banks and have the whole signatory to account long procedure, we have a means whereby you have one product, and control all the financial activities, and account for all transactions in all the outlets in one space easily, to help you easily manage and balance your account, by so doing, expanding your business and taking it to greater heights",
+        "Lastly, what's a business without customers, we aim to help you manage and establish relationships with your customers."
+    ],
+    img: photo2,
+    alt: "Goal"
+}
+const processArr = [
+    {
+        img: photo3,
+        alt: "Research",
+        title: "Research",
+        methods: ["Context study","User pain points", "Competitive audits"]
+    },
+    {
+        img: photo4,
+        alt: "Analysis",
+        title: "Analysis",
+        methods: ["Problem statements","Use cases", "Executive summary"]
+    },
+    {
+        img: photo5,
+        alt: "Ideation",
+        title: "Ideation",
+        methods: ["Feature narrative","Design Principles", "Brainstorming"]
+    },
+    {
+        img: photo6,
+        alt: "Design",
+        title: "Design",
+        methods: ["Userflow","High fidelity designs", "Interative Prototypes"]
+    },
+    {
+        img: photo7,
+        alt: "Feedback",
+        title: "Feedback",
+        methods: ["Stake holder reviews","Field testing", "Design critiques"]
+    },
+    {
+        img: photo8,
+        alt: "Iteration",
+        title: "Iteration",
+        methods: ["Iterations","Copywriting"]
+    },
+]
+const headerFont = 'font-playfair text-4xl'
 </script>
 
 <template>
@@ -189,19 +251,19 @@ export default {
             <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
                 <div class="md:flex md:items-center text-xs">
                     <div
-                        class="flex-1 flex flex-col justify-center items-center py-8 md:py-0 border-b md:border-b-0 md:border-r"
+                        class="flex-1 flex flex-col justify-center items-center py-8 md:py-0 border-b md:border-b-0 md:border-r border-brand-black-3"
                     >
                         <h4 class="text-base md:text-lg font-bold">1 month</h4>
                         <p>Product Timeline</p>
                     </div>
                     <div
-                        class="flex-1 flex flex-col justify-center items-center py-8 md:py-0 border-b md:border-b-0 md:border-r"
+                        class="flex-1 flex flex-col justify-center items-center py-8 md:py-0 border-b md:border-b-0 md:border-r border-brand-black-3"
                     >
                         <h4 class="text-base md:text-lg font-bold">Collect</h4>
                         <p>Client</p>
                     </div>
                     <div
-                        class="flex-1 flex flex-col justify-center items-center py-8 md:py-0 border-b md:border-b-0 md:border-r"
+                        class="flex-1 flex flex-col justify-center items-center py-8 md:py-0 border-b md:border-b-0 md:border-r border-brand-black-3"
                     >
                         <h4 class="text-base md:text-lg font-bold">Figma, Miro</h4>
                         <p>Tools</p>
@@ -225,38 +287,9 @@ export default {
                 </div>
                 <!-- End of Mobile version -->
             </section>
-            <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
-                <div class="md:flex md:items-center md:justify-between md:space-x-12 mb-20">
-                    <div class="md:flex-1 mb-12 md:mb-0">
-                        <h2
-                            class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                        >Understanding The Problem:</h2>
-                        <p
-                            class="mb-6"
-                        >A lot of businesses struggle with carrying out transactions seamlessly wherby receiving payments for services can be a bit burdensome when there is a delay validating the transaction especially when its a foreign payment. .</p>
-                        <p>Businesses also find it difficult in documenting their transactions and keeping records of their account and properly balance it, it gets worse when you have multiple business outlets in various states and countries, having a unified accounting system in place becomes difficult. All these prevent companies and businesses from achieving their highest potentials</p>
-                    </div>
-                    <div class="md:flex-1">
-                        <img class="w-full" src="../assets/other-works/the-problem.png" alt="Problem fixing" />
-                    </div>
-                </div>
-                <div class="hidden sm:flex items-center justify-between space-x-12">
-                    <div class="flex-1">
-                        <img class src="../assets/other-works/the-goal.png" alt="Goal" />
-                    </div>
-                    <div class="flex-1">
-                        <h2
-                            class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                        >The Goal</h2>
-                        <p
-                            class="mb-6"
-                        >The goal was to create a unique solution, focusing on businesses and having a one-stop product to help them manage their financial activities, make sending money to wherever in the world easy, and receiving money from customers in whatever country as seamless as possible.</p>
-                        <p
-                            class="mb-6"
-                        >We aim to help businesses with several outlets, and instead of having to always go to the banks and have the whole signatory to account long procedure, we have a means whereby you have one product, and control all the financial activities, and account for all transactions in all the outlets in one space easily, to help you easily manage and balance your account, by so doing, expanding your business and taking it to greater heights</p>
-                        <p>Lastly, what's a business without customers, we aim to help you manage and establish relationships with your customers.</p>
-                    </div>
-                </div>
+            <section class="max-w-7xl mx-auto px-4 md:px-16 text-sm md:text-base">
+                <LayoutOne :page="problem" :headerFont="headerFont" />
+                <LayoutTwo :page="goal" :headerFont="headerFont" />
                 <!-- Mobile version -->
                 <div class="block sm:hidden">
                     <div class="mb-12">
@@ -275,129 +308,7 @@ export default {
                 </div>
                 <!-- End of mobile version -->
             </section>
-            <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
-                <div class="mb-16 md:w-5/6 mx-auto text-center text-sm md:text-base">
-                    <h1
-                        class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
-                    >The Process</h1>
-                    <p
-                        class="mb-4"
-                    >Although I was the sole designer of this project I didn't work alone, it was a strong team effort that included the project manager, content manager, Stakeholders, and three skilled developers. We communicated and brainstormed throughout the entire process</p>
-                </div>
-                <div
-                    class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 text-white text-sm md:text-base"
-                >
-                    <div class="p-8 rounded-lg bg-brand-gray-light-2 text-brand-black-2">
-                        <div class="min-h-64 bg-contain bg-center bg-no-repeat">
-                            <div>
-                                <img
-                                    class="w-full"
-                                    src="../assets/other-works/process-research.png"
-                                    alt="Process research"
-                                />
-                            </div>
-                            <h3
-                                class="text-lg md:text-xl lg:text-2xl mb-6 font-bold font-playfair"
-                            >Research</h3>
-                            <ul class="list-disc pl-6">
-                                <li class="mb-3">Context study</li>
-                                <li class="mb-3">User pain points</li>
-                                <li>Competitive audits</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="p-8 rounded-lg bg-brand-gray-light-2 text-brand-black-2">
-                        <div class="min-h-64 bg-contain bg-center bg-no-repeat">
-                            <div>
-                                <img
-                                    class="w-full"
-                                    src="../assets/other-works/process-analysis.png"
-                                    alt="Process Analysis"
-                                />
-                            </div>
-                            <h3
-                                class="text-lg md:text-xl lg:text-2xl mb-6 font-bold font-playfair"
-                            >Analysis</h3>
-                            <ul class="list-disc pl-6">
-                                <li class="mb-3">Problem statements</li>
-                                <li class="mb-3">Use cases</li>
-                                <li class="mb-3">Executive summary</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="p-8 rounded-lg bg-brand-gray-light-2 text-brand-black-2">
-                        <div class="min-h-64 bg-contain bg-center bg-no-repeat">
-                            <div>
-                                <img
-                                    class="w-full"
-                                    src="../assets/other-works/process-ideation.png"
-                                    alt="Process Ideation"
-                                />
-                            </div>
-                            <h3
-                                class="text-lg md:text-xl lg:text-2xl mb-6 font-bold font-playfair"
-                            >Ideation</h3>
-                            <ul class="list-disc pl-6">
-                                <li class="mb-3">Feature narrative</li>
-                                <li class="mb-3">Design Principles</li>
-                                <li>Brainstorming</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="p-8 rounded-lg bg-brand-gray-light-2 text-brand-black-2">
-                        <div class="min-h-64 bg-contain bg-center bg-no-repeat">
-                            <div>
-                                <img
-                                    class="w-full"
-                                    src="../assets/other-works/process-design.png"
-                                    alt="Process Design"
-                                />
-                            </div>
-                            <h3
-                                class="text-lg md:text-xl lg:text-2xl mb-6 font-bold font-playfair"
-                            >Design</h3>
-                            <ul class="list-disc pl-6">
-                                <li class="mb-3">Userflow</li>
-                                <li class="mb-3">High fidelity designs</li>
-                                <li>Interative Prototypes</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="p-8 rounded-lg bg-brand-gray-light-2 text-brand-black-2">
-                        <div class="min-h-64 bg-contain bg-center bg-no-repeat">
-                            <div>
-                                <img
-                                    class="w-full"
-                                    src="../assets/other-works/process-feedback.png"
-                                    alt="Process Feedback"
-                                />
-                            </div>
-                            <h3 class="text-lg lg:text-2xl mb-6 font-bold font-playfair">Feedback</h3>
-                            <ul class="list-disc pl-6">
-                                <li class="mb-3">Stake holder reviews</li>
-                                <li class="mb-3">Field testing</li>
-                                <li>Design critiques</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="p-8 rounded-lg bg-brand-gray-light-2 text-brand-black-2">
-                        <div class="min-h-64 bg-contain bg-center bg-no-repeat">
-                            <div>
-                                <img
-                                    class="w-full"
-                                    src="../assets/other-works/process-iteration.png"
-                                    alt="Process Iteration"
-                                />
-                            </div>
-                            <h3 class="text-lg lg:text-2xl mb-6 font-bold font-playfair">Iteration</h3>
-                            <ul class="list-disc pl-6">
-                                <li class="mb-3">Iterations</li>
-                                <li>Copywriting</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Process :steps="processArr" />
             <section
                 class="max-w-7xl mx-auto pb-20 py-10 md:py-20 px-4 md:px-16 text-sm md:text-base"
             >

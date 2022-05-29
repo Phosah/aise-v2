@@ -492,20 +492,6 @@ const headerFont = "font-playfair text-4xl"
                         >45.6 Billion in total transactions in Africa</h2>
                         <p>Our first targets would be the top 5 countries with the highest remittance valueNigeria, Kenya and Ghana.</p>
                     </div>
-                    <div class>
-                        <img
-                            v-if="themeColor === 'light'"
-                            class="w-full"
-                            src="../assets/other-works/opportunities-graph-1-mobile.png"
-                            alt="Opportunities graph"
-                        />
-                        <img
-                            v-else
-                            class="w-full"
-                            src="../assets/other-works/opportunities-graph-dark-1-mobile.png"
-                            alt="Opportunities graph"
-                        />
-                    </div>
                 </div>
                 <!-- End of Mobile version -->
                 <p

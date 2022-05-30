@@ -19,6 +19,7 @@ import logo15 from "../assets/momo-logo.png"
 import testimonials1 from "../assets/testimonials-1.png"
 import { ref } from 'vue';
 import Footer from '../components/Footer.vue';
+import Navbar from '../components/Navbar.vue';
 
 const clientsArr = [
   {
@@ -128,6 +129,7 @@ const prev = () => {
 </script>
 
 <template>
+  <Navbar />
   <main class="text-brand-black-2">
     <section class="mt-40">
       <div class="md:flex md:items-center max-w-7xl mx-auto mt-20 px-6">
@@ -203,7 +205,7 @@ const prev = () => {
               done for projects and clients
               all over the world ranging from web designs to mobile designs.</p>
           </div>
-          <a href="https://dribbble.com/Aise_Idahor" class="inline-block my-6 px-10 py-3 border border-brand-black-1 rounded-md">Dribble</a>
+          <a href="https://dribbble.com/Aise_Idahor" class="inline-block my-6 px-10 py-3 border border-brand-black-1 rounded-md">View Dribble</a>
         </div>
         <div class="md:flex-1"><img class="w-full" src="../assets/gif3.gif" alt="Designs"></div>
       </div>

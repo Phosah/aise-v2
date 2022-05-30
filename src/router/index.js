@@ -5,7 +5,6 @@ import Athena from "../views/Athena.vue";
 import Works from "../views/Works.vue";
 import Xerxes from "../views/Xerxes.vue";
 import Pegasus from "../views/Pegasus.vue";
-import Test from "../views/Test.vue";
 import About from "../views/About.vue";
 import OtherWorks from "../views/OtherWorks.vue";
 import Doorstep from "../views/Doorstep.vue";
@@ -46,11 +45,6 @@ const router = createRouter({
       path: "/pegasus",
       name: "Pegasus",
       component: Pegasus,
-    },
-    {
-      path: "/test",
-      name: "test",
-      component: Test,
     },
     {
       path: "/about",

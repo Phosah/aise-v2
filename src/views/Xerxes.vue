@@ -16,6 +16,7 @@ import photo7 from "../assets/repay-loan.png"
 import Persona from "../components/Persona.vue"
 import persona1 from "../assets/persona-1.png"
 import persona2 from "../assets/persona-2.png"
+import Navbar from "../components/Navbar.vue";
 
 const info = {
     title: "Xerxes",
@@ -129,6 +130,7 @@ const user2 = {
 
 <template>
     <main>
+        <Navbar />
         <Header :headerInfo="info" />
         <section class="max-w-7xl mx-auto my-20 px-6">
             <LayoutOne :page="problems" />

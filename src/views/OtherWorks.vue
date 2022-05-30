@@ -1,11 +1,11 @@
 <script setup>
-import { onMounted, ref } from "vue"
 import Work from '../components/Work.vue';
 import athenaCover from "../assets/athena-cover.png"
 import aistakeCover from "../assets/aistake-finance-cover.png"
 import pegasusCover from "../assets/pegasus-cover.png"
 import xerxesCover from "../assets/xerxes-cover-2.png"
 import Footer from "../components/Footer.vue";
+import Navbar from "../components/Navbar.vue";
 
 const bgColor = "bg-brand-black-2 text-white"
 const themeMode =  "dark"
@@ -46,14 +46,10 @@ const worksArr = [
         link: "/trigle"
     },
 ]
-
-const root = ref(null)
-onMounted(() => {
-    console.log(root.value)
-})
 </script>
 
 <template>
+    <Navbar />
     <div>
         <div class="flex items-center max-w-7xl mx-auto mt-20 px-6">
             <h1 class="w-2/3 text-6xl md:text-9xl font-new-paris-kingsize">Other</h1>

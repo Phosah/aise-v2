@@ -1,4 +1,5 @@
 <template>
+  <Navbar />
   <main class="text-brand-black-2">
     <div class="flex flex-col items-center justify-center max-w-7xl mx-auto my-20 px-6 ">
       <h1 class="mb-10 text-6xl md:text-9xl font-new-paris-kingsize">About Me</h1>
@@ -54,6 +55,7 @@
 </template>
 
 <script>
+import Navbar from '../components/Navbar.vue'
 import DesignGuidelines from '@/components/DesignGuidelines.vue'
 import img1 from '@/assets/empower.png'
 import img2 from '@/assets/respectful.png'
@@ -76,7 +78,7 @@ import onePiece from "../assets/one-piece.png"
 import bleach from "../assets/bleach.png"
 export default {
   name: "About",
-  components: { DesignGuidelines, Footer, WorkExperiences, Anime },
+  components: { Navbar, DesignGuidelines, Footer, WorkExperiences, Anime },
   data() {
     return {
       bgColor: "bg-brand-black-1 text-white",

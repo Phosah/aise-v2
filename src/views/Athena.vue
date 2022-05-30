@@ -15,6 +15,7 @@ import photo6 from "../assets/athena-photo-7.png"
 import photo7 from "../assets/athena-photo-8.png"
 import OtherProjects from "../components/OtherProjects.vue"
 import Footer from "../components/Footer.vue"
+import Navbar from '../components/Navbar.vue';
 const info = {
     title: "Athena",
     text: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users",
@@ -129,6 +130,7 @@ const launchpool = {
 
 <template>
     <div>
+        <Navbar />
         <Header :headerInfo="info" />
         <section class="max-w-7xl mx-auto my-20 px-6">
             <LayoutOne :page="problems" />

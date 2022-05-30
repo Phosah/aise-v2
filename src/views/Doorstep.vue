@@ -20,6 +20,7 @@ import photo6 from "../assets/other-works/personas-2.png"
 import photo7 from "../assets/other-works/solution-1.png"
 import photo8 from "../assets/other-works/solution-2.png"
 import photo9 from "../assets/other-works/solution-3.png"
+import Navbar from "../components/Navbar.vue"
 
 const projects = [
     {
@@ -163,7 +164,8 @@ const pos = "text-center"
 </script>
 
 <template>
-    <div class="dark:bg-brand-black-1 bg-white text-brand-black-3 dark:text-white">
+    <div class="bg-white text-brand-black-3">
+        <Navbar />
         <header class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
             <!-- <Works :work="this.$store.state.worksArr[4]" hideLink /> -->
         </header>

@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from "vue"
+import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue';
 import Work from '../components/Work.vue';
 import athenaCover from "../assets/athena-cover.png"
@@ -39,14 +39,11 @@ const worksArr = [
 ]
 const bgColor = "bg-brand-black-2 text-white"
 const themeMode =  "dark"
-const root = ref(null)
-onMounted(() => {
-    console.log(root.value)
-})
 </script>
 
 <template>
     <div>
+        <Navbar />
         <div class="flex items-center max-w-7xl mx-auto mt-20 px-6">
             <h1 class="w-2/3 text-6xl md:text-9xl font-new-paris-kingsize">Web3</h1>
         </div>

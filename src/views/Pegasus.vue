@@ -15,6 +15,7 @@ import photo5 from "../assets/pegasus-photo-8.png"
 import photo6 from "../assets/pegasus-photo-9.png"
 import OtherProjects from "../components/OtherProjects.vue"
 import Footer from '../components/Footer.vue';
+import Navbar from '../components/Navbar.vue';
 const info = {
     title: "Pegasus",
     text: "The easiest way for you to gain access to multiple token holdings at once by the purchase of one super token",
@@ -128,6 +129,7 @@ const transactionHistory = {
 </script>
 
 <template>
+    <Navbar />
     <div>
         <Header :headerInfo="info" />
         <section class="md:flex md:items-center md:space-x-12 max-w-7xl mx-auto my-40 px-6">

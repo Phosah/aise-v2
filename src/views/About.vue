@@ -49,7 +49,7 @@
       <WorkExperiences :works="worksArr" />
     </section>
     <Anime :animes="animesArr" />
-    <Footer :class="bgColor" :mode="themeMode" :OldFooterMode="themeMode" />
+    <Footer :class="bgColor" :mode="themeMode" :LinksMode="themeMode" />
   </main>
 </template>
 

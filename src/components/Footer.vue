@@ -2,8 +2,7 @@
     <section class="py-20 px-6" :class="bgColor">
         <div class="flex flex-col items-center max-w-7xl mx-auto py-40 md:py-20 md:px-16">
             <div class="mb-24">
-                <img v-if="mode == light" src="../assets/project-talk-dark.png" alt="Project talk" />
-                <img v-else src="../assets/project-talk.png" alt="Project talk" />
+                <img src="../assets/project-talk.png" alt="Project talk" />
             </div>
             <div class="md:w-5/6 mx-auto px-16 md:px-0">
                 <h3
@@ -18,7 +17,6 @@
                 </p>
             </div>
             <div class="md:flex md:items-center md:space-x-8">
-
                 <div :class="mode === light ? 'border-brand-black-3' : 'border-white'"
                     class="mb-8 md:mb-0 px-8 py-5 text-center font-bold rounded-sm bg-transparent border "><a href="mailto=aiseosauyiidahor@gmail.com">Send
                     an
@@ -31,15 +29,15 @@
                 <!-- Calendly link widget end -->
             </div>
         </div>
-        <OldFooter :mode="OldFooterMode" />
+        <Links :mode="LinksMode" />
     </section>
 </template>
 
 <script>
-import OldFooter from "./OldFooter.vue";
+import Links from "./Links.vue";
 export default {
     name: "Footer",
-    components: { OldFooter },
+    components: { Links },
     props: {
         bgColor: {
             type: String,
@@ -49,15 +47,10 @@ export default {
             type: String,
             required: true
         },
-        OldFooterMode: {
+        LinksMode: {
             type: String,
             required: true
         }
     },
-    data() {
-        return {
-            // themeMode: "light"
-        }
-    }
 }
 </script>

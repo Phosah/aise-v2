@@ -1,5 +1,5 @@
 <template>
-    <div :class="mode === light ? 'text-brand-black-3' : 'text-white' " class="md:flex md:justify-between max-w-7xl mx-auto px-4 md:px-16 py-3">
+    <div :class="mode === light ? 'text-brand-black-3' : 'text-white'" class="md:flex md:justify-between max-w-7xl mx-auto px-4 md:px-16 mt-20 py-3">
         <a :class="mode === light ? 'text-brand-black-3 hover:border-brand-black-3' : 'text-white hover:border-white' " class="block pb-2 text-xl border-b-4 border-transparent hover:border-b-4"
             href="https://www.linkedin.com/in/aise-idahor-4353b1188/" target="_blank">LinkedIn</a>
         <a :class="mode === light ? 'text-brand-black-3 hover:border-brand-black-3' : 'text-white hover:border-white' " class="block pb-2 text-xl border-b-4 border-transparent hover:border-b-4"
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    name: 'OldFooter',
+    name: 'Links',
     props: {
         mode: {
             type: String, 

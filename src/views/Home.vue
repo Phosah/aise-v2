@@ -212,6 +212,6 @@ const prev = () => {
       <Clients :clients="clientsArr" />
     </section>
     <Testimonials :stories="testimonialsArr" :num="num" @showNext="next" @showPrev="prev" :ix="elemIdx"/>
-    <Footer :class="bgColor" :mode="themeMode" :OldFooterMode="themeMode" />
   </main>
+  <Footer :class="bgColor" :mode="themeMode" :LinksMode="themeMode" />
 </template>

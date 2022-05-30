@@ -1,5 +1,4 @@
 <script setup>
-// import Works from '@/components/Works'
 import Carousel from '@/components/Carousel.vue'
 import Footer from '../components/Footer.vue'
 import OtherProjects from '../components/OtherProjects.vue'
@@ -15,16 +14,8 @@ import photo6 from "../assets/other-works/trustbreed-survey-photo-5.png"
 import photo7 from "../assets/other-works/user-personas-1.png"
 import photo8 from "../assets/other-works/user-personas-2.png"
 import photo9 from "../assets/other-works/complaint-screen.png"
+import photo10 from "../assets/other-works/doorstep1.png"
 import Navbar from '../components/Navbar.vue';
-
-const work = {
-    bgColor: "bg-brand-red-5",
-    title: "Trustbreed",
-    subtitle: "Customer Service, B2C",
-    imgPosition: "lg:w-2/3 absolute md:-bottom-40 md:-right-60 lg:-bottom-24 lg:-right-24",
-    // img: require("../assets/trustbreed-home.png"),
-    alt: "Trustbreed",
-}
 const cards = [
     {
         title: "1. Have you ever been dissapointed with the services provided to you by any company",
@@ -70,6 +61,8 @@ const cardsDark = [
     }
 ]
 const details = {
+    img: photo10,
+    alt: "Trustbreed",
     title: "TrustBreed",
     shortDesc: "As a customer, have your voice heard and get the best of services from the companies / products that serve you.",
     LongDesc: "Trustbreed is a customer support tool to help users of any and every product get the best of services from their respective providers",
@@ -120,14 +113,13 @@ const complaints = {
     img: photo9,
     alt: "complaint screens"
 }
+const bgColor = "light"
+const font = "font-playfair"
 </script>
 
 <template>
     <div class="bg-white text-brand-black-3">
     <Navbar />
-        <header class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
-            <!-- <Works :work="this.$store.state.worksArr[2]" hideLink /> -->
-        </header>
         <HeaderInfo :headerDetails="details" />
         <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
             <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">My Role</h2>
@@ -290,8 +282,10 @@ const complaints = {
                     product from the entry point to the users decisions and the resulting actions to help account
                     for every step of the users journey</p>
             </div>
-            <div class="max-w-7xl mx-auto mb-20">
-                <img src="../assets/other-works/user-flows.png" alt="User flows" />
+            <div class="bg-brand-gray-7">
+                <div class="max-w-7xl mx-auto mb-20">
+                    <img src="../assets/other-works/user-flows.png" alt="User flows" />
+                </div>
             </div>
         </section>
         <section>
@@ -302,8 +296,10 @@ const complaints = {
                     structure simple with co-existing hierarchies, since there is a great deal of overlapping
                     information and wanted my users to have easy access from one page to the other.</p>
             </div>
-            <div class="max-w-7xl mx-auto mb-20">
-                <img src="../assets/other-works/sitemap.png" alt="User flows" />
+            <div class="bg-brand-gray-7">
+                <div class="max-w-7xl mx-auto mb-20">
+                    <img src="../assets/other-works/sitemap.png" alt="User flows" />
+                </div>
             </div>
         </section>
         <section class>
@@ -438,7 +434,7 @@ const complaints = {
                 for following and going through my documented processes. Feel free to connect with me on LinkedIn,
                 Behance, Dribbble, and Twitter.</p>
         </section>
-        <OtherProjects />
-        <Footer />
+        <OtherProjects :headerCenter="font"/>
+        <Footer :bgColor="bgColor" />
     </div>
 </template>

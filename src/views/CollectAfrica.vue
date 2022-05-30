@@ -3,7 +3,6 @@ import Footer from '../components/Footer.vue'
 import Carousel from '../components/Carousel.vue'
 import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
 import UserPersona from '../components/UserPersona.vue'
-// import Works from '../components/Works.vue'
 import OtherProjects from '../components/OtherProjects.vue'
 import HeaderInfo from '../components/HeaderInfo.vue'
 import LayoutOne from '../components/LayoutOne.vue'
@@ -31,6 +30,7 @@ import photo19 from '../assets/other-works/customer-management.png'
 import photo20 from '../assets/other-works/user-management.png'
 import photo21 from '../assets/other-works/payment-link.png'
 import photo22 from '../assets/other-works/collect-conclusion.png'
+import photo23 from '../assets/other-works/doorstep1.png'
 import Navbar from '../components/Navbar.vue'
 const cards = [
     {
@@ -190,6 +190,8 @@ const personasArray = [
     }
 ]
 const details = {
+    img: photo23,
+    alt: "Collect Africa",
     title: "Collect Africa",
     shortDesc: "Reinventing payment systems and account management for both large and small scale businesses across Africa",
     LongDesc: "Collect is a Fintech solution solving payments problems for large and small scale businesses all over Africa, with goals to make businesses harness their potentials and achieve greater heights",
@@ -305,14 +307,12 @@ const conclusion = {
     alt: "conclusion"
 }
 const headerCenter = 'text-center font-playfair'
+const bgColor = "light"
 </script>
 
 <template>
     <div class="bg-white text-brand-black-3">
         <Navbar />
-        <header class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
-            <!-- <Works :work="this.$store.state.worksArr[1]" hideLink /> -->
-        </header>
         <HeaderInfo :headerDetails="details" />
         <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
             <div class="md:flex md:items-center text-xs">
@@ -340,7 +340,7 @@ const headerCenter = 'text-center font-playfair'
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto pt-10 md:pt-20 px-4 md:px-16">
             <h2
                 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
             >My Design Process</h2>
@@ -586,8 +586,10 @@ const headerCenter = 'text-center font-playfair'
                     class="mb-8 md:mb-16"
                 >User flows helped me pattern the flow of the users activities in the product from the entry point to the users decisions and the resulting actions to help account for every step of the users journey</p>
             </div>
-            <div class="max-w-7xl mx-auto mb-20">
-                <img src="../assets/other-works/user-flows.png" alt="User flows" />
+            <div class="bg-brand-gray-7">
+                <div class="max-w-7xl mx-auto mb-20">
+                    <img src="../assets/other-works/user-flows.png" alt="User flows" />
+                </div>
             </div>
         </section>
         <section>
@@ -599,8 +601,10 @@ const headerCenter = 'text-center font-playfair'
                     class="mb-8 md:mb-16"
                 >Reviewing my personas and user journeys and having certain features in mind, I started to think about the structure of the app. I had a rough idea of keeping the structure simple with co-existing hierarchies, since there is a great deal of overlapping information and wanted my users to have easy access from one page to the other.</p>
             </div>
-            <div class="max-w-7xl mx-auto mb-20">
-                <img src="../assets/other-works/sitemap.png" alt="User flows" />
+            <div class="bg-brand-gray-7">
+                <div class="max-w-7xl mx-auto mb-20">
+                    <img src="../assets/other-works/sitemap.png" alt="User flows" />
+                </div>
             </div>
         </section>
         <section class="max-w-7xl mx-auto pt-10 md:pt-20 px-4 md:px-16 text-sm md:text-base">
@@ -714,6 +718,6 @@ const headerCenter = 'text-center font-playfair'
             <LayoutOne :page="conclusion" :headerFont="headerFont" />
         </section>
         <OtherProjects :headerCenter="headerCenter" />
-        <Footer />
+        <Footer :bgColor="bgColor" />
     </div>
 </template>

@@ -1,5 +1,4 @@
 <script setup>
-// import Works from '../components/Works.vue'
 import Footer from '../components/Footer.vue'
 import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
 import UserPersona from '../components/UserPersona.vue'
@@ -17,6 +16,7 @@ import photo9 from '../assets/other-works/crypto-payments.png'
 import photo10 from '../assets/other-works/lending.png'
 import photo11 from '../assets/other-works/dollar-cards.png'
 import photo12 from '../assets/other-works/offline-transaction.png'
+import photo13 from '../assets/other-works/doorstep1.png'
 import LayoutTwo from '../components/LayoutTwo.vue'
 import LayoutOne from '../components/LayoutOne.vue'
 import Navbar from '../components/Navbar.vue'
@@ -230,6 +230,8 @@ const personasArray = [
     }
 ]
 const details = {
+    img: photo13,
+    alt: "Powr Finance",
     title: "Powr Finance",
     shortDesc: "The growth and expansion of businesses and services are heavily dependent on seamless intercontinental financial transactions",
     LongDesc: "Power Finance is a solution that enables Businesses and Freelancers send and receive money from any country of your choice seamlessly",
@@ -292,14 +294,12 @@ const offline = {
     alt: "transactions"
 }
 const headerFont = "font-playfair text-4xl"
+const bgColor = "light"
 </script>
 
 <template>
     <div class="bg-white text-brand-black-3">
         <Navbar />
-        <section class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
-            <!-- <Works :work="this.$store.state.worksArr[0]" hideLink /> -->
-        </section>
         <HeaderInfo :headerDetails="details" />
         <section class="max-w-7xl mx-auto py-20 px-6 md:px-16 text-sm md:text-base">
             <div class="mb-20">
@@ -308,17 +308,21 @@ const headerFont = "font-playfair text-4xl"
                 >Scope of work and Timeline</h2>
                 <p>My responsibilities for the design of Powr finance included user research which included online and in-person interviews, concept ideation, business research, aligning key stakeholders on product goals and decisions, designing user flows, visual design, prototyping, user testing, incorporating user feedback into design iterations, and monitoring of the implementation of the product to ensure the design decisions and visuals are accurately implemented</p>
             </div>
-            <div class="hidden md:block">
-                <img class="w-full" src="../assets/other-works/timeline.png" alt="Timeline" />
+        </section>
+        <section class="bg-black">
+            <div class="max-w-7xl mx-auto px-6 md:px-16">
+                <div class="hidden md:block">
+                    <img class="w-full" src="../assets/other-works/timeline.png" alt="Timeline" />
+                </div>
+                <!-- Mobile version -->
+                <div class="block md:hidden">
+                    <h2
+                        class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
+                    >Timeline</h2>
+                    <img class="w-full" src="../assets/other-works/timeline-mobile.png" alt="Timeline" />
+                </div>
+                <!-- End of Mobile version -->
             </div>
-            <!-- Mobile version -->
-            <div class="block md:hidden">
-                <h2
-                    class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                >Timeline</h2>
-                <img class="w-full" src="../assets/other-works/timeline-mobile.png" alt="Timeline" />
-            </div>
-            <!-- End of Mobile version -->
         </section>
         <section class="max-w-7xl mx-auto py-20 px-4 md:px-16">
             <h2
@@ -669,7 +673,7 @@ const headerFont = "font-playfair text-4xl"
             <p>This project is open to massive expansion and growth, the product aims to expand to cover sectors like payroll whereby organizations with employees working in multiple countries can all be registered and payments can be disbursed once and payroll run with each of them receiving their cash in their local currency or crypto if selected</p>
         </section>
         <OtherProjects />
-        <Footer />
+        <Footer :bgColor="bgColor" />
     </div>
 </template>
 

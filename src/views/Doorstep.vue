@@ -1,5 +1,4 @@
 <script setup>
-// import Works from '../components/Works'
 import ProjectResponsibility from '../components/ProjectResponsibility.vue'
 import Footer from '../components/Footer.vue'
 import OtherProjects from '../components/OtherProjects.vue'
@@ -21,6 +20,7 @@ import photo7 from "../assets/other-works/solution-1.png"
 import photo8 from "../assets/other-works/solution-2.png"
 import photo9 from "../assets/other-works/solution-3.png"
 import Navbar from "../components/Navbar.vue"
+import photo10 from '../assets/other-works/doorstep1.png'
 
 const projects = [
     {
@@ -77,6 +77,8 @@ const projects = [
     }
 ]
 const details = {
+    img: photo10,
+    alt: "Doorstep logistics",
     title: "Doorstep Logistics",
     shortDesc: "The fastest way to ship your packages and parcels around the world",
     LongDesc: "Doorstep is a solution that helps to simplify logistics and shipping services to ensure quick delivery of packages in a simplified processes",
@@ -161,14 +163,12 @@ const shipments = {
     alt: "Dashboard"
 }
 const pos = "text-center"
+const bgColor = "light"
 </script>
 
 <template>
     <div class="bg-white text-brand-black-3">
         <Navbar />
-        <header class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
-            <!-- <Works :work="this.$store.state.worksArr[4]" hideLink /> -->
-        </header>
         <HeaderInfo :headerDetails="details" />
         <section class="max-w-7xl mx-auto px-4 md:px-16">
             <LayoutOne :page="responsibilities" :headerFont="headerFont" />
@@ -491,7 +491,7 @@ const pos = "text-center"
         <section class="pt-40">
             <OtherProjects :headerCenter="pos" />
         </section>
-        <Footer />
+        <Footer :bgColor="bgColor" />
     </div>
 </template>
 

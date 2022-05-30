@@ -1,7 +1,6 @@
 <script setup>
 import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue'
-// import Works from '../components/Works.vue';
 import OtherProjects from '../components/OtherProjects.vue';
 import HeaderInfo from '../components/HeaderInfo.vue';
 import photo1 from "../assets/other-works/trigle-problem.png"
@@ -9,12 +8,15 @@ import photo2 from "../assets/other-works/home-screen-photo.png"
 import photo3 from "../assets/other-works/restaurant-page-photo.png"
 import photo4 from "../assets/other-works/samuel.png"
 import photo5 from "../assets/other-works/ari.png"
+import photo6 from "../assets/other-works/doorstep1.png"
 import LayoutOne from "../components/LayoutOne.vue"
 import LayoutTwo from '../components/LayoutTwo.vue';
 import UserExperience from '../components/UserExperience.vue';
 
 const details = {
-    title: "Trigle App Design",
+    img: photo6,
+    alt: "Trigle",
+    title: "Trigle",
     shortDesc: "Bringing simplicity and flexibility to having your meals",
     LongDesc: "Trigle is a restaurant finding app with a framework developed for both tourists, and residents to find restaurants closest to them depending on the location",
     paragraph: "It gets to solve this by its provision of an Augmented reality (AR) system which when given access to your camera, displays a live view of your current location with accurate steps and paths that leads you to that meal you have been salivating over."
@@ -47,7 +49,8 @@ const restaurant = {
     img: photo3,
     alt: "Phone"
 }
-const pos = "text-center"
+const pos = "text-center font-playfair"
+const bgColor = "light"
 const personasArr = [
     {
         img: photo4,
@@ -77,9 +80,6 @@ const personasArr = [
 <template>
     <div class="bg-white text-brand-black-3">
         <Navbar />
-        <section class="max-w-7xl mx-auto md:px-16 pt-16 md:pt-4">
-            <!-- <Works :work="this.$store.state.worksArr[3]" hideLink /> -->
-        </section>
         <HeaderInfo :headerDetails="details" />
         <section class="max-w-7xl mx-auto px-4 md:px-16">
             <LayoutOne :page="problem" :headerFont="headerFont" />
@@ -442,7 +442,7 @@ const personasArr = [
             </div>
         </section>
         <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16">
-            <div>
+            <div class="mb-40">
                 <img
                     class="w-full"
                     src="../assets/other-works/map-ordering.png"
@@ -663,6 +663,6 @@ const personasArr = [
             </div>
         </section>
         <OtherProjects :headerCenter="pos"/>
-        <Footer />
+        <Footer :bgColor="bgColor" />
     </div>
 </template>

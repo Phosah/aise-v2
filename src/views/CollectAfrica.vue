@@ -30,7 +30,7 @@ import photo19 from '../assets/other-works/customer-management.png'
 import photo20 from '../assets/other-works/user-management.png'
 import photo21 from '../assets/other-works/payment-link.png'
 import photo22 from '../assets/other-works/collect-conclusion.png'
-import photo23 from '../assets/other-works/doorstep1.png'
+import photo23 from '../assets/other-works/collectafrica1.png'
 import Navbar from '../components/Navbar.vue'
 const cards = [
     {

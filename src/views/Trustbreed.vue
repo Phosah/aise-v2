@@ -14,7 +14,7 @@ import photo6 from "../assets/other-works/trustbreed-survey-photo-5.png"
 import photo7 from "../assets/other-works/user-personas-1.png"
 import photo8 from "../assets/other-works/user-personas-2.png"
 import photo9 from "../assets/other-works/complaint-screen.png"
-import photo10 from "../assets/other-works/doorstep1.png"
+import photo10 from "../assets/other-works/trustbreed1.png"
 import Navbar from '../components/Navbar.vue';
 const cards = [
     {

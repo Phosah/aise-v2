@@ -8,7 +8,7 @@ import photo2 from "../assets/other-works/home-screen-photo.png"
 import photo3 from "../assets/other-works/restaurant-page-photo.png"
 import photo4 from "../assets/other-works/samuel.png"
 import photo5 from "../assets/other-works/ari.png"
-import photo6 from "../assets/other-works/doorstep1.png"
+import photo6 from "../assets/other-works/trigle1.png"
 import LayoutOne from "../components/LayoutOne.vue"
 import LayoutTwo from '../components/LayoutTwo.vue';
 import UserExperience from '../components/UserExperience.vue';

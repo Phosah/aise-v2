@@ -9,7 +9,7 @@ import xerxesCover from "../assets/xerxes-cover-2.png"
 
 const worksArr = [
     {
-        img: athenaCover,
+        // img: athenaCover,
         alt: "Athena",
         title: "Athena",
         content: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users",

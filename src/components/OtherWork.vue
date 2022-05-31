@@ -20,7 +20,7 @@ onMounted(() => {
 
 <template>
     <section>
-        <div id="parallex" class="bg-gradient-to-tr from-slate-300 to-slate-600">
+        <div id="par" class="bg-gradient-to-tr from-slate-300 to-slate-600">
             <div v-for="(work, ix) in works" :key="ix" class="relative h-screen flex justify-center items-center">
                 <!-- <div class="absolute inset-0 mix-blend-multiply"><img class="object-cover w-full h-full sticky top-0" :src="work.img"
                         :alt="work.alt">
@@ -41,26 +41,32 @@ onMounted(() => {
 </template>
 
 <style>
-#parallex {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/athena-cover.png'); 
+#par {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/other-works/collectafrica1.png'); 
     background-size: contain;
 }
 
-#parallex div:nth-child(2) {
+#par div:nth-child(2) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)),
-                  url('../assets/aistake-cover.png');
+                  url('../assets/other-works/trigle1.png');
     background-attachment: fixed;
-}
-
-#parallex div:nth-child(3) {
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), 
-                url('../assets/pegasus-cover.png');
     background-size: cover;
 }
 
-#parallex div:nth-child(4) {
+#par div:nth-child(3) {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), 
+                url('../assets/other-works/powrfinance1.png');
+    background-size: cover;
+}
+
+#par div:nth-child(4) {
     background-attachment: fixed;
-    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/xerxes-cover.png');
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/other-works/trustbreed1.png');
+    background-size: cover;
+}
+#par div:nth-child(5) {
+    background-attachment: fixed;
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/other-works/doorstep1.png');
     background-size: cover;
 }
 </style>

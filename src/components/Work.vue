@@ -8,13 +8,11 @@ defineProps({
     }
 })
 onMounted(() => {
-    window.addEventListener("scroll", function () {
-        let offset = window.pageYOffset;
-        par.style.backgroundPositionY = offset * 0.7 + "px";
-        console.log(offset);   
-    });
-    const par = document.querySelector("#par");
-    console.log(par)
+    // window.addEventListener("scroll", function () {
+    //     let offset = window.pageYOffset;
+    //     par.style.backgroundPositionY = offset * 0.7 + "px";
+    //     console.log(offset);   
+    // });
 })
 </script>
 
@@ -43,7 +41,9 @@ onMounted(() => {
 <style>
 #parallex {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/athena-cover.png'); 
-    background-size: contain;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
 
 #parallex div:nth-child(2) {

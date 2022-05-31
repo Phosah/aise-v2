@@ -1,6 +1,6 @@
 <script setup>
 import Header from '@/components/Header.vue'
-import athenaCover from "../assets/athena-cover.png"
+import athenaCover from "../assets/athena2.png"
 import LayoutOne from '../components/LayoutOne.vue';
 import photo1 from "../assets/athena-photo-1.png"
 import Persona from "../components/Persona.vue"

@@ -40,26 +40,27 @@ onMounted(() => {
 
 <style scoped>
 .parallex {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/athena-cover.png'); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/athena1.png'); 
     background-size: cover;
     height: 100vh;
 }
 
 #parallex div:nth-child(2) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)),
-                  url('../assets/aistake-cover.png');
+                  url('../assets/aistake1.png');
     background-attachment: fixed;
+    background-size: cover;
 }
 
 #parallex div:nth-child(3) {
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), 
-                url('../assets/pegasus-cover.png');
+                url('../assets/pegasus1.png');
     background-size: cover;
 }
 
 #parallex div:nth-child(4) {
     background-attachment: fixed;
-    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/xerxes-cover.png');
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/xerxes1.png');
     background-size: cover;
 }
 </style>

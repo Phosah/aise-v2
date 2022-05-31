@@ -1,6 +1,6 @@
 <script setup>
 import Header from '../components/Header.vue'
-import pegasusCover from "../assets/pegasusCover.png"
+import pegasusCover from "../assets/pegasus2.png"
 import LayoutOne from '../components/LayoutOne.vue';
 import LayoutTwo from '../components/LayoutTwo.vue';
 import photo1 from "../assets/pegasus-photo-2.png"

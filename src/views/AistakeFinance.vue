@@ -1,6 +1,6 @@
 <script setup>
 import Header from '../components/Header.vue'
-import aistakeCover from "../assets/aistake-cover.png"
+import aistakeCover from "../assets/aistake2.png"
 import LayoutOne from '../components/LayoutOne.vue';
 import photo1 from '../assets/aistake-photo-1.png';
 import photo2 from '../assets/aistake-photo-2.png';

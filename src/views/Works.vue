@@ -2,10 +2,10 @@
 import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue';
 import Work from '../components/Work.vue';
-import athenaCover from "../assets/athena-cover.png"
-import aistakeCover from "../assets/aistake-finance-cover.png"
-import pegasusCover from "../assets/pegasus-cover.png"
-import xerxesCover from "../assets/xerxes-cover-2.png"
+import athenaCover from "../assets/athena1.png"
+import aistakeCover from "../assets/aistake1.png"
+import pegasusCover from "../assets/pegasus1.png"
+import xerxesCover from "../assets/xerxes1.png"
 
 const worksArr = [
     {

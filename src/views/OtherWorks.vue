@@ -1,9 +1,5 @@
 <script setup>
 import OtherWork from '../components/OtherWork.vue';
-import athenaCover from "../assets/athena-cover.png"
-import aistakeCover from "../assets/aistake-finance-cover.png"
-import pegasusCover from "../assets/pegasus-cover.png"
-import xerxesCover from "../assets/xerxes-cover-2.png"
 import Footer from "../components/Footer.vue";
 import Navbar from "../components/Navbar.vue";
 

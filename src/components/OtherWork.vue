@@ -1,25 +1,17 @@
 <script setup>
-import { onMounted } from "@vue/runtime-core";
-
 defineProps({
     works: {
         type: Array,
         required: true
     }
 })
-onMounted(() => {
-    // window.addEventListener("scroll", function () {
-    //     let offset = window.pageYOffset;
-    //     par.style.backgroundPositionY = offset * 0.7 + "px";
-    //     console.log(offset);   
-    // });
-})
+const themeMode = "light"
 </script>
 
 <template>
     <section>
         <div id="par" class="bg-gradient-to-tr from-slate-300 to-slate-600">
-            <div v-for="(work, ix) in works" :key="ix" class="relative h-screen flex justify-center items-center">
+            <div v-for="(work, ix) in works" :key="ix" :class="ix === 0 ? 'par' : '' " class="relative h-screen flex justify-center items-center">
                 <!-- <div class="absolute inset-0 mix-blend-multiply"><img class="object-cover w-full h-full sticky top-0" :src="work.img"
                         :alt="work.alt">
                 </div> -->
@@ -38,19 +30,19 @@ onMounted(() => {
     </section>
 </template>
 
-<style>
-#par {
+<style scoped>
+.par {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/other-works/collectafrica1.png'); 
     background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
+    height: 100vh; 
+}  
 
 #par div:nth-child(2) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)),
                   url('../assets/other-works/trigle1.png');
     background-attachment: fixed;
     background-size: cover;
+    height: 100vh;
 }
 
 #par div:nth-child(3) {

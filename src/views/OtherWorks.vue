@@ -58,6 +58,6 @@ const worksArr = [
             <h1 class="text-6xl md:text-9xl font-new-paris-kingsize">Projects</h1>
         </div>
         <OtherWork :works="worksArr" />
-        <Footer :class="bgColor" :mode="themeMode" :LinksMode="themeMode" />
     </div>
+    <Footer :class="bgColor" :mode="themeMode" :LinksMode="themeMode" />
 </template>

@@ -16,21 +16,21 @@ const worksArr = [
         link: "/athena"
     },
     {
-        img: aistakeCover,
+        // img: aistakeCover,
         alt: "Aistake Finance",
         title: "Aistake Finance",
         content: "Staking with multiple validators on the Solana network at the same time while still having the ability to stake with the community using the best validators",
         link: "/aistakefinance"
     },
     {
-        img: pegasusCover,
+        // img: pegasusCover,
         alt: "Pegasus",
         title: "Pegasus",
         content: "The easiest way for you to gain access to multiple token holdings at once by the purchase of one super token",
         link: "/pegasus"
     },
     {
-        img: xerxesCover,
+        // img: xerxesCover,
         alt: "Xerxes",
         title: "Xerxes",
         content: "A decentralized Lending and Borrowing Protocol, providing income to Lenders and Loaning opportunities for borrowers with need any crypto asset of your choice",

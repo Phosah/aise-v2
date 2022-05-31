@@ -162,7 +162,7 @@ const shipments = {
     img: photo9,
     alt: "Dashboard"
 }
-const pos = "text-center"
+const pos = "text-center font-playfair"
 const bgColor = "light"
 </script>
 

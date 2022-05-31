@@ -42,11 +42,9 @@ onMounted(() => {
 </template>
 
 <style>
-
-#par {
+#parallex {
     background-image: url('../assets/athena-cover.png'); 
-    background-size: cover;
-    height: 100vh;
+    background-size: contain;
 }
 
 #parallex div:nth-child(2) {

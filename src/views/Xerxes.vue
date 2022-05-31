@@ -126,6 +126,7 @@ const user2 = {
         "Often when the price of a token collateralized falls in the market your collateralization limit might cross the safe point without her being aware and she might lose her collateral due to the protocol of liquidating it to avoid loss."
     ]
 }
+const themeMode = 'light'
 </script>
 
 <template>
@@ -230,6 +231,6 @@ const user2 = {
                 experts and novices together to a unified value proposition was the peak of my experience</p>
         </section>
         <OtherProjects />
-        <Footer />
+        <Footer :bgColor="themeMode"/>
     </main>
 </template>

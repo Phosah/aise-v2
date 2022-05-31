@@ -147,6 +147,7 @@ const pool = {
     img: photo9,
     alt: "Aistake"
 }
+const themeMode = 'light'
 </script>
 
 <template>
@@ -252,6 +253,6 @@ const pool = {
                 experts and novices together to a unified value proposition was the peak of my experience</p>
         </section>
         <OtherProjects />
-        <Footer />
+        <Footer :bgColor="themeMode"/>
     </div>
 </template>

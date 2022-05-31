@@ -126,6 +126,7 @@ const transactionHistory = {
     img: photo6,
     alt: "Pegasus"
 }
+const themeMode = 'light'
 </script>
 
 <template>
@@ -246,6 +247,6 @@ const transactionHistory = {
                 business goals</p>
         </section>
         <OtherProjects />
-        <Footer />
+        <Footer :bgColor="themeMode"/>
     </div>
 </template>

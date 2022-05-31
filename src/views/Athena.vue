@@ -126,6 +126,7 @@ const launchpool = {
     img: photo7,
     alt: "Launchpool"
 }
+const themeMode = 'light'
 </script>
 
 <template>
@@ -307,6 +308,6 @@ const launchpool = {
                 experts and novices together to a unified value proposition was the peak of my experience</p>
         </section>
         <OtherProjects />
-        <Footer />
+        <Footer :bgColor="themeMode"/>
     </div>
 </template>

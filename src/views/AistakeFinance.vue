@@ -154,12 +154,12 @@ const themeMode = 'light'
     <div>
         <Navbar />
         <Header :headerInfo="info" />
-        <section class="max-w-7xl mx-auto my-40 px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <LayoutOne :page="problems" />
             <LayoutTwo :page="aim" />
         </section>
-        <section class="max-w-7xl mx-auto my-40 px-6">
-            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Research Time</h1>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Research Time</h1>
             <p class="mb-4">During the research phase, there was little information I could get from a lot of users, but
                 the major concern was the ability to delegate tokens to multiple validators at the same time to improve
                 investment strategy and yield.</p>
@@ -171,8 +171,8 @@ const themeMode = 'light'
                 while some others prefer the conventional staking of Solana with a token pair in a pool as it's more
                 controlled by the protocol and less prone to malicious Validators.</p>
         </section>
-        <section class="max-w-7xl mx-auto my-40 px-6">
-            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Goals From research</h1>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Goals From research</h1>
             <p class="mb-4">The research has shown that it was crucial for the success of the project to identify the
                 painpoints and translate them into solutions</p>
             <ul class="pl-6 list-disc">
@@ -190,40 +190,40 @@ const themeMode = 'light'
                 </li>
             </ul>
         </section>
-        <section class="max-w-7xl mx-auto my-40 px-6">
-            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">User Personas</h1>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">User Personas</h1>
             <p class="mb-6">Based on the generative user research I conducted, I created user personas that capture the
                 essence of
                 both user categories so its easier to personalize the experience to addressing the users pain points</p>
             <Persona :persona="user1" />
             <Persona :persona="user2" />
         </section>
-        <section class="my-40">
+        <section class="my-20 md:my-40">
             <div class="max-w-7xl mx-auto px-6">
-                <h1 class="mb-8 text-6xl font-bold font-new-paris-kingsize">How might we</h1>
+                <h1 class="mb-8 text-4xl md:text-6xl font-bold font-new-paris-kingsize">How might we</h1>
                 <p class="mb-12">At this stage I had to put together all the information I gathered so I could generate
                     some How might we questions that guides the ideation process, which helps us to do with thinking of
                     a solution based on the identified problem</p>
             </div>
             <div><img class="w-full" src="../assets/proposition.png" alt="Proposition"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-40 px-6">
-            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Value Proposition</h1>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Value Proposition</h1>
             <p class="mb-10 text-base">In the customer's profile, you describe the job your customer is trying to get
                 done by
                 highlighting customers pains and gains, it's used to track users needs and position the company’s to
                 know more about the customers needs to properly create value</p>
             <div><img class="w-full" src="../assets/value-proposition-customers.png" alt="Value Proposition"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-40 px-6">
-            <h1 class="mb-8 text-6xl font-bold font-new-paris-kingsize">User Journey Map</h1>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h1 class="mb-8 text-4xl md:text-6xl font-bold font-new-paris-kingsize">User Journey Map</h1>
             <p class="mb-12">This same journey is similar to that of farms but we would be taking pool into account as
                 that was the first test we made in the MVP that held the foundation of the product. This helped us
                 analyze the user's experience and improve the product.</p>
             <div><img class="w-full" src="../assets/user-map.png" alt="User Map"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-40 px-6">
-            <h1 class="mb-4 text-6xl font-bold font-new-paris-kingsize">Design Decisions</h1>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h1 class="mb-4 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Design Decisions</h1>
             <p class="mb-12">Below show some of the screens that are a visual representation of the thought process that
                 was carried out throughout the research phase and the brainstorming phase with both stakeholders and
                 investors.</p>
@@ -234,17 +234,17 @@ const themeMode = 'light'
             <LayoutTwo :page="farming" />
             <LayoutThree :page="pool" />
         </section>
-        <section class="my-40">
+        <section class="my-20 md:my-40">
             <div class="max-w-7xl mx-auto px-6">
-                <h1 class="mb-8 text-6xl font-bold font-new-paris-kingsize">How might we</h1>
+                <h1 class="mb-8 text-4xl md:text-6xl font-bold font-new-paris-kingsize">How might we</h1>
                 <p class="mb-12">At this stage I had to put together all the information I gathered so I could generate
                     some How might we questions that guides the ideation process, which helps us to do with thinking of
                     a solution based on the identified problem</p>
             </div>
             <div><img class="w-full" src="../assets/aistake-photo-10.png" alt="Mobile responsiveness"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-40 px-6">
-            <h1 class="mb-4 text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h1 class="mb-4 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
             <p class="mb-4">Decentralization is undoubtedly a major trend in financial markets all over the world. The
                 arrival of DeFi has changed the way people and institutions perceive finance. We have been witnessing
                 many radical improvements in financial technology. The understanding of risks associated with

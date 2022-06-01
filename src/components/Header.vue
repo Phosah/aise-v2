@@ -15,9 +15,9 @@ defineProps({
         <div><img class="w-full" :src="headerInfo.img" :alt="headerInfo.alt"></div>
         <section class="md:flex md:space-x-32 max-w-7xl mx-auto my-20 px-6">
             <div class="md:w-3/4 mb-8 md:mb-0">
-                <h2 class="mb-16 pl-10 text-3xl font-bold border-l-4 border-brand-black-3">{{ headerInfo.mainContent }}
+                <h2 class="mb-16 pl-10 text-2xl md:text-3xl font-bold border-l-4 border-brand-black-3">{{ headerInfo.mainContent }}
                 </h2>
-                <p class="text-xl">{{ headerInfo.subContent }}</p>
+                <p class="text-lg md:text-xl">{{ headerInfo.subContent }}</p>
             </div>
             <div class="md:w-1/4 text-sm">
                 <div class="mb-10">

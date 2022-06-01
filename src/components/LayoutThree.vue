@@ -8,7 +8,7 @@ defineProps({
 </script>
 <template>
     <div class="mt-20 mb-24 md:mb-48">
-        <h3 class="font-new-paris-kingsize mb-4 text-4xl font-bold">{{ page.title }}</h3>
+        <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">{{ page.title }}</h3>
         <div v-for="(para, ix) in page.paragraphs" :key="ix">
             <p class="mb-4">{{ para }}</p>
         </div>

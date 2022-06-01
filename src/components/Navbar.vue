@@ -29,7 +29,7 @@ let currentScrollPos = window.pageYOffset;
                         <router-link to="/about">About me</router-link>
                     </div>
                     <div class="mb-8 md:mb-0">
-                        <router-link to="/works">Visual Shots</router-link>
+                        <a href="https://dribbble.com/Aise_Idahor" target="_blank">Visual Shots</a>
                     </div>
                 </div>
             </div>

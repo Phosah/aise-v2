@@ -10,7 +10,7 @@
     <div class="flex items-center justify-center max-w-7xl mx-auto my-20 px-6">
       <img src="../assets/random1.png" alt="Scroll img">
     </div>
-    <div class="max-w-6xl mx-auto my-40 px-6 text-2xl md:text-5xl text-brand-gray-2 md:leading-snug">I design digital
+    <div class="max-w-6xl mx-auto my-20 md:my-40 px-6 text-2xl md:text-5xl text-brand-gray-2 md:leading-snug">I design digital
       products and
       websites for startups,
       brands and entrepreneurs
@@ -18,8 +18,9 @@
       Designer at ARC a web3 aggregator where i change lives in the web3 space through Research, Empathy and Data-driven
       insights. I help companies build teams and digital products.I design digital products and websites for startups,
       brands, and entrepreneurs with cool projects.</div>
+      <!-- Improve component -->
     <div class="bg-brand-black-1 text-white">
-      <div class="max-w-7xl mx-auto px-4 md:px-20 py-40">
+      <div class="max-w-7xl mx-auto px-4 md:px-20 py-20 md:py-40">
         <h2 class="mb-20 text-4xl md:text-6xl lg:text-7xl text-white font-new-paris-kingsize-regular">MY DESIGN
           GUIDELINES</h2>
         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
@@ -30,9 +31,10 @@
         </div>
       </div>
     </div>
-    <section class="max-w-7xl mx-auto my-40 px-6">
-      <div class="flex items-center justify-between mb-8">
-        <h2 class="text-4xl md:text-6xl lg:text-7xl font-new-paris-kingsize">Work Experience</h2>
+    <!-- End of Improve component -->
+    <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+      <div class="md:flex md:items-center md:justify-between mb-8">
+        <h2 class="mb-6 md:mb-0 text-4xl md:text-6xl lg:text-7xl font-new-paris-kingsize">Work Experience</h2>
         <button
           class="py-3 px-16 rounded-md border border-brand-black-1 text-brand-black-1 font-euclid-circular-bold">Download
           Resume</button>

@@ -131,23 +131,23 @@ const prev = () => {
 <template>
   <Navbar />
   <main class="text-brand-black-2">
-    <section class="mt-40">
-      <div class="md:flex md:items-center max-w-7xl mx-auto mt-20 px-6">
-        <h1 class="md:flex-1 text-6xl md:text-10xl font-new-paris-kingsize text-center">Product</h1>
+    <section class="my-20 md:mt-40">
+      <div class="md:flex md:items-center max-w-7xl mx-auto mb-10 md:mb-0 md:mt-20 px-6">
+        <h1 class="md:flex-1 mb-10 md:mb-0 text-6xl md:text-10xl font-new-paris-kingsize text-center">Product</h1>
         <p class="md:w-1/3 leading-relaxed text-brand-gray-2">Hello There! I am Aise, a Product designer in the web3
           space
           focused on
           maximizing business
           need and user satisfaction through the creation of simple digital experiences.</p>
       </div>
-      <div class="flex justify-center max-w-7xl mx-auto mt-20 px-6">
+      <div class="flex justify-center max-w-7xl mx-auto md:mt-20 px-6">
         <h1 class="z-10 text-6xl md:text-10xl font-new-paris-kingsize">Designer</h1>
       </div>
-      <div class="md:flex justify-end max-w-7xl mx-auto mt-20 px-6">
-        <div class="flex-1">
+      <div class="md:flex justify-end max-w-7xl mx-auto mt-20 md:px-6">
+        <div class="hidden md:block md:flex-1">
           <img class="w-32 h-32" src="../assets/random1.png" alt="Scroll down">
         </div>
-        <div class="flex-1 transform -translate-y-40">
+        <div class="md:flex-1 md:transform md:-translate-y-40">
           <img src="../assets/aise-photo-1.png" alt="Aise photo">
         </div>
       </div>
@@ -165,7 +165,7 @@ const prev = () => {
       <div class="hidden md:w-1/2 md:flex md:justify-end"><img class="w-32 h-32" src="../assets/random1.png"
           alt="Random img"></div>
     </div>
-    <section class="max-w-7xl mx-auto my-40 px-6">
+    <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
       <div class="md:flex md:items-start md:space-x-12">
         <div class="md:flex-1 flex flex-col mb-8 p-8 bg-black text-white rounded-md">
           <h2 class="text-6xl font-new-paris-kingsize">Web 3</h2>
@@ -195,7 +195,7 @@ const prev = () => {
         </div>
       </div>
     </section>
-    <section class="max-w-7xl mx-auto my-40 px-6">
+    <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
       <div class="md:flex md:items-center md:space-x-12">
         <div class="md:flex-1 mb-8 md:mb-0">
           <h3 class="font-new-paris-kingsize mb-6 text-5xl font-new-paris-kingsize">Over 100 <span
@@ -210,7 +210,7 @@ const prev = () => {
         <div class="md:flex-1"><img class="w-full" src="../assets/gif3.gif" alt="Designs"></div>
       </div>
     </section>
-    <section class="max-w-7xl mx-auto my-52 px-6">
+    <section class="max-w-7xl mx-auto my-32 md:my-52 px-6">
       <Clients :clients="clientsArr" />
     </section>
     <Testimonials :stories="testimonialsArr" :num="num" @showNext="next" @showPrev="prev" :ix="elemIdx"/>

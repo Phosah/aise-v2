@@ -1,13 +1,13 @@
 <template>
-    <section class="py-20 px-6" :class="bgColor">
-        <div class="flex flex-col items-center max-w-7xl mx-auto py-40 md:py-20 md:px-16">
+    <section class="px-6 md:px-16 py-20" :class="bgColor">
+        <div class="flex flex-col items-center max-w-7xl mx-auto">
             <div v-if="bgColor === 'light'" class="mb-24">
                 <img src="../assets/project-talk-dark.png" alt="Project talk" />
             </div>
             <div v-else class="mb-24">
                 <img src="../assets/project-talk.png" alt="Project talk" />
             </div>
-            <div class="md:w-5/6 mx-auto px-16 md:px-0">
+            <div class="md:w-5/6 mx-auto px-8 md:px-0">
                 <h3
                     class="font-new-paris-kingsize mb-8 text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-center font-semibold">
                     Let's

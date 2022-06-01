@@ -16,6 +16,14 @@ import photo6 from "../assets/pegasus-photo-9.png"
 import OtherProjects from "../components/OtherProjects.vue"
 import Footer from '../components/Footer.vue';
 import Navbar from '../components/Navbar.vue';
+import Carousel from '../components/Carousel.vue'
+import research1 from '../assets/research-1.png'
+import research2 from '../assets/research-2.png'
+import research3 from '../assets/research-3.png'
+import research4 from '../assets/research-4.png'
+import research5 from '../assets/research-5.png'
+import research6 from '../assets/research-6.png'
+import research7 from '../assets/research-7.png'
 const info = {
     title: "Pegasus",
     text: "The easiest way for you to gain access to multiple token holdings at once by the purchase of one super token",
@@ -127,15 +135,45 @@ const transactionHistory = {
     alt: "Pegasus"
 }
 const themeMode = 'light'
+const cards = [
+    {
+        title: "1. Do you have crypto assets?",
+        img: research1
+    },
+    {
+        title: "2. Have you ever been stuck on what asset to buy",
+        img: research2
+    },
+    {
+        title: "3. What do you classsify as the most difficult aspect in buying a crypto asset",
+        img: research3
+    },
+    {
+        title: "4. How frequently do you check up on your crypto portfolio",
+        img: research4
+    },
+    {
+        title: "5.How frequently do you check crypto news to influence your investment options",
+        img: research5
+    },
+    {
+        title: "6. On a scale of 1-5 how difficult is it to find the best assets to invest in",
+        img: research6
+    },
+    {
+        title: "7. Would you love your index asset to be invested in a vault or farm once you have bought it",
+        img: research7
+    }
+]
 </script>
 
 <template>
     <Navbar />
     <div>
         <Header :headerInfo="info" />
-        <section class="md:flex md:items-center md:space-x-12 max-w-7xl mx-auto my-40 px-6">
-            <div class="md:flex-1">
-                <h3 class="mb-6 text-3xl font-bold font-new-paris-kingsize">Problems associated</h3>
+        <section class="md:flex md:items-center md:space-x-12 max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <div class="md:flex-1 mb-6 md:mb-0">
+                <h3 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Problems associated</h3>
                 <p class="mb-4">With the creation of Bitcoin, thousands of other tokens have been created and they a lot
                     of them have been seen to pose great investment opportunities. As of April 2019, there are 2,100
                     tokens listed on CoinMarketCap that represent over $160 billion in value.</p>
@@ -153,22 +191,25 @@ const themeMode = 'light'
             </div>
             <div class="md:flex-1"><img src="../assets/pegasus-photo-1.png" alt="Pegasus"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-40 px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <LayoutTwo :page="goals" />
         </section>
-        <section class="max-w-7xl mx-auto my-40 px-6">
-            <h1 class="mb-4 text-6xl font-bold font-new-paris-kingsize">Research Began</h1>
-            <p class="mb-4">A series of research was done as related to indexes in which several analogous inspirations
-                were used especially from the web2 space as this was a product feature known to industries about the
-                stock market and insurance already. This was finally backed up with competitive research on DeFi
-                protocols like Tokenset and Zerion.</p>
-            <p>During the research, a couple of interviews were done after the initial research, and these questions
-                were used to drive the interview questions this further helped me in creating surveys ad this was used
-                to validate the data for quantitative analysis. Below holds some of the questions and the collated
-                results.</p>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <div class="mb-6">
+                <h1 class="mb-4 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Research Began</h1>
+                <p class="mb-4">A series of research was done as related to indexes in which several analogous inspirations
+                    were used especially from the web2 space as this was a product feature known to industries about the
+                    stock market and insurance already. This was finally backed up with competitive research on DeFi
+                    protocols like Tokenset and Zerion.</p>
+                <p>During the research, a couple of interviews were done after the initial research, and these questions
+                    were used to drive the interview questions this further helped me in creating surveys ad this was used
+                    to validate the data for quantitative analysis. Below holds some of the questions and the collated
+                    results.</p>
+            </div>
+            <Carousel :cards="cards" />
         </section>
-        <section class="max-w-7xl mx-auto my-40 px-6">
-            <h1 class="mb-4 text-6xl font-bold font-new-paris-kingsize">Research Findings</h1>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h1 class="mb-4 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Research Findings</h1>
             <p class="mb-4">After the research was done below were the findings and validations of some assumptions had
                 earlier on</p>
             <ul class="pl-6 list-disc">
@@ -186,25 +227,25 @@ const themeMode = 'light'
                     to yield more profit</li>
             </ul>
         </section>
-        <section class="max-w-7xl mx-auto my-40 px-6">
-            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">User Personas</h1>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">User Personas</h1>
             <p class="mb-6">Based on the generative user research I conducted, I created user personas that capture the
                 essence of
                 both user categories so its easier to personalize the experience to addressing the users pain points</p>
             <Persona :persona="user1" />
             <Persona :persona="user2" />
         </section>
-        <section class="my-40">
+        <section class="my-20 md:my-40">
             <div class="max-w-7xl mx-auto px-6">
-                <h1 class="mb-8 text-6xl font-bold font-new-paris-kingsize">How might we</h1>
+                <h1 class="mb-8 text-4xl md:text-6xl font-bold font-new-paris-kingsize">How might we</h1>
                 <p class="mb-12">At this stage I had to put together all the information I gathered so I could generate
                     some How might we questions that guides the ideation process, which helps us to do with thinking of
                     a solution based on the identified problem</p>
             </div>
             <div><img class="w-full" src="../assets/proposition.png" alt="Proposition"></div>
         </section>
-        <section class="max-w-7xl mx-auto my-40 px-6">
-            <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">User Journey Map</h1>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">User Journey Map</h1>
             <p class="mb-10 text-base">The user journey map for the purchasing of an index as the core of the product
                 was the first
                 to be done as it would help us identify the users experience within the process for us to create the
@@ -213,7 +254,7 @@ const themeMode = 'light'
         </section>
         <section class="my-20 px-6 bg-brand-blue-1 text-white">
             <div class="max-w-7xl mx-auto py-40">
-                <h1 class="mb-6 text-6xl font-bold font-new-paris-kingsize">Design Decisions</h1>
+                <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Design Decisions</h1>
                 <p class="mb-4">From the research carried out, the data analysis from responses, and brainstorming
                     session with those analyses, a design was carried out t properly account for every problem and
                     pain
@@ -232,8 +273,8 @@ const themeMode = 'light'
                 <LayoutOne :page="transactionHistory" />
             </div>
         </section>
-        <section class="max-w-7xl mx-auto my-40 px-6">
-            <h1 class="mb-4 text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h1 class="mb-4 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
             <p>Because we are still very early days in the development of Pegasus and it's an MVP, there are still many
                 outstanding areas and features that we plan on developing. There are plans to take the index
                 opportunities to another step by introducing features including;</p>

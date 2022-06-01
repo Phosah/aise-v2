@@ -1,5 +1,4 @@
 <script setup>
-import  {computed, ref}  from "vue";
 const props = defineProps({
   stories: {
     type: Array,
@@ -18,12 +17,11 @@ const emit = defineEmits(['showNext', 'showPrev'])
 const prev = () => {
   emit('showPrev')
 }
-
 </script>
 
 <template>
     <section class="max-w-7xl mx-auto my-20 md:mt-40 md:mb-52 px-6">
-      <h1 class="mb-20 text-5xl md:text-9xl font-new-paris-kingsize">Testimonials</h1>
+      <h1 class="mb-20 text-5xl md:text-8xl lg:text-9xl font-new-paris-kingsize">Testimonials</h1>
       <div class="md:flex md:items-center md:justify-between mb-14">
         <div class="flex items-center space-x-8">
           <img :src="stories[num].img" :alt="stories[num].alt">

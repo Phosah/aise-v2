@@ -153,7 +153,7 @@ const prev = () => {
       </div>
     </section>
     <div class="md:flex max-w-7xl mx-auto px-6">
-      <div class="md:w-1/2 px-12">
+      <div class="md:w-1/2 px-6 md:px-12">
         <h2 class="mb-6 text-4xl font-new-paris-kingsize">What I do</h2>
         <p class="pl-6 border-l-2 border-brand-black-2 border-opacity-30 leading-relaxed">I am a Web3 designer who
           simplifies complex

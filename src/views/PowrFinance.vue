@@ -278,7 +278,7 @@ const lending = {
     alt: "Lending"
 }
 const dollar = {
-    title: "Dollar Cards",
+    title: "Dollar Master Cards",
     paragraphs: [
         "Every user gets a master dollar card that would be delivered to his/her address and can be used in any ATM to withdraw cash in any country at the bank exchange rates, and the details can also be used for online payments on any eCommerce store"
     ],
@@ -302,7 +302,7 @@ const headerCenter = 'font-playfair'
     <div class="bg-white text-brand-black-3">
         <Navbar />
         <HeaderInfo :headerDetails="details" />
-        <section class="max-w-7xl mx-auto py-20 px-6 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm md:text-base">
             <div class="mb-20">
                 <h2
                     class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
@@ -325,7 +325,7 @@ const headerCenter = 'font-playfair'
                 <!-- End of Mobile version -->
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-20 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-20 px-6 md:px-16">
             <h2
                 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
             >My Design Process</h2>
@@ -339,7 +339,7 @@ const headerCenter = 'font-playfair'
             <!-- End of Mobile version -->
         </section>
         <section class="text-sm md:text-base">
-            <div class="max-w-7xl mx-auto pb-20 px-4 md:px-16">
+            <div class="max-w-7xl mx-auto pb-20 px-6 md:px-16">
                 <h2
                     class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
                 >Understanding the Problem</h2>
@@ -362,13 +362,13 @@ const headerCenter = 'font-playfair'
             </div>
             <!-- End of mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto py-20 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto py-20 px-6 md:px-16 text-sm md:text-base">
             <h2
                 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
             >Understanding the business goals and Competitor</h2>
             <p>Understanding our competitors on how they solve problems of similar products that provide solutions for similar user needs has helped me as a designer define what creative solutions could be designed and improved for our product. The three main primary competitors are Wise, Payoneer, & PayPal.</p>
         </section>
-        <section class="max-w-7xl mx-auto md:px-16 pb-20 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto md:px-16 text-sm md:text-base">
             <div v-for="(analysis, ix) in analysisArray" :key="ix">
                 <CompetitionAnalysis :analysis="analysis" />
             </div>
@@ -394,13 +394,13 @@ const headerCenter = 'font-playfair'
             <!-- End of Mobile version -->
         </section>
         <section>
-            <div class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm">
+            <div class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm">
                 <div v-for="(persona, ix) in personasArray" :key="ix">
                     <UserPersona :persona="persona" />
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto pb-10 md:py-20 px-6 md:px-16 text-sm md:text-base">
             <h2
                 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
             >Surveys & user interviews</h2>
@@ -473,7 +473,7 @@ const headerCenter = 'font-playfair'
             </div>
             <!-- End of mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto py-20 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto py-20 px-6 md:px-16 text-sm md:text-base">
             <h2
                 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
             >Opportunities in Africa</h2>
@@ -488,34 +488,40 @@ const headerCenter = 'font-playfair'
                 <li>An improved user experience.</li>
                 <li>An advanced product value proposition.</li>
             </ul>
-            <LayoutTwo :page="transaction" :headerFont="headerFont"/>
+            <div class="hidden md:block">
+                <LayoutTwo :page="transaction" :headerFont="headerFont"/>
+            </div>
             <!-- Mobile version -->
-            <div class="block md:hidden mb-10 dark:text-white">
+            <div class="block md:hidden my-20 dark:text-white">
                 <div class="mb-12">
                     <h2
-                        class="mb-4 text-2xl md:text-3xl lg:text-4xl font-bold"
+                        class="mb-4 text-2xl font-bold font-playfair"
                     >45.6 Billion in total transactions in Africa</h2>
                     <p>Our first targets would be the top 5 countries with the highest remittance valueNigeria, Kenya and Ghana.</p>
                 </div>
+                <div><img src="../assets/other-works/opportunities-graph-1.png" alt=""></div>
             </div>
             <!-- End of Mobile version -->
             <p
                 class="mb-10 md:mb-20"
             >With the pain points of users requesting payment in crypto currency, it opens up a new market to explore and that would mean another fast growing resource to tap into</p>
-            <LayoutOne :page="volume" :headerFont="headerFont" />
+            <div class="hidden md:block">
+                <LayoutOne :page="volume" :headerFont="headerFont" />
+            </div>
             <!-- Mobile version -->
-            <div class="block md:hidden mb-16 dark:text-white">
+            <div class="block md:hidden my-20 dark:text-white">
                 <div class="mb-12">
                     <h2
-                        class="mb-4 text-2xl md:text-3xl lg:text-4xl font-bold"
+                        class="mb-4 text-2xl font-bold font-playfair"
                     >Estimated transaction volume of $8tn in 2025</h2>
                     <p>With 10% of this tranascation relating with the African market, the opportunities available is endless</p>
                 </div>
+                <div><img src="../assets/other-works/opportunities-graph-2.png" alt=""></div>
             </div>
             <!-- End of Mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto px-4 md:px-16 pb-10 md:pb-20 text-sm md:text-base">
-            <div class="mb-40">
+        <section class="max-w-7xl mx-auto px-6 md:px-16 pb-10 md:pb-20 text-sm md:text-base">
+            <div class="mb-20 md:mb-40">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Risk</h2>
                 <p
                     class="mb-6"
@@ -573,7 +579,7 @@ const headerCenter = 'font-playfair'
             </div>
             <!-- End of Mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto pt-40 pb-20 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto md:pt-40 py-20 px-6 md:px-16 text-sm md:text-base">
             <div class="mb-16 md:mb-32">
                 <h2
                     class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
@@ -615,12 +621,14 @@ const headerCenter = 'font-playfair'
                 </div>
                 <!-- End of Mobile version -->
             </div>
-            <LayoutTwo :page="payment" :headerFont="headerFont"/>
+            <div class="hidden md:block">
+                <LayoutTwo :page="payment" :headerFont="headerFont"/>
+            </div>
             <!-- Mobile version -->
             <div class="block md:hidden mb-16 md:mb-32">
                 <div class>
                     <h2
-                        class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
+                        class="mb-6 text-2xl font-bold font-playfair"
                     >Crypto Payments</h2>
                     <p
                         class="mb-16"
@@ -636,9 +644,11 @@ const headerCenter = 'font-playfair'
             </div>
             <!-- End of Mobile version -->
             <LayoutOne :page="lending" :headerFont="headerFont" />
-            <LayoutTwo :page="dollar" :headerFont="headerFont"/>
+            <div class="hidden md:block">
+                <LayoutTwo :page="dollar" :headerFont="headerFont"/>
+            </div>
             <!-- Mobile version -->
-            <div class="block md:hidden mb-16 md:mb-32">
+            <div class="block md:hidden mb-16">
                 <div class>
                     <h2
                         class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
@@ -669,7 +679,7 @@ const headerCenter = 'font-playfair'
                 <img class="w-full" src="../assets/other-works/more-features.png" alt="More Features" />
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-40 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-40 px-6 md:px-16">
             <h2 class="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold font-playfair">Conclusion</h2>
             <p>This project is open to massive expansion and growth, the product aims to expand to cover sectors like payroll whereby organizations with employees working in multiple countries can all be registered and payments can be disbursed once and payroll run with each of them receiving their cash in their local currency or crypto if selected</p>
         </section>

@@ -81,8 +81,10 @@ const personasArr = [
     <div class="bg-white text-brand-black-3">
         <Navbar />
         <HeaderInfo :headerDetails="details" />
-        <section class="max-w-7xl mx-auto px-4 md:px-16">
-            <LayoutOne :page="problem" :headerFont="headerFont" />
+        <section class="max-w-7xl mx-auto px-6 md:px-16">
+            <div class="hidden md:block">
+                <LayoutOne :page="problem" :headerFont="headerFont" />
+            </div>
             <!-- Mobile version -->
             <div class="block md:hidden">
                 <div class="mb-10">
@@ -102,7 +104,7 @@ const personasArr = [
             </div>
             <!-- End of mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto px-4 md:px-16 py-10 md:py-20">
+        <section class="max-w-7xl mx-auto px-6 md:px-16 py-10 md:py-20">
             <div class="md:flex md:items-center md:justify-between md:space-x-12">
                 <div class="flex-1 mb-10 md:mb-0">
                     <img
@@ -144,7 +146,7 @@ const personasArr = [
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:pl-16 md:px-16">
+        <section class="max-w-7xl mx-auto py-10 md:py-40 px-6 md:pl-16 md:px-16">
             <div class="hidden md:flex items-center justify-between space-x-12">
                 <div class="flex-1">
                     <h2
@@ -194,9 +196,9 @@ const personasArr = [
             </div>
             <!-- End of Mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16">
             <div class="md:flex md:justify-between md:space-x-12">
-                <div class="md:flex-1 mb-28 md:mb-0 text-sm md:text-base">
+                <div class="md:flex-1 mb-20 md:mb-0 text-sm md:text-base">
                     <h2
                         class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
                     >Business growth</h2>
@@ -238,7 +240,7 @@ const personasArr = [
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-10 md:py-40 px-6 md:px-16">
             <div class>
                 <div class="mb-16 md:w-5/6 mx-auto text-center text-sm md:text-base">
                     <h1
@@ -276,7 +278,7 @@ const personasArr = [
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16">
             <div class="md:flex md:items-center md:justify-between md:space-x-12">
                 <div class="md:flex-1 mb-12">
                     <img class="w-full" src="../assets/other-works/trigle-research.png" alt="Research" />
@@ -297,7 +299,7 @@ const personasArr = [
         </section>
         <UserExperience :personas="personasArr"/>
         <!-- Mobile version -->
-        <section class="block md:hidden max-w-7xl mx-auto py-10 md:py-20 px-4">
+        <section class="block md:hidden max-w-7xl mx-auto py-10 md:py-20 px-6">
             <div class="flex items-center space-x-4 mb-16">
                 <div class="w-1/3">
                     <img class="w-full" src="../assets/other-works/samuel.png" alt="Man photo" />
@@ -337,7 +339,7 @@ const personasArr = [
                 </div>
             </div>
         </section>
-        <section class="block md:hidden max-w-7xl mx-auto py-10 md:py-20 px-4">
+        <section class="block md:hidden max-w-7xl mx-auto py-10 md:py-20 px-6">
             <div class="flex items-center space-x-4 mb-16">
                 <div class="w-1/3">
                     <img class="w-full" src="../assets/other-works/ari.png" alt />
@@ -378,7 +380,7 @@ const personasArr = [
             </div>
         </section>
         <!-- End of Mobile version -->
-        <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-10 md:py-40 px-6 md:px-16">
             <div class>
                 <h2
                     class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
@@ -408,7 +410,7 @@ const personasArr = [
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16">
             <div class>
                 <h2
                     class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
@@ -441,8 +443,8 @@ const personasArr = [
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16">
-            <div class="mb-40">
+        <section class="max-w-7xl mx-auto py-10 md:py-40 px-6 md:px-16">
+            <div class="mb-20 md:mb-40">
                 <img
                     class="w-full"
                     src="../assets/other-works/map-ordering.png"
@@ -457,7 +459,7 @@ const personasArr = [
                 />
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16">
             <div class="lg:w-5/6 mx-auto mb-20 text-center text-sm md:text-base">
                 <h1
                     class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
@@ -493,11 +495,13 @@ const personasArr = [
             </div>
             <!-- End of mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto px-4 md:px-16">
+        <section class="max-w-7xl mx-auto px-6 md:px-16">
             <LayoutOne :page="home" :headerFont="headerFont" />
         </section>
-        <section class="max-w-7xl mx-auto px-4 md:px-16">
-            <LayoutTwo :page="restaurant" :headerFont="headerFont" />
+        <section class="max-w-7xl mx-auto px-6 md:px-16">
+            <div class="hidden md:block">
+                <LayoutTwo :page="restaurant" :headerFont="headerFont" />
+            </div>
             <!-- Mobile version -->
             <div class="block sm:hidden">
                 <div class="mb-12">
@@ -513,7 +517,7 @@ const personasArr = [
             </div>
             <!-- End of mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-20 px-6 md:px-16">
             <div
                 class="sm:flex sm:items-center sm:justify-between sm:space-x-12 text-sm md:text-base"
             >
@@ -534,7 +538,7 @@ const personasArr = [
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-10 md:py-40 px-6 md:px-16">
             <div class="mb-20 text-center text-sm md:text-base">
                 <h1
                     class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair text-center"
@@ -636,7 +640,7 @@ const personasArr = [
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-20 md:py-40 px-6 md:px-16">
             <div
                 class="md:flex md:items-center md:justify-between md:space-x-12 text-sm md:text-base"
             >

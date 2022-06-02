@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-    <section class="py-10 md:py-20 bg-brand-gray-7">
+    <section class="py-20 bg-brand-gray-7">
     <div class="max-w-7xl mx-auto px-4 md:px-16">
         <div class="mb-16 md:w-5/6 mx-auto text-center text-sm md:text-base text-white">
             <h1

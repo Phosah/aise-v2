@@ -314,7 +314,7 @@ const bgColor = "light"
     <div class="bg-white text-brand-black-3">
         <Navbar />
         <HeaderInfo :headerDetails="details" />
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-0 md:py-20 px-6 md:px-16 mb-10 md:mb-0">
             <div class="md:flex md:items-center text-xs">
                 <div
                     class="flex-1 flex flex-col justify-center items-center py-8 md:py-0 border-b md:border-b-0 md:border-r border-brand-black-3"
@@ -340,7 +340,7 @@ const bgColor = "light"
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto pt-10 md:pt-20 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto pt-10 md:pt-20 px-6 md:px-16">
             <h2
                 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
             >My Design Process</h2>
@@ -353,9 +353,11 @@ const bgColor = "light"
             </div>
             <!-- End of Mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto px-6 md:px-16 text-sm md:text-base">
             <LayoutOne :page="problem" :headerFont="headerFont" />
-            <LayoutTwo :page="goal" :headerFont="headerFont" />
+            <div class="hidden md:block">
+                <LayoutTwo :page="goal" :headerFont="headerFont" />
+            </div>
             <!-- Mobile version -->
             <div class="block sm:hidden">
                 <div class="mb-12">
@@ -376,7 +378,7 @@ const bgColor = "light"
         </section>
         <Process :steps="processArr" />
         <section
-            class="max-w-7xl mx-auto pb-20 py-10 md:py-40 px-4 md:px-16 text-sm md:text-base"
+            class="max-w-7xl mx-auto py-20 md:py-40 px-6 md:px-16 text-sm md:text-base"
         >
             <div class="mb-12">
                 <h1
@@ -388,7 +390,7 @@ const bgColor = "light"
                 <Carousel :cards="cards" />
             </div>
         </section>
-        <section class="max-w-7xl mx-auto px-4 md:px-16 pb-20 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto px-6 md:px-16 mb-10 md:mb-0 text-sm md:text-base">
             <div class="md:flex md:items-center md:space-x-12">
                 <div class="md:flex-1 mb-8 md:mb-0">
                     <h2
@@ -416,7 +418,7 @@ const bgColor = "light"
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16">
             <div class>
                 <h1
                     class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
@@ -424,7 +426,7 @@ const bgColor = "light"
                 <p
                     class="md:w-2/3 mb-12 text-sm md:text-base"
                 >In this stage, we came together to come up with the best possible approach. after brainstorming, I continued by sketching out some of the most promising ideas to distill sown the ideas and get feedback from the team. This phase was shored and it comprised of how might we questions, in which some mock-ups were drafted out</p>
-                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-12">
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-6 md:gap-y-12">
                     <div
                         class="p-6 bg-brand-gray-5 rounded-md"
                     >How might we allow businesses receive payments from foreign countries</div>
@@ -446,7 +448,7 @@ const bgColor = "light"
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto px-4 md:px-16 py-10 md:py-20 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto px-6 md:px-16 py-10 md:py-20 text-sm md:text-base">
             <div class="mb-12">
                 <h1
                     class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
@@ -459,7 +461,7 @@ const bgColor = "light"
                 <CompetitionAnalysis :analysis="analysis" />
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm">
             <div class="mb-12">
                 <h1
                     class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
@@ -472,7 +474,7 @@ const bgColor = "light"
                 <UserPersona :persona="persona" />
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm md:text-base">
             <div class="mb-12">
                 <h1
                     class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
@@ -503,7 +505,7 @@ const bgColor = "light"
             </div>
             <LayoutOne :page="volume" :headerFont="headerFont" />
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm md:text-base">
             <div class="mb-20">
                 <h1
                     class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
@@ -535,7 +537,7 @@ const bgColor = "light"
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16">
             <h1
                 class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
             >User Stories</h1>
@@ -578,7 +580,7 @@ const bgColor = "light"
             </ul>
         </section>
         <section>
-            <div class="max-w-7xl mx-auto px-4 md:px-16 pt-10 md:pt-20 text-sm md:text-base">
+            <div class="max-w-7xl mx-auto px-6 md:px-16 pt-10 md:pt-20 text-sm md:text-base">
                 <h1
                     class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
                 >User flows</h1>
@@ -593,7 +595,7 @@ const bgColor = "light"
             </div>
         </section>
         <section>
-            <div class="max-w-7xl mx-auto pt-10 md:pt-20 px-4 md:px-16 text-sm md:text-base">
+            <div class="max-w-7xl mx-auto md:pt-20 px-6 md:px-16 text-sm md:text-base">
                 <h1
                     class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
                 >Sitemap</h1>
@@ -607,7 +609,7 @@ const bgColor = "light"
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto pt-10 md:pt-20 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto pt-10 md:pt-20 px-6 md:px-16 text-sm md:text-base">
             <div class="mb-10 md:w-5/6 mx-auto text-center text-sm md:text-base">
                 <h1
                     class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
@@ -620,7 +622,7 @@ const bgColor = "light"
                 <img class="w-full" src="../assets/other-works/the-solution.png" alt="The solution" />
             </div>
         </section>
-        <section class="max-w-7xl mx-auto pt-10 md:pt-20 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto pt-10 md:pt-20 px-6 md:px-16 text-sm md:text-base">
             <div class="mb-20">
                 <h2
                     class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
@@ -637,9 +639,11 @@ const bgColor = "light"
                 </div>
             </div>
             <LayoutOne :page="dashboard" :headerFont="headerFont" />
-            <LayoutTwo :page="customer" :headerFont="headerFont"/>
+            <div class="hidden md:block">
+                <LayoutTwo :page="customer" :headerFont="headerFont"/>
+            </div>
             <!-- Mobile version -->
-            <div class="block md:hidden py-10 md:py-20">
+            <div class="block md:hidden mb-20">
                 <div class="mb-10">
                     <h2 class="mb-6 text-2xl font-bold font-playfair">Customer Management</h2>
                     <p
@@ -656,7 +660,7 @@ const bgColor = "light"
                 </div>
             </div>
             <!-- End of Mobile version -->
-            <div class="py-10 md:py-20">
+            <div class="md:py-20">
                 <h2
                     class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
                 >Payments & Transfer</h2>
@@ -672,9 +676,11 @@ const bgColor = "light"
                 </div>
             </div>
             <LayoutOne :page="user" :headerFont="headerFont" />
-            <LayoutTwo :page="payment" :headerFont="headerFont" />
+            <div class="hidden md:block">
+                <LayoutTwo :page="payment" :headerFont="headerFont" />
+            </div>
             <!-- Mobile version -->
-            <div class="block md:hidden py-10 md:py-20">
+            <div class="block md:hidden my-10 md:py-20">
                 <div class="mb-10">
                     <h2 class="mb-6 text-2xl font-bold font-playfair">Payment Link</h2>
                     <p
@@ -714,7 +720,7 @@ const bgColor = "light"
                 <img class="w-full" src="../assets/other-works/collect-mobile.png" alt="More Features" />
             </div>
         </section>
-        <section class="max-w-7xl mx-auto pt-10 md:pt-20 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto pt-10 md:pt-20 px-6 md:px-16 text-sm md:text-base">
             <LayoutOne :page="conclusion" :headerFont="headerFont" />
         </section>
         <OtherProjects :headerCenter="headerCenter" />

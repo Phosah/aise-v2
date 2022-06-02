@@ -171,7 +171,9 @@ const bgColor = "light"
         <Navbar />
         <HeaderInfo :headerDetails="details" />
         <section class="max-w-7xl mx-auto px-4 md:px-16">
-            <LayoutOne :page="responsibilities" :headerFont="headerFont" />
+            <div class="hidden md:block">
+                <LayoutOne :page="responsibilities" :headerFont="headerFont" />
+            </div>
             <!-- Mobile version -->
             <div class="block md:hidden">
                 <div class="mb-10">

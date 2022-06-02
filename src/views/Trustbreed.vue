@@ -121,7 +121,7 @@ const font = "font-playfair"
     <div class="bg-white text-brand-black-3">
     <Navbar />
         <HeaderInfo :headerDetails="details" />
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm md:text-base">
             <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">My Role</h2>
             <p class="mb-4">For this project, my role was to explore ways to ensure users' complaints are heard and
                 resolutions to the problems were made, also give users a way to identify the best companies and
@@ -131,7 +131,7 @@ const font = "font-playfair"
             <p>Throughout the project timeline, there was a triangular interaction between myself, users, and the
                 stakeholders.</p>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16">
             <h2 class="mb-8 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">My Approach</h2>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 text-white text-sm md:text-base">
                 <div class="p-8 rounded-lg bg-brand-orange-4">
@@ -188,7 +188,7 @@ const font = "font-playfair"
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto px-6 md:px-16">
             <LayoutOne :page="problem" :headerFont="headerFont" />
         </section>
         <section
@@ -207,7 +207,7 @@ const font = "font-playfair"
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto pt-20 pb-10 md:py-40 px-6 md:px-16 text-sm md:text-base">
             <div class="md:w-2/3 mb-12">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">User Stories</h2>
                 <p>The user stories capture feelings, needs, and expectations of potential users toward creating
@@ -247,7 +247,7 @@ const font = "font-playfair"
                 </ul>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm md:text-base">
             <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Surveys & user interviews</h2>
             <p class="mb-6">Initially, I was running a survey that turned out to be a tremendous
                 information-gathering tool. It helped me to gauge in-depth insights into the target users, including
@@ -263,7 +263,7 @@ const font = "font-playfair"
             </div>
         </section>
         <UserFigure :personas="personasArr" />
-        <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto py-10 md:py-40 px-6 md:px-16 text-sm md:text-base">
             <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Mental models and user journey
                 map</h2>
             <p class="mb-6">To understand better the challenges surfers are facing in diﬀerent situations, based on
@@ -276,20 +276,20 @@ const font = "font-playfair"
             </div>
         </section>
         <section>
-            <div class="max-w-7xl mx-auto px-4 md:px-16 pt-10 md:pt-20 text-sm md:text-base">
+            <div class="max-w-7xl mx-auto px-6 md:px-16 pt-10 md:pt-20 text-sm md:text-base">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">User flows</h2>
                 <p class="mb-8 md:mb-16">User flows helped me pattern the flow of the users activities in the
                     product from the entry point to the users decisions and the resulting actions to help account
                     for every step of the users journey</p>
             </div>
             <div class="bg-brand-gray-7">
-                <div class="max-w-7xl mx-auto mb-20">
+                <div class="max-w-7xl mx-auto mb-10 md:mb-20">
                     <img src="../assets/other-works/user-flows.png" alt="User flows" />
                 </div>
             </div>
         </section>
         <section>
-            <div class="max-w-7xl mx-auto pt-10 md:pt-20 px-4 md:px-16 text-sm md:text-base">
+            <div class="max-w-7xl mx-auto pt-10 md:pt-20 px-6 md:px-16 text-sm md:text-base">
                 <h2 class="mb-8 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Sitemap</h2>
                 <p class="mb-8 md:mb-16">Reviewing my personas and user journeys and having certain features in
                     mind, I started to think about the structure of the app. I had a rough idea of keeping the
@@ -303,7 +303,7 @@ const font = "font-playfair"
             </div>
         </section>
         <section class>
-            <div class="max-w-7xl mx-auto pt-10 md:pt-20 px-4 md:px-16 text-sm md:text-base">
+            <div class="max-w-7xl mx-auto md:pt-20 px-4 md:px-16 text-sm md:text-base">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Wireframing</h2>
                 <p class="mb-8 md:mb-16">After that, I started creating wireframes with pen and paper. Having the
                     hand-drawn screens, I made a low-ﬁdelity prototype putting them together to represent the user
@@ -324,7 +324,7 @@ const font = "font-playfair"
                 </div>
             </div>
             <LayoutOne :page="complaints" :headerFont="headerFont" />
-            <div class="pt-10 md:pt-20">
+            <div class="md:pt-20">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Compare Companies</h2>
                 <p class="mb-10">A lot of users are on the lookout for the best product for their needs, due to the
                     long list of competitors for popular services the best is a bit tricky to pick, hence trustbreed
@@ -336,7 +336,7 @@ const font = "font-playfair"
             </div>
         </section>
         <section class="text-sm md:text-base">
-            <div class="max-w-7xl mx-auto pt-10 md:pt-20 px-4 md:px-16">
+            <div class="max-w-7xl mx-auto md:pt-20 px-6 md:px-16">
                 <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Other Features</h3>
                 <p class="mb-10">There are a couple more features like the reviews feature which helps other users
                     know how well you think about a company in case they are surfing for a product to use, the
@@ -346,7 +346,7 @@ const font = "font-playfair"
             <div class="max-w-7xl mx-auto mb-20">
                 <img src="../assets/other-works/other-features.png" alt="User flows" />
             </div>
-            <div class="max-w-7xl mx-auto pt-10 md:pt-20 px-4 md:px-16">
+            <div class="max-w-7xl mx-auto md:pt-20 px-6 md:px-16">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Mobile responsiveness</h2>
                 <p class="mb-10">90% of the target users are mobile users and hence to maximize the experience of
                     users, there needs to be a lot of attention paid to the mobile views of the dashboard as that
@@ -356,7 +356,7 @@ const font = "font-playfair"
                 <img src="../assets/other-works/mobile-responsive-photo.png" alt="User flows" />
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm md:text-base">
             <div class="mb-16">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Usability Testing</h2>
                 <p class="mb-6">I wanted to observe and measure if users understand the product, its value, and how
@@ -426,7 +426,7 @@ const font = "font-playfair"
             </div>
             <!-- End of Mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-40 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto py-20 md:py-40 px-6 md:px-16 text-sm md:text-base">
             <h3 class="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold font-playfair">Conclusion</h3>
             <p class="md:mb-16">Throughout the design process, I learned how to prioritize and be very careful in
                 user experience in the product, a product that is built upon the basis of bad user experiences of

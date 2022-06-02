@@ -84,7 +84,7 @@ const details = {
     LongDesc: "Doorstep is a solution that helps to simplify logistics and shipping services to ensure quick delivery of packages in a simplified processes",
     paragraph: "Sending of documents and parcels have been in high demand as a result of expanding businesses and inter country trading. It gets to solve this by its provision of an integration sync with the tracking ID of the platform to constantly keep you in the loop."
 }
-const headerFont = "font-playfair text-4xl"
+const headerFont = "font-playfair text-4xl text-center mt-6"
 const responsibilities = {
     title: "Project responsibilities",
     paragraphs: [
@@ -170,13 +170,13 @@ const bgColor = "light"
     <div class="bg-white text-brand-black-3">
         <Navbar />
         <HeaderInfo :headerDetails="details" />
-        <section class="max-w-7xl mx-auto px-4 md:px-16">
+        <section class="max-w-7xl mx-auto px-6 md:px-16">
             <div class="hidden md:block">
                 <LayoutOne :page="responsibilities" :headerFont="headerFont" />
             </div>
             <!-- Mobile version -->
             <div class="block md:hidden">
-                <div class="mb-10">
+                <div class="mb-6">
                     <img class="w-full" src="../assets/other-works/project-photo.png" alt="Project" />
                 </div>
                 <div class="text-sm">
@@ -187,10 +187,10 @@ const bgColor = "light"
             <!-- End of mobile version -->
         </section>
         <ProjectResponsibility :projects="projects" />
-        <section class="max-w-7xl mx-auto px-4 md:px-16">
+        <section class="max-w-7xl mx-auto px-6 md:px-16">
             <LayoutOne :page="problem" :headerFont="headerFont" />
         </section>
-        <section class="max-w-7xl mx-auto py-20 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16">
             <div class="mb-16 md:w-5/6 mx-auto text-center text-sm md:text-base">
                 <h1
                     class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
@@ -220,13 +220,15 @@ const bgColor = "light"
                 >Week 4: Visual design</div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto px-4 md:px-16">
-            <LayoutTwo :page="interviews" :headerFont="headerFont"/>
+        <section class="max-w-7xl mx-auto my-10 md:my-0 px-6 md:px-16">
+            <div class="hidden md:block">
+                <LayoutTwo :page="interviews" :headerFont="headerFont"/>
+            </div>
             <!-- Mobile version -->
-            <div class="block md:hidden text-sm md:text-base">
+            <div class="block md:hidden text-sm">
                 <div class="mb-12">
                     <h2
-                        class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
+                        class="mb-6 text-2xl font-bold font-playfair"
                     >User Interviews</h2>
                     <p
                         class="mb-6"
@@ -239,10 +241,12 @@ const bgColor = "light"
             </div>
             <!-- End of Mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto px-4 md:px-16">
-            <LayoutTwo :page="research" :headerFont="headerFont"/>
+        <section class="max-w-7xl mx-auto my-20 md:my-0 px-6 md:px-16">
+            <div class="hidden md:block">
+                <LayoutTwo :page="research" :headerFont="headerFont"/>
+            </div>
             <!-- Mobile version -->
-            <div class="block md:hidden text-sm md:text-base">
+            <div class="block md:hidden text-sm">
                 <div class="mb-12">
                     <h2
                         class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
@@ -267,44 +271,26 @@ const bgColor = "light"
             <!-- End of Mobile version -->
         </section>
         <ProjectPersona :personas="personasArr" />
-        <section class="max-w-7xl mx-auto py-40 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-20 md:py-40 px-6 md:px-16">
             <div class="hidden sm:flex items-center space-x-12 text-sm md:text-base">
                 <div class="flex-1 grid grid-cols-3 gap-4">
                     <div>
-                        <img
-                            v-if="themeColor === 'light'"
-                            src="../assets/other-works/fedex.png"
-                            alt="FedEx"
-                        />
-                        <img v-else src="../assets/other-works/fedex.png" alt="FedEx" />
+                        <img src="../assets/other-works/fedex.png" alt="FedEx" />
                     </div>
                     <div>
-                        <img v-if="themeColor === 'light'" src="../assets/other-works/dhl.png" alt="DHL" />
-                        <img v-else src="../assets/other-works/dhl.png" alt="DHL" />
+                        <img src="../assets/other-works/dhl.png" alt="DHL" />
                     </div>
                     <div>
-                        <img v-if="themeColor === 'light'" src="../assets/other-works/ups.png" alt="UPS" />
-                        <img v-else src="../assets/other-works/ups.png" alt="UPS" />
+                        <img src="../assets/other-works/ups.png" alt="UPS" />
                     </div>
                     <div>
-                        <img
-                            v-if="themeColor === 'light'"
-                            src="../assets/other-works/xpologistics.png"
-                            alt="XPOLogistics"
-                        />
-                        <img v-else src="../assets/other-works/xpologistics.png" alt="XPOLogistics" />
+                        <img src="../assets/other-works/xpologistics.png" alt="XPOLogistics" />
                     </div>
                     <div>
-                        <img
-                            v-if="themeColor === 'light'"
-                            src="../assets/other-works/expeditors.png"
-                            alt="Expeditors"
-                        />
-                        <img v-else src="../assets/other-works/expeditors.png" alt="Expeditors" />
+                        <img src="../assets/other-works/expeditors.png" alt="Expeditors" />
                     </div>
                     <div>
-                        <img v-if="themeColor === 'light'" src="../assets/other-works/gig.png" alt="Gig" />
-                        <img v-else src="../assets/other-works/gig.png" alt="Gig" />
+                        <img src="../assets/other-works/gig.png" alt="Gig" />
                     </div>
                 </div>
                 <div class="flex-1">
@@ -343,7 +329,7 @@ const bgColor = "light"
             </div>
             <!-- End of mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto py-20 px-4 md:px-16">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16">
             <div class="mb-20 md:w-5/6 mx-auto text-center text-sm md:text-base">
                 <h2
                     class="mb-8 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
@@ -358,7 +344,7 @@ const bgColor = "light"
                     <div class="flex items-center mb-10">
                         <div class="w-16 h-16 rounded-full bg-brand-green-3"></div>
                         <h3
-                            class="transform -translate-x-4 text-xl md:text-2xl lg:text-3xl font-bold font-playfair"
+                            class="transform -translate-x-4 text-2xl lg:text-3xl font-bold font-playfair"
                         >Business goal</h3>
                     </div>
                     <div class="flex space-x-5 mb-6">
@@ -388,7 +374,7 @@ const bgColor = "light"
                     <div class="flex items-center mb-10">
                         <div class="w-16 h-16 rounded-full bg-brand-green-3"></div>
                         <h3
-                            class="transform -translate-x-4 text-xl md:text-2xl lg:text-3xl font-bold font-playfair"
+                            class="transform -translate-x-4 text-2xl lg:text-3xl font-bold font-playfair"
                         >Target users</h3>
                     </div>
                     <div class="flex space-x-5 mb-6">
@@ -416,7 +402,7 @@ const bgColor = "light"
                     <div class="flex items-center mb-10">
                         <div class="w-16 h-16 rounded-full bg-brand-green-3"></div>
                         <h3
-                            class="transform -translate-x-4 text-xl md:text-2xl lg:text-3xl font-bold font-playfair"
+                            class="transform -translate-x-4 text-2xl lg:text-3xl font-bold font-playfair"
                         >Platforms</h3>
                     </div>
                     <div class="flex space-x-5 mb-6">
@@ -442,17 +428,19 @@ const bgColor = "light"
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-40 px-4 md:px-16 text-sm md:text-base">
-            <div class="mb-12 md:mb-16 md:w-2/3 mx-auto text-center">
+        <section class="max-w-7xl mx-auto py-10 md:py-40 px-6 md:px-16 text-sm md:text-base">
+            <div class="mb-20 md:mb-16 md:w-2/3 mx-auto text-center">
                 <h2
                     class="mb-6 text-3xl md:text-6xl font-semibold font-playfair text-center"
                 >The Solution</h2>
                 <p>Below shows a few of the screens that portrayed the soltions to the stated problem in the most user friendly manner</p>
             </div>
-            <LayoutOne :page="dashboard" :headerFont="headerFont"/>
+            <div class="hidden md:block">
+                <LayoutOne :page="dashboard" :headerFont="headerFont"/>
+            </div>
             <!-- Mobile version -->
-            <div class="block md:hidden mb-24">
-                <div class="mb-12">
+            <div class="block md:hidden mb-20">
+                <div class="mb-6">
                     <img class="w-full" src="../assets/other-works/solution-1.png" alt="Solution" />
                 </div>
                 <div class="text-center">
@@ -464,22 +452,24 @@ const bgColor = "light"
             </div>
             <!-- End of mobile version -->
             <LayoutTwo :page="tracking" :headerFont="headerFont" />
-            <LayoutOne :page="shipments" :headerFont="headerFont"/>
+            <div class="hidden md:block">
+                <LayoutOne :page="shipments" :headerFont="headerFont"/>
+            </div>
             <!-- Mobile version -->
             <div class="block md:hidden">
-                <div class="mb-12">
+                <div class="mb-6">
                     <img class="w-full" src="../assets/other-works/solution-3.png" alt="Solution" />
                 </div>
                 <div class="text-center md:text-left">
                     <h2
-                        class="mb-4 text-2xl lg:text-5xl font-bold font-playfair"
+                        class="mb-4 text-2xl font-bold font-playfair"
                     >Create shipments</h2>
                     <p>Based on the users research on their pain points, the shipment creation process starts from a page to upload your shipment and from your upload, it is scanned and the dimensions is estimated for you with little artificial intelligence, that solves the problem of getting stuck on dimensions</p>
                 </div>
             </div>
             <!-- End of Mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto pb-20 px-4 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto py-20 px-4 md:px-16 text-sm md:text-base">
             <div class="mb-20 md:w-5/6 mx-auto text-center">
                 <h2
                     class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
@@ -490,7 +480,7 @@ const bgColor = "light"
                 <img src="../assets/other-works/conclusion.png" alt="Conclusion" />
             </div>
         </section>
-        <section class="pt-40">
+        <section class="py-20 md:pt-40">
             <OtherProjects :headerCenter="pos" />
         </section>
         <Footer :bgColor="bgColor" />

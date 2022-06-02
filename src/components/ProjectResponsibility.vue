@@ -8,8 +8,8 @@ defineProps({
 </script>
 
 <template>
-    <section class="max-w-7xl mx-auto py-20 px-4 md:px-16">
-        <div class="grid md:grid-cols-2 gap-20 text-sm md:text-base">
+    <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16">
+        <div class="grid md:grid-cols-2 gap-10 lg:gap-20 text-sm md:text-base">
             <div v-for="(project, index) in projects" :key="index"  class="p-10 bg-brand-gray-5 dark:bg-brand-black-5 shadow-sm rounded-xl">
                 <div class="mb-8">
                     <img

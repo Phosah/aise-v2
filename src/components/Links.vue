@@ -8,8 +8,6 @@
             href="https://dribbble.com/Aise_Idahor" target="_blank">Dribble</a>
         <a :class="mode === light ? 'text-brand-black-3 hover:border-brand-black-3' : 'text-white hover:border-white' " class="block pb-2 text-xl border-b-4 border-transparent hover:border-b-4"
             href="https://twitter.com/Aise_Idahor" target="_blank">Twitter</a>
-        <a :class="mode === light ? 'text-brand-black-3 hover:border-brand-black-3' : 'text-white hover:border-white' " class="block pb-2 text-xl border-b-4 border-transparent hover:border-b-4"
-            href="https://twitter.com/Aise_Idahor" target="_blank">Medium</a>
     </div>
 </template>
 

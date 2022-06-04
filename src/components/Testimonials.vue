@@ -24,7 +24,7 @@ const prev = () => {
       <h1 class="mb-20 text-5xl md:text-8xl lg:text-9xl font-new-paris-kingsize">Testimonials</h1>
       <div class="md:flex md:items-center md:justify-between mb-14">
         <div class="flex items-center space-x-8">
-          <img :src="stories[num].img" :alt="stories[num].alt">
+          <img class="w-20 h-20 rounded-full" :src="stories[num].img" :alt="stories[num].alt">
           <div>
             <h3 class="font-euclid-circular-medium text-xl">{{stories[num].name}}</h3>
             <p>{{stories[num].title}}</p>

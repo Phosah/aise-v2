@@ -17,6 +17,9 @@ import logo13 from "../assets/fambase-logo.png"
 import logo14 from "../assets/trustbreed-logo.png"
 import logo15 from "../assets/momo-logo.png"
 import testimonials1 from "../assets/testimonials-1.png"
+import testimonials2 from "../assets/testimonials-2.jpeg"
+import testimonials3 from "../assets/testimonials-3.jpeg"
+import testimonials4 from "../assets/testimonials-4.jpeg"
 import { ref } from 'vue';
 import Footer from '../components/Footer.vue';
 import Navbar from '../components/Navbar.vue';
@@ -88,18 +91,24 @@ const testimonialsArr = [
     img: testimonials1,
     name: "Anthony Miclet",
     title: "Co-Founder Daba",
-    comment: "Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum."
+    comment: "Aise is the most amazing designer I have worked with, his response to problems and the way he is always calm in finding creative solutions made it so easy to work with him. It was an amazing experience working with him"
   },
   {
-    img: testimonials1,
-    name: "Sarah Angelo",
-    title: "Co-Founder Rockstar",
-    comment: " Eget turpis urna maecenas cras. Nisl dictum. Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu."
+    img: testimonials2,
+    name: "Vandana Taxali",
+    title: "Founder of Artcryption",
+    comment: "Aise is a brilliant designer, we started as a contract that was intended to be a 1hr UX review but after the first one hour I had to keep him for longer and one hour turned into one week, and that too more till we parted ways in the project that’s how good he is. He is also the nicest, most patient and smartes person I have ever worked with"
   },
   {
-    img: testimonials1,
-    name: "Fredrick Williams",
-    title: "Co-Founder Dodger",
+    img: testimonials3,
+    name: "Mario Faria Da Cruz",
+    title: "CEO Kufuta",
+    comment: "Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum. Ultricies massa malesuada viverra cras lobortis. "
+  },
+  {
+    img: testimonials4,
+    name: "Colm Hayden",
+    title: "CEO Cadoo",
     comment: "Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum. Ultricies massa malesuada viverra cras lobortis. "
   },
 ]

@@ -3,9 +3,9 @@
         <a :class="mode === light ? 'text-brand-black-3 hover:border-brand-black-3' : 'text-white hover:border-white' " class="block pb-2 text-xl border-b-4 border-transparent hover:border-b-4"
             href="https://www.linkedin.com/in/aise-idahor-4353b1188/" target="_blank">LinkedIn</a>
         <a :class="mode === light ? 'text-brand-black-3 hover:border-brand-black-3' : 'text-white hover:border-white' " class="block pb-2 text-xl border-b-4 border-transparent hover:border-b-4"
-            href="https://www.linkedin.com/in/aise-idahor-4353b1188/" target="_blank">Behance</a>
+            href="https://www.behance.net/coderadar" target="_blank">Behance</a>
         <a :class="mode === light ? 'text-brand-black-3 hover:border-brand-black-3' : 'text-white hover:border-white' " class="block pb-2 text-xl border-b-4 border-transparent hover:border-b-4"
-            href="https://dribbble.com/Aise_Idahor" target="_blank">Dribble</a>
+            href="https://dribbble.com/Aise_Idahor" target="_blank">Dribbble</a>
         <a :class="mode === light ? 'text-brand-black-3 hover:border-brand-black-3' : 'text-white hover:border-white' " class="block pb-2 text-xl border-b-4 border-transparent hover:border-b-4"
             href="https://twitter.com/Aise_Idahor" target="_blank">Twitter</a>
     </div>

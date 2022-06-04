@@ -18,20 +18,7 @@
       Designer at ARC a web3 aggregator where i change lives in the web3 space through Research, Empathy and Data-driven
       insights. I help companies build teams and digital products.I design digital products and websites for startups,
       brands, and entrepreneurs with cool projects.</div>
-      <!-- Improve component -->
-    <div class="bg-brand-black-1 text-white">
-      <div class="max-w-7xl mx-auto px-4 md:px-20 py-20 md:py-40">
-        <h2 class="mb-20 text-4xl md:text-6xl lg:text-7xl text-white font-new-paris-kingsize-regular">MY DESIGN
-          GUIDELINES</h2>
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
-          <template v-for="(guideline, index) in guidelines" :key="index">
-            <DesignGuidelines :imageUrl="guideline.imageUrl" :title="guideline.title" :text="guideline.text"
-              :altText="guideline.altText" :class="guideline.border" />
-          </template>
-        </div>
-      </div>
-    </div>
-    <!-- End of Improve component -->
+      <DesignGuidelines :guidelines="guidelinesArr" />
     <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
       <div class="md:flex md:items-center md:justify-between mb-8">
         <h2 class="mb-6 md:mb-0 text-4xl md:text-6xl lg:text-7xl font-new-paris-kingsize">Work Experience</h2>
@@ -85,45 +72,45 @@ export default {
     return {
       bgColor: "bg-brand-black-1 text-white",
       themeMode: "dark",
-      guidelines: [
+      guidelinesArr: [
         {
-          imageUrl: img1,
-          altText: "Empower icon",
+          img: img1,
+          alt: "Empower icon",
           title: "Empowering",
           text: "Empowering design ensures products center on the value they provide to people over the revenue it can generate.",
           border: "border-t-4 rounded-md"
         },
         {
-          imageUrl: img2,
-          altText: "Respect icon",
+          img: img2,
+          alt: "Respect icon",
           title: "Respectful",
           text: "Respectful design prioritizes people’s time, attention and overall digital well-being.",
           border: "rounded-md"
         },
         {
-          imageUrl: img3,
-          altText: "Business icon",
+          img: img3,
+          alt: "Business icon",
           title: "Business Goals",
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur congue tempor, ",
           border: "border-t-4 rounded-md"
         },
         {
-          imageUrl: img4,
-          altText: "Empathy icon",
+          img: img4,
+          alt: "Empathy icon",
           title: "Empathy",
           text: "Finite design maximizes the overall quality of time spent by bounding the experience and prioritizing meaningful and relevant content.",
           border: "rounded-md"
         },
         {
-          imageUrl: img5,
-          altText: "Inclusivity icon",
+          img: img5,
+          alt: "Inclusivity icon",
           title: "Inclusivity",
           text: "Inclusive design is a methodology that enables and draws on the full range of human diversity.",
           border: "border-t-4 rounded-md"
         },
         {
-          imageUrl: img6,
-          altText: "Transparent icon",
+          img: img6,
+          alt: "Transparent icon",
           title: "Transparent",
           text: "Transparent design is clear about intentions, honest in actions and free of dark patterns.",
           border: "rounded-md"

@@ -7,7 +7,7 @@
         problems, loves to
         travel, play video games (im kinda like the Fifa Champion) and oh yes i love good ANIME</p>
     </div>
-    <div class="flex items-center justify-center max-w-7xl mx-auto my-20 px-6">
+    <div class="flex items-center justify-center max-w-7xl mx-auto my-20 px-6 hover:transform hover:translate-y-6 transition-all ease-in-out">
       <img src="../assets/random1.png" alt="Scroll img">
     </div>
     <div class="max-w-6xl mx-auto my-20 md:my-40 px-6 text-2xl md:text-5xl text-brand-gray-2 md:leading-snug">I design digital

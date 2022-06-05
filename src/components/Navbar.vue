@@ -19,22 +19,22 @@ let currentScrollPos = window.pageYOffset;
             </div>
             <div class="flex items-center justify-between text-brand-gray-2">
                 <div class="md:flex md:items-center md:space-x-12">
-                    <div class="mb-8 md:mb-0">
+                    <div class="mb-8 md:mb-0 hover:text-brand-gray-3">
                         <router-link to="/works">Web 3 Works</router-link>
                     </div>
-                    <div class="mb-8 md:mb-0">
+                    <div class="mb-8 md:mb-0 hover:text-brand-gray-3">
                         <router-link to="/otherworks">Other Works</router-link>
                     </div>
-                    <div class="mb-8 md:mb-0">
+                    <div class="mb-8 md:mb-0 hover:text-brand-gray-3">
                         <router-link to="/about">About me</router-link>
                     </div>
-                    <div class="mb-8 md:mb-0">
+                    <div class="mb-8 md:mb-0 hover:text-brand-gray-3">
                         <a href="https://dribbble.com/Aise_Idahor" target="_blank">Visual Shots</a>
                     </div>
                 </div>
             </div>
             <button
-                class="py-3 px-16 rounded-md border border-brand-black-1 text-brand-black-1 font-euclid-circular-bold">Lets
+                class="py-3 px-16 rounded-md border border-brand-black-1 text-brand-black-1 font-euclid-circular-bold hover:bg-brand-gray-3">Lets
                 Talk</button>
         </div>
     </div>

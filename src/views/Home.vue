@@ -141,8 +141,8 @@ const prev = () => {
   <Navbar />
   <main class="text-brand-black-2">
     <section class="my-20 md:mt-40">
-      <div class="md:flex md:items-center max-w-7xl mx-auto mb-10 md:mb-0 md:mt-20 px-6">
-        <h1 class="md:flex-1 mb-10 md:mb-0 text-6xl md:text-10xl font-new-paris-kingsize text-center">Product</h1>
+      <div class="md:flex md:items-center max-w-7xl mx-auto md:mb-0 md:mt-20 px-6">
+        <h1 class="md:flex-1 mb-2 md:mb-0 text-6xl md:text-10xl font-new-paris-kingsize text-center">Product</h1>
         <p class="hidden md:block md:w-1/3 leading-relaxed text-brand-gray-2">Hello There! I am Aise, a Product designer in the web3
           space
           focused on

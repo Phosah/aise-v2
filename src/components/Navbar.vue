@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from "vue"
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 let currentScrollPos = window.pageYOffset;
@@ -9,15 +10,26 @@ let currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+
+const menu_is_active = ref(true)
+const toggleMenu = (() => {
+    if(menu_is_active.value) {
+        menu_is_active.value = false
+    } else {
+        menu_is_active.value = true
+    }
+    console.log(menu_is_active.value)
+})
 </script>
 
 <template>
     <div id="navbar" class="top-0 right-0 left-0">
         <div class="md:flex md:items-center md:justify-between max-w-7xl mx-auto py-10 px-6">
-            <div class="mb-8 md:mb-0">
+            <div @click="toggleMenu" class="bg-red-100 inline-block p-2">X</div>
+            <div v-if="menu_is_active" class="mb-8 md:mb-0">
                 <router-link to="/"><img src="../assets/logo.png" alt="" /></router-link>
             </div>
-            <div class="flex items-center justify-between text-brand-gray-2">
+            <div v-if="menu_is_active" class="flex items-center justify-between text-brand-gray-2">
                 <div class="md:flex md:items-center md:space-x-12">
                     <div class="mb-8 md:mb-0 hover:text-brand-gray-3">
                         <router-link to="/works">Web 3 Works</router-link>
@@ -33,7 +45,7 @@ let currentScrollPos = window.pageYOffset;
                     </div>
                 </div>
             </div>
-            <button
+            <button v-if="menu_is_active"
                 class="py-3 px-16 rounded-md border border-brand-black-1 text-brand-black-1 font-euclid-circular-bold hover:bg-brand-gray-3">Lets
                 Talk</button>
         </div>

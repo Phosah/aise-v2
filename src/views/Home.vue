@@ -97,7 +97,7 @@ const testimonialsArr = [
     img: testimonials2,
     name: "Vandana Taxali",
     title: "Founder of Artcryption",
-    comment: "Aise is a brilliant designer, we started as a contract that was intended to be a 1hr UX review but after the first one hour I had to keep him for longer and one hour turned into one week, and that too more till we parted ways in the project that’s how good he is. He is also the nicest, most patient and smartes person I have ever worked with"
+    comment: "Aise is a brilliant designer, we started as a contract that was intended to be a 1hr UX review but after the first one hour I had to keep him for longer and one hour turned into one week, and that too more till we parted ways in the project that’s how good he is. He is also the nicest, most patient and smartest person I have ever worked with"
   },
   {
     img: testimonials3,
@@ -143,7 +143,7 @@ const prev = () => {
     <section class="my-20 md:mt-40">
       <div class="md:flex md:items-center max-w-7xl mx-auto mb-10 md:mb-0 md:mt-20 px-6">
         <h1 class="md:flex-1 mb-10 md:mb-0 text-6xl md:text-10xl font-new-paris-kingsize text-center">Product</h1>
-        <p class="md:w-1/3 leading-relaxed text-brand-gray-2">Hello There! I am Aise, a Product designer in the web3
+        <p class="hidden md:block md:w-1/3 leading-relaxed text-brand-gray-2">Hello There! I am Aise, a Product designer in the web3
           space
           focused on
           maximizing business
@@ -152,6 +152,11 @@ const prev = () => {
       <div class="flex justify-center max-w-7xl mx-auto md:mt-20 px-6">
         <h1 class="z-10 text-6xl md:text-10xl font-new-paris-kingsize">Designer</h1>
       </div>
+      <!-- Mobile version -->
+      <div class="max-w-7xl mx-auto mt-10 px-6">
+        <p class="block md:hidden leading-relaxed text-brand-gray-2">Hello There! I am Aise, a Product designer in the web3 space focused on maximizing business need and user satisfaction through the creation of simple digital experiences.</p>
+      </div>
+      <!-- end of Mobile version -->
       <div class="md:flex justify-end max-w-7xl mx-auto mt-20 md:px-6">
         <div class="hidden md:block md:flex-1">
           <img class="w-32 h-32" src="../assets/random1.png" alt="Scroll down">

@@ -1,10 +1,12 @@
 <script setup>
 // import Navbar from "@/components/Navbar.vue"
+import SidebarNav from './components/SidebarNav.vue';
 </script>
 
 <template>
   <main class="font-euclid-circular">
     <!-- <Navbar /> -->
+    <SidebarNav />
     <div>
       <router-view></router-view>
     </div>

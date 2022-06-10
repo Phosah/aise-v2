@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import store from "../store/index";
 import Home from "../views/Home.vue";
 import AistakeFinance from "../views/AistakeFinance.vue";
 import Athena from "../views/Athena.vue";
@@ -86,6 +87,13 @@ const router = createRouter({
     // always scroll to top
     return { top: 0 };
   },
+});
+
+router.afterEach((to, from) => {
+  if (from.name) {
+    document.documentElement.scrollTop = 0;
+    store.dispatch("CloseMenu");
+  }
 });
 
 export default router;

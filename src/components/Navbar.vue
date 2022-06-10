@@ -13,22 +13,22 @@ import { useStore } from "vuex"
 //   prevScrollpos = currentScrollPos;
 // }
 
-const store = useStore();
-const menu_is_active = computed(() => store.state.menu_is_active )
-const toggleMenu = computed(() => {
-    store.dispatch("ToggleMenu");
-    console.log(menu_is_active.value)
-})
+// const store = useStore();
+// const menu_is_active = computed(() => store.state.menu_is_active )
+// const toggleMenu = computed(() => {
+//     store.dispatch("ToggleMenu");
+//     console.log(menu_is_active.value)
+// })
 </script>
 
 <template>
     <div id="navbar" class="top-0 right-0 left-0">
         <div class="max-w-7xl mx-auto py-10 px-6">
-            <div @click="toggleMenu" :class="`block md:hidden menu-toggle relative z-50 ${menu_is_active ? 'is_active': ''}`">
+            <!-- <div @click="toggleMenu" :class="`block md:hidden menu-toggle relative z-50 ${menu_is_active ? 'is_active': ''}`">
                 <div class="hamburger">
                     <span></span>
                 </div>
-            </div>
+            </div> -->
             <div class="hidden md:flex items-center justify-between">
                 <div class="mb-8 md:mb-0">
                     <router-link to="/"><img src="../assets/logo.png" alt="" /></router-link>

@@ -1,11 +1,14 @@
 <script setup>
-import { computed } from "vue";
+import { computed, onMounted } from "vue";
 import { useStore } from "vuex";
 
 const store = useStore();
 const menu_is_active = computed(() => store.state.menu_is_active)
 const toggleMenu = computed(() => {
     store.dispatch("ToggleMenu");
+    console.log(menu_is_active.value)
+})
+onMounted(() => {
     console.log(menu_is_active.value)
 })
 </script>
@@ -16,8 +19,8 @@ const toggleMenu = computed(() => {
             <span></span>
         </div>
     </div>
-    <aside :class="`fixed top-0 left-0 min-h-screen z-40 pt-16 w-full max-w-xs transform duration-300 bg-gray-600 ${menu_is_active ? 'translate-x-0': '-translate-x-full'}`">
-        <div class="px-4">
+    <aside :class="`flex flex-col fixed top-0 left-0 min-h-screen z-40 pt-16 px-4 w-full max-w-xs transform duration-300 bg-[#EFEFEF] text-[#121212] ${menu_is_active ? 'translate-x-0': '-translate-x-full'}`">
+        <div class="flex-1">
             <div class="mb-8">
                 <router-link to="/"><img src="../assets/logo.png" alt="" /></router-link>
             </div>
@@ -35,10 +38,10 @@ const toggleMenu = computed(() => {
                     <a href="https://dribbble.com/Aise_Idahor" target="_blank">Visual Shots</a>
                 </div>
             </div>
-            <button
-                class="py-3 px-16 rounded-md border border-brand-black-1 text-brand-black-1 font-euclid-circular-bold hover:bg-brand-gray-3">Lets
-                Talk</button>
         </div>
+        <button
+            class="w-full mb-10 py-3 px-8 rounded-md border border-brand-black-1 text-brand-black-1 font-euclid-circular-bold hover:bg-brand-gray-3">Lets
+            Talk</button>
     </aside>
 </template>
 

@@ -19,7 +19,7 @@ onMounted(() => {
     <section>
         <div id="parallex" class="bg-gradient-to-tr from-slate-300 to-slate-600">
             <div v-for="(work, ix) in works" :key="ix" :class="ix === 0 ? 'parallex' : '' " class="relative h-screen flex justify-center items-center">
-                <div class="w-2/3 flex items-center justify-center absolute z-20">
+                <div class="w-2/3 flex items-center justify-center absolute z-10">
                     <div class="text-center text-white">
                         <h1 class="mb-6 text-5xl font-new-paris-kingsize">{{ work.title }}</h1>
                         <p class="mb-8 text-lg">{{ work.content }}</p>

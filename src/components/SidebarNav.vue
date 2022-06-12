@@ -6,10 +6,11 @@ const store = useStore();
 const menu_is_active = computed(() => store.state.menu_is_active)
 const toggleMenu = computed(() => {
     store.dispatch("ToggleMenu");
-    console.log(menu_is_active.value)
+    console.log("clicked")
+    console.log(menu_is_active.value);
 })
 onMounted(() => {
-    console.log(menu_is_active.value)
+    console.log(menu_is_active.value);
 })
 </script>
 
@@ -50,8 +51,8 @@ onMounted(() => {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
 }
 .hamburger {
@@ -71,9 +72,9 @@ onMounted(() => {
 .hamburger span:after {
     position: absolute;
     width: 100%;
-    height: 4px;
+    height: 3px;
     border-radius: 99px;
-    background-color: #181818;
+    background-color: #121212;
     transition: all 0.3s ease-in-out;
 }
 .hamburger span:before,

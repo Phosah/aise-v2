@@ -103,7 +103,7 @@ const testimonialsArr = [
     img: testimonials3,
     name: "Mario Faria Da Cruz",
     title: "CEO Kufuta",
-    comment: "Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum. Ultricies massa malesuada viverra cras lobortis. "
+    comment: "I hired Aise 3 years ago to help take my startup to the next level among 3 other designers and while working with Aise he had amazing leadership qualities and the ability to transform any thought and idea even when the team deems them as vague into amazing solution, This made me call him the \"Magician\" in the team. Working with him was a pleasurable one"
   },
   {
     img: testimonials4,

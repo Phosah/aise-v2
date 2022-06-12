@@ -47,7 +47,7 @@ const worksArr = [
 <template>
     <Navbar />
     <div>
-        <div class="flex items-center max-w-7xl mx-auto mt-20 px-6">
+        <div class="flex items-center max-w-7xl mx-auto md:mt-20 px-6">
             <h1 class="w-2/3 text-6xl md:text-9xl font-new-paris-kingsize">Other</h1>
         </div>
         <div class="flex justify-center max-w-7xl mx-auto mt-10 mb-20">

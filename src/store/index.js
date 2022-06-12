@@ -25,6 +25,9 @@ const store = createStore({
     CloseMenu({ commit }) {
       commit("TOGGLE_MENU", "close");
     },
+    OpenMenu({ commit }) {
+      commit("TOGGLE_MENU", "open");
+    },
   },
 });
 

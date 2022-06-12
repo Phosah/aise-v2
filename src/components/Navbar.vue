@@ -16,8 +16,7 @@ const store = useStore();
 const menu_is_active = computed(() => store.state.menu_is_active)
 const openMenu = computed(() => {
     store.dispatch("OpenMenu");
-    console.log("clicked")
-    console.log(menu_is_active.value);
+    console.log(menu_is_active.value)
 })
 </script>
 
@@ -31,16 +30,16 @@ const openMenu = computed(() => {
                 </div>
                 <div class="flex items-center justify-between text-brand-gray-2">
                     <div class="md:flex md:items-center md:space-x-6 lg:space-x-12">
-                        <div class="mb-8 md:mb-0 hover:text-brand-gray-3">
+                        <div class="mb-8 md:mb-0 hover:text-brand-gray-3 hover:transform hover:-translate-y-1 transition-all">
                             <router-link to="/works">Web 3 Works</router-link>
                         </div>
-                        <div class="mb-8 md:mb-0 hover:text-brand-gray-3">
+                        <div class="mb-8 md:mb-0 hover:text-brand-gray-3 hover:transform hover:-translate-y-1 transition-all">
                             <router-link to="/otherworks">Other Works</router-link>
                         </div>
-                        <div class="mb-8 md:mb-0 hover:text-brand-gray-3">
+                        <div class="mb-8 md:mb-0 hover:text-brand-gray-3 hover:transform hover:-translate-y-1 transition-all">
                             <router-link to="/about">About me</router-link>
                         </div>
-                        <div class="mb-8 md:mb-0 hover:text-brand-gray-3">
+                        <div class="mb-8 md:mb-0 hover:text-brand-gray-3 hover:transform hover:-translate-y-1 transition-all">
                             <a href="https://dribbble.com/Aise_Idahor" target="_blank">Visual Shots</a>
                         </div>
                     </div>

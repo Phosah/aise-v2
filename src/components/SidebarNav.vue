@@ -1,13 +1,12 @@
 <script setup>
-import { computed, onMounted } from "vue";
+import { computed, ref } from "vue";
 import { useStore } from "vuex";
 
 const store = useStore();
 const menu_is_active = computed(() => store.state.menu_is_active)
 const closeMenu = computed(() => {
     store.dispatch("CloseMenu");
-    console.log("clicked")
-    console.log(menu_is_active.value);
+    console.log(menu_is_active.value)
 })
 </script>
 
@@ -53,3 +52,9 @@ const closeMenu = computed(() => {
             Talk</button>
     </aside>
 </template>
+
+<style>
+.router-link-exact-active {
+    @apply font-semibold
+}
+</style>

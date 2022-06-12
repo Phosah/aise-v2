@@ -40,7 +40,7 @@ const prev = () => {
       </div>
       <p class="text-xl md:text-5xl text-brand-gray-2 md:leading-snug">{{stories[num].comment}}</p>
       <!-- Mobile version -->
-      <div class="md:hidden flex items-center justify-end space-x-12 my-10">
+      <div class="md:hidden flex items-center space-x-8 my-10">
         <div @click="prev" class="flex items-center justify-center w-14 h-14 border border-brand-black-2 rounded-full hover:bg-slate-300"><img
             src="../assets/left-arrow.png" alt="Left arrow"></div>
         <div>{{ix}}/{{stories.length}}</div>

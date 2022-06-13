@@ -109,7 +109,7 @@ const testimonialsArr = [
     img: testimonials4,
     name: "Colm Hayden",
     title: "CEO Cadoo",
-    comment: "Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum. Ultricies massa malesuada viverra cras lobortis. "
+    comment: "I worked with Aise on a contract basis for our new landing page and while working with him he blew my mind away with his design skills, he gave me the best first draft of any design I have ever done, and his attention to detail was impeccable even going as far as to providing designs for all breakpoints made implementation a whole lot easier. I look forward to working with him on more interesting projects in the future"
   },
 ]
 const bgColor = "bg-brand-black-2 text-white"

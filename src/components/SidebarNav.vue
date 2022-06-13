@@ -18,7 +18,7 @@ const closeMenu = computed(() => {
                 <div @click="closeMenu" class="">
                     <button>
                         <svg
-                            class="text-brand-black-1 dark:text-white w-12 h-12"
+                            class="text-brand-black-1 dark:text-white w-8 h-8"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg"

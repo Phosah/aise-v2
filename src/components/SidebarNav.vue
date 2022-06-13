@@ -11,7 +11,7 @@ const closeMenu = computed(() => {
 </script>
 
 <template>
-    <aside :class="`flex flex-col fixed inset-0 h-screen z-50 px-4 w-full transition duration-500 bg-[#EFEFEF] text-[#121212] ${menu_is_active ? 'translate-x-0': '-translate-x-full'}`">
+    <aside :class="`flex flex-col fixed inset-0 z-50 px-4 w-full transition duration-500 bg-[#EFEFEF] text-[#121212] ${menu_is_active ? 'translate-x-0': '-translate-x-full'}`">
         <div class="flex-1">
             <div class="flex items-center justify-between mb-16">
                 <router-link to="/"><img src="../assets/logo.png" alt="" /></router-link>

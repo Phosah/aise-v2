@@ -22,9 +22,9 @@
     <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
       <div class="md:flex md:items-center md:justify-between mb-8">
         <h2 class="mb-6 md:mb-0 text-4xl md:text-6xl lg:text-7xl font-new-paris-kingsize">Work Experience</h2>
-        <button
+        <a href="../../aise-idahor-cv.pdf" download="Aise-Idahor-CV.pdf" target="_blank" 
           class="py-3 px-16 rounded-md border border-brand-black-1 text-brand-black-1 font-euclid-circular-bold">Download
-          Resume</button>
+          Resume</a>
       </div>
       <div class="md:flex md:items-center md:space-x-16 mb-20">
         <h3 class="md:flex-1 mb-8 md:mb-0 text-2xl md:text-3xl font-new-paris-kingsize-regular">A glimpse at my

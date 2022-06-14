@@ -26,10 +26,11 @@
                     Email</a>
                    </div>
                 <!-- Calendly link widget begin -->
-                <a :class="mode === light ? 'bg-brand-black-3 text-white' : 'bg-white text-brand-black-1'" class="block px-8 py-5 font-bold rounded-sm"
+                <a :class="mode === light ? 'bg-brand-black-3 text-white' : 'bg-white text-brand-black-1'" class="block px-8 py-5 font-bold rounded-sm cursor-pointer"
                     onclick="Calendly.initPopupWidget({url: 'https://calendly.com/aiseidahor'});return false;">Book an
                     appointment</a>
                 <!-- Calendly link widget end -->
+                
             </div>
         </div>
         <Links :mode="LinksMode" />

@@ -20,11 +20,13 @@
                 </p>
             </div>
             <div class="md:flex md:items-center md:space-x-8">
-                <div :class="mode === light ? 'border-brand-black-3' : 'border-white'"
-                    class="mb-8 md:mb-0 px-8 py-5 text-center font-bold rounded-sm bg-transparent border "><a href="mailto://aiseosauyiidahor@gmail.com">Send
+                <a href="mailto://aiseosauyiidahor@gmail.com">
+                    <div :class="mode === light ? 'border-brand-black-3' : 'border-white'"
+                    class="mb-8 md:mb-0 px-8 py-5 text-center font-bold rounded-sm bg-transparent border ">Send
                     an
-                    Email</a>
-                   </div>
+                    Email
+                    </div>
+                </a>
                 <!-- Calendly link widget begin -->
                 <a :class="mode === light ? 'bg-brand-black-3 text-white' : 'bg-white text-brand-black-1'" class="block px-8 py-5 font-bold rounded-sm cursor-pointer"
                     onclick="Calendly.initPopupWidget({url: 'https://calendly.com/aiseidahor'});return false;">Book an

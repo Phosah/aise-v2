@@ -222,7 +222,7 @@ const themeMode = 'light'
                     some How might we questions that guides the ideation process, which helps us to do with thinking of
                     a solution based on the identified problem</p>
             </div>
-            <div><img class="w-full" src="../assets/proposition.png" alt="Proposition"></div>
+            <div><img class="w-full" src="../assets/proposition-1.png" alt="Proposition"></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Value Proposition - Customers</h1>

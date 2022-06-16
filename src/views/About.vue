@@ -32,10 +32,7 @@
           professional
           journey, asides
           freelance</h3>
-        <p class="md:flex-1">Aise is a design practice focused on digital experiences. With every single one of our
-          clients, we bring
-          forth a deep passion for creative problem solving — which is what we deliver in the form of custom and
-          memorable experiences.</p>
+        <p class="md:flex-1">Aise is a designer focused on simplifying digital experiences. With every single project worked on, i bring forth a deep passion for creative problem solving which is what I deliver in the form of custom and memorable experiences.</p>
       </div>
       <WorkExperiences :works="worksArr" />
     </section>

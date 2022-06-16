@@ -10,6 +10,7 @@
     <div class="flex items-center justify-center max-w-7xl mx-auto my-20 px-6 hover:transform hover:translate-y-3 transition-all ease-in-out">
       <img src="../assets/random1.png" alt="Scroll img">
     </div>
+    <ImageGallery />
     <div class="max-w-6xl mx-auto my-20 md:my-40 px-6 text-2xl md:text-5xl text-brand-gray-2 md:leading-snug">I design digital
       products and
       websites for startups,
@@ -65,9 +66,10 @@ import naruto from "../assets/naruto.png"
 import attackTitan from "../assets/attack-on-titan.png"
 import onePiece from "../assets/one-piece.png"
 import bleach from "../assets/bleach.png"
+import ImageGallery from '../components/ImageGallery.vue'
 export default {
   name: "About",
-  components: { Navbar, DesignGuidelines, Footer, WorkExperiences, Anime },
+  components: { Navbar, DesignGuidelines, Footer, WorkExperiences, Anime, ImageGallery },
   data() {
     return {
       bgColor: "bg-brand-black-1 text-white",

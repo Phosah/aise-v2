@@ -7,7 +7,7 @@
         problems, loves to
         travel, play video games (im kinda like the Fifa Champion) and oh yes i love good ANIME</p>
     </div>
-    <div class="flex items-center justify-center max-w-7xl mx-auto my-20 px-6 hover:transform hover:translate-y-3 transition-all ease-in-out">
+    <div class="flex items-center justify-center max-w-7xl mx-auto my-20 px-6 transition-all ease-in-out">
       <img class="animate-bounce " src="../assets/random1.png" alt="Scroll img">
     </div>
     <ImageGallery />

@@ -15,13 +15,13 @@
         <a href=""><img src="../assets/dribbble-dark.png" alt=""></a>
         <a href=""><img src="../assets/twitter-dark.png" alt=""></a>
     </div>
-    <div class="md:hidden flex items-center justify-center space-x-4 max-w-7xl mx-auto px-6 mt-20 py-3">
+    <!-- <div class="md:hidden flex items-center justify-center space-x-4 max-w-7xl mx-auto px-6 mt-20 py-3">
         <a href=""><img src="../assets/social-media-1.jpeg" alt=""></a>
         <a href=""><img src="../assets/social-media-2.jpeg" alt=""></a>
         <a href=""><img src="../assets/social-media-3.jpeg" alt=""></a>
         <a href=""><img src="../assets/social-media-4.jpeg" alt=""></a>
         <a href=""><img src="../assets/social-media-5.jpeg" alt=""></a>
-    </div>
+    </div> -->
 </template>
 
 <script>

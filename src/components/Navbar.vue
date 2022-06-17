@@ -22,7 +22,12 @@ const openMenu = computed(() => {
 
 <template>
     <div id="navbar" class="top-0 right-0 left-0">
-        <div @click="openMenu" class="flex justify-end md:hidden mb-16 px-2"><img class="w-12 h-12" src="../assets/menu-icon-dark.png" alt="Hamburger icon"></div>
+        <div class="flex items-center justify-between md:hidden mb-20">
+            <div class="">
+                <router-link to="/"><img src="../assets/logo.png" alt="" /></router-link>
+            </div>
+            <div @click="openMenu" class="px-2"><img class="w-12 h-12" src="../assets/menu-icon-dark.png" alt="Hamburger icon"></div>
+        </div>
         <div class="hidden md:block max-w-7xl mx-auto py-10 px-6">
             <div class="flex items-center justify-between">
                 <div class="mb-8 md:mb-0">

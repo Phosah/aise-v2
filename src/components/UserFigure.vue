@@ -16,14 +16,16 @@ defineProps({
         </div>
         <div v-for="(persona, ix) in personas" :key="ix" class="md:flex md:space-x-12 md:items-end mb-28 last:mb-0">
             <div class="md:w-1/3 self-stretch flex flex-col justify-end relative h-110 md:h-auto mb-8 md:mb-0">
-                <img class="w-full h-full absolute inset-0 object-cover object-top"
+                <img class="w-full h-96 md:h-full absolute inset-0 object-cover object-top"
                     :src="persona.img" :alt="persona.alt" />
-                <div class="pl-6 pb-8 text-white z-10">
-                    <h2 class="mb-4 text-2xl md:text-3xl lg:text-4xl font-semibold font-playfair">{{persona.name}}
-                    </h2>
-                    <p class="mb-4">Age: {{persona.age}} years old</p>
-                    <p class="mb-4">Occupation: {{persona.profession}}</p>
-                    <p class>Status: {{persona.maritalStatus}}</p>
+                <div class="flex items-end h-96 pl-6 pb-8 text-white z-10">
+                    <div class="">
+                        <h2 class="mb-4 text-2xl md:text-3xl lg:text-4xl font-semibold font-playfair">{{persona.name}}
+                        </h2>
+                        <p class="mb-4">Age: {{persona.age}} years old</p>
+                        <p class="mb-4">Occupation: {{persona.profession}}</p>
+                        <p class>Status: {{persona.maritalStatus}}</p>
+                    </div>
                 </div>
             </div>
             <div class="md:w-2/3 px-4 pb-8 md:pb-0">

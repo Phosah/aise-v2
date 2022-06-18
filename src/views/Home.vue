@@ -159,7 +159,7 @@ const prev = () => {
       <!-- end of Mobile version -->
       <div class="md:flex justify-end max-w-7xl mx-auto mt-20 md:px-6">
         <div class="hidden md:block md:flex-1">
-          <img class="w-32 h-32" src="../assets/random1.png" alt="Scroll down">
+          <img class="animate-bounce w-32 h-32" src="../assets/random1.png" alt="Scroll down">
         </div>
         <div class="md:flex-1 md:transform md:-translate-y-40">
           <img src="../assets/aise-photo-1.png" alt="Aise photo">
@@ -176,7 +176,7 @@ const prev = () => {
           Managemnt tools etc.
         </p>
       </div>
-      <div class="hidden md:w-1/2 md:flex md:justify-end"><img class="w-32 h-32" src="../assets/random1.png"
+      <div class="hidden md:w-1/2 md:flex md:justify-end"><img class="animate-bounce w-32 h-32" src="../assets/random1.png"
           alt="Random img"></div>
     </div>
     <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">

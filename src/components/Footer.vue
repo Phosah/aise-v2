@@ -1,5 +1,5 @@
 <template>
-    <section class="px-6 md:px-16 py-20" :class="bgColor">
+    <section class="px-6 py-20" :class="bgColor">
         <div class="flex flex-col items-center max-w-7xl mx-auto">
             <div v-if="bgColor === 'light'" class="mb-24">
                 <img src="../assets/project-talk-dark.png" alt="Project talk" />
@@ -7,7 +7,7 @@
             <div v-else class="mb-24">
                 <img src="../assets/project-talk.png" alt="Project talk" />
             </div>
-            <div class="md:w-5/6 mx-auto px-8 md:px-0">
+            <div class="md:w-5/6 mx-auto">
                 <h3
                     class="font-new-paris-kingsize mb-8 text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-center font-semibold">
                     Let's
@@ -19,7 +19,7 @@
                         future</span>
                 </p>
             </div>
-            <div class="md:flex md:items-center md:space-x-8">
+            <div class="md:flex md:items-center md:space-x-8 w-full">
                 <a href="mailto://aiseosauyiidahor@gmail.com">
                     <div :class="mode === light ? 'border-brand-black-3' : 'border-white'"
                     class="mb-8 md:mb-0 px-8 py-5 text-center font-bold rounded-sm bg-transparent border ">Send
@@ -28,7 +28,7 @@
                     </div>
                 </a>
                 <!-- Calendly link widget begin -->
-                <a :class="mode === light ? 'bg-brand-black-3 text-white' : 'bg-white text-brand-black-1'" class="block px-8 py-5 font-bold rounded-sm cursor-pointer"
+                <a :class="mode === light ? 'bg-brand-black-3 text-white' : 'bg-white text-brand-black-1'" class="block px-8 py-5 text-center font-bold rounded-sm cursor-pointer"
                     onclick="Calendly.initPopupWidget({url: 'https://calendly.com/aiseidahor'});return false;">Book an
                     appointment</a>
                 <!-- Calendly link widget end -->               

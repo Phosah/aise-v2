@@ -3,7 +3,7 @@
   <main class="text-brand-black-2">
     <div class="flex flex-col items-center justify-center max-w-7xl mx-auto my-20 px-6 ">
       <h1 class="mb-10 text-6xl md:text-9xl font-new-paris-kingsize">About Me</h1>
-      <p class="w-2/3 text-center text-brand-gray-2">I am a Product designer based in Nigeria who simplifies complex
+      <p class="md:w-2/3 text-center text-brand-gray-2">I am a Product designer based in Nigeria who simplifies complex
         problems, loves to
         travel, play video games (im kinda like the Fifa Champion) and oh yes i love good ANIME</p>
     </div>

@@ -1,12 +1,16 @@
 <script setup>
 import { computed, ref } from "vue";
 import { useStore } from "vuex";
-
+// Using this fix to clear certain errors from JSX on <router-link>
+import { RouterView, RouterLink } from "vue-router";
+{
+  RouterView;
+  RouterLink;
+}
 const store = useStore();
 const menu_is_active = computed(() => store.state.menu_is_active)
 const closeMenu = computed(() => {
-    store.dispatch("CloseMenu");
-    console.log(menu_is_active.value)
+    store.commit("TOGGLE_MENU");
 })
 </script>
 
@@ -15,7 +19,7 @@ const closeMenu = computed(() => {
         <div class="flex-1">
             <div class="flex items-center justify-between mb-16">
                 <router-link to="/"><img src="../assets/logo.png" alt="" /></router-link>
-                <div @click="closeMenu" class="">
+                <div @click="closeMenu">
                     <button>
                         <svg
                             class="text-brand-black-1 dark:text-white w-8 h-8"

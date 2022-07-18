@@ -15,8 +15,7 @@ import { useStore } from "vuex"
 const store = useStore();
 const menu_is_active = computed(() => store.state.menu_is_active)
 const openMenu = computed(() => {
-    store.dispatch("OpenMenu");
-    console.log(menu_is_active.value)
+    store.commit("TOGGLE_MENU");
 })
 </script>
 

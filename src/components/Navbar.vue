@@ -35,13 +35,16 @@ const openMenu = computed(() => {
                 <div class="flex items-center justify-between text-brand-gray-2">
                     <div class="md:flex md:items-center md:space-x-6 lg:space-x-12">
                         <div class="mb-8 md:mb-0 hover:text-brand-gray-3 hover:transform hover:-translate-y-1 transition-all">
-                            <router-link to="/works">Web 3 Works</router-link>
+                            <router-link to="/works">Web 3</router-link>
                         </div>
                         <div class="mb-8 md:mb-0 hover:text-brand-gray-3 hover:transform hover:-translate-y-1 transition-all">
-                            <router-link to="/otherworks">Other Works</router-link>
+                            <router-link to="/fintech">Fintech</router-link>
                         </div>
                         <div class="mb-8 md:mb-0 hover:text-brand-gray-3 hover:transform hover:-translate-y-1 transition-all">
-                            <router-link to="/about">About me</router-link>
+                            <router-link to="/otherworks">Others</router-link>
+                        </div>
+                        <div class="mb-8 md:mb-0 hover:text-brand-gray-3 hover:transform hover:-translate-y-1 transition-all">
+                            <router-link to="/about">About</router-link>
                         </div>
                         <div class="mb-8 md:mb-0 hover:text-brand-gray-3 hover:transform hover:-translate-y-1 transition-all">
                             <a href="https://dribbble.com/Aise_Idahor" target="_blank">Visual Shots</a>

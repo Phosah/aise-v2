@@ -13,6 +13,7 @@ import PowrFinance from "../views/PowrFinance.vue";
 import Trustbreed from "../views/Trustbreed.vue";
 import CollectAfrica from "../views/CollectAfrica.vue";
 import Trigle from "../views/Trigle.vue";
+import Fintech from "../views/Fintech.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -51,6 +52,11 @@ const router = createRouter({
       path: "/about",
       name: "about",
       component: About,
+    },
+    {
+      path: "/fintech",
+      name: "fintech",
+      component: Fintech,
     },
     {
       path: "/otherworks",

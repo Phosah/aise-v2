@@ -119,17 +119,20 @@ const projectsArr = [
   {
     title: "Web3 Projects",
     text: "Explore up to 8 web3 projects ranging from DeFi, DAO, Staking Protocols and NFT marketplaces",
-    gif: gif1
+    gif: gif1,
+    url: "/works"
   },
   {
     title: "Fintech Projects",
     text: "Explore various fintech solutions simplifying complex problems for users around the world.",
-    gif: gif2
+    gif: gif2,
+    url: "/fintech"
   },
   {
     title: "Other Projects",
     text: "Have a wide range of project solutions in various niches of design from Logistics to commerce.",
-    gif: gif1
+    gif: gif1,
+    url: "/otherworks"
   },
 ]
 const bgColor = "bg-brand-black-2 text-white"
@@ -197,7 +200,7 @@ const prev = () => {
         </p>
       </div>
       <div class="hidden md:w-1/2 md:flex md:justify-end"><img class="animate-bounce w-32 h-32" src="../assets/random1.png"
-          alt="Random img"></div>
+          alt="Random img" /></div>
     </div>
     <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
       <Projects :projects="projectsArr" />
@@ -214,7 +217,7 @@ const prev = () => {
           </div>
           <a href="https://dribbble.com/Aise_Idahor" class="inline-block my-6 px-10 py-3 border border-brand-black-1 rounded-md">View Dribbble</a>
         </div>
-        <div class="md:flex-1"><img class="w-full" src="../assets/gif3.gif" alt="Designs"></div>
+        <div class="md:flex-1"><img class="w-full" src="../assets/gif3.gif" alt="Designs" /></div>
       </div>
     </section>
     <section class="max-w-7xl mx-auto my-32 md:my-52 px-6">

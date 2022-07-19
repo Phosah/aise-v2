@@ -15,6 +15,11 @@ import CollectAfrica from "../views/CollectAfrica.vue";
 import Trigle from "../views/Trigle.vue";
 import Fintech from "../views/Fintech.vue";
 import Daba from "../views/Daba.vue";
+import Bento from "../views/Bento.vue";
+import Bitpowr from "../views/Bitpowr.vue";
+import Trivadi from "../views/Trivadi.vue";
+import MyriaWallet from "../views/MyriaWallet.vue";
+import Arc from "../views/Arc.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -93,6 +98,31 @@ const router = createRouter({
       path: "/daba",
       name: "Daba",
       component: Daba,
+    },
+    {
+      path: "/bento",
+      name: "Bento",
+      component: Bento,
+    },
+    {
+      path: "/bitpowr",
+      name: "Bitpowr",
+      component: Bitpowr,
+    },
+    {
+      path: "/trivadi",
+      name: "Trivadi",
+      component: Trivadi,
+    },
+    {
+      path: "/myria",
+      name: "MyriaWallet",
+      component: MyriaWallet,
+    },
+    {
+      path: "/arc",
+      name: "Arc",
+      component: Arc,
     },
   ],
   scrollBehavior(to, from, savedPosition) {

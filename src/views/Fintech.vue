@@ -8,10 +8,10 @@ const themeMode =  "dark"
 const worksArr = [
     {
         // img: xerxesCover,
-        alt: "collect africa",
-        title: "Collect Africa",
+        alt: "daba",
+        title: "daba",
         content: "A decentralized Lending and Borrowing Protocol, providing income to Lenders and Loaning opportunities for borrowers with need any crypto asset of your choice",
-        link: "/collectafrica"
+        link: "/daba"
     },
      {
         // img: pegasusCover,

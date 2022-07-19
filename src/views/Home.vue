@@ -1,6 +1,7 @@
 <script setup>
 import Clients from '../components/Clients.vue';
 import Testimonials from '../components/Testimonials.vue'
+import Projects from '../components/Projects.vue'
 import logo1 from "../assets/arc-logo.png"
 import logo2 from "../assets/cadoo-logo.png"
 import logo3 from "../assets/kufuta-logo.png"
@@ -16,6 +17,8 @@ import logo12 from "../assets/haastrup-logo.png"
 import logo13 from "../assets/fambase-logo.png"
 import logo14 from "../assets/trustbreed-logo.png"
 import logo15 from "../assets/momo-logo.png"
+import gif1 from "../assets/gif1.gif"
+import gif2 from "../assets/gif2.gif"
 import testimonials1 from "../assets/testimonials-1.png"
 import testimonials2 from "../assets/testimonials-2.jpeg"
 import testimonials3 from "../assets/testimonials-3.jpeg"
@@ -112,6 +115,23 @@ const testimonialsArr = [
     comment: "I worked with Aise on a contract basis for our new landing page and while working with him he blew my mind away with his design skills, he gave me the best first draft of any design I have ever done, and his attention to detail was impeccable even going as far as to providing designs for all breakpoints made implementation a whole lot easier. I look forward to working with him on more interesting projects in the future"
   },
 ]
+const projectsArr = [
+  {
+    title: "Web3 Projects",
+    text: "Explore up to 8 web3 projects ranging from DeFi, DAO, Staking Protocols and NFT marketplaces",
+    gif: gif1
+  },
+  {
+    title: "Fintech Projects",
+    text: "Explore various fintech solutions simplifying complex problems for users around the world.",
+    gif: gif2
+  },
+  {
+    title: "Other Projects",
+    text: "Have a wide range of project solutions in various niches of design from Logistics to commerce.",
+    gif: gif1
+  },
+]
 const bgColor = "bg-brand-black-2 text-white"
 const themeMode =  "dark"
 const sum = testimonialsArr.length - 1;
@@ -159,10 +179,10 @@ const prev = () => {
       <!-- end of Mobile version -->
       <div class="md:flex justify-end max-w-7xl mx-auto mt-20 md:px-6">
         <div class="hidden md:block md:flex-1">
-          <img class="animate-bounce w-32 h-32" src="../assets/random1.png" alt="Scroll down">
+          <img class="animate-bounce w-32 h-32" src="../assets/random1.png" alt="Scroll down" />
         </div>
         <div class="md:flex-1 md:transform md:-translate-y-40">
-          <img src="../assets/aise-photo-1.png" alt="Aise photo">
+          <img src="../assets/aise-photo-1.png" alt="Aise photo" />
         </div>
       </div>
     </section>
@@ -180,34 +200,7 @@ const prev = () => {
           alt="Random img"></div>
     </div>
     <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-      <div class="md:flex md:items-start md:space-x-12">
-        <div>
-          <router-link to="/works">
-            <div class="md:flex-1 flex flex-col mb-8 p-8 bg-black text-white rounded-md">
-              <h2 class="text-6xl font-new-paris-kingsize">Web 3</h2>
-              <h2 class="mb-8 text-6xl font-new-paris-kingsize">Projects</h2>
-                <div class="flex items-center gap-x-8 mb-8">
-                  <div class="text-xl">Explore</div>
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                </div>
-              <img src="../assets/gif1.gif" alt="Web 3 Projects">
-            </div>
-          </router-link>
-        </div>
-        <div>
-          <router-link to="/otherworks">
-            <div class="md:flex-1 p-8 bg-white rounded-md mb-8">
-              <h2 class="text-6xl font-new-paris-kingsize">Other</h2>
-              <h2 class="mb-8 text-6xl font-new-paris-kingsize">Projects</h2>
-                <div class="flex items-center gap-x-8 mb-8">
-                  <div class="text-xl">Explore</div>
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                </div>
-              <img class="w-full" src="../assets/gif2.gif" alt="Other Projects">
-            </div>
-          </router-link>
-        </div>        
-      </div>
+      <Projects :projects="projectsArr" />
     </section>
     <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
       <div class="md:flex md:items-center md:space-x-12">

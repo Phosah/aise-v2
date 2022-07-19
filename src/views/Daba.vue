@@ -186,7 +186,7 @@ const themeMode = 'light'
         <Navbar />
         <Header :headerInfo="info" />
         <section class="max-w-7xl mx-auto px-6">
-            <div class="hidden md:block">
+            <div class="block">
                 <LayoutOne :page="overview" />
                 <LayoutThree :page="role" />
             </div>

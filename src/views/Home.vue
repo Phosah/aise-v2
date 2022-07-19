@@ -1,4 +1,7 @@
 <script setup>
+import { ref } from 'vue';
+import Navbar from '../components/Navbar.vue';
+import Footer from '../components/Footer.vue';
 import Clients from '../components/Clients.vue';
 import Testimonials from '../components/Testimonials.vue'
 import Projects from '../components/Projects.vue'
@@ -23,9 +26,6 @@ import testimonials1 from "../assets/testimonials-1.png"
 import testimonials2 from "../assets/testimonials-2.jpeg"
 import testimonials3 from "../assets/testimonials-3.jpeg"
 import testimonials4 from "../assets/testimonials-4.jpeg"
-import { ref } from 'vue';
-import Footer from '../components/Footer.vue';
-import Navbar from '../components/Navbar.vue';
 
 const clientsArr = [
   {
@@ -217,7 +217,24 @@ const prev = () => {
           </div>
           <a href="https://dribbble.com/Aise_Idahor" class="inline-block my-6 px-10 py-3 border border-brand-black-1 rounded-md">View Dribbble</a>
         </div>
-        <div class="md:flex-1"><img class="w-full" src="../assets/gif3.gif" alt="Designs" /></div>
+        <div class="md:flex-1">
+          <div class="flex items-center space-x-6 space-y-6">
+            <div class="flex-1">
+              <img class="w-full" src="../assets/gif3.gif" alt="Designs" />
+            </div>
+            <div class="flex-1">
+              <img class="w-full" src="../assets/svg/design-shot-1.svg" alt="Designs" />
+            </div>
+          </div>
+          <div class="flex items-center space-x-6 space-y-6">
+            <div class="flex-1">
+              <img class="w-full" src="../assets/svg/design-shot-2.svg" alt="Designs" />
+            </div>
+            <div class="flex-1">
+              <img class="w-full" src="../assets/svg/design-shot-3.svg" alt="Designs" />
+            </div>
+          </div>        
+        </div>
       </div>
     </section>
     <section class="max-w-7xl mx-auto my-32 md:my-52 px-6">

@@ -5,6 +5,7 @@ import bentoCover from '../assets/bento/bento-home.png'
 import LayoutOne from '../components/LayoutOne.vue';
 import photo1 from "../assets/bento/background.png"
 import LayoutThree from '../components/LayoutThree.vue';
+import photo2 from '../assets/bento/interview.png'
 
 const info = {
     title: "People by Bento",
@@ -36,6 +37,16 @@ const role = {
         "I was also responsible for the Handoff of the projects to the developers to ensure the design decisions are communicated and ensure implementation is done properly."
     ],
 }
+const interview = {
+    title: "Started with Interviews",
+    paragraphs: [
+        "One of the major reasons why the vision came about was some subtle complaints from businesses that Bento payroll software handles were the issues of managing employees aside from payroll management. So to get the main pain points I scheduled 5 interviews of 30min each with some of the companies who made requests and those who showed similar interests.",
+        "These sessions were recorded so I could have documentation to fall back on that would be kept in the company's google drive",
+    ],
+    
+    img: photo2,
+    alt: "Interview"
+}
 </script>
 
 <template>
@@ -52,6 +63,34 @@ const role = {
             <p class="mb-4">The next step was to have scheduled calls with people from the sales team as they are the ones that have been on the field and gotten direct hints on the feedback of some of the customers who use the Bento Payroll product for their organization and had issues managing their organization as well.</p>
             <p class="mb-4">The next few days were a series of calls with the support team and support team lead and this was to get insights on issues that have been reported as bento runs open support and feedback channel that takes user's requests and issues to process so the support team has had direct info on the user's pain points</p>
             <p>The final days were calls with the engineering team to also get insights from them and the size of the team so I could properly align business goals, user needs, and Engineering strengths in the design process.</p>
+        </section>
+        <section class="max-w-7xl mx-auto my-20 px-6">
+            <LayoutOne :page="interview" />
+        </section>
+        <section class="max-w-7xl mx-auto md:my-40 my-20 px-6">
+            <div class="md:flex md:items-center md:space-x-12">
+                <div class="md:flex-1 mb-12 md:mb-0">
+                    <h3 class="mb-6 text-2xl md:text-4xl font-bold font-new-paris-kingsize">Sneak peak on Competitors</h3>
+                    <p class="mb-4"> After successful interviews I decided to take a peek at what competitors were doing, sadly there was no competitor in the Nigerian space to see how the solutions were structured for the current market and identify the lapses so the competitive analysis was focused on foreign companies.</p>
+                    <p>Even tho the psychology and the mode of operations of the business in various countries differ as this would affect the way HR works, it was still goo room to understand the core functionalities needed for an HR/ employee management software the flows and value proposition</p>
+                </div>
+                <div class="md:flex-1">
+                    <div class="grid col-span-2 gap-6">
+                        <div>
+                            <img src="../assets/bento/logo1.svg" alt="logo"/>
+                        </div>
+                        <div>
+                            <img src="../assets/bento/logo2.svg" alt="logo" />
+                        </div>
+                        <div>
+                            <img src="../assets/bento/logo3.svg" alt="logo" />
+                        </div>
+                        <div>
+                            <img src="../assets/bento/logo1.svg" alt="logos" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>   
 </template>

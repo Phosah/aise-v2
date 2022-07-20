@@ -4,10 +4,19 @@ import Header from '../components/Header.vue';
 import bitpowrCover from '../assets/bitpowr/bitpowr-home.png'
 import LayoutOne from '../components/LayoutOne.vue';
 import LayoutTwo from '../components/LayoutTwo.vue';
+import LayoutFour from '../components/LayoutFour.vue'
 import photo1 from '../assets/bitpowr/blockchain.png'
 import photo2 from '../assets/bitpowr/role.png'
 import photo3 from '../assets/bitpowr/review.png'
 import photo4 from '../assets/bitpowr/competitors.png'
+import photo5 from '../assets/bitpowr/signup-old.png'
+import photo6 from '../assets/bitpowr/signup-new.png'
+import photo7 from '../assets/bitpowr/dashboard-old.png'
+import photo8 from '../assets/bitpowr/dashboard-new.png'
+import photo9 from '../assets/bitpowr/transaction-old.png'
+import photo10 from '../assets/bitpowr/transaction-new.png'
+import photo11 from '../assets/bitpowr/account-old.png'
+import photo12 from '../assets/bitpowr/account-new.png'
 
 const info = {
     title: "Bitpowr",
@@ -62,6 +71,70 @@ const competitors = {
     img: photo4,
     alt: "competitors"
 }
+const signup = {
+    title: "Sign Up process",
+    changes: [
+        {
+            title: "Simplifying the Flow",
+            text: "The old sign up page was one that was really confusing to alot of users and it made the simple task look more tedious, so the first thing i did was break the long form into smaller steps"
+        },
+        {
+            title: "Making the signup actions grouped",
+            text: "For various needed details in the sign up process can be grouped either as personal info, business info, wallet creation or KYC verification and all these broken down and grouped made the new onboarding seamless"
+        }
+    ],
+    img1: photo5,
+    img2: photo6,
+    alt: "signup"
+}
+const dashboard = {
+    title: "Dashboard",
+    changes: [
+        {
+            title: "Emphasize on key Metrics",
+            text: "The dashboard is one that an individual or an organization comes into and immediately can tell where he stands, so the first thig was to introduce a chart that would display the current balance and this is filterable by date and accounts"
+        },
+        {
+            title: "Carry out Actions",
+            text: "The second step was to give users the ability to carry out the core actions for the platform and that is sending and receiving crypto and this was introduced into the dashboard to simplify the operators expeience"
+        }
+    ],
+    img1: photo7,
+    img2: photo8,
+    alt: "dashboard"
+}
+const transaction = {
+    title: "Transactions",
+    changes: [
+        {
+            title: "Give more details",
+            text: "The previous transaction page just gave a list of transactions to go threough, this makes it difficult to know a summary or an overview of what has been carried out as that is key for a transaction page. So i introduces the summary cards to show the details of the received transactions and sent transactions"
+        },
+        {
+            title: "Give room for approvers",
+            text: "Bitpowr is a multi-sig platform hence there are transactions that would need multiple approvals. I introduced the approvers to the table so you can see who has approved and who is left and how many approvals does the transaction need to be successful"
+        }
+    ],  
+    img1: photo9,
+    img2: photo10,
+    alt: "transaction"
+}
+const account = {
+    title: "Account",
+    changes: [
+        {
+            title: "Gave more Explanation",
+            text: "The old account represented accounts in cards and this limited the details to be just for BTC which doesnt make it scale or give more details on what the account holds. So i expanded the design and introduced the accounts in a table that the overview can be seen at a glimpse and more details can be accessed when going deeper."
+        },
+        {
+            title: "Introdcuing Fiat and Exchanged",
+            text: "Although this was not an improvement more like a new feature but from the account you can switch between your crypto accounts to your CEX and Fiat balances and the assets inside them would be displayed aswell"
+        }
+    ],  
+    img1: photo11,
+    img2: photo12,
+    alt: "account"
+}
 </script>
 
 <template>
@@ -89,6 +162,38 @@ const competitors = {
             <LayoutTwo :page="analysis" />
             <div class="my-20 bg-red-200">Research Process</div>
             <LayoutOne :page="competitors" />
+        </section>
+        <section class="my-20 md:my-40">
+            <div class="max-w-7xl mx-auto px-6">
+                <h1 class="mb-8 text-3xl md:text-4xl font-bold font-new-paris-kingsize">How might we</h1>
+                <p class="mb-12">The next phase was to gather the insights gotten from the research phase and bring these to the CEO, PM, CTO and the marketing team the idea was to have an inhouse brainstorming session with the Product visionaries and others to get the best ideas out through some How Might We questions</p>
+            </div>
+            <div><img class="w-full" src="../assets/bitpowr/notes.png" alt="Notes" /></div>
+        </section>
+        <section class="my-20 px-6">
+            <div class="">
+                <h3 class="mb-6 text-3xl font-new-paris-kingsize">Well defined goals.</h3>
+                <p class="mb-8">When we were done with the brainstorming session, I compiled all that has been discussed and gathered all the data that was mentioned to get the best ideas out there with this I scheduled a session with the CEO and, we went over all the data and decided on goals for the redesign increase platform value, grow the customer base and increase conversion and reduce bounce rate. Below are the targets we set and plans that were agreed upon</p>
+                <div class="mb-8">
+                    <h4 class="mb-6 text-xl font-new-paris-kingsize">Increase Conversion</h4>
+                    <p class="mb-1">a. Create a cleaner and more user-friendly interface </p>
+                    <p class="mb-1">b. The new platform should convert leads from Demo bookings to signups</p>
+                    <p class="mb-1">c. The new platform should reduce churn/bounce rates</p>
+                </div>
+                <div class="">
+                    <h4 class="mb-6 text-xl font-new-paris-kingsize">Improve Customer Satisfaction</h4>
+                    <p class="mb-1">a. Easier to finish a task with fewer breakpoints</p>
+                    <p class="mb-1">b. Reduce User frustrations/confusion</p>
+                    <p class="mb-1">c. More simple and flexible flows</p>
+                </div>
+            </div>
+        </section>
+        <section class="my-20 px-6">
+            <h1 class="mb-6 text-4xl font-new-paris-kingsize">High Fidelity Designs</h1>
+            <LayoutFour :page="signup"/>
+            <LayoutFour :page="dashboard"/>
+            <LayoutFour :page="transaction"/>
+            <LayoutFour :page="account"/>
         </section>
     </main>   
 </template>

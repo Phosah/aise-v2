@@ -5,6 +5,9 @@ import bitpowrCover from '../assets/bitpowr/bitpowr-home.png'
 import LayoutOne from '../components/LayoutOne.vue';
 import LayoutTwo from '../components/LayoutTwo.vue';
 import LayoutFour from '../components/LayoutFour.vue'
+import LayoutThree from '../components/LayoutThree.vue';
+import Footer from "../components/Footer.vue"
+import OtherProjects from "../components/OtherProjects.vue"
 import photo1 from '../assets/bitpowr/blockchain.png'
 import photo2 from '../assets/bitpowr/role.png'
 import photo3 from '../assets/bitpowr/review.png'
@@ -17,6 +20,13 @@ import photo9 from '../assets/bitpowr/transaction-old.png'
 import photo10 from '../assets/bitpowr/transaction-new.png'
 import photo11 from '../assets/bitpowr/account-old.png'
 import photo12 from '../assets/bitpowr/account-new.png'
+import photo13 from '../assets/bitpowr/exchange.png'
+import photo14 from '../assets/bitpowr/policy.png'
+import photo15 from '../assets/bitpowr/payment.png'
+import photo16 from '../assets/bitpowr/checkout.png'
+import photo17 from '../assets/bitpowr/defi-wallet-1.png'
+import photo18 from '../assets/bitpowr/defi-wallet-2.png'
+import photo19 from '../assets/bitpowr/monitoring.png'
 
 const info = {
     title: "Bitpowr",
@@ -135,6 +145,70 @@ const account = {
     img2: photo12,
     alt: "account"
 }
+const exchange = {
+    title: "Exchange and FIAT Connection",
+    paragraphs: [
+        "With Bitpowr you can connect your CEX accounts via API and be able to interact with the assets there, and transfer and monitor them from your dashboard. Also due to the policy from the government, we still needed a way to enable bank settlements, so now you can connect to your Fintech choice and your assets can be sent there and converted to local currency to be spent or sent to bank",
+    ],
+    
+    img: photo13,
+    alt: "exchange"
+}
+const policy = {
+    title: "Account Policy",
+    paragraphs: [
+        "With Bitpowr you can connect your CEX accounts via API and be able to interact with the assets there, and transfer and monitor them from your dashboard. Also due to the policy from the government, we still needed a way to enable bank settlements, so now you can connect to your Fintech choice and your assets can be sent there and converted to local currency to be spent or sent to the bank",
+    ],
+    
+    img: photo14,
+    alt: "policy"
+}
+const payment = {
+    title: "Receive Payment",
+    paragraphs: [
+        "With Bitpowtr you can generate a QR code or a payment link that the amount to be paid can be preset and this can be sent to anyone to request payments to your account",
+    ],
+    
+    img: photo15,
+    alt: "policy"
+}
+const checkout = {
+    title: "Checkout",
+    paragraphs: [
+        "The checkout is to help eCommerce users who need to integrate payment solutions to their platforms to be able to receive payments straight to their Bitpowr dashboard from any token",
+    ],
+    
+    img: photo16,
+    alt: "policy"
+}
+const wallet1 = {
+    title: "DeFi Investment Wallet",
+    paragraphs: [
+        "The introduction of a Defi wallet is to allow users who want to invest their assets and earn passive income can do that. Bitpowr connects you to a large range of protocols, all you need to do is select a protocol and indicate your investment amount, that's all 😌",
+    ],
+    
+    img: photo17,
+    alt: "wallet"
+}
+const wallet2 = {
+    title: "DeFi Investment Wallet",
+    paragraphs: [
+        "The introduction of a Defi wallet is to allow users who want to invest their assets and earn passive income can do that. Bitpowr connects you to a large range of protocols, all you need to do is select a protocol and indicate your investment amount, that's all 😌",
+    ],
+    
+    img: photo18,
+    alt: "wallet"
+}
+const monitoring = {
+    title: "Transaction Monitoring",
+    paragraphs: [
+        "The introduction of a Defi wallet is to allow users who want to invest their assets and earn passive income can do that. Bitpowr connects you to a large range of protocols, all you need to do is select a protocol and indicate your investment amount, that's all 😌",
+    ],
+    
+    img: photo19,
+    alt: "monitoring"
+}
+const themeMode = "light"
 </script>
 
 <template>
@@ -195,5 +269,37 @@ const account = {
             <LayoutFour :page="transaction"/>
             <LayoutFour :page="account"/>
         </section>
+        <section class="max-w-7xl mx-auto px-6">
+            <LayoutThree :page="exchange" />
+            <LayoutThree :page="policy" />
+            <LayoutThree :page="payment" />
+            <LayoutThree :page="checkout" />
+            <LayoutThree :page="wallet1" />
+            <LayoutThree :page="wallet2" />
+            <LayoutThree :page="monitoring" />
+        </section>
+        <section class="my-20 md:my-40">
+            <div class="max-w-7xl mx-auto px-6">
+                <h3 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Mobile Responsive Screens</h3>
+                <p class="mb-12">With the mindset that a lot of users might want to carry out transactions while they commute attention had to be placed on the mobile interfaces to account for all users and their scenarios</p>
+            </div>
+            <div><img class="w-full" src="../assets/bitpowr/mobile-screens.png" alt="Mobile screens" /></div>
+        </section>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h1 class="mb-12 text-2xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
+            <div class="mb-12">
+                <h2 class="mb-6 text-2xl font-bold font-new-paris-kingsize">Learnings and More</h2>
+                <p class="mb-6">I enjoyed working on bitpowr as it was my first exposure to web3 asides from the conventional Centralized exchanges. I got to learn the dynamics of the blockchain and how it can be used in real-life activities, and learned how to be transparent in task flows s this is a project that deals in financial transactions so the slightest mistake can cost a lot, and unlike traditional banks that cash can be reversed from a wrong address it's not so easy for such on the blockchain so every action carried out has to be clear and precise</p>
+                <p>Working on a web3 product that is both an Enterprise product and a B2C product gets you to think about a wide range of users and ensure the solutions meets their needs and this helped in improving my skills as User Experience designer and design thinker</p>               
+            </div>
+            <div>
+                <h2 class="mb-6 text-2xl font-bold font-new-paris-kingsize">Key Metrics</h2>
+                <p class="mb-6">These metrics were gotten 3 months after the redesign phase to test the success of the project</p>
+                <div class="bg-red-200">something goes here...</div>
+                <p>Explore the live project: <a href="https://www.dabafinance.com">https://www.dabafinance.com</a></p>
+            </div>
+        </section>
+        <OtherProjects />
+        <Footer :bgColor="themeMode"/>
     </main>   
 </template>

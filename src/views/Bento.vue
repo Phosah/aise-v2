@@ -8,7 +8,7 @@ import LayoutOne from '../components/LayoutOne.vue';
 import photo1 from "../assets/bento/background.png"
 import LayoutThree from '../components/LayoutThree.vue';
 import photo2 from '../assets/bento/interview.png'
-import photo3 from '../assets/bento/dashboard.png'
+import photo3 from '../assets/bento/dashboard-1.png'
 import photo4 from '../assets/bento/job-creation.png'
 import photo5 from '../assets/bento/hiring-process.png'
 import photo6 from '../assets/bento/appraisal.png'

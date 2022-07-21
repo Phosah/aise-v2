@@ -186,10 +186,8 @@ const themeMode = 'light'
         <Navbar />
         <Header :headerInfo="info" />
         <section class="max-w-7xl mx-auto px-6">
-            <div class="block">
-                <LayoutOne :page="overview" />
-                <LayoutThree :page="role" />
-            </div>
+            <LayoutOne :page="overview" />
+            <LayoutThree :page="role" />
         </section>
         <section class=" my-20 px-6">
             <div class="md:flex md:items-center md:space-x-12">

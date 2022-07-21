@@ -2,10 +2,18 @@
 import Navbar from '../components/Navbar.vue';
 import Header from '../components/Header.vue';
 import LayoutOne from '../components/LayoutOne.vue';
+import Footer from '../components/Footer.vue';
+import OtherProjects from '../components/OtherProjects.vue';
 import myriaWalletCover from '../assets/myria/myria-home.png'
-import photo1 from "../assets/myria/problem.png"
+import photo11 from "../assets/myria/problem.png"
 import CreatePersonas from '../components/CreatePersonas.vue';
 import persona1 from "../assets/myria/persona-1.png"
+import LayoutThree from '../components/LayoutThree.vue';
+import photo1 from "../assets/myria/dashboard.png"
+import photo2 from "../assets/myria/nft.png"
+import photo3 from "../assets/myria/transaction.png"
+import photo4 from "../assets/myria/renting-protocol-1.png"
+import photo5 from "../assets/myria/renting-protocol-2.png"
 
 const info = {
     title: "Myria Wallet",
@@ -26,7 +34,7 @@ const problem = {
         "Myria Finance is a blockchain solution that aims at enhancing the power of play through blockchain Myria is a decentralized Ethereum Layer 2, built to empower digital assets, NFT, and blockchain gaming., enabling more people to build, experience, and enjoy the benefits of blockchain and the metaverse.",
         "Myria will be launching a browser-based wallet to complement our new L2 Blockchain solution. The wallet will hold both Tokens and NFTs. The goal of the wallet is to easily facilitate player transactions and to keep track of balances. Please create a browser-based wallet experience (not a browser extension like metamask), using Myria's current design language from myria.com."
     ],
-    img: photo1,
+    img: photo11,
     alt: "Problem",
 }
 const personasArr = [
@@ -50,6 +58,49 @@ const personasArr = [
         ]
     },
 ]
+const dashboard = {
+    title: "simplified Dashboard",
+    paragraphs: [
+        "The first step was to create a simplified and user-friendly dashboard experience that was both functional and aesthetic to ease the user into the product From the dashboard you can view all your assets that are accessible to you in the wallet, and view all your NFT’s by switching a tab also at the same time you can view all transaction activities at a glance without having to click any button",
+        "Last but not the least you can easily see your account balance and access other functions like sending, receiving, buying, and exchange (bridge and swapping) your tokens"
+    ],
+    img: photo1,
+    alt: "Dashboard",
+}
+const nft = {
+    title: "simplified Dashboard",
+    paragraphs: [
+        "Have the ability to see all my NFT assets on the platform and also import assets from other marketplaces to my wallet dashboard so I can be able to manage all my assets at once. Also, you can send NFTs from your wallet to any other address easily.",
+        "When sending your NFT unlike regular tokens, you  get to see the preview of the NFT to be sent as a lot of users have NFTs that are similar in look and this can make them select a wrong NFT when picking them from the thumbnail lists so a larger preview would enable them see better and reduce mistakes"
+    ],
+    img: photo2,
+    alt: "nft",
+}
+const transaction = {
+    title: "Transactions",
+    paragraphs: [
+        "During transactions, the majority of users know they have sent but do not know the status of their transactions, yes expert users can go to ether scan to view the transaction status but only a handful of people do it Also, this gets to take them away from the wallet and makes them go through extra stress to find their answers, so giving a details page that shows the transaction status with as many details that both newbies and experts can understand and not find overwhelming would improve the user experience, also providing a view more for expert users to see some advanced details on the places like etherscan is also put in place Also, the use of Progress bars and time estimate on the transaction card reduces the user's curiosity as to what happens next, and how long before completion"
+    ],    
+    img: photo3,
+    alt: "transaction",
+}
+const connect1 = {
+    title: "Connect to Renting Protocols",
+    paragraphs: [
+        "Traditional wallets like Trustwallet gives users the ability to connect to other dApps or DeFi protocols to be able to carry out transactions like swaps and bridges that can not be carried out on the wallet itself Likewise, users need a way to borrow game assets that would improve their gameplay and also have a way to rent out their assets to get incentives so we provide a way for you to be able to connect to protocols like rentNFT and Pegaxy and others that would give you that ability right from your wallet seamlessly."
+    ],    
+    img: photo4,
+    alt: "protocols",
+}
+const connect2 = {
+    title: "Connect to Renting Protocols",
+    paragraphs: [
+        "You can easily access all your assets on their respective blockchain as we aim to achieve a multi-chain system so you can see all the assets and also switch chins for a more filtered search. By selecting a token you can see the QR code to scan payment and the address that can be copied and pasted Also, the design is structured in such a way that you do not need to have multiple clicks to get another tokens address just one click on the asset and the QR code changes and its respective address"
+    ],    
+    img: photo5,
+    alt: "protocols",
+}
+const themeMode = "light"
 </script>
 
 <template>
@@ -159,5 +210,55 @@ const personasArr = [
             <p class="mb-6">Based on the generative user research I conducted, I created user personas that capture the essence of my target group. Jasmine helped me to always keep the needs of the users at the forefront.</p>
             <CreatePersonas :personas="personasArr"/>
         </section>
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16">
+            <h1
+                class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
+            >User Stories</h1>
+            <p class="mb-10">User stories helped me to identify necessary flows that needed to be accounted for in the design and this helped guide the solutions in general</p>
+            <ul class="list-disc pl-6 text-xs">
+                <li
+                    class="mb-2"
+                >As a user, i want to be able to transfer crypto-assets from one address to another so I can use the tokens for other purposes</li>
+                <li
+                    class="mb-2"
+                >As a user, i want to be able to transfer NFT assets from one address to another so i can give to friends that want to play or use them myself in another game that I am connected to with a new wallet</li>
+                <li
+                    class="mb-2"
+                >As a user, i want to be able to transfer my NFT and crypto-assets across multiple chains so I can use my assets on any network</li>
+                <li
+                    class="mb-2"
+                >As a user, i want to be able to borrow game assets so it can help me play better</li>
+                <li
+                    class="mb-2"
+                >As a user, i want to be able to see my account balance so I know my financial status of that wallet</li>
+            </ul>
+        </section>
+        <section class="my-20 px-6">
+            <h1 class="mb-4 text-4xl font-new-paris-kingsize">Design Decesions</h1>
+            <p class="mb-6">After carefully analyzing the data and working with an MVP and time constraints, the following solutions were designed below</p>
+            <div>
+                <LayoutThree :page="dashboard" />
+                <LayoutThree :page="nft" />
+                <LayoutThree :page="transaction" />
+                <LayoutThree :page="connect1" />
+                <LayoutThree :page="connect2" />
+            </div>
+        </section>
+        <section class="my-20 md:my-40">
+            <div class="max-w-7xl mx-auto px-6">
+                <h3 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">More Design Screens</h3>
+            </div>
+            <div><img class="w-full" src="../assets/myria/design-screens.png" alt="design screens" /></div>
+        </section>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <div>
+                <h2 class="mb-6 text-2xl font-bold font-new-paris-kingsize">Conclusion</h2>
+                <p class="mb-6">There are a lot of solutions that can be provided to ease the lives of users using wallets and this in turn improves the user experience of the web3 space in general as wallets are the foundational blocks to the web3 ecosystem.</p>
+                <p class="mb-6">The ability for users to easily manage their NFT’s their assets across multiple networks, and protocols from one space and the ability for users to be guided and kept in sync with their transaction activities would improve clarity and inturn trust for users</p>
+                <p>Also, the ability for better transactions would improve interoperability of the web3 space and this, in turn, improves the entire ecosystem Thanks</p>
+            </div>
+        </section>
+        <OtherProjects />
+        <Footer :bgColor="themeMode"/>
     </main>   
 </template>

@@ -4,10 +4,25 @@ import Header from '../components/Header.vue';
 import arcCover from '../assets/arc/arc-home.png'
 import LayoutOne from '../components/LayoutOne.vue';
 import LayoutTwo from '../components/LayoutTwo.vue';
+import CreatePersonas from '../components/CreatePersonas.vue';
+import LayoutThree from '../components/LayoutThree.vue';
+import Footer from '../components/Footer.vue';
+import OtherProjects from '../components/OtherProjects.vue';
+import persona1 from "../assets/arc/persona-1.png"
+import persona2 from "../assets/arc/persona-2.png"
 import photo1 from "../assets/arc/background.png"
 import photo2 from "../assets/arc/role.png"
 import photo3 from "../assets/arc/briefings.png"
 import photo4 from "../assets/arc/research.png"
+import photo5 from "../assets/arc/dashboard.png"
+import photo6 from "../assets/arc/bridge.png"
+import photo7 from "../assets/arc/swap.png"
+import photo8 from "../assets/arc/trade.png"
+import photo9 from "../assets/arc/fiat.png"
+import photo10 from "../assets/arc/pools.png"
+import photo11 from "../assets/arc/aggregate.png"
+import photo12 from "../assets/arc/lend.png"
+import photo13 from "../assets/arc/arbitrage.png"
 
 const info = {
     title: "ARC",
@@ -60,6 +75,108 @@ const research = {
     img: photo2,
     alt: "role",
 }
+const personasArr = [
+    {
+        img: persona1,
+        alt: "Christopher",
+        about: "Christopher Muller is a 24-year-old crypto trader and a final year student in Human Kinetics at the university of NewYork, he has been investing in crypto for 3 years and that has been his main source for financing his education ",
+        points: [
+            "So far he has not been able to trade and due to the fact he lost access to his CEX account, thereby losing his lifetime savings in 2020 he isn't ready to rik using a Centralised exchange",
+            "He also finds it difficult to know what exchange sells an asset and the one that seels that set at a high price so he can yield arbitrage",
+        ],
+        goals: [
+            "Christopher needs a way to manage the crypto assets that he has scattered across multiple protocols",
+            "Christopher also needs a way to trade in futures of his assets without using a centralized exchange",
+            "He also needs to know the best assets to buy from the cheapest source so he yields arbitrage"
+        ]
+    },
+    {
+        img: persona2,
+        alt: "Christabell",
+        about: "Christabell Adesuwa is a 22-year-old Digital marketer that lives in Portland, she loves hiking and strolling in the park. She is new to the crypto space with major investments in NFT that she both collected in free mints and those she bought in marketplaces",
+        points: [
+            "Suwa needs a way to be able to buy crypto assets Suwa also needs a way to convert one token to another at the least possible transaction fee as that scares her a lot",
+            "Suwa needs a way to manage her NFTs in one place that is on several protocols",
+        ],
+        goals: [
+            "She has been yet to find a way to manage he=r NFT portfolio easily",
+            "She finds it difficult to trade so she needs an easy way to invest her tokens and still yield profits",
+        ]
+    },
+]
+const dashboard = {
+    title: "Dashboard",
+    paragraphs: [
+        "The dashboard is structured in such a way that you both get an overview of your investment holdings, at the same time you can toggle to view the individual holdings,  view your earnings, and interact with your other exchanges. Here you can see your CEX holdings and investments and interact with them, likewise your DEX investments and also interact with them like stake and unstake, also bridge and other forms of trading",
+    ],
+    img: photo5,
+    alt: "dashboard",
+}
+const bridge = {
+    title: "Bridge",
+    paragraphs: [
+        "The bridge Arc gives was designed to be able to keep a record of all the activities and at the same time give you a clean and easy way to move both the same asset from different blockchains. We also take it a step forward by swapping different tokens between different chains",
+    ],
+    img: photo6,
+    alt: "bridge",
+}
+const swap = {
+    title: "Swap with multiple routes",
+    paragraphs: [
+        "The swap interface was designed to allow the conversion of one token to another on the same blockchain, and at the same time we give users the ability to import tokens from any blockchain by pulling data from sources like DEX tools, Coingecko, Coinmarketcap, etc you can swap any token in the world for any token on Arc and we give you the best routes where we aggregate all protocols with such tokens and we select the best for you",
+    ],
+    img: photo7,
+    alt: "swap",
+}
+const trade = {
+    title: "Trade",
+    paragraphs: [
+        "Trading s one feature that has been very difficult to DEX due to its fast-paced nature and needs for high liquidity, with Arc as an aggregator we connect to the pools of multiple DEXs and access their treasury pools and this gives more than enough to handle instant trading for both spot and futures trading. This gives the CEX exchange in a decentralized space 🚀",
+    ],
+    img: photo8,
+    alt: "trade",
+}
+const fiat = {
+    title: "Fiat On Ramp",
+    paragraphs: [
+        "One of the biggest needs for most users of DEX is how to buy tokens, yes we can manipulate the tokens from one form to another and invest when we have them, but getting it initially is the issue. SO Arc integrates Wert a tool that allows the purchase of several tokens from payments with your card or bank account, and this allows you to purchase crypto that can be traded or swapped at will",
+    ],
+    img: photo9,
+    alt: "trade",
+}
+const pools = {
+    title: "Pools & Farms",
+    paragraphs: [
+        "Pools and Farms are investment opportunities given for non trading investors to stake their tokens and earn passive income, and by so doing they would be contributing to the protocols treasure which helps the speed of transactions in general. All pools and farms generate rewards that can be claimed at anytime",
+    ],
+    img: photo10,
+    alt: "trade",
+}
+const aggregate = {
+    title: "Aggregated NFT Markeplace",
+    paragraphs: [
+        "The NFT space is one in which a lot of users have investments, so Arc was designed to aim at simplifying the experience of having to go to multiple marketplaces to interact with your NFTs. With Arc, you can connect all your marketplaces in one product and get to interact with your assets from there, accept bid offers and sell NFTs at the same time",
+    ],
+    img: photo11,
+    alt: "aggregate",
+}
+const lend = {
+    title: "Lend NFT",
+    paragraphs: [
+        "Utilization of NFT especially in the gameFi space has been one that has been of major adoption in the recent times in which to participate and perform well in some games you need good gear and weapons (these are usually NFTs) to play well, now guild try to provide support to its members, but Arc tends to take it a notch and give users the ability to borrow NFT’s for your use during a given time and return during a given time",
+    ],
+    img: photo12,
+    alt: "lend",
+}
+const arbitrage = {
+    title: "Arbitrage",
+    paragraphs: [
+        "Arbitrage trading is one that a lot of traders can capitalize on and earn a lot of profit, it's buying from the cheapest protocol and selling at the highest price. As simple as it sounds its very difficult to find, so the design was structured to give you all you need for Arbitrage trading, those ar the access to important News, access t Twitter News as that's where most protocols announce and  we give Arbitrage opportunities refreshed every 10min based of the prices of assets we aggregate from protocols we help you find the ones that can be an arbitrage opportunity",
+    ],
+    img: photo13,
+    alt: "arbitrage",
+}
+const themeMode = "light"
 </script>
 
 <template>
@@ -72,5 +189,53 @@ const research = {
             <LayoutOne :page="briefing" />
             <LayoutTwo :page="research" />
         </section>
+        <section class="my-20 px-6">
+            <div class="md:w-1/2 mb-12">
+                <h3 class="mb-6 text-3xl font-new-paris-kingsize">Creating Personas</h3>
+                <p>The personas created were aim at having a mental picture of the type of users wwe would have in order to be able to properly empathize with the users</p>
+            </div>
+            <CreatePersonas :personas="personasArr" />
+        </section>
+        <section class="my-20 md:my-40">
+            <div class="md:w-1/2 px-6">
+                <h1 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Brainstorming with  HMW (How might we).</h1>
+                <p class="mb-12">Taking further steps to refine the problems with how might we help to see think the solutions from the user's pain points and find the best ways to offer value and solutions to the users. More simple and flexible flows</p>
+            </div>
+            <div><img class="w-full" src="../assets/bitpowr/notes.png" alt="Notes" /></div>
+        </section>
+         <section class="my-20 px-6">
+            <h1 class="mb-6 text-4xl font-new-paris-kingsize">Design Decesions</h1>
+            <p class="mb-4">After carefully analyzing the data and working with an MVP and time constraints, the following solutions were designed below</p>
+            <LayoutThree :page="dashboard" />
+            <LayoutThree :page="bridge" />
+            <LayoutThree :page="swap" />
+            <LayoutThree :page="trade" />
+            <LayoutThree :page="fiat" />
+            <LayoutThree :page="pools" />
+            <LayoutThree :page="aggregate" />
+            <LayoutThree :page="lend" />
+            <LayoutThree :page="arbitrage" />
+        </section>
+        <section class="my-20 md:my-40">
+            <div class="max-w-7xl mx-auto px-6">
+                <h3 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Mobile Responsive Screens</h3>
+                <p class="mb-12">With the mindset that a lot of users might want to carry out transactions while they commute attention had to be placed on the mobile interfaces to account for all users and their scenarios</p>
+            </div>
+            <div><img class="w-full" src="../assets/arc/mobile-views.png" alt="Mobile screens" /></div>
+        </section>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h1 class="mb-12 text-2xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
+            <div class="mb-12">
+                <h2 class="mb-6 text-2xl font-bold font-new-paris-kingsize">Learnings</h2>
+                <p class="mb-6">This is by far one of the most interesting web3 projects I have worked on and it allowed me to understand more in-depth the complexities of the DeFi and NFT space, it also allowed me to prioritize user needs and provide simplicity to their burdensome activities to give maximum value.</p>
+                <p>The web3 space holds a lot of treasures and ways to keep changing lives and I am glad to have impacted thousands for now on this one😁. </p>              
+            </div>
+            <div>
+                <h2 class="mb-6 text-2xl font-bold font-new-paris-kingsize">Conclusion</h2>
+                <p class="mb-6">Arc is a solution that is set to bring about financial freedom to millions and affect a lot of lives so the ease of the processes and the clarity of the tasks makes it easier to drive adoption and by so doing invite more people that can benefit of the amazing product</p>
+            </div>
+        </section>
+        <OtherProjects />
+        <Footer :bgColor="themeMode"/>
     </main>   
 </template>

@@ -3,11 +3,12 @@ import store from "../store/index";
 import Home from "../views/Home.vue";
 import AistakeFinance from "../views/AistakeFinance.vue";
 import Athena from "../views/Athena.vue";
-import Works from "../views/Works.vue";
+import Web3Works from "../views/Web3Works.vue";
 import Xerxes from "../views/Xerxes.vue";
 import Pegasus from "../views/Pegasus.vue";
 import About from "../views/About.vue";
 import OtherWorks from "../views/OtherWorks.vue";
+import FintechWorks from "../views/FintechWorks.vue";
 import Doorstep from "../views/Doorstep.vue";
 import PowrFinance from "../views/PowrFinance.vue";
 import Trustbreed from "../views/Trustbreed.vue";
@@ -40,9 +41,14 @@ const router = createRouter({
       component: Athena,
     },
     {
-      path: "/works",
-      name: "Works",
-      component: Works,
+      path: "/web3",
+      name: "Web3Works",
+      component: Web3Works,
+    },
+    {
+      path: "/fintech",
+      name: "FintechWorks",
+      component: FintechWorks,
     },
     {
       path: "/xerxes",

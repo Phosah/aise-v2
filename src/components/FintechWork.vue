@@ -1,24 +1,17 @@
 <script setup>
-import { onMounted } from "vue";
 defineProps({
     works: {
         type: Array,
         required: true
     }
 })
-onMounted(() => {
-    // window.addEventListener("scroll", function () {
-    //     let offset = window.pageYOffset;
-    //     par.style.backgroundPositionY = offset * 0.7 + "px";
-    //     console.log(offset);   
-    // });
-})
+const themeMode = "light"
 </script>
 
 <template>
     <section>
-        <div id="parallex" class="bg-gradient-to-tr from-slate-300 to-slate-600">
-            <div v-for="(work, ix) in works" :key="ix" :class="ix === 0 ? 'parallex' : '' " class="relative h-screen flex justify-center items-center">
+        <div id="par" class="bg-gradient-to-tr from-slate-300 to-slate-600">
+            <div v-for="(work, ix) in works" :key="ix" :class="ix === 0 ? 'par' : '' " class="relative h-screen flex justify-center items-center">
                 <div class="w-2/3 flex items-center justify-center absolute z-10">
                     <div class="text-center text-white">
                         <h1 class="mb-6 text-5xl font-new-paris-kingsize">{{ work.title }}</h1>
@@ -35,42 +28,34 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.parallex {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/athena1.png'); 
+.par {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/other-works/collectafrica1.png'); 
+    background-size: cover;
+    height: 100vh; 
+}  
+
+#par div:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)),
+                  url('../assets/other-works/trigle1.png');
+    background-attachment: fixed;
     background-size: cover;
     height: 100vh;
 }
 
-#parallex div:nth-child(2) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)),
-                  url('../assets/aistake1.png');
-    background-attachment: fixed;
+#par div:nth-child(3) {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), 
+                url('../assets/other-works/powrfinance1.png');
     background-size: cover;
 }
 
-#parallex div:nth-child(3) {
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), 
-                url('../assets/pegasus1.png');
-    background-size: cover;
-}
-#parallex div:nth-child(4) {
-    background-attachment: fixed;
-    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/xerxes1.png');
-    background-size: cover;
-}
-#parallex div:nth-child(5) {
+#par div:nth-child(4) {
     background-attachment: fixed;
     background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/other-works/trustbreed1.png');
     background-size: cover;
 }
-#parallex div:nth-child(6) {
+#par div:nth-child(5) {
     background-attachment: fixed;
     background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/other-works/doorstep1.png');
-    background-size: cover;
-}
-#parallex div:nth-child(7) {
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), 
-                url('../assets/other-works/powrfinance1.png');
     background-size: cover;
 }
 </style>

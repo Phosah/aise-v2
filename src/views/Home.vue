@@ -120,7 +120,7 @@ const projectsArr = [
     title: "Web3 Projects",
     text: "Explore up to 8 web3 projects ranging from DeFi, DAO, Staking Protocols and NFT marketplaces",
     gif: gif1,
-    url: "/works"
+    url: "/web3"
   },
   {
     title: "Fintech Projects",

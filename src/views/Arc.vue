@@ -218,8 +218,8 @@ const themeMode = "light"
         </section>
         <section class="my-20 md:my-40">
             <div class="max-w-7xl mx-auto px-6">
-                <h3 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Mobile Responsive Screens</h3>
-                <p class="mb-12">With the mindset that a lot of users might want to carry out transactions while they commute attention had to be placed on the mobile interfaces to account for all users and their scenarios</p>
+                <h3 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Mobile Views</h3>
+                <p class="mb-12">Majority of Arc’s users were mobile users from the research so high priority had to be placed on the mobile designs to optimize the experience</p>
             </div>
             <div><img class="w-full" src="../assets/arc/mobile-views.png" alt="Mobile screens" /></div>
         </section>

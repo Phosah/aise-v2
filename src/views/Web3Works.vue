@@ -2,39 +2,49 @@
 import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue';
 import Work from '../components/Work.vue';
-import athenaCover from "../assets/athena1.png"
-import aistakeCover from "../assets/aistake1.png"
-import pegasusCover from "../assets/pegasus1.png"
-import xerxesCover from "../assets/xerxes1.png"
 
 const worksArr = [
     {
-        // img: athenaCover,
-        alt: "Athena",
-        title: "Athena",
-        content: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users",
-        link: "/athena"
-    },
-    {
-        // img: aistakeCover,
         alt: "Aistake Finance",
         title: "Aistake Finance",
         content: "Staking with multiple validators on the Solana network at the same time while still having the ability to stake with the community using the best validators",
         link: "/aistakefinance"
     },
     {
-        // img: pegasusCover,
+        alt: "Athena",
+        title: "Athena",
+        content: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users",
+        link: "/athena"
+    },
+    {
+        alt: "Arc",
+        title: "Arc",
+        content: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users",
+        link: "/arc"
+    },
+    {
+        alt: "Bitpowr",
+        title: "Bitpowr",
+        content: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users",
+        link: "/bitpowr"
+    },
+    {
+        alt: "Xerxes",
+        title: "Xerxes",
+        content: "A decentralized Lending and Borrowing Protocol, providing income to Lenders and Loaning opportunities for borrowers with need any crypto asset of your choice",
+        link: "/xerxes"
+    },
+    {
         alt: "Pegasus",
         title: "Pegasus",
         content: "The easiest way for you to gain access to multiple token holdings at once by the purchase of one super token",
         link: "/pegasus"
     },
     {
-        // img: xerxesCover,
-        alt: "Xerxes",
-        title: "Xerxes",
-        content: "A decentralized Lending and Borrowing Protocol, providing income to Lenders and Loaning opportunities for borrowers with need any crypto asset of your choice",
-        link: "/xerxes"
+        alt: "Myria",
+        title: "Myria",
+        content: "The easiest way for you to gain access to multiple token holdings at once by the purchase of one super token",
+        link: "/myria"
     },
 ]
 const bgColor = "bg-brand-black-2 text-white"

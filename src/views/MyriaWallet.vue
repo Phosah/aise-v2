@@ -4,6 +4,8 @@ import Header from '../components/Header.vue';
 import LayoutOne from '../components/LayoutOne.vue';
 import myriaWalletCover from '../assets/myria/myria-home.png'
 import photo1 from "../assets/myria/problem.png"
+import CreatePersonas from '../components/CreatePersonas.vue';
+import persona1 from "../assets/myria/persona-1.png"
 
 const info = {
     title: "Myria Wallet",
@@ -27,6 +29,27 @@ const problem = {
     img: photo1,
     alt: "Problem",
 }
+const personasArr = [
+    {
+        img: persona1,
+        alt: "Gamer",
+        about: "A 24-year -old online gamer based in Texas, United States. She has been running her online playing online games for the last 4 years and started gamefi for over 11 months, she loves the conquests and plays for hours non-stop",
+        goals: [
+            "Jasmine needs a way to make transactions of her rewarded tokens from one address to another or even an external wallet",
+            "Jasmine occasionally transfers NFTs to her fellow guild members",
+        ],
+        points: [
+            "Unable to transfer her assets to friends or other addresses",
+            "Unable to properly know the state of her crypto transactions when she sends them form other wallets",
+            "Have to wait long hours for some transactions"
+        ],
+        needTitle: "Need",
+        needs: [
+            "She needs the means to transfer NFT assets",
+            "She needs a way to rent assets that she currently doesn't have but needs to play better"
+        ]
+    },
+]
 </script>
 
 <template>
@@ -103,6 +126,38 @@ const problem = {
                     <div class="p-6 bg-red-100 rounded-md">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
                 </div>
             </div>
+        </section>
+        <section class="max-w-7xl mx-auto my-20 px-6">
+            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Competitive Analysis</h3>
+            <p class="mb-4">Understanding competitors who are providing similar solutions in the space on how they provide solutions for similar user needs has helped me define what creative solutions could be designed and improved for our product. </p>
+            <div class="flex items-center space-x-6">
+                <div><img src="../assets/myria/logo1.png" alt="Logo" /></div>
+                <div><img src="../assets/myria/logo2.png" alt="Logo" /></div>
+                <div><img src="../assets/myria/logo3.png" alt="Logo" /></div>
+                <div><img src="../assets/myria/logo4.png" alt="Logo" /></div>
+                <div><img src="../assets/myria/logo5.png" alt="Logo" /></div>
+                <div><img src="../assets/myria/logo6.png" alt="Logo" /></div>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto my-20 px-6">
+            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Market Validation</h3>
+            <p class="mb-12">The blockchain market has been one that has been one of the fastest-growing space in the last 5 years with a tremendous increase in the number of active blockchain wallet users this coupled with the game environment which has over 1m active game users on the blockchain and over 3.03bn gamers in general, holds tremendous market base for Myria</p>
+            <p>2022 Gaming market revenue : $300bn</p>
+            <div>
+                <div class="flex space-x-10 mb-6 font-new-paris-kingsize text-xl md:text-2xl font-bold">
+                    <h4 class="flex-1">No of  blockchain wallets</h4>
+                    <h4 class="flex-1">ActiveOnline  Gamers</h4>
+                </div>
+                <div class="flex space-x-10 mb-6">
+                    <div class="flex-1"><img src="../assets/myria/validation-1.png" alt="" /></div>
+                    <div class="flex-1"><img src="../assets/myria/validation-2.png" alt="" /></div>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto my-20 px-6">
+            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">User Persona</h3>
+            <p class="mb-6">Based on the generative user research I conducted, I created user personas that capture the essence of my target group. Jasmine helped me to always keep the needs of the users at the forefront.</p>
+            <CreatePersonas :personas="personasArr"/>
         </section>
     </main>   
 </template>

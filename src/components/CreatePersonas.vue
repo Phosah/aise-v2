@@ -23,6 +23,14 @@ defineProps({
                     <li>{{ point }}</li>
                 </ul>
             </div>
+            <!-- Using an additional div that displays for only certain components-->
+            <div class="mb-8">
+                <h3 class="mb-4 text-2xl font-new-paris-kingsize">{{persona.needTitle}}</h3>
+                <ul class="pl-6 list-disc" v-for="(need, ix) in persona.needs" :key="ix">
+                    <li>{{ need }}</li>
+                </ul>
+            </div>
+            <!-- end of Using an additional div that displays for only certain components-->
             <div class="mb-8">
                 <h3 class="mb-4 text-2xl font-new-paris-kingsize">Goals & Needs</h3>
                 <ul class="pl-6 list-disc" v-for="(goal, ix) in persona.goals" :key="ix">

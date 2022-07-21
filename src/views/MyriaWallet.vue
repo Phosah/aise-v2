@@ -36,5 +36,73 @@ const problem = {
         <section class="max-w-7xl mx-auto px-6">
             <LayoutOne :page="problem" />
         </section>
+        <section class="max-w-7xl mx-auto my-20 px-6">
+            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Background</h3>
+            <p class="mb-4">Crypto is the future of games and with an ever-growing aspect of life there is bound to be evolution and this influences how we bring solutions to solve the needs that arise from the change.
+            This evolution introduced gamefi. This is still similar to the online and gaming console gaming experience in which we get entertained by overcoming challenges but now on the blockchain, there is an even greater value proposition where players get rewarded for their engagement with the games, and these rewards unlike conventional gaming experience these rewards can be converted to real-world value with both fungible and non-fungible tokens.
+            With a lot of GameFi in the ecosystems there remains a problem of interoperability between these game ecosystems and this is due to the little or limited transactional interactions between such games, players, and their resources.  
+            As solutions keep rising to help mitigate this problem we have a few notable ones these include; 
+            The ability of players to join guilds and have access to gaming assets that they could not afford or have access to enables them to play better and earn more.
+            The ability of players to rent game assets they don't have resources to get or the skill level necessary to attain and gamers rent their game assets to other gamers temporarily.</p>
+            <p class="mb-4">But all these solutions still have one foundation that it heavily depends on  and that is the ability of gamers to seamlessly transfer these assets and their token rewards from one person to another or from one address to another</p>
+        </section>
+        <section class="my-20 px-6">
+            <div class="mb-12">
+                <h3 class="mb-6 text-3xl font-new-paris-kingsize">Kick-Off & Design Process</h3>
+                <p>To design the project properly, i had to carry out a series of activities which started with a call with the product owners the vision was clearly explained and which was a benchmark for the research and interviews; below are the activities carried out in steps</p>
+            </div>
+            <div class="grid grid-cols-2 gap-8">
+                <div class="p-6 border border-black border-opacity-25 rounded-md ">
+                    <h4 class="mb-4 text-xl font-new-paris-kingsize">Research</h4>
+                    <p>During the design process i carried out research about the problem and the market base to guide my design solutions from the users and business perspectives</p>
+                </div>
+                <div class="p-6 border border-black border-opacity-25 rounded-md ">
+                    <h4 class="mb-4 text-xl font-new-paris-kingsize">Interviews</h4>
+                    <p>Interviews of about 4 users of blockchain wallets and gamefi were done to ensure the design was in sync with users needs and empathize with their pain points</p>
+                </div>
+                <div class="p-6 border border-black border-opacity-25 rounded-md ">
+                    <h4 class="mb-4 text-xl font-new-paris-kingsize">UI Design</h4>
+                    <p>After carefully research and accumulating sufficient data the design was done in an agile manner with little paper sketches and quickly into high fidelity prototypes</p>
+                </div>
+                <div class="p-6 border border-black border-opacity-25 rounded-md ">
+                    <h4 class="mb-4 text-xl font-new-paris-kingsize">Review</h4>
+                    <p>After the design was done a quick test was done to see how easy it was for users to identify their tasks and this helped in the final solutions</p>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto my-20 px-6">
+            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Background</h3>
+            <p class="mb-4">During the research phase, I engaged with users in the gamefi space, traditional wallet solutions, and the regular gaming spaces to get deeper insights into how players transact with one another and monitor their transactions were asked 
+            After listening carefully to a couple of users in I was able to identify users who needed a way to stay up to date on their transaction status, a lot of wallets allow you to send tokens but you just get to wait for sometimes hours till the transaction is successful or failed without extra feedback on why the transaction is taking that long
+            Also, not all gameFi protocols are built on the same network hence transferring assets from various networks needs to be provided for a seamless transaction.
+            Lastly, 75% of the users needed a way for them to connect their wallets directly to external protocols where they can borrow and rent the assets that would help their gameplay</p>
+        </section>
+        <section class="max-w-7xl mx-auto my-20 px-6">
+            <h3 class="md:w-1/2 font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Insigts from User Interviews</h3>
+            <div class="flex items-center space-x-6">
+                <div>
+                    <div class="p-6 bg-white rounded-md">I want a way to be able to send tokens from one chain in my wallet to another</div>
+                </div>
+                <div><img src="../assets/myria/user1.png" alt="user" /></div>
+            </div>
+            <div class="flex items-center space-x-6">
+                <div><img src="../assets/myria/user2.png" alt="user" /></div>
+                <div>
+                    <div class="p-6 bg-red-100 rounded-md">I want to be able to send NFTs from my wallet to another wallet of either mine or a friend's account</div>
+                </div>
+            </div>
+            <div class="flex items-center space-x-6">
+                <div>
+                    <div class="p-6 bg-white rounded-md">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
+                </div>
+                <div><img src="../assets/myria/user3.png" alt="user" /></div>
+            </div>
+            <div class="flex items-center space-x-6">
+                <div><img src="../assets/myria/user4.png" alt="user" /></div>
+                <div>
+                    <div class="p-6 bg-red-100 rounded-md">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
+                </div>
+            </div>
+        </section>
     </main>   
 </template>

@@ -291,7 +291,7 @@ const themeMode = 'light'
             <div>
                 <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Conclusion</h2>
                 <p class="mb-6">This is a fintech project that I loved so much as it holds an emotional attachment for me as an African, as this is a product that I feel would impact the lives of a lot of Africans and Nigeria where I come from. The ability to get access to funding for your startup would help lives and alleviate poverty in the nation. Also, the ability to have a user that I would become in the nearest future would give me room to invest wisely.</p>
-                <p>Explore the live project: <a href="https://www.dabafinance.com">https://www.dabafinance.com</a></p>
+                <p>Explore the live project: <a class="border-b border-black" href="https://www.dabafinance.com">https://www.dabafinance.com</a></p>
             </div>
         </section>
         <OtherProjects />

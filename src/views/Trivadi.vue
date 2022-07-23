@@ -4,7 +4,6 @@ import Header from '../components/Header.vue';
 import LayoutOne from '../components/LayoutOne.vue'
 import trivadiCover from '../assets/trivadi/trivadi-home.png'
 import background from "../assets/trivadi/background.png"
-import photo1 from '../assets/trivadi/research.png'
 import CreatePersonas from '../components/CreatePersonas.vue';
 import Footer from '../components/Footer.vue';
 import OtherProjects from '../components/OtherProjects.vue';
@@ -12,7 +11,7 @@ import persona1 from '../assets/trivadi/persona-1.png'
 import persona2 from "../assets/trivadi/persona-2.png"
 import LayoutTwo from '../components/LayoutTwo.vue';
 import LayoutThree from '../components/LayoutThree.vue';
-import photo11 from "../assets/trivadi/account.png"
+import photo1 from '../assets/trivadi/research.png'
 import photo2 from "../assets/trivadi/home.png"
 import photo3 from "../assets/trivadi/discover.png"
 import photo4 from "../assets/trivadi/shipment.png"
@@ -22,6 +21,8 @@ import photo7 from "../assets/trivadi/booking.png"
 import photo8 from "../assets/trivadi/tour.png"
 import photo9 from "../assets/trivadi/game.png"
 import photo10 from "../assets/trivadi/speech.png"
+import photo11 from "../assets/trivadi/account.png"
+import photo12 from "../assets/trivadi/research.png"
 
 const info = {
     title: "Trivadi",
@@ -167,6 +168,15 @@ const speech = {
     img: photo10,
     alt: "Gamified Tasks"
 }
+const step = {
+    title: "Research",
+    paragraphs: [
+        "The first step of the research phase was finding out information about Itinerant families traveling and what they face, the next step was to carry out interviews to gain more insights from users who travel frequently and what has been their experiences",
+        "The interview stage was comprised of 7 candidates which encompassed singles, families, and travel professionals / agents."
+    ],
+    img: photo12,
+    alt: "research"
+}
 const themeMode = "light"
 </script>
 
@@ -179,7 +189,7 @@ const themeMode = "light"
                 <LayoutOne :page="overview" />
             </div>
         </section>
-        <section class="my-20 px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="mb-12">
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">My Role & Approach</h3>
                 <p>Based on the data gotten from the research gotten before joiAs the only UX/UI designer on the project, I was responsible for the overall process of the design of the product which included the research, sketches, and final high-fidelity design. My process encompassed 4 stages</p>
@@ -219,7 +229,10 @@ const themeMode = "light"
                 </div>
             </div>
         </section>
-        <section class="my-20 px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <LayoutOne :page="step"/>
+        </section>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
              <div class="mb-12">
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">Surveys</h3>
                 <p>The next step of the process i carried out was creating a survey document to be able to gather as much quantitative data to be able to have even deeper insights for the project</p>
@@ -237,19 +250,19 @@ const themeMode = "light"
                 <div><img src="../assets/trivadi/survey-10.png" alt="Survey" /></div>
             </div>
         </section>
-        <section class="my-20 px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div>
                 <img src="../assets/trivadi/user-map.png" alt="User map" />
             </div>
         </section>
-        <section class="my-20 px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
              <div class="md:w-1/2 mb-12">
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">Creating Personas</h3>
                 <p>The personas created were aim at having a mental picture of the type of users wwe would have in order to be able to properly empathize with the users</p>
             </div>
             <CreatePersonas :personas="personasArr" />
         </section>
-        <section class="my-20 px-6">
+        <section class="max-w-7xl mx-auto px-6">
             <LayoutOne :page="account" />
             <LayoutTwo :page="home" />
             <LayoutOne :page="discovery" />
@@ -259,15 +272,17 @@ const themeMode = "light"
             <LayoutOne :page="booking" />
             <LayoutTwo :page="tour" />
             <LayoutOne :page="task" />
-            <LayoutThree :page="speech" />
+            <div class="md:mt-48">
+                <LayoutThree :page="speech" />
+            </div>
         </section>
          <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-12 text-2xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
-            <div class="mb-12">
-                <h2 class="mb-6 text-2xl font-bold font-new-paris-kingsize">Learnings</h2>
+            <div class="mb-16">
+                <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Learnings</h2>
                 <p class="mb-6">The project was fun to work on and I took my time to understand how travelers think and operate it made me properly identify the pain points of users and think of possible solutions both that could help their pain points and also provide an extra solution to provide more value</p>
-                <p class="bg-red-300">Thank you</p>
             </div>
+            <div class=" text-2xl md:text-3xl font-bold font-new-paris-kingsize">Thank you</div>
         </section>
         <OtherProjects />
         <Footer :bgColor="themeMode"/>

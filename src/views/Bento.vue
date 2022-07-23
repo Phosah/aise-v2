@@ -220,7 +220,7 @@ const themeMode = "light"
             <div>
                 <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Conclusion</h2>
                 <p class="mb-6">People by Bento is a project that has simplified the processes of employee management making it easy to handle either large or small-scale organizations with just one interface and all your headaches of paperwork to maintain organization is curbed, you can easily now monitor EMployees performance and know-how to improve their workflow to take your company to the ne\xt level it deserves.</p>
-                <p>Explore the live project: <a href="https://www.bento.africa">https://www.bento.africa</a></p>
+                <p>Explore the live project: <a class="border-b border-black" href="https://www.bento.africa">https://www.bento.africa</a></p>
             </div>
         </section>
         <OtherProjects />

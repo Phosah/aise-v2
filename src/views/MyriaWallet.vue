@@ -212,7 +212,7 @@ const themeMode = "light"
             <p class="mb-6">Based on the generative user research I conducted, I created user personas that capture the essence of my target group. Jasmine helped me to always keep the needs of the users at the forefront.</p>
             <CreatePersonas :personas="personasArr"/>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1
                 class="mb-6 text-2xl md:text-3xl font-semibold font-new-paris-kingsize"
             >User Stories</h1>

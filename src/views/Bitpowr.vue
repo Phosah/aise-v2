@@ -218,7 +218,7 @@ const themeMode = "light"
         <section class="max-w-7xl mx-auto px-6">
             <LayoutOne :page="background"/>
         </section>
-        <section class="my-20 px-6">
+        <section class="max-w-7xl mx-auto my-20 px-6">
             <div class="">
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">My Goals</h3>
                 <div>
@@ -234,21 +234,28 @@ const themeMode = "light"
         <section class="max-w-7xl mx-auto px-6">
             <LayoutOne :page="approach"/>
             <LayoutTwo :page="analysis" />
-            <div class="my-20 bg-red-200">Research Process</div>
+            <div class="flex space-x-2 my-20">
+                <div class="flex-1">
+                    <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Research Process</h3>
+                    <p class="mb-4">The next phase was to carry out interviews with potential users of the products and people who build on the blockchain to identify their pain-points and how they carry out their activities without the solution bitpowr would give them</p>
+                    <p>This was helpful to get the views of fresh users as their opinions and needs would be unbias of emotional sentiments and attachments as the aim of the redesign was not just to improve the experience of existing users but to also bring and retain new users</p>
+                </div>
+                <div class="flex-1"><img src="../assets/bento/research-process.png" alt=""></div>
+            </div>
             <LayoutOne :page="competitors" />
         </section>
-        <section class="my-20 md:my-40">
-            <div class="max-w-7xl mx-auto px-6">
-                <h1 class="mb-8 text-3xl md:text-4xl font-bold font-new-paris-kingsize">How might we</h1>
+        <section class="max-w-7xl mx-auto px-6 my-20 md:my-40">
+            <div class="">
+                <h1 class="mb-6 text-3xl md:text-3xl font-bold font-new-paris-kingsize">How might we</h1>
                 <p class="mb-12">The next phase was to gather the insights gotten from the research phase and bring these to the CEO, PM, CTO and the marketing team the idea was to have an inhouse brainstorming session with the Product visionaries and others to get the best ideas out through some How Might We questions</p>
             </div>
             <div><img class="w-full" src="../assets/bitpowr/notes.png" alt="Notes" /></div>
         </section>
-        <section class="my-20 px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="">
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">Well defined goals.</h3>
-                <p class="mb-8">When we were done with the brainstorming session, I compiled all that has been discussed and gathered all the data that was mentioned to get the best ideas out there with this I scheduled a session with the CEO and, we went over all the data and decided on goals for the redesign increase platform value, grow the customer base and increase conversion and reduce bounce rate. Below are the targets we set and plans that were agreed upon</p>
-                <div class="mb-8">
+                <p class="mb-12">When we were done with the brainstorming session, I compiled all that has been discussed and gathered all the data that was mentioned to get the best ideas out there with this I scheduled a session with the CEO and, we went over all the data and decided on goals for the redesign increase platform value, grow the customer base and increase conversion and reduce bounce rate. Below are the targets we set and plans that were agreed upon</p>
+                <div class="mb-10">
                     <h4 class="mb-6 text-xl font-new-paris-kingsize">Increase Conversion</h4>
                     <p class="mb-1">a. Create a cleaner and more user-friendly interface </p>
                     <p class="mb-1">b. The new platform should convert leads from Demo bookings to signups</p>
@@ -262,8 +269,8 @@ const themeMode = "light"
                 </div>
             </div>
         </section>
-        <section class="my-20 px-6">
-            <h1 class="mb-6 text-4xl font-new-paris-kingsize">High Fidelity Designs</h1>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h1 class="mb-6 text-6xl font-new-paris-kingsize">High Fidelity Designs</h1>
             <LayoutFour :page="signup"/>
             <LayoutFour :page="dashboard"/>
             <LayoutFour :page="transaction"/>
@@ -280,23 +287,42 @@ const themeMode = "light"
         </section>
         <section class="my-20 md:my-40">
             <div class="max-w-7xl mx-auto px-6">
-                <h3 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Mobile Responsive Screens</h3>
+                <h3 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Mobile Responsive Screens</h3>
                 <p class="mb-12">With the mindset that a lot of users might want to carry out transactions while they commute attention had to be placed on the mobile interfaces to account for all users and their scenarios</p>
             </div>
             <div><img class="w-full" src="../assets/bitpowr/mobile-screens.png" alt="Mobile screens" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-12 text-2xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
-            <div class="mb-12">
-                <h2 class="mb-6 text-2xl font-bold font-new-paris-kingsize">Learnings and More</h2>
+            <div class="mb-16">
+                <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Learnings and More</h2>
                 <p class="mb-6">I enjoyed working on bitpowr as it was my first exposure to web3 asides from the conventional Centralized exchanges. I got to learn the dynamics of the blockchain and how it can be used in real-life activities, and learned how to be transparent in task flows s this is a project that deals in financial transactions so the slightest mistake can cost a lot, and unlike traditional banks that cash can be reversed from a wrong address it's not so easy for such on the blockchain so every action carried out has to be clear and precise</p>
                 <p>Working on a web3 product that is both an Enterprise product and a B2C product gets you to think about a wide range of users and ensure the solutions meets their needs and this helped in improving my skills as User Experience designer and design thinker</p>               
             </div>
             <div>
-                <h2 class="mb-6 text-2xl font-bold font-new-paris-kingsize">Key Metrics</h2>
+                <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Key Metrics</h2>
                 <p class="mb-6">These metrics were gotten 3 months after the redesign phase to test the success of the project</p>
-                <div class="bg-red-200">something goes here...</div>
-                <p>Explore the live project: <a href="https://www.dabafinance.com">https://www.dabafinance.com</a></p>
+                <div class="flex space-x-6 mb-12">
+                    <div class="flex-1 p-6 bg-[#F4ECDF] text-[#775D4E] rounded-br-2xl">
+                        <h4 class="mb-3 text-lg font-bold font-new-paris-kingsize">Before Redesign</h4>
+                        <ul class="pl-6 list-disc">
+                            <li>Average monthly users was 24</li>
+                            <li>Monthly new users was 4</li>
+                            <li>Demo conversion rate was 23%</li>
+                            <li>Churn rate was between 51.2% - 62.3%</li>
+                        </ul>
+                    </div>
+                    <div class="flex-1 p-6 bg-[#DFF4E7] text-[#4E7768] rounded-br-2xl">
+                        <h4 class="mb-3 text-lg font-bold font-new-paris-kingsize">After Redesign</h4>
+                        <ul class="pl-6 list-disc">
+                            <li>Average monthly users grew by 80%</li>
+                            <li>Monthly new users grew by 73.59%</li>
+                            <li>Demo conversion rate became 89%</li>
+                            <li>Churn rate reduced to 1.72%</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>Explore the live project: <a class="border-b border-black" href="https://www.dabafinance.com">https://www.dabafinance.com</a></p>
             </div>
         </section>
         <OtherProjects />

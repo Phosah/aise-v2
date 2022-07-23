@@ -2,18 +2,18 @@
 import Navbar from '../components/Navbar.vue';
 import Header from '../components/Header.vue';
 import LayoutOne from '../components/LayoutOne.vue';
+import LayoutThree from '../components/LayoutThree.vue';
 import Footer from '../components/Footer.vue';
 import OtherProjects from '../components/OtherProjects.vue';
-import myriaWalletCover from '../assets/myria/myria-home.png'
-import photo11 from "../assets/myria/problem.png"
 import CreatePersonas from '../components/CreatePersonas.vue';
+import myriaWalletCover from '../assets/myria/myria-home.png'
 import persona1 from "../assets/myria/persona-1.png"
-import LayoutThree from '../components/LayoutThree.vue';
 import photo1 from "../assets/myria/dashboard.png"
 import photo2 from "../assets/myria/nft.png"
 import photo3 from "../assets/myria/transaction.png"
 import photo4 from "../assets/myria/renting-protocol-1.png"
 import photo5 from "../assets/myria/renting-protocol-2.png"
+import photo11 from "../assets/myria/problem.png"
 
 const info = {
     title: "Myria Wallet",
@@ -59,7 +59,7 @@ const personasArr = [
     },
 ]
 const dashboard = {
-    title: "simplified Dashboard",
+    title: "Simplified Dashboard",
     paragraphs: [
         "The first step was to create a simplified and user-friendly dashboard experience that was both functional and aesthetic to ease the user into the product From the dashboard you can view all your assets that are accessible to you in the wallet, and view all your NFT’s by switching a tab also at the same time you can view all transaction activities at a glance without having to click any button",
         "Last but not the least you can easily see your account balance and access other functions like sending, receiving, buying, and exchange (bridge and swapping) your tokens"
@@ -68,7 +68,7 @@ const dashboard = {
     alt: "Dashboard",
 }
 const nft = {
-    title: "simplified Dashboard",
+    title: "Manage NFT",
     paragraphs: [
         "Have the ability to see all my NFT assets on the platform and also import assets from other marketplaces to my wallet dashboard so I can be able to manage all my assets at once. Also, you can send NFTs from your wallet to any other address easily.",
         "When sending your NFT unlike regular tokens, you  get to see the preview of the NFT to be sent as a lot of users have NFTs that are similar in look and this can make them select a wrong NFT when picking them from the thumbnail lists so a larger preview would enable them see better and reduce mistakes"
@@ -120,7 +120,7 @@ const themeMode = "light"
             The ability of players to rent game assets they don't have resources to get or the skill level necessary to attain and gamers rent their game assets to other gamers temporarily.</p>
             <p class="mb-4">But all these solutions still have one foundation that it heavily depends on  and that is the ability of gamers to seamlessly transfer these assets and their token rewards from one person to another or from one address to another</p>
         </section>
-        <section class="my-20 px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="mb-12">
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">Kick-Off & Design Process</h3>
                 <p>To design the project properly, i had to carry out a series of activities which started with a call with the product owners the vision was clearly explained and which was a benchmark for the research and interviews; below are the activities carried out in steps</p>
@@ -144,41 +144,41 @@ const themeMode = "light"
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto my-20 px-6">
-            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Background</h3>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Research Process</h3>
             <p class="mb-4">During the research phase, I engaged with users in the gamefi space, traditional wallet solutions, and the regular gaming spaces to get deeper insights into how players transact with one another and monitor their transactions were asked 
             After listening carefully to a couple of users in I was able to identify users who needed a way to stay up to date on their transaction status, a lot of wallets allow you to send tokens but you just get to wait for sometimes hours till the transaction is successful or failed without extra feedback on why the transaction is taking that long
             Also, not all gameFi protocols are built on the same network hence transferring assets from various networks needs to be provided for a seamless transaction.
             Lastly, 75% of the users needed a way for them to connect their wallets directly to external protocols where they can borrow and rent the assets that would help their gameplay</p>
         </section>
-        <section class="max-w-7xl mx-auto my-20 px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h3 class="md:w-1/2 font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Insigts from User Interviews</h3>
-            <div class="flex items-center space-x-6">
-                <div>
-                    <div class="p-6 bg-white rounded-md">I want a way to be able to send tokens from one chain in my wallet to another</div>
+            <div class="flex items-center justify-center space-x-6">
+                <div class="w-1/3">
+                    <div class="p-6 bg-white rounded-2xl">I want a way to be able to send tokens from one chain in my wallet to another</div>
                 </div>
                 <div><img src="../assets/myria/user1.png" alt="user" /></div>
             </div>
-            <div class="flex items-center space-x-6">
+            <div class="flex items-center justify-center space-x-6">
                 <div><img src="../assets/myria/user2.png" alt="user" /></div>
-                <div>
-                    <div class="p-6 bg-red-100 rounded-md">I want to be able to send NFTs from my wallet to another wallet of either mine or a friend's account</div>
+                <div class="w-1/3">
+                    <div class="p-6 bg-white rounded-2xl">I want to be able to send NFTs from my wallet to another wallet of either mine or a friend's account</div>
                 </div>
             </div>
-            <div class="flex items-center space-x-6">
-                <div>
-                    <div class="p-6 bg-white rounded-md">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
+            <div class="flex items-center justify-center space-x-6">
+                <div class="w-1/3">
+                    <div class="p-6 bg-white rounded-2xl">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
                 </div>
                 <div><img src="../assets/myria/user3.png" alt="user" /></div>
             </div>
-            <div class="flex items-center space-x-6">
+            <div class="flex items-center justify-center space-x-6">
                 <div><img src="../assets/myria/user4.png" alt="user" /></div>
-                <div>
-                    <div class="p-6 bg-red-100 rounded-md">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
+                <div class="w-1/3">
+                    <div class="p-6 bg-white rounded-2xl">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto my-20 px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Competitive Analysis</h3>
             <p class="mb-4">Understanding competitors who are providing similar solutions in the space on how they provide solutions for similar user needs has helped me define what creative solutions could be designed and improved for our product. </p>
             <div class="flex items-center space-x-6">
@@ -190,14 +190,16 @@ const themeMode = "light"
                 <div><img src="../assets/myria/logo6.png" alt="Logo" /></div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto my-20 px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Market Validation</h3>
-            <p class="mb-12">The blockchain market has been one that has been one of the fastest-growing space in the last 5 years with a tremendous increase in the number of active blockchain wallet users this coupled with the game environment which has over 1m active game users on the blockchain and over 3.03bn gamers in general, holds tremendous market base for Myria</p>
-            <p>2022 Gaming market revenue : $300bn</p>
+            <div class="mb-16">
+                <p class="mb-4">The blockchain market has been one that has been one of the fastest-growing space in the last 5 years with a tremendous increase in the number of active blockchain wallet users this coupled with the game environment which has over 1m active game users on the blockchain and over 3.03bn gamers in general, holds tremendous market base for Myria</p>
+                <p>2022 Gaming market revenue : <span class="font-bold">$300bn</span></p>
+            </div>
             <div>
                 <div class="flex space-x-10 mb-6 font-new-paris-kingsize text-xl md:text-2xl font-bold">
-                    <h4 class="flex-1">No of  blockchain wallets</h4>
-                    <h4 class="flex-1">ActiveOnline  Gamers</h4>
+                    <h4 class="flex-1 font-new-paris-kingsize text-xl md:text-2xl font-bold">No of  blockchain wallets</h4>
+                    <h4 class="flex-1 font-new-paris-kingsize text-xl md:text-2xl font-bold">ActiveOnline  Gamers</h4>
                 </div>
                 <div class="flex space-x-10 mb-6">
                     <div class="flex-1"><img src="../assets/myria/validation-1.png" alt="" /></div>
@@ -205,17 +207,17 @@ const themeMode = "light"
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto my-20 px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">User Persona</h3>
             <p class="mb-6">Based on the generative user research I conducted, I created user personas that capture the essence of my target group. Jasmine helped me to always keep the needs of the users at the forefront.</p>
             <CreatePersonas :personas="personasArr"/>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6">
             <h1
-                class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
+                class="mb-6 text-2xl md:text-3xl font-semibold font-new-paris-kingsize"
             >User Stories</h1>
             <p class="mb-10">User stories helped me to identify necessary flows that needed to be accounted for in the design and this helped guide the solutions in general</p>
-            <ul class="list-disc pl-6 text-xs">
+            <ul class="list-disc pl-6">
                 <li
                     class="mb-2"
                 >As a user, i want to be able to transfer crypto-assets from one address to another so I can use the tokens for other purposes</li>
@@ -233,9 +235,9 @@ const themeMode = "light"
                 >As a user, i want to be able to see my account balance so I know my financial status of that wallet</li>
             </ul>
         </section>
-        <section class="my-20 px-6">
-            <h1 class="mb-4 text-4xl font-new-paris-kingsize">Design Decesions</h1>
-            <p class="mb-6">After carefully analyzing the data and working with an MVP and time constraints, the following solutions were designed below</p>
+        <section class="max-w-7xl mx-auto my-20 px-6">
+            <h1 class="mb-4 text-6xl font-new-paris-kingsize">Design Decisions</h1>
+            <p class="md:w-1/2 mb-6">After carefully analyzing the data and working with an MVP and time constraints, the following solutions were designed below</p>
             <div>
                 <LayoutThree :page="dashboard" />
                 <LayoutThree :page="nft" />
@@ -252,7 +254,7 @@ const themeMode = "light"
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div>
-                <h2 class="mb-6 text-2xl font-bold font-new-paris-kingsize">Conclusion</h2>
+                <h2 class="mb-6 text-3xl md:text-5xl font-bold font-new-paris-kingsize">Conclusion</h2>
                 <p class="mb-6">There are a lot of solutions that can be provided to ease the lives of users using wallets and this in turn improves the user experience of the web3 space in general as wallets are the foundational blocks to the web3 ecosystem.</p>
                 <p class="mb-6">The ability for users to easily manage their NFT’s their assets across multiple networks, and protocols from one space and the ability for users to be guided and kept in sync with their transaction activities would improve clarity and inturn trust for users</p>
                 <p>Also, the ability for better transactions would improve interoperability of the web3 space and this, in turn, improves the entire ecosystem Thanks</p>

@@ -277,7 +277,7 @@ const themeMode = "light"
             </div>
         </section>
          <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h1 class="mb-12 text-2xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
+            <h1 class="mb-12 text-3xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
             <div class="mb-16">
                 <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Learnings</h2>
                 <p class="mb-6">The project was fun to work on and I took my time to understand how travelers think and operate it made me properly identify the pain points of users and think of possible solutions both that could help their pain points and also provide an extra solution to provide more value</p>

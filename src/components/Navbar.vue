@@ -52,7 +52,7 @@ const openMenu = computed(() => {
                     </div>
                 </div>
                 <button
-                    class="py-3 px-16 rounded-md border border-brand-black-1 text-brand-black-1 font-euclid-circular-bold hover:bg-brand-gray-3">Lets
+                    class="py-3 px-16 rounded-md border border-brand-black-1 text-brand-black-1 font-euclid-circular-bold hover:bg-brand-gray-3 transition-all">Lets
                     Talk</button>
             </div>
         </div>

@@ -22,6 +22,7 @@ import logo14 from "../assets/trustbreed-logo.png"
 import logo15 from "../assets/momo-logo.png"
 import gif1 from "../assets/gif1.gif"
 import gif2 from "../assets/gif2.gif"
+import gif3 from "../assets/gif4.gif"
 import photo1 from "../assets/fintech-1.png"
 import testimonials1 from "../assets/testimonials-1.png"
 import testimonials2 from "../assets/testimonials-2.jpeg"
@@ -126,7 +127,7 @@ const projectsArr = [
   {
     title: "Fintech Projects",
     text: "Explore various fintech solutions simplifying complex problems for users around the world.",
-    gif: photo1,
+    gif: gif3,
     url: "/fintech"
   },
   {
@@ -216,7 +217,7 @@ const prev = () => {
               done for projects and clients
               all over the world ranging from web designs to mobile designs.</p>
           </div>
-          <a href="https://dribbble.com/Aise_Idahor" class="inline-block my-6 px-10 py-3 border border-brand-black-1 rounded-md">View Dribbble</a>
+          <a href="https://dribbble.com/Aise_Idahor" class="inline-block my-6 px-10 py-3 border border-brand-black-1 rounded-md hover:bg-brand-gray-3 transition-all">View Dribbble</a>
         </div>
         <div class="md:flex-1">
           <div class="flex items-center space-x-6 space-y-6">

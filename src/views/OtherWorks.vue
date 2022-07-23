@@ -31,7 +31,6 @@ const worksArr = [
         link: "/trustbreed"
     },
     {
-        // img: athenaCover,
         alt: "Doorstep Logistics",
         title: "Doorstep Logistics",
         content: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users",

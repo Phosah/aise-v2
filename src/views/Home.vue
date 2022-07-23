@@ -22,6 +22,7 @@ import logo14 from "../assets/trustbreed-logo.png"
 import logo15 from "../assets/momo-logo.png"
 import gif1 from "../assets/gif1.gif"
 import gif2 from "../assets/gif2.gif"
+import photo1 from "../assets/fintech-1.png"
 import testimonials1 from "../assets/testimonials-1.png"
 import testimonials2 from "../assets/testimonials-2.jpeg"
 import testimonials3 from "../assets/testimonials-3.jpeg"
@@ -125,7 +126,7 @@ const projectsArr = [
   {
     title: "Fintech Projects",
     text: "Explore various fintech solutions simplifying complex problems for users around the world.",
-    gif: gif2,
+    gif: photo1,
     url: "/fintech"
   },
   {

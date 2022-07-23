@@ -23,14 +23,14 @@ const openMenu = computed(() => {
     <div id="navbar" class="top-0 right-0 left-0">
         <div class="flex items-center justify-between md:hidden mb-20">
             <div class="">
-                <router-link to="/"><img src="../assets/logo.png" alt="" /></router-link>
+                <router-link to="/"><img src="../assets/logo.svg" alt="" /></router-link>
             </div>
             <div @click="openMenu" class="px-2"><img class="w-12 h-12" src="../assets/menu-icon-dark.png" alt="Hamburger icon"></div>
         </div>
         <div class="hidden md:block max-w-7xl mx-auto py-10 px-6">
             <div class="flex items-center justify-between">
                 <div class="mb-8 md:mb-0">
-                    <router-link to="/"><img src="../assets/logo.png" alt="" /></router-link>
+                    <router-link to="/"><img src="../assets/logo.svg" alt="" /></router-link>
                 </div>
                 <div class="flex items-center justify-between text-brand-gray-2">
                     <div class="md:flex md:items-center md:space-x-6 lg:space-x-12">

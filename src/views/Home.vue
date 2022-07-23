@@ -132,7 +132,7 @@ const projectsArr = [
   {
     title: "Other Projects",
     text: "Have a wide range of project solutions in various niches of design from Logistics to commerce.",
-    gif: gif1,
+    gif: gif2,
     url: "/otherworks"
   },
 ]

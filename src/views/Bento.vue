@@ -92,15 +92,6 @@ const hiring = {
     img: photo5,
     alt: "hiring"
 }
-const onboarding = {
-    title: "Employee Onboarding",
-    paragraphs: [
-        "Employee onboarding is a vital aspect of an employee's experience in joining a team as it is the first impression the company gives an employee for joining so having it done well is key. I designed the product in a way that its easy to set up a mail and assign an onboarding/work buddy to guide the employee during his/her initial stages. Also the ability to assign necessary software, and hardware for productivity. Finally, all necessary o0nboarding documents including work manual and welcome videos can also be shared",
-    ],
-    
-    img: photo5,
-    alt: "onboarding"
-}
 const appraisal = {
     title: "Appraisal",
     paragraphs: [
@@ -198,7 +189,7 @@ const themeMode = "light"
             </div>
             <div><img class="w-full" src="../assets/bento/notes.png" alt="Notes" /></div>
         </section>
-        <section class="my-20 px-6">
+        <section class="max-w-7xl mx-auto my-20 px-6">
             <h1 class="mb-6 text-6xl font-new-paris-kingsize">High Fidelity Designs</h1>
             <div>
                 <LayoutThree :page="dashboard" />
@@ -206,16 +197,15 @@ const themeMode = "light"
                 <LayoutThree :page="job" />
                 <LayoutThree :page="hiring" />
                 <div>
-                    <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Interviews With HR’s</h3>
-                    <p class="mb-4">After the competitive study was done the next step was to interview HRs in the Nigerian space  as this aimed to understand the mode of operations of a standard HR and its operations in an organization before building a tool to ease the processes and make life easier</p>
+                    <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Employee Onboarding</h3>
+                    <p class="mb-4">Employee onboarding is a vital aspect of an employee's experience in joining a team as it is the first impression the company gives an employee for joining so having it done well is key. I designed the product in a way that its easy to set up a mail and assign an onboarding/work buddy to guide the employee during his/her initial stages. Also the ability to assign necessary software, and hardware for productivity. Finally, all necessary o0nboarding documents including work manual and welcome videos can also be shared</p>
                     <div class="grid grid-cols-2 gap-6">
-                        <div><img src="../assets/bento/discover-1.png" alt="discover" /></div>
-                        <div><img src="../assets/bento/discover-2.png" alt="discover" /></div>
-                        <div><img src="../assets/bento/discover-3.png" alt="discover" /></div>
-                        <div><img src="../assets/bento/discover-4.png" alt="discover" /></div>
+                        <div><img class="w-full" src="../assets/bento/discover-1.png" alt="discover" /></div>
+                        <div><img class="w-full" src="../assets/bento/discover-2.png" alt="discover" /></div>
+                        <div><img class="w-full" src="../assets/bento/discover-3.png" alt="discover" /></div>
+                        <div><img class="w-full" src="../assets/bento/discover-4.png" alt="discover" /></div>
                     </div>
                 </div>
-                <LayoutThree :page="onboarding" />
                 <LayoutThree :page="appraisal" />
                 <LayoutThree :page="leave" />
                 <LayoutThree :page="time" />
@@ -223,12 +213,12 @@ const themeMode = "light"
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-12 text-2xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
-            <div class="mb-12">
-                <h2 class="mb-6 text-2xl font-bold font-new-paris-kingsize">Learnings</h2>
+            <div class="mb-16">
+                <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Learnings</h2>
                 <p class="mb-6">While working on this project, I learned to understand how HRs perform activities and how versatile they can be and this in turn made me better at inclusive designs as I had to give users the best means to solve their problems and carry out their tasks but at the same time give enough room for customization and flexibility as the methods of carrying out operations differs from organization to organization</p>
             </div>
             <div>
-                <h2 class="mb-6 text-2xl font-bold font-new-paris-kingsize">Conclusion</h2>
+                <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Conclusion</h2>
                 <p class="mb-6">People by Bento is a project that has simplified the processes of employee management making it easy to handle either large or small-scale organizations with just one interface and all your headaches of paperwork to maintain organization is curbed, you can easily now monitor EMployees performance and know-how to improve their workflow to take your company to the ne\xt level it deserves.</p>
                 <p>Explore the live project: <a href="https://www.bento.africa">https://www.bento.africa</a></p>
             </div>

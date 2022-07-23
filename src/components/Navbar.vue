@@ -34,25 +34,25 @@ const openMenu = computed(() => {
                 </div>
                 <div class="flex items-center justify-between text-brand-gray-2">
                     <div class="md:flex md:items-center md:space-x-6 lg:space-x-12">
-                        <div class="mb-8 md:mb-0 hover:text-brand-gray-3 hover:transform hover:-translate-y-1 transition-all">
+                        <div class="mb-8 md:mb-0 hover:text-gray-400 hover:transform hover:-translate-y-0.5 transition-all">
                             <router-link to="/web3">Web 3</router-link>
                         </div>
-                        <div class="mb-8 md:mb-0 hover:text-brand-gray-3 hover:transform hover:-translate-y-1 transition-all">
+                        <div class="mb-8 md:mb-0 hover:text-gray-400 hover:transform hover:-translate-y-0.5 transition-all">
                             <router-link to="/fintech">Fintech</router-link>
                         </div>
-                        <div class="mb-8 md:mb-0 hover:text-brand-gray-3 hover:transform hover:-translate-y-1 transition-all">
+                        <div class="mb-8 md:mb-0 hover:text-gray-400 hover:transform hover:-translate-y-0.5 transition-all">
                             <router-link to="/otherworks">Others</router-link>
                         </div>
-                        <div class="mb-8 md:mb-0 hover:text-brand-gray-3 hover:transform hover:-translate-y-1 transition-all">
+                        <div class="mb-8 md:mb-0 hover:text-gray-400 hover:transform hover:-translate-y-0.5 transition-all">
                             <router-link to="/about">About</router-link>
                         </div>
-                        <div class="mb-8 md:mb-0 hover:text-brand-gray-3 hover:transform hover:-translate-y-1 transition-all">
+                        <div class="mb-8 md:mb-0 hover:text-gray-400 hover:transform hover:-translate-y-1 transition-all">
                             <a href="https://dribbble.com/Aise_Idahor" target="_blank">Visual Shots</a>
                         </div>
                     </div>
                 </div>
                 <button
-                    class="py-3 px-16 rounded-md border border-brand-black-1 text-brand-black-1 font-euclid-circular-bold hover:bg-brand-gray-3 transition-all">Lets
+                    class="py-3 px-16 rounded-md border border-brand-black-1 text-brand-black-1 font-euclid-circular-bold hover:bg-gray-400 transition-all">Lets
                     Talk</button>
             </div>
         </div>

@@ -5,7 +5,7 @@
       <h1 class="mb-10 text-6xl md:text-9xl font-new-paris-kingsize">About Me</h1>
       <p class="md:w-2/3 text-center text-brand-gray-2">I am a Product designer based in Nigeria who simplifies complex
         problems, loves to
-        travel, play video games (im kinda like the Fifa Champion) and oh yes i love good ANIME</p>
+        travel, play video games (i'm kinda like the Fifa Champion) and oh yes i love good ANIME</p>
     </div>
     <div class="flex items-center justify-center max-w-7xl mx-auto my-20 px-6 transition-all ease-in-out">
       <img class="animate-bounce" src="../assets/random1.png" alt="Scroll img">
@@ -24,7 +24,7 @@
       <div class="md:flex md:items-center md:justify-between mb-8">
         <h2 class="mb-6 md:mb-0 text-4xl md:text-6xl lg:text-7xl font-new-paris-kingsize">Work Experience</h2>
         <a href="../../Aise-Idahor.pdf" download="Aise-Idahor-CV.pdf" target="_blank" 
-          class="hidden md:block py-3 px-16 rounded-md border border-brand-black-1 text-brand-black-1 font-euclid-circular-bold">Download
+          class="hidden md:block py-3 px-16 rounded-md border border-brand-black-1 text-brand-black-1 hover:bg-gray-400 transition-all  font-euclid-circular-bold">Download
           Resume</a>
       </div>
       <div class="md:flex md:items-center md:space-x-16 mb-20">
@@ -34,7 +34,7 @@
           freelance</h3>
         <p class="md:flex-1">Aise is a designer focused on simplifying digital experiences. With every single project worked on, i bring forth a deep passion for creative problem solving which is what I deliver in the form of custom and memorable experiences.</p>
         <a href="../../Aise-Idahor.pdf" download="Aise-Idahor-CV.pdf" target="_blank" 
-          class="block md:hidden mt-12 py-3 rounded-md border border-brand-black-1 text-center text-brand-black-1 font-euclid-circular-bold">Download
+          class="block md:hidden mt-12 py-3 rounded-md border border-brand-black-1 text-center text-brand-black-1 hover:bg-gray-400 transition-all font-euclid-circular-bold">Download
           Resume</a>
       </div>
       <WorkExperiences :works="worksArr" />

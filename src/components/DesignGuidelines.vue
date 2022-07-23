@@ -5,7 +5,7 @@
           GUIDELINES</h2>
         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
           <template v-for="(guideline, index) in guidelines" :key="index">
-            <div class="mb-3 md:mb-6 px-6 py-6 bg-brand-blue-1 shadow-sm hover:transform hover:-translate-y-3 transition-all" :class="guideline.border">
+            <div class="mb-3 md:mb-6 px-6 py-6 bg-brand-blue-1 shadow-sm hover:transform hover:-translate-y-1 hover:scale-105 transition-all" :class="guideline.border">
                 <div class="mb-8"><img :src="guideline.img" :alt="guideline.alt"></div>
                 <h4 class="mb-6 text-2xl lg:text-3xl font-semibold font-playfair">{{ guideline.title }}</h4>
                 <p>{{ guideline.text }}</p>

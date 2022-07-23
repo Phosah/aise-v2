@@ -72,7 +72,7 @@ const research = {
         "I came into Arc as the only designer on the project to handle the research, brainstorming with the CEO who was the major visionair of the project and take those ideas, improve on them and create high fidelity mockups that would be tested and implemented. ",
         "I was shortly joined by another designer that would work directly under me in the cordination of the 2 initial projects that comprosed of arc these include the web3 aggregator and the NFT marketplace",
     ],
-    img: photo2,
+    img: photo4,
     alt: "role",
 }
 const personasArr = [

@@ -29,14 +29,14 @@ const themeMode = "light"
 
 <style scoped>
 .par {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/other-works/collectafrica1.png'); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/other-works/trigle1.png'); 
     background-size: cover;
     height: 100vh; 
 }  
 
 #par div:nth-child(2) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)),
-                  url('../assets/other-works/trigle1.png');
+                  url('../assets/bento/bento-home.png');
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -44,7 +44,7 @@ const themeMode = "light"
 
 #par div:nth-child(3) {
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), 
-                url('../assets/other-works/powrfinance1.png');
+                url('../assets/trivadi/trivadi-home.png');
     background-size: cover;
 }
 

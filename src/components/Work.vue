@@ -36,41 +36,41 @@ onMounted(() => {
 
 <style scoped>
 .parallex {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/athena1.png'); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/aistake1.png'); 
     background-size: cover;
     height: 100vh;
 }
 
 #parallex div:nth-child(2) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)),
-                  url('../assets/aistake1.png');
+                  url('../assets/athena1.png');
     background-attachment: fixed;
     background-size: cover;
 }
 
 #parallex div:nth-child(3) {
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), 
-                url('../assets/pegasus1.png');
+                url('../assets/arc/arc-home.png');
     background-size: cover;
 }
 #parallex div:nth-child(4) {
     background-attachment: fixed;
-    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/xerxes1.png');
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/bitpowr/bitpowr-home.png');
     background-size: cover;
 }
 #parallex div:nth-child(5) {
     background-attachment: fixed;
-    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/other-works/trustbreed1.png');
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/xerxes1.png');
     background-size: cover;
 }
 #parallex div:nth-child(6) {
     background-attachment: fixed;
-    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/other-works/doorstep1.png');
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/pegasus1.png');
     background-size: cover;
 }
 #parallex div:nth-child(7) {
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), 
-                url('../assets/other-works/powrfinance1.png');
+                url('../assets/myria/myria-home.png');
     background-size: cover;
 }
 </style>

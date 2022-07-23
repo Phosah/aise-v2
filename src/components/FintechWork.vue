@@ -36,7 +36,7 @@ const themeMode = "light"
 
 #par div:nth-child(2) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)),
-                  url('../assets/other-works/trigle1.png');
+                  url('../assets/daba/daba-home.png');
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;

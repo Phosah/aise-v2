@@ -14,7 +14,6 @@ import PowrFinance from "../views/PowrFinance.vue";
 import Trustbreed from "../views/Trustbreed.vue";
 import CollectAfrica from "../views/CollectAfrica.vue";
 import Trigle from "../views/Trigle.vue";
-import Fintech from "../views/Fintech.vue";
 import Daba from "../views/Daba.vue";
 import Bento from "../views/Bento.vue";
 import Bitpowr from "../views/Bitpowr.vue";
@@ -64,11 +63,6 @@ const router = createRouter({
       path: "/about",
       name: "about",
       component: About,
-    },
-    {
-      path: "/fintech",
-      name: "fintech",
-      component: Fintech,
     },
     {
       path: "/otherworks",

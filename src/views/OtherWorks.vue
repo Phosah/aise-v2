@@ -7,28 +7,24 @@ const bgColor = "bg-brand-black-2 text-white"
 const themeMode =  "dark"
 const worksArr = [
     {
-        // img: pegasusCover,
         alt: "Trigle",
         title: "Trigle",
         content: "A decentralized Lending and Borrowing Protocol, providing income to Lenders and Loaning opportunities for borrowers with need any crypto asset of your choice",
         link: "/trigle"
     },
     {
-        // img: xerxesCover,
         alt: "bento",
         title: "People by Bento",
         content: "A decentralized Lending and Borrowing Protocol, providing income to Lenders and Loaning opportunities for borrowers with need any crypto asset of your choice",
         link: "/bento"
     },
     {
-        // img: aistakeCover,
         alt: "Trivadi",
         title: "Trivadi",
         content: "Staking with multiple validators on the Solana network at the same time while still having the ability to stake with the community using the best validators",
         link: "/trivadi"
     },
     {
-        // img: pegasusCover,
         alt: "Trustbreed",
         title: "Trustbreed",
         content: "The easiest way for you to gain access to multiple token holdings at once by the purchase of one super token",

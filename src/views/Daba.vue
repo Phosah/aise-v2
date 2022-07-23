@@ -282,7 +282,7 @@ const themeMode = 'light'
             <div><img class="w-full" src="../assets/daba/webapp-screens.png" alt="Webapp screens" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h1 class="mb-12 text-2xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
+            <h1 class="mb-12 text-3xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
             <div class="mb-16">
                 <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Learnings</h2>
                 <p class="mb-6">While working on this project, I learned to ensure that every decision provides value even if it's just a screen there has to be intentionality in every pixel as users want value and with the shortest number of clicks possible</p>

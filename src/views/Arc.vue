@@ -177,6 +177,7 @@ const arbitrage = {
     alt: "arbitrage",
 }
 const themeMode = "light"
+const marginSize = 'my-20'
 </script>
 
 <template>
@@ -184,28 +185,30 @@ const themeMode = "light"
         <Navbar />
         <Header :headerInfo="info" />
         <section class="max-w-7xl mx-auto px-6">
-            <LayoutOne :page="background" />
-            <LayoutTwo :page="role" />
-            <LayoutOne :page="briefing" />
-            <LayoutTwo :page="research" />
+            <LayoutOne :page="background" :marginSize="marginSize" />
+            <LayoutTwo :page="role" :marginSize="marginSize" />
+            <LayoutOne :page="briefing" :marginSize="marginSize" />
+            <LayoutTwo :page="research" :marginSize="marginSize" />
         </section>
-        <section class="my-20 px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="md:w-1/2 mb-12">
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">Creating Personas</h3>
                 <p>The personas created were aim at having a mental picture of the type of users wwe would have in order to be able to properly empathize with the users</p>
             </div>
             <CreatePersonas :personas="personasArr" />
         </section>
-        <section class="my-20 md:my-40">
-            <div class="md:w-1/2 px-6">
-                <h1 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Brainstorming with  HMW (How might we).</h1>
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <div class="md:w-1/2">
+                <h1 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Brainstorming with  HMW (How might we).</h1>
                 <p class="mb-12">Taking further steps to refine the problems with how might we help to see think the solutions from the user's pain points and find the best ways to offer value and solutions to the users. More simple and flexible flows</p>
             </div>
             <div><img class="w-full" src="../assets/bitpowr/notes.png" alt="Notes" /></div>
         </section>
-         <section class="my-20 px-6">
-            <h1 class="mb-6 text-4xl font-new-paris-kingsize">Design Decesions</h1>
-            <p class="mb-4">After carefully analyzing the data and working with an MVP and time constraints, the following solutions were designed below</p>
+         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
+            <div class="w-1/2">
+                <h1 class="mb-6 text-6xl font-new-paris-kingsize">Design Decisions</h1>
+                <p class="mb-4">After carefully analyzing the data and working with an MVP and time constraints, the following solutions were designed below</p>
+            </div>
             <LayoutThree :page="dashboard" />
             <LayoutThree :page="bridge" />
             <LayoutThree :page="swap" />
@@ -218,20 +221,20 @@ const themeMode = "light"
         </section>
         <section class="my-20 md:my-40">
             <div class="max-w-7xl mx-auto px-6">
-                <h3 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Mobile Views</h3>
+                <h3 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Mobile Views</h3>
                 <p class="mb-12">Majority of Arc’s users were mobile users from the research so high priority had to be placed on the mobile designs to optimize the experience</p>
             </div>
             <div><img class="w-full" src="../assets/arc/mobile-views.png" alt="Mobile screens" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h1 class="mb-12 text-2xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
-            <div class="mb-12">
-                <h2 class="mb-6 text-2xl font-bold font-new-paris-kingsize">Learnings</h2>
+            <h1 class="mb-12 text-3xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
+            <div class="mb-16">
+                <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Learnings</h2>
                 <p class="mb-6">This is by far one of the most interesting web3 projects I have worked on and it allowed me to understand more in-depth the complexities of the DeFi and NFT space, it also allowed me to prioritize user needs and provide simplicity to their burdensome activities to give maximum value.</p>
-                <p>The web3 space holds a lot of treasures and ways to keep changing lives and I am glad to have impacted thousands for now on this one😁. </p>              
+                <p>The web3 space holds a lot of treasures and ways to keep changing lives and I am glad to have impacted thousands for now on this one 😁. </p>              
             </div>
             <div>
-                <h2 class="mb-6 text-2xl font-bold font-new-paris-kingsize">Conclusion</h2>
+                <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Conclusion</h2>
                 <p class="mb-6">Arc is a solution that is set to bring about financial freedom to millions and affect a lot of lives so the ease of the processes and the clarity of the tasks makes it easier to drive adoption and by so doing invite more people that can benefit of the amazing product</p>
             </div>
         </section>

@@ -7,11 +7,15 @@ defineProps({
     headerFont: {
         type: String,
         required: true
+    },
+    marginSize: {
+        type: String,
+        required: true
     }
 })
 </script>
 <template>
-    <div class="md:flex md:items-center md:space-x-12 md:my-40 my-20">
+    <div :class="marginSize ? marginSize : 'md:my-40 my-20'" class="md:flex md:items-center md:space-x-12 ">
         <div class="md:flex-1 mb-12 md:mb-0">
             <h3 :class="headerFont ? headerFont : 'font-new-paris-kingsize'" class="mb-6 text-2xl md:text-3xl font-bold">{{ page.title }}</h3>
             <div class="mb-4" v-for="(para, ix) in page.paragraphs" :key="ix">

@@ -18,14 +18,14 @@ import photo9 from '../assets/bento/employee-management.png'
 
 const info = {
     title: "People by Bento",
-    text: "Taking away the complexities and the work overload that comes with managing an organizations workforce with spreasheets and multiple files",
+    text: "Taking away the complexities and the work overload that comes with managing an organizations workforce with spreadsheets and multiple files",
     img: bentoCover,
     alt: "bento",
     mainContent: "People by Bento is an HR tool to help manage employees from hiring to onboarding, to talent management, to appraisals, to leave management, to separation, and much more...",
     subContent: "People by bento get to provide this solution by giving an easy-to-use interface that comprises various nodules needed for proper employee management, this includes modules like time management, Employee management, Appraisal, Onboarding, and offboarding management.",
     role: "Product Design",
     client: "bento africa",
-    duration: "3 month",
+    duration: "3 months",
     year: "2020",
     website: "bento.africa"
 }
@@ -140,11 +140,20 @@ const themeMode = "light"
             <LayoutThree :page="role" />
         </section>
         <section class="max-w-7xl mx-auto my-20 px-6">
-            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">The briefings began</h3>
-            <p class="mb-4">During the first week of joining the team and the People by Bento project I was briefed about the overall scope of what Bento as a brand was trying to solve and what led to the vision of People</p>
-            <p class="mb-4">The next step was to have scheduled calls with people from the sales team as they are the ones that have been on the field and gotten direct hints on the feedback of some of the customers who use the Bento Payroll product for their organization and had issues managing their organization as well.</p>
-            <p class="mb-4">The next few days were a series of calls with the support team and support team lead and this was to get insights on issues that have been reported as bento runs open support and feedback channel that takes user's requests and issues to process so the support team has had direct info on the user's pain points</p>
-            <p>The final days were calls with the engineering team to also get insights from them and the size of the team so I could properly align business goals, user needs, and Engineering strengths in the design process.</p>
+            <div class="mb-12">
+                <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">The briefings began</h3>
+                <p class="mb-4">During the first week of joining the team and the People by Bento project I was briefed about the overall scope of what Bento as a brand was trying to solve and what led to the vision of People</p>
+                <p class="mb-4">The next step was to have scheduled calls with people from the sales team as they are the ones that have been on the field and gotten direct hints on the feedback of some of the customers who use the Bento Payroll product for their organization and had issues managing their organization as well.</p>
+                <p class="mb-4">The next few days were a series of calls with the support team and support team lead and this was to get insights on issues that have been reported as bento runs open support and feedback channel that takes user's requests and issues to process so the support team has had direct info on the user's pain points</p>
+                <p>The final days were calls with the engineering team to also get insights from them and the size of the team so I could properly align business goals, user needs, and Engineering strengths in the design process.</p>
+            </div>
+            <div>
+                <h5 class="text-lg font-new-paris-kingsize font-bold">Findings</h5>
+                <div class="flex">
+                    <img src="../assets/bento/note1.png" alt="Notes">
+                    <img src="../assets/bento/note2.png" alt="Notes">
+                </div>
+            </div>
         </section>
         <section class="max-w-7xl mx-auto my-20 px-6">
             <LayoutOne :page="interview" />
@@ -152,23 +161,27 @@ const themeMode = "light"
         <section class="max-w-7xl mx-auto md:my-40 my-20 px-6">
             <div class="md:flex md:items-center md:space-x-12">
                 <div class="md:flex-1 mb-12 md:mb-0">
-                    <h3 class="mb-6 text-2xl md:text-4xl font-bold font-new-paris-kingsize">Sneak peak on Competitors</h3>
+                    <h3 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Sneak peak on Competitors</h3>
                     <p class="mb-4"> After successful interviews I decided to take a peek at what competitors were doing, sadly there was no competitor in the Nigerian space to see how the solutions were structured for the current market and identify the lapses so the competitive analysis was focused on foreign companies.</p>
                     <p>Even tho the psychology and the mode of operations of the business in various countries differ as this would affect the way HR works, it was still goo room to understand the core functionalities needed for an HR/ employee management software the flows and value proposition</p>
                 </div>
                 <div class="md:flex-1">
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="mx-auto">
-                            <img src="../assets/bento/logo1.svg" alt="logo"/>
+                    <div class="">
+                        <div class="flex space-x-8 space-y-8 justify-center">
+                            <div>
+                                <img src="../assets/bento/logo1.svg" alt="logo"/>
+                            </div>
+                            <div>
+                                <img src="../assets/bento/logo2.svg" alt="logo" />
+                            </div>
                         </div>
-                        <div class="mx-auto">
-                            <img src="../assets/bento/logo2.svg" alt="logo" />
-                        </div>
-                        <div class="mx-auto">
-                            <img src="../assets/bento/logo3.svg" alt="logo" />
-                        </div>
-                        <div class="mx-auto">
-                            <img src="../assets/bento/logo4.svg" alt="logo" />
+                        <div class="flex space-x-8 space-y-8 justify-center">
+                            <div>
+                                <img src="../assets/bento/logo3.svg" alt="logo" />
+                            </div>
+                            <div>
+                                <img src="../assets/bento/logo4.svg" alt="logo" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -181,12 +194,12 @@ const themeMode = "light"
         </section>
         <section class="my-20 md:my-40">
             <div class="max-w-7xl mx-auto px-6">
-                <h1 class="mb-8 text-2xl md:text-4xl font-bold font-new-paris-kingsize">HMW (How might we).</h1>
+                <h1 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">HMW (How might we).</h1>
             </div>
             <div><img class="w-full" src="../assets/bento/notes.png" alt="Notes" /></div>
         </section>
         <section class="my-20 px-6">
-            <h1 class="mb-6 text-4xl font-new-paris-kingsize">High Fidelity Designs</h1>
+            <h1 class="mb-6 text-6xl font-new-paris-kingsize">High Fidelity Designs</h1>
             <div>
                 <LayoutThree :page="dashboard" />
                 <LayoutThree :page="management" />

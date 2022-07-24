@@ -112,7 +112,6 @@ const projects = ref([
     },
 ])
 const shuffledProjects = computed(() => {
-    console.log(shuffle(projects.value))
     return shuffle(projects.value)
 })
 
@@ -126,9 +125,6 @@ const shuffle = (array) => {
     }
     return array;
 }
-onMounted(() => {
-    console.log(shuffledProjects.value[10].img)
-})
 </script>
 
 <template>

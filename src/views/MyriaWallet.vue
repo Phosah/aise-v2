@@ -111,7 +111,7 @@ const themeMode = "light"
             <LayoutOne :page="problem" />
         </section>
         <section class="max-w-7xl mx-auto my-20 px-6">
-            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Background</h3>
+            <h3 class="font-new-paris-kingsize mb-6 text-2xl md:text-3xl font-bold">Background</h3>
             <p class="mb-4">Crypto is the future of games and with an ever-growing aspect of life there is bound to be evolution and this influences how we bring solutions to solve the needs that arise from the change.
             This evolution introduced gamefi. This is still similar to the online and gaming console gaming experience in which we get entertained by overcoming challenges but now on the blockchain, there is an even greater value proposition where players get rewarded for their engagement with the games, and these rewards unlike conventional gaming experience these rewards can be converted to real-world value with both fungible and non-fungible tokens.
             With a lot of GameFi in the ecosystems there remains a problem of interoperability between these game ecosystems and this is due to the little or limited transactional interactions between such games, players, and their resources.  

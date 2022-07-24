@@ -4,7 +4,7 @@ import Header from '../components/Header.vue';
 import LayoutOne from '../components/LayoutOne.vue';
 import LayoutThree from '../components/LayoutThree.vue';
 import Footer from '../components/Footer.vue';
-import OtherProjects from '../components/OtherProjects.vue';
+import OtherProjectsWeb3 from '../components/OtherProjectsWeb3.vue';
 import CreatePersonas from '../components/CreatePersonas.vue';
 import myriaWalletCover from '../assets/myria/myria-home.png'
 import persona1 from "../assets/myria/persona-1.png"
@@ -260,7 +260,7 @@ const themeMode = "light"
                 <p>Also, the ability for better transactions would improve interoperability of the web3 space and this, in turn, improves the entire ecosystem Thanks</p>
             </div>
         </section>
-        <OtherProjects />
+        <OtherProjectsWeb3 />
         <Footer :bgColor="themeMode"/>
     </main>   
 </template>

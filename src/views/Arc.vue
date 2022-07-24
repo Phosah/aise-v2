@@ -7,7 +7,7 @@ import LayoutTwo from '../components/LayoutTwo.vue';
 import CreatePersonas from '../components/CreatePersonas.vue';
 import LayoutThree from '../components/LayoutThree.vue';
 import Footer from '../components/Footer.vue';
-import OtherProjects from '../components/OtherProjects.vue';
+import OtherProjectsWeb3 from '../components/OtherProjectsWeb3.vue';
 import persona1 from "../assets/arc/persona-1.png"
 import persona2 from "../assets/arc/persona-2.png"
 import photo1 from "../assets/arc/background.png"
@@ -238,7 +238,7 @@ const marginSize = 'my-20'
                 <p class="mb-6">Arc is a solution that is set to bring about financial freedom to millions and affect a lot of lives so the ease of the processes and the clarity of the tasks makes it easier to drive adoption and by so doing invite more people that can benefit of the amazing product</p>
             </div>
         </section>
-        <OtherProjects />
+        <OtherProjectsWeb3 />
         <Footer :bgColor="themeMode"/>
     </main>   
 </template>

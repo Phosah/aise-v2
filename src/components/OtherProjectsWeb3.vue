@@ -1,11 +1,11 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue'
-import photo1 from '../assets/other-projects/doorstep.png'
-import photo2 from '../assets/other-projects/bento.png'
-import photo3 from '../assets/other-projects/trivadi.png'
-import photo4 from '../assets/other-projects/trigle.png'
-import photo5 from '../assets/other-projects/trustbreed.png'
-
+import photo1 from '../assets/other-projects/aistake.png'
+import photo2 from '../assets/other-projects/pegasus.png'
+import photo3 from '../assets/other-projects/xerxes.png'
+import photo4 from '../assets/other-projects/athena.png'
+import photo5 from '../assets/other-projects/bitpowr.png'
+import photo6 from '../assets/other-projects/myria.png'
 defineProps({
     headerCenter: {
         type: String,
@@ -13,39 +13,46 @@ defineProps({
 })
 const projects = ref([
     {
-        title: "Doorstep",
-        text: "The fastest way to ship your packages and parcels around the world",
+        title: "Aistake Finance",
+        text: "Staking with multiple validators on the Solana network at the same time while still having the ability to stake with the community using the best validators",
         img: photo1,
-        alt: "Doorstep",
-        route: "/doorstep",
+        alt: "Aistake Finance",
+        route: "/aistakefinance",
     },
     {
-        title: "People by Bento",
-        text: "Taking away the complexities and the work overload that comes with managing an organizations workforce with spreasheets and multiple files",
+        title: "Pegasus",
+        text: "The easiest way for you to gain access to multiple token holdings at once by the purchase of one super token ",
         img: photo2,
-        alt: "People by Bento",
-        route: "/bento",
+        alt: "Pegasus",
+        route: "/pegasus",
     },
     {
-        title: "Trivadi",
-        text: "Helping businesses build on a crypto infrastructure with top notch wallet infrastructure, investment and Fiat settlement",
+        title: "Xerxes",
+        text: "A decentralized Lending and Borrowing Protocol, providing income to Lenders and Loaning opportunities for borrowers with need any crypto asset of your choice",
         img: photo3,
-        alt: "Trivadi",
-        route: "/trivadi",
+        alt: "Xerxes",
+        route: "/xerxes",
     },
     {
-        title: "Trigle",
-        text: "Bringing simplicity and flexibility to having your meals",
+        title: "Athena",
+        text: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users",
         img: photo4,
-        alt: "Trigle",
-        route: "/trigle",
+        alt: "Athena",
+        route: "/athena",
     },
     {
-        title: "Trustbreed",
-        text: "As a customer, have your voice heard and get the best of services from the companies / products that serve you.",
+        title: "Bitpowr",
+        text: "Helping businesses build on a crypto infrastructure with top notch wallet infrastructure, investment and Fiat settlement",
         img: photo5,
-        alt: "Trustbreed",
-        route: "/trustbreed",
+        alt: "Bitpowr",
+        route: "/bitpowr",
+    },
+    {
+        title: "Myria",
+        text: "Bridging the world of NFT and gaming assets and token rewards to gamers making it easy to interrelate with one another",
+        img: photo6,
+        alt: "Myria",
+        route: "/myria",
     },
 ])
 const shuffledProjects = computed(() => {

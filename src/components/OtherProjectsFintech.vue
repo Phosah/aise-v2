@@ -1,11 +1,8 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue'
-import photo1 from '../assets/other-projects/doorstep.png'
-import photo2 from '../assets/other-projects/bento.png'
-import photo3 from '../assets/other-projects/trivadi.png'
-import photo4 from '../assets/other-projects/trigle.png'
-import photo5 from '../assets/other-projects/trustbreed.png'
-
+import photo1 from '../assets/other-projects/collect-africa.png'
+import photo2 from '../assets/other-projects/daba.png'
+import photo3 from '../assets/other-projects/powrfinance.png'
 defineProps({
     headerCenter: {
         type: String,
@@ -13,39 +10,25 @@ defineProps({
 })
 const projects = ref([
     {
-        title: "Doorstep",
-        text: "The fastest way to ship your packages and parcels around the world",
+        title: "Collect Africa",
+        text: "Reinventing payment systems and account management for both large and small scale businesses across Africa",
         img: photo1,
-        alt: "Doorstep",
-        route: "/doorstep",
+        alt: "Collect Africa",
+        route: "/collectafrica",
     },
     {
-        title: "People by Bento",
-        text: "Taking away the complexities and the work overload that comes with managing an organizations workforce with spreasheets and multiple files",
+        title: "daba",
+        text: "Binging a world where daily investors both big and small have access to verified startups in the fastest growing investment continent on the planet",
         img: photo2,
-        alt: "People by Bento",
-        route: "/bento",
+        alt: "daba",
+        route: "/daba",
     },
     {
-        title: "Trivadi",
-        text: "Helping businesses build on a crypto infrastructure with top notch wallet infrastructure, investment and Fiat settlement",
+        title: "Powr Finance",
+        text: "The growth and expansion of businesses and services are heavily dependent on seamless intercontinental financial transactions",
         img: photo3,
-        alt: "Trivadi",
-        route: "/trivadi",
-    },
-    {
-        title: "Trigle",
-        text: "Bringing simplicity and flexibility to having your meals",
-        img: photo4,
-        alt: "Trigle",
-        route: "/trigle",
-    },
-    {
-        title: "Trustbreed",
-        text: "As a customer, have your voice heard and get the best of services from the companies / products that serve you.",
-        img: photo5,
-        alt: "Trustbreed",
-        route: "/trustbreed",
+        alt: "Powr Finance",
+        route: "/powrfinance",
     },
 ])
 const shuffledProjects = computed(() => {

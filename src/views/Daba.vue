@@ -2,7 +2,7 @@
 import Navbar from '../components/Navbar.vue';
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
-import OtherProjects from '../components/OtherProjects.vue';
+import OtherProjectsFintech from '../components/OtherProjectsFintech.vue';
 import LayoutOne from '../components/LayoutOne.vue'
 import LayoutTwo from '../components/LayoutTwo.vue'
 import dabaCover from '../assets/daba/daba-home.png'
@@ -294,7 +294,7 @@ const themeMode = 'light'
                 <p>Explore the live project: <a class="border-b border-black" href="https://www.dabafinance.com">https://www.dabafinance.com</a></p>
             </div>
         </section>
-        <OtherProjects />
+        <OtherProjectsFintech />
         <Footer :bgColor="themeMode"/>
     </main>   
 </template>

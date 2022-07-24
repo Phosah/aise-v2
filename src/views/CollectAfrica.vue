@@ -3,7 +3,7 @@ import Footer from '../components/Footer.vue'
 import Carousel from '../components/Carousel.vue'
 import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
 import UserPersona from '../components/UserPersona.vue'
-import OtherProjects from '../components/OtherProjects.vue'
+import OtherProjectsFintech from '../components/OtherProjectsFintech.vue'
 import HeaderInfo from '../components/HeaderInfo.vue'
 import LayoutOne from '../components/LayoutOne.vue'
 import photo1 from '../assets/other-works/the-problem.png'
@@ -723,7 +723,7 @@ const bgColor = "light"
         <section class="max-w-7xl mx-auto pt-10 md:pt-20 px-6 md:px-16 text-sm md:text-base">
             <LayoutOne :page="conclusion" :headerFont="headerFont" />
         </section>
-        <OtherProjects :headerCenter="headerCenter" />
+        <OtherProjectsFintech :headerCenter="headerCenter" />
         <Footer :bgColor="bgColor" />
     </div>
 </template>

@@ -13,7 +13,7 @@ import photo4 from "../assets/athena-photo-5.png"
 import photo5 from "../assets/athena-photo-6.png"
 import photo6 from "../assets/athena-photo-7.png"
 import photo7 from "../assets/athena-photo-8.png"
-import OtherProjects from "../components/OtherProjects.vue"
+import OtherProjectsWeb3 from "../components/OtherProjectsWeb3.vue"
 import Footer from "../components/Footer.vue"
 import Navbar from '../components/Navbar.vue';
 const info = {
@@ -307,7 +307,7 @@ const themeMode = 'light'
             <p>I enjoyed this project and the loads of learning attached to it, the psychology in bridging the world of
                 experts and novices together to a unified value proposition was the peak of my experience</p>
         </section>
-        <OtherProjects />
+        <OtherProjectsWeb3 />
         <Footer :bgColor="themeMode"/>
     </div>
 </template>

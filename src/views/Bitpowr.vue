@@ -7,7 +7,7 @@ import LayoutTwo from '../components/LayoutTwo.vue';
 import LayoutFour from '../components/LayoutFour.vue'
 import LayoutThree from '../components/LayoutThree.vue';
 import Footer from "../components/Footer.vue"
-import OtherProjects from "../components/OtherProjects.vue"
+import OtherProjectsWeb3 from "../components/OtherProjectsWeb3.vue"
 import photo1 from '../assets/bitpowr/blockchain.png'
 import photo2 from '../assets/bitpowr/role.png'
 import photo3 from '../assets/bitpowr/review.png'
@@ -325,7 +325,7 @@ const themeMode = "light"
                 <p>Explore the live project: <a class="border-b border-black" href="https://www.dabafinance.com">https://www.dabafinance.com</a></p>
             </div>
         </section>
-        <OtherProjects />
+        <OtherProjectsWeb3 />
         <Footer :bgColor="themeMode"/>
     </main>   
 </template>

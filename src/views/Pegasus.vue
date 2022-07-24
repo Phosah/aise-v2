@@ -13,7 +13,7 @@ import photo3 from "../assets/pegasus-photo-6.png"
 import photo4 from "../assets/pegasus-photo-7.png"
 import photo5 from "../assets/pegasus-photo-8.png"
 import photo6 from "../assets/pegasus-photo-9.png"
-import OtherProjects from "../components/OtherProjects.vue"
+import OtherProjectsWeb3 from "../components/OtherProjectsWeb3.vue"
 import Footer from '../components/Footer.vue';
 import Navbar from '../components/Navbar.vue';
 import Carousel from '../components/Carousel.vue'
@@ -287,7 +287,7 @@ const cards = [
                 understand users better in order to provide an inclusive solution that meets both user's needs and
                 business goals</p>
         </section>
-        <OtherProjects />
+        <OtherProjectsWeb3 />
         <Footer :bgColor="themeMode"/>
     </div>
 </template>

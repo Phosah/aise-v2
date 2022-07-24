@@ -17,7 +17,7 @@ import photo7 from '../assets/aistake-photo-7.png'
 import photo8 from '../assets/aistake-photo-8.png'
 import photo9 from "../assets/aistake-photo-9.png"
 import photo10 from "../assets/aistake-photo-10.png"
-import OtherProjects from "../components/OtherProjects.vue"
+import OtherProjectsWeb3 from "../components/OtherProjectsWeb3.vue"
 import Footer from '../components/Footer.vue';
 import Navbar from '../components/Navbar.vue';
 const info = {
@@ -252,7 +252,7 @@ const themeMode = 'light'
             <p>I enjoyed this project and the loads of learning attached to it, the psychology in bridging the world of
                 experts and novices together to a unified value proposition was the peak of my experience</p>
         </section>
-        <OtherProjects />
+        <OtherProjectsWeb3 />
         <Footer :bgColor="themeMode"/>
     </div>
 </template>

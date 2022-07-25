@@ -25,7 +25,7 @@ const worksArr = [
     {
         alt: "Bitpowr",
         title: "Bitpowr",
-        content: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users",
+        content: "Helping businesses build on a crypto infrastructure with top notch wallet infrastructure, investment and Fiat settlement",
         link: "/bitpowr"
     },
     {

@@ -49,22 +49,22 @@ onMounted(() => {
 
 #parallex div:nth-child(3) {
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), 
-                url('../assets/arc/arc-home.png');
+                url('../assets/arc/cover.png');
     background-size: cover;
 }
 #parallex div:nth-child(4) {
     background-attachment: fixed;
-    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/bitpowr/bitpowr-home.png');
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/bitpowr/cover.png');
     background-size: cover;
 }
 #parallex div:nth-child(5) {
     background-attachment: fixed;
-    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/xerxes1.png');
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/xerxes/cover.png');
     background-size: cover;
 }
 #parallex div:nth-child(6) {
     background-attachment: fixed;
-    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/pegasus1.png');
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/pegasus/cover.png');
     background-size: cover;
 }
 #parallex div:nth-child(7) {

@@ -1,29 +1,29 @@
 <script setup>
 import Header from '../components/Header.vue'
-import pegasusCover from "../assets/pegasus2.png"
 import LayoutOne from '../components/LayoutOne.vue';
 import LayoutTwo from '../components/LayoutTwo.vue';
-import photo1 from "../assets/pegasus-photo-2.png"
-import Persona from "../components/Persona.vue"
-import persona7 from "../assets/persona-7.png"
-import persona8 from "../assets/persona-8.png"
-import photo2 from "../assets/pegasus-photo-3.png"
 import LayoutThree from '../components/LayoutThree.vue';
-import photo3 from "../assets/pegasus-photo-6.png"
-import photo4 from "../assets/pegasus-photo-7.png"
-import photo5 from "../assets/pegasus-photo-8.png"
-import photo6 from "../assets/pegasus-photo-9.png"
-import OtherProjectsWeb3 from "../components/OtherProjectsWeb3.vue"
 import Footer from '../components/Footer.vue';
 import Navbar from '../components/Navbar.vue';
 import Carousel from '../components/Carousel.vue'
-import research1 from '../assets/research-1.png'
-import research2 from '../assets/research-2.png'
-import research3 from '../assets/research-3.png'
-import research4 from '../assets/research-4.png'
-import research5 from '../assets/research-5.png'
-import research6 from '../assets/research-6.png'
-import research7 from '../assets/research-7.png'
+import OtherProjectsWeb3 from "../components/OtherProjectsWeb3.vue"
+import Persona from "../components/Persona.vue"
+import pegasusCover from "../assets/pegasus2.png"
+import persona7 from "../assets/pegasus/persona-1.png"
+import persona8 from "../assets/pegasus/persona-2.png"
+import photo1 from "../assets/pegasus/goals.png"
+import photo2 from "../assets/pegasus/dashboard.png"
+import photo3 from "../assets/pegasus/community.png"
+import photo4 from "../assets/pegasus/vault.png"
+import photo5 from "../assets/pegasus/pool.png"
+import photo6 from "../assets/pegasus/transaction.png"
+import research1 from '../assets/pegasus/research-1.png'
+import research2 from '../assets/pegasus/research-2.png'
+import research3 from '../assets/pegasus/research-3.png'
+import research4 from '../assets/pegasus/research-4.png'
+import research5 from '../assets/pegasus/research-5.png'
+import research6 from '../assets/pegasus/research-6.png'
+import research7 from '../assets/pegasus/research-7.png'
 const info = {
     title: "Pegasus",
     text: "The easiest way for you to gain access to multiple token holdings at once by the purchase of one super token",
@@ -189,7 +189,7 @@ const cards = [
                 <p>These inconveniences even have financial repercussions when one considers how fees accumulate as a
                     result of token-by-token exchange trades and withdrawals.</p>
             </div>
-            <div class="md:flex-1"><img src="../assets/pegasus-photo-1.png" alt="Pegasus"></div>
+            <div class="md:flex-1"><img src="../assets/pegasus/problem.png" alt="Pegasus"></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <LayoutTwo :page="goals" />
@@ -242,7 +242,7 @@ const cards = [
                     some How might we questions that guides the ideation process, which helps us to do with thinking of
                     a solution based on the identified problem</p>
             </div>
-            <div><img class="w-full" src="../assets/proposition-1.png" alt="Proposition"></div>
+            <div><img class="w-full" src="../assets/pegasus/hmw.png" alt="Proposition" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">User Journey Map</h1>
@@ -250,7 +250,7 @@ const cards = [
                 was the first
                 to be done as it would help us identify the users experience within the process for us to create the
                 best experience and product</p>
-            <div><img class="w-full" src="../assets/value-proposition-customers.png" alt="Value Proposition"></div>
+            <div><img class="w-full" src="../assets/pegasus/user-map.png" alt="Value Proposition" /></div>
         </section>
         <section class="my-20 px-6 bg-brand-blue-1 text-white">
             <div class="max-w-7xl mx-auto py-40">
@@ -264,8 +264,8 @@ const cards = [
                 <LayoutOne :page="dashboard" />
                 <LayoutThree :page="investments" />
                 <div class="flex items-center space-x-12 my-20">
-                    <div class="flex-1"><img class="w-full" src="../assets/pegasus-photo-4.png" alt="Pegasus"></div>
-                    <div class="flex-1"><img class="w-full" src="../assets/pegasus-photo-5.png" alt="Pegasus"></div>
+                    <div class="flex-1"><img class="w-full" src="../assets/pegasus/index-investment-1.png" alt="Pegasus" /></div>
+                    <div class="flex-1"><img class="w-full" src="../assets/pegasus/index-investment-2.png" alt="Pegasus" /></div>
                 </div>
                 <LayoutThree :page="community" />
                 <LayoutThree :page="vault" />
@@ -274,7 +274,7 @@ const cards = [
             </div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h1 class="mb-4 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
+            <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
             <p>Because we are still very early days in the development of Pegasus and it's an MVP, there are still many
                 outstanding areas and features that we plan on developing. There are plans to take the index
                 opportunities to another step by introducing features including;</p>

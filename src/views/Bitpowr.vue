@@ -1,7 +1,7 @@
 <script setup>
 import Navbar from '../components/Navbar.vue';
 import Header from '../components/Header.vue';
-import bitpowrCover from '../assets/bitpowr/bitpowr-home.png'
+import bitpowrCover from '../assets/bitpowr/hero.png'
 import LayoutOne from '../components/LayoutOne.vue';
 import LayoutTwo from '../components/LayoutTwo.vue';
 import LayoutFour from '../components/LayoutFour.vue'
@@ -240,7 +240,7 @@ const themeMode = "light"
                     <p class="mb-4">The next phase was to carry out interviews with potential users of the products and people who build on the blockchain to identify their pain-points and how they carry out their activities without the solution bitpowr would give them</p>
                     <p>This was helpful to get the views of fresh users as their opinions and needs would be unbias of emotional sentiments and attachments as the aim of the redesign was not just to improve the experience of existing users but to also bring and retain new users</p>
                 </div>
-                <div class="flex-1"><img src="../assets/bento/research-process.png" alt=""></div>
+                <div class="flex-1"><img src="../assets/bitpowr/research.png" alt="" /></div>
             </div>
             <LayoutOne :page="competitors" />
         </section>
@@ -249,7 +249,7 @@ const themeMode = "light"
                 <h1 class="mb-6 text-3xl md:text-3xl font-bold font-new-paris-kingsize">How might we</h1>
                 <p class="mb-12">The next phase was to gather the insights gotten from the research phase and bring these to the CEO, PM, CTO and the marketing team the idea was to have an inhouse brainstorming session with the Product visionaries and others to get the best ideas out through some How Might We questions</p>
             </div>
-            <div><img class="w-full" src="../assets/bitpowr/notes.png" alt="Notes" /></div>
+            <div><img class="w-full" src="../assets/bitpowr/hmw.png" alt="Notes" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="">

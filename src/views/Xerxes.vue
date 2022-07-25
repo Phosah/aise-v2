@@ -1,22 +1,22 @@
 <script setup>
-import OtherProjectsWeb3 from "../components/OtherProjectsWeb3.vue";
-import Footer from "../components/Footer.vue";
+import Navbar from "../components/Navbar.vue";
 import Header from "../components/Header.vue";
-import xerxesCover from "../assets/xerxes2.png";
+import Footer from "../components/Footer.vue";
+import Persona from "../components/Persona.vue"
+import OtherProjectsWeb3 from "../components/OtherProjectsWeb3.vue";
 import LayoutOne from "../components/LayoutOne.vue";
-import photo1 from "../assets/xerxes-photo-1.png"
-import photo2 from "../assets/xerxes-photo-2.png"
 import LayoutTwo from "../components/LayoutTwo.vue"
 import LayoutThree from "../components/LayoutThree.vue"
-import photo3 from "../assets/dashboard.png"
-import photo4 from "../assets/borrow-market.png"
-import photo5 from "../assets/supply-market.png"
-import photo6 from "../assets/liquidation-notification.png"
-import photo7 from "../assets/repay-loan.png"
-import Persona from "../components/Persona.vue"
-import persona1 from "../assets/persona-1.png"
-import persona2 from "../assets/persona-2.png"
-import Navbar from "../components/Navbar.vue";
+import xerxesCover from "../assets/xerxes/hero.png";
+import photo1 from "../assets/xerxes/problems.png"
+import photo2 from "../assets/xerxes/goals.png"
+import photo3 from "../assets/xerxes/dashboard.png"
+import photo4 from "../assets/xerxes/borrow-market.png"
+import photo5 from "../assets/xerxes/supply-market.png"
+import photo6 from "../assets/xerxes/liquidation-notification.png"
+import photo7 from "../assets/xerxes/repay-loan.png"
+import persona1 from "../assets/xerxes/persona-1.png"
+import persona2 from "../assets/xerxes/persona-2.png"
 
 const info = {
     title: "Xerxes",
@@ -182,7 +182,7 @@ const themeMode = 'light'
                     some How might we questions that guides the ideation process, which helps us to do with thinking of
                     a solution based on the identified problem</p>
             </div>
-            <div><img class="w-full" src="../assets/proposition-1.png" alt="Proposition"></div>
+            <div><img class="w-full" src="../assets/xerxes/hmw.png" alt="Proposition" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Value Proposition - Customers</h1>
@@ -190,7 +190,7 @@ const themeMode = 'light'
                 done by
                 highlighting customers pains and gains, it's used to track users needs and position the company’s to
                 know more about the customers needs to properly create value</p>
-            <div><img class="w-full" src="../assets/value-proposition-customers.png" alt="Value Proposition"></div>
+            <div><img class="w-full" src="../assets/xerxes/value-proposition-customers.png" alt="Value Proposition" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Value Proposition - Business</h1>
@@ -198,14 +198,14 @@ const themeMode = 'light'
                 describing in
                 which way the product features and services are pain relievers and outline how they are gain creators
             </p>
-            <div><img class="w-full" src="../assets/value-proposition-business.png" alt="Value Proposition"></div>
+            <div><img class="w-full" src="../assets/xerxes/value-proposition-business.png" alt="Value Proposition" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-8 text-4xl md:text-6xl font-bold font-new-paris-kingsize">User Journey Map</h1>
             <p class="mb-12">This same journey is similar to that of farms but we would be taking pool into account as
                 that was the first test we made in the MVP that held the foundation of the product. This helped us
                 analyze the user's experience and improve the product.</p>
-            <div><img class="w-full" src="../assets/user-map.png" alt="User Map"></div>
+            <div><img class="w-full" src="../assets/user-map.png" alt="User Map" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-4 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Design Decisions</h1>

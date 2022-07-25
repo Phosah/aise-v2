@@ -237,7 +237,7 @@ const themeMode = "light"
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">Surveys</h3>
                 <p>The next step of the process i carried out was creating a survey document to be able to gather as much quantitative data to be able to have even deeper insights for the project</p>
             </div>
-            <div class="grid grid-cols-3 gap-6">
+            <div class="grid grid-cols-2 gap-6">
                 <div><img src="../assets/trivadi/survey-1.png" alt="Survey" /></div>
                 <div><img src="../assets/trivadi/survey-2.png" alt="Survey" /></div>
                 <div><img src="../assets/trivadi/survey-3.png" alt="Survey" /></div>

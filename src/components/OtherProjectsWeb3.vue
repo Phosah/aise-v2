@@ -6,6 +6,7 @@ import photo3 from '../assets/other-projects/xerxes.png'
 import photo4 from '../assets/other-projects/athena.png'
 import photo5 from '../assets/other-projects/bitpowr.png'
 import photo6 from '../assets/other-projects/myria.png'
+import photo7 from '../assets/other-projects/arc.png'
 defineProps({
     headerCenter: {
         type: String,
@@ -53,6 +54,13 @@ const projects = ref([
         img: photo6,
         alt: "Myria",
         route: "/myria",
+    },
+    {
+        title: "Arc",
+        text: "ARC makes the entire crypto market available from the palm of your hand. We're redefining the status quo by refining all of DeFi.",
+        img: photo7,
+        alt: "Arc",
+        route: "/arc",
     },
 ])
 const shuffle = (array) => {

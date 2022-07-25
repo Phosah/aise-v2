@@ -1,22 +1,21 @@
 <script setup>
 import Header from '../components/Header.vue'
-import aistakeCover from "../assets/aistake2.png"
+import aistakeCover from "../assets/aistake/hero.png"
 import LayoutOne from '../components/LayoutOne.vue';
-import photo1 from '../assets/aistake-photo-1.png';
-import photo2 from '../assets/aistake-photo-2.png';
 import LayoutTwo from '../components/LayoutTwo.vue';
-import Persona from "../components/Persona.vue"
-import persona5 from "../assets/persona-5.png"
-import persona6 from "../assets/persona-6.png"
-import photo3 from "../assets/aistake-photo-3.png"
 import LayoutThree from '../components/LayoutThree.vue';
-import photo4 from '../assets/aistake-photo-4.png'
-import photo5 from '../assets/aistake-photo-5.png'
-import photo6 from '../assets/aistake-photo-6.png'
-import photo7 from '../assets/aistake-photo-7.png'
-import photo8 from '../assets/aistake-photo-8.png'
-import photo9 from "../assets/aistake-photo-9.png"
-import photo10 from "../assets/aistake-photo-10.png"
+import Persona from "../components/Persona.vue"
+import photo1 from '../assets/aistake/problems.png';
+import photo2 from '../assets/aistake/vision.png';
+import persona1 from "../assets/aistake/persona-1.png"
+import persona2 from "../assets/aistake/persona-2.png"
+import photo3 from "../assets/aistake/screen-1.png"
+import photo4 from "../assets/aistake/screen-2.png"
+import photo5 from "../assets/aistake/screen-3.png"
+import photo6 from "../assets/aistake/screen-4.png"
+import photo7 from "../assets/aistake/screen-5.png"
+import photo8 from "../assets/aistake/screen-6.png"
+import photo9 from "../assets/aistake/screen-7.png"
 import OtherProjectsWeb3 from "../components/OtherProjectsWeb3.vue"
 import Footer from '../components/Footer.vue';
 import Navbar from '../components/Navbar.vue';
@@ -55,7 +54,7 @@ const aim = {
     alt: "Aistake photo"
 }
 const user1 = {
-    img: persona5,
+    img: persona1,
     alt: "Persona",
     about: "Savannah Nguyen is a 29-year-old District Lawyer in the united state, he is a former pro basketballer and loves cooking, he has been investing in crypto for 3 years now and is looking for a way to earn passively through staking not sure of what validators to work with",
     goals: [
@@ -69,7 +68,7 @@ const user1 = {
     ]
 }
 const user2 = {
-    img: persona6,
+    img: persona2,
     alt: "Persona",
     about: "Eleanor Pena is a 19-year-old dancer in Cario, Egypt, she hopes to further her studies in the UK later on. She has a few trust issues so she only invests in companies that have good social validations and reviews.",
     goals: [
@@ -205,22 +204,21 @@ const themeMode = 'light'
                     some How might we questions that guides the ideation process, which helps us to do with thinking of
                     a solution based on the identified problem</p>
             </div>
-            <div><img class="w-full" src="../assets/proposition-1.png" alt="Proposition" /></div>
+            <div><img class="w-full" src="../assets/aistake/hmw.png" alt="Proposition" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Value Proposition</h1>
             <p class="mb-10 text-base">In the customer's profile, you describe the job your customer is trying to get
-                done by
-                highlighting customers pains and gains, it's used to track users needs and position the company’s to
+                done by highlighting customers pains and gains, it's used to track users needs and position the company’s to
                 know more about the customers needs to properly create value</p>
-            <div><img class="w-full" src="../assets/value-proposition-customers.png" alt="Value Proposition"></div>
+            <div><img class="w-full" src="../assets/aistake/customers-value-proposition.png" alt="Value Proposition" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-8 text-4xl md:text-6xl font-bold font-new-paris-kingsize">User Journey Map</h1>
             <p class="mb-12">This same journey is similar to that of farms but we would be taking pool into account as
                 that was the first test we made in the MVP that held the foundation of the product. This helped us
                 analyze the user's experience and improve the product.</p>
-            <div><img class="w-full" src="../assets/user-map.png" alt="User Map"></div>
+            <div><img class="w-full" src="../assets/aistake/user-journey.png" alt="User Map" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-4 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Design Decisions</h1>
@@ -241,7 +239,7 @@ const themeMode = 'light'
                     some How might we questions that guides the ideation process, which helps us to do with thinking of
                     a solution based on the identified problem</p>
             </div>
-            <div><img class="w-full" src="../assets/aistake-photo-10.png" alt="Mobile responsiveness"></div>
+            <div><img class="w-full" src="../assets/aistake/mobile-screens.png" alt="Mobile responsiveness"></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-4 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>

@@ -43,7 +43,7 @@ const worksArr = [
     {
         alt: "Myria",
         title: "Myria",
-        content: "The easiest way for you to gain access to multiple token holdings at once by the purchase of one super token",
+        content: "Bridging the world of NFT and gaming assets and token rewards to gamers making it easy to interrelate with one another",
         link: "/myria"
     },
 ]

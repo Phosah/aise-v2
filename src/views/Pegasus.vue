@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar.vue';
 import Carousel from '../components/Carousel.vue'
 import OtherProjectsWeb3 from "../components/OtherProjectsWeb3.vue"
 import Persona from "../components/Persona.vue"
-import pegasusCover from "../assets/pegasus2.png"
+import pegasusCover from "../assets/pegasus/hero.png"
 import persona7 from "../assets/pegasus/persona-1.png"
 import persona8 from "../assets/pegasus/persona-2.png"
 import photo1 from "../assets/pegasus/goals.png"

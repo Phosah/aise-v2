@@ -69,7 +69,7 @@ onMounted(() => {
 }
 #parallex div:nth-child(7) {
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), 
-                url('../assets/myria/myria-home.png');
+                url('../assets/myria/hero.png');
     background-size: cover;
 }
 </style>

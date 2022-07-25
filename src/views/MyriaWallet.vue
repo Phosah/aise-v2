@@ -6,7 +6,7 @@ import LayoutThree from '../components/LayoutThree.vue';
 import Footer from '../components/Footer.vue';
 import OtherProjectsWeb3 from '../components/OtherProjectsWeb3.vue';
 import CreatePersonas from '../components/CreatePersonas.vue';
-import myriaWalletCover from '../assets/myria/myria-home.png'
+import myriaWalletCover from '../assets/myria/hero.png'
 import persona1 from "../assets/myria/persona-1.png"
 import photo1 from "../assets/myria/dashboard.png"
 import photo2 from "../assets/myria/nft.png"
@@ -157,10 +157,10 @@ const themeMode = "light"
                 <div class="w-1/3">
                     <div class="p-6 bg-white rounded-2xl">I want a way to be able to send tokens from one chain in my wallet to another</div>
                 </div>
-                <div><img src="../assets/myria/user1.png" alt="user" /></div>
+                <div><img src="../assets/myria/profile1.png" alt="profile" /></div>
             </div>
             <div class="flex items-center justify-center space-x-6">
-                <div><img src="../assets/myria/user2.png" alt="user" /></div>
+                <div><img src="../assets/myria/profile2.png" alt="profile" /></div>
                 <div class="w-1/3">
                     <div class="p-6 bg-white rounded-2xl">I want to be able to send NFTs from my wallet to another wallet of either mine or a friend's account</div>
                 </div>
@@ -169,10 +169,10 @@ const themeMode = "light"
                 <div class="w-1/3">
                     <div class="p-6 bg-white rounded-2xl">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
                 </div>
-                <div><img src="../assets/myria/user3.png" alt="user" /></div>
+                <div><img src="../assets/myria/profile3.png" alt="profile" /></div>
             </div>
             <div class="flex items-center justify-center space-x-6">
-                <div><img src="../assets/myria/user4.png" alt="user" /></div>
+                <div><img src="../assets/myria/profile4.png" alt="profile" /></div>
                 <div class="w-1/3">
                     <div class="p-6 bg-white rounded-2xl">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
                 </div>
@@ -180,15 +180,8 @@ const themeMode = "light"
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Competitive Analysis</h3>
-            <p class="mb-4">Understanding competitors who are providing similar solutions in the space on how they provide solutions for similar user needs has helped me define what creative solutions could be designed and improved for our product. </p>
-            <div class="flex items-center space-x-6">
-                <div><img src="../assets/myria/logo1.png" alt="Logo" /></div>
-                <div><img src="../assets/myria/logo2.png" alt="Logo" /></div>
-                <div><img src="../assets/myria/logo3.png" alt="Logo" /></div>
-                <div><img src="../assets/myria/logo4.png" alt="Logo" /></div>
-                <div><img src="../assets/myria/logo5.png" alt="Logo" /></div>
-                <div><img src="../assets/myria/logo6.png" alt="Logo" /></div>
-            </div>
+            <p class="mb-8">Understanding competitors who are providing similar solutions in the space on how they provide solutions for similar user needs has helped me define what creative solutions could be designed and improved for our product. </p>
+            <div><img src="../assets/myria/competition-analysis.png" alt="competition analysis" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Market Validation</h3>
@@ -250,7 +243,7 @@ const themeMode = "light"
             <div class="max-w-7xl mx-auto px-6">
                 <h3 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">More Design Screens</h3>
             </div>
-            <div><img class="w-full" src="../assets/myria/design-screens.png" alt="design screens" /></div>
+            <div><img class="w-full" src="../assets/myria/other-screens.png" alt="design screens" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div>

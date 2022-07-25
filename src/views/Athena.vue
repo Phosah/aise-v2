@@ -1,21 +1,21 @@
 <script setup>
 import Header from '@/components/Header.vue'
-import athenaCover from "../assets/athena2.png"
 import LayoutOne from '../components/LayoutOne.vue';
-import photo1 from "../assets/athena-photo-1.png"
-import Persona from "../components/Persona.vue"
-import persona3 from "../assets/persona-3.png"
-import persona4 from "../assets/persona-4.png"
 import LayoutThree from '../components/LayoutThree.vue';
-import photo2 from "../assets/athena-photo-3.png"
-import photo3 from "../assets/athena-photo-4.png"
-import photo4 from "../assets/athena-photo-5.png"
-import photo5 from "../assets/athena-photo-6.png"
-import photo6 from "../assets/athena-photo-7.png"
-import photo7 from "../assets/athena-photo-8.png"
+import Persona from "../components/Persona.vue"
 import OtherProjectsWeb3 from "../components/OtherProjectsWeb3.vue"
 import Footer from "../components/Footer.vue"
 import Navbar from '../components/Navbar.vue';
+import athenaCover from "../assets/athena/hero.png"
+import persona1 from "../assets/athena/persona-1.png"
+import persona2 from "../assets/athena/persona-2.png"
+import photo1 from "../assets/athena/problems.png"
+import photo2 from "../assets/athena/dashboard.png"
+import photo3 from "../assets/athena/swap-bridge.png"
+import photo4 from "../assets/athena/pool.png"
+import photo5 from "../assets/athena/farm.png"
+import photo6 from "../assets/athena/trade.png"
+import photo7 from "../assets/athena/launchpool.png"
 const info = {
     title: "Athena",
     text: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users",
@@ -39,7 +39,7 @@ const problems = {
     alt: "Athena Photo"
 }
 const user1 = {
-    img: persona3,
+    img: persona1,
     alt: "Persona",
     about: "Kenny is an 18yrs old Environmental Science student in the university of Atlanta who has been hearing of investing with Decentralized Exchanges from his friends on campus but hasnt really settled to get started because of how complex it feels",
     goals: [
@@ -52,7 +52,7 @@ const user1 = {
     ]
 }
 const user2 = {
-    img: persona4,
+    img: persona2,
     alt: "Persona",
     about: "Paul is a 32yrs old biologist that lives in Australia. During the day and a crypto trader at night. he does a lot of Futures trading on binance and has been investing in cryptocurrencies since 2018, he is a sucker for new tokens becasue he has made his most profits",
     goals: [
@@ -136,8 +136,7 @@ const themeMode = 'light'
         <section class="max-w-7xl mx-auto my-20 px-6">
             <LayoutOne :page="problems" />
             <div class="md:flex md:items-center md:space-x-12 my-20">
-                <div class="md:flex-1 mb-8 md:mb-0"><img class="w-full" src="../assets/athena-photo-2.png"
-                        alt="Athena Photo"></div>
+                <div class="md:flex-1 mb-8 md:mb-0"><img class="w-full" src="../assets/athena/goal.png" alt="Athena Photo" /></div>
                 <div class="md:flex-1">
                     <h3 class="mb-6 text-3xl font-new-paris-kingsize">What Does Athena aim to Achieve?</h3>
                     <div>
@@ -222,7 +221,7 @@ const themeMode = 'light'
                     some How might we questions that guides the ideation process, which helps us to do with thinking of
                     a solution based on the identified problem</p>
             </div>
-            <div><img class="w-full" src="../assets/proposition-1.png" alt="Proposition"></div>
+            <div><img class="w-full" src="../assets/athena/hmw.png" alt="Proposition" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Value Proposition - Customers</h1>
@@ -230,7 +229,7 @@ const themeMode = 'light'
                 done by
                 highlighting customers pains and gains, it's used to track users needs and position the company’s to
                 know more about the customers needs to properly create value</p>
-            <div><img class="w-full" src="../assets/value-proposition-customers.png" alt="Value Proposition"></div>
+            <div><img class="w-full" src="../assets/athena/value-proposition-customers.png" alt="Value Proposition" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Value Proposition - Business</h1>
@@ -238,14 +237,12 @@ const themeMode = 'light'
                 describing in
                 which way the product features and services are pain relievers and outline how they are gain creators
             </p>
-            <div><img class="w-full" src="../assets/value-proposition-business.png" alt="Value Proposition"></div>
+            <div><img class="w-full" src="../assets/athena/value-proposition-business.png" alt="Value Proposition" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h1 class="mb-8 text-4xl md:text-6xl font-bold font-new-paris-kingsize">User Journey Map</h1>
-            <p class="mb-12">This same journey is similar to that of farms but we would be taking pool into account as
-                that was the first test we made in the MVP that held the foundation of the product. This helped us
-                analyze the user's experience and improve the product.</p>
-            <div><img class="w-full" src="../assets/user-map.png" alt="User Map"></div>
+            <h1 class="mb-8 text-4xl md:text-6xl font-bold font-new-paris-kingsize">User Journey Map for Pool Investments</h1>
+            <p class="mb-12">This same journey is similar to that of farms but we would be taking pool into account as that was the first test we made in the MVP that held the foundation of the product. This helped us analyze the user's experience and improve the product.</p>
+            <div><img class="w-full" src="../assets/athena/user-map.png" alt="User Map" /></div>
         </section>
         <section class="my-40 px-6 bg-brand-gray-4 text-white">
             <div class="max-w-7xl mx-auto py-20 px-6">
@@ -282,8 +279,8 @@ const themeMode = 'light'
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Launchpad & Launchpool</h1>
             <LayoutThree :page="launchpad" />
             <div class="flex items-center space-x-12 my-20">
-                <div class="flex-1"><img class="w-full" src="../assets/athena-photo-9.png" alt="Launchpad"></div>
-                <div class="flex-1"><img class="w-full" src="../assets/athena-photo-10.png" alt="Launchpad"></div>
+                <div class="flex-1"><img class="w-full" src="../assets/athena/launchpad-1.png" alt="Launchpad" /></div>
+                <div class="flex-1"><img class="w-full" src="../assets/athena/launchpad-2.png" alt="Launchpad" /></div>
             </div>
             <LayoutThree :page="launchpool" />
         </section>
@@ -294,7 +291,7 @@ const themeMode = 'light'
                     some How might we questions that guides the ideation process, which helps us to do with thinking of
                     a solution based on the identified problem</p>
             </div>
-            <div><img class="w-full" src="../assets/athena-photo-11.png" alt="Mobile responsiveness"></div>
+            <div><img class="w-full" src="../assets/athena/mobile-screens.png" alt="Mobile responsiveness"></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-4 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>

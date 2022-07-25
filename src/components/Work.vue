@@ -35,14 +35,14 @@ onMounted(() => {
 
 <style scoped>
 .parallex {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/aistake1.png'); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/aistake/cover.png'); 
     background-size: cover;
     height: 100vh;
 }
 
 #parallex div:nth-child(2) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)),
-                  url('../assets/athena1.png');
+                  url('../assets/athena/cover.png');
     background-attachment: fixed;
     background-size: cover;
 }

@@ -19,7 +19,7 @@ const worksArr = [
     {
         alt: "Arc",
         title: "Arc",
-        content: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users",
+        content: "ARC makes the entire crypto market available from the palm of your hand. We're redefining the status quo by refining all of DeFi.",
         link: "/arc"
     },
     {

@@ -1,18 +1,18 @@
 <script setup>
 import Navbar from '../components/Navbar.vue';
 import Header from '../components/Header.vue';
-import arcCover from '../assets/arc/arc-home.png'
+import Footer from '../components/Footer.vue';
 import LayoutOne from '../components/LayoutOne.vue';
 import LayoutTwo from '../components/LayoutTwo.vue';
-import CreatePersonas from '../components/CreatePersonas.vue';
 import LayoutThree from '../components/LayoutThree.vue';
-import Footer from '../components/Footer.vue';
+import CreatePersonas from '../components/CreatePersonas.vue';
 import OtherProjectsWeb3 from '../components/OtherProjectsWeb3.vue';
+import arcCover from '../assets/arc/hero.png'
 import persona1 from "../assets/arc/persona-1.png"
 import persona2 from "../assets/arc/persona-2.png"
 import photo1 from "../assets/arc/background.png"
 import photo2 from "../assets/arc/role.png"
-import photo3 from "../assets/arc/briefings.png"
+import photo3 from "../assets/arc/briefing.png"
 import photo4 from "../assets/arc/research.png"
 import photo5 from "../assets/arc/dashboard.png"
 import photo6 from "../assets/arc/bridge.png"
@@ -64,7 +64,7 @@ const briefing = {
         "But as a professional designer, my goal is to align business goals and users' needs together so I went on ahead to test the existing product with a few members from the discord community to get the pain points from the user's perspectives as well and this was used to draft out the new designs",
     ],
     img: photo3,
-    alt: "role",
+    alt: "briefing",
 }
 const research = {
     title: "Problem Statement",
@@ -202,7 +202,7 @@ const marginSize = 'my-20'
                 <h1 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Brainstorming with  HMW (How might we).</h1>
                 <p class="mb-12">Taking further steps to refine the problems with how might we help to see think the solutions from the user's pain points and find the best ways to offer value and solutions to the users. More simple and flexible flows</p>
             </div>
-            <div><img class="w-full" src="../assets/bitpowr/notes.png" alt="Notes" /></div>
+            <div><img class="w-full" src="../assets/arc/hmw.png" alt="Notes" /></div>
         </section>
          <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="w-1/2">
@@ -221,7 +221,7 @@ const marginSize = 'my-20'
         </section>
         <section class="my-20 md:my-40">
             <div class="max-w-7xl mx-auto px-6">
-                <h3 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Mobile Views</h3>
+                <h3 class="mb-4 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Mobile Views</h3>
                 <p class="mb-12">Majority of Arc’s users were mobile users from the research so high priority had to be placed on the mobile designs to optimize the experience</p>
             </div>
             <div><img class="w-full" src="../assets/arc/mobile-views.png" alt="Mobile screens" /></div>

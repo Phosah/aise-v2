@@ -13,18 +13,18 @@ defineProps({
 })
 const projects = ref([
     {
-        title: "Aistake Finance",
-        text: "Staking with multiple validators on the Solana network at the same time while still having the ability to stake with the community using the best validators",
-        img: photo1,
-        alt: "Aistake Finance",
-        route: "/aistakefinance",
-    },
-    {
         title: "Pegasus",
         text: "The easiest way for you to gain access to multiple token holdings at once by the purchase of one super token ",
         img: photo2,
         alt: "Pegasus",
         route: "/pegasus",
+    },
+    {
+        title: "Aistake Finance",
+        text: "Staking with multiple validators on the Solana network at the same time while still having the ability to stake with the community using the best validators",
+        img: photo1,
+        alt: "Aistake Finance",
+        route: "/aistakefinance",
     },
     {
         title: "Xerxes",
@@ -55,10 +55,6 @@ const projects = ref([
         route: "/myria",
     },
 ])
-const shuffledProjects = computed(() => {
-    return shuffle(projects.value)
-})
-
 const shuffle = (array) => {
     let currentIndex = array.length, randomIndex;
     while (currentIndex != 0) {
@@ -69,26 +65,30 @@ const shuffle = (array) => {
     }
     return array;
 }
+const shuffledProjects = computed(() => {
+    console.log(projects.value)
+    return shuffle(projects.value)
+})
 </script>
 
 <template>
     <h1 :class="headerCenter" class="max-w-7xl mx-auto mb-4 px-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Other Projects</h1>
     <div class="md:flex md:items-start md:space-x-12 max-w-7xl mx-auto my-10 px-6">
         <div class="md:flex-1 mb-16 md:mb-0">
-            <router-link :to="shuffledProjects[1].route">
-                <img class="mb-4 w-full h-96" :src="shuffledProjects[1].img" :alt="shuffledProjects[1].alt"/>
+            <router-link :to="shuffledProjects[0].route">
+                <img class="mb-4 w-full h-96" :src="shuffledProjects[0].img" :alt="shuffledProjects[0].alt "/>
                 <div>
-                    <h3 class="font-new-paris-kingsize mb-4 text-2xl font-bold">{{shuffledProjects[1].title}}</h3>
-                    <p>{{shuffledProjects[1].text}}</p>
+                    <h3 class="font-new-paris-kingsize mb-4 text-2xl font-bold">{{shuffledProjects[0].title}}</h3>
+                    <p>{{shuffledProjects[0].text}}</p>
                 </div>
             </router-link>
         </div>
         <div class="md:flex-1">
-            <router-link :to="shuffledProjects[0].route">
-                <img class="mb-4 w-full h-96" :src="shuffledProjects[0].img" :alt="shuffledProjects[0].alt" />
+            <router-link :to="shuffledProjects[1].route">
+                <img class="mb-4 w-full h-96" :src="shuffledProjects[1].img" :alt="shuffledProjects[1].alt" />
                 <div>
-                    <h3 class="font-new-paris-kingsize mb-4 text-2xl font-bold">{{shuffledProjects[0].title}}</h3>
-                    <p>{{shuffledProjects[0].text}}</p>
+                    <h3 class="font-new-paris-kingsize mb-4 text-2xl font-bold">{{shuffledProjects[1].title}}</h3>
+                    <p>{{shuffledProjects[1].text}}</p>
                 </div>
             </router-link>
         </div>

@@ -8,7 +8,7 @@ const worksArr = [
         alt: "Collect",
         title: "Collect",
         content: "Staking with multiple validators on the Solana network at the same time while still having the ability to stake with the community using the best validators",
-        link: "/collect"
+        link: "/collectafrica"
     },
     {
         alt: "Daba",

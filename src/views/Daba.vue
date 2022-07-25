@@ -5,10 +5,10 @@ import Footer from '../components/Footer.vue';
 import OtherProjectsFintech from '../components/OtherProjectsFintech.vue';
 import LayoutOne from '../components/LayoutOne.vue'
 import LayoutTwo from '../components/LayoutTwo.vue'
-import dabaCover from '../assets/daba/daba-home.png'
-import background from '../assets/daba/background.png'
 import LayoutThree from '../components/LayoutThree.vue';
 import CreatePersonas from '../components/CreatePersonas.vue';
+import dabaCover from '../assets/daba/daba-home.png'
+import background from '../assets/daba/background.png'
 import persona1 from "../assets/daba/persona-1.png"
 import persona2 from "../assets/daba/persona-2.png"
 import screens1 from "../assets/daba/onboarding-screens.png"
@@ -179,6 +179,7 @@ const plan = {
     alt: "Details",
 }
 const themeMode = 'light'
+const width = 'w-3/4'
 </script>
 
 <template>
@@ -208,26 +209,26 @@ const themeMode = 'light'
                     <h3 class="mb-6 text-2xl md:text-3xl font-new-paris-kingsize">Some Interview responses</h3>
                     <div class="flex">
                         <div>
-                            <div><img src="../assets/daba/note1.png" alt="Note"></div>
-                            <div><img src="../assets/daba/note2.png" alt="Note"></div>
-                            <div><img src="../assets/daba/note3.png" alt="Note"></div>
+                            <div><img src="../assets/daba/note1.png" alt="Note" /></div>
+                            <div><img src="../assets/daba/note2.png" alt="Note" /></div>
+                            <div><img src="../assets/daba/note3.png" alt="Note" /></div>
                         </div>
                         <div>
-                            <div><img src="../assets/daba/note5.png" alt="Note"></div>
-                            <div><img src="../assets/daba/note4.png" alt="Note"></div>
+                            <div><img src="../assets/daba/note5.png" alt="Note" /></div>
+                            <div><img src="../assets/daba/note4.png" alt="Note" /></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="my-24 md:my-40 mx-auto px-6">
+        <section class="max-w-7xl mx-auto my-24 md:my-40 px-6">
             <div class="md:w-1/2 mb-12">
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">Checking out what competitors are up to</h3>
                 <p>The competitor analysis was aimed at providing strategic insights into the features, functions, flows, and feelings evoked by the solutions of the competitors. Red circles are the areas that need improvement</p>
             </div>
             <div><img src="../assets/daba/competitors.png" alt="competitors" /></div>
         </section>
-        <section class="my-20 md:my-40 mx-auto px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="md:w-1/2 mb-12">
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">Insights from the Research & Interviews </h3>
                 <p>Based on the data gotten from the research gotten before joining and the research carried by myself after joining, which comprised of User interview, competitive analysis, checking of feedback on competitors.</p>
@@ -251,27 +252,27 @@ const themeMode = 'light'
                 </div>
             </div>
         </section>
-        <section class="my-20 md:my-40 mx-auto px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="md:w-1/2 mb-12">
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">Creating Personas</h3>
                 <p>The personas created were aim at having a mental picture of the type of users wwe would have in order to be able to properly empathize with the users</p>
             </div>
             <CreatePersonas :personas="personasArr" />
         </section>
-        <section class="my-20 md:my-40 mx-auto px-6">
+        <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-6xl font-new-paris-kingsize">High Fidelity Designs</h1>
             <div>
-                <LayoutThree :page="onboarding" />
+                <LayoutThree :page="onboarding" :paraWidth="width" />
                 <LayoutOne :page="home" />
                 <LayoutTwo :page="portfolio" />
                 <LayoutOne :page="investment" />
-                <LayoutThree :page="explore" />
+                <LayoutThree :page="explore" :paraWidth="width" />
                 <LayoutOne :page="social" />
                 <LayoutTwo :page="discussions" />
-                <LayoutThree :page="stocks" />
+                <LayoutThree :page="stocks" :paraWidth="width" />
                 <LayoutOne :page="liveInvestments" />
                 <LayoutTwo :page="detail" />
-                <LayoutThree :page="plan" />
+                <LayoutThree :page="plan" :paraWidth="width" />
             </div>
         </section>
         <section class="my-20 md:my-40">

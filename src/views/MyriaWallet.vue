@@ -157,10 +157,10 @@ const themeMode = "light"
                 <div class="w-1/3">
                     <div class="p-6 bg-white rounded-2xl">I want a way to be able to send tokens from one chain in my wallet to another</div>
                 </div>
-                <div><img src="../assets/myria/profile1.png" alt="profile" /></div>
+                <div><img src="../assets/myria/profile-1.png" alt="profile" /></div>
             </div>
             <div class="flex items-center justify-center space-x-6">
-                <div><img src="../assets/myria/profile2.png" alt="profile" /></div>
+                <div><img src="../assets/myria/profile-2.png" alt="profile" /></div>
                 <div class="w-1/3">
                     <div class="p-6 bg-white rounded-2xl">I want to be able to send NFTs from my wallet to another wallet of either mine or a friend's account</div>
                 </div>
@@ -169,10 +169,10 @@ const themeMode = "light"
                 <div class="w-1/3">
                     <div class="p-6 bg-white rounded-2xl">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
                 </div>
-                <div><img src="../assets/myria/profile3.png" alt="profile" /></div>
+                <div><img src="../assets/myria/profile-3.png" alt="profile" /></div>
             </div>
             <div class="flex items-center justify-center space-x-6">
-                <div><img src="../assets/myria/profile4.png" alt="profile" /></div>
+                <div><img src="../assets/myria/profile-4.png" alt="profile" /></div>
                 <div class="w-1/3">
                     <div class="p-6 bg-white rounded-2xl">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
                 </div>

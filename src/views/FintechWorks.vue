@@ -5,9 +5,9 @@ import FintechWork from '../components/FintechWork.vue';
 
 const worksArr = [
     {
-        alt: "Collect",
-        title: "Collect",
-        content: "Staking with multiple validators on the Solana network at the same time while still having the ability to stake with the community using the best validators",
+        alt: "Collect Africa",
+        title: "Collect Africa",
+        content: "Reinventing payment systems and account management for both large and small scale businesses across Africa",
         link: "/collectafrica"
     },
     {

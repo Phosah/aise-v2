@@ -32,6 +32,72 @@ import photo21 from '../assets/other-works/payment-link.png'
 import photo22 from '../assets/other-works/collect-conclusion.png'
 import photo23 from '../assets/other-works/collectafrica1.png'
 import Navbar from '../components/Navbar.vue'
+
+const details = {
+    img: photo23,
+    alt: "Collect Africa",
+    title: "Collect Africa",
+    shortDesc: "Reinventing payment systems and account management for both large and small scale businesses across Africa",
+    LongDesc: "Collect is a Fintech solution solving payments problems for large and small scale businesses all over Africa, with goals to make businesses harness their potentials and achieve greater heights",
+    paragraph: "Collect aims to build a technology to help Africa’s best and modern businesses achieve greater heights by making it easy for businesses to accept secure payments from multiple local and global payment channels, and then we give you the tools to ensure customer management and retention."
+}
+const problem = {
+    title: "Understanding The Problem",
+    paragraphs: [
+        "A lot of businesses struggle with carrying out transactions seamlessly wherby receiving payments for services can be a bit burdensome when there is a delay validating the transaction especially when its a foreign payment.",
+        "Businesses also find it difficult in documenting their transactions and keeping records of their account and properly balance it, it gets worse when you have multiple business outlets in various states and countries, having a unified accounting system in place becomes difficult. All these prevent companies and businesses from achieving their highest potentials"
+    ],
+    img: photo1,
+    alt: "Problem fixing"
+}
+const goal = {
+    title: "The Goal",
+    paragraphs: [
+        "The goal was to create a unique solution, focusing on businesses and having a one-stop product to help them manage their financial activities, make sending money to wherever in the world easy, and receiving money from customers in whatever country as seamless as possible.",
+        "We aim to help businesses with several outlets, and instead of having to always go to the banks and have the whole signatory to account long procedure, we have a means whereby you have one product, and control all the financial activities, and account for all transactions in all the outlets in one space easily, to help you easily manage and balance your account, by so doing, expanding your business and taking it to greater heights",
+        "Lastly, what's a business without customers, we aim to help you manage and establish relationships with your customers."
+    ],
+    img: photo2,
+    alt: "Goal"
+}
+const processArr = [
+    {
+        img: photo3,
+        alt: "Research",
+        title: "Research",
+        methods: ["Context study","User pain points", "Competitive audits"]
+    },
+    {
+        img: photo4,
+        alt: "Analysis",
+        title: "Analysis",
+        methods: ["Problem statements","Use cases", "Executive summary"]
+    },
+    {
+        img: photo5,
+        alt: "Ideation",
+        title: "Ideation",
+        methods: ["Feature narrative","Design Principles", "Brainstorming"]
+    },
+    {
+        img: photo6,
+        alt: "Design",
+        title: "Design",
+        methods: ["Userflow","High fidelity designs", "Interative Prototypes"]
+    },
+    {
+        img: photo7,
+        alt: "Feedback",
+        title: "Feedback",
+        methods: ["Stake holder reviews","Field testing", "Design critiques"]
+    },
+    {
+        img: photo8,
+        alt: "Iteration",
+        title: "Iteration",
+        methods: ["Iterations","Copywriting"]
+    },
+]
 const cards = [
     {
         img: photo9
@@ -188,71 +254,6 @@ const personasArray = [
             "Jennson Mobiles staff usually just receive payments and because they need to receive alerts and not all can have company emails or phones to do so, each branch has an account where they control and receive alerts to confirm payments, and at the end of a period remit to the main company account."
         ]
     }
-]
-const details = {
-    img: photo23,
-    alt: "Collect Africa",
-    title: "Collect Africa",
-    shortDesc: "Reinventing payment systems and account management for both large and small scale businesses across Africa",
-    LongDesc: "Collect is a Fintech solution solving payments problems for large and small scale businesses all over Africa, with goals to make businesses harness their potentials and achieve greater heights",
-    paragraph: "Collect aims to build a technology to help Africa’s best and modern businesses achieve greater heights by making it easy for businesses to accept secure payments from multiple local and global payment channels, and then we give you the tools to ensure customer management and retention."
-}
-const problem = {
-    title: "Understanding The Problem",
-    paragraphs: [
-        "A lot of businesses struggle with carrying out transactions seamlessly wherby receiving payments for services can be a bit burdensome when there is a delay validating the transaction especially when its a foreign payment.",
-        "Businesses also find it difficult in documenting their transactions and keeping records of their account and properly balance it, it gets worse when you have multiple business outlets in various states and countries, having a unified accounting system in place becomes difficult. All these prevent companies and businesses from achieving their highest potentials"
-    ],
-    img: photo1,
-    alt: "Problem fixing"
-}
-const goal = {
-    title: "The Goal",
-    paragraphs: [
-        "The goal was to create a unique solution, focusing on businesses and having a one-stop product to help them manage their financial activities, make sending money to wherever in the world easy, and receiving money from customers in whatever country as seamless as possible.",
-        "We aim to help businesses with several outlets, and instead of having to always go to the banks and have the whole signatory to account long procedure, we have a means whereby you have one product, and control all the financial activities, and account for all transactions in all the outlets in one space easily, to help you easily manage and balance your account, by so doing, expanding your business and taking it to greater heights",
-        "Lastly, what's a business without customers, we aim to help you manage and establish relationships with your customers."
-    ],
-    img: photo2,
-    alt: "Goal"
-}
-const processArr = [
-    {
-        img: photo3,
-        alt: "Research",
-        title: "Research",
-        methods: ["Context study","User pain points", "Competitive audits"]
-    },
-    {
-        img: photo4,
-        alt: "Analysis",
-        title: "Analysis",
-        methods: ["Problem statements","Use cases", "Executive summary"]
-    },
-    {
-        img: photo5,
-        alt: "Ideation",
-        title: "Ideation",
-        methods: ["Feature narrative","Design Principles", "Brainstorming"]
-    },
-    {
-        img: photo6,
-        alt: "Design",
-        title: "Design",
-        methods: ["Userflow","High fidelity designs", "Interative Prototypes"]
-    },
-    {
-        img: photo7,
-        alt: "Feedback",
-        title: "Feedback",
-        methods: ["Stake holder reviews","Field testing", "Design critiques"]
-    },
-    {
-        img: photo8,
-        alt: "Iteration",
-        title: "Iteration",
-        methods: ["Iterations","Copywriting"]
-    },
 ]
 const headerFont = 'font-playfair text-4xl'
 const volume = {

@@ -41,8 +41,8 @@ const worksArr = [
         link: "/pegasus"
     },
     {
-        alt: "Myria",
-        title: "Myria",
+        alt: "Myria Wallet",
+        title: "Myria Wallet",
         content: "Bridging the world of NFT and gaming assets and token rewards to gamers making it easy to interrelate with one another",
         link: "/myria"
     },

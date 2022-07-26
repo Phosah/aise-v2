@@ -46,15 +46,4 @@ const themeMode = "light"
                 url('../assets/powrfinance/cover.png');
     background-size: cover;
 }
-
-#par div:nth-child(4) {
-    background-attachment: fixed;
-    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/other-works/trustbreed1.png');
-    background-size: cover;
-}
-#par div:nth-child(5) {
-    background-attachment: fixed;
-    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/other-works/doorstep1.png');
-    background-size: cover;
-}
 </style>

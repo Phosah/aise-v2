@@ -1,4 +1,5 @@
 <script setup>
+import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue'
 import Carousel from '../components/Carousel.vue'
 import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
@@ -6,35 +7,39 @@ import UserPersona from '../components/UserPersona.vue'
 import OtherProjectsFintech from '../components/OtherProjectsFintech.vue'
 import HeaderInfo from '../components/HeaderInfo.vue'
 import LayoutOne from '../components/LayoutOne.vue'
-import photo1 from '../assets/other-works/the-problem.png'
-import photo2 from '../assets/other-works/the-goal.png'
 import LayoutTwo from '../components/LayoutTwo.vue'
+import LayoutThree from '../components/LayoutThree.vue'
 import Process from '../components/Process.vue'
-import photo3 from '../assets/other-works/process-research.png'
-import photo4 from '../assets/other-works/process-analysis.png'
-import photo5 from '../assets/other-works/process-ideation.png'
-import photo6 from '../assets/other-works/process-ideation.png'
-import photo7 from '../assets/other-works/process-feedback.png'
-import photo8 from '../assets/other-works/process-iteration.png'
-import photo9 from '../assets/other-works/collectafrica-survey-photo-1.png'
-import photo10 from '../assets/other-works/collectafrica-survey-photo-2.png'
-import photo11 from '../assets/other-works/collectafrica-survey-photo-3.png'
-import photo12 from '../assets/other-works/collectafrica-survey-photo-4.png'
-import photo13 from '../assets/other-works/paypal.png'
-import photo14 from '../assets/other-works/stripe.png'
-import photo15 from '../assets/other-works/user-persona-3.png'
-import photo16 from '../assets/other-works/user-persona-4.png'
-import photo17 from '../assets/other-works/opportunities-graph-2.png'
-import photo18 from '../assets/other-works/simplified-dashboard.png'
-import photo19 from '../assets/other-works/customer-management.png'
-import photo20 from '../assets/other-works/user-management.png'
-import photo21 from '../assets/other-works/payment-link.png'
-import photo22 from '../assets/other-works/collect-conclusion.png'
-import photo23 from '../assets/other-works/collectafrica1.png'
-import Navbar from '../components/Navbar.vue'
+import persona1 from '../assets/collect-africa/persona-1.png'
+import persona2 from '../assets/collect-africa/persona-2.png'
+import hero from '../assets/collect-africa/hero.png'
+import photo1 from '../assets/collect-africa/problem.png'
+import photo2 from '../assets/collect-africa/goal.png'
+import photo3 from '../assets/collect-africa/research.png'
+import photo4 from '../assets/collect-africa/analysis.png'
+import photo5 from '../assets/collect-africa/ideation.png'
+import photo6 from '../assets/collect-africa/ideation.png'
+import photo7 from '../assets/collect-africa/feedback.png'
+import photo8 from '../assets/collect-africa/iteration.png'
+import photo9 from '../assets/collect-africa/survey-photo-1.png'
+import photo10 from '../assets/collect-africa/survey-photo-2.png'
+import photo11 from '../assets/collect-africa/survey-photo-3.png'
+import photo12 from '../assets/collect-africa/survey-photo-4.png'
+import photo13 from '../assets/collect-africa/paystack.png'
+import photo14 from '../assets/collect-africa/stripe.png'
+import photo15 from '../assets/collect-africa/transaction-volume.png'
+import photo16 from '../assets/collect-africa/dashboard.png'
+import photo17 from '../assets/collect-africa/customer-management.png'
+import photo18 from '../assets/collect-africa/subscription.png'
+import photo19 from '../assets/collect-africa/payment.png'
+import photo20 from '../assets/collect-africa/user-management.png'
+import photo21 from '../assets/collect-africa/paylink.png'
+import photo22 from '../assets/collect-africa/account-reconciliation.png'
+import photo23 from '../assets/collect-africa/conclusion.png'
+import photo24 from '../assets/collect-africa/onboarding.png'
 
 const details = {
-    img: photo23,
+    img: hero,
     alt: "Collect Africa",
     title: "Collect Africa",
     shortDesc: "Reinventing payment systems and account management for both large and small scale businesses across Africa",
@@ -110,20 +115,6 @@ const cards = [
     },
     {
         img: photo12
-    }
-]
-const cardsDark = [
-    {
-        imgName: "collectafrica-survey-photo-dark-1.png"
-    },
-    {
-        imgName: "collectafrica-survey-photo-dark-2.png"
-    },
-    {
-        imgName: "collectafrica-survey-photo-dark-3.png"
-    },
-    {
-        imgName: "collectafrica-survey-photo-dark-4.png"
     }
 ]
 const analysisArray = [
@@ -210,7 +201,7 @@ const analysisArray = [
 ]
 const personasArray = [
     {
-        img: photo15,
+        img: persona1,
         alt: "User Persona",
         name: "Marvin Oluimde",
         info: "Marvin is a 32 year old business man in Lagos that runs a small business where he sells and delivers  wristwatches withing and out of Lagos from his little store at Obalende Market",
@@ -232,7 +223,7 @@ const personasArray = [
         ]
     },
     {
-        img: photo16,
+        img: persona2,
         alt: "User Persona",
         name: "Jennson Mobiles",
         info: "Jennson mobile is an electronics company that deals in selling and repairs of all phones ranging from android to ios, they have over 50 staff and 20 outlets all over the country",
@@ -261,7 +252,7 @@ const volume = {
     paragraphs: [
         "With 10% of this tranascation relating with the African market, the opportunities available is endless"
     ],
-    img: photo17,
+    img: photo15,
     alt: "volume graph"
 }
 const dashboard = {
@@ -269,7 +260,7 @@ const dashboard = {
     paragraphs: [
         "As a user, your first daily interaction is with the dashboard where you receive a summary of reports and lasted activities that have happened in your company as regards financial activities, hence the design of the dashboard had to be optimized to be easy to read, prioritize the data visualization to display info from the highest priority to the least and still give room to take major actions in the product."
     ],
-    img: photo18,
+    img: photo16,
     alt: "dashboard"
 }
 const customer = {
@@ -278,8 +269,24 @@ const customer = {
         "A good customer and business relationship improves the bonds customers have with businesses which in turn makes them stay longer with a business that relates with them better and the business would know how best to serve the customers as you can directly message the customers and they receive the messages in the mails and SMS and every reply you receive in the customer's thread on your dashboard",
         "You can add new customers, delete customers, place customers on services and even send them messages on events like popular holidays and birthdays to ensure an even greater bond."
     ],
-    img: photo19,
+    img: photo17,
     alt: "customer"
+}
+const subscription = {
+    title: "Plans & Supscriptions",
+    paragraphs: [
+        "Organizations that give recurring services that require timely payments now can simplify their processes and monitor their activities, here you get to see all the services rendered, the number of subscribers to each service, the customers/subscribers, and view each of their payment histories. also, you don't always have to remind them of every payment or send them the account to pay in again, all subscribers have their registration date and last reactivation date. so 1 week, 3days, and 1 day to every subscription the subscribers receive a custom message made by you about their renewal and the means of payment, and all this is done without you lifting a finger."
+    ],
+    img: photo18,
+    alt: "subscription"
+}
+const transfer = {
+    title: "Payment & Transfer",
+    paragraphs: [
+        "Every business and even  freelancer needs to make payments as well and not just receive, so to do this we give you the ability to receive and  transfer funds from your dashboard to any bank account in Africa and over for any of your business branches, for example, a branch in Abuja and another in New York can both initiate a business transaction from the same business account for a service needed for the company and if an approval chain is set necessary parties would approve before payment is sent to anywhere in the world and be able to both monitor the status of the transactions and also have proper documentation that you can go back to any time this helps for a proper accounting system"
+    ],
+    img: photo19,
+    alt: "transfer"
 }
 const user = {
     title: "User Management",
@@ -298,14 +305,30 @@ const payment = {
     img: photo21,
     alt: "payment"
 }
+const account = {
+    title: "Account Reconciliation & Balancing",
+    paragraphs: [
+        "One of the foundations of every good business is a solid financial system, businesses that fail to have a proper account balance would fail to plan against the next month or year. We help businesses reconcile all payments to and from the business and can even link external accounts that the transitions affect the business. Cash payments play a major part in balancing so we give you the ability to register all cash payments made into your business account to serve as a record and the payment can be reconciled as well for a good business accounting system."
+    ],
+    img: photo22,
+    alt: "Account Reconciliation & Balancing"
+}
 const conclusion = {
     title: "Conclusion",
     paragraphs: [
         "It's hard enough to get a single person or business to trust you to help handle their finances when dealing with businesses and financial activities I have discovered that transparency and ease of use are of top priority in getting the best of results and user retention. And also the understanding of business goals to ensure the business makes a profit has to be placed as another priority hence a lot of calls with stakeholders and the aligning of design and business goals has to be established from the start.",
         "I enjoyed this project and I got to realize how we can help people who run businesses if they focus on the business itself they have more time and strategic juice to focus and take their organization to greater heights"
     ],
-    img: photo22,
+    img: photo23,
     alt: "conclusion"
+}
+const onboarding = {
+    title: "Onboarding Screens",
+    paragraphs: [
+        "The onboarding is properly tailored to be quick and seamless, to improve the user's experience by accounting for all business categories with including small scale, large scale, and freelancers. The sign-up aims to be short and quick so all unnecessary steps were removed to reduce the rate of drop-off by customers without necessary documents to finish the process. So after signup, you have restrictions to some transaction activities till you have provided the necessary documents, so we give you value at all times."
+    ],
+    img: photo24,
+    alt: "onboarding"
 }
 const headerCenter = 'text-center font-playfair'
 const bgColor = "light"
@@ -345,14 +368,9 @@ const bgColor = "light"
             <h2
                 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
             >My Design Process</h2>
-            <div class="hidden md:block">
-                <img class="w-full" src="../assets/other-works/design-process.png" alt="Design Process" />
+            <div>
+                <img class="w-full" src="../assets/collect-africa/design-process.png" alt="Design Process" />
             </div>
-            <!-- Mobile version -->
-            <div class="block md:hidden">
-                <img class="w-full" src="../assets/other-works/design-process-mobile.png" alt="Timeline" />
-            </div>
-            <!-- End of Mobile version -->
         </section>
         <section class="max-w-7xl mx-auto px-6 md:px-16 text-sm md:text-base">
             <LayoutOne :page="problem" :headerFont="headerFont" />
@@ -372,7 +390,7 @@ const bgColor = "light"
                     <p>Lastly, what's a business without customers, we aim to help you manage and establish relationships with your customers.</p>
                 </div>
                 <div class>
-                    <img class="w-full" src="../assets/other-works/the-goal.png" alt="Phones" />
+                    <img class="w-full" src="../assets/collect-africa/goal.png" alt="Goal" />
                 </div>
             </div>
             <!-- End of mobile version -->
@@ -415,7 +433,7 @@ const bgColor = "light"
                     </ul>
                 </div>
                 <div class="md:flex-1">
-                    <img class="w-full" src="../assets/other-works/pain-point.png" alt="Pain points" />
+                    <img class="w-full" src="../assets/collect-africa/pain-point.png" alt="Pain points" />
                 </div>
             </div>
         </section>
@@ -492,10 +510,10 @@ const bgColor = "light"
             </div>
             <div class="md:flex md:space-x-10 mb-10">
                 <div>
-                    <img class="w-full" src="../assets/other-works/opportunities-1.png" alt="Opportunities" />
+                    <img class="w-full" src="../assets/collect-africa/opportunities-1.png" alt="Opportunities" />
                 </div>
                 <div>
-                    <img class="w-full" src="../assets/other-works/opportunities-2.png" alt="Opportunities" />
+                    <img class="w-full" src="../assets/collect-africa/opportunities-2.png" alt="Opportunities" />
                 </div>
             </div>
             <div class="mb-12">
@@ -517,7 +535,7 @@ const bgColor = "light"
                 <div>
                     <img
                         class="w-full"
-                        src="../assets/other-works/value-proposition-customer.png"
+                        src="../assets/collect-africa/value-proposition-customer.png"
                         alt="Value Proposition"
                     />
                 </div>
@@ -532,7 +550,7 @@ const bgColor = "light"
                 <div>
                     <img
                         class="w-full"
-                        src="../assets/other-works/value-proposition-map.png"
+                        src="../assets/collect-africa/value-proposition-business.png"
                         alt="Value Proposition"
                     />
                 </div>
@@ -591,7 +609,7 @@ const bgColor = "light"
             </div>
             <div class="bg-brand-gray-7">
                 <div class="max-w-7xl mx-auto mb-20">
-                    <img src="../assets/other-works/user-flows.png" alt="User flows" />
+                    <img src="../assets/collect-africa/user-flow.png" alt="User flows" />
                 </div>
             </div>
         </section>
@@ -606,7 +624,7 @@ const bgColor = "light"
             </div>
             <div class="bg-brand-gray-7">
                 <div class="max-w-7xl mx-auto mb-20">
-                    <img src="../assets/other-works/sitemap.png" alt="User flows" />
+                    <img src="../assets/collect-africa/sitemap.png" alt="Sitemap" />
                 </div>
             </div>
         </section>
@@ -620,25 +638,11 @@ const bgColor = "light"
                 >The solution had to have a mobile app and a dashboard and a mobile app, they both provide similar solutions but with little difference based on the target audience and what they have accessible to work with to better suit their needs</p>
             </div>
             <div>
-                <img class="w-full" src="../assets/other-works/the-solution.png" alt="The solution" />
+                <img class="w-full" src="../assets/collect-africa/solution.png" alt="The solution" />
             </div>
         </section>
         <section class="max-w-7xl mx-auto pt-10 md:pt-20 px-6 md:px-16 text-sm md:text-base">
-            <div class="mb-20">
-                <h2
-                    class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                >Onboarding Screens</h2>
-                <p
-                    class="mb-10"
-                >The onboarding is properly tailored to be quick and seamless, to improve the user's experience by accounting for all business categories with including small scale, large scale, and freelancers. The sign-up aims to be short and quick so all unnecessary steps were removed to reduce the rate of drop-off by customers without necessary documents to finish the process. So after signup, you have restrictions to some transaction activities till you have provided the necessary documents, so we give you value at all times.</p>
-                <div class="mb-16">
-                    <img
-                        class="w-full"
-                        src="../assets/other-works/onboarding-screens-2.png"
-                        alt="Onboarding screens"
-                    />
-                </div>
-            </div>
+            <LayoutThree :page="onboarding" :headerFont="headerFont" />
             <LayoutOne :page="dashboard" :headerFont="headerFont" />
             <div class="hidden md:block">
                 <LayoutTwo :page="customer" :headerFont="headerFont"/>
@@ -655,27 +659,14 @@ const bgColor = "light"
                 <div class>
                     <img
                         class="w-full"
-                        src="../assets/other-works/customer-management.png"
-                        alt="Simplified dashboard"
+                        src="../assets/collect-africa/customer-management.png"
+                        alt="Customer management"
                     />
                 </div>
             </div>
             <!-- End of Mobile version -->
-            <div class="md:py-20">
-                <h2
-                    class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                >Payments & Transfer</h2>
-                <p
-                    class="mb-10"
-                >Organizations that give recurring services that require timely payments now can simplify their processes and monitor their activities, here you get to see all the services rendered, the number of subscribers to each service, the customers/subscribers, and view each of their payment histories. also, you don't always have to remind them of every payment or send them the account to pay in again, all subscribers have their registration date and last reactivation date. so 1 week, 3days, and 1 day to every subscription the subscribers receive a custom message made by you about their renewal and the means of payment, and all this is done without you lifting a finger.</p>
-                <div>
-                    <img
-                        class="w-full"
-                        src="../assets/other-works/payment-transfer.png"
-                        alt="Onboarding screens"
-                    />
-                </div>
-            </div>
+            <LayoutThree :page="subscription" :headerFont="headerFont" />
+            <LayoutThree :page="transfer" :headerFont="headerFont" />
             <LayoutOne :page="user" :headerFont="headerFont" />
             <div class="hidden md:block">
                 <LayoutTwo :page="payment" :headerFont="headerFont" />
@@ -690,38 +681,20 @@ const bgColor = "light"
                     <p>This is also used a lot and integrated with eCommerce systems where this would be used as a portal to make payment for purchased goods which would be integrated into the eCommerce platforms</p>
                 </div>
                 <div class>
-                    <img class="w-full" src="../assets/other-works/payment-link.png" alt="Payment link" />
+                    <img class="w-full" src="../assets/collect-africa/paylink.png" alt="Payment link" />
                 </div>
             </div>
             <!-- End of Mobile version -->
-            <div class="py-10 md:py-20">
-                <h2
-                    class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                >Account Reconciliation & Balancing</h2>
-                <p
-                    class="mb-10"
-                >One of the foundations of every good business is a solid financial system, businesses that fail to have a proper account balance would fail to plan against the next month or year. We help businesses reconcile all payments to and from the business and can even link external accounts that the transitions affect the business. Cash payments play a major part in balancing so we give you the ability to register all cash payments made into your business account to serve as a record and the payment can be reconciled as well for a good business accounting system.</p>
-                <div class="mb-16">
-                    <img
-                        class="w-full"
-                        src="../assets/other-works/account-reconciliation.png"
-                        alt="Account reconciliation and balancing"
-                    />
-                </div>
-            </div>
-            <div class="mb-10">
-                <h2
-                    class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                >Mobile responsiveness</h2>
+            <LayoutThree :page="account" :headerFont="headerFont" />
+        </section>
+        <section class="my-20 md:my-40">
+            <div class="max-w-7xl mx-auto mb-8 px-6 md:px-16">
+                <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">More Design Screens</h3>
                 <p>60% of the target users are mobile users and hence to maximize the experience of users, there needs to be a lot of attention paid to the mobile views of the dashboard as that might be the main entry point of most users</p>
             </div>
+            <div><img class="w-full" src="../assets/collect-africa/mobile-screens.png" alt="design screens" /></div>
         </section>
-        <section class="max-w-7xl mx-auto">
-            <div class>
-                <img class="w-full" src="../assets/other-works/collect-mobile.png" alt="More Features" />
-            </div>
-        </section>
-        <section class="max-w-7xl mx-auto pt-10 md:pt-20 px-6 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto px-6 md:px-16 text-sm md:text-base">
             <LayoutOne :page="conclusion" :headerFont="headerFont" />
         </section>
         <OtherProjectsFintech :headerCenter="headerCenter" />

@@ -5,12 +5,10 @@ defineProps({
         required: true
     },
     headerFont: {
-        type: String,
-        required: true
+        type: String
     },
      marginSize: {
         type: String,
-        required: true
     }
 })
 </script>

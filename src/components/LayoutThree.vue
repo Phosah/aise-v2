@@ -6,12 +6,15 @@ defineProps({
     }, 
     paraWidth: {
         type: String
-    }
+    },
+    headerFont: {
+        type: String,
+    },
 })
 </script>
 <template>
     <div class="mt-20 mb-24 md:mb-40">
-        <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">{{ page.title }}</h3>
+        <h2 :class="headerFont ? headerFont : 'font-new-paris-kingsize'" class="mt-12 mb-6 text-2xl md:text-3xl font-bold">{{ page.title }}</h2>
         <div v-for="(para, ix) in page.paragraphs" :key="ix">
             <p :class="paraWidth" class="mb-4">{{ para }}</p>
         </div>

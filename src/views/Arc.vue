@@ -42,7 +42,7 @@ const background = {
     title: "Problem Statement",
     paragraphs: [
         "The world of crypto has been in existence since 2009 but didn't get a lot of limelight till the introduction of the Defi space in 2015. The Defi space got a bigger boom in 2017 with the rise of a lot of both Centralized Exchanges like Binance and Decentralized Exchanges like Uniswap.",
-        "MWith the rise of crypto, new tokens get listed daily and a lot of these tokens are found more on DEXs with the likes of Pancakeswap, Uniswap, Zapper, etc being a hub to list and interact with them connected to your wallet e.g Trustwallet. This made people have investments scattered across multiple platforms, making it difficult to manage your investments properly and estimate your worth.",
+        "With the rise of crypto, new tokens get listed daily and a lot of these tokens are found more on DEXs with the likes of Pancakeswap, Uniswap, Zapper, etc being a hub to list and interact with them connected to your wallet e.g Trustwallet. This made people have investments scattered across multiple platforms, making it difficult to manage your investments properly and estimate your worth.",
         "Arc was devised to be the solution to the unifying of the crypt space including all CEX, DEX and even NFT investments to make the lives of crypto investors easier"
     ],
     img: photo1,

@@ -28,7 +28,7 @@ const themeMode = "light"
 
 <style scoped>
 .par {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/other-works/collectafrica1.png'); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/collect-africa/cover.png'); 
     background-size: cover;
     height: 100vh; 
 }  

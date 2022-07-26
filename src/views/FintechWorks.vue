@@ -13,7 +13,7 @@ const worksArr = [
     {
         alt: "Daba",
         title: "Daba",
-        content: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users",
+        content: "Binging a world where daily investors both big and small have access to verified startups in the fastest growing investment continent on the planet",
         link: "/daba"
     },
     {

@@ -7,20 +7,20 @@ import LayoutOne from '../components/LayoutOne.vue'
 import LayoutTwo from '../components/LayoutTwo.vue'
 import LayoutThree from '../components/LayoutThree.vue';
 import CreatePersonas from '../components/CreatePersonas.vue';
-import dabaCover from '../assets/daba/daba-home.png'
+import dabaCover from '../assets/daba/hero.png'
 import background from '../assets/daba/background.png'
 import persona1 from "../assets/daba/persona-1.png"
 import persona2 from "../assets/daba/persona-2.png"
-import screens1 from "../assets/daba/onboarding-screens.png"
-import screens2 from "../assets/daba/home-page.png"
+import screens1 from "../assets/daba/onboarding.png"
+import screens2 from "../assets/daba/home.png"
 import screens3 from "../assets/daba/portfolio-tracking.png"
 import screens4 from "../assets/daba/investment-opportunity.png"
 import screens5 from "../assets/daba/explore.png"
 import screens6 from "../assets/daba/social-investing.png"
 import screens7 from "../assets/daba/live-discussions.png"
 import screens8 from "../assets/daba/stocks.png"
-import screens9 from "../assets/daba/live-investments.png"
-import screens10 from "../assets/daba/detailed-report.png"
+import screens9 from "../assets/daba/live-investing.png"
+import screens10 from "../assets/daba/report.png"
 import screens11 from "../assets/daba/portfolio-plan.png"
 
 const info = {
@@ -161,7 +161,7 @@ const liveInvestments = {
     img: screens9,
     alt: "Investing",
 }
-const detail = {
+const report = {
     title: "Detailed and Summarized Report",
     paragraphs: [
         "The report is like the lifeblood of every investment opportunity, you need to know how this opportunity is doing and its history behind it in detail.",
@@ -207,16 +207,8 @@ const width = 'w-3/4'
                 </div>
                 <div class="md:flex-1">
                     <h3 class="mb-6 text-2xl md:text-3xl font-new-paris-kingsize">Some Interview responses</h3>
-                    <div class="flex">
-                        <div>
-                            <div><img src="../assets/daba/note1.png" alt="Note" /></div>
-                            <div><img src="../assets/daba/note2.png" alt="Note" /></div>
-                            <div><img src="../assets/daba/note3.png" alt="Note" /></div>
-                        </div>
-                        <div>
-                            <div><img src="../assets/daba/note5.png" alt="Note" /></div>
-                            <div><img src="../assets/daba/note4.png" alt="Note" /></div>
-                        </div>
+                    <div>
+                       <img src="../assets/daba/interview-responses.png" alt="Interview responses" />
                     </div>
                 </div>
             </div>
@@ -233,7 +225,7 @@ const width = 'w-3/4'
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">Insights from the Research & Interviews </h3>
                 <p>Based on the data gotten from the research gotten before joining and the research carried by myself after joining, which comprised of User interview, competitive analysis, checking of feedback on competitors.</p>
             </div>
-            <div class="grid grid-cols-2 gap-8">
+            <div class="grid md:grid-cols-2 gap-8">
                 <div class="p-6 border border-black border-opacity-25 rounded-md ">
                     <h4 class="mb-4 text-xl font-new-paris-kingsize">Long Term Holding</h4>
                     <p>63% of the investors interviewed are long-term holders of stocks and startup shares </p>
@@ -271,7 +263,7 @@ const width = 'w-3/4'
                 <LayoutTwo :page="discussions" />
                 <LayoutThree :page="stocks" :paraWidth="width" />
                 <LayoutOne :page="liveInvestments" />
-                <LayoutTwo :page="detail" />
+                <LayoutTwo :page="report" />
                 <LayoutThree :page="plan" :paraWidth="width" />
             </div>
         </section>
@@ -280,7 +272,7 @@ const width = 'w-3/4'
                 <h3 class="mb-4 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Screens from the Webapp</h3>
                 <p class="mb-12">Although major activities and focus were on the mobile app as research showed that most users were willing to interact with the application from their mobile devices, a web app version was designed with the same flow but tailored for web experiences to give provisions for users of the web</p>
             </div>
-            <div><img class="w-full" src="../assets/daba/webapp-screens.png" alt="Webapp screens" /></div>
+            <div><img class="w-full" src="../assets/daba/more-screens.png" alt="Webapp screens" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-12 text-3xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>

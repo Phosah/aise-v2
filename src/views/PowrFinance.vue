@@ -4,22 +4,34 @@ import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
 import UserPersona from '../components/UserPersona.vue'
 import OtherProjectsFintech from '../components/OtherProjectsFintech.vue'
 import HeaderInfo from '../components/HeaderInfo.vue'
-import photo1 from '../assets/other-works/wise.png'
-import photo2 from '../assets/other-works/payoneer.png'
-import photo3 from '../assets/other-works/paypal.png'
-import photo4 from '../assets/other-works/user-persona-2.png'
-import photo5 from '../assets/other-works/user-persona-3.png'
-import photo6 from '../assets/other-works/opportunities-graph-1.png'
-import photo7 from '../assets/other-works/opportunities-graph-2.png'
-import photo8 from '../assets/other-works/create-bank-account.png'
-import photo9 from '../assets/other-works/crypto-payments.png'
-import photo10 from '../assets/other-works/lending.png'
-import photo11 from '../assets/other-works/dollar-cards.png'
-import photo12 from '../assets/other-works/offline-transaction.png'
-import photo13 from '../assets/other-works/powrfinance1.png'
 import LayoutTwo from '../components/LayoutTwo.vue'
 import LayoutOne from '../components/LayoutOne.vue'
+import LayoutThree from '../components/LayoutThree.vue'
 import Navbar from '../components/Navbar.vue'
+import hero from '../assets/powrfinance/hero.png'
+import photo1 from '../assets/powrfinance/wise.png'
+import photo2 from '../assets/powrfinance/payoneer.png'
+import photo3 from '../assets/powrfinance/paypal.png'
+import photo4 from '../assets/powrfinance/persona-1.png'
+import photo5 from '../assets/powrfinance/persona-2.png'
+import photo6 from '../assets/powrfinance/transactions.png'
+import photo7 from '../assets/powrfinance/transaction-volume.png'
+import photo8 from '../assets/powrfinance/onboarding.png'
+import photo9 from '../assets/powrfinance/create-account.png'
+import photo10 from '../assets/powrfinance/transfer.png'
+import photo11 from '../assets/powrfinance/crypto-payment.png'
+import photo12 from '../assets/powrfinance/lending.png'
+import photo13 from '../assets/powrfinance/dollar-card.png'
+import photo14 from '../assets/powrfinance/offline-transactions.png'
+
+const details = {
+    img: hero,
+    alt: "Powr Finance",
+    title: "Powr Finance",
+    shortDesc: "The growth and expansion of businesses and services are heavily dependent on seamless intercontinental financial transactions",
+    LongDesc: "Power Finance is a solution that enables Businesses and Freelancers send and receive money from any country of your choice seamlessly",
+    paragraph: "Powr finance is a fintech app that was designed to scale and grow African businesses by providing them by providing seamless transaction services while catering for other solutions needed to grow like, savings, lending, and currency conversion services, which involve crypto settlements.."
+}
 const analysisArray = [
     {
         title: "Wise",
@@ -229,14 +241,6 @@ const personasArray = [
         ]
     }
 ]
-const details = {
-    img: photo13,
-    alt: "Powr Finance",
-    title: "Powr Finance",
-    shortDesc: "The growth and expansion of businesses and services are heavily dependent on seamless intercontinental financial transactions",
-    LongDesc: "Power Finance is a solution that enables Businesses and Freelancers send and receive money from any country of your choice seamlessly",
-    paragraph: "Powr finance is a fintech app that was designed to scale and grow African businesses by providing them by providing seamless transaction services while catering for other solutions needed to grow like, savings, lending, and currency conversion services, which involve crypto settlements.."
-}
 const transaction = {
     title: "45.6 Billion in total transactions in Africa",
     paragraphs: [
@@ -253,20 +257,36 @@ const volume = {
     img: photo7,
     alt: "volume graph"
 }
+const onboarding = {
+    title: "Onboarding Screens",
+    paragraphs: [
+        "The onboarding is the first point of contact of the user to the product, so it has to seamlessly convey the message and value proposition of the product cleanly and simply, and to ensure onboarding is fast, we take just the bare minimum to open a local account with a limited transaction limit to ensure transactions can be carried out, then to make higher transactions a KYC process has to be carried out."
+    ],
+    img: photo8,
+    alt: "onboarding screens"
+}
 const bank = {
     title: "Create Bank Accounts",
     paragraphs: [
         "Have access to creating a bank account for all the major currencies in the world, these bank accounts would be used to receive money from foreign clients by just sending them the account number"
     ],
-    img: photo8,
+    img: photo9,
     alt: "Create account"
+}
+const send = {
+    title: "Send Money",
+    paragraphs: [
+        "You can send money to one person or multiple people at a time by selecting the person or people, specifying the transfer amount and currency, and inputting the various bank details. When you send all currencies are converted to USDT as a stable coin and that USDT can be liquidated into any currency of the receiver, hence making transfers done in minutes instead of days"
+    ],
+    img: photo10,
+    alt: "Send money"
 }
 const payment = {
     title: "Crypto Payment",
     paragraphs: [
         "Send major cryptocurrencies as payments to clients who desire such and also receive crypto payments into your wallet which can be stored and held for long or short term, and can be liquidated easily or converted from the coin to any other coin or any desired account both on Powr finance and locally"
     ],
-    img: photo9,
+    img: photo11,
     alt: "Crypto payment"
 }
 const lending = {
@@ -274,7 +294,7 @@ const lending = {
     paragraphs: [
         "Every user has a credit capacity/ credit score and that is decided by the platform, in which the credit score is decided from your transaction history carried out on Powr finance. These credits can be used to make purchases or run businesses but are disbursed only with proof of utilization."
     ],
-    img: photo10,
+    img: photo12,
     alt: "Lending"
 }
 const dollar = {
@@ -282,7 +302,7 @@ const dollar = {
     paragraphs: [
         "Every user gets a master dollar card that would be delivered to his/her address and can be used in any ATM to withdraw cash in any country at the bank exchange rates, and the details can also be used for online payments on any eCommerce store"
     ],
-    img: photo11,
+    img: photo13,
     alt: "Dollar"
 }
 const offline = {
@@ -290,7 +310,7 @@ const offline = {
     paragraphs: [
         "With offline transactions, we have station points with our field agents in various stores scattered around the country whereby you can walk in like a bank with your cash and the agent helps you make the transfer, this is beneficial for businesses who deal a lot with cash and would need to go to the bank first to deposit before crediting their Powr finance account. When using an agent, you provide your user id so the payment record would be sent to your app so it can be recorded in the account statement"
     ],
-    img: photo12,
+    img: photo14,
     alt: "transactions"
 }
 const headerFont = "font-playfair text-4xl"
@@ -310,36 +330,21 @@ const headerCenter = 'font-playfair'
                 <p>My responsibilities for the design of Powr finance included user research which included online and in-person interviews, concept ideation, business research, aligning key stakeholders on product goals and decisions, designing user flows, visual design, prototyping, user testing, incorporating user feedback into design iterations, and monitoring of the implementation of the product to ensure the design decisions and visuals are accurately implemented</p>
             </div>
         </section>
-        <section class="bg-black">
-            <div class="max-w-7xl mx-auto px-6 md:px-16">
-                <div class="hidden md:block">
-                    <img class="w-full" src="../assets/other-works/timeline.png" alt="Timeline" />
-                </div>
-                <!-- Mobile version -->
-                <div class="block md:hidden">
-                    <h2
-                        class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                    >Timeline</h2>
-                    <img class="w-full" src="../assets/other-works/timeline-mobile.png" alt="Timeline" />
-                </div>
-                <!-- End of Mobile version -->
+        <section class="max-w-7xl mx-auto px-6 md:px-16">
+            <div class="hidden md:block">
+                <img class="w-full" src="../assets/powrfinance/timeline.png" alt="Timeline" />
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-20 px-6 md:px-16">
+        <section class="max-w-7xl mx-auto pt-20 md:pt-40 px-6 md:px-16">
             <h2
                 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
             >My Design Process</h2>
-            <div class="hidden md:block">
-                <img class="w-full" src="../assets/other-works/design-process.png" alt="Design Process" />
+            <div>
+                <img class="w-full" src="../assets/powrfinance/design-process.png" alt="Design Process" />
             </div>
-            <!-- Mobile version -->
-            <div class="block md:hidden">
-                <img class="w-full" src="../assets/other-works/design-process-mobile.png" alt="Timeline" />
-            </div>
-            <!-- End of Mobile version -->
         </section>
         <section class="text-sm md:text-base">
-            <div class="max-w-7xl mx-auto pb-20 px-6 md:px-16">
+            <div class="max-w-7xl mx-auto py-20 px-6 md:px-16">
                 <h2
                     class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
                 >Understanding the Problem</h2>
@@ -349,20 +354,13 @@ const headerCenter = 'font-playfair'
                 <p>Over a couple of years, there has been a massive growth of service providers extending their services globally and vice versa, whereby making transactions was the main issue. Sending money abroad prevented vendors from purchasing the necessary pieces of equipment needed for their businesses and receiving payments made it hard to carry out good business. Likewise, for the freelancers, a lot could not offer their services to foreign clients because receiving payments was getting difficult, and using banks, the processes to getting a DOM account was a lot of stress and the bank charges were outrageous</p>
             </div>
             <div
-                class="relative hidden md:flex items-center justify-center h-screen max-w-7xl mx-auto text-6xl lg:text-7xl font-semibold bg-cover bg-analysis bg-center bg-no-repeat text-white"
+                class="relative flex items-center justify-center h-screen text-4xl md:text-6xl lg:text-7xl font-semibold bg-cover bg-analysis bg-center bg-no-repeat text-white"
             >
-                <img class="w-full h-full absolute inset-0 object-cover" src="../assets/other-works/competitive-analysis.png" alt="Analysis">
+                <img class="w-full h-full absolute inset-0 object-cover" src="../assets/powrfinance/competitive-analysis.png" alt="Analysis" />
                 <h1 class="z-10 text-white">Competitive analysis</h1>
             </div>
-            <!-- Mobile version -->
-            <div
-                class="md:hidden flex items-center justify-center h-screen max-w-7xl mx-auto text-5xl font-semibold bg-analysis-mobile bg-cover bg-center bg-no-repeat text-white"
-            >
-                <h1 class="text-center">Competitive analysis</h1>
-            </div>
-            <!-- End of mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto py-20 px-6 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto md:pt-40 py-20 px-6 md:px-16 text-sm md:text-base">
             <h2
                 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
             >Understanding the business goals and Competitor</h2>
@@ -375,23 +373,13 @@ const headerCenter = 'font-playfair'
         </section>
         <section class="md:py-20">
             <div
-                class="bg-image hidden md:flex items-center justify-center h-screen max-w-7xl mx-auto bg-cover bg-center bg-no-repeat text-white"
+                class="bg-image flex items-center justify-center h-screen bg-cover bg-center bg-no-repeat text-white"
             >
                 <div class="w-2/3 mx-auto text-center md:text-base">
-                    <h1 class="mb-8 text-6xl lg:text-7xl font-semibold">User Personas</h1>
+                    <h1 class="mb-8 text-4xl md:text-6xl lg:text-7xl font-semibold">User Personas</h1>
                     <p>Based on the generative user research I conducted, I created user personas that capture the essence of my target group. Jasmine and Richard helped me to always keep the needs of the users at the forefront.</p>
                 </div>
             </div>
-            <!-- Mobile version -->
-            <div
-                class="bg-image-mobile flex md:hidden items-center justify-center h-screen max-w-7xl mx-auto bg-cover bg-center bg-no-repeat text-white"
-            >
-                <div class="w-11/12 mx-auto text-center text-sm">
-                    <h1 class="mb-8 text-5xl font-semibold">User Personas</h1>
-                    <p>Based on the generative user research I conducted, I created user personas that capture the essence of my target group. Jasmine and Richard helped me to always keep the needs of the users at the forefront.</p>
-                </div>
-            </div>
-            <!-- End of Mobile version -->
         </section>
         <section>
             <div class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm">
@@ -461,17 +449,10 @@ const headerCenter = 'font-playfair'
         </section>
         <section class="md:py-20">
             <div
-                class="hidden md:flex items-center justify-center h-screen max-w-7xl mx-auto text-6xl lg:text-7xl font-semibold bg-business bg-cover bg-center bg-no-repeat text-white"
+                class="hidden md:flex items-center justify-center h-screen text-4xl md:text-6xl lg:text-7xl font-semibold bg-business bg-cover bg-center bg-no-repeat text-white"
             >
                 <h1 class="text-center">Business Opportunities</h1>
             </div>
-            <!-- Mobile version -->
-            <div
-                class="flex md:hidden items-center justify-center h-screen max-w-7xl mx-auto text-5xl lg:text-7xl font-semibold bg-business-mobile bg-cover bg-center bg-no-repeat text-white"
-            >
-                <h1 class="text-center">Business Opportunities</h1>
-            </div>
-            <!-- End of mobile version -->
         </section>
         <section class="max-w-7xl mx-auto py-20 px-6 md:px-16 text-sm md:text-base">
             <h2
@@ -499,26 +480,15 @@ const headerCenter = 'font-playfair'
                     >45.6 Billion in total transactions in Africa</h2>
                     <p>Our first targets would be the top 5 countries with the highest remittance valueNigeria, Kenya and Ghana.</p>
                 </div>
-                <div><img src="../assets/other-works/opportunities-graph-1.png" alt=""></div>
+                <div><img src="../assets/powrfinance/transactions.png" alt="" /></div>
             </div>
             <!-- End of Mobile version -->
             <p
                 class="mb-10 md:mb-20"
             >With the pain points of users requesting payment in crypto currency, it opens up a new market to explore and that would mean another fast growing resource to tap into</p>
-            <div class="hidden md:block">
+            <div>
                 <LayoutOne :page="volume" :headerFont="headerFont" />
             </div>
-            <!-- Mobile version -->
-            <div class="block md:hidden my-20 dark:text-white">
-                <div class="mb-12">
-                    <h2
-                        class="mb-4 text-2xl font-bold font-playfair"
-                    >Estimated transaction volume of $8tn in 2025</h2>
-                    <p>With 10% of this tranascation relating with the African market, the opportunities available is endless</p>
-                </div>
-                <div><img src="../assets/other-works/opportunities-graph-2.png" alt=""></div>
-            </div>
-            <!-- End of Mobile version -->
         </section>
         <section class="max-w-7xl mx-auto px-6 md:px-16 pb-10 md:pb-20 text-sm md:text-base">
             <div class="mb-20 md:mb-40">
@@ -544,7 +514,7 @@ const headerCenter = 'font-playfair'
                 <div>
                     <img
                         class="w-full"
-                        src="../assets/other-works/value-proposition-customer.png"
+                        src="../assets/powrfinance/value-proposition-customer.png"
                         alt="Value Proposition"
                     />
                 </div>
@@ -559,7 +529,7 @@ const headerCenter = 'font-playfair'
                 <div>
                     <img
                         class="w-full"
-                        src="../assets/other-works/value-proposition-map.png"
+                        src="../assets/powrfinance/value-proposition-business.png"
                         alt="Value Proposition"
                     />
                 </div>
@@ -567,60 +537,15 @@ const headerCenter = 'font-playfair'
         </section>
         <section>
             <div
-                class="hidden md:flex items-center justify-center h-screen max-w-7xl mx-auto text-6xl lg:text-7xl font-semibold bg-solutions bg-cover bg-center bg-no-repeat text-white"
+                class="flex items-center justify-center h-screen text-4xl md:text-6xl lg:text-7xl font-semibold bg-solutions bg-cover bg-center bg-no-repeat text-white"
             >
                 <h1 class="text-center">The Solutions</h1>
             </div>
-            <!-- Mobile version -->
-            <div
-                class="flex md:hidden items-center justify-center h-screen max-w-7xl mx-auto text-5xl font-semibold bg-solutions-mobile bg-cover bg-center bg-no-repeat text-white"
-            >
-                <h1 class="text-center">The Solutions</h1>
-            </div>
-            <!-- End of Mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto md:pt-40 py-20 px-6 md:px-16 text-sm md:text-base">
-            <div class="mb-16 md:mb-32">
-                <h2
-                    class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                >Onboarding Screens</h2>
-                <p
-                    class="mb-16"
-                >The onboarding is the first point of contact of the user to the product, so it has to seamlessly convey the message and value proposition of the product cleanly and simply, and to ensure onboarding is fast, we take just the bare minimum to open a local account with a limited transaction limit to ensure transactions can be carried out, then to make higher transactions a KYC process has to be carried out.</p>
-                <div class="hidden md:block">
-                    <img
-                        class="w-full"
-                        src="../assets/other-works/onboarding-screens.png"
-                        alt="Onboarding Screens"
-                    />
-                </div>
-                <!-- Mobile version -->
-                <div class="block md:hidden">
-                    <img
-                        class="w-full"
-                        src="../assets/other-works/onboarding-screens-mobile.png"
-                        alt="Onboarding Screens"
-                    />
-                </div>
-                <!-- End of Mobile version -->
-            </div>
+        <section class="max-w-7xl mx-auto py-20 px-6 md:px-16 text-sm md:text-base">
+            <LayoutThree :page="onboarding" :headerFont="headerFont" />
             <LayoutOne :page="bank" :headerFont="headerFont"/>
-            <div class="mb-16 md:mb-32">
-                <h2
-                    class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                >Send Money</h2>
-                <p
-                    class="mb-16"
-                >You can send money to one person or multiple people at a time by selecting the person or people, specifying the transfer amount and currency, and inputting the various bank details. When you send all currencies are converted to USDT as a stable coin and that USDT can be liquidated into any currency of the receiver, hence making transfers done in minutes instead of days</p>
-                <div class="hidden md:block">
-                    <img class="w-full" src="../assets/other-works/send-money.png" alt="Send Money" />
-                </div>
-                <!-- Mobile version -->
-                <div class="block md:hidden">
-                    <img src="../assets/other-works/send-money-mobile.png" alt="Create bank account" />
-                </div>
-                <!-- End of Mobile version -->
-            </div>
+            <LayoutThree :page="send" :headerFont="headerFont" />
             <div class="hidden md:block">
                 <LayoutTwo :page="payment" :headerFont="headerFont"/>
             </div>
@@ -636,7 +561,7 @@ const headerCenter = 'font-playfair'
                     <div class="flex-1">
                         <img
                             class="w-full"
-                            src="../assets/other-works/crypto-payments-mobile.png"
+                            src="../assets/powrfinance/crypto-payment.png"
                             alt="Crypto payments"
                         />
                     </div>
@@ -668,16 +593,12 @@ const headerCenter = 'font-playfair'
             <!-- End of Mobile version -->
             <LayoutOne :page="offline" :headerFont="headerFont" />
         </section>           
-        <section class="max-w-7xl mx-auto">
-            <div class="mb-16 md:px-16 px-6">
-                <h2
-                    class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
-                >More Features</h2>
-                <p>Below holds a couple more solution screens which include, requesting for invoice and bank statements for a particular duration, invite a friend to increase marketing and business growth, customer support and conversion of funds from one currency to another and to crypto</p>
+        <section class="">
+            <div class="max-w-7xl mx-auto px-6 md:px-16">
+                <h3 class="mb-4 text-2xl md:text-4xl font-bold font-new-paris-kingsize">More Features</h3>
+                <p class="mb-12">Below holds a couple more solution screens which include, requesting for invoice and bank statements for a particular duration, invite a friend to increase marketing and business growth, customer support and conversion of funds from one currency to another and to crypto</p>
             </div>
-            <div class>
-                <img class="w-full" src="../assets/other-works/more-features.png" alt="More Features" />
-            </div>
+            <div><img class="w-full" src="../assets/powrfinance/more-screens.png" alt="Mobile screens" /></div>
         </section>
         <section class="max-w-7xl mx-auto py-40 px-6 md:px-16">
             <h2 class="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold font-playfair">Conclusion</h2>
@@ -694,13 +615,6 @@ const headerCenter = 'font-playfair'
             rgba(18, 18, 18, 0.7),
             rgba(18, 18, 18, 0.7)
         ),
-        url("../assets/user-persona-1.png");
-}
-.bg-image-mobile {
-    background-image: linear-gradient(
-            rgba(18, 18, 18, 0.7),
-            rgba(18, 18, 18, 0.7)
-        ),
-        url("../assets/user-persona-2.png");
+        url("../assets/powrfinance/user-persona.png");
 }
 </style>

@@ -73,15 +73,15 @@ module.exports = {
         three: "url('../src/assets/other-works/3.png')",
         four: "url('../src/assets/other-works/4.png')",
         five: "url('../src/assets/other-works/5.png')",
-        analysis: "url('../src/assets/other-works/analysis.png')",
+        analysis: "url('../src/assets/powrfinance/competitive-analysis.png')",
         "analysis-mobile":
           "url('../src/assets/other-works/competitive-analysis-mobile.png')",
         "persona-1-mobile":
           "url('../src/assets/other-works/user-persona-2.png')",
-        business: "url('../src/assets/other-works/business-opportunity.png')",
+        business: "url('../src/assets/powrfinance/business-opportunity.png')",
         "business-mobile":
           "url('../src/assets/other-works/business-opportunity-mobile.png')",
-        solutions: "url('../src/assets/other-works/the-solutions.png')",
+        solutions: "url('../src/assets/powrfinance/solutions.png')",
         "solutions-mobile":
           "url('../src/assets/other-works/the-solutions-mobile.png')",
       },

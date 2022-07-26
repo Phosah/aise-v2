@@ -35,7 +35,7 @@ const themeMode = "light"
 
 #par div:nth-child(2) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)),
-                  url('../assets/daba/daba-home.png');
+                  url('../assets/daba/cover.png');
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -43,7 +43,7 @@ const themeMode = "light"
 
 #par div:nth-child(3) {
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), 
-                url('../assets/other-works/powrfinance1.png');
+                url('../assets/powrfinance/cover.png');
     background-size: cover;
 }
 

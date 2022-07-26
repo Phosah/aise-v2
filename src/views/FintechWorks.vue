@@ -19,7 +19,7 @@ const worksArr = [
     {
         alt: "Powr Finance",
         title: "Powr Finance",
-        content: "Providing investment opportunities, real-time trading activities and launchpad opportunities for investing in new tokens before the are listed to users",
+        content: "The growth and expansion of businesses and services are heavily dependent on seamless intercontinental financial transactions",
         link: "/powrfinance"
     },
 ]

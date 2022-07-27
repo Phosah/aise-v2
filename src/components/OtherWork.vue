@@ -43,7 +43,7 @@ const themeMode = "light"
 
 #par div:nth-child(3) {
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), 
-                url('../assets/trivadi/trivadi-home.png');
+                url('../assets/trivadi/cover.png');
     background-size: cover;
 }
 

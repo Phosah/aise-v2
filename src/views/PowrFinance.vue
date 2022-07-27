@@ -612,9 +612,9 @@ const headerCenter = 'font-playfair'
 <style>
 .bg-image {
     background-image: linear-gradient(
-            rgba(18, 18, 18, 0.7),
-            rgba(18, 18, 18, 0.7)
-        ),
-        url("../assets/powrfinance/user-persona.png");
+        rgba(18, 18, 18, 0.7),
+        rgba(18, 18, 18, 0.7)
+    ),
+    url("../assets/powrfinance/user-persona.png");
 }
 </style>

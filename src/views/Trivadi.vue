@@ -2,37 +2,36 @@
 import Navbar from '../components/Navbar.vue';
 import Header from '../components/Header.vue';
 import LayoutOne from '../components/LayoutOne.vue'
-import trivadiCover from '../assets/trivadi/trivadi-home.png'
-import background from "../assets/trivadi/background.png"
+import LayoutTwo from '../components/LayoutTwo.vue';
+import LayoutThree from '../components/LayoutThree.vue';
 import CreatePersonas from '../components/CreatePersonas.vue';
 import Footer from '../components/Footer.vue';
 import OtherProjects from '../components/OtherProjects.vue';
+import trivadiCover from '../assets/trivadi/hero.png'
+import background from "../assets/trivadi/background.png"
 import persona1 from '../assets/trivadi/persona-1.png'
 import persona2 from "../assets/trivadi/persona-2.png"
-import LayoutTwo from '../components/LayoutTwo.vue';
-import LayoutThree from '../components/LayoutThree.vue';
 import photo1 from '../assets/trivadi/research.png'
-import photo2 from "../assets/trivadi/home.png"
-import photo3 from "../assets/trivadi/discover.png"
-import photo4 from "../assets/trivadi/shipment.png"
-import photo5 from "../assets/trivadi/trip.png"
-import photo6 from "../assets/trivadi/create-trip.png"
-import photo7 from "../assets/trivadi/booking.png"
-import photo8 from "../assets/trivadi/tour.png"
-import photo9 from "../assets/trivadi/game.png"
-import photo10 from "../assets/trivadi/speech.png"
-import photo11 from "../assets/trivadi/account.png"
-import photo12 from "../assets/trivadi/research.png"
+import photo2 from '../assets/trivadi/account.png'
+import photo3 from "../assets/trivadi/home.png"
+import photo4 from "../assets/trivadi/discover.png"
+import photo5 from "../assets/trivadi/shipment.png"
+import photo6 from "../assets/trivadi/trip.png"
+import photo7 from "../assets/trivadi/create-trip.png"
+import photo8 from "../assets/trivadi/booking.png"
+import photo9 from "../assets/trivadi/tour.png"
+import photo10 from "../assets/trivadi/game.png"
+import photo11 from "../assets/trivadi/speech.png"
 
 const info = {
     title: "Trivadi",
     text: "Helping businesses build on a crypto infrastructure with top notch wallet infrastructure, investment and Fiat settlement",
     img: trivadiCover,
-    alt: "bento",
+    alt: "Trivadi",
     mainContent: "Trivadi is an augmented reality mobile app. that helps both individuals and families willing to explore new countries both for visitation purposes and for relocation.",
     subContent: "Trivadi gets to provide a way for people to be able to properly plan their travels, from creating a travel checklist to shopping for necessary items. It also gives you access to events, hot spots, and tourist sites in new locations as well as travel experiences to help guide your decision on where to go to. Trivadi helps you move your items to the countries you want to go to especially those who plan to relocate",
     role: "Product Design",
-    client: "trivadi",
+    client: "Trivadi",
     duration: "1 month",
     year: "2022",
 }
@@ -46,7 +45,7 @@ const overview = {
     alt: "background"
 }
 const research = {
-    title: "Background",
+    title: "Research",
     paragraphs: [
         "The first step of the research phase was finding out information about Itinerant families traveling and what they face, the next step was to carry out interviews to gain more insights from users who travel frequently and what has been their experiences",
         "The interview stage was comprised of 7 candidates which encompassed singles, families, and travel professionals / agents.",
@@ -89,7 +88,7 @@ const account = {
     paragraphs: [
         "The account creation was designed to be simple and intuitive where the user can set up his account with just his user name and profile then select his country and set his location so his initial discovery feed would be well-tailored to his locality. The user also gets to save his country of interests as this affects the discovery experiences he would see",
     ],
-    img: photo11,
+    img: photo2,
     alt: "account"
 }
 const home = {
@@ -98,7 +97,7 @@ const home = {
         "The home page is simple and straight to the point as it gives you access to the major thing the app has to offer. With the most prominent thing on the screen be the track shipment which is very necessary to know the current location and status of your packages being sent out",
         "Also, you have access to other key features in the product, your shipment history, and popular travel locations"
     ],
-    img: photo2,
+    img: photo3,
     alt: "home"
 }
 const discovery = {
@@ -107,7 +106,7 @@ const discovery = {
         "The discovery page is tailored to account for all travelers needs and help travelers get the best experience in whatever country you go to",
         "In the discovery you can get to see stores for clothes to buy in whatever location, see restaurants and filter down to your taste and, you get to see events created by people around you that you can attend, travel guides and more the goal is to help you optimize your experience,  in the country of choice, feel among and have a meaningful travel"
     ],
-    img: photo3,
+    img: photo4,
     alt: "discover"
 }
 const shipment = {
@@ -115,7 +114,7 @@ const shipment = {
     paragraphs: [
         "The create shipment is one of the pillars of the product as shipping items to be used in the new country is one of the pain points for users, so the create shipment has been designed in such a way to ease the stress of users in figuring out the exact dimensions and packing with the right boxes, with  the use of AR we can scan ur package and estimate with 100% accuracy the size and the box dimensions so we would have the boxes readily available for shipping "
     ],
-    img: photo4,
+    img: photo5,
     alt: "discover"
 }
 const trip = {
@@ -123,7 +122,7 @@ const trip = {
     paragraphs: [
         "My trips serve as a collection of events and memories that i could capture withing the entire trip and have it properly arranged for me to access anytime"
     ],
-    img: photo5,
+    img: photo6,
     alt: "trips"
 }
 const create = {
@@ -131,7 +130,7 @@ const create = {
     paragraphs: [
         "The create trip is designed to help uses on the overall experience of a trip from accounting for all the relevant info or document needed for the travel to shipping of items to the country of your choice and setting up booking accommodation reminders "
     ],
-    img: photo6,
+    img: photo7,
     alt: "create"
 }
 const booking = {
@@ -139,7 +138,7 @@ const booking = {
     paragraphs: [
         "Booking accommodation is split into two parts, one is hotels and which are usually for short-time stayers and the second is apartments and this is for travelers who would stay longer and the renting of an apartment would provide cheaper accommodation. So on Trivadi you get to see varieties of apartments, their amenities, and this can be seen in AR for better experience"
     ],
-    img: photo7,
+    img: photo8,
     alt: "trips"
 }
 const tour = {
@@ -147,7 +146,7 @@ const tour = {
     paragraphs: [
         "The tour guide feature is designed to help travelers who would love to explore the city, especially one, not familiar to them in conditions like language, culture, etc and this guides can be selected on the platform and you can see their reviews, about the, their likes so you can pick who relates a bit to you as you most likely would spend some time with them"
     ],
-    img: photo8,
+    img: photo9,
     alt: "tour"
 }
 const task = {
@@ -156,7 +155,7 @@ const task = {
         "Most travelers during trips set out to do things they want to accomplish, and from some interviews, these are not always completed, occasionally due to procrastination and sometimes laziness.",
         "So the gamified tasks help users set up tasks with spouses or friends that are traveling together and for every task completed you earn points that can be used for shopping, apartment renting, or food purchase on the app"
     ],
-    img: photo9,
+    img: photo10,
     alt: "Gamified Tasks"
 }
 const speech = {
@@ -165,17 +164,8 @@ const speech = {
         "The translator solution is designed for travelers going to countries with languages different from the local languages they are used to. This helps them communicate with locals in such countries so they can have the maximum experience of the travel",
         "So most travelers especially in countries in countries that they do not understand their language relate with a lot of things, not just the people who speak, these things can range from signposts to restaurant menus, etc. This feature allows users to be able to scan an image and the app helps highlight the texts and translates them to your desired language. Due to the fact that the image scanner might not capture all the words so you can always edit the text of the scanned words"
     ],
-    img: photo10,
+    img: photo11,
     alt: "Gamified Tasks"
-}
-const step = {
-    title: "Research",
-    paragraphs: [
-        "The first step of the research phase was finding out information about Itinerant families traveling and what they face, the next step was to carry out interviews to gain more insights from users who travel frequently and what has been their experiences",
-        "The interview stage was comprised of 7 candidates which encompassed singles, families, and travel professionals / agents."
-    ],
-    img: photo12,
-    alt: "research"
 }
 const themeMode = "light"
 </script>
@@ -185,9 +175,7 @@ const themeMode = "light"
         <Navbar />
         <Header :headerInfo="info" />
         <section class="max-w-7xl mx-auto px-6">
-            <div class="block">
-                <LayoutOne :page="overview" />
-            </div>
+            <LayoutOne :page="overview" />
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="mb-12">
@@ -230,30 +218,32 @@ const themeMode = "light"
             </div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <LayoutOne :page="step"/>
+            <LayoutOne :page="research "/>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
              <div class="mb-12">
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">Surveys</h3>
                 <p>The next step of the process i carried out was creating a survey document to be able to gather as much quantitative data to be able to have even deeper insights for the project</p>
             </div>
-            <div class="grid grid-cols-2 gap-6">
-                <div><img src="../assets/trivadi/survey-1.png" alt="Survey" /></div>
-                <div><img src="../assets/trivadi/survey-2.png" alt="Survey" /></div>
-                <div><img src="../assets/trivadi/survey-3.png" alt="Survey" /></div>
-                <div><img src="../assets/trivadi/survey-4.png" alt="Survey" /></div>
-                <div><img src="../assets/trivadi/survey-5.png" alt="Survey" /></div>
-                <div><img src="../assets/trivadi/survey-6.png" alt="Survey" /></div>
-                <div><img src="../assets/trivadi/survey-7.png" alt="Survey" /></div>
-                <div><img src="../assets/trivadi/survey-8.png" alt="Survey" /></div>
-                <div><img src="../assets/trivadi/survey-9.png" alt="Survey" /></div>
-                <div><img src="../assets/trivadi/survey-10.png" alt="Survey" /></div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div><img class="w-full" src="../assets/trivadi/survey-1.png" alt="Survey" /></div>
+                <div><img class="w-full" src="../assets/trivadi/survey-2.png" alt="Survey" /></div>
+                <div><img class="w-full" src="../assets/trivadi/survey-3.png" alt="Survey" /></div>
+                <div><img class="w-full" src="../assets/trivadi/survey-4.png" alt="Survey" /></div>
+                <div><img class="w-full" src="../assets/trivadi/survey-5.png" alt="Survey" /></div>
+                <div><img class="w-full" src="../assets/trivadi/survey-6.png" alt="Survey" /></div>
+                <div><img class="w-full" src="../assets/trivadi/survey-7.png" alt="Survey" /></div>
+                <div><img class="w-full" src="../assets/trivadi/survey-8.png" alt="Survey" /></div>
+                <div><img class="w-full" src="../assets/trivadi/survey-9.png" alt="Survey" /></div>
+                <div><img class="w-full" src="../assets/trivadi/survey-10.png" alt="Survey" /></div>
             </div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <div>
-                <img src="../assets/trivadi/user-map.png" alt="User map" />
-            </div>
+            <h1 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">User Journey Map</h1>
+            <p class="mb-10 text-base">The user journey map for the purchasing of an index as the core of the product
+                was the first to be done as it would help us identify the users experience within the process for us to create the
+                best experience and product</p>
+            <div><img src="../assets/trivadi/user-map.png" alt="User map" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
              <div class="md:w-1/2 mb-12">

@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, ref } from 'vue'
 import photo1 from '../assets/other-projects/doorstep.png'
 import photo2 from '../assets/other-projects/bento.png'
 import photo3 from '../assets/other-projects/trivadi.png'

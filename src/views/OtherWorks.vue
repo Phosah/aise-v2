@@ -15,13 +15,13 @@ const worksArr = [
     {
         alt: "bento",
         title: "People by Bento",
-        content: "A decentralized Lending and Borrowing Protocol, providing income to Lenders and Loaning opportunities for borrowers with need any crypto asset of your choice",
+        content: "Taking away the complexities and the work overload that comes with managing an organizations workforce with spreasheets and multiple files",
         link: "/bento"
     },
     {
         alt: "Trivadi",
         title: "Trivadi",
-        content: "Staking with multiple validators on the Solana network at the same time while still having the ability to stake with the community using the best validators",
+        content: "Helping businesses build on a crypto infrastructure with top notch wallet infrastructure, investment and Fiat settlement",
         link: "/trivadi"
     },
     {

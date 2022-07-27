@@ -3,10 +3,10 @@ import Navbar from '../components/Navbar.vue';
 import Header from '../components/Header.vue';
 import Footer from "../components/Footer.vue"
 import OtherProjects from "../components/OtherProjects.vue"
-import bentoCover from '../assets/bento/bento-home.png'
 import LayoutOne from '../components/LayoutOne.vue';
-import photo1 from "../assets/bento/background.png"
 import LayoutThree from '../components/LayoutThree.vue';
+import bentoCover from '../assets/bento/bento-home.png'
+import photo1 from "../assets/bento/background.png"
 import photo2 from '../assets/bento/interview.png'
 import photo3 from '../assets/bento/dashboard-1.png'
 import photo4 from '../assets/bento/job-creation.png'
@@ -18,7 +18,7 @@ import photo9 from '../assets/bento/employee-management.png'
 
 const info = {
     title: "People by Bento",
-    text: "Taking away the complexities and the work overload that comes with managing an organizations workforce with spreadsheets and multiple files",
+    text: "Taking away the complexities and the work overload that comes with managing an organizations workforce with spreasheets and multiple files",
     img: bentoCover,
     alt: "bento",
     mainContent: "People by Bento is an HR tool to help manage employees from hiring to onboarding, to talent management, to appraisals, to leave management, to separation, and much more...",

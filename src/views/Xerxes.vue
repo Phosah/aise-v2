@@ -205,7 +205,7 @@ const themeMode = 'light'
             <p class="mb-12">This same journey is similar to that of farms but we would be taking pool into account as
                 that was the first test we made in the MVP that held the foundation of the product. This helped us
                 analyze the user's experience and improve the product.</p>
-            <div><img class="w-full" src="../assets/user-map.png" alt="User Map" /></div>
+            <div><img class="w-full" src="../assets/xerxes/user-map.png" alt="User Map" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-4 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Design Decisions</h1>

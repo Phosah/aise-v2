@@ -1,67 +1,27 @@
 <script setup>
-import Carousel from '@/components/Carousel.vue'
+import Navbar from '../components/Navbar.vue';
+import HeaderInfo from '../components/HeaderInfo.vue'
 import Footer from '../components/Footer.vue'
 import OtherProjects from '../components/OtherProjects.vue'
-import HeaderInfo from '../components/HeaderInfo.vue'
+import Carousel from '@/components/Carousel.vue'
 import LayoutOne from '../components/LayoutOne.vue';
+import LayoutThree from '../components/LayoutThree.vue';
 import UserFigure from '../components/UserFigure.vue';
-import photo1 from "../assets/other-works/problem-statement-photo.png"
-import photo2 from "../assets/other-works/trustbreed-survey-photo-1.png"
-import photo3 from "../assets/other-works/trustbreed-survey-photo-2.png"
-import photo4 from "../assets/other-works/trustbreed-survey-photo-3.png"
-import photo5 from "../assets/other-works/trustbreed-survey-photo-4.png"
-import photo6 from "../assets/other-works/trustbreed-survey-photo-5.png"
-import photo7 from "../assets/other-works/user-personas-1.png"
-import photo8 from "../assets/other-works/user-personas-2.png"
-import photo9 from "../assets/other-works/complaint-screen.png"
-import photo10 from "../assets/other-works/trustbreed1.png"
-import Navbar from '../components/Navbar.vue';
-const cards = [
-    {
-        title: "1. Have you ever been dissapointed with the services provided to you by any company",
-        img: photo2
-    },
-    {
-        title: "2. What do you do when you have a poor service",
-        img: photo3
-    },
-    {
-        title: "3. How frequently does the company solve your problem when you complain",
-        img: photo4
-    },
-    {
-        title: "4. On a scale of 1-5 how difficult is it to pick the best service providers",
-        img: photo5
-    },
-    {
-        title: "5. What source do you trust when deciding to try a new company",
-        img: photo6
-    }
-]
-const cardsDark = [
-    {
-        title: "1. Have you ever been dissapointed with the services provided to you by any company",
-        imgName: "trustbreed-survey-photo-dark-1.png"
-    },
-    {
-        title: "2. What do you do when you have a poor service",
-        imgName: "trustbreed-survey-photo-dark-2.png"
-    },
-    {
-        title: "3. How frequently does the company solve your problem when you complain",
-        imgName: "trustbreed-survey-photo-dark-3.png"
-    },
-    {
-        title: "4. On a scale of 1-5 how difficult is it to pick the best service providers",
-        imgName: "trustbreed-survey-photo-dark-4.png"
-    },
-    {
-        title: "5. What source do you trust when deciding to try a new company",
-        imgName: "trustbreed-survey-photo-dark-5.png"
-    }
-]
+import persona1 from "../assets/trustbreed/persona-1.png"
+import persona2 from "../assets/trustbreed/persona-2.png"
+import photo1 from "../assets/trustbreed/hero.png"
+import photo2 from "../assets/trustbreed/problem.png"
+import photo3 from "../assets/trustbreed/survey-photo-1.png"
+import photo4 from "../assets/trustbreed/survey-photo-2.png"
+import photo5 from "../assets/trustbreed/survey-photo-3.png"
+import photo6 from "../assets/trustbreed/survey-photo-4.png"
+import photo7 from "../assets/trustbreed/survey-photo-5.png"
+import photo9 from "../assets/trustbreed/onboarding.png"
+import photo10 from "../assets/trustbreed/complaints.png"
+import photo11 from "../assets/trustbreed/compare.png"
+
 const details = {
-    img: photo10,
+    img: photo1,
     alt: "Trustbreed",
     title: "TrustBreed",
     shortDesc: "As a customer, have your voice heard and get the best of services from the companies / products that serve you.",
@@ -75,13 +35,34 @@ const problem = {
         "Over a couple of years, there has been a massive growth of user complaints from a lot of products in which most of the complaints were caught with deaf ears by the service providers and users having to adapt or manage substandard services provided especially in a monopolized system, while some other users felt their illiteracy was the reason for their struggles and accepted their fate and endured the bad services.",
         "The second problem is the ability of users to find the best products to pick to solve their needs in a pool of similar products"
     ],
-    img: photo1,
+    img: photo2,
     alt: "problem fixing"
 }
-const headerFont = "font-playfair text-4xl"
+const cards = [
+    {
+        title: "1. Have you ever been dissapointed with the services provided to you by any company",
+        img: photo3
+    },
+    {
+        title: "2. What do you do when you have a poor service",
+        img: photo4
+    },
+    {
+        title: "3. How frequently does the company solve your problem when you complain",
+        img: photo5
+    },
+    {
+        title: "4. On a scale of 1-5 how difficult is it to pick the best service providers",
+        img: photo6
+    },
+    {
+        title: "5. What source do you trust when deciding to try a new company",
+        img: photo7
+    }
+]
 const personasArr = [
     {
-        img: photo7,
+        img: persona1,
         alt: "User",
         name: "Jasmine Kent",
         age: 37,
@@ -93,7 +74,7 @@ const personasArr = [
         concerns: "Privacy of her messages on services she is having issues with and the time of responses of those issues being as fast as possible"
     },
     {
-        img: photo8,
+        img: persona2,
         alt: "User",
         name: "Richard Lawson",
         age: 24,
@@ -105,20 +86,37 @@ const personasArr = [
         concerns: "Privacy of her messages on services she is having issues with and the time of responses of those issues being as fast as possible"
     },
 ]
+const onboarding = {
+    title: "Onboarding Screens",
+    paragraphs: [
+        "Tailoring the onboarding to a simple clean visual experience where the users canjoin the trustbreed using just their name, email and get security authentication through an OTP code. Users are also able to choose or create a customized username."
+    ],
+    img: photo9,
+    alt: "onboarding screens"
+}
 const complaints = {
     title: "Complaint Screens",
     paragraphs: [
         "The complaint creation is the centerpiece of the product whereby every user can come into trustbreed and make a complaint about a company that has rendered them poor service. If the company doesn’t exist on trustbreed, you can create them and the company is verified finally listed. Every complaint submitted would be followed up by trustbreeds agents till the issue is resolved through constant communication with the company and the users"
     ],
-    img: photo9,
+    img: photo10,
     alt: "complaint screens"
 }
+const companies = {
+    title: "Compare Companies",
+    paragraphs: [
+        "A lot of users are on the lookout for the best product for their needs, due to thelong list of competitors for popular services the best is a bit tricky to pick, hence trustbreed gives you the ability to compare companies based on data, and other users ratings and reviews."
+    ],
+    img: photo11,
+    alt: "complaint screens"
+}
+const headerFont = "font-playfair lg:text-4xl"
 const bgColor = "light"
 const font = "font-playfair"
 </script>
 
 <template>
-    <div class="bg-white text-brand-black-3">
+    <div class="text-brand-black-3">
     <Navbar />
         <HeaderInfo :headerDetails="details" />
         <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm md:text-base">
@@ -192,7 +190,7 @@ const font = "font-playfair"
             <LayoutOne :page="problem" :headerFont="headerFont" />
         </section>
         <section
-            class="py-10 md:py-20 bg-brand-black-1 text-white text-sm md:text-base">
+            class="py-10 md:py-20 text-sm md:text-base">
             <div class="max-w-7xl mx-auto px-4 md:px-16">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">UX competitive analysis</h2>
                 <p class="mb-10">I was given two potential competitors by the founders and stakeholders began my study
@@ -200,10 +198,10 @@ const font = "font-playfair"
                     products. The goal was to identify what type of problems users face with competitors’ products, as
                     well as understand what the users might expect from my product.</p>
                 <div class="mb-16">
-                    <img class="w-full" src="../assets/other-works/ux-competition-analysis-1.png" alt />
+                    <img class="w-full" src="../assets/trustbreed/competitive-analysis-1.png" alt />
                 </div>
                 <div>
-                    <img class="w-full" src="../assets/other-works/ux-competition-analysis-1.png" alt />
+                    <img class="w-full" src="../assets/trustbreed/competitive-analysis-1.png" alt />
                 </div>
             </div>
         </section>
@@ -263,7 +261,7 @@ const font = "font-playfair"
             </div>
         </section>
         <UserFigure :personas="personasArr" />
-        <section class="max-w-7xl mx-auto py-10 md:py-40 px-6 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm md:text-base">
             <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Mental models and user journey
                 map</h2>
             <p class="mb-6">To understand better the challenges surfers are facing in diﬀerent situations, based on
@@ -272,7 +270,7 @@ const font = "font-playfair"
                 users, getting a clearer idea about pain points and what support would they expect from the product.
             </p>
             <div>
-                <img src="../assets/other-works/user-map.png" alt="User map" />
+                <img src="../assets/trustbreed/user-journey-map.png" alt="User map" />
             </div>
         </section>
         <section>
@@ -284,7 +282,7 @@ const font = "font-playfair"
             </div>
             <div class="bg-brand-gray-7">
                 <div class="max-w-7xl mx-auto mb-10 md:mb-20">
-                    <img src="../assets/other-works/user-flows.png" alt="User flows" />
+                    <img src="../assets/trustbreed/user-flow.png" alt="User flow" />
                 </div>
             </div>
         </section>
@@ -298,53 +296,36 @@ const font = "font-playfair"
             </div>
             <div class="bg-brand-gray-7">
                 <div class="max-w-7xl mx-auto mb-20">
-                    <img src="../assets/other-works/sitemap.png" alt="User flows" />
+                    <img src="../assets/trustbreed/sitemap.png" alt="Sitemap" />
                 </div>
             </div>
         </section>
-        <section class>
+        <section class="">
             <div class="max-w-7xl mx-auto md:pt-20 px-4 md:px-16 text-sm md:text-base">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Wireframing</h2>
                 <p class="mb-8 md:mb-16">After that, I started creating wireframes with pen and paper. Having the
                     hand-drawn screens, I made a low-ﬁdelity prototype putting them together to represent the user
                     ﬂow.</p>
             </div>
-            <div class="max-w-7xl mx-auto mb-20">
-                <img src="../assets/other-works/wireframe.png" alt="Wireframe" />
+            <div class="mb-20">
+                <img class="w-full" src="../assets/trustbreed/wireframe.png" alt="Wireframe" />
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-20 px-4 md:px-16 text-sm md:text-base">
-            <div class="mb-20">
-                <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Onboarding Screens</h2>
-                <p class="mb-10">Tailoring the onboarding to a simple clean visual experience where the users can
-                    join the trustbreed using just their name, email and get security authentication through an OTP
-                    code. Users are also able to choose or create a customized username.</p>
-                <div class="mb-16">
-                    <img class="w-full" src="../assets/other-works/onboarding-screen.png" alt="Onboarding screens" />
-                </div>
-            </div>
+        <section class="max-w-7xl mx-auto py-5 px-4 md:px-16 text-sm md:text-base">
+            <LayoutThree :page="onboarding" :headerFont="headerFont" />
             <LayoutOne :page="complaints" :headerFont="headerFont" />
-            <div class="md:pt-20">
-                <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Compare Companies</h2>
-                <p class="mb-10">A lot of users are on the lookout for the best product for their needs, due to the
-                    long list of competitors for popular services the best is a bit tricky to pick, hence trustbreed
-                    gives you the ability to compare companies based on data, and other users ratings and reviews.
-                </p>
-                <div class="mb-16">
-                    <img class="w-full" src="../assets/other-works/compare-company.png" alt="Compare company" />
-                </div>
-            </div>
+            <LayoutThree :page="companies" :headerFont="headerFont" />
         </section>
         <section class="text-sm md:text-base">
-            <div class="max-w-7xl mx-auto md:pt-20 px-6 md:px-16">
+            <div class="max-w-7xl mx-auto px-6 md:px-16">
                 <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Other Features</h3>
                 <p class="mb-10">There are a couple more features like the reviews feature which helps other users
                     know how well you think about a company in case they are surfing for a product to use, the
                     rating feature, and the company activities feature to help be in sync with the upcoming promos
                     or packages companies you follow are bringing out</p>
             </div>
-            <div class="max-w-7xl mx-auto mb-20">
-                <img src="../assets/other-works/other-features.png" alt="User flows" />
+            <div class="mb-20">
+                <img class="w-full" src="../assets/trustbreed/other-features.png" alt="Other features" />
             </div>
             <div class="max-w-7xl mx-auto md:pt-20 px-6 md:px-16">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Mobile responsiveness</h2>
@@ -352,8 +333,8 @@ const font = "font-playfair"
                     users, there needs to be a lot of attention paid to the mobile views of the dashboard as that
                     might be the main entry point of most users</p>
             </div>
-            <div class="max-w-7xl mx-auto mb-20">
-                <img src="../assets/other-works/mobile-responsive-photo.png" alt="User flows" />
+            <div class="mb-20">
+                <img class="w-full" src="../assets/trustbreed/mobile-screens.png" alt="Mobile screens" />
             </div>
         </section>
         <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm md:text-base">

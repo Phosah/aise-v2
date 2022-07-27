@@ -27,7 +27,7 @@ const worksArr = [
     {
         alt: "Trustbreed",
         title: "Trustbreed",
-        content: "The easiest way for you to gain access to multiple token holdings at once by the purchase of one super token",
+        content: "As a customer, have your voice heard and get the best of services from the companies / products that serve you.",
         link: "/trustbreed"
     },
     {

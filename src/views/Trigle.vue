@@ -3,18 +3,18 @@ import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue'
 import OtherProjects from '../components/OtherProjects.vue';
 import HeaderInfo from '../components/HeaderInfo.vue';
-import photo1 from "../assets/other-works/trigle-problem.png"
-import photo2 from "../assets/other-works/home-screen-photo.png"
-import photo3 from "../assets/other-works/restaurant-page-photo.png"
-import photo4 from "../assets/other-works/samuel.png"
-import photo5 from "../assets/other-works/ari.png"
-import photo6 from "../assets/other-works/trigle1.png"
 import LayoutOne from "../components/LayoutOne.vue"
 import LayoutTwo from '../components/LayoutTwo.vue';
 import UserExperience from '../components/UserExperience.vue';
+import photo1 from "../assets/trigle/hero.png"
+import photo2 from "../assets/other-works/trigle-problem.png"
+import photo3 from "../assets/other-works/home-screen-photo.png"
+import photo4 from "../assets/other-works/restaurant-page-photo.png"
+import persona1 from "../assets/trigle/persona-1.png"
+import persona2 from "../assets/trigle/persona-2.png"
 
 const details = {
-    img: photo6,
+    img: photo1,
     alt: "Trigle",
     title: "Trigle",
     shortDesc: "Bringing simplicity and flexibility to having your meals",
@@ -27,17 +27,17 @@ const problem = {
         "We live in times where so much is happening online, which keeps us locked in the world of our mobile phones becoming where everyone wants (needs) to be able to access their daily needs. This has greatly reduced the exploration that occurs from the regular strolling to see new places hence directions even in our environment are a bit unknown, so we are caught up with little knowledge of restaurants for good meals and hangouts.",
         "Also due to the busy routine of work, there is little time to prepare your meals most times and we all need to have our healthy meal either for sustenance or for leisure with friends or having that special dinner with a loved one. But due to the lack of exploration the knowledge of good restaurants to go to or order a meal from becomes difficult."
     ],
-    img: photo1,
+    img: photo2,
     alt: "Ladies operating a mobile phone"
 }
-const headerFont = "font-playfair text-4xl"
+const headerFont = "font-playfair lg:text-4xl"
 const home = {
     title: "Home screen",
     paragraphs: [
         "The home screen is comprises of all the restaurants listed on the platform and broken down into categories of specilaization for users to utilize the quick filter selection to navigate through",
         "Also the home welcomes first time users to complete profile and by doing so gives you points which could be used when accumulated to make an order, this process was created to gamify the app, this tends to make the users comfortable making orders knowing there is a bouns reward on te way"
     ],
-    img: photo2,
+    img: photo3,
     alt: "Phone"
 }
 const restaurant = {
@@ -46,15 +46,13 @@ const restaurant = {
         "This view is for the selected restaurant, you get to have banner of a meal the reason is to give an expectation of what the restaurant offers, which in turn increases possibilities of making a purchase from that restaurant. A good banner increases order by 50%",
         "The second screen indicates when the user scrolls upwards, to prevent indicators of the restaurant you are on to leave leaving you guessing where you are again, the micro interaction works in such a way that the logo and name changes poition to the top onscroll"
     ],
-    img: photo3,
+    img: photo4,
     alt: "Phone"
 }
-const pos = "text-center font-playfair"
-const bgColor = "light"
 const personasArr = [
     {
-        img: photo4,
-        alt: "Man",
+        img: persona1,
+        alt: "Samuel",
         name: "Samuel LeJourn",
         info: "Samuel is an Accountant with over 3 years of working experience, he is a graduate of the Covenant University Ota. He is calm, inquisitive, career-driven and a lover of family",
         age: 23,
@@ -64,8 +62,8 @@ const personasArr = [
         points: "Difficulty in communicating with foreigners in the new environment so getting recommendations is difficult, then after getting recommendations, getting directions to the restaurants gets difficult"
     },
     {
-        img: photo5,
-        alt: "Man",
+        img: persona2,
+        alt: "Ari",
         name: "Farida Alasha",
         info: "Ari is a graphic illustrator that lives in New York With over 3 years of working experience and over 200 successful designs. She is a lover of memes and appreciates the company of friends",
         age: 20,
@@ -75,6 +73,8 @@ const personasArr = [
         points: "Knowledge of varieties of restaurants to hang out with friends or meet new people so she ends up exploring the same old places over again, it gets tiring. Also difficulty in navigating to a new restaurant even when an address is given, the use of google maps are not as easy as the app makes it sound"
     }
 ]
+const pos = "text-center font-playfair"
+const bgColor = "light"
 </script>
 
 <template>

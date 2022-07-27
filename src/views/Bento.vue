@@ -5,16 +5,17 @@ import Footer from "../components/Footer.vue"
 import OtherProjects from "../components/OtherProjects.vue"
 import LayoutOne from '../components/LayoutOne.vue';
 import LayoutThree from '../components/LayoutThree.vue';
-import bentoCover from '../assets/bento/bento-home.png'
+import bentoCover from '../assets/bento/hero.png'
 import photo1 from "../assets/bento/background.png"
 import photo2 from '../assets/bento/interview.png'
-import photo3 from '../assets/bento/dashboard-1.png'
-import photo4 from '../assets/bento/job-creation.png'
-import photo5 from '../assets/bento/hiring-process.png'
-import photo6 from '../assets/bento/appraisal.png'
-import photo7 from '../assets/bento/leave-management.png'
-import photo8 from '../assets/bento/time-management.png'
-import photo9 from '../assets/bento/employee-management.png'
+import photo3 from '../assets/bento/dashboard.png'
+import photo4 from '../assets/bento/employee-management.png'
+import photo5 from '../assets/bento/job-creation.png'
+import photo6 from '../assets/bento/hiring.png'
+import photo7 from '../assets/bento/onboarding.png'
+import photo8 from '../assets/bento/appraisal.png'
+import photo9 from '../assets/bento/leave-management.png'
+import photo10 from '../assets/bento/time-tracking.png'
 
 const info = {
     title: "People by Bento",
@@ -63,7 +64,7 @@ const dashboard = {
     ],
     
     img: photo3,
-    alt: "Interview"
+    alt: "Dashboard"
 }
 const management = {
     title: "Employee Management",
@@ -71,7 +72,7 @@ const management = {
         "The employee management section helps manage your employee number in terms of contract workers, full tie, part-time, interns, etc and have a storage of all their details and records like leave and appraisal history, personal details like birthdays and hobbies to be able to relate with them better in a more human level ",
     ],
     
-    img: photo9,
+    img: photo4,
     alt: "management"
 }
 const job = {
@@ -80,8 +81,8 @@ const job = {
         "Job creation is one major part of every organization. This feature is set to help organizations create a process that works for them as they get to be able to set the levels of the interview process, the hiring team, the method of sharing, have an archive of interview questions, and share the post on social media for talents to see",
     ],
     
-    img: photo4,
-    alt: "job"
+    img: photo5,
+    alt: "job creation"
 }
 const hiring = {
     title: "Hiring Process",
@@ -89,7 +90,16 @@ const hiring = {
         "The hiring process in every organization is tasking and cha\llenging when not done properly, People by bento solves that problem by giving you an organized flow for your hiring process from accepting talent applications, reviewing CVs both with ATS trackers and manually, and Scheduling interview stages based on what was set in the job creation e.g, phone interview, onsite or google meet etc and have all these documented as steps. You also can discuss and drop comments on an applicant so others in the hiring team can see it as well",
     ],
     
-    img: photo5,
+    img: photo6,
+    alt: "hiring"
+}
+const onboarding = {
+    title: "Employee Onboarding",
+    paragraphs: [
+        "Employee onboarding is a vital aspect of an employee's experience in joining a team as it is the first impression the company gives an employee for joining so having it done well is key. I designed the product in a way that its easy to set up a mail and assign an onboarding/work buddy to guide the employee during his/her initial stages. Also the ability to assign necessary software, and hardware for productivity. Finally, all necessary o0nboarding documents including work manual and welcome videos can also be shared",
+    ],
+    
+    img: photo7,
     alt: "hiring"
 }
 const appraisal = {
@@ -98,7 +108,7 @@ const appraisal = {
         "To track and monitor employees' productivity over time, you need a way to review their performance and this is where appraisals come in as your solution. Here you get to assign a 1:1 appraisal or a 360 appraisal which means multiple people from all over the company or within your department (This is et by you tho, it's that flexible 😉) appraise an employee and judge his performance-based of his set KPI and company KPI and goals",
     ],
     
-    img: photo6,
+    img: photo8,
     alt: "appraisal"
 }
 const leave = {
@@ -107,7 +117,7 @@ const leave = {
         "With the leave management, you get to be able to be the good HR and grant employees leave based on the various leave types, track the number of theaves they have taken this year so you know how to approve days so he/she doesn't take more than the allowed days in the employee contract, except on emergency cases. Also, track those currently on leave and when they would be done",
     ],
     
-    img: photo7,
+    img: photo9,
     alt: "management"
 }
 const time = {
@@ -116,7 +126,7 @@ const time = {
         "Especially for onsite workers in large organizations with many branches and lots of employees its difficult to track who comes to work and on time as people can easily sign an attendance for anyone, So with People, we have incorporated a facial recognition software that would reference an employees face when scanned and check through the list of employees to get a match and mark him present while recording the time",
     ],
     
-    img: photo8,
+    img: photo10,
     alt: "management"
 }
 const themeMode = "light"
@@ -187,7 +197,7 @@ const themeMode = "light"
             <div class="max-w-7xl mx-auto px-6">
                 <h1 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">HMW (How might we).</h1>
             </div>
-            <div><img class="w-full" src="../assets/bento/notes.png" alt="Notes" /></div>
+            <div><img class="w-full" src="../assets/bento/hmw.png" alt="How might we" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 px-6">
             <h1 class="mb-6 text-6xl font-new-paris-kingsize">High Fidelity Designs</h1>
@@ -196,16 +206,7 @@ const themeMode = "light"
                 <LayoutThree :page="management" />
                 <LayoutThree :page="job" />
                 <LayoutThree :page="hiring" />
-                <div>
-                    <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Employee Onboarding</h3>
-                    <p class="mb-4">Employee onboarding is a vital aspect of an employee's experience in joining a team as it is the first impression the company gives an employee for joining so having it done well is key. I designed the product in a way that its easy to set up a mail and assign an onboarding/work buddy to guide the employee during his/her initial stages. Also the ability to assign necessary software, and hardware for productivity. Finally, all necessary o0nboarding documents including work manual and welcome videos can also be shared</p>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div><img class="w-full" src="../assets/bento/discover-1.png" alt="discover" /></div>
-                        <div><img class="w-full" src="../assets/bento/discover-2.png" alt="discover" /></div>
-                        <div><img class="w-full" src="../assets/bento/discover-3.png" alt="discover" /></div>
-                        <div><img class="w-full" src="../assets/bento/discover-4.png" alt="discover" /></div>
-                    </div>
-                </div>
+                <LayoutThree :page="onboarding" />
                 <LayoutThree :page="appraisal" />
                 <LayoutThree :page="leave" />
                 <LayoutThree :page="time" />

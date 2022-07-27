@@ -35,7 +35,7 @@ const themeMode = "light"
 
 #par div:nth-child(2) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)),
-                  url('../assets/bento/bento-home.png');
+                  url('../assets/bento/cover.png');
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;

@@ -480,9 +480,3 @@ const bgColor = "light"
         <Footer :bgColor="bgColor" />
     </div>
 </template>
-
-<style>
-div {
-    font-family: "Euclid Circular A", sans-serif;
-}
-</style>

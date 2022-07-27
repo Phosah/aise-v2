@@ -12,7 +12,7 @@ module.exports = {
             5: "#F5F6FA",
             7: "#1A1A1A",
             8: "#272727",
-            9: "#F5F5F5",
+            9: "#EFEFEF",
           },
           black: {
             1: "#0E0F14",

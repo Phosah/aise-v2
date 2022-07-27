@@ -1,5 +1,5 @@
 <template>
-    <section class="px-6 pt-40 pb-10" :class="bgColor">
+    <section class="px-6 pt-20 md:pt-40 pb-10" :class="bgColor">
         <div class="flex flex-col items-center max-w-7xl mx-auto">
             <div v-if="bgColor === 'light'" class="mb-24">
                 <img src="../assets/project-talk-dark.png" alt="Project talk" />

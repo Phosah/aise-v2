@@ -54,7 +54,7 @@ const themeMode = "light"
 }
 #par div:nth-child(5) {
     background-attachment: fixed;
-    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/other-works/doorstep1.png');
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/doorstep/cover.png');
     background-size: cover;
 }
 </style>

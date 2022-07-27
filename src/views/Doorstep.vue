@@ -1,26 +1,26 @@
 <script setup>
+import HeaderInfo from '../components/HeaderInfo.vue'
+import Navbar from "../components/Navbar.vue"
 import ProjectResponsibility from '../components/ProjectResponsibility.vue'
 import Footer from '../components/Footer.vue'
 import OtherProjects from '../components/OtherProjects.vue'
-import HeaderInfo from '../components/HeaderInfo.vue'
-import icon1 from "../assets/other-works/discover-icon.png"
-import icon2 from "../assets/other-works/define-icon.png"
-import icon3 from "../assets/other-works/ideate-icon.png"
-import icon4 from "../assets/other-works/visual-design-icon.png"
-import photo1 from "../assets/other-works/project-photo.png"
-import photo2 from "../assets/other-works/problem-photo.png"
-import photo3 from "../assets/other-works/trigle-research.png"
-import photo4 from "../assets/other-works/research-photo.png"
 import LayoutOne from '../components/LayoutOne.vue'
 import LayoutTwo from '../components/LayoutTwo.vue'
 import ProjectPersona from "../components/ProjectPersona.vue"
-import photo5 from "../assets/other-works/personas-1.png"
-import photo6 from "../assets/other-works/personas-2.png"
-import photo7 from "../assets/other-works/solution-1.png"
-import photo8 from "../assets/other-works/solution-2.png"
-import photo9 from "../assets/other-works/solution-3.png"
-import Navbar from "../components/Navbar.vue"
-import photo10 from '../assets/other-works/doorstep1.png'
+import icon1 from "../assets/doorstep/discover-icon.png"
+import icon2 from "../assets/doorstep/define-icon.png"
+import icon3 from "../assets/doorstep/ideate-icon.png"
+import icon4 from "../assets/doorstep/visual-design-icon.png"
+import persona1 from "../assets/doorstep/persona-1.png"
+import persona2 from "../assets/doorstep/persona-2.png"
+import photo1 from '../assets/doorstep/hero.png'
+import photo2 from "../assets/doorstep/responsibilities.png"
+import photo3 from "../assets/doorstep/problem.png"
+import photo4 from "../assets/doorstep/users.png"
+import photo5 from "../assets/doorstep/research.png"
+import photo6 from "../assets/doorstep/dashboard.png"
+import photo7 from "../assets/doorstep/tracking.png"
+import photo8 from "../assets/doorstep/shipment.png"
 
 const projects = [
     {
@@ -77,20 +77,21 @@ const projects = [
     }
 ]
 const details = {
-    img: photo10,
+    img: photo1,
     alt: "Doorstep logistics",
     title: "Doorstep Logistics",
     shortDesc: "The fastest way to ship your packages and parcels around the world",
     LongDesc: "Doorstep is a solution that helps to simplify logistics and shipping services to ensure quick delivery of packages in a simplified processes",
     paragraph: "Sending of documents and parcels have been in high demand as a result of expanding businesses and inter country trading. It gets to solve this by its provision of an integration sync with the tracking ID of the platform to constantly keep you in the loop."
 }
-const headerFont = "font-playfair text-4xl text-center mt-6"
+const headerFont = "font-playfair text-4xl"
+const headerStyle = "font-playfair text-4xl text-center md:text-left"
 const responsibilities = {
     title: "Project responsibilities",
     paragraphs: [
         "During the course of this project i was incharge of the ux and ui process which occasionally involved stakeholder interviews and surveys"
     ],
-    img: photo1,
+    img: photo2,
     alt: "Project"
 }
 const problem = {
@@ -98,7 +99,7 @@ const problem = {
     paragraphs: [
         "The difficulty of knowing how to send a package and knowing the dimensions and and weights of packages and parcels which are usually a major criteria in creating a shipping request. Also a major problem was tracking each major milestone in the packages journey"
     ],
-    img: photo2,
+    img: photo3,
     alt: "Problem"
 }
 const interviews = {
@@ -107,7 +108,7 @@ const interviews = {
         "Interviews & surveys are aimed at getting an indepth approach of how our targeted users would engage the product, determine their pain points, challenges, what they would love to have on the platform and structure all to get the best solution for their problems.",
         "I gathered the data from the interviews and structured out their pains and needs to have a structure for an empathy mapping"
     ],
-    img: photo3,
+    img: photo4,
     alt: "users"
 }
 const research = {
@@ -115,12 +116,12 @@ const research = {
     paragraphs: [
         "From the findings of our survey and interviews carried out along with an online research of users complaints from users of competitors products, the largest pain was the identifying of the dimensions of the package to be sent which is usually a requirement to detemine shipment cost",
     ],
-    img: photo4,
+    img: photo5,
     alt: "quantitative research"
 }
 const personasArr = [
     {
-        img: photo5,
+        img: persona1,
         name: "Jonathan Ini",
         profession: "Accountant",
         info: "Rarely use logistics services",
@@ -132,7 +133,7 @@ const personasArr = [
         points: "Its really difficult to know the exact or approximate dimensions of your shipments due to the fact i dont know alot about dimensioning"
     },
     {
-        img: photo6,
+        img: persona2,
         name: "Damilola Peters",
         profession: "Businessman",
         info: "Very frequency in using logistics services",
@@ -147,27 +148,27 @@ const personasArr = [
 const dashboard = {
     title: "Main Dashboard", 
     paragraphs: ["This shows the dashboard of the users showing all their shipments analysis and various activities in a simplified manner that presents the informations to you at a glance"], 
-    img: photo7,
+    img: photo6,
     alt: "Dashboard"
 }
 const tracking = {
     title: "Tracking page", 
     paragraphs: ["This page is where shipmensts are searched for and tracked in a simplified manner displaying to you the status of your shipment and the expected delivery date shown first as the most important things, then if you want to get more info, a table with the various listings of every location or update is shown"], 
-    img: photo8,
-    alt: "Dashboard"
+    img: photo7,
+    alt: "Tracking"
 }
 const shipments = {
     title: "Create Shipments", 
     paragraphs: ["Based on the users research on their pain points, the shipment creation process starts from a page to upload your shipment and from your upload, it is scanned and the dimensions is estimated for you with little artificial intelligence, that solves the problem of getting stuck on dimensions"], 
-    img: photo9,
-    alt: "Dashboard"
+    img: photo8,
+    alt: "Shipments"
 }
 const pos = "text-center font-playfair"
 const bgColor = "light"
 </script>
 
 <template>
-    <div class="bg-white text-brand-black-3">
+    <div class="text-brand-black-3">
         <Navbar />
         <HeaderInfo :headerDetails="details" />
         <section class="max-w-7xl mx-auto px-6 md:px-16">
@@ -177,7 +178,7 @@ const bgColor = "light"
             <!-- Mobile version -->
             <div class="block md:hidden">
                 <div class="mb-6">
-                    <img class="w-full" src="../assets/other-works/project-photo.png" alt="Project" />
+                    <img class="w-full" src="../assets/doorstep/responsibilities.png" alt="Project" />
                 </div>
                 <div class="text-sm">
                     <h2 class="mb-6 text-2xl font-bold font-playfair">Project responsibilities</h2>
@@ -187,7 +188,7 @@ const bgColor = "light"
             <!-- End of mobile version -->
         </section>
         <ProjectResponsibility :projects="projects" />
-        <section class="max-w-7xl mx-auto px-6 md:px-16">
+        <section class="max-w-7xl mx-auto px-6 md:px-16 text-sm md:text-base">
             <LayoutOne :page="problem" :headerFont="headerFont" />
         </section>
         <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16">
@@ -236,7 +237,7 @@ const bgColor = "light"
                     <p>I gathered the data from the interviews and structured out their pains and needs to have a structure for an empathy mapping</p>
                 </div>
                 <div class>
-                    <img class="w-full" src="../assets/other-works/trigle-research.png" alt="Research" />
+                    <img class="w-full" src="../assets/doorstep/users.png" alt="Users" />
                 </div>
             </div>
             <!-- End of Mobile version -->
@@ -253,17 +254,10 @@ const bgColor = "light"
                     >Quantitative research result</h2>
                     <p>From the findings of our survey and interviews carried out along with an online research of users complaints from users of competitors products, the largest pain was the identifying of the dimensions of the package to be sent which is usually a requirement to detemine shipment cost</p>
                 </div>
-                <div class>
+                <div>
                     <img
-                        v-if="themeColor === 'light'"
                         class="w-full"
-                        src="../assets/other-works/research-photo.png"
-                        alt="Quantitative research"
-                    />
-                    <img
-                        v-else
-                        class="w-full"
-                        src="../assets/other-works/research-photo-dark.png"
+                        src="../assets/doorstep/research.png"
                         alt="Quantitative research"
                     />
                 </div>
@@ -275,22 +269,22 @@ const bgColor = "light"
             <div class="hidden sm:flex items-center space-x-12 text-sm md:text-base">
                 <div class="flex-1 grid grid-cols-3 gap-4">
                     <div>
-                        <img src="../assets/other-works/fedex.png" alt="FedEx" />
+                        <img src="../assets/doorstep/fedex.png" alt="FedEx" />
                     </div>
                     <div>
-                        <img src="../assets/other-works/dhl.png" alt="DHL" />
+                        <img src="../assets/doorstep/dhl.png" alt="DHL" />
                     </div>
                     <div>
-                        <img src="../assets/other-works/ups.png" alt="UPS" />
+                        <img src="../assets/doorstep/ups.png" alt="UPS" />
                     </div>
                     <div>
-                        <img src="../assets/other-works/xpologistics.png" alt="XPOLogistics" />
+                        <img src="../assets/doorstep/xpologistics.png" alt="XPOLogistics" />
                     </div>
                     <div>
-                        <img src="../assets/other-works/expeditors.png" alt="Expeditors" />
+                        <img src="../assets/doorstep/expeditors.png" alt="Expeditors" />
                     </div>
                     <div>
-                        <img src="../assets/other-works/gig.png" alt="Gig" />
+                        <img src="../assets/doorstep/gig.png" alt="Gig" />
                     </div>
                 </div>
                 <div class="flex-1">
@@ -428,7 +422,7 @@ const bgColor = "light"
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-10 md:py-40 px-6 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 md:pb-0 px-6 md:px-16 text-sm md:text-base">
             <div class="mb-20 md:mb-16 md:w-2/3 mx-auto text-center">
                 <h2
                     class="mb-6 text-3xl md:text-6xl font-semibold font-playfair text-center"
@@ -441,7 +435,7 @@ const bgColor = "light"
             <!-- Mobile version -->
             <div class="block md:hidden mb-20">
                 <div class="mb-6">
-                    <img class="w-full" src="../assets/other-works/solution-1.png" alt="Solution" />
+                    <img class="w-full" src="../assets/doorstep/dashboard.png" alt="Dashboard" />
                 </div>
                 <div class="text-center">
                     <h2 class="mb-4 text-2xl font-bold font-playfair">Main dashboard</h2>
@@ -451,14 +445,14 @@ const bgColor = "light"
                 </div>
             </div>
             <!-- End of mobile version -->
-            <LayoutTwo :page="tracking" :headerFont="headerFont" />
+            <LayoutTwo :page="tracking" :headerFont="headerStyle" />
             <div class="hidden md:block">
                 <LayoutOne :page="shipments" :headerFont="headerFont"/>
             </div>
             <!-- Mobile version -->
             <div class="block md:hidden">
                 <div class="mb-6">
-                    <img class="w-full" src="../assets/other-works/solution-3.png" alt="Solution" />
+                    <img class="w-full" src="../assets/doorstep/shipment.png" alt="Shipment" />
                 </div>
                 <div class="text-center md:text-left">
                     <h2
@@ -476,8 +470,8 @@ const bgColor = "light"
                 >Conclusion</h2>
                 <p>The experience of this project was an insightful one, the aim to simplify the process even further is in progress and results from feedback of V1 would be used to make the users experience better and solve the problems better for the users</p>
             </div>
-            <div class="flex justify-center">
-                <img src="../assets/other-works/conclusion.png" alt="Conclusion" />
+            <div class="flex justify-center max-h-96">
+                <img class="object-contain" src="../assets/doorstep/conclusion.png" alt="Conclusion" />
             </div>
         </section>
         <section class="py-20 md:pt-40">

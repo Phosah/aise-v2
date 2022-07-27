@@ -302,22 +302,22 @@ const bgColor = "light"
                 </div>
                 <div class="grid grid-cols-2 gap-4">
                     <div>
-                        <img src="../assets/other-works/fedex.png" alt="FedEx" />
+                        <img src="../assets/doorstep/fedex.png" alt="FedEx" />
                     </div>
                     <div>
-                        <img src="../assets/other-works/dhl.png" alt="DHL" />
+                        <img src="../assets/doorstep/dhl.png" alt="DHL" />
                     </div>
                     <div>
-                        <img src="../assets/other-works/ups.png" alt="UPS" />
+                        <img src="../assets/doorstep/ups.png" alt="UPS" />
                     </div>
                     <div>
-                        <img src="../assets/other-works/xpologistics.png" alt="XPOLogistics" />
+                        <img src="../assets/doorstep/xpologistics.png" alt="XPOLogistics" />
                     </div>
                     <div>
-                        <img src="../assets/other-works/expeditors.png" alt="Expeditors" />
+                        <img src="../assets/doorstep/expeditors.png" alt="Expeditors" />
                     </div>
                     <div>
-                        <img src="../assets/other-works/gig.png" alt="Gig" />
+                        <img src="../assets/doorstep/gig.png" alt="Gig" />
                     </div>
                 </div>
             </div>

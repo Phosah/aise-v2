@@ -54,9 +54,13 @@ const shuffledProjects = computed(() => {
 
 const shuffle = (array) => {
     let currentIndex = array.length, randomIndex;
+    console.log("Array length is " + currentIndex);
     while (currentIndex != 0) {
+        console.log(`current index is :${currentIndex}`);
         randomIndex = Math.floor(Math.random() * currentIndex) + 1;
+        console.log(`Random index is :${randomIndex}`);
         currentIndex--;
+        console.log(`Random index after substraction is :${randomIndex}`);
         [array[currentIndex], array[randomIndex]] = [
             array[randomIndex], array[currentIndex]];
     }

@@ -1,7 +1,6 @@
 <script setup>
-// import Navbar from "@/components/Navbar.vue"
-import SidebarNav from './components/SidebarNav.vue';
 import { RouterView, RouterLink } from "vue-router";
+import SidebarNav from './components/SidebarNav.vue';
 {
   RouterView;
   RouterLink;
@@ -10,7 +9,6 @@ import { RouterView, RouterLink } from "vue-router";
 
 <template>
   <main class="font-euclid-circular">
-    <!-- <Navbar /> -->
     <SidebarNav />
     <div>
       <router-view></router-view>
@@ -40,20 +38,14 @@ import { RouterView, RouterLink } from "vue-router";
 
 @font-face {
   font-family: "Euclid Circular A";
-  font-weight: 400;
-  src: local("EuclidCircularA"), url("./fonts/EuclidCircularA-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Euclid Circular A";
-  font-weight: 700;
-  src: local("EuclidCircularA"), url("./fonts/EuclidCircularA-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Euclid Circular A";
   font-weight: 300;
   src: local("EuclidCircularA"), url("./fonts/EuclidCircularA-Light.ttf");
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  font-weight: 400;
+  src: local("EuclidCircularA"), url("./fonts/EuclidCircularA-Regular.ttf");
 }
 
 @font-face {
@@ -62,13 +54,14 @@ import { RouterView, RouterLink } from "vue-router";
   src: local("EuclidCircularA"), url("./fonts/EuclidCircularA-Medium.ttf");
 }
 
-.font-new-paris-headline {
-  font-family: "NewParisHeadline", serif;
+@font-face {
+  font-family: "Euclid Circular A";
   font-weight: 700;
+  src: local("EuclidCircularA"), url("./fonts/EuclidCircularA-Bold.ttf");
 }
 
-.font-new-paris-kingsize {
-  font-family: "NewParisKingSize", serif;
+.font-new-paris-headline {
+  font-family: "NewParisHeadline", serif;
   font-weight: 700;
 }
 
@@ -77,14 +70,20 @@ import { RouterView, RouterLink } from "vue-router";
   font-weight: 400;
 }
 
-.font-euclid-circular {
-  font-family: "Euclid Circular A", sans-serif;
-  font-weight: 400;
+/* Add -bold to ...-kingsize font name */
+.font-new-paris-kingsize {
+  font-family: "NewParisKingSize", serif;
+  font-weight: 700;
 }
 
 .font-euclid-circular-light {
   font-family: "Euclid Circular A", sans-serif;
   font-weight: 300;
+}
+
+.font-euclid-circular {
+  font-family: "Euclid Circular A", sans-serif;
+  font-weight: 400;
 }
 
 .font-euclid-circular-medium {

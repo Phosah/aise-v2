@@ -61,8 +61,8 @@ const personasArr = [
 const dashboard = {
     title: "Simplified Dashboard",
     paragraphs: [
-        "The first step was to create a simplified and user-friendly dashboard experience that was both functional and aesthetic to ease the user into the product From the dashboard you can view all your assets that are accessible to you in the wallet, and view all your NFT’s by switching a tab also at the same time you can view all transaction activities at a glance without having to click any button",
-        "Last but not the least you can easily see your account balance and access other functions like sending, receiving, buying, and exchange (bridge and swapping) your tokens"
+        "The first step was to create a simplified and user-friendly dashboard experience that was both functional and aesthetic to ease the user into the product. From the dashboard you can view all your assets that are accessible to you in the wallet, and view all your NFT’s by switching a tab also at the same time you can view all transaction activities at a glance without having to click any button",
+        "Last but not the least you can easily see your account balance and access other functions like sending, receiving, buying, and exchanging (bridge and swap) your tokens"
     ],
     img: photo1,
     alt: "Dashboard",
@@ -79,7 +79,7 @@ const nft = {
 const transaction = {
     title: "Transactions",
     paragraphs: [
-        "During transactions, the majority of users know they have sent but do not know the status of their transactions, yes expert users can go to ether scan to view the transaction status but only a handful of people do it Also, this gets to take them away from the wallet and makes them go through extra stress to find their answers, so giving a details page that shows the transaction status with as many details that both newbies and experts can understand and not find overwhelming would improve the user experience, also providing a view more for expert users to see some advanced details on the places like etherscan is also put in place Also, the use of Progress bars and time estimate on the transaction card reduces the user's curiosity as to what happens next, and how long before completion"
+        "During transactions, the majority of users know they have sent but do not know the status of their transactions, yes expert users can go to ether scan to view the transaction status but only a handful of people do it. Also, this gets to take them away from the wallet and makes them go through extra stress to find their answers, so giving a details page that shows the transaction status with as many details that both newbies and experts can understand and not find overwhelming would improve the user experience, also providing a view more for expert users to see some advanced details on the places like etherscan is also put in place. The use of Progress bars and time estimate on the transaction card reduces the user's curiosity as to what happens next, and how long before completion"
     ],    
     img: photo3,
     alt: "transaction",
@@ -87,7 +87,7 @@ const transaction = {
 const connect1 = {
     title: "Connect to Renting Protocols",
     paragraphs: [
-        "Traditional wallets like Trustwallet gives users the ability to connect to other dApps or DeFi protocols to be able to carry out transactions like swaps and bridges that can not be carried out on the wallet itself Likewise, users need a way to borrow game assets that would improve their gameplay and also have a way to rent out their assets to get incentives so we provide a way for you to be able to connect to protocols like rentNFT and Pegaxy and others that would give you that ability right from your wallet seamlessly."
+        "Traditional wallets like Trustwallet gives users the ability to connect to other dApps or DeFi protocols in other to be able to carry out transactions like swaps and bridges that can not be carried out on the wallet itself. Likewise, users need a way to borrow game assets that would improve their gameplay and also have a way to rent out their assets to get incentives so we provide a way for you to be able to connect to protocols like rentNFT and Pegaxy and others that would give you that ability right from your wallet seamlessly."
     ],    
     img: photo4,
     alt: "protocols",
@@ -95,7 +95,7 @@ const connect1 = {
 const connect2 = {
     title: "Connect to Renting Protocols",
     paragraphs: [
-        "You can easily access all your assets on their respective blockchain as we aim to achieve a multi-chain system so you can see all the assets and also switch chins for a more filtered search. By selecting a token you can see the QR code to scan payment and the address that can be copied and pasted Also, the design is structured in such a way that you do not need to have multiple clicks to get another tokens address just one click on the asset and the QR code changes and its respective address"
+        "You can easily access all your assets on their respective blockchain as we aim to achieve a multi-chain system so you can see all the assets and also switch chains for a more filtered search. By selecting a token you can see the QR code to scan for payment and the address that can be copied and pasted. Also, the design is structured in such a way that you do not need to have multiple clicks to get another tokens address just one click on the asset and the QR code changes alongside its respective address."
     ],    
     img: photo5,
     alt: "protocols",
@@ -265,7 +265,7 @@ const themeMode = "light"
             </ul>
         </section>
         <section class="max-w-7xl mx-auto my-20 px-6">
-            <h1 class="mb-4 text-6xl font-new-paris-kingsize">Design Decisions</h1>
+            <h1 class="mb-4 text-5xl md:text-6xl font-new-paris-kingsize">Design Decisions</h1>
             <p class="md:w-1/2 mb-6">After carefully analyzing the data and working with an MVP and time constraints, the following solutions were designed below</p>
             <div>
                 <LayoutThree :page="dashboard" />
@@ -283,10 +283,10 @@ const themeMode = "light"
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div>
-                <h2 class="mb-6 text-3xl md:text-5xl font-bold font-new-paris-kingsize">Conclusion</h2>
+                <h2 class="mb-6 text-3xl md:text-5xl font-bold font-new-paris-kingsize">Conclusion</h2> 
                 <p class="mb-6">There are a lot of solutions that can be provided to ease the lives of users using wallets and this in turn improves the user experience of the web3 space in general as wallets are the foundational blocks to the web3 ecosystem.</p>
-                <p class="mb-6">The ability for users to easily manage their NFT’s their assets across multiple networks, and protocols from one space and the ability for users to be guided and kept in sync with their transaction activities would improve clarity and inturn trust for users</p>
-                <p>Also, the ability for better transactions would improve interoperability of the web3 space and this, in turn, improves the entire ecosystem Thanks</p>
+                <p class="mb-6">The ability for users to easily manage their NFT’s, their assets across multiple networks and protocols from one space. Also, the ability for users to be guided and kept in sync with their transaction activities would improve clarity and inturn trust for users</p>
+                <p>The ability for better transactions would improve interoperability of the web3 space and this, in turn improves the entire ecosystem. Thanks</p>
             </div>
         </section>
         <OtherProjectsWeb3 />

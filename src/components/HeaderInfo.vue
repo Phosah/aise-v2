@@ -17,7 +17,7 @@ defineProps({
     <main class="max-w-7xl mx-auto py-20 px-6">
         <div class="max-w-5xl mx-auto md:px-16">
             <div
-                class="mb-14 md:w-10/12 pl-6 border-l-4 border-brand-black-3 dark:border-white text-xl md:text-2xl lg:text-4xl font-bold lg:leading-normal"
+                class="mb-14 md:w-10/12 pl-6 border-l-4 border-brand-black-3 dark:border-white text-2xl lg:text-4xl font-bold leading-relaxed"
             >{{headerDetails.LongDesc}}</div>
             <p
                 class="md:w-4/5 lg:w-5/6 md:text-lg lg:text-xl md:leading-8"

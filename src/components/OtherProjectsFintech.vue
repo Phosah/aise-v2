@@ -31,20 +31,17 @@ const projects = ref([
         route: "/powrfinance",
     },
 ])
-const shuffledProjects = computed(() => {
-    return shuffle(projects.value)
-})
-
-const shuffle = (array) => {
-    let currentIndex = array.length, randomIndex;
-    while (currentIndex != 0) {
-        randomIndex = Math.floor(Math.random() * currentIndex) + 1;
-        currentIndex--;
-        [array[currentIndex], array[randomIndex]] = [
-            array[randomIndex], array[currentIndex]];
+const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
     }
-    return array;
+    return array
 }
+
+const shuffledProjects = computed(() => {
+    return shuffleArray(projects.value)
+})
 </script>
 
 <template>
@@ -52,7 +49,7 @@ const shuffle = (array) => {
     <div class="md:flex md:items-start md:space-x-12 max-w-7xl mx-auto my-10 px-6">
         <div class="md:flex-1 mb-16 md:mb-0">
             <router-link :to="shuffledProjects[1].route">
-                <img class="mb-4 w-full h-96" :src="shuffledProjects[1].img" :alt="shuffledProjects[1].alt"/>
+                <img class="mb-4 w-full md:h-96" :src="shuffledProjects[1].img" :alt="shuffledProjects[1].alt"/>
                 <div>
                     <h3 class="font-new-paris-kingsize mb-4 text-2xl font-bold">{{shuffledProjects[1].title}}</h3>
                     <p>{{shuffledProjects[1].text}}</p>
@@ -61,7 +58,7 @@ const shuffle = (array) => {
         </div>
         <div class="md:flex-1">
             <router-link :to="shuffledProjects[0].route">
-                <img class="mb-4 w-full h-96" :src="shuffledProjects[0].img" :alt="shuffledProjects[0].alt" />
+                <img class="mb-4 w-full md:h-96" :src="shuffledProjects[0].img" :alt="shuffledProjects[0].alt" />
                 <div>
                     <h3 class="font-new-paris-kingsize mb-4 text-2xl font-bold">{{shuffledProjects[0].title}}</h3>
                     <p>{{shuffledProjects[0].text}}</p>

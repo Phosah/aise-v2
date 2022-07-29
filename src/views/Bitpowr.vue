@@ -1,13 +1,13 @@
 <script setup>
 import Navbar from '../components/Navbar.vue';
 import Header from '../components/Header.vue';
-import bitpowrCover from '../assets/bitpowr/hero.png'
 import LayoutOne from '../components/LayoutOne.vue';
 import LayoutTwo from '../components/LayoutTwo.vue';
 import LayoutFour from '../components/LayoutFour.vue'
 import LayoutThree from '../components/LayoutThree.vue';
 import Footer from "../components/Footer.vue"
 import OtherProjectsWeb3 from "../components/OtherProjectsWeb3.vue"
+import bitpowrCover from '../assets/bitpowr/hero.png'
 import photo1 from '../assets/bitpowr/blockchain.png'
 import photo2 from '../assets/bitpowr/role.png'
 import photo3 from '../assets/bitpowr/review.png'
@@ -34,7 +34,7 @@ const info = {
     img: bitpowrCover,
     alt: "bento",
     mainContent: "Bitpowr is a blockchain infrastructure that helps businesses both large and small working with digital assets and wallet services to build on the blockchain with easy-to-use API and wallet SDK",
-    subContent: "Bitpowr is a blockchain solution that was designed to scale and grow businesses willing to build on the blockchain by providing themsecure wallet infrastructure, advanced API services, multi signatory accounts, checkout facilities and investment opportunities on various DeFi protocols",
+    subContent: "Bitpowr is a blockchain solution that was designed to scale and grow businesses willing to build on the blockchain by providing them secure wallet infrastructure, advanced API services, multi signatory accounts, checkout facilities and investment opportunities on various DeFi protocols",
     role: "Product Design",
     client: "bitpowr",
     duration: "3 month",
@@ -45,8 +45,8 @@ const background = {
     title: "Background",
     paragraphs: [
         "It is no longer news that with the rise in the crypto and web3 space, there have been a lot of businesses wanting to have their businesses tap into this technology and build upon it. Building on the blockchain requires a lot of funds, advanced technological strengths in staff, and takes a lot of time and this has been the major blocker in a lot of companies tapping into this space and scaling their businesses.",
-        "We provide the building blocks for businesses and individuals globally to take advantage of blockchain to access the global digital economy and Build the future of crypto and web3",
-        "With Bitpowr blockchain infrastructure and cloud API, you can start building on the blockchain and incorporate all the necessary functionalities for your digital asset, both for monitoring, multi-sig approvals,  receiving payments for commerce users, multi-chain, and multi-functional crypto-wallets and instant fiat settlements."
+        "We provide the building blocks for businesses and individuals globally to take advantage of blockchain to access the global digital economy and build the future of crypto and web3",
+        "With Bitpowr blockchain infrastructure and cloud API, you can start building on the blockchain and incorporate all the necessary functionalities for your digital asset, both for monitoring, multi-sig approvals, receiving payments for commerce users, multi-chain, and multi-functional crypto-wallets and instant fiat settlements."
     ],
     img: photo1,
     alt: "background"
@@ -56,7 +56,7 @@ const approach = {
     paragraphs: [
         "My role in Bitpowr was to be the product lead that would be in charge of everything UI related for the project to cater to the design process from research to the high-fidelity prototypes",
         "While joining the team, there was an existing project that quoting the CEOs and stakeholders felt was selling the values of the company well, had a poor UX, and was not standard enough for them to be recognized as a world-class company, so I was tasked with taking the project to the next level and making it one that is to be recognized in the space",
-        "The team was a small team that comprised a Product manager, business analysts, content writers, Engineers, and marketing"
+        "The team was a small team that comprised a Product manager, business analysts, content writers, Engineers, and marketers"
     ],
     img: photo2,
     alt: "approach"
@@ -65,7 +65,7 @@ const analysis = {
     title: "Review and Analysis of The existing Design",
     paragraphs: [
         "The first course of action was to go through the existing design that had a poor UX and didn't sell the values of the company well, I took the design file and began my study.",
-        "But just like most designers the temptation to try your hands on changing the design immediately especially when the visuals feel they can be improved was the order of the day but I had to prioritize the users hence I ran some testings on the current product with 2 stakeholders and 4 current users of the product to hear first hand how they felt using the product and carrying out tasks, their limitations and pain poi8nts, from there I was able to identify the points in the user flow",
+        "But just like most designers the temptation to try your hands on changing the design immediately especially when the visuals feel they can be improved was the order of the day but I had to prioritize the users hence I ran some testings on the current product with 2 stakeholders and 4 current users of the product to hear first hand how they felt using the product and carrying out tasks, their limitations and pain points, from there I was able to identify the points in the user flow",
         "I had them also use the products live and speak out as frequently as possible so I can experience them better using the product and this gave insights on things that  are needed to improve the UX"
     ],
     img: photo3,
@@ -76,7 +76,7 @@ const competitors = {
     paragraphs: [
         "After carrying out a series of interviews the next step was carrying out research on competitors a few of them which include Fireblocks, Bitgo, Bittrex, etc",
         "This was a bit difficult as these competitors had limited materials out there to know how their businesses work and very few demos done on youtube to watch and study so I had to resort to scheduling a demo session with them. Cheesy move yep 🙈, but I needed to know how they work not to steal but to have an idea of how users are being served and what could be done better",
-        "After scheduling some demos with the companies i analysed the products with the best flows and those with good solutions and this was used as an initial benchmark to surpass and improve upon for the next phase of bitpowr"
+        "After scheduling some demos with the companies, i analysed the products with the best flows and those with good solutions and this was used as an initial benchmark to surpass and improve upon for the next phase of bitpowr"
     ],
     img: photo4,
     alt: "competitors"
@@ -102,11 +102,11 @@ const dashboard = {
     changes: [
         {
             title: "Emphasize on key Metrics",
-            text: "The dashboard is one that an individual or an organization comes into and immediately can tell where he stands, so the first thig was to introduce a chart that would display the current balance and this is filterable by date and accounts"
+            text: "The dashboard is one that an individual or an organization comes into and immediately can tell where he stands, so the first thing was to introduce a chart that would display the current balance and this is filterable by date and accounts"
         },
         {
             title: "Carry out Actions",
-            text: "The second step was to give users the ability to carry out the core actions for the platform and that is sending and receiving crypto and this was introduced into the dashboard to simplify the operators expeience"
+            text: "The second step was to give users the ability to carry out the core actions for the platform and that is sending and receiving crypto and this was introduced into the dashboard to simplify the operators experience"
         }
     ],
     img1: photo7,
@@ -118,7 +118,7 @@ const transaction = {
     changes: [
         {
             title: "Give more details",
-            text: "The previous transaction page just gave a list of transactions to go threough, this makes it difficult to know a summary or an overview of what has been carried out as that is key for a transaction page. So i introduces the summary cards to show the details of the received transactions and sent transactions"
+            text: "The previous transaction page just gave a list of transactions to go through, this makes it difficult to know a summary or an overview of what has been carried out as that is key for a transaction page. So I introduced the summary cards to show the details of the received transactions and sent transactions"
         },
         {
             title: "Give room for approvers",
@@ -134,10 +134,10 @@ const account = {
     changes: [
         {
             title: "Gave more Explanation",
-            text: "The old account represented accounts in cards and this limited the details to be just for BTC which doesnt make it scale or give more details on what the account holds. So i expanded the design and introduced the accounts in a table that the overview can be seen at a glimpse and more details can be accessed when going deeper."
+            text: "The old account represented accounts in cards and this limited the details to be just for BTC which doesn't make it scale or give more details on what the account holds. So I expanded the design and introduced the accounts in a table that the overview can be seen at a glimpse and more details can be accessed when going deeper."
         },
         {
-            title: "Introdcuing Fiat and Exchanged",
+            title: "Introducing Fiat and Exchanged",
             text: "Although this was not an improvement more like a new feature but from the account you can switch between your crypto accounts to your CEX and Fiat balances and the assets inside them would be displayed aswell"
         }
     ],  
@@ -184,7 +184,7 @@ const checkout = {
 const wallet1 = {
     title: "DeFi Investment Wallet",
     paragraphs: [
-        "The introduction of a Defi wallet is to allow users who want to invest their assets and earn passive income can do that. Bitpowr connects you to a large range of protocols, all you need to do is select a protocol and indicate your investment amount, that's all 😌",
+        "The introduction of a Defi wallet is to allow users who want to invest their assets and earn passive income to do that. Bitpowr connects you to a large range of protocols, all you need to do is select a protocol and indicate your investment amount, that's all 😌",
     ],
     
     img: photo17,
@@ -193,7 +193,7 @@ const wallet1 = {
 const wallet2 = {
     title: "DeFi Investment Wallet",
     paragraphs: [
-        "The introduction of a Defi wallet is to allow users who want to invest their assets and earn passive income can do that. Bitpowr connects you to a large range of protocols, all you need to do is select a protocol and indicate your investment amount, that's all 😌",
+        "The introduction of a Defi wallet is to allow users who want to invest their assets and earn passive income do that. Bitpowr connects you to a large range of protocols, all you need to do is select a protocol and indicate your investment amount, that's all 😌",
     ],
     
     img: photo18,
@@ -202,7 +202,7 @@ const wallet2 = {
 const monitoring = {
     title: "Transaction Monitoring",
     paragraphs: [
-        "The introduction of a Defi wallet is to allow users who want to invest their assets and earn passive income can do that. Bitpowr connects you to a large range of protocols, all you need to do is select a protocol and indicate your investment amount, that's all 😌",
+        "The introduction of a Defi wallet is to allow users who want to invest their assets and earn passive income do that. Bitpowr connects you to a large range of protocols, all you need to do is select a protocol and indicate your investment amount, that's all 😌",
     ],
     
     img: photo19,
@@ -247,14 +247,14 @@ const themeMode = "light"
         <section class="max-w-7xl mx-auto px-6 my-20 md:my-40">
             <div class="">
                 <h1 class="mb-6 text-3xl md:text-3xl font-bold font-new-paris-kingsize">How might we</h1>
-                <p class="mb-12">The next phase was to gather the insights gotten from the research phase and bring these to the CEO, PM, CTO and the marketing team the idea was to have an inhouse brainstorming session with the Product visionaries and others to get the best ideas out through some How Might We questions</p>
+                <p class="mb-12">The next phase was to gather the insights gotten from the research phase and bring these to the CEO, PM, CTO and the marketing team, the idea was to have an inhouse brainstorming session with the Product visionaries and others to get the best ideas out through some How Might We questions</p>
             </div>
             <div><img class="w-full" src="../assets/bitpowr/hmw.png" alt="Notes" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="">
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">Well defined goals.</h3>
-                <p class="mb-12">When we were done with the brainstorming session, I compiled all that has been discussed and gathered all the data that was mentioned to get the best ideas out there with this I scheduled a session with the CEO and, we went over all the data and decided on goals for the redesign increase platform value, grow the customer base and increase conversion and reduce bounce rate. Below are the targets we set and plans that were agreed upon</p>
+                <p class="mb-12">When we were done with the brainstorming session, I compiled all that has been discussed and gathered all the data that was mentioned to get the best ideas out there. With this, I scheduled a session with the CEO and we went over all the data and decided on goals for the redesign, increase platform value, grow the customer base, increase conversion and reduce bounce rate. Below are the targets we set and plans that were agreed upon</p>
                 <div class="mb-10">
                     <h4 class="mb-6 text-xl font-new-paris-kingsize">Increase Conversion</h4>
                     <p class="mb-1">a. Create a cleaner and more user-friendly interface </p>
@@ -270,7 +270,7 @@ const themeMode = "light"
             </div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h1 class="mb-6 text-6xl font-new-paris-kingsize">High Fidelity Designs</h1>
+            <h1 class="mb-6 text-4xl md:text-6xl font-new-paris-kingsize">High Fidelity Designs</h1>
             <LayoutFour :page="signup"/>
             <LayoutFour :page="dashboard"/>
             <LayoutFour :page="transaction"/>
@@ -288,7 +288,7 @@ const themeMode = "light"
         <section class="my-20 md:my-40">
             <div class="max-w-7xl mx-auto px-6">
                 <h3 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Mobile Responsive Screens</h3>
-                <p class="mb-12">With the mindset that a lot of users might want to carry out transactions while they commute attention had to be placed on the mobile interfaces to account for all users and their scenarios</p>
+                <p class="mb-12">With the mindset that a lot of users might want to carry out transactions while they commute, attention had to be placed on the mobile interfaces to account for all users and their scenarios</p>
             </div>
             <div><img class="w-full" src="../assets/bitpowr/mobile-screens.png" alt="Mobile screens" /></div>
         </section>
@@ -296,7 +296,7 @@ const themeMode = "light"
             <h1 class="mb-12 text-2xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
             <div class="mb-16">
                 <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Learnings and More</h2>
-                <p class="mb-6">I enjoyed working on bitpowr as it was my first exposure to web3 asides from the conventional Centralized exchanges. I got to learn the dynamics of the blockchain and how it can be used in real-life activities, and learned how to be transparent in task flows s this is a project that deals in financial transactions so the slightest mistake can cost a lot, and unlike traditional banks that cash can be reversed from a wrong address it's not so easy for such on the blockchain so every action carried out has to be clear and precise</p>
+                <p class="mb-6">I enjoyed working on bitpowr as it was my first exposure to web3 asides from the conventional Centralized exchanges. I got to learn the dynamics of the blockchain and how it can be used in real-life activities, and learned how to be transparent in task flows. This is a project that deals in financial transactions so the slightest mistake can cost a lot, and unlike traditional banks that cash can be reversed from a wrong address it's not so easy for such on the blockchain so every action carried out has to be clear and precise</p>
                 <p>Working on a web3 product that is both an Enterprise product and a B2C product gets you to think about a wide range of users and ensure the solutions meets their needs and this helped in improving my skills as User Experience designer and design thinker</p>               
             </div>
             <div>

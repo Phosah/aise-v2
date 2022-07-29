@@ -25,7 +25,7 @@ const openMenu = computed(() => {
             <div class="">
                 <router-link to="/"><img src="../assets/logo.svg" alt="" /></router-link>
             </div>
-            <div @click="openMenu" class="px-2"><img class="w-12 h-12" src="../assets/menu-icon-dark.png" alt="Hamburger icon"></div>
+            <div @click="openMenu" class="px-2"><img class="w-12 h-12" src="../assets/menu-icon.svg" alt="Hamburger icon"></div>
         </div>
         <div class="hidden md:block max-w-7xl mx-auto py-10 px-6">
             <div class="flex items-center justify-between">

@@ -234,8 +234,8 @@ const themeMode = "light"
         <section class="max-w-7xl mx-auto px-6">
             <LayoutOne :page="approach"/>
             <LayoutTwo :page="analysis" />
-            <div class="flex space-x-2 my-20">
-                <div class="flex-1">
+            <div class="md:flex md:space-x-2 my-20">
+                <div class="flex-1 mb-6 md:mb-0">
                     <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Research Process</h3>
                     <p class="mb-4">The next phase was to carry out interviews with potential users of the products and people who build on the blockchain to identify their pain-points and how they carry out their activities without the solution bitpowr would give them</p>
                     <p>This was helpful to get the views of fresh users as their opinions and needs would be unbias of emotional sentiments and attachments as the aim of the redesign was not just to improve the experience of existing users but to also bring and retain new users</p>
@@ -302,8 +302,8 @@ const themeMode = "light"
             <div>
                 <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Key Metrics</h2>
                 <p class="mb-6">These metrics were gotten 3 months after the redesign phase to test the success of the project</p>
-                <div class="flex space-x-6 mb-12">
-                    <div class="flex-1 p-6 bg-[#F4ECDF] text-[#775D4E] rounded-br-2xl">
+                <div class="md:flex md:space-x-6 mb-12">
+                    <div class="flex-1 mb-6 md:mb-0 p-6 bg-[#F4ECDF] text-[#775D4E] rounded-br-2xl">
                         <h4 class="mb-3 text-lg font-bold font-new-paris-kingsize">Before Redesign</h4>
                         <ul class="pl-6 list-disc">
                             <li>Average monthly users was 24</li>

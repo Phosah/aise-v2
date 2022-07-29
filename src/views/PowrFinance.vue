@@ -585,7 +585,7 @@ const headerCenter = 'font-playfair'
                 <div class>
                     <img
                         class="w-full"
-                        src="../assets/other-works/dollar-cards-mobile.png"
+                        src="../assets/powrfinance/dollar-card.png"
                         alt="Dollar master card"
                     />
                 </div>

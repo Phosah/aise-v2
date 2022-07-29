@@ -331,7 +331,7 @@ const bgColor = "light"
                 <p>My design strategy comprised of integrated planning processes that examined the relationships between how the design and business may complement one another, in simple terms finding a balance between business objectives and creative solutions</p>
             </div>
             <div class="flex justify-center mb-20">
-                <img class="mx-auto" src="../assets/other-works/strategy.png" alt="Design strategy" />
+                <img class="mx-auto" src="../assets/doorstep/design.png" alt="Design strategy" />
             </div>
             <div class="md:flex md:space-x-6 text-sm md:text-base">
                 <div class="md:flex-1 mb-12 md:mb-0">

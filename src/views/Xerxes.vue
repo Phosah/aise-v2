@@ -20,11 +20,11 @@ import persona2 from "../assets/xerxes/persona-2.png"
 
 const info = {
     title: "Xerxes",
-    text: "A decentralized Lending and Borrowing Protocol, providing income to Lenders and Loaning opportunities for borrowers with need any crypto asset of your choice",
+    text: "A decentralized Lending and Borrowing Protocol, providing income to Lenders and Loaning opportunities for borrowers with need of any crypto asset of your choice",
     img: xerxesCover,
     alt: "Xerxes",
-    mainContent: "Xerxes is a lending protocol strategy product on the web3 Ecosystemn that enables crypto users to borrow and or lend their crypto assets",
-    subContent: "Xerxes gets to solve the issue of crypto lending and create a financial support system for crypto holders and traders who have some financial needs and don't want to liquidate their assets and still have access to funds for their needs or investment purposes.",
+    mainContent: "Xerxes is a lending protocol strategy product on the web3 Ecosystem that enables crypto users to borrow and or lend their crypto assets",
+    subContent: "Xerxes gets to solve the issue of crypto lending and creates a financial support system for crypto holders and traders who have some financial needs and don't want to liquidate their assets and also still have access to funds for their needs or investment purposes.",
     role: "Product Design",
     client: "Xerxes",
     duration: "1 month",
@@ -33,8 +33,8 @@ const info = {
 const problems = {
     title: "Problems Faced by Users",
     paragraphs: [
-        "For every crypto investor, there has been one major statement we get advised with before we being and that is “Don't put in more than you can lose”. But this is one piece of advice we know but like me, a lot of users fail to uphold.",
-        "The frequent dips in cryptocurrencies have been that of major benefits and also losses on a lot of users which often places users in a tight spot especially those who have a dire need for their investments.",
+        "For every crypto investor, there has been one major statement we get advised with before we begin and that is “Don't put in more than you can lose”. But this is one piece of advice we know but like me, a lot of users fail to uphold.",
+        "The frequent dips in cryptocurrencies have been of major benefits and losses on a lot of users which often places users in a tight spot especially those who have a dire need for their investments.",
         "A lot of users tend to embrace the HODL stance and keep their funds for two major reasons; The faith in the tokens to rise back based on its historical proofs and the pain of selling now and incurring all the loss.",
         "This has kept a lot of users facing serious financial problems, those who have to starve or lack some basic amenities because their funds are tied up suffer from it."
     ],
@@ -45,7 +45,7 @@ const aims = {
     title: "What Does Xerxes aim to Achieve?",
     paragraphs: [
         "Crypto Investments do not need to be one that financially cripples you, the goal is financial liberation both short and long term.",
-        "Xerxes hopes to bring a solution that allows users access to lending systems whereby you can borrow tokens either stable coins or others with the collateralization of your crypto investments and sort out whatever financial needs, you don't need to tell us without ever having to sell and be on the losing side of the dip",
+        "Xerxes hopes to bring a solution that allows users access to lending systems whereby you can borrow tokens either stable coins or others with the collateralization of your crypto investments and sort out whatever financial needs, you don't need to tell us when having to sell and be on the losing side of the dip",
         "Also what is a DeFi Protocol without investment opportunities, so we aim to make the system embrace the decentralized nature of web3, hence we aim to facilitate a peer-peer lending system where the borrowers would be incentivized with profit for borrowing their extra cash to those who need it in a secured nature.",
     ],
     img: photo2,
@@ -54,7 +54,7 @@ const aims = {
 const dashboard = {
     title: "Dashboard",
     paragraphs: [
-        "From the dashboard, you get to see your stand in the protocol with your NET APY the most obvious showing you the earnings all your investments (lending and borrowing) are yielding you at the end of the year. You also get to see the state of your bowwi = owing limit which is a major factor as the borrowing limit determines if the assets would be liquidated to pay off the debt when the token price borrowed is getting greater than the collateralized amount",
+        "From the dashboard, you get to see your stand in the protocol with your NET APY, the most obvious showing you the earnings all your investments (lending and borrowing) are yielding you at the end of the year. You also get to see the state of your borrowing limit which is a major factor as the borrowing limit determines if the assets would be liquidated to pay off the debt when the token price borrowed is getting greater than the collateralized amount",
         "From the dashboard, you get to see  your supply and borrow market and can be accessed with a toggle from one to the other",
         "We also aim to bring clarity to terminologies used so we introduced tooltips to do major explanations."
     ],
@@ -84,7 +84,7 @@ const supplyMarket = {
 const liquidation = {
     title: "Liquidation Notification",
     paragraphs: [
-        "One of the biggest risks with Lending protocols is that your assets can be liquidated if the collateralized amount goes below a safe point that the protocol determines most times 80% in value and this is to ensure the protocol doesn't lose or incur a permanent loss",
+        "One of the biggest risks with Lending protocols is that your assets can be liquidated if the collateralized amount goes below a safe point that the protocol determines most times 80% in value and also this is to ensure the protocol doesn't lose or incure a permanent loss",
         "But we aim to keep the users in the loop at all times for a better experience. Liquidation is greatly affected by how the supplied collateral tokens are performing. there can be a dip in the asset which would affect the value of token talk and reduce the collateralized value and this can cause liquidation.",
         "We are aware of all this and decided to go the extra mile to remind our users, and since this is a web3 decentralized application, we have few ways of contacting the user so we ask the users to provide their email and phone number, not for login but solely for reminder purposes of when liquidation point is close so they can either repay their loans and salvage their collateral or top up their collateral and maintain a safe liquidation point."
     ],
@@ -94,7 +94,7 @@ const liquidation = {
 const repay = {
     title: "Repay Loan",
     paragraphs: [
-        "You can decide to repay your loan when you are ready with assets from your wallet or with your collateralized amount, by doing this, your collateral is used to pay the loan and the balance is converted to the assets used to invest in if it was multiple assets or if it was from your supply market, the percentage distribution of the supplied tokens would determine the amount that goes to what assets.",
+        "You can decide to repay your loan when you are ready with assets from your wallet or with your collateralized amount, by doing this, your collateral is used to pay the loan and the balance is converted to the assets used to invest in. If it was multiple assets or if it was from your supply market, the percentage distribution of the supplied tokens would determine the amount that goes to what assets.",
     ],
     img: photo7,
     alt: "Repay Loan"
@@ -105,11 +105,11 @@ const user1 = {
     about: "Wade Warren is a 26yrs old Human Resource manager who invests a lot in crypto, he isn't so experienced with trading and other forms of investments so he buys to hold long term, most of his holdings are in Ethereum and Doge",
     goals: [
         "Wade needs a way to have funds to use for another personal run around and at the same time HODL his tokens because he doesn't want to lose out on any Rise",
-        "Wade also needs a way to borrow and be sure of the terms he is getting into based on bank lending schemes he is a bit untrusting",
-        "Wade needs a way to earn passive income with his tokens as he  is holding long term"
+        "Wade also needs a way to borrow and be sure of the terms he is getting into but based on bank lending schemes he is a bit untrusting",
+        "Wade needs a way to earn passive income with his tokens as he is holding long term"
     ],
     points: [
-        "Not knowing how to get cash to spend so he ends up borrowing funds from friends to meet personal needs and sometimes the friends might not have the funds so he is stuck."
+        "Not knowing how to get cash to spend, he ends up borrowing funds from friends to meet personal needs and sometimes the friends might not have the funds so he becomes stuck."
     ]
 }
 const user2 = {
@@ -119,7 +119,7 @@ const user2 = {
     goals: [
         "Rebecca needs a way to borrow funds when in need of cash and at the same time not risk her chances of a potential profit",
         "Rebecca wants a way to borrow funds when they are high with a more stable token when she predicts the tokens will dip so she can leverage off the dip and earn profit as well",
-        "Rebecca needs a way to earn passive income with his tokens as he  is holding long term"
+        "Rebecca needs a way to earn passive income with her tokens as she is holding long term"
     ],
     points: [
         "Overpriced interest placed on loans",
@@ -140,16 +140,15 @@ const themeMode = 'light'
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Research Time</h1>
             <p class="mb-4">During the research phase, we engaged with a lot of users in the web2 space and also the
-                web3 space
-                because the goal of the project is to understand the psychology of users wanting to borrow funds and
+                web3 space because the goal of the project is to understand the psychology of users wanting to borrow funds and
                 leverage off lending protocols, and due to this technology being utilized in the web2 space already we
                 needed to understand from a solutions perspective. But we understand that the methods of the approach of
                 lending in web3 are different because of the peer-peer fashion we also needed to understand how similar
                 protocols in the web3 space carry out lending and borrowing.</p>
 
             <p>After listening carefully to a couple of users in some one on one interviews scheduled on google meet,
-                and some sharing the vision session with the product owners I was able to identify some business needs
-                and at the same time identify the pain points of the users and able to come up with some deductions.</p>
+                and some sharing their vision during a session with the product owners, I was able to identify some business needs
+                and at the same time identify the pain points of the users and finally able to come up with some deductions.</p>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Deductions</h1>
@@ -159,8 +158,7 @@ const themeMode = 'light'
                 <li class="mb-3">Users needed a way to borrow money without necessarily supplying first</li>
                 <li class="mb-3">Customizable Loan Terms</li>
                 <li class="mb-3">Repayments flexibility, I can decide to clear my loans once or set recurring payments
-                    connected to
-                    my wallet</li>
+                    connected to my wallet</li>
                 <li class="mb-3">Transparent risk assessment</li>
                 <li class="mb-3">The ability to multiple tokens from the wallet to borrow one asset on the platform</li>
                 <li class="mb-3">Repayment terms and answered questions</li>
@@ -170,8 +168,7 @@ const themeMode = 'light'
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">User Personas</h1>
             <p class="mb-6">Based on the generative user research I conducted, I created user personas that capture the
-                essence of
-                both user categories so its easier to personalize the experience to addressing the users pain points</p>
+                essence of both user categories so its easier to personalize the experience to addressing the users pain points</p>
             <Persona :persona="user1" />
             <Persona :persona="user2" />
         </section>
@@ -187,16 +184,14 @@ const themeMode = 'light'
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Value Proposition - Customers</h1>
             <p class="mb-10 text-base">In the customer's profile, you describe the job your customer is trying to get
-                done by
-                highlighting customers pains and gains, it's used to track users needs and position the company’s to
+                done by highlighting customers pains and gains, it's used to track users needs and position the company’s to
                 know more about the customers needs to properly create value</p>
             <div><img class="w-full" src="../assets/xerxes/value-proposition-customers.png" alt="Value Proposition" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Value Proposition - Business</h1>
             <p class="mb-10 text-base">Here you list the products and services your value proposition is built on,
-                describing in
-                which way the product features and services are pain relievers and outline how they are gain creators
+                describing in which way the product features and services are pain relievers and outline how they are gain creators
             </p>
             <div><img class="w-full" src="../assets/xerxes/value-proposition-business.png" alt="Value Proposition" /></div>
         </section>
@@ -210,8 +205,8 @@ const themeMode = 'light'
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-4 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Design Decisions</h1>
             <p class="mb-12">From the research carried out, the data analysis from responses, and brainstorming session
-                with those analyses, a design was carried out t properly account for every problem and pain points faced
-                by the users in an inclusive manner and the design was split into two aspects both can stand as
+                with those analyses, a design was carried out to properly account for every problem and pain points faced
+                by the users in an inclusive manner and the design was split into two aspects so both can stand as
                 individuals products but merged into one to improve value to users</p>
             <LayoutThree :page="dashboard" />
             <LayoutThree :page="borrowMarket" />
@@ -222,11 +217,9 @@ const themeMode = 'light'
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-4 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
             <p class="mb-4">Decentralization is undoubtedly a major trend in financial markets all over the world. The
-                arrival of DeFi
-                has changed the way people and institutions perceive finance. We have been witnessing many radical
+                arrival of DeFi has changed the way people and institutions perceive finance. We have been witnessing many radical
                 improvements in financial technology. The understanding of risks associated with decentralized exchanges
-                can
-                provide vital insights for identifying possibilities for improvement.</p>
+                can provide vital insights for identifying possibilities for improvement.</p>
             <p>I enjoyed this project and the loads of learning attached to it, the psychology in bridging the world of
                 experts and novices together to a unified value proposition was the peak of my experience</p>
         </section>

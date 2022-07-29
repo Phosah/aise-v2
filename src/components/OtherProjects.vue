@@ -66,7 +66,7 @@ const shuffledProjects = computed(() => {
     <div class="md:flex md:items-start md:space-x-12 max-w-7xl mx-auto my-10 px-6">
         <div class="md:flex-1 mb-16 md:mb-0">
             <router-link :to="shuffledProjects[1].route">
-                <img class="mb-4 w-full md:h-96" :src="shuffledProjects[1].img" :alt="shuffledProjects[1].alt"/>
+                <img class="mb-4 w-full lg:h-96" :src="shuffledProjects[1].img" :alt="shuffledProjects[1].alt"/>
                 <div>
                     <h3 class="font-new-paris-kingsize mb-4 text-2xl font-bold">{{shuffledProjects[1].title}}</h3>
                     <p>{{shuffledProjects[1].text}}</p>
@@ -75,7 +75,7 @@ const shuffledProjects = computed(() => {
         </div>
         <div class="md:flex-1">
             <router-link :to="shuffledProjects[0].route">
-                <img class="mb-4 w-full md:h-96" :src="shuffledProjects[0].img" :alt="shuffledProjects[0].alt" />
+                <img class="mb-4 w-full lg:h-96" :src="shuffledProjects[0].img" :alt="shuffledProjects[0].alt" />
                 <div>
                     <h3 class="font-new-paris-kingsize mb-4 text-2xl font-bold">{{shuffledProjects[0].title}}</h3>
                     <p>{{shuffledProjects[0].text}}</p>

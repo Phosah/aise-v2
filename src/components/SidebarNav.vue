@@ -41,6 +41,9 @@ const closeMenu = computed(() => {
                     <router-link to="/web3">Web 3 Works</router-link>
                 </div>
                 <div class="mb-12 hover:text-brand-gray-3">
+                    <router-link to="/fintech">Fintech Works</router-link>
+                </div>
+                <div class="mb-12 hover:text-brand-gray-3">
                     <router-link to="/otherworks">Other Works</router-link>
                 </div>
                 <div class="mb-12 hover:text-brand-gray-3">

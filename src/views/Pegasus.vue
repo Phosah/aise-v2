@@ -51,7 +51,7 @@ const goals = {
 const user1 = {
     img: persona7,
     alt: "Persona",
-    about: "Paulo is a 42yrs old Ex-military of London officer and a professional accountant for the past 17 years. He is a professional crypto investor in crypto and so far buys tokens that he predicts would do well in the market",
+    about: "Paulo is a 42yrs old Ex-military of London officer and a professional accountant for the past 17 years. He is a professional crypto investor and so far buys tokens that he predicts would do well in the market",
     goals: [
         "Paulo needs a way to purchase an index token",
         "He needs to be able to know what the index is about and the tokens it would be comprised of",
@@ -81,7 +81,7 @@ const user2 = {
 const dashboard = {
     title: "Dynamic Dashboard",
     paragraphs: [
-        "On the dashboard the goal is to guide the users through their investment positions and the ability to make more investment decisions, so we provided the users with the latest and trending news in the crypto space that they can consume daily as this is very vital in every trader lives to stay in touch with his tokens and others making waves",
+        "On the dashboard the goal is to guide the users through their investment positions and the ability to make more investment decisions, so we provided the users with the latest and trending news in the crypto space that they can consume daily as this is very vital in every traders life to stay in touch with his tokens and others making waves",
         "Also, we give you a quick visual representation of your investment stand and amount you have."
     ],
     img: photo2,
@@ -99,8 +99,8 @@ const investments = {
 const community = {
     title: "Community Index",
     paragraphs: [
-        "We have a team of financial advisors but we also believe in the power of the community and want them also to benefit so we also give the ability for community contributions, where users are allowed to create their portfolio which would be turned into an index token that other users can see how well that index has grown and can decide to invest in it",
-        "The index value would be determined by all the underlying assets' value and their percentage composition.",
+        "We have a team of financial advisors but we also believe in the power of the community and want them also to benefit so we give the ability for community contributions, where users are allowed to create their portfolio which would be turned into an index token so that other users can see how well that index has grown and can decide to invest in it",
+        "The index value would be determined by all the underlying assets value and their percentage composition.",
         "And this index would be available for anyone to buy but would not be given the verified tag."
     ],
     img: photo3,
@@ -109,7 +109,7 @@ const community = {
 const vault = {
     title: "Vault",
     paragraphs: [
-        "The vault is a way for you to gain extra income. Here you can lock up your investment in form of an index mainly and other tokens and those tokens based on the strategies set up in the protocol for that particular vault would be used to generate extra earnings for those who locked up their tokens.",
+        "The vault is a way for you to gain extra income. Here you can lock up your investment in form of an index mainly and other tokens. Those tokens are based on the strategies set up in the protocol for that particular vault. It would be used to generate extra earnings for those who locked up their tokens.",
         "You can deposit to the vault and also withdraw your locked up funds at anytime",
         "We give you the ability to monitor the vault activities to help build a room for trust and transparency in the protocols activities"
     ],
@@ -145,7 +145,7 @@ const cards = [
         img: research2
     },
     {
-        title: "3. What do you classsify as the most difficult aspect in buying a crypto asset",
+        title: "3. What do you classify as the most difficult aspect in buying a crypto asset",
         img: research3
     },
     {
@@ -174,11 +174,11 @@ const cards = [
         <section class="md:flex md:items-center md:space-x-12 max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="md:flex-1 mb-6 md:mb-0">
                 <h3 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Problems associated</h3>
-                <p class="mb-4">With the creation of Bitcoin, thousands of other tokens have been created and they a lot
-                    of them have been seen to pose great investment opportunities. As of April 2019, there are 2,100
+                <p class="mb-4">With the creation of Bitcoin, thousands of other tokens have been created and a lot
+                    of them have been seen to pose great investment opportunities. As of April 2019, there were 2,100
                     tokens listed on CoinMarketCap that represent over $160 billion in value.</p>
-                <p>There is increasing complexity in dealing with an ever-growing number of tokens, users find it to
-                    knowing what assets to invest intend to miss out on opportunities and other issues namely;</p>
+                <p>There is increasing complexity in dealing with an ever-growing number of tokens. Users not
+                    knowing what assets to invest in intend to miss out on opportunities and other issues namely;</p>
                 <ul class="mb-4 pl-6 list-disc">
                     <li>Transaction Costs for the purchase of each of the tokens</li>
                     <li>Not knowing what the best token to buy</li>
@@ -189,7 +189,7 @@ const cards = [
                 <p>These inconveniences even have financial repercussions when one considers how fees accumulate as a
                     result of token-by-token exchange trades and withdrawals.</p>
             </div>
-            <div class="md:flex-1"><img src="../assets/pegasus/problem.png" alt="Pegasus"></div>
+            <div class="md:flex-1"><img src="../assets/pegasus/problem.png" alt="Pegasus" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <LayoutTwo :page="goals" />
@@ -221,7 +221,7 @@ const cards = [
                 <li>Experienced users wanted to know the strength and stability of the protocol before investing with
                     them</li>
                 <li>The pain of paying transaction fees for every asset you have or want to invest in is a lot as
-                    sometimes the fees are almost as much as I am investing and that done multiple times is a lot to
+                    sometimes the fees are almost as much as what I am investing and that done multiple times is a lot to
                     deal with</li>
                 <li>Users also need a way to keep their money long term and properly have a way to manage their assets
                     to yield more profit</li>
@@ -256,11 +256,9 @@ const cards = [
             <div class="max-w-7xl mx-auto py-40">
                 <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Design Decisions</h1>
                 <p class="mb-4">From the research carried out, the data analysis from responses, and brainstorming
-                    session with those analyses, a design was carried out t properly account for every problem and
-                    pain
-                    points faced by the users in an inclusive manner and the design was split into two aspects both
-                    can
-                    stand as individuals products but merged into one to improve value to users</p>
+                    session with those analyses, a design was carried out to properly account for every problem and
+                    pain point faced by the users in an inclusive manner and the design was split into two aspects so both
+                    can stand as individuals products but merged into one to improve value to users</p>
                 <LayoutOne :page="dashboard" />
                 <LayoutThree :page="investments" />
                 <div class="flex items-center space-x-12 my-20">

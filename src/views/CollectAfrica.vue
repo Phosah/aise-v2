@@ -40,7 +40,7 @@ import photo24 from '../assets/collect-africa/onboarding.png'
 
 const details = {
     img: hero,
-    alt: "Collect Africa",
+    alt: "Collect Africadddddd",
     title: "Collect Africa",
     shortDesc: "Reinventing payment systems and account management for both large and small scale businesses across Africa",
     LongDesc: "Collect is a Fintech solution solving payments problems for large and small scale businesses all over Africa, with goals to make businesses harness their potentials and achieve greater heights",

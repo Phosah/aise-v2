@@ -193,7 +193,7 @@ const wallet1 = {
 const wallet2 = {
     title: "DeFi Investment Wallet",
     paragraphs: [
-        "The introduction of a Defi wallet is to allow users who want to invest their assets and earn passive income do that. Bitpowr connects you to a large range of protocols, all you need to do is select a protocol and indicate your investment amount, that's all 😌",
+        "The introduction of a Defi wallet is to allow users who want to invest their assets and earn passive income can do that. Bitpowr connects you to a large range of protocols, all you need to do is select a protocol and indicate your investment amount, that's all 😌",
     ],
     
     img: photo18,
@@ -202,7 +202,7 @@ const wallet2 = {
 const monitoring = {
     title: "Transaction Monitoring",
     paragraphs: [
-        "The introduction of a Defi wallet is to allow users who want to invest their assets and earn passive income do that. Bitpowr connects you to a large range of protocols, all you need to do is select a protocol and indicate your investment amount, that's all 😌",
+        "The transaction monitoring was centered to help developers building on the blockchain to be able to make transactions and monitor them cleanly and easily. They also have the ability to view where a transition fails and how to debug it",
     ],
     
     img: photo19,

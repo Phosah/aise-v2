@@ -302,7 +302,7 @@ const bgColor = "light"
         <section class="block md:hidden max-w-7xl mx-auto py-10 md:py-20 px-6">
             <div class="flex items-center space-x-4 mb-16">
                 <div class="w-1/3">
-                    <img class="w-full" src="../assets/other-works/samuel.png" alt="Man photo" />
+                    <img class="w-full" src="../assets/trigle/persona-1.png" alt="Man photo" />
                 </div>
                 <div class="w-2/3 md:pl-12">
                     <p class="mb-2">
@@ -342,7 +342,7 @@ const bgColor = "light"
         <section class="block md:hidden max-w-7xl mx-auto py-10 md:py-20 px-6">
             <div class="flex items-center space-x-4 mb-16">
                 <div class="w-1/3">
-                    <img class="w-full" src="../assets/other-works/ari.png" alt />
+                    <img class="w-full" src="../assets/trigle/persona-2.png" alt="Ari" />
                 </div>
                 <div class="w-2/3 md:pl-12">
                     <p class="mb-2">

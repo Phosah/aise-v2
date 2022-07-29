@@ -21,7 +21,7 @@ const info = {
     img: myriaWalletCover,
     alt: "bento",
     mainContent: "Myria wallet  is a blockchain wallet solution that aims at enhancing the power of play through blockchain by giving users the ability to transfer both crypto assets and NFT’s amongst crypto addresses and GameFi users",
-    subContent: "Myria wallet is a wallet solution that allows gamers to be able to interract with NFT assets and other crypto assets that could be in form of reward tokens from the respective gamefi and such token can be traded by means of swap bridge and even gift sending",
+    subContent: "Myria wallet is a wallet solution that allows gamers to be able to interact with NFT assets and other crypto assets that could be in form of reward tokens from the respective gamefi and such token can be traded by means of swap, bridge and even gift sending",
     role: "Product Design",
     client: "Myria",
     duration: "2 weeks",
@@ -31,7 +31,7 @@ const info = {
 const problem = {
     title: "Problem Statement",
     paragraphs: [
-        "Myria Finance is a blockchain solution that aims at enhancing the power of play through blockchain Myria is a decentralized Ethereum Layer 2, built to empower digital assets, NFT, and blockchain gaming., enabling more people to build, experience, and enjoy the benefits of blockchain and the metaverse.",
+        "Myria Finance is a blockchain solution that aims at enhancing the power of play through blockchain. Myria is a decentralized Ethereum Layer 2, built to empower digital assets, NFT, and blockchain gaming enabling more people to build, experience, and enjoy the benefits of blockchain and the metaverse.",
         "Myria will be launching a browser-based wallet to complement our new L2 Blockchain solution. The wallet will hold both Tokens and NFTs. The goal of the wallet is to easily facilitate player transactions and to keep track of balances. Please create a browser-based wallet experience (not a browser extension like metamask), using Myria's current design language from myria.com."
     ],
     img: photo11,
@@ -41,20 +41,20 @@ const personasArr = [
     {
         img: persona1,
         alt: "Gamer",
-        about: "A 24-year -old online gamer based in Texas, United States. She has been running her online playing online games for the last 4 years and started gamefi for over 11 months, she loves the conquests and plays for hours non-stop",
+        about: "A 24-year -old online gamer based in Texas, United States. She has been running her online playing games for the last 4 years and started gamefi for over 11 months, she loves the conquests and plays for hours non-stop",
         goals: [
             "Jasmine needs a way to make transactions of her rewarded tokens from one address to another or even an external wallet",
             "Jasmine occasionally transfers NFTs to her fellow guild members",
         ],
         points: [
             "Unable to transfer her assets to friends or other addresses",
-            "Unable to properly know the state of her crypto transactions when she sends them form other wallets",
-            "Have to wait long hours for some transactions"
+            "Unable to properly know the state of her crypto transactions when she sends them from other wallets",
+            "Has to wait long hours for some transactions"
         ],
         needTitle: "Need",
         needs: [
             "She needs the means to transfer NFT assets",
-            "She needs a way to rent assets that she currently doesn't have but needs to play better"
+            "She needs a way to rent assets that she currently doesn't have to play better"
         ]
     },
 ]
@@ -113,30 +113,30 @@ const themeMode = "light"
         <section class="max-w-7xl mx-auto my-20 px-6">
             <h3 class="font-new-paris-kingsize mb-6 text-2xl md:text-3xl font-bold">Background</h3>
             <p class="mb-4">Crypto is the future of games and with an ever-growing aspect of life there is bound to be evolution and this influences how we bring solutions to solve the needs that arise from the change.
-            This evolution introduced gamefi. This is still similar to the online and gaming console gaming experience in which we get entertained by overcoming challenges but now on the blockchain, there is an even greater value proposition where players get rewarded for their engagement with the games, and these rewards unlike conventional gaming experience these rewards can be converted to real-world value with both fungible and non-fungible tokens.
+            This evolution introduced gamefi. This is still similar to the online and gaming console gaming experience in which we get entertained by overcoming challenges but now on the blockchain, there is an even greater value proposition where players get rewarded for their engagement with the games, and these rewards unlike conventional gaming experience can be converted to real-world value with both fungible and non-fungible tokens.
             With a lot of GameFi in the ecosystems there remains a problem of interoperability between these game ecosystems and this is due to the little or limited transactional interactions between such games, players, and their resources.  
             As solutions keep rising to help mitigate this problem we have a few notable ones these include; 
             The ability of players to join guilds and have access to gaming assets that they could not afford or have access to enables them to play better and earn more.
-            The ability of players to rent game assets they don't have resources to get or the skill level necessary to attain and gamers rent their game assets to other gamers temporarily.</p>
+            The ability of players to rent game assets that they don't have resources to get or the skill level necessary to attain and gamers rent their game assets to other gamers temporarily.</p>
             <p class="mb-4">But all these solutions still have one foundation that it heavily depends on  and that is the ability of gamers to seamlessly transfer these assets and their token rewards from one person to another or from one address to another</p>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="mb-12">
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">Kick-Off & Design Process</h3>
-                <p>To design the project properly, i had to carry out a series of activities which started with a call with the product owners the vision was clearly explained and which was a benchmark for the research and interviews; below are the activities carried out in steps</p>
+                <p>To design the project properly, i had to carry out a series of activities which started with a call with the product owners, the vision was clearly explained and was a benchmark for the research and interviews; below are the activities carried out in steps</p>
             </div>
-            <div class="grid grid-cols-2 gap-8">
+            <div class="grid md:grid-cols-2 gap-8">
                 <div class="p-6 border border-black border-opacity-25 rounded-md ">
                     <h4 class="mb-4 text-xl font-new-paris-kingsize">Research</h4>
                     <p>During the design process i carried out research about the problem and the market base to guide my design solutions from the users and business perspectives</p>
                 </div>
                 <div class="p-6 border border-black border-opacity-25 rounded-md ">
                     <h4 class="mb-4 text-xl font-new-paris-kingsize">Interviews</h4>
-                    <p>Interviews of about 4 users of blockchain wallets and gamefi were done to ensure the design was in sync with users needs and empathize with their pain points</p>
+                    <p>Interviews of about 4 users of blockchain wallets and gamefi were done to ensure the design was in sync with users needs and also empathize with their pain points</p>
                 </div>
                 <div class="p-6 border border-black border-opacity-25 rounded-md ">
                     <h4 class="mb-4 text-xl font-new-paris-kingsize">UI Design</h4>
-                    <p>After carefully research and accumulating sufficient data the design was done in an agile manner with little paper sketches and quickly into high fidelity prototypes</p>
+                    <p>After carefully researching and accumulating sufficient data the design was done in an agile manner with little paper sketches and quickly into high fidelity prototypes</p>
                 </div>
                 <div class="p-6 border border-black border-opacity-25 rounded-md ">
                     <h4 class="mb-4 text-xl font-new-paris-kingsize">Review</h4>
@@ -146,37 +146,59 @@ const themeMode = "light"
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Research Process</h3>
-            <p class="mb-4">During the research phase, I engaged with users in the gamefi space, traditional wallet solutions, and the regular gaming spaces to get deeper insights into how players transact with one another and monitor their transactions were asked 
-            After listening carefully to a couple of users in I was able to identify users who needed a way to stay up to date on their transaction status, a lot of wallets allow you to send tokens but you just get to wait for sometimes hours till the transaction is successful or failed without extra feedback on why the transaction is taking that long
+            <p class="mb-4">During the research phase, I engaged with users in the gamefi space, traditional wallet solutions, and the regular gaming spaces to get deeper insights into how players transact with one another and monitor their transactions.
+            After listening carefully to a couple of users I was able to identify users who needed a way to stay up to date on their transaction status, a lot of wallets allow you to send tokens but you just get to wait for sometimes hours till the transaction is successful or failed without extra feedback on why the transaction is taking that long.
             Also, not all gameFi protocols are built on the same network hence transferring assets from various networks needs to be provided for a seamless transaction.
             Lastly, 75% of the users needed a way for them to connect their wallets directly to external protocols where they can borrow and rent the assets that would help their gameplay</p>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h3 class="md:w-1/2 font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Insigts from User Interviews</h3>
-            <div class="flex items-center justify-center space-x-6">
-                <div class="w-1/3">
+            <div class="hidden md:block">
+                <div class="flex items-center justify-center space-x-6 mb-6">
+                    <div class="w-1/3">
+                        <div class="p-6 bg-white rounded-2xl">I want a way to be able to send tokens from one chain in my wallet to another</div>
+                    </div>
+                    <div><img class="w-40 h-40" src="../assets/myria/profile-1.png" alt="profile" /></div>
+                </div>
+                <div class="flex items-center justify-center space-x-6 mb-6">
+                    <div><img class="w-40 h-40" src="../assets/myria/profile-2.png" alt="profile" /></div>
+                    <div class="w-1/3">
+                        <div class="p-6 bg-white rounded-2xl">I want to be able to send NFTs from my wallet to another wallet of either mine or a friend's</div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center space-x-6 mb-6">
+                    <div class="w-1/3">
+                        <div class="p-6 bg-white rounded-2xl">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
+                    </div>
+                    <div><img class="w-40 h-40" src="../assets/myria/profile-3.png" alt="profile" /></div>
+                </div>
+                <div class="flex items-center justify-center space-x-6 mb-6">
+                    <div><img class="w-40 h-40" src="../assets/myria/profile-4.png" alt="profile" /></div>
+                    <div class="w-1/3">
+                        <div class="p-6 bg-white rounded-2xl">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
+                    </div>
+                </div>
+            </div>
+            <!--Mobile version -->
+            <div class="md:hidden">
+                <div class="mb-6">
+                    <div class="flex items-center justify-center mb-4"><img class="w-40 h-40" src="../assets/myria/profile-1.png" alt="profile" /></div>
                     <div class="p-6 bg-white rounded-2xl">I want a way to be able to send tokens from one chain in my wallet to another</div>
                 </div>
-                <div><img src="../assets/myria/profile-1.png" alt="profile" /></div>
-            </div>
-            <div class="flex items-center justify-center space-x-6">
-                <div><img src="../assets/myria/profile-2.png" alt="profile" /></div>
-                <div class="w-1/3">
-                    <div class="p-6 bg-white rounded-2xl">I want to be able to send NFTs from my wallet to another wallet of either mine or a friend's account</div>
+                <div class="mb-6">
+                    <div class="flex items-center justify-center mb-4"><img class="w-40 h-40" src="../assets/myria/profile-2.png" alt="profile" /></div>
+                    <div class="p-6 bg-white rounded-2xl">I want to be able to send NFTs from my wallet to another wallet of either mine or a friend's</div>
                 </div>
-            </div>
-            <div class="flex items-center justify-center space-x-6">
-                <div class="w-1/3">
+                <div class="mb-6">
+                    <div class="flex items-center justify-center mb-4"><img class="w-40 h-40" src="../assets/myria/profile-3.png" alt="profile" /></div>
                     <div class="p-6 bg-white rounded-2xl">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
                 </div>
-                <div><img src="../assets/myria/profile-3.png" alt="profile" /></div>
-            </div>
-            <div class="flex items-center justify-center space-x-6">
-                <div><img src="../assets/myria/profile-4.png" alt="profile" /></div>
-                <div class="w-1/3">
+                <div class="mb-6">
+                    <div class="flex items-center justify-center mb-4"><img class="w-40 h-40" src="../assets/myria/profile-4.png" alt="profile" /></div>
                     <div class="p-6 bg-white rounded-2xl">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
                 </div>
             </div>
+            <!--end of Mobile version -->
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Competitive Analysis</h3>
@@ -186,19 +208,33 @@ const themeMode = "light"
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Market Validation</h3>
             <div class="mb-16">
-                <p class="mb-4">The blockchain market has been one that has been one of the fastest-growing space in the last 5 years with a tremendous increase in the number of active blockchain wallet users this coupled with the game environment which has over 1m active game users on the blockchain and over 3.03bn gamers in general, holds tremendous market base for Myria</p>
+                <p class="mb-4">The blockchain market has been one of the fastest-growing space in the last 5 years with a tremendous increase in the number of active blockchain wallet users, this coupled with the game environment which has over 1m active game users on the blockchain and over 3.03bn gamers in general, holds tremendous market base for Myria</p>
                 <p>2022 Gaming market revenue : <span class="font-bold">$300bn</span></p>
             </div>
-            <div>
+            <div class="hidden md:block">
                 <div class="flex space-x-10 mb-6 font-new-paris-kingsize text-xl md:text-2xl font-bold">
-                    <h4 class="flex-1 font-new-paris-kingsize text-xl md:text-2xl font-bold">No of  blockchain wallets</h4>
-                    <h4 class="flex-1 font-new-paris-kingsize text-xl md:text-2xl font-bold">ActiveOnline  Gamers</h4>
+                    <h4 class="flex-1">No of  blockchain wallets</h4>
+                    <h4 class="flex-1">ActiveOnline  Gamers</h4>
                 </div>
                 <div class="flex space-x-10 mb-6">
                     <div class="flex-1"><img src="../assets/myria/validation-1.png" alt="" /></div>
                     <div class="flex-1"><img src="../assets/myria/validation-2.png" alt="" /></div>
                 </div>
             </div>
+            <!--Mobile version-->
+            <div>
+                <div class="md:hidden font-new-paris-kingsize text-xl md:text-2xl font-bold">
+                    <div class="mb-12">
+                        <h4>No of  blockchain wallets</h4>
+                        <div><img src="../assets/myria/validation-1.png" alt="" /></div>
+                    </div>
+                    <div>                  
+                        <h4>ActiveOnline  Gamers</h4>
+                        <div><img src="../assets/myria/validation-2.png" alt="" /></div>
+                    </div>
+                </div>
+            </div>
+            <!--end of Mobile version-->
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">User Persona</h3>
@@ -213,19 +249,19 @@ const themeMode = "light"
             <ul class="list-disc pl-6">
                 <li
                     class="mb-2"
-                >As a user, i want to be able to transfer crypto-assets from one address to another so I can use the tokens for other purposes</li>
+                >As a user, I want to be able to transfer crypto-assets from one address to another so I can use the tokens for other purposes</li>
                 <li
                     class="mb-2"
-                >As a user, i want to be able to transfer NFT assets from one address to another so i can give to friends that want to play or use them myself in another game that I am connected to with a new wallet</li>
+                >As a user, I want to be able to transfer NFT assets from one address to another so i can give to friends that want to play or use them myself in another game that I am connected to with a new wallet</li>
                 <li
                     class="mb-2"
-                >As a user, i want to be able to transfer my NFT and crypto-assets across multiple chains so I can use my assets on any network</li>
+                >As a user, I want to be able to transfer my NFT and crypto-assets across multiple chains so I can use my assets on any network</li>
                 <li
                     class="mb-2"
-                >As a user, i want to be able to borrow game assets so it can help me play better</li>
+                >As a user, I want to be able to borrow game assets so it can help me play better</li>
                 <li
                     class="mb-2"
-                >As a user, i want to be able to see my account balance so I know my financial status of that wallet</li>
+                >As a user, I want to be able to see my account balance so I know my financial status of that wallet</li>
             </ul>
         </section>
         <section class="max-w-7xl mx-auto my-20 px-6">

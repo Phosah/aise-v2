@@ -40,7 +40,7 @@ import photo24 from '../assets/collect-africa/onboarding.png'
 
 const details = {
     img: hero,
-    alt: "Collect Africadddddd",
+    alt: "Collect Africa",
     title: "Collect Africa",
     shortDesc: "Reinventing payment systems and account management for both large and small scale businesses across Africa",
     LongDesc: "Collect is a Fintech solution solving payments problems for large and small scale businesses all over Africa, with goals to make businesses harness their potentials and achieve greater heights",
@@ -335,7 +335,7 @@ const bgColor = "light"
 </script>
 
 <template>
-    <div class="bg-white text-brand-black-3">
+    <div class="text-brand-black-3">
         <Navbar />
         <HeaderInfo :headerDetails="details" />
         <section class="max-w-7xl mx-auto py-0 md:py-20 px-6 md:px-16 mb-10 md:mb-0">

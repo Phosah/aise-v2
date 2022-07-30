@@ -1,14 +1,17 @@
 <script setup>
 import Header from '../components/Header.vue'
-import aistakeCover from "../assets/aistake/hero.png"
+import Navbar from '../components/Navbar.vue';
 import LayoutOne from '../components/LayoutOne.vue';
 import LayoutTwo from '../components/LayoutTwo.vue';
 import LayoutThree from '../components/LayoutThree.vue';
 import Persona from "../components/Persona.vue"
-import photo1 from '../assets/aistake/problems.png';
-import photo2 from '../assets/aistake/vision.png';
+import OtherProjectsWeb3 from "../components/OtherProjectsWeb3.vue"
+import Footer from '../components/Footer.vue';
+import aistakeCover from "../assets/aistake/hero.png"
 import persona1 from "../assets/aistake/persona-1.png"
 import persona2 from "../assets/aistake/persona-2.png"
+import photo1 from '../assets/aistake/problems.png';
+import photo2 from '../assets/aistake/vision.png';
 import photo3 from "../assets/aistake/screen-1.png"
 import photo4 from "../assets/aistake/screen-2.png"
 import photo5 from "../assets/aistake/screen-3.png"
@@ -16,9 +19,6 @@ import photo6 from "../assets/aistake/screen-4.png"
 import photo7 from "../assets/aistake/screen-5.png"
 import photo8 from "../assets/aistake/screen-6.png"
 import photo9 from "../assets/aistake/screen-7.png"
-import OtherProjectsWeb3 from "../components/OtherProjectsWeb3.vue"
-import Footer from '../components/Footer.vue';
-import Navbar from '../components/Navbar.vue';
 const info = {
     title: "Aistake Finance",
     text: "Staking with multiple validators on the Solana network at the same time while still having the ability to stake with the community using the best validators",
@@ -34,8 +34,8 @@ const info = {
 const problems = {
     title: "Problems",
     paragraphs: [
-        "Blockchains such as Bitcoin batch baskets of transactions into blocks, which are then confirmed and added to the chain. This process of confirming transactions is relatively slow and this led t the rise of faster solutions like Solana that introduced a system of Proof of history rather than the old Proof of work",
-        "This POH created the need for validators to vote on entities into the blockchain to confirm if these entries are valid and they are rewarded for it",
+        "Blockchains such as Bitcoin batch baskets of transactions into blocks, which are then confirmed and added to the chain. This process of confirming transactions is relatively slow and this led to the rise of faster solutions like Solana that introduced a system of Proof of history rather than the old Proof of work",
+        "This POH created the need for validators to vote on entries in the blockchain to confirm if these entries are valid and they are rewarded for it",
         "This brought about some financial opportunities because you can stake your Solana by delegating your tokens to validators to help increase these validator’s voting weight, but this led to a lot of users bearing losses as You risk losing tokens when staking through a malicious Validator",
         "A lot of users want to delegate multiple validators to improve their investment opportunities but this isn't available except with those that require advanced command-line knowledge."
     ],
@@ -45,10 +45,10 @@ const problems = {
 const aim = {
     title: "What Does Aistake aim to Achieve?",
     paragraphs: [
-        "Aistake aims to bring a solution that allows users access to a secure medium for staking your SOL tokens with verified Validators in which your assets are used you help secure the network and you get to earn rewards while doing so.",
+        "Aistake aims to bring a solution that allows users access to a secure medium for staking your SOL tokens with verified Validators in which your assets are used to help secure the network and also you get to earn rewards while doing so.",
         "Aistake system aims to build a protocol that helps you identify the best validators and in return punish misbehaving validators.",
         "Our top priority is in the creation of an easy-to-use user interface that allows users to manage stake delegations across multiple validators simultaneously.",
-        "Also what is a DeFi Protocol without investment opportunities, so we aim to make the system embrace the decentralized nature of web3, hence Aiswap gives the ability to carry out DeFi investment opportunities such as Farms and Pools to reward users with their native tokens and in turn strengthen the value of the protocol"
+        "Also what is a DeFi Protocol without investment opportunities, so we aim to make the system embrace the decentralized nature of web3, hence Aistake gives the ability to carry out DeFi investment opportunities such as Farms and Pools to reward users with their native tokens and in turn strengthen the value of the protocol"
     ],
     img: photo2,
     alt: "Aistake photo"
@@ -56,14 +56,14 @@ const aim = {
 const user1 = {
     img: persona1,
     alt: "Persona",
-    about: "Savannah Nguyen is a 29-year-old District Lawyer in the united state, he is a former pro basketballer and loves cooking, he has been investing in crypto for 3 years now and is looking for a way to earn passively through staking not sure of what validators to work with",
+    about: "Savannah Nguyen is a 29-year-old District Lawyer in the united states, he is a former pro basketballer and loves cooking, he has been investing in crypto for 3 years now and is looking for a way to earn passively through staking not sure of what validators to work with",
     goals: [
         "Savannah needs a way to stake his funds and earn passive income",
         "Savannah also needs a way to have available validators for him to pick the validator to work with",
         "Savannah needs a way to determine how good a validator is for him to pick"
     ],
     points: [
-        "Not knowing how to identid=fy the best validator to stake with",
+        "Not knowing how to identify the best validator to stake with",
         "Not knowing some of the terminologies used in the other platforms he has worked with"
     ]
 }
@@ -88,27 +88,27 @@ const dashboard = {
         "Also, you get to see an overview of how the protocol is performing  in terms of trading volume and Liquidity to guide your investment decisions"
     ],
     img: photo3,
-    alt: "Aistake"
+    alt: "dashboard"
 }
 const staking = {
     title: "Solana Staking",
     paragraphs: [
         "For the Solana staking, this is the main value proposition of the product, as everything else is centered around this. The staking page has a brief explanation of what the Solana staking is all about and a video presentation to explain it in more detail for users who prefer visual learning. You also have an explanation to what EPOCH is as its one major determinant for in staking window and a lot of users especially new ones do not know what it means",
         "On the staking page you get to see your balance, Total sol staked and earnings, and the ability to invest/stake with a listed validator or a collection",
-        "Lastly, we also give you access to your staking history to see your current staking status with validators selected and previous staking to see what was invested how much was made and when withdrawal was made. Finally when staking you have the ability to calculate your estimated earnings if you staked with the validators"
+        "Lastly, we also give you access to your staking history to see your current staking status with validators selected and previous staking to see what was invested and how much was made and also when withdrawal was made. Finally when staking you have the ability to calculate your estimated earnings if you staked with the validators"
     ],
     img: photo4,
-    alt: "Aistake"
+    alt: "Staking"
 }
 const validatorListiing = {
     title: "Validator Listing",
     paragraphs: [
-        "So here we provide you with a list of all the best and top validators to stake with. Now the major problem is knowing how to pick a validator, so we got you covered by ac you with learning articles and video explanations on how to select a validator",
+        "So here we provide you with a list of all the best and top validators to stake with. Now the major problem is knowing how to pick a validator, so we got you covered by providing you with learning articles and video explanations on how to select a validator",
         "A validator in simple terms is a party/person who you entrust with your Solana to use to strengthen his voting power to validate transactions on the blockchain and get rewarded for validating entries on the blockchain",
         "Also keeping users in mind during the design process we noticed users were getting the URL link for the third party library that provides validator services just like Etherscan which shows transactions on the ERC activities. So the design provides the major parameters needed to make a decision and the link to the third party site if you want more info"
     ],
     img: photo5,
-    alt: "Aistake"
+    alt: "Validator"
 }
 const validatorCollection = {
     title: "Validator Collection",
@@ -136,7 +136,7 @@ const farming = {
         "The farming allows you to earn more from your pool investments by staking a portion of the entire amount of your LP tokens in any of the pools listed on the protocol and you earn from it. This doesn't affect the liquidity volume of the pool for swap and bridges and the investments would still be in the pool but we would create a receipt that would serve as your LP Investment power that can be used in the Farms to maintain Liquidity and also provide you extra investment."
     ],
     img: photo8,
-    alt: "Aistake"
+    alt: "Farming"
 }
 const pool = {
     title: "Liquidity Pool",
@@ -144,7 +144,7 @@ const pool = {
         "In the liquidity pool, users are provided with ranges of pool investments usually tokens that are being swapped or bridged on the protocol and you get to invest in them and earn a reward in APY.  You also can start a new pool and create a pool with a token combination of your choice. If the pool you are about to create already exists we would add you to the existing pool and you become one of the pool LP holders."
     ],
     img: photo9,
-    alt: "Aistake"
+    alt: "Pool"
 }
 const themeMode = 'light'
 </script>
@@ -179,7 +179,7 @@ const themeMode = 'light'
                     easy-to-use solution.</li>
                 <li class="mb-3">Provide users the ability to select which validators to delegate to depending on a list
                     of user-defined criteria.</li>
-                <li class="mb-3">Give users the ability to learn about how to delegate and Choose validators on the
+                <li class="mb-3">Give users the ability to learn about how to delegate and choose validators on the
                     platform.</li>
                 <li class="mb-3">Provide users the ability to see which validators they’ve delegated to, how much
                     they’ve delegated, and how much they’ve accrued in rewards.</li>
@@ -209,7 +209,7 @@ const themeMode = 'light'
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Value Proposition</h1>
             <p class="mb-10 text-base">In the customer's profile, you describe the job your customer is trying to get
-                done by highlighting customers pains and gains, it's used to track users needs and position the company’s to
+                done by highlighting customers pains and gains. It's used to track users needs and position the company’s to
                 know more about the customers needs to properly create value</p>
             <div><img class="w-full" src="../assets/aistake/customers-value-proposition.png" alt="Value Proposition" /></div>
         </section>
@@ -239,7 +239,7 @@ const themeMode = 'light'
                     some How might we questions that guides the ideation process, which helps us to do with thinking of
                     a solution based on the identified problem</p>
             </div>
-            <div><img class="w-full" src="../assets/aistake/mobile-screens.png" alt="Mobile responsiveness"></div>
+            <div><img class="w-full" src="../assets/aistake/mobile-screens.png" alt="Mobile responsiveness" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-4 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>

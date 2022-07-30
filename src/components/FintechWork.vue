@@ -32,6 +32,13 @@ const themeMode = "light"
     background-size: cover;
     height: 100vh; 
 }  
+@media only screen and (max-width: 600px) {
+  .par {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/collect-africa/cover-mobile.png'); 
+    background-size: cover;
+    height: 100vh;
+  }
+}
 
 #par div:nth-child(2) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)),
@@ -40,10 +47,24 @@ const themeMode = "light"
     background-size: cover;
     height: 100vh;
 }
+@media only screen and (max-width: 600px) {
+  #par div:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/daba/cover-mobile.png'); 
+    background-size: cover;
+    height: 100vh;
+  }
+}
 
 #par div:nth-child(3) {
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), 
                 url('../assets/powrfinance/cover.png');
     background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+  #par div:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/powrfinance/cover-mobile.png'); 
+    background-size: cover;
+    height: 100vh;
+  }
 }
 </style>

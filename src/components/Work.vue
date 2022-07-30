@@ -79,13 +79,13 @@ onMounted(() => {
     background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)), url('../assets/bitpowr/cover.png');
     background-size: cover;
 }
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   #parallex div:nth-child(4) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 18, 18, 0.5)), url('../assets/bitpowr/cover-mobile.png'); 
     background-size: cover;
     height: 100vh;
   }
-}
+} */
 
 #parallex div:nth-child(5) {
     background-attachment: fixed;

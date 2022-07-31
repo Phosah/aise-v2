@@ -14,19 +14,19 @@
             </div>
             <div class="md:flex md:space-x-6">
                 <div class="md:flex-1 mb-8 md:mb-0">
-                    <h5 class="mb-3 text-base font-bold">{{ persona.goal }}</h5>
+                    <h5 class="mb-3 text-base font-bold">Goals and Needs</h5>
                     <ul v-for="(item, ix) in persona.goalsList" :key="ix">
                         <li class="mb-3">{{ item }}</li>
                     </ul>
                 </div>
                 <div class="md:flex-1 mb-8 md:mb-0">
-                    <h5 class="mb-3 text-base font-bold">{{ persona.frustration }}</h5>
+                    <h5 class="mb-3 text-base font-bold">Frustrations</h5>
                     <ul v-for="(item, ix) in persona.frustrationsList" :key="ix">
                         <li class="mb-3">{{ item }}</li>
                     </ul>
                 </div>
                 <div class="md:flex-1">
-                    <h5 class="mb-3 text-base font-bold">{{ persona.behaviour }}</h5>
+                    <h5 class="mb-3 text-base font-bold">Behaviours</h5>
                     <ul v-for="(item, ix) in persona.behavioursList" :key="ix">
                         <li class="mb-3">{{ item }}</li>
                     </ul>

@@ -50,7 +50,7 @@ const problem = {
     title: "Understanding The Problem",
     paragraphs: [
         "A lot of businesses struggle with carrying out transactions seamlessly wherby receiving payments for services can be a bit burdensome when there is a delay validating the transaction especially when its a foreign payment.",
-        "Businesses also find it difficult in documenting their transactions and keeping records of their account and properly balance it, it gets worse when you have multiple business outlets in various states and countries, having a unified accounting system in place becomes difficult. All these prevent companies and businesses from achieving their highest potentials"
+        "Businesses also find it difficult in documenting their transactions and keeping records of their account and properly balancing it, it gets worse when you have multiple business outlets in various states and countries, having a unified accounting system in place becomes difficult. All these prevent companies and businesses from achieving their highest potentials"
     ],
     img: photo1,
     alt: "Problem fixing"
@@ -59,7 +59,7 @@ const goal = {
     title: "The Goal",
     paragraphs: [
         "The goal was to create a unique solution, focusing on businesses and having a one-stop product to help them manage their financial activities, make sending money to wherever in the world easy, and receiving money from customers in whatever country as seamless as possible.",
-        "We aim to help businesses with several outlets, and instead of having to always go to the banks and have the whole signatory to account long procedure, we have a means whereby you have one product, and control all the financial activities, and account for all transactions in all the outlets in one space easily, to help you easily manage and balance your account, by so doing, expanding your business and taking it to greater heights",
+        "We aim to help businesses with several outlets, instead of having to always go to the banks and have the whole signatory to account long procedure, we have a means whereby you have one product and control all the financial activities and account for all transactions in all the outlets in one space easily. It helps you easily manage and balance your account, by so doing, expanding your business and taking it to greater heights",
         "Lastly, what's a business without customers, we aim to help you manage and establish relationships with your customers."
     ],
     img: photo2,
@@ -204,21 +204,19 @@ const personasArray = [
         img: persona1,
         alt: "User Persona",
         name: "Marvin Oluimde",
-        info: "Marvin is a 32 year old business man in Lagos that runs a small business where he sells and delivers  wristwatches withing and out of Lagos from his little store at Obalende Market",
+        info: "Marvin is a 32 years old business man in Lagos that runs a small business where he sells and delivers wristwatches withing and out of Lagos from his little store at Obalende Market",
         goalsList: [
             "Marvin needs a medium to receive payments from his customers all over the country who order his watches",
-            "Marvin is looking for a way to easily receive payments from other vendors who purchase similar from him regularly to resell",
+            "Marvin is looking for a way to easily receive payments from other vendors who purchase similar products from him regularly to resell",
             "Receive payments from customers who want to pay with card or cash and  without mixing business account with personal."
         ],
-        frustration: "Frustrations",
         frustrationsList: [
             "Customers who come to the shop to pay, sometimes bank doesn't show the credit alert, thereby delaying the customer from leaving",
             "Inability to fully organize and handle his account.",
             "Finds it difficult to balance his account."
         ],
-        behaviour: "Behaviours",
         behavioursList: [
-            "Marvin usually send his account via WhatsApp to old customers who make orders and make the delivery when they pay, and always send when they need",
+            "Marvin usually sends his account via WhatsApp to old customers who make orders and make the delivery when they pay, and always sends it when they need",
             "For customers who come to his store he either receives cash and or those who transfer he gives his bank account number and waits for an alert before selling."
         ]
     },
@@ -227,20 +225,17 @@ const personasArray = [
         alt: "User Persona",
         name: "Jennson Mobiles",
         info: "Jennson mobile is an electronics company that deals in selling and repairs of all phones ranging from android to ios, they have over 50 staff and 20 outlets all over the country",
-        goal: "Goals and needs",
         goalsList: [
             "Jennson mobile needs a medium to receive payments from customers all over the country who do business with them",
             "They are looking for a way to easily balance their accounts and reconcile payments in one place despite having stores all over the country",
             "Create invoices for services rendered",
             "Manage users roles"
         ],
-        frustration: "Frustrations",
         frustrationsList: [
-            "Customers cant purchase from his business website easily without the agents always having to send the account details for each payment",
+            "Customers can't purchase from his business website easily without the agents always having to send the account details for each payment",
             "Inability to manage financial accounts, leading to unbalanced records",
             "Finds it difficult to manage customers and maintain relationships",
         ],
-        behaviour: "Behaviours",
         behavioursList: [
             "Jennson Mobiles staff usually just receive payments and because they need to receive alerts and not all can have company emails or phones to do so, each branch has an account where they control and receive alerts to confirm payments, and at the end of a period remit to the main company account."
         ]
@@ -250,7 +245,7 @@ const headerFont = 'font-playfair text-4xl'
 const volume = {
     title: "Estimated transaction volume of $8tn in 2025",
     paragraphs: [
-        "With 10% of this tranascation relating with the African market, the opportunities available is endless"
+        "With 10% of this transaction relating with the African market, the opportunities available is endless"
     ],
     img: photo15,
     alt: "volume graph"
@@ -258,7 +253,7 @@ const volume = {
 const dashboard = {
     title: "Simplified Dashboard",
     paragraphs: [
-        "As a user, your first daily interaction is with the dashboard where you receive a summary of reports and lasted activities that have happened in your company as regards financial activities, hence the design of the dashboard had to be optimized to be easy to read, prioritize the data visualization to display info from the highest priority to the least and still give room to take major actions in the product."
+        "As a user, your first daily interaction is with the dashboard where you receive a summary of reports and latest activities that have happened in your company as regards financial activities, hence the design of the dashboard had to be optimized to be easy to read, prioritize the data visualization to display info from the highest priority to the least and still give room to take major actions in the product."
     ],
     img: photo16,
     alt: "dashboard"
@@ -275,7 +270,7 @@ const customer = {
 const subscription = {
     title: "Plans & Supscriptions",
     paragraphs: [
-        "Organizations that give recurring services that require timely payments now can simplify their processes and monitor their activities, here you get to see all the services rendered, the number of subscribers to each service, the customers/subscribers, and view each of their payment histories. also, you don't always have to remind them of every payment or send them the account to pay in again, all subscribers have their registration date and last reactivation date. so 1 week, 3days, and 1 day to every subscription the subscribers receive a custom message made by you about their renewal and the means of payment, and all this is done without you lifting a finger."
+        "Organizations that give recurring services that require timely payments now can simplify their processes and monitor their activities, here you get to see all the services rendered, the number of subscribers to each service, the customers/subscribers, and view each of their payment histories. also, you don't always have to remind them of every payment or send them the account to pay in again, all subscribers have their registration date and last reactivation date. So 1 week, 3days, and 1 day to every subscription the subscribers receive a custom message made by you about their renewal and the means of payment, and all this is done without you lifting a finger."
     ],
     img: photo18,
     alt: "subscription"
@@ -283,7 +278,7 @@ const subscription = {
 const transfer = {
     title: "Payment & Transfer",
     paragraphs: [
-        "Every business and even  freelancer needs to make payments as well and not just receive, so to do this we give you the ability to receive and  transfer funds from your dashboard to any bank account in Africa and over for any of your business branches, for example, a branch in Abuja and another in New York can both initiate a business transaction from the same business account for a service needed for the company and if an approval chain is set necessary parties would approve before payment is sent to anywhere in the world and be able to both monitor the status of the transactions and also have proper documentation that you can go back to any time this helps for a proper accounting system"
+        "Every business and even freelancer needs to make payments as well and not just receive. To do this we give you the ability to receive and transfer funds from your dashboard to any bank account in Africa and over for any of your business branches, for example, a branch in Abuja and another in New York can both initiate a business transaction from the same business account for a service needed for the company and if an approval chain is set necessary parties would approve before payment is sent to anywhere in the world and be able to both monitor the status of the transactions and also have proper documentation that you can go back to any time this helps for a proper accounting system"
     ],
     img: photo19,
     alt: "transfer"
@@ -291,7 +286,7 @@ const transfer = {
 const user = {
     title: "User Management",
     paragraphs: [
-        "Both large and small scale organizations usually have multiple people handling the affairs, it can be as little as two or as much as 1 thousand and for those who have branches all over the world makes it even bigger whereby you can have even more people for one role e.g Accountants. So to properly ensure the business is optimized, you can add members of your organization to your product and assign roles or create new ones, and customize the permissions available for each role and what actions exch role can carry out or data they can see"
+        "Both large and small scale organizations usually have multiple people handling the affairs, it can be as little as two or as much as 1 thousand and for those who have branches all over the world, it can even be bigger whereby you can have even more people for one role e.g Accountants. So to properly ensure the business is optimized, you can add members of your organization to your product and assign roles or create new ones, and customize the permissions available for each role and what actions each role can carry out or data they can see"
     ],
     img: photo20,
     alt: "User"
@@ -316,7 +311,7 @@ const account = {
 const conclusion = {
     title: "Conclusion",
     paragraphs: [
-        "It's hard enough to get a single person or business to trust you to help handle their finances when dealing with businesses and financial activities I have discovered that transparency and ease of use are of top priority in getting the best of results and user retention. And also the understanding of business goals to ensure the business makes a profit has to be placed as another priority hence a lot of calls with stakeholders and the aligning of design and business goals has to be established from the start.",
+        "It's hard enough to get a single person or business to trust you to help handle their finances when dealing with businesses and financial activities. I have discovered that transparency and ease of use are of top priority in getting the best of results and user retention. And also the understanding of business goals to ensure the business makes a profit has to be placed as another priority hence a lot of calls with stakeholders and the aligning of design and business goals has to be established from the start.",
         "I enjoyed this project and I got to realize how we can help people who run businesses if they focus on the business itself they have more time and strategic juice to focus and take their organization to greater heights"
     ],
     img: photo23,
@@ -383,7 +378,7 @@ const bgColor = "light"
                     <h2 class="mb-6 text-2xl font-bold font-playfair">The Goal</h2>
                     <p
                         class="mb-6"
-                    >The goal was to create a unique solution, focusing on businesses and having a one-stop product to help them manage their financial activities, make sending money to wherever in the world easy, and receiving money from customers in whatever country as seamless as possible.</p>
+                    >The goal was to create a unique solution, focusing on businesses and having a one-stop product to help them manage their financial activities, make sending money to wherever in the world easily, and receiving money from customers in whatever country as seamlessly as possible.</p>
                     <p
                         class="mb-6"
                     >We aim to help businesses with several outlets, and instead of having to always go to the banks and have the whole signatory to account long procedure, we have a means whereby you have one product, and control all the financial activities, and account for all transactions in all the outlets in one space easily, to help you easily manage and balance your account, by so doing, expanding your business and taking it to greater heights</p>
@@ -444,7 +439,7 @@ const bgColor = "light"
                 >Brainstorming</h1>
                 <p
                     class="md:w-2/3 mb-12 text-sm md:text-base"
-                >In this stage, we came together to come up with the best possible approach. after brainstorming, I continued by sketching out some of the most promising ideas to distill sown the ideas and get feedback from the team. This phase was shored and it comprised of how might we questions, in which some mock-ups were drafted out</p>
+                >In this stage, we came together to come up with the best possible approach. After brainstorming, I continued by sketching out some of the most promising ideas to distill the sown ideas and get feedback from the team. This phase was shored and it comprised of how might we questions, in which some mock-ups were drafted out</p>
                 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-6 md:gap-y-12">
                     <div
                         class="p-6 bg-brand-gray-5 rounded-md"
@@ -506,7 +501,7 @@ const bgColor = "light"
                 <h2
                     class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
                 >Opportunities</h2>
-                <p>With over 245,000 companies and over 41.2 million small businesses all over Nigeria, in which 5million of them make and receive bank transfers, and with over 50 million businesses all over Africa taking their transaction digitally, the market is saturated for demand and the opportunities are enormous.</p>
+                <p>With over 245,000 companies and over 41.2 million small businesses all over Nigeria, in which 5 million of them make and receive bank transfers, and with over 50 million businesses all over Africa taking their transaction digitally, the market is saturated for demand and the opportunities are enormous.</p>
             </div>
             <div class="md:flex md:space-x-10 mb-10">
                 <div>
@@ -579,7 +574,7 @@ const bgColor = "light"
                 >As a user i want to be able to add customers to my organization and manage my customers in order to maintain a good relationship</li>
                 <li
                     class="mb-2"
-                >As a user i want to be able to receive payments in other curreencies so i can be able to run my business in other countries</li>
+                >As a user i want to be able to receive payments in other currencies so i can be able to run my business in other countries</li>
                 <li
                     class="mb-2"
                 >As a user i want to be able to add my staffs to my organization, so the team can properly manage activities</li>
@@ -588,7 +583,7 @@ const bgColor = "light"
                 >As a user i want to be able to send payments out of my dashboard so i can be able to pay for services we might need</li>
                 <li
                     class="mb-2"
-                >As a user i want to be able toreconcile my account so i can have proper records of account</li>
+                >As a user i want to be able to reconcile my account so i can have proper records of account</li>
                 <li
                     class="mb-2"
                 >As a user i want to be able to send invoices to my customers to make payments</li>

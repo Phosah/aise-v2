@@ -322,7 +322,7 @@ const themeMode = "light"
                         </ul>
                     </div>
                 </div>
-                <p>Explore the live project: <a class="border-b border-black" href="https://www.dabafinance.com">https://www.dabafinance.com</a></p>
+                <p>Explore the live project: <a class="border-b border-black" href="https://www.bitpowr.com">https://www.bitpowr.com</a></p>
             </div>
         </section>
         <OtherProjectsWeb3 />

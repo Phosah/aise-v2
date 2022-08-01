@@ -34,7 +34,7 @@ const headerFont = "font-playfair lg:text-4xl"
 const home = {
     title: "Home screen",
     paragraphs: [
-        "The home screen is comprises of all the restaurants listed on the platform and broken down into categories of specilaization for users to utilize the quick filter selection to navigate through",
+        "The home screen comprises of all the restaurants listed on the platform and is broken down into categories of specilaization for users to utilize the quick filter selection to navigate through",
         "Also the home welcomes first time users to complete profile and by doing so gives you points which could be used when accumulated to make an order, this process was created to gamify the app, this tends to make the users comfortable making orders knowing there is a bouns reward on te way"
     ],
     img: photo3,
@@ -44,7 +44,7 @@ const restaurant = {
     title: "Restaurant page",
     paragraphs: [
         "This view is for the selected restaurant, you get to have banner of a meal the reason is to give an expectation of what the restaurant offers, which in turn increases possibilities of making a purchase from that restaurant. A good banner increases order by 50%",
-        "The second screen indicates when the user scrolls upwards, to prevent indicators of the restaurant you are on to leave leaving you guessing where you are again, the micro interaction works in such a way that the logo and name changes poition to the top onscroll"
+        "The second screen indicates when the user scrolls upwards, to prevent indicators of the restaurant you are on leaving you guessing where you are again, the micro interaction works in such a way that the logo and name changes poition to the top onscroll"
     ],
     img: photo4,
     alt: "Phone"

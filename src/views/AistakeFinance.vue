@@ -155,7 +155,23 @@ const themeMode = 'light'
         <Header :headerInfo="info" />
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <LayoutOne :page="problems" />
-            <LayoutTwo :page="aim" />
+            <div class="hidden md:block">
+                <LayoutTwo :page="aim" />
+            </div>
+            <!--Mobile version -->
+            <div class="md:hidden md:my-40 my-20">
+                <div class="mb-12">
+                    <h3 class="mt-12 mb-6 text-2xl md:text-3xl font-new-paris-kingsize font-bold">What Does Aistake aim to Achieve?</h3>
+                    <div>
+                        <p class="mb-4">Aistake aims to bring a solution that allows users access to a secure medium for staking your SOL tokens with verified Validators in which your assets are used to help secure the network and also you get to earn rewards while doing so.</p>
+                        <p class="mb-4">Aistake system aims to build a protocol that helps you identify the best validators and in return punish misbehaving validators.</p>
+                        <p class="mb-4">Our top priority is in the creation of an easy-to-use user interface that allows users to manage stake delegations across multiple validators simultaneously.</p>
+                        <p class="mb-4">Also what is a DeFi Protocol without investment opportunities, so we aim to make the system embrace the decentralized nature of web3, hence Aistake gives the ability to carry out DeFi investment opportunities such as Farms and Pools to reward users with their native tokens and in turn strengthen the value of the protocol</p>
+                    </div>
+                </div>
+                <div class=""><img class="w-full" src="../assets/aistake/vision.png" alt="Vision"></div>
+            </div>
+            <!--end of Mobile version -->
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Research Time</h1>

@@ -135,7 +135,7 @@ const themeMode = 'light'
         <Header :headerInfo="info" />
         <section class="max-w-7xl mx-auto my-20 px-6">
             <LayoutOne :page="problems" />
-            <div class="md:flex md:items-center md:space-x-12 my-20">
+            <div class="hidden md:flex md:items-center md:space-x-12 my-20">
                 <div class="md:flex-1 mb-8 md:mb-0"><img class="w-full" src="../assets/athena/goal.png" alt="Athena Photo" /></div>
                 <div class="md:flex-1">
                     <h3 class="mb-6 text-3xl font-new-paris-kingsize">What Does Athena aim to Achieve?</h3>
@@ -156,6 +156,29 @@ const themeMode = 'light'
                     </div>
                 </div>
             </div>
+            <!--Mobile version-->
+            <div class="md:hidden my-20">
+                <div class="mb-8">
+                    <h3 class="mb-6 text-3xl font-new-paris-kingsize">What Does Athena aim to Achieve?</h3>
+                    <div >
+                        <p class="mb-4">Athena hopes to bring a solution that allows users to easily carry out
+                            transactions in the shortest time possible, with transparent and predictable pricing coupled
+                            with a simplified experience to remove the complexity attached to a DEX.</p>
+                        <p>With the growing need for a more stable or larger liquidity volume to facilitate a better
+                            transaction between token pairs and other investment opportunities, there are some
+                            limitations that Decentralized exchanges so far fail to achieve and this has prevented users from
+                            optimizing their experience with regard;</p>
+                        <ul class="pl-6 list-disc">
+                            <li>Cheaper trading fees.</li>
+                            <li> Faster Trading Time.</li>
+                            <li>More Investment Opportunities.</li>
+                            <li>Trading abilities due to the fast nature of Trades.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-8"><img class="w-full" src="../assets/athena/goal.png" alt="Athena Photo" /></div>
+            </div>
+            <!--end of Mobile version-->
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Research Began</h1>
@@ -273,9 +296,9 @@ const themeMode = 'light'
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Launchpad & Launchpool</h1>
             <LayoutThree :page="launchpad" />
-            <div class="flex items-center space-x-12 my-20">
-                <div class="flex-1"><img class="w-full" src="../assets/athena/launchpad-1.png" alt="Launchpad" /></div>
-                <div class="flex-1"><img class="w-full" src="../assets/athena/launchpad-2.png" alt="Launchpad" /></div>
+            <div class="md:flex md:items-center md:space-x-12 my-20">
+                <div class="md:flex-1 mb-8 md:mb-0"><img class="w-full" src="../assets/athena/launchpad-1.png" alt="Launchpad" /></div>
+                <div class="md:flex-1"><img class="w-full" src="../assets/athena/launchpad-2.png" alt="Launchpad" /></div>
             </div>
             <LayoutThree :page="launchpool" />
         </section>

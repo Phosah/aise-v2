@@ -50,7 +50,7 @@ const problem = {
     title: "Understanding The Problem",
     paragraphs: [
         "A lot of businesses struggle with carrying out transactions seamlessly wherby receiving payments for services can be a bit burdensome when there is a delay validating the transaction especially when its a foreign payment.",
-        "Businesses also find it difficult in documenting their transactions and keeping records of their account and properly balancing it, it gets worse when you have multiple business outlets in various states and countries, having a unified accounting system in place becomes difficult. All these prevent companies and businesses from achieving their highest potentials"
+        "Businesses also find it difficult in documenting their transactions, keeping records of their account and properly balancing it, it gets worse when you have multiple business outlets in various states and countries, having a unified accounting system in place becomes difficult. All these prevent companies and businesses from achieving their highest potentials"
     ],
     img: photo1,
     alt: "Problem fixing"
@@ -378,10 +378,10 @@ const bgColor = "light"
                     <h2 class="mb-6 text-2xl font-bold font-playfair">The Goal</h2>
                     <p
                         class="mb-6"
-                    >The goal was to create a unique solution, focusing on businesses and having a one-stop product to help them manage their financial activities, make sending money to wherever in the world easily, and receiving money from customers in whatever country as seamlessly as possible.</p>
+                    >The goal was to create a unique solution, focusing on businesses and having a one-stop product to help them manage their financial activities, make sending money to wherever in the world easily, and receive money from customers in whatever country as seamlessly as possible.</p>
                     <p
                         class="mb-6"
-                    >We aim to help businesses with several outlets, and instead of having to always go to the banks and have the whole signatory to account long procedure, we have a means whereby you have one product, and control all the financial activities, and account for all transactions in all the outlets in one space easily, to help you easily manage and balance your account, by so doing, expanding your business and taking it to greater heights</p>
+                    >We aim to help businesses with several outlets, instead of having to always go to the banks and have the whole signatory to account long procedure, we have a means whereby you have one product and you control all the financial activities. This enables you account for all transactions in all the outlets in one space easily, to help you easily manage and balance your account, by so doing, expanding your business and taking it to greater heights</p>
                     <p>Lastly, what's a business without customers, we aim to help you manage and establish relationships with your customers.</p>
                 </div>
                 <div class>
@@ -398,7 +398,7 @@ const bgColor = "light"
                 <h1
                     class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"
                 >Research time !!!</h1>
-                <p>I conducted some research alongside the product manager to discover what we are building, despite having a brief given we conducted some research to validate, and have a deeper understanding of the pain points of the users and bridge it with the business goals. The UX phase began with getting to know the users and their behaviors and the research goal was aimed at getting a clear idea of the problem as it directly affects the users, and uncovering their needs and frustrations to better understand how to create a better experience for them. This enabled me to get a better understanding of the pain points of our users and empathize more. Research started with interviews to get some qualitative data and from the data gotten, we decided to work towards an MVP, and from the gotten pain points we needed some quantitative data to identify the most sorted solutions of our target market to properly roll out an MVP</p>
+                <p>I conducted some research alongside the product manager to discover what we are building, despite having a brief given, we conducted some research to validate, have a deeper understanding of the pain points of the users and bridge it with the business goals. The UX phase began with getting to know the users and their behaviors and the research goal was aimed at getting a clear idea of the problem as it directly affects the users uncovering their needs and frustrations to better understand how to create a better experience for them. This enabled me to get a better understanding of the pain points of our users and empathize more. Research started with interviews to get some qualitative data and from the data gotten, we decided to work towards an MVP, and from the gotten pain points we needed some quantitative data to identify the most sorted solutions of our target market to properly roll out an MVP</p>
             </div>
             <div>
                 <Carousel :cards="cards" />
@@ -446,7 +446,7 @@ const bgColor = "light"
                     >How might we allow businesses receive payments from foreign countries</div>
                     <div
                         class="p-6 bg-brand-gray-5 rounded-md"
-                    >How might we all businesses set up reocurring payments for customers</div>
+                    >How might we help all businesses set up reocurring payments for customers</div>
                     <div
                         class="p-6 bg-brand-gray-5 rounded-md"
                     >How might we help businesses manage their businesses</div>
@@ -455,7 +455,7 @@ const bgColor = "light"
                     >How might we help organize the business to account for branches</div>
                     <div
                         class="p-6 bg-brand-gray-5 rounded-md"
-                    >How might we let businesses maintaing proper financial records</div>
+                    >How might we help businesses maintain proper financial records</div>
                     <div
                         class="p-6 bg-brand-gray-5 rounded-md"
                     >How can we let businesses balance account and reconcile payments</div>
@@ -501,7 +501,7 @@ const bgColor = "light"
                 <h2
                     class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
                 >Opportunities</h2>
-                <p>With over 245,000 companies and over 41.2 million small businesses all over Nigeria, in which 5 million of them make and receive bank transfers, and with over 50 million businesses all over Africa taking their transaction digitally, the market is saturated for demand and the opportunities are enormous.</p>
+                <p>With over 245,000 companies and over 41.2 million small businesses all over Nigeria, in which 5 million of them make and receive bank transfers, and also with over 50 million businesses all over Africa taking their transaction digitally, the market is saturated for demand and the opportunities are enormous.</p>
             </div>
             <div class="md:flex md:space-x-10 mb-10">
                 <div>
@@ -615,7 +615,7 @@ const bgColor = "light"
                 >Sitemap</h1>
                 <p
                     class="mb-8 md:mb-16"
-                >Reviewing my personas and user journeys and having certain features in mind, I started to think about the structure of the app. I had a rough idea of keeping the structure simple with co-existing hierarchies, since there is a great deal of overlapping information and wanted my users to have easy access from one page to the other.</p>
+                >Reviewing my personas and user journeys and also having certain features in mind, I started to think about the structure of the app. I had a rough idea of keeping the structure simple with co-existing hierarchies, since there is a great deal of overlapping information and wanted my users to have easy access from one page to the other.</p>
             </div>
             <div class="bg-brand-gray-7">
                 <div class="max-w-7xl mx-auto mb-20">
@@ -630,7 +630,7 @@ const bgColor = "light"
                 >The solution</h1>
                 <p
                     class="mb-4"
-                >The solution had to have a mobile app and a dashboard and a mobile app, they both provide similar solutions but with little difference based on the target audience and what they have accessible to work with to better suit their needs</p>
+                >The solution had to have a mobile app and a dashboard, they both provide similar solutions but with little difference based on the target audience and what they have accessible to work with to better suit their needs</p>
             </div>
             <div>
                 <img class="w-full" src="../assets/collect-africa/solution.png" alt="The solution" />

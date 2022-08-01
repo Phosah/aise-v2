@@ -28,7 +28,7 @@ const info = {
     text: "Helping businesses build on a crypto infrastructure with top notch wallet infrastructure, investment and Fiat settlement",
     img: trivadiCover,
     alt: "Trivadi",
-    mainContent: "Trivadi is an augmented reality mobile app. that helps both individuals and families willing to explore new countries both for visitation purposes and for relocation.",
+    mainContent: "Trivadi is an augmented reality mobile app that helps both individuals and families willing to explore new countries both for visitation purposes and for relocation.",
     subContent: "Trivadi gets to provide a way for people to be able to properly plan their travels, from creating a travel checklist to shopping for necessary items. It also gives you access to events, hot spots, and tourist sites in new locations as well as travel experiences to help guide your decision on where to go to. Trivadi helps you move your items to the countries you want to go to especially those who plan to relocate",
     role: "Product Design",
     client: "Trivadi",
@@ -38,7 +38,7 @@ const info = {
 const overview = {
     title: "Background",
     paragraphs: [
-        "Trivadi is an augmented reality mobile app. that helps both individuals and families willing to explore new countries both for visitation purposes and for relocation.",
+        "Trivadi is an augmented reality mobile app that helps both individuals and families willing to explore new countries both for visitation purposes and for relocation.",
         "As the growth of travelers increases there is the need of having a good medium to ship items for travel, get the best travel insights and have the best travel experiences by exploring events, places and maximizing what the new location has to offer",
     ],
     img: background,
@@ -74,7 +74,7 @@ const personasArr = [
         about: "Raphael is a 25-year-old Product designer that stays in Lagos, Nigeria. He works two full-time jobs so he rarely has time for trips although he travels for events and important occasions, his last major travel this year was due to work relocation",
         points: [
             "Difficulties in finding a good logistics and packaging firm to help with moving his items",
-            "Difficulties inn finding good and reasonably priced accommodation for a long term stayer",
+            "Difficulties in finding good and reasonably priced accommodation for a long term stayer",
         ],
         goals: [
             "Rapheal needs to be able to plan a travel for relocation easily so he can have the best experience",
@@ -86,7 +86,7 @@ const personasArr = [
 const account = {
     title: "Account Creation",
     paragraphs: [
-        "The account creation was designed to be simple and intuitive where the user can set up his account with just his user name and profile then select his country and set his location so his initial discovery feed would be well-tailored to his locality. The user also gets to save his country of interests as this affects the discovery experiences he would see",
+        "The account creation was designed to be simple and intuitive where the user can set up his account with just his username and profile then select his country and set his location so his initial discovery feed would be well-tailored to his locality. The user also gets to save his country of interests as this affects the discovery experiences he would see",
     ],
     img: photo2,
     alt: "account"
@@ -103,8 +103,8 @@ const home = {
 const discovery = {
     title: "Discovery",
     paragraphs: [
-        "The discovery page is tailored to account for all travelers needs and help travelers get the best experience in whatever country you go to",
-        "In the discovery you can get to see stores for clothes to buy in whatever location, see restaurants and filter down to your taste and, you get to see events created by people around you that you can attend, travel guides and more the goal is to help you optimize your experience,  in the country of choice, feel among and have a meaningful travel"
+        "The discovery page is tailored to account for all travelers needs and help travelers get the best experience in whatever country they go to",
+        "In the discovery you can get to see stores for clothes to buy in whatever location, see restaurants and filter down to your taste and, you get to see events created by people around you that you can attend, travel guides and more. The goal is to help you optimize your experience in the country of choice, feel among and have a meaningful travel"
     ],
     img: photo4,
     alt: "discover"
@@ -112,7 +112,7 @@ const discovery = {
 const shipment = {
     title: "Create Shipment",
     paragraphs: [
-        "The create shipment is one of the pillars of the product as shipping items to be used in the new country is one of the pain points for users, so the create shipment has been designed in such a way to ease the stress of users in figuring out the exact dimensions and packing with the right boxes, with  the use of AR we can scan ur package and estimate with 100% accuracy the size and the box dimensions so we would have the boxes readily available for shipping "
+        "The create shipment is one of the pillars of the product as shipping items to be used in the new country. This is one of the pain points for users, so the create shipment has been designed in such a way to ease the stress of users in figuring out the exact dimensions and packing with the right boxes, with the use of AR we can scan ur package and estimate with 100% accuracy the size and the box dimensions so we would have the boxes readily available for shipping"
     ],
     img: photo5,
     alt: "discover"
@@ -120,7 +120,7 @@ const shipment = {
 const trip = {
     title: "My Trips",
     paragraphs: [
-        "My trips serve as a collection of events and memories that i could capture withing the entire trip and have it properly arranged for me to access anytime"
+        "My trips serve as a collection of events and memories that i could capture within the entire trip and have it properly arranged for me to access anytime"
     ],
     img: photo6,
     alt: "trips"
@@ -128,7 +128,7 @@ const trip = {
 const create = {
     title: "Create Trip",
     paragraphs: [
-        "The create trip is designed to help uses on the overall experience of a trip from accounting for all the relevant info or document needed for the travel to shipping of items to the country of your choice and setting up booking accommodation reminders "
+        "The create trip is designed to help users on the overall experience of a trip from accounting for all the relevant info or document needed for the travel to shipping of items to the country of your choice and setting up booking accommodation reminders "
     ],
     img: photo7,
     alt: "create"
@@ -136,7 +136,7 @@ const create = {
 const booking = {
     title: "Booking",
     paragraphs: [
-        "Booking accommodation is split into two parts, one is hotels and which are usually for short-time stayers and the second is apartments and this is for travelers who would stay longer and the renting of an apartment would provide cheaper accommodation. So on Trivadi you get to see varieties of apartments, their amenities, and this can be seen in AR for better experience"
+        "Booking accommodation is split into two parts, one is hotels which are usually for short-time stayers and the second is apartments, which are for travelers who would stay longer and the renting of an apartment would provide cheaper accommodation. So on Trivadi you get to see varieties of apartments, their amenities, and this can be seen in AR for better experience"
     ],
     img: photo8,
     alt: "trips"
@@ -144,7 +144,7 @@ const booking = {
 const tour = {
     title: "Tour Guide",
     paragraphs: [
-        "The tour guide feature is designed to help travelers who would love to explore the city, especially one, not familiar to them in conditions like language, culture, etc and this guides can be selected on the platform and you can see their reviews, about the, their likes so you can pick who relates a bit to you as you most likely would spend some time with them"
+        "The tour guide feature is designed to help travelers who would love to explore the city, especially one not familiar to them in conditions like language, culture, etc and this guides can be selected on the platform and you can see their reviews, about, their likes so you can pick who relates a bit to you as you most likely would spend some time with them"
     ],
     img: photo9,
     alt: "tour"
@@ -152,7 +152,7 @@ const tour = {
 const task = {
     title: "Gamified Tasks",
     paragraphs: [
-        "Most travelers during trips set out to do things they want to accomplish, and from some interviews, these are not always completed, occasionally due to procrastination and sometimes laziness.",
+        "Most travelers during trips set out to do things they want to accomplish and from some interviews, these are not always completed occasionally due to procrastination and sometimes laziness.",
         "So the gamified tasks help users set up tasks with spouses or friends that are traveling together and for every task completed you earn points that can be used for shopping, apartment renting, or food purchase on the app"
     ],
     img: photo10,
@@ -162,7 +162,7 @@ const speech = {
     title: "Speech Translator & Translator From Image",
     paragraphs: [
         "The translator solution is designed for travelers going to countries with languages different from the local languages they are used to. This helps them communicate with locals in such countries so they can have the maximum experience of the travel",
-        "So most travelers especially in countries in countries that they do not understand their language relate with a lot of things, not just the people who speak, these things can range from signposts to restaurant menus, etc. This feature allows users to be able to scan an image and the app helps highlight the texts and translates them to your desired language. Due to the fact that the image scanner might not capture all the words so you can always edit the text of the scanned words"
+        "So most travelers especially in countries that do not understand their language relate with a lot of things, not just the people who speak, these things can range from signposts to restaurant menus, etc. This feature allows users to be able to scan an image and the app helps highlight the texts and translates them to your desired language. Due to the fact that the image scanner might not capture all the words so you can always edit the text of the scanned words"
     ],
     img: photo11,
     alt: "Gamified Tasks"
@@ -180,7 +180,7 @@ const themeMode = "light"
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="mb-12">
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">My Role & Approach</h3>
-                <p>Based on the data gotten from the research gotten before joiAs the only UX/UI designer on the project, I was responsible for the overall process of the design of the product which included the research, sketches, and final high-fidelity design. My process encompassed 4 stages</p>
+                <p>Based on the data gotten from the research as the only UX/UI designer on the project, I was responsible for the overall process of the design of the product which included the research, sketches, and final high-fidelity design. My process encompassed 4 stages</p>
             </div>
             <div class="grid grid-cols-2 gap-8">
                 <div class="p-6 border border-black border-opacity-25 rounded-md ">
@@ -248,7 +248,7 @@ const themeMode = "light"
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
              <div class="md:w-1/2 mb-12">
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">Creating Personas</h3>
-                <p>The personas created were aim at having a mental picture of the type of users wwe would have in order to be able to properly empathize with the users</p>
+                <p>The personas created were aimed at having a mental picture of the type of users we would have in order to be able to properly empathize with the users</p>
             </div>
             <CreatePersonas :personas="personasArr" />
         </section>

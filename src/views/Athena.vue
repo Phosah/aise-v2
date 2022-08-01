@@ -139,7 +139,7 @@ const themeMode = 'light'
                 <div class="md:flex-1 mb-8 md:mb-0"><img class="w-full" src="../assets/athena/goal.png" alt="Athena Photo" /></div>
                 <div class="md:flex-1">
                     <h3 class="mb-6 text-3xl font-new-paris-kingsize">What Does Athena aim to Achieve?</h3>
-                    <div>
+                    <div >
                         <p class="mb-4">Athena hopes to bring a solution that allows users to easily carry out
                             transactions in the shortest time possible, with transparent and predictable pricing coupled
                             with a simplified experience to remove the complexity attached to a DEX.</p>

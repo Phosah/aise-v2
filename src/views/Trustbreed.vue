@@ -24,7 +24,7 @@ const details = {
     img: photo1,
     alt: "Trustbreed",
     title: "TrustBreed",
-    shortDesc: "As a customer, have your voice heard and get the best of services from the companies / products that serve you.",
+    shortDesc: "As a customer, we have your voice heard and get the best of services from the companies / products that serve you.",
     LongDesc: "Trustbreed is a customer support tool to help users of any and every product get the best of services from their respective providers",
     paragraph: "Trustbreed was born to help users/customers as a result of users being tired of receiving sub-standard services for their hard-earned money from products/companies they patronize to serve them."
 }
@@ -69,7 +69,7 @@ const personasArr = [
         profession: "Product Manager",
         maritalStatus: "Married",
         about: "Jasmine is a 37yrs old project manager who always has to be online due to the remote nature of her job. She works from 9 to 5 from Mondays to Fridays and has a couple of side projects over the weekend",
-        behaviour: "She is calm and collected, patient and like things done quickly as she believes time is precious and should be properly utilized",
+        behaviour: "She is calm and collected, patient and likes things done quickly as she believes time is precious and should be properly utilized",
         goals: "Need to be able to get answers to problems she faces with digital products as she works from home so 90% of services she patronizes are online",
         concerns: "Privacy of her messages on services she is having issues with and the time of responses of those issues being as fast as possible"
     },
@@ -82,14 +82,14 @@ const personasArr = [
         maritalStatus: "Single",
         about: "Richard is a 24yrs old Engineer, he spends a lot of time reading articles and making online purchases for his hardware and engineering materials to be able to work properly",
         behaviour: "He is calm, intelligent and a bit hyper active at his actions",
-        goals: "Need to be able to get answers to problems she faces with digital products as she works from home so 90% of services she patronizes are online",
-        concerns: "Privacy of her messages on services she is having issues with and the time of responses of those issues being as fast as possible"
+        goals: "Need to be able to get answers to problems he faces with digital products as he works from home so 90% of services she patronizes are online",
+        concerns: "Privacy of his messages on services he is having issues with and the time of responses of those issues being as fast as possible"
     },
 ]
 const onboarding = {
     title: "Onboarding Screens",
     paragraphs: [
-        "Tailoring the onboarding to a simple clean visual experience where the users canjoin the trustbreed using just their name, email and get security authentication through an OTP code. Users are also able to choose or create a customized username."
+        "Tailoring the onboarding to a simple clean visual experience where the users can join the trustbreed using just their name, email and get security authentication through an OTP code. Users are also able to choose or create a customized username."
     ],
     img: photo9,
     alt: "onboarding screens"
@@ -97,7 +97,7 @@ const onboarding = {
 const complaints = {
     title: "Complaint Screens",
     paragraphs: [
-        "The complaint creation is the centerpiece of the product whereby every user can come into trustbreed and make a complaint about a company that has rendered them poor service. If the company doesn’t exist on trustbreed, you can create them and the company is verified finally listed. Every complaint submitted would be followed up by trustbreeds agents till the issue is resolved through constant communication with the company and the users"
+        "The complaint creation is the centerpiece of the product whereby every user can come into trustbreed and make a complaint about a company that has rendered them poor service. If the company doesn’t exist on trustbreed, you can create them and the company is verified and finally listed. Every complaint submitted would be followed up by trustbreeds agents till the issue is resolved through constant communication with the company and the users"
     ],
     img: photo10,
     alt: "complaint screens"
@@ -105,7 +105,7 @@ const complaints = {
 const companies = {
     title: "Compare Companies",
     paragraphs: [
-        "A lot of users are on the lookout for the best product for their needs, due to thelong list of competitors for popular services the best is a bit tricky to pick, hence trustbreed gives you the ability to compare companies based on data, and other users ratings and reviews."
+        "A lot of users are on the lookout for the best product for their needs, due to the long list of competitors for popular services the best is a bit tricky to pick, hence trustbreed gives you the ability to compare companies based on data, and other users ratings and reviews."
     ],
     img: photo11,
     alt: "complaint screens"
@@ -121,7 +121,7 @@ const font = "font-playfair"
         <HeaderInfo :headerDetails="details" />
         <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm md:text-base">
             <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">My Role</h2>
-            <p class="mb-4">For this project, my role was to explore ways to ensure users' complaints are heard and
+            <p class="mb-4">For this project, my role was to explore ways to ensure users complaints are heard and
                 resolutions to the problems were made, also give users a way to identify the best companies and
                 services for a particular need. To achieve this I had to understand the pain points of users of
                 digital and physical services through a series of research, analysis, and best practices in UX
@@ -193,7 +193,7 @@ const font = "font-playfair"
             class="py-10 md:py-20 text-sm md:text-base">
             <div class="max-w-7xl mx-auto px-4 md:px-16">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">UX competitive analysis</h2>
-                <p class="mb-10">I was given two potential competitors by the founders and stakeholders began my study
+                <p class="mb-10">I was given two potential competitors by the founders and stakeholders. I began my study
                     on them and built their marketing profile, SWOT profile, and conducted a UX analysis of their
                     products. The goal was to identify what type of problems users face with competitors’ products, as
                     well as understand what the users might expect from my product.</p>
@@ -264,7 +264,7 @@ const font = "font-playfair"
         <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm md:text-base">
             <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Mental models and user journey
                 map</h2>
-            <p class="mb-6">To understand better the challenges surfers are facing in diﬀerent situations, based on
+            <p class="mb-6">To understand better the challenges surfers are facing in different situations, based on
                 the needs and goals of my personas, I created Mental Models and User Journey Maps.</p>
             <p class="mb-16">Creating Mental Models and User Journey Maps was a great way to empathize with future
                 users, getting a clearer idea about pain points and what support would they expect from the product.
@@ -300,7 +300,7 @@ const font = "font-playfair"
                 </div>
             </div>
         </section>
-        <section class="">
+        <section>
             <div class="max-w-7xl mx-auto md:pt-20 px-4 md:px-16 text-sm md:text-base">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Wireframing</h2>
                 <p class="mb-8 md:mb-16">After that, I started creating wireframes with pen and paper. Having the
@@ -341,7 +341,7 @@ const font = "font-playfair"
             <div class="mb-16">
                 <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">Usability Testing</h2>
                 <p class="mb-6">I wanted to observe and measure if users understand the product, its value, and how
-                    to complete basic functions through testing the high-ﬁdelity prototype. Below were the test
+                    to complete basic functions through testing the high-fidelity prototype. Below were the test
                     objectives;</p>
                 <ul class="list-disc mb-6 pl-6">
                     <li>Observe if users can make a complaints easily</li>
@@ -351,7 +351,7 @@ const font = "font-playfair"
                     <li>Observe how easy it was to find companies to compare.</li>
                 </ul>
                 <p>Both in-person and remote moderated usability tests were conducted. The test included a short
-                    brieﬁng and task performance with the Trustbreed. 5 participants took part in the usability
+                    briefing and task performance with the Trustbreed. 5 participants took part in the usability
                     test, all participants agreed that the app is uncomplicated and simple to use, including mainly
                     only necessary information and buttons. After collecting the information, I created a rainbow
                     sheet to identify valuable insights.</p>
@@ -371,7 +371,7 @@ const font = "font-playfair"
                     <p class="flex-1">It became stressful to select a company category with the horizontal scroll of
                         the categories on the desktop</p>
                     <p class="flex-1">The categories could be redesigned to show just 4 categories and a dropdown
-                        showing more that reveals all the rest categories when cpcked</p>
+                        showing more that reveals all the rest categories when clicked</p>
                 </div>
                 <div class="flex space-x-10 p-6 border-b border-white border-opacity-5">
                     <p class="flex-1">On the dashboard, the 4 categories take too much space</p>
@@ -410,8 +410,8 @@ const font = "font-playfair"
         <section class="max-w-7xl mx-auto py-20 md:py-40 px-6 md:px-16 text-sm md:text-base">
             <h3 class="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold font-playfair">Conclusion</h3>
             <p class="md:mb-16">Throughout the design process, I learned how to prioritize and be very careful in
-                user experience in the product, a product that is built upon the basis of bad user experiences of
-                other products, the user experience could not be compromised. I got the opportunity to. Thank you
+                user experience in the product. A product that is built upon the basis of bad user experiences of
+                other products, the user experience could not be compromised. I got the opportunity to discover great ways to improving and creating solutions. Thank you
                 for following and going through my documented processes. Feel free to connect with me on LinkedIn,
                 Behance, Dribbble, and Twitter.</p>
         </section>

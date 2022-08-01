@@ -23,7 +23,7 @@ const info = {
     img: bentoCover,
     alt: "bento",
     mainContent: "People by Bento is an HR tool to help manage employees from hiring to onboarding, to talent management, to appraisals, to leave management, to separation, and much more...",
-    subContent: "People by bento get to provide this solution by giving an easy-to-use interface that comprises various nodules needed for proper employee management, this includes modules like time management, Employee management, Appraisal, Onboarding, and offboarding management.",
+    subContent: "People by bento gets to provide this solution by giving an easy-to-use interface that comprises various nodules needed for proper employee management, this includes modules like time management, Employee management, Appraisal, Onboarding, and offboarding management.",
     role: "Product Design",
     client: "bento africa",
     duration: "3 months",
@@ -50,7 +50,7 @@ const role = {
 const interview = {
     title: "Started with Interviews",
     paragraphs: [
-        "One of the major reasons why the vision came about was some subtle complaints from businesses that Bento payroll software handles were the issues of managing employees aside from payroll management. So to get the main pain points I scheduled 5 interviews of 30min each with some of the companies who made requests and those who showed similar interests.",
+        "One of the major reasons why the vision came about was some subtle complaints from businesses that Bento payroll software handles, they were the issues of managing employees aside from payroll management. So to get the main pain points I scheduled 5 interviews of 30min each with some of the companies who made requests and those who showed similar interests.",
         "These sessions were recorded so I could have documentation to fall back on that would be kept in the company's google drive",
     ],
     
@@ -69,7 +69,7 @@ const dashboard = {
 const management = {
     title: "Employee Management",
     paragraphs: [
-        "The employee management section helps manage your employee number in terms of contract workers, full tie, part-time, interns, etc and have a storage of all their details and records like leave and appraisal history, personal details like birthdays and hobbies to be able to relate with them better in a more human level ",
+        "The employee management section helps manage your employee number in terms of contract workers, full tie, part-time, interns, etc and have a storage of all their details and records like leave and appraisal history, personal details like birthdays and hobbies to be able to relate with them better in a more human level",
     ],
     
     img: photo4,
@@ -87,7 +87,7 @@ const job = {
 const hiring = {
     title: "Hiring Process",
     paragraphs: [
-        "The hiring process in every organization is tasking and cha\llenging when not done properly, People by bento solves that problem by giving you an organized flow for your hiring process from accepting talent applications, reviewing CVs both with ATS trackers and manually, and Scheduling interview stages based on what was set in the job creation e.g, phone interview, onsite or google meet etc and have all these documented as steps. You also can discuss and drop comments on an applicant so others in the hiring team can see it as well",
+        "The hiring process in every organization is tasking and challenging when not done properly, People by bento solves that problem by giving you an organized flow for your hiring process from accepting talent applications, reviewing CVs both with ATS trackers and manually, and scheduling interview stages based on what was set in the job creation e.g, phone interview, onsite or google meet etc and have all these documented as steps. You also can discuss and drop comments on an applicant so others in the hiring team can see it as well",
     ],
     
     img: photo6,
@@ -96,7 +96,7 @@ const hiring = {
 const onboarding = {
     title: "Employee Onboarding",
     paragraphs: [
-        "Employee onboarding is a vital aspect of an employee's experience in joining a team as it is the first impression the company gives an employee for joining so having it done well is key. I designed the product in a way that its easy to set up a mail and assign an onboarding/work buddy to guide the employee during his/her initial stages. Also the ability to assign necessary software, and hardware for productivity. Finally, all necessary o0nboarding documents including work manual and welcome videos can also be shared",
+        "Employee onboarding is a vital aspect of an employee's experience in joining a team as it is the first impression the company gives an employee for joining so having it done well is key. I designed the product in a way that its easy to set up a mail and assign an onboarding/work buddy to guide the employee during his/her initial stages. Also the ability to assign necessary software, and hardware for productivity. Finally, all necessary Onboarding documents including work manual and welcome videos can also be shared",
     ],
     
     img: photo7,
@@ -105,7 +105,7 @@ const onboarding = {
 const appraisal = {
     title: "Appraisal",
     paragraphs: [
-        "To track and monitor employees' productivity over time, you need a way to review their performance and this is where appraisals come in as your solution. Here you get to assign a 1:1 appraisal or a 360 appraisal which means multiple people from all over the company or within your department (This is et by you tho, it's that flexible 😉) appraise an employee and judge his performance-based of his set KPI and company KPI and goals",
+        "To track and monitor employees productivity over time, you need a way to review their performance and this is where appraisals come in as your solution. Here you get to assign a 1:1 appraisal or a 360 appraisal which means multiple people from all over the company or within your department (This is set by you though. It's that flexible 😉) appraise an employee and judge his performance-based of his set KPI and company KPI and goals",
     ],
     
     img: photo8,
@@ -143,7 +143,7 @@ const themeMode = "light"
         <section class="max-w-7xl mx-auto my-20 px-6">
             <div class="mb-12">
                 <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">The briefings began</h3>
-                <p class="mb-4">During the first week of joining the team and the People by Bento project I was briefed about the overall scope of what Bento as a brand was trying to solve and what led to the vision of People</p>
+                <p class="mb-4">During the first week of joining the team and the People by Bento project, I was briefed about the overall scope of what Bento as a brand was trying to solve and what led to the vision of People</p>
                 <p class="mb-4">The next step was to have scheduled calls with people from the sales team as they are the ones that have been on the field and gotten direct hints on the feedback of some of the customers who use the Bento Payroll product for their organization and had issues managing their organization as well.</p>
                 <p class="mb-4">The next few days were a series of calls with the support team and support team lead and this was to get insights on issues that have been reported as bento runs open support and feedback channel that takes user's requests and issues to process so the support team has had direct info on the user's pain points</p>
                 <p>The final days were calls with the engineering team to also get insights from them and the size of the team so I could properly align business goals, user needs, and Engineering strengths in the design process.</p>
@@ -190,7 +190,7 @@ const themeMode = "light"
         </section>
         <section class="max-w-7xl mx-auto my-20 px-6">
             <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Interviews With HR’s</h3>
-            <p class="mb-4">After the competitive study was done the next step was to interview HRs in the Nigerian space  as this aimed to understand the mode of operations of a standard HR and its operations in an organization before building a tool to ease the processes and make life easier</p>
+            <p class="mb-4">After the competitive study was done the next step was to interview HRs in the Nigerian space as this aimed to understand the mode of operations of a standard HR and its operations in an organization before building a tool to ease the processes and make life easier</p>
             <p class="mb-4">About 3 HRs were interviewed and valuable insights were gotten. One of the major insights gotten was HR practices were dynamic and a couple of times specific to the organization</p>
         </section>
         <section class="my-20 md:my-40">
@@ -220,7 +220,7 @@ const themeMode = "light"
             </div>
             <div>
                 <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Conclusion</h2>
-                <p class="mb-6">People by Bento is a project that has simplified the processes of employee management making it easy to handle either large or small-scale organizations with just one interface and all your headaches of paperwork to maintain organization is curbed, you can easily now monitor EMployees performance and know-how to improve their workflow to take your company to the ne\xt level it deserves.</p>
+                <p class="mb-6">People by Bento is a project that has simplified the processes of employee management making it easy to handle either large or small-scale organizations with just one interface and all your headaches of paperwork to maintain organization is curbed, you can easily now monitor Employees performance and know-how to improve their workflow to take your company to the ne\xt level it deserves.</p>
                 <p>Explore the live project: <a class="border-b border-black" href="https://www.bento.africa">https://www.bento.africa</a></p>
             </div>
         </section>

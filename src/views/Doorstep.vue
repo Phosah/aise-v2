@@ -26,7 +26,7 @@ const projects = [
     {
         icon: icon1,
         title: "Discover",
-        text: "Discovery was the first phase in the UX-design process that involved",
+        text: "Discovery was the first phase in the UX-design process that involves",
         bgColor: "bg-brand-purple-4 bg-opacity-10",
         tickColor: "text-brand-purple-4",
         items: [
@@ -52,7 +52,7 @@ const projects = [
     {
         icon: icon3,
         title: "Ideate",
-        text: "This part of the design process was where the product structure to shape",
+        text: "This part of the design process was where the product structured to shape",
         bgColor: "bg-brand-yellow-1 bg-opacity-10",
         tickColor: "text-brand-yellow-1",
         items: [
@@ -89,7 +89,7 @@ const headerStyle = "font-playfair text-4xl text-center md:text-left"
 const responsibilities = {
     title: "Project responsibilities",
     paragraphs: [
-        "During the course of this project i was incharge of the ux and ui process which occasionally involved stakeholder interviews and surveys"
+        "During the course of this project i was in charge of the ux and ui process which occasionally involved stakeholder interviews and surveys"
     ],
     img: photo2,
     alt: "Project"
@@ -105,7 +105,7 @@ const problem = {
 const interviews = {
     title: "User Interview",
     paragraphs: [
-        "Interviews & surveys are aimed at getting an indepth approach of how our targeted users would engage the product, determine their pain points, challenges, what they would love to have on the platform and structure all to get the best solution for their problems.",
+        "Interviews & surveys are aimed at getting an in depth approach of how our targeted users would engage the product, determine their pain points and challenges. What they would love to have on the platform and structure all to get the best solution for their problems.",
         "I gathered the data from the interviews and structured out their pains and needs to have a structure for an empathy mapping"
     ],
     img: photo4,
@@ -136,7 +136,7 @@ const personasArr = [
         img: persona2,
         name: "Damilola Peters",
         profession: "Businessman",
-        info: "Very frequency in using logistics services",
+        info: "Very frequenct in using logistics services",
         about: "Damilola is an Entrepreneur into fabric exportation. He has been into the exportation business for 8 years and wishes to expand his business from just Asia to Europe aswell",
         age: 32,
         address: "Kenya, Nairobi",
@@ -153,7 +153,7 @@ const dashboard = {
 }
 const tracking = {
     title: "Tracking page", 
-    paragraphs: ["This page is where shipmensts are searched for and tracked in a simplified manner displaying to you the status of your shipment and the expected delivery date shown first as the most important things, then if you want to get more info, a table with the various listings of every location or update is shown"], 
+    paragraphs: ["This page is where shipments are searched for and tracked in a simplified manner displaying to you the status of your shipment and the expected delivery date shown first as the most important things, then if you want to get more info, a table with the various listings of every location or update is shown"], 
     img: photo7,
     alt: "Tracking"
 }
@@ -233,7 +233,7 @@ const bgColor = "light"
                     >User Interviews</h2>
                     <p
                         class="mb-6"
-                    >Interviews & surveys are aimed at getting an indepth approach of how our targeted users would engage the product, determine their pain points, challenges, what they would love to have on the platform and structure all to get the best solution for their problems.</p>
+                    >Interviews & surveys are aimed at getting an indepth approach of how our targeted users would engage the product, determine their pain points and challenges. What they would love to have on the platform and structure all to get the best solution for their problems.</p>
                     <p>I gathered the data from the interviews and structured out their pains and needs to have a structure for an empathy mapping</p>
                 </div>
                 <div class>
@@ -331,7 +331,7 @@ const bgColor = "light"
                 <p>My design strategy comprised of integrated planning processes that examined the relationships between how the design and business may complement one another, in simple terms finding a balance between business objectives and creative solutions</p>
             </div>
             <div class="flex justify-center mb-20">
-                <img class="mx-auto" src="../assets/doorstep/strategy.png" alt="Design strategy" />
+                <img class="mx-auto max-h-96" src="../assets/doorstep/strategy.png" alt="Design strategy" />
             </div>
             <div class="md:flex md:space-x-6 text-sm md:text-base">
                 <div class="md:flex-1 mb-12 md:mb-0">
@@ -427,7 +427,7 @@ const bgColor = "light"
                 <h2
                     class="mb-6 text-3xl md:text-6xl font-semibold font-playfair text-center"
                 >The Solution</h2>
-                <p>Below shows a few of the screens that portrayed the soltions to the stated problem in the most user friendly manner</p>
+                <p>Below shows a few of the screens that portrayed the solutions to the stated problem in the most user friendly manner</p>
             </div>
             <div class="hidden md:block">
                 <LayoutOne :page="dashboard" :headerFont="headerFont"/>

@@ -177,9 +177,23 @@ const marginSize = 'my-20'
         <Header :headerInfo="info" />
         <section class="max-w-7xl mx-auto px-6">
             <LayoutOne :page="background" :marginSize="marginSize" />
-            <LayoutTwo :page="role" :marginSize="marginSize" />
+            <div class="hidden md:block">
+                <LayoutTwo :page="role" :marginSize="marginSize" />
+            </div>
+            <!--Mobile version -->
+            <div class="md:hidden md:my-40 my-20">
+                <div class="mb-12">
+                    <h3 class="mt-12 mb-6 text-2xl md:text-3xl font-new-paris-kingsize font-bold">My Role</h3>
+                    <div>
+                        <p class="mb-4">I came into Arc as the only designer on the project to handle the research, brainstorming with the CEO who was the major visionair of the project and take those ideas, improve on them and create high fidelity mockups that would be tested and implemented. </p>
+                        <p class="mb-4">I was shortly joined by another designer that would work directly under me in the coordination of the 2 initial projects that comprised Arc. These include the web3 aggregator and the NFT marketplace</p>
+                    </div>
+                </div>
+                <div class=""><img class="w-full" src="../assets/arc/role.png" alt="Role"></div>
+            </div>
+            <!--end of Mobile version -->
             <LayoutOne :page="briefing" :marginSize="marginSize" />
-            <div class="md:flex md:items-center md:space-x-12 my-20">
+            <div class="hidden md:flex md:items-center md:space-x-12 my-20">
                 <div class="md:flex-1 mb-8 md:mb-0"><img class="w-full" src="../assets/arc/research.png" alt="Athena Photo" /></div>
                 <div class="md:flex-1">
                     <h3 class="mb-6 font-new-paris-kingsize text-2xl md:text-3xl font-bold">More research</h3>
@@ -194,6 +208,23 @@ const marginSize = 'my-20'
                     </div>
                 </div>
             </div>
+            <!--Mobile version-->
+            <div class="my-20">
+                <div class="mb-8 ">
+                    <h3 class="mb-6 font-new-paris-kingsize text-2xl md:text-3xl font-bold">More research</h3>
+                    <div>
+                        <p class="mb-4">The  next step in the research phase was to take a look at major protocols across several aspects that were doing well in their niche as the general product sense was covering a lot of niche areas ranging from Defi to DEX, NFT, and analysis tools</p>
+                        <ul class="mb-4 pl-6 list-disc">
+                            <li><span class="font-bold">DEX:</span> 1inch, Zapper, Uniswap, Sushiswap</li>
+                            <li><span class="font-bold">NFT:</span> Opensea, Rarible, Foundation.app</li>
+                            <li><span class="font-bold">Analysis:</span> Dextools, Coinmarketcap</li>
+                        </ul>
+                        <p class="mb-4">These helped in getting an overview tho analogous it helped to structure the UX of the product as the base shell so we can improve the design, UX, and overall value proposition of the protocol</p>
+                    </div>
+                </div>
+                <div class="md:mb-0"><img class="w-full" src="../assets/arc/research.png" alt="Athena Photo" /></div>
+            </div>
+            <!-- end of Mobile version-->
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="md:w-1/2 mb-12">
@@ -210,7 +241,7 @@ const marginSize = 'my-20'
             <div><img class="w-full" src="../assets/arc/hmw.png" alt="Notes" /></div>
         </section>
          <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <div class="w-1/2">
+            <div class="md:w-1/2">
                 <h1 class="mb-6 text-4xl md:text-6xl font-new-paris-kingsize">Design Decisions</h1>
                 <p class="mb-4">After carefully analyzing the data and working with an MVP and time constraints, the following solutions were designed below</p>
             </div>

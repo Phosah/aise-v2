@@ -183,19 +183,19 @@ const themeMode = "light"
             <div class="md:hidden">
                 <div class="mb-6">
                     <div class="flex items-center justify-center mb-4"><img class="w-40 h-40" src="../assets/myria/profile-1.png" alt="profile" /></div>
-                    <div class="p-6 bg-white rounded-2xl">I want a way to be able to send tokens from one chain in my wallet to another</div>
+                    <div class="p-6 bg-white text-center rounded-2xl">I want a way to be able to send tokens from one chain in my wallet to another</div>
                 </div>
                 <div class="mb-6">
                     <div class="flex items-center justify-center mb-4"><img class="w-40 h-40" src="../assets/myria/profile-2.png" alt="profile" /></div>
-                    <div class="p-6 bg-white rounded-2xl">I want to be able to send NFTs from my wallet to another wallet of either mine or a friend's</div>
+                    <div class="p-6 bg-white text-center rounded-2xl">I want to be able to send NFTs from my wallet to another wallet of either mine or a friend's</div>
                 </div>
                 <div class="mb-6">
                     <div class="flex items-center justify-center mb-4"><img class="w-40 h-40" src="../assets/myria/profile-3.png" alt="profile" /></div>
-                    <div class="p-6 bg-white rounded-2xl">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
+                    <div class="p-6 bg-white text-center rounded-2xl">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
                 </div>
                 <div class="mb-6">
                     <div class="flex items-center justify-center mb-4"><img class="w-40 h-40" src="../assets/myria/profile-4.png" alt="profile" /></div>
-                    <div class="p-6 bg-white rounded-2xl">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
+                    <div class="p-6 bg-white text-center rounded-2xl">I want to be able to rent NFTs that can be used to improve my gaming experience</div>
                 </div>
             </div>
             <!--end of Mobile version -->

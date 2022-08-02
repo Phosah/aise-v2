@@ -7,13 +7,26 @@ defineProps({
     headerFont: {
         type: String
     },
-     marginSize: {
+    marginSize: {
         type: String,
+    },
+    imgBottom: {
+        type: Boolean,
+        default: false
     }
 })
 </script>
 <template>
-    <div :class="marginSize ? marginSize : 'md:my-40 my-20'"  class="md:flex md:items-center md:space-x-12">
+    <div v-if="imgBottom" :class="marginSize ? marginSize : 'md:my-40 my-20'"  class="md:flex md:items-center md:space-x-12">
+        <div class="md:flex-1 mb-6">
+            <h3 :class="headerFont ? headerFont : 'font-new-paris-kingsize'" class="mb-6 text-2xl md:text-3xl font-bold">{{ page.title }}</h3>
+            <div class="mb-4" v-for="(para, ix) in page.paragraphs" :key="ix">
+                <p>{{ para }}</p>
+            </div>
+        </div>
+        <div class="md:flex-1 md:mb-0"><img class="w-full" :src="page.img" :alt="page.alt"></div>
+    </div>
+    <div v-else :class="marginSize ? marginSize : 'md:my-40 my-20'"  class="md:flex md:items-center md:space-x-12">
         <div class="md:flex-1 md:mb-0"><img class="w-full" :src="page.img" :alt="page.alt"></div>
         <div class="md:flex-1">
             <h3 :class="headerFont ? headerFont : 'font-new-paris-kingsize'" class="mt-12 mb-6 text-2xl md:text-3xl font-bold">{{ page.title }}</h3>

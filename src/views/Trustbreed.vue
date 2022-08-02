@@ -113,6 +113,7 @@ const companies = {
 const headerFont = "font-playfair lg:text-4xl"
 const bgColor = "light"
 const font = "font-playfair"
+const width = "md:px-16"
 </script>
 
 <template>
@@ -415,7 +416,7 @@ const font = "font-playfair"
                 for following and going through my documented processes. Feel free to connect with me on LinkedIn,
                 Behance, Dribbble, and Twitter.</p>
         </section>
-        <OtherProjects :headerCenter="font"/>
+        <OtherProjects :headerCenter="font" :marginWidth="width"/>
         <Footer :bgColor="bgColor" />
     </div>
 </template>

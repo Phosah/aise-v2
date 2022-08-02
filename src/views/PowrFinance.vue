@@ -335,7 +335,7 @@ const headerCenter = 'font-playfair'
                 <img class="w-full" src="../assets/powrfinance/timeline.png" alt="Timeline" />
             </div>
         </section>
-        <section class="max-w-7xl mx-auto pt-20 md:pt-40 px-6 md:px-16">
+        <section class="max-w-7xl mx-auto md:pt-40 px-6 md:px-16">
             <h2
                 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
             >My Design Process</h2>
@@ -382,7 +382,7 @@ const headerCenter = 'font-playfair'
             </div>
         </section>
         <section>
-            <div class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm">
+            <div class="max-w-7xl mx-auto pt-10 md:py-20 px-6 md:px-16 text-sm">
                 <div v-for="(persona, ix) in personasArray" :key="ix">
                     <UserPersona :persona="persona" />
                 </div>
@@ -454,7 +454,7 @@ const headerCenter = 'font-playfair'
                 <h1 class="text-center">Business Opportunities</h1>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-20 px-6 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm md:text-base">
             <h2
                 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
             >Opportunities in Africa</h2>
@@ -542,7 +542,7 @@ const headerCenter = 'font-playfair'
                 <h1 class="text-center">The Solutions</h1>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto py-20 px-6 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto md:py-20 px-6 md:px-16 text-sm md:text-base">
             <LayoutThree :page="onboarding" :headerFont="headerFont" />
             <LayoutOne :page="bank" :headerFont="headerFont"/>
             <LayoutThree :page="send" :headerFont="headerFont" />
@@ -600,7 +600,7 @@ const headerCenter = 'font-playfair'
             </div>
             <div><img class="w-full" src="../assets/powrfinance/more-screens.png" alt="Mobile screens" /></div>
         </section>
-        <section class="max-w-7xl mx-auto py-40 px-6 md:px-16">
+        <section class="max-w-7xl mx-auto py-24 md:py-40 px-6 md:px-16">
             <h2 class="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold font-playfair">Conclusion</h2>
             <p>This project is open to massive expansion and growth, the product aims to expand to cover sectors like payroll whereby organizations with employees working in multiple countries can all be registered and payments can be disbursed once and payroll run with each of them receiving their cash in their local currency or crypto if selected</p>
         </section>

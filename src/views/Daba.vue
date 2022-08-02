@@ -258,14 +258,29 @@ const imgBtm = ref(true)
             <div>
                 <LayoutThree :page="onboarding" :paraWidth="width" />
                 <LayoutOne :page="home" />
-                <LayoutTwo :page="portfolio" :imgBottom="imgBtm" />
+                <div class="hidden md:block">
+                    <LayoutTwo :page="portfolio" />
+                </div>
+                <div class="md:hidden">
+                    <LayoutTwo :page="portfolio" :imgBottom="imgBtm" />
+                </div>
                 <LayoutOne :page="investment" />
                 <LayoutThree :page="explore" :paraWidth="width" />
                 <LayoutOne :page="social" />
-                <LayoutTwo :page="discussions" :imgBottom="imgBtm" />
+                <div class="hidden md:block">
+                    <LayoutTwo :page="discussions" />
+                </div>
+                <div class="md:hidden">
+                    <LayoutTwo :page="discussions" :imgBottom="imgBtm" />
+                </div>
                 <LayoutThree :page="stocks" :paraWidth="width" />
                 <LayoutOne :page="liveInvestments" />
-                <LayoutTwo :page="report" :imgBottom="imgBtm"/>
+                <div class="hidden md:block">
+                    <LayoutTwo :page="report" />
+                </div>
+                <div class="md:hidden">
+                    <LayoutTwo :page="report" :imgBottom="imgBtm"/>
+                </div>
                 <LayoutThree :page="plan" :paraWidth="width" />
             </div>
         </section>

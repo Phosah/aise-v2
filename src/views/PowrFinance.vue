@@ -1,4 +1,5 @@
 <script setup>
+import {ref} from 'vue'
 import Footer from '../components/Footer.vue'
 import CompetitionAnalysis from '../components/CompetitionAnalysis.vue'
 import UserPersona from '../components/UserPersona.vue'
@@ -316,6 +317,7 @@ const offline = {
 const headerFont = "font-playfair text-4xl"
 const bgColor = "light"
 const headerCenter = 'font-playfair'
+const width = "md:px-16"
 </script>
 
 <template>
@@ -604,7 +606,7 @@ const headerCenter = 'font-playfair'
             <h2 class="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold font-playfair">Conclusion</h2>
             <p>This project is open to massive expansion and growth, the product aims to expand to cover sectors like payroll whereby organizations with employees working in multiple countries can all be registered and payments can be disbursed once and payroll run with each of them receiving their cash in their local currency or crypto if selected</p>
         </section>
-        <OtherProjectsFintech :headerCenter="headerCenter"/>
+        <OtherProjectsFintech :headerCenter="headerCenter" :marginWidth="width"/>
         <Footer :bgColor="bgColor" />
     </div>
 </template>

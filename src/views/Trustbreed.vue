@@ -408,7 +408,7 @@ const width = "md:px-16"
             </div>
             <!-- End of Mobile version -->
         </section>
-        <section class="max-w-7xl mx-auto py-20 md:py-40 px-6 md:px-16 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto py-20 px-6 md:px-16 text-sm md:text-base">
             <h3 class="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold font-playfair">Conclusion</h3>
             <p class="md:mb-16">Throughout the design process, I learned how to prioritize and be very careful in
                 user experience in the product. A product that is built upon the basis of bad user experiences of

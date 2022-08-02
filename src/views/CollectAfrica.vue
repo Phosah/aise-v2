@@ -475,7 +475,7 @@ const bgColor = "light"
                 <CompetitionAnalysis :analysis="analysis" />
             </div>
         </section>
-        <section class="max-w-7xl mx-auto md:py-20 px-6 md:px-16 text-sm">
+        <section class="max-w-7xl mx-auto md:pb-20 px-6 md:px-16 text-sm">
             <div class="mb-12">
                 <h1
                     class="mb-6 text-4xl md:text-5xl lg:text-6xl font-semibold font-playfair"

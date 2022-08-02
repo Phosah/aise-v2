@@ -1,4 +1,5 @@
 <script setup>
+import {ref} from 'vue';
 import Header from '../components/Header.vue'
 import LayoutOne from '../components/LayoutOne.vue';
 import LayoutTwo from '../components/LayoutTwo.vue';
@@ -165,6 +166,7 @@ const cards = [
         img: research7
     }
 ]
+const imgBtm = ref(true)
 </script>
 
 <template>
@@ -192,25 +194,7 @@ const cards = [
             <div class="md:flex-1"><img src="../assets/pegasus/problem.png" alt="Pegasus" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <div class="hidden md:block">
-                <LayoutTwo :page="goals" />
-            </div>
-            <!--Mobile version -->
-            <div class="md:hidden md:my-40 my-20">
-                <div class="mb-12">
-                    <h3 class="mt-12 mb-6 text-2xl md:text-3xl font-new-paris-kingsize font-bold">Pegasus Goals</h3>
-                    <div>
-                        <p class="mb-4">In traditional finance,  we have abstractions like the  American stock market indices that represent hundreds or thousands of individual stocks.</p>
-                        <p class="mb-4">Likewise, we aim to achieve similar for cryptocurrencies, we can envision a single token representing a basket or portfolio of its underlying tokens and this allows for diversification, and other problems we aim to solve namely;</p>
-                        <p class="mb-4">Likewise, we aim to achieve similar for cryptocurrencies, we can envision a single token representing a basket or portfolio of its underlying tokens and this allows for diversification, and other problems we aim to solve namely;</p>
-                        <p class="mb-4">Save gas: Acquiring and transferring multiple tokens requires paying transaction fees on transfers of each token.  Users only need to pay transaction fees on a single transaction for the tokens they represent.</p>
-                        <p class="mb-4">Rebalancing: As the price of the underlying assets fluctuates, traditional market indices would rebalance by adjusting the collection of assets that  are included in the index.</p>
-                        <p class="mb-4">Investment: The ability to invest an asset to get more APY has been the goal of the DeFi space, so we provide a way to invest your index Mega tokens to even provide more earnings for you</p>
-                    </div>
-                </div>
-                <div class=""><img class="w-full" src="../assets/pegasus/goals.png" alt="Goals"></div>
-            </div>
-            <!--end of Mobile version -->
+            <LayoutTwo :page="goals" :imgBottom="imgBtm"/>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="mb-6">

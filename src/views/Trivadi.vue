@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue';
 import Navbar from '../components/Navbar.vue';
 import Header from '../components/Header.vue';
 import LayoutOne from '../components/LayoutOne.vue'
@@ -168,6 +169,7 @@ const speech = {
     alt: "Gamified Tasks"
 }
 const themeMode = "light"
+const imgBtm = ref(true)
 </script>
 
 <template>
@@ -182,7 +184,7 @@ const themeMode = "light"
                 <h3 class="mb-6 text-3xl font-new-paris-kingsize">My Role & Approach</h3>
                 <p>Based on the data gotten from the research as the only UX/UI designer on the project, I was responsible for the overall process of the design of the product which included the research, sketches, and final high-fidelity design. My process encompassed 4 stages</p>
             </div>
-            <div class="grid grid-cols-2 gap-8">
+            <div class="grid md:grid-cols-2 gap-8">
                 <div class="p-6 border border-black border-opacity-25 rounded-md ">
                     <h4 class="mb-4 text-xl font-new-paris-kingsize">Discovey</h4>
                     <ul class="pl-6 list-disc">
@@ -254,13 +256,13 @@ const themeMode = "light"
         </section>
         <section class="max-w-7xl mx-auto px-6">
             <LayoutOne :page="account" />
-            <LayoutTwo :page="home" />
+            <LayoutTwo :page="home" :imgBottom="imgBtm"/>
             <LayoutOne :page="discovery" />
-            <LayoutTwo :page="shipment" />
+            <LayoutTwo :page="shipment" :imgBottom="imgBtm" />
             <LayoutOne :page="trip" />
-            <LayoutTwo :page="create" />
+            <LayoutTwo :page="create" :imgBottom="imgBtm"/>
             <LayoutOne :page="booking" />
-            <LayoutTwo :page="tour" />
+            <LayoutTwo :page="tour" :imgBottom="imgBtm"/>
             <LayoutOne :page="task" />
             <div class="md:mt-48">
                 <LayoutThree :page="speech" />

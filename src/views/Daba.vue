@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue';
 import Navbar from '../components/Navbar.vue';
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
@@ -180,6 +181,7 @@ const plan = {
 }
 const themeMode = 'light'
 const width = 'md:w-3/4'
+const imgBtm = ref(true)
 </script>
 
 <template>
@@ -256,55 +258,14 @@ const width = 'md:w-3/4'
             <div>
                 <LayoutThree :page="onboarding" :paraWidth="width" />
                 <LayoutOne :page="home" />
-                <div class="hidden md:block">
-                    <LayoutTwo :page="portfolio" />
-                </div>
-                <!--Mobile version -->
-                    <div class="md:hidden md:my-40 my-20">
-                        <div class="mb-12">
-                            <h3 class="mt-12 mb-6 text-2xl md:text-3xl font-new-paris-kingsize font-bold">Portfolio Tracking</h3>
-                            <div>
-                                <p class="mb-4">Portfolio tracking is a feature for people who have invested in stocks and startups outside daba. </p>
-                                <p class="mb-4">During the research and interviews one of the issues faced by some investors was the fact that they have some investments in some other places so how do they monitor and track their investments if they focus on daba for investing as they don't want to monitor multiple places</p>
-                            </div>
-                        </div>
-                        <div class=""><img class="w-full" src="../assets/daba/portfolio-tracking.png" alt="Portfolio tracking" /></div>
-                    </div>
-                    <!--end of Mobile version -->
+                <LayoutTwo :page="portfolio" :imgBottom="imgBtm" />
                 <LayoutOne :page="investment" />
                 <LayoutThree :page="explore" :paraWidth="width" />
                 <LayoutOne :page="social" />
-                <div class="hidden md:block">
-                    <LayoutTwo :page="discussions" />
-                </div>
-                <!--Mobile version -->
-                    <div class="md:hidden md:my-40 my-20">
-                        <div class="mb-12">
-                            <h3 class="mt-12 mb-6 text-2xl md:text-3xl font-new-paris-kingsize font-bold">Live Discussions</h3>
-                            <div>
-                                <p class="mb-4">Here we have startup founders, and other experts hold tak[lks to both give more awareness and educate investors on various topics, and this evet are created beforehand and scheduled for maximum turnup</p>
-                            </div>
-                        </div>
-                        <div class=""><img class="w-full" src="../assets/daba/live-discussions.png" alt="Live discussions" /></div>
-                    </div>
-                    <!--end of Mobile version -->
+                <LayoutTwo :page="discussions" :imgBottom="imgBtm" />
                 <LayoutThree :page="stocks" :paraWidth="width" />
                 <LayoutOne :page="liveInvestments" />
-                <div class="hidden md:block">
-                    <LayoutTwo :page="report" />
-                </div>
-                <!--Mobile version -->
-                    <div class="md:hidden md:my-40 my-20">
-                        <div class="mb-12">
-                            <h3 class="mt-12 mb-6 text-2xl md:text-3xl font-new-paris-kingsize font-bold">Detailed and Summarized Report</h3>
-                            <div>
-                                <p class="mb-4">The report is like the lifeblood of every investment opportunity, you need to know how this opportunity is doing and its history behind it in detail.</p>
-                                <p class="mb-4">Here daba gives access to a well detailed report that spans pages of information for advanced users but with the mindset of inclusivity I also put in measures to give a summarized version that would be done by experts and help new and lazy reading investors </p>
-                            </div>
-                        </div>
-                        <div class=""><img class="w-full" src="../assets/daba/report.png" alt="Report" /></div>
-                    </div>
-                    <!--end of Mobile version -->
+                <LayoutTwo :page="report" :imgBottom="imgBtm"/>
                 <LayoutThree :page="plan" :paraWidth="width" />
             </div>
         </section>

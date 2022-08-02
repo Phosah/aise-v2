@@ -270,7 +270,7 @@ const themeMode = "light"
             </div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h1 class="mb-6 text-4xl md:text-6xl font-new-paris-kingsize">High Fidelity Designs</h1>
+            <h1 class="mb-6 text-5xl md:text-6xl font-new-paris-kingsize">High Fidelity Designs</h1>
             <LayoutFour :page="signup"/>
             <LayoutFour :page="dashboard"/>
             <LayoutFour :page="transaction"/>

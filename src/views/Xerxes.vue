@@ -135,7 +135,9 @@ const themeMode = 'light'
         <Header :headerInfo="info" />
         <section class="max-w-7xl mx-auto my-20 px-6">
             <LayoutOne :page="problems" />
+            <div>
             <LayoutTwo :page="aims" />
+            </div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Research Time</h1>
@@ -211,7 +213,20 @@ const themeMode = 'light'
             <LayoutThree :page="dashboard" />
             <LayoutThree :page="borrowMarket" />
             <LayoutThree :page="supplyMarket" />
-            <LayoutTwo :page="repay" />
+            <div class="hidden md:block">
+                <LayoutTwo :page="repay" />
+            </div>
+            <!--Mobile version -->
+            <div class="md:hidden md:my-40 my-20">
+                <div class="mb-12">
+                    <h3 class="mt-12 mb-6 text-2xl md:text-3xl font-new-paris-kingsize font-bold">Repay Loan</h3>
+                    <div>
+                        <p class="mb-4">You can decide to repay your loan when you are ready with assets from your wallet or with your collateralized amount, by doing this, your collateral is used to pay the loan and the balance is converted to the assets used to invest in. If it was multiple assets or if it was from your supply market, the percentage distribution of the supplied tokens would determine the amount that goes to what assets.</p>
+                    </div>
+                </div>
+                <div class=""><img class="w-full" src="../assets/xerxes/repay-loan.png" alt="Repay Loan"></div>
+            </div>
+            <!--end of Mobile version -->
             <LayoutThree :page="liquidation" />
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">

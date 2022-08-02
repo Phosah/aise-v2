@@ -138,7 +138,12 @@ const imgBtm = ref(true)
         <section class="max-w-7xl mx-auto my-20 px-6">
             <LayoutOne :page="problems" />
             <div>
-            <LayoutTwo :page="aims" :imgBottom="imgBtm"/>
+            <div class="hidden md:block">
+                <LayoutTwo :page="aims" />
+            </div>
+            <div class="md:hidden">
+                <LayoutTwo :page="aims" :imgBottom="imgBtm"/>
+            </div>
             </div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
@@ -215,7 +220,12 @@ const imgBtm = ref(true)
             <LayoutThree :page="dashboard" />
             <LayoutThree :page="borrowMarket" />
             <LayoutThree :page="supplyMarket" />
-            <LayoutTwo :page="repay" :imgBottom="imgBtm"/>
+            <div class="hidden md:block">
+                <LayoutTwo :page="repay" />
+            </div>
+            <div class="md:hidden">
+                <LayoutTwo :page="repay" :imgBottom="imgBtm"/>
+            </div>
             <LayoutThree :page="liquidation" />
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">

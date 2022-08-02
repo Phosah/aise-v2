@@ -157,7 +157,12 @@ const imgBtm = ref(true)
         <Header :headerInfo="info" />
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <LayoutOne :page="problems" />
-            <LayoutTwo :page="aim" :imgBottom="imgBtm"/>
+            <div class="hidden md:block">
+                <LayoutTwo :page="aim" />
+            </div>
+            <div class="md:hidden">
+                <LayoutTwo :page="aim" :imgBottom="imgBtm"/>
+            </div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Research Time</h1>

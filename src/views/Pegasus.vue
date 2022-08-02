@@ -194,7 +194,12 @@ const imgBtm = ref(true)
             <div class="md:flex-1"><img src="../assets/pegasus/problem.png" alt="Pegasus" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <LayoutTwo :page="goals" :imgBottom="imgBtm"/>
+            <div class="hidden md:block">
+                <LayoutTwo :page="goals" />
+            </div>
+            <div class="md:hidden">
+                <LayoutTwo :page="goals" :imgBottom="imgBtm"/>
+            </div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="mb-6">

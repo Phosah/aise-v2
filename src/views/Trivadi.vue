@@ -256,13 +256,33 @@ const imgBtm = ref(true)
         </section>
         <section class="max-w-7xl mx-auto px-6">
             <LayoutOne :page="account" />
-            <LayoutTwo :page="home" :imgBottom="imgBtm"/>
+            <div class="hidden md:block">
+                <LayoutTwo :page="home" />
+            </div>
+            <div class="md:hidden">
+                <LayoutTwo :page="home" :imgBottom="imgBtm"/>
+            </div>
             <LayoutOne :page="discovery" />
-            <LayoutTwo :page="shipment" :imgBottom="imgBtm" />
+            <div class="hidden md:block">
+                <LayoutTwo :page="shipment" />
+            </div>
+            <div class="md:hidden">
+                <LayoutTwo :page="shipment" :imgBottom="imgBtm" />
+            </div>
             <LayoutOne :page="trip" />
-            <LayoutTwo :page="create" :imgBottom="imgBtm"/>
+            <div class="hidden md:block">
+                <LayoutTwo :page="create" />
+            </div>
+            <div class="md:hidden">
+                <LayoutTwo :page="create" :imgBottom="imgBtm"/>
+            </div>
             <LayoutOne :page="booking" />
-            <LayoutTwo :page="tour" :imgBottom="imgBtm"/>
+            <div class="hidden md:block">
+                <LayoutTwo :page="tour" />
+            </div>
+            <div class="md:hidden">
+                <LayoutTwo :page="tour" :imgBottom="imgBtm"/>
+            </div>
             <LayoutOne :page="task" />
             <div class="md:mt-48">
                 <LayoutThree :page="speech" />

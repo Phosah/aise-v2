@@ -1,4 +1,5 @@
 <script setup>
+import {ref } from 'vue'
 import Navbar from '../components/Navbar.vue';
 import Header from '../components/Header.vue';
 import LayoutOne from '../components/LayoutOne.vue';
@@ -209,6 +210,7 @@ const monitoring = {
     alt: "monitoring"
 }
 const themeMode = "light"
+const imgBtm = ref(true)
 </script>
 
 <template>
@@ -233,7 +235,12 @@ const themeMode = "light"
         </section>
         <section class="max-w-7xl mx-auto px-6">
             <LayoutOne :page="approach"/>
-            <LayoutTwo :page="analysis" />
+            <div class="hidden md:block">
+                <LayoutTwo :page="analysis" />
+            </div>
+            <div class="md:hidden">
+                <LayoutTwo :page="analysis" :imgBottom="imgBtm" />
+            </div>
             <div class="md:flex md:space-x-2 my-20">
                 <div class="flex-1 mb-6 md:mb-0">
                     <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Research Process</h3>

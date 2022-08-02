@@ -1,4 +1,5 @@
 <script setup>
+import {ref} from 'vue'
 import Navbar from '../components/Navbar.vue';
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
@@ -169,6 +170,7 @@ const arbitrage = {
 }
 const themeMode = "light"
 const marginSize = 'my-20'
+const imgBtm = ref(true)
 </script>
 
 <template>
@@ -180,18 +182,10 @@ const marginSize = 'my-20'
             <div class="hidden md:block">
                 <LayoutTwo :page="role" :marginSize="marginSize" />
             </div>
-            <!--Mobile version -->
-            <div class="md:hidden md:my-40 my-20">
-                <div class="mb-12">
-                    <h3 class="mt-12 mb-6 text-2xl md:text-3xl font-new-paris-kingsize font-bold">My Role</h3>
-                    <div>
-                        <p class="mb-4">I came into Arc as the only designer on the project to handle the research, brainstorming with the CEO who was the major visionair of the project and take those ideas, improve on them and create high fidelity mockups that would be tested and implemented. </p>
-                        <p class="mb-4">I was shortly joined by another designer that would work directly under me in the coordination of the 2 initial projects that comprised Arc. These include the web3 aggregator and the NFT marketplace</p>
-                    </div>
-                </div>
-                <div class=""><img class="w-full" src="../assets/arc/role.png" alt="Role"></div>
+            <div class="block md:hidden">
+                <LayoutTwo :page="role" :marginSize="marginSize" :imgBottom="imgBtm" />
             </div>
-            <!--end of Mobile version -->
+
             <LayoutOne :page="briefing" :marginSize="marginSize" />
             <div class="hidden md:flex md:items-center md:space-x-12 my-20">
                 <div class="md:flex-1 mb-8 md:mb-0"><img class="w-full" src="../assets/arc/research.png" alt="Athena Photo" /></div>
@@ -209,7 +203,7 @@ const marginSize = 'my-20'
                 </div>
             </div>
             <!--Mobile version-->
-            <div class="my-20">
+            <div class="md:hidden my-20">
                 <div class="mb-8 ">
                     <h3 class="mb-6 font-new-paris-kingsize text-2xl md:text-3xl font-bold">More research</h3>
                     <div>

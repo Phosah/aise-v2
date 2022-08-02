@@ -150,9 +150,9 @@ const themeMode = "light"
             </div>
             <div>
                 <h5 class="text-lg font-new-paris-kingsize font-bold">Findings</h5>
-                <div class="flex">
-                    <img src="../assets/bento/note1.png" alt="Notes">
-                    <img src="../assets/bento/note2.png" alt="Notes">
+                <div class="md:flex">
+                    <img src="../assets/bento/note1.png" alt="Notes" />
+                    <img src="../assets/bento/note2.png" alt="Notes" />
                 </div>
             </div>
         </section>
@@ -200,7 +200,7 @@ const themeMode = "light"
             <div><img class="w-full" src="../assets/bento/hmw.png" alt="How might we" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 px-6">
-            <h1 class="mb-6 text-6xl font-new-paris-kingsize">High Fidelity Designs</h1>
+            <h1 class="mb-6 text-5xl md:text-6xl font-new-paris-kingsize">High Fidelity Designs</h1>
             <div>
                 <LayoutThree :page="dashboard" />
                 <LayoutThree :page="management" />
@@ -213,7 +213,7 @@ const themeMode = "light"
             </div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h1 class="mb-12 text-2xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
+            <h1 class="mb-12 text-3xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
             <div class="mb-16">
                 <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Learnings</h2>
                 <p class="mb-6">While working on this project, I learned to understand how HRs perform activities and how versatile they can be and this in turn made me better at inclusive designs as I had to give users the best means to solve their problems and carry out their tasks but at the same time give enough room for customization and flexibility as the methods of carrying out operations differs from organization to organization</p>

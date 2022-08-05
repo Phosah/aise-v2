@@ -1,10 +1,35 @@
 <script setup>
+import { onMounted } from "vue";
 import { RouterView, RouterLink } from "vue-router";
 import SidebarNav from './components/SidebarNav.vue';
 {
   RouterView;
   RouterLink;
 }
+
+onMounted(() => {
+
+  let imgs = document.images,
+      len = imgs.length,
+      counter = 0;
+      console.log(len);
+  
+  [].forEach.call( imgs, function( img ) {
+      if(img.complete)
+        incrementCounter();
+      else
+        img.addEventListener( 'load', incrementCounter, false );
+  } );
+  
+  function incrementCounter() {
+      counter++;
+      if ( counter === len ) {
+          console.log( 'All images loaded!' );
+          console.log(counter)
+      }
+  }
+})
+
 </script>
 
 <template>

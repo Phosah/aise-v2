@@ -186,7 +186,7 @@ const prev = () => {
           <img class="animate-bounce w-32 h-32" src="../assets/random1.png" alt="Scroll down" />
         </div>
         <div class="md:flex-1 md:transform md:-translate-y-40">
-          <img class="w-full" src="../assets/aise-photo.jpeg" alt="Aise photo" rel="preload" />
+          <img class="w-full" src="../assets/aise-photo.jpeg" alt="Aise photo" />
         </div>
       </div>
     </section>

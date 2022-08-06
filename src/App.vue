@@ -7,14 +7,10 @@ import SidebarNav from './components/SidebarNav.vue';
   RouterLink;
 }
 
-const imgs = document.images;
 onMounted(() => {
-  nextTick(() => {
-    console.log(imgs.length)
-  })
+  const imgs = document.images;
   let len = imgs.length,
     counter = 0;
-    console.log(len);
   
   [].forEach.call( imgs, function( img ) {
     if(img.complete)

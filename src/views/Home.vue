@@ -164,7 +164,7 @@ const prev = () => {
 <template>
   <Navbar />
   <main class="text-brand-black-2">
-    <section class="mb-20 md:mt-40">
+    <section class="mb-20 md:mt-20">
       <div class="md:flex md:items-center max-w-7xl mx-auto md:mb-0 md:mt-20 px-6">
         <h1 class="md:flex-1 mb-2 md:mb-0 text-6xl sm:text-8xl md:text-10xl font-new-paris-kingsize text-left">Product</h1>
         <p class="hidden md:block md:w-1/3 leading-relaxed text-brand-gray-2">Hello There! I am Aise, a Product designer in the web3
@@ -186,7 +186,7 @@ const prev = () => {
           <img class="animate-bounce w-32 h-32" src="../assets/random1.png" alt="Scroll down" />
         </div>
         <div class="md:flex-1 md:transform md:-translate-y-40">
-          <img class="w-full" src="../assets/aise-photo.jpeg" alt="Aise photo" />
+          <img class="w-full" src="../assets/aise-photo.png" alt="Aise photo" />
         </div>
       </div>
     </section>

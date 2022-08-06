@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted } from "vue";
+import { ref, onMounted, nextTick } from "vue";
 import { RouterView, RouterLink } from "vue-router";
 import SidebarNav from './components/SidebarNav.vue';
 {
@@ -7,26 +7,28 @@ import SidebarNav from './components/SidebarNav.vue';
   RouterLink;
 }
 
+const imgs = document.images;
 onMounted(() => {
-
-  let imgs = document.images,
-      len = imgs.length,
-      counter = 0;
-      console.log(len);
+  nextTick(() => {
+    console.log(imgs.length)
+  })
+  let len = imgs.length,
+    counter = 0;
+    console.log(len);
   
   [].forEach.call( imgs, function( img ) {
-      if(img.complete)
-        incrementCounter();
-      else
-        img.addEventListener( 'load', incrementCounter, false );
+    if(img.complete)
+      incrementCounter();
+    else
+      img.addEventListener( 'load', incrementCounter, false );
   } );
   
   function incrementCounter() {
-      counter++;
-      if ( counter === len ) {
-          console.log( 'All images loaded!' );
-          console.log(counter)
-      }
+    counter++;
+    if ( counter === len ) {
+        console.log( 'All images loaded!' );
+        console.log("Counter: " + counter)
+    }
   }
 })
 

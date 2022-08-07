@@ -137,7 +137,7 @@ const projectsArr = [
   },
 ]
 const bgColor = "bg-brand-black-2 text-white"
-const themeMode =  "dark"
+const themeMode = "dark"
 const sum = testimonialsArr.length - 1;
 const num = ref(0)
 const elemIdx = ref(1);
@@ -243,5 +243,5 @@ const prev = () => {
     </section>
     <Testimonials :stories="testimonialsArr" :num="num" @showNext="next" @showPrev="prev" :ix="elemIdx"/>
   </main>
-  <Footer :class="bgColor" :mode="themeMode" :LinksMode="themeMode" />
+  <Footer :class="bgColor" :mode="themeMode" :linksMode="themeMode" />
 </template>

@@ -315,7 +315,7 @@ const offline = {
     alt: "transactions"
 }
 const headerFont = "font-playfair text-4xl"
-const bgColor = "light"
+const themeMode = "light"
 const headerCenter = 'font-playfair'
 const width = "md:px-16"
 </script>
@@ -607,7 +607,7 @@ const width = "md:px-16"
             <p>This project is open to massive expansion and growth, the product aims to expand to cover sectors like payroll whereby organizations with employees working in multiple countries can all be registered and payments can be disbursed once and payroll run with each of them receiving their cash in their local currency or crypto if selected</p>
         </section>
         <OtherProjectsFintech :headerCenter="headerCenter" :marginWidth="width"/>
-        <Footer :bgColor="bgColor" />
+        <Footer :bgColor="themeMode" />
     </div>
 </template>
 

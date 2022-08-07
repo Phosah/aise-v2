@@ -50,5 +50,5 @@ const worksArr = [
         </div>
         <OtherWork :works="worksArr" />
     </div>
-    <Footer :class="bgColor" :mode="themeMode" :LinksMode="themeMode" />
+    <Footer :class="bgColor" :mode="themeMode" :linksMode="themeMode" />
 </template>

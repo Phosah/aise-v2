@@ -326,7 +326,7 @@ const onboarding = {
     alt: "onboarding"
 }
 const headerCenter = 'text-center font-playfair'
-const bgColor = "light"
+const themeMode = "light"
 </script>
 
 <template>
@@ -693,6 +693,6 @@ const bgColor = "light"
             <LayoutOne :page="conclusion" :headerFont="headerFont" />
         </section>
         <OtherProjectsFintech :headerCenter="headerCenter" />
-        <Footer :bgColor="bgColor" />
+        <Footer :bgColor="themeMode" />
     </div>
 </template>

@@ -8,9 +8,12 @@ import SidebarNav from './components/SidebarNav.vue';
 }
 
 onMounted(() => {
-  const imgs = document.images;
-  let len = imgs.length,
+  let imgs = document.images;
+  var arr = [...imgs];
+  let len = arr.length,
     counter = 0;
+    console.log((len));
+    console.log((arr));
   
   [].forEach.call( imgs, function( img ) {
     if(img.complete)
@@ -22,8 +25,7 @@ onMounted(() => {
   function incrementCounter() {
     counter++;
     if ( counter === len ) {
-        console.log( 'All images loaded!' );
-        console.log("Counter: " + counter)
+      console.log( 'All images loaded!' );
     }
   }
 })

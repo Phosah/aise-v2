@@ -40,7 +40,7 @@
       <WorkExperiences :works="worksArr" />
     </section>
     <Anime :animes="animesArr" />
-    <Footer :class="bgColor" :mode="themeMode" :LinksMode="themeMode" />
+    <Footer :class="bgColor" :mode="themeMode" :linksMode="themeMode" />
   </main>
 </template>
 

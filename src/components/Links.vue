@@ -3,8 +3,8 @@ export default {
     name: 'Links',
     props: {
         mode: {
-            type: String, 
-            required: true,
+            type: String,
+            required: true
         }
     }
 }
@@ -23,20 +23,20 @@ export default {
     </div>
     <div :class="mode === light" class="md:hidden flex items-center justify-between space-x-6 max-w-7xl mx-auto px-6 mt-20 py-3 transition-all">
         <a href="">
-            <img v-if="mode === light" src="../assets/linkedin-dark.png" alt="">
-            <img v-else src="../assets/linkedin-white.png" alt="">
+            <img v-if="mode === light" src="../assets/linkedin-dark.png" alt="" />
+            <img v-else src="../assets/linkedin-white.png" alt="" />
         </a>
         <a href="">
-            <img v-if="mode === light" src="../assets/behance-dark.png" alt="">
-            <img v-else src="../assets/behance-white.png" alt="">
+            <img v-if="mode === light" src="../assets/behance-dark.png" alt="" />
+            <img v-else src="../assets/behance-white.png" alt="" />
         </a>
         <a href="">
-            <img v-if="mode === light" src="../assets/dribbble-dark.png" alt="">
-            <img v-else src="../assets/dribbble-white.png" alt="">
+            <img v-if="mode === light" src="../assets/dribbble-dark.png" alt="" />
+            <img v-else src="../assets/dribbble-white.png" alt="" />
         </a>
         <a href="">
-            <img v-if="mode === light" src="../assets/twitter-dark.png" alt="">
-            <img v-else src="../assets/twitter-white.png" alt="">
+            <img v-if="mode === light" src="../assets/twitter-dark.png" alt="" />
+            <img v-else src="../assets/twitter-white.png" alt="" />
         </a>
     </div>
 </template>

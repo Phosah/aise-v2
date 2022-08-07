@@ -1,5 +1,22 @@
+<script>
+export default {
+    name: "Footer",
+    props: {
+        bgColor: {
+            type: String,
+        },
+        mode: {
+            type: String,
+        },
+        linksMode: {
+            type: String,
+        }
+    },
+}
+</script>
+
 <template>
-    <section class="px-6 pt-20 md:pt-40 pb-10" :class="bgColor">
+    <section class="px-6 pt-20 md:pt-40 pb-10">
         <div class="flex flex-col items-center max-w-7xl mx-auto">
             <div v-if="bgColor === 'light'" class="mb-24">
                 <img src="../assets/project-talk-dark.png" alt="Project talk" />
@@ -34,28 +51,34 @@
                 <!-- Calendly link widget end -->               
             </div>
         </div>
-        <Links :mode="LinksMode" />
+        <!--lINKS-->
+        <div :class="linksMode !== 'dark' ? 'text-brand-black-3' : 'text-white'" class="hidden md:flex md:justify-between max-w-7xl mx-auto px-6 mt-20 py-3 transition-all">
+            <a :class="linksMode !== 'dark' ? 'text-brand-black-3 hover:border-brand-black-3' : 'text-white hover:border-white' " class="block pb-2 text-xl border-b-4 border-transparent hover:border-b-4 transition-all"
+                href="https://www.linkedin.com/in/aise-idahor-4353b1188/" target="_blank">LinkedIn</a>
+            <a :class="linksMode !== 'dark' ? 'text-brand-black-3 hover:border-brand-black-3' : 'text-white hover:border-white' " class="block pb-2 text-xl border-b-4 border-transparent hover:border-b-4 transition-all"
+                href="https://www.behance.net/coderadar" target="_blank">Behance</a>
+            <a :class="linksMode !== 'dark' ? 'text-brand-black-3 hover:border-brand-black-3' : 'text-white hover:border-white' " class="block pb-2 text-xl border-b-4 border-transparent hover:border-b-4 transition-all"
+                href="https://dribbble.com/Aise_Idahor" target="_blank">Dribbble</a>
+            <a :class="linksMode !== 'dark' ? 'text-brand-black-3 hover:border-brand-black-3' : 'text-white hover:border-white' " class="block pb-2 text-xl border-b-4 border-transparent hover:border-b-4 transition-all"
+                href="https://twitter.com/Aise_Idahor" target="_blank">Twitter</a>
+        </div>
+        <div :class="linksMode !== 'dark'" class="md:hidden flex items-center justify-between space-x-6 max-w-7xl mx-auto px-6 mt-20 py-3 transition-all">
+            <a href="https://www.linkedin.com/in/aise-idahor-4353b1188/">
+                <img v-if="linksMode !== 'dark'" src="../assets/linkedin-dark.png" alt="" />
+                <img v-else src="../assets/linkedin-white.png" alt="" />
+            </a>
+            <a href="https://www.behance.net/coderadar">
+                <img v-if="linksMode !== 'dark'" src="../assets/behance-dark.png" alt="" />
+                <img v-else src="../assets/behance-white.png" alt="" />
+            </a>
+            <a href="https://dribbble.com/Aise_Idahor">
+                <img v-if="linksMode !== 'dark'" src="../assets/dribbble-dark.png" alt="" />
+                <img v-else src="../assets/dribbble-white.png" alt="" />
+            </a>
+            <a href="">
+                <img v-if="linksMode !== 'dark'" src="../assets/twitter-dark.png" alt="" />
+                <img v-else src="../assets/twitter-white.png" alt="https://twitter.com/Aise_Idahor" />
+            </a>
+        </div>
     </section>
 </template>
-
-<script>
-import Links from "./Links.vue";
-export default {
-    name: "Footer",
-    components: { Links },
-    props: {
-        bgColor: {
-            type: String,
-            default: ""
-        },
-        mode: {
-            type: String,
-            required: true
-        },
-        LinksMode: {
-            type: String,
-            required: true
-        }
-    },
-}
-</script>

@@ -6,11 +6,9 @@ defineProps({
     },
     headerFont: {
         type: String,
-        required: true
     },
     marginSize: {
-        type: String,
-        required: true
+        type: String
     }
 })
 </script>

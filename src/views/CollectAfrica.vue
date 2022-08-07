@@ -362,7 +362,7 @@ const themeMode = "light"
         </section>
         <section class="max-w-7xl mx-auto pt-10 md:pt-20 px-6 md:px-16">
             <h2
-                class="mb-6 text-2xl md:text-3xl font-bold font-playfair"
+                class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
             >My Design Process</h2>
             <div>
                 <img class="w-full" src="../assets/collect-africa/design-process.png" alt="Design Process" />

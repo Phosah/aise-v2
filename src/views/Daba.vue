@@ -195,7 +195,7 @@ const imgBtm = ref(true)
         <section class="max-w-7xl my-20 mx-auto px-6">
             <div class="md:flex md:space-x-12">
                 <div class="md:flex-1">
-                    <h3 class="mb-6 text-2xl md:text-3xl font-new-paris-kingsize">Research</h3>
+                    <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-new-paris-kingsize">Research</h3>
                     <div>
                         <p class="mb-4">Prequel to joining the team as a product designer, there was an ongoing interview session of about 32 candidates over google meet. The candidates comprised of expert investors, YC investors, Venture capital investors, and novices and I opted to join this interview process as it was my first step in having a closer connection to the users of the product</p>
                         <p class="mb-4">The research questions were created from the survey data analysis on the research documentation and this served as a guide for the questions asked and gave allowance for open-ended questions triggered by the interviewee's responses</p>
@@ -208,7 +208,7 @@ const imgBtm = ref(true)
                     </div>
                 </div>
                 <div class="md:flex-1">
-                    <h3 class="mb-6 text-2xl md:text-3xl font-new-paris-kingsize">Some Interview responses</h3>
+                    <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-new-paris-kingsize">Some Interview responses</h3>
                     <div>
                        <img src="../assets/daba/interview-responses.png" alt="Interview responses" />
                     </div>
@@ -216,15 +216,15 @@ const imgBtm = ref(true)
             </div>
         </section>
         <section class="max-w-7xl mx-auto my-24 md:my-40 px-6">
-            <div class="md:w-1/2 mb-12">
-                <h3 class="mb-6 text-3xl font-new-paris-kingsize">Checking out what competitors are up to</h3>
+            <div class="md:w-2/3 mb-12">
+                <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-new-paris-kingsize">Checking out what competitors are up to</h3>
                 <p>The competitor analysis was aimed at providing strategic insights into the features, functions, flows, and feelings evoked by the solutions of the competitors. Red circles are the areas that need improvement</p>
             </div>
             <div><img src="../assets/daba/competitors.png" alt="competitors" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <div class="md:w-1/2 mb-12">
-                <h3 class="mb-6 text-3xl font-new-paris-kingsize">Insights from the Research & Interviews </h3>
+            <div class="md:w-2/3 mb-12">
+                <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-new-paris-kingsize">Insights from the Research & Interviews </h3>
                 <p>Based on the data gotten from the research gotten before joining and the research carried by myself after joining, which comprised of User interview, competitive analysis, checking of feedback on competitors.</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8">
@@ -248,7 +248,7 @@ const imgBtm = ref(true)
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="md:w-1/2 mb-12">
-                <h3 class="mb-6 text-3xl font-new-paris-kingsize">Creating Personas</h3>
+                <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-new-paris-kingsize">Creating Personas</h3>
                 <p>The personas created were aim at having a mental picture of the type of users wwe would have in order to be able to properly empathize with the users</p>
             </div>
             <CreatePersonas :personas="personasArr" />
@@ -286,13 +286,13 @@ const imgBtm = ref(true)
         </section>
         <section class="my-20 md:my-40">
             <div class="max-w-7xl mx-auto px-6">
-                <h3 class="mb-4 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Screens from the Webapp</h3>
+                <h3 class="mb-4 text-2xl md:text-3xl lg:text-4xl font-bold font-new-paris-kingsize">Screens from the Webapp</h3>
                 <p class="mb-12">Although major activities and focus were on the mobile app as research showed that most users were willing to interact with the application from their mobile devices, a web app version was designed with the same flow but tailored for web experiences to give provisions for users of the web</p>
             </div>
             <div><img class="w-full" src="../assets/daba/more-screens.png" alt="Webapp screens" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h1 class="mb-12 text-3xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
+            <h1 class="mb-12 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
             <div class="mb-16">
                 <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Learnings</h2>
                 <p class="mb-6">While working on this project, I learned to ensure that every decision provides value even if it's just a screen there has to be intentionality in every pixel as users want value and with the shortest number of clicks possible</p>

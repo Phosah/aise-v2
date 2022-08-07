@@ -314,7 +314,7 @@ const offline = {
     img: photo14,
     alt: "transactions"
 }
-const headerFont = "font-playfair text-4xl"
+const headerFont = "font-playfair"
 const themeMode = "light"
 const headerCenter = 'font-playfair'
 const width = "md:px-16"
@@ -337,7 +337,7 @@ const width = "md:px-16"
                 <img class="w-full" src="../assets/powrfinance/timeline.png" alt="Timeline" />
             </div>
         </section>
-        <section class="max-w-7xl mx-auto md:pt-40 px-6 md:px-16">
+        <section class="max-w-7xl mx-auto md:pt-40 md:pb-20 px-6 md:px-16">
             <h2
                 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
             >My Design Process</h2>
@@ -480,7 +480,7 @@ const width = "md:px-16"
                     <h2
                         class="mb-4 text-2xl font-bold font-playfair"
                     >45.6 Billion in total transactions in Africa</h2>
-                    <p>Our first targets would be the top 5 countries with the highest remittance valueNigeria, Kenya and Ghana.</p>
+                    <p>Our first targets would be the top 5 countries with the highest remittance value Nigeria, Kenya and Ghana.</p>
                 </div>
                 <div><img src="../assets/powrfinance/transactions.png" alt="" /></div>
             </div>
@@ -597,7 +597,7 @@ const width = "md:px-16"
         </section>           
         <section class="">
             <div class="max-w-7xl mx-auto px-6 md:px-16">
-                <h3 class="mb-4 text-2xl md:text-4xl font-bold font-new-paris-kingsize">More Features</h3>
+                <h3 class="mb-4 text-2xl md:text-3xl lg:text-4xl font-bold font-new-paris-kingsize">More Features</h3>
                 <p class="mb-12">Below holds a couple more solution screens which include, requesting for invoice and bank statements for a particular duration, invite a friend to increase marketing and business growth, customer support and conversion of funds from one currency to another and to crypto</p>
             </div>
             <div><img class="w-full" src="../assets/powrfinance/more-screens.png" alt="Mobile screens" /></div>

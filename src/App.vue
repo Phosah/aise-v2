@@ -9,11 +9,9 @@ import SidebarNav from './components/SidebarNav.vue';
 
 onMounted(() => {
   let imgs = document.images;
-  var arr = [...imgs];
-  let len = arr.length,
+  let len = imgs.length,
     counter = 0;
     console.log((len));
-    console.log((arr));
   
   [].forEach.call( imgs, function( img ) {
     if(img.complete)

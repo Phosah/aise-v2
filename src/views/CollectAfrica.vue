@@ -241,7 +241,8 @@ const personasArray = [
         ]
     }
 ]
-const headerFont = 'font-playfair text-4xl'
+const headerFont = 'font-playfair'
+const fontStyles = 'font-playfair md:text-5xl lg:text-6xl'
 const volume = {
     title: "Estimated transaction volume of $8tn in 2025",
     paragraphs: [
@@ -361,7 +362,7 @@ const themeMode = "light"
         </section>
         <section class="max-w-7xl mx-auto pt-10 md:pt-20 px-6 md:px-16">
             <h2
-                class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
+                class="mb-6 text-2xl md:text-3xl font-bold font-playfair"
             >My Design Process</h2>
             <div>
                 <img class="w-full" src="../assets/collect-africa/design-process.png" alt="Design Process" />
@@ -404,11 +405,11 @@ const themeMode = "light"
                 <Carousel :cards="cards" />
             </div>
         </section>
-        <section class="max-w-7xl mx-auto px-6 md:px-16 mb-10 md:mb-0 text-sm md:text-base">
+        <section class="max-w-7xl mx-auto px-6 md:px-16 pb-0 md:pb-20 md:mb-0 text-sm md:text-base">
             <div class="md:flex md:items-center md:space-x-12">
                 <div class="md:flex-1 mb-8 md:mb-0">
                     <h2
-                        class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair"
+                        class="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold font-playfair"
                     >Major Pain Point</h2>
                     <ul class="list-disc pl-6">
                         <li
@@ -690,7 +691,7 @@ const themeMode = "light"
             <div><img class="w-full" src="../assets/collect-africa/mobile-screens.png" alt="design screens" /></div>
         </section>
         <section class="max-w-7xl mx-auto px-6 md:px-16 text-sm md:text-base">
-            <LayoutOne :page="conclusion" :headerFont="headerFont" />
+            <LayoutOne :page="conclusion" :headerFont="fontStyles" />
         </section>
         <OtherProjectsFintech :headerCenter="headerCenter" />
         <Footer :bgColor="themeMode" />

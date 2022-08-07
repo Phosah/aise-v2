@@ -73,7 +73,6 @@ const shuffleArray = (array) => {
 }
 
 const shuffledProjects = computed(() => {
-    console.log(projects.value)
     return shuffleArray(projects.value)
 })
 </script>

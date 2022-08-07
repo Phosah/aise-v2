@@ -283,7 +283,7 @@ const themeMode = "light"
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div>
-                <h2 class="mb-6 text-3xl md:text-5xl font-bold font-new-paris-kingsize">Conclusion</h2> 
+                <h2 class="mb-6 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Conclusion</h2> 
                 <p class="mb-6">There are a lot of solutions that can be provided to ease the lives of users using wallets and this in turn improves the user experience of the web3 space in general as wallets are the foundational blocks to the web3 ecosystem.</p>
                 <p class="mb-6">The ability for users to easily manage their NFT’s, their assets across multiple networks and protocols from one space. Also, the ability for users to be guided and kept in sync with their transaction activities would improve clarity and inturn trust for users</p>
                 <p>The ability for better transactions would improve interoperability of the web3 space and this, in turn improves the entire ecosystem. Thanks</p>

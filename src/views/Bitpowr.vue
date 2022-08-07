@@ -300,7 +300,7 @@ const imgBtm = ref(true)
             <div><img class="w-full" src="../assets/bitpowr/mobile-screens.png" alt="Mobile screens" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h1 class="mb-12 text-2xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
+            <h1 class="mb-12 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
             <div class="mb-16">
                 <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Learnings and More</h2>
                 <p class="mb-6">I enjoyed working on bitpowr as it was my first exposure to web3 asides from the conventional Centralized exchanges. I got to learn the dynamics of the blockchain and how it can be used in real-life activities, and learned how to be transparent in task flows. This is a project that deals in financial transactions so the slightest mistake can cost a lot, and unlike traditional banks that cash can be reversed from a wrong address it's not so easy for such on the blockchain so every action carried out has to be clear and precise</p>

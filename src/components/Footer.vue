@@ -7,6 +7,7 @@ export default {
         },
         mode: {
             type: String,
+            default: "light"
         },
         linksMode: {
             type: String,

@@ -321,7 +321,7 @@ const width = "md:px-16"
 </script>
 
 <template>
-    <div class="bg-white text-brand-black-3">
+    <div class="text-brand-black-3">
         <Navbar />
         <HeaderInfo :headerDetails="details" />
         <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm md:text-base">

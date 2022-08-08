@@ -111,7 +111,7 @@ const themeMode = "light"
             <LayoutOne :page="problem" />
         </section>
         <section class="max-w-7xl mx-auto my-20 px-6">
-            <h3 class="font-new-paris-kingsize mb-6 text-2xl md:text-3xl font-bold">Background</h3>
+            <h3 class="font-new-paris-kingsize mb-6 text-2xl md:text-3xl lg:text-4xl font-bold">Background</h3>
             <p class="mb-4">Crypto is the future of games and with an ever-growing aspect of life there is bound to be evolution and this influences how we bring solutions to solve the needs that arise from the change.
             This evolution introduced gamefi. This is still similar to the online and gaming console gaming experience in which we get entertained by overcoming challenges but now on the blockchain, there is an even greater value proposition where players get rewarded for their engagement with the games, and these rewards unlike conventional gaming experience can be converted to real-world value with both fungible and non-fungible tokens.
             With a lot of GameFi in the ecosystems there remains a problem of interoperability between these game ecosystems and this is due to the little or limited transactional interactions between such games, players, and their resources.  
@@ -122,7 +122,7 @@ const themeMode = "light"
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="mb-12">
-                <h3 class="mb-6 text-3xl font-new-paris-kingsize">Kick-Off & Design Process</h3>
+                <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-new-paris-kingsize">Kick-Off & Design Process</h3>
                 <p>To design the project properly, i had to carry out a series of activities which started with a call with the product owners, the vision was clearly explained and was a benchmark for the research and interviews; below are the activities carried out in steps</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8">
@@ -145,14 +145,14 @@ const themeMode = "light"
             </div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Research Process</h3>
+            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl lg:text-4xl font-bold">Research Process</h3>
             <p class="mb-4">During the research phase, I engaged with users in the gamefi space, traditional wallet solutions, and the regular gaming spaces to get deeper insights into how players transact with one another and monitor their transactions.
             After listening carefully to a couple of users I was able to identify users who needed a way to stay up to date on their transaction status, a lot of wallets allow you to send tokens but you just get to wait for sometimes hours till the transaction is successful or failed without extra feedback on why the transaction is taking that long.
             Also, not all gameFi protocols are built on the same network hence transferring assets from various networks needs to be provided for a seamless transaction.
             Lastly, 75% of the users needed a way for them to connect their wallets directly to external protocols where they can borrow and rent the assets that would help their gameplay</p>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h3 class="md:w-1/2 font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Insigts from User Interviews</h3>
+            <h3 class="md:w-1/2 font-new-paris-kingsize mb-4 text-2xl md:text-3xl lg:text-4xl font-bold">Insigts from User Interviews</h3>
             <div class="hidden md:block">
                 <div class="flex items-center justify-center space-x-6 mb-6">
                     <div class="w-1/3">
@@ -201,12 +201,12 @@ const themeMode = "light"
             <!--end of Mobile version -->
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Competitive Analysis</h3>
+            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl lg:text-4xl font-bold">Competitive Analysis</h3>
             <p class="mb-8">Understanding competitors who are providing similar solutions in the space on how they provide solutions for similar user needs has helped me define what creative solutions could be designed and improved for our product. </p>
             <div><img src="../assets/myria/competition-analysis.png" alt="competition analysis" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Market Validation</h3>
+            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl lg:text-4xl font-bold">Market Validation</h3>
             <div class="mb-16">
                 <p class="mb-4">The blockchain market has been one of the fastest-growing space in the last 5 years with a tremendous increase in the number of active blockchain wallet users, this coupled with the game environment which has over 1m active game users on the blockchain and over 3.03bn gamers in general, holds tremendous market base for Myria</p>
                 <p>2022 Gaming market revenue : <span class="font-bold">$300bn</span></p>
@@ -237,13 +237,13 @@ const themeMode = "light"
             <!--end of Mobile version-->
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">User Persona</h3>
+            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl lg:text-4xl font-bold">User Persona</h3>
             <p class="mb-6">Based on the generative user research I conducted, I created user personas that capture the essence of my target group. Jasmine helped me to always keep the needs of the users at the forefront.</p>
             <CreatePersonas :personas="personasArr"/>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <h1
-                class="mb-6 text-2xl md:text-3xl font-semibold font-new-paris-kingsize"
+                class="mb-6 text-2xl md:text-3xl lg:text-4xl font-semibold font-new-paris-kingsize"
             >User Stories</h1>
             <p class="mb-10">User stories helped me to identify necessary flows that needed to be accounted for in the design and this helped guide the solutions in general</p>
             <ul class="list-disc pl-6">
@@ -266,7 +266,7 @@ const themeMode = "light"
         </section>
         <section class="max-w-7xl mx-auto my-20 px-6">
             <h1 class="mb-4 text-5xl md:text-6xl font-new-paris-kingsize">Design Decisions</h1>
-            <p class="md:w-1/2 mb-6">After carefully analyzing the data and working with an MVP and time constraints, the following solutions were designed below</p>
+            <p class="md:w-2/3 mb-6">After carefully analyzing the data and working with an MVP and time constraints, the following solutions were designed below</p>
             <div>
                 <LayoutThree :page="dashboard" />
                 <LayoutThree :page="nft" />
@@ -277,7 +277,7 @@ const themeMode = "light"
         </section>
         <section class="my-20 md:my-40">
             <div class="max-w-7xl mx-auto px-6">
-                <h3 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">More Design Screens</h3>
+                <h3 class="mb-8 text-2xl md:text-3xl lg:text-4xl font-bold font-new-paris-kingsize">More Design Screens</h3>
             </div>
             <div><img class="w-full" src="../assets/myria/other-screens.png" alt="design screens" /></div>
         </section>

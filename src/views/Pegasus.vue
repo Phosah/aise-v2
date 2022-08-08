@@ -175,7 +175,7 @@ const imgBtm = ref(true)
         <Header :headerInfo="info" />
         <section class="md:flex md:items-center md:space-x-12 max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="md:flex-1 mb-6 md:mb-0">
-                <h3 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Problems associated</h3>
+                <h3 class="mb-8 text-2xl md:text-3xl lg:text-4xl font-bold font-new-paris-kingsize">Problems associated</h3>
                 <p class="mb-4">With the creation of Bitcoin, thousands of other tokens have been created and a lot
                     of them have been seen to pose great investment opportunities. As of April 2019, there were 2,100
                     tokens listed on CoinMarketCap that represent over $160 billion in value.</p>

@@ -222,7 +222,7 @@ const imgBtm = ref(true)
         </section>
         <section class="max-w-7xl mx-auto my-20 px-6">
             <div class="">
-                <h3 class="mb-6 text-3xl font-new-paris-kingsize">My Goals</h3>
+                <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-new-paris-kingsize">My Goals</h3>
                 <div>
                     <ul class="pl-6 list-disc">
                         <li>Create and manage wallets, balances, addresses, and contracts.</li>
@@ -243,7 +243,7 @@ const imgBtm = ref(true)
             </div>
             <div class="md:flex md:space-x-2 my-20">
                 <div class="flex-1 mb-6 md:mb-0">
-                    <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Research Process</h3>
+                    <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl lg:text-4xl font-bold">Research Process</h3>
                     <p class="mb-4">The next phase was to carry out interviews with potential users of the products and people who build on the blockchain to identify their pain-points and how they carry out their activities without the solution bitpowr would give them</p>
                     <p>This was helpful to get the views of fresh users as their opinions and needs would be unbias of emotional sentiments and attachments as the aim of the redesign was not just to improve the experience of existing users but to also bring and retain new users</p>
                 </div>
@@ -253,14 +253,14 @@ const imgBtm = ref(true)
         </section>
         <section class="max-w-7xl mx-auto px-6 my-20 md:my-40">
             <div class="">
-                <h1 class="mb-6 text-3xl md:text-3xl font-bold font-new-paris-kingsize">How might we</h1>
+                <h1 class="mb-6 text-3xl md:text-3xl lg:text-4xl font-bold font-new-paris-kingsize">How might we</h1>
                 <p class="mb-12">The next phase was to gather the insights gotten from the research phase and bring these to the CEO, PM, CTO and the marketing team, the idea was to have an inhouse brainstorming session with the Product visionaries and others to get the best ideas out through some How Might We questions</p>
             </div>
             <div><img class="w-full" src="../assets/bitpowr/hmw.png" alt="Notes" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="">
-                <h3 class="mb-6 text-3xl font-new-paris-kingsize">Well defined goals.</h3>
+                <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-new-paris-kingsize">Well defined goals.</h3>
                 <p class="mb-12">When we were done with the brainstorming session, I compiled all that has been discussed and gathered all the data that was mentioned to get the best ideas out there. With this, I scheduled a session with the CEO and we went over all the data and decided on goals for the redesign, increase platform value, grow the customer base, increase conversion and reduce bounce rate. Below are the targets we set and plans that were agreed upon</p>
                 <div class="mb-10">
                     <h4 class="mb-6 text-xl font-new-paris-kingsize">Increase Conversion</h4>
@@ -294,7 +294,7 @@ const imgBtm = ref(true)
         </section>
         <section class="my-20 md:my-40">
             <div class="max-w-7xl mx-auto px-6">
-                <h3 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Mobile Responsive Screens</h3>
+                <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-new-paris-kingsize">Mobile Responsive Screens</h3>
                 <p class="mb-12">With the mindset that a lot of users might want to carry out transactions while they commute, attention had to be placed on the mobile interfaces to account for all users and their scenarios</p>
             </div>
             <div><img class="w-full" src="../assets/bitpowr/mobile-screens.png" alt="Mobile screens" /></div>

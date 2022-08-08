@@ -190,7 +190,7 @@ const imgBtm = ref(true)
             <div class="hidden md:flex md:items-center md:space-x-12 my-20">
                 <div class="md:flex-1 mb-8 md:mb-0"><img class="w-full" src="../assets/arc/research.png" alt="Athena Photo" /></div>
                 <div class="md:flex-1">
-                    <h3 class="mb-6 font-new-paris-kingsize text-2xl md:text-3xl font-bold">More research</h3>
+                    <h3 class="mb-6 font-new-paris-kingsize text-2xl md:text-3xl lg:text-4xl font-bold">More research</h3>
                     <div>
                         <p class="mb-4">The  next step in the research phase was to take a look at major protocols across several aspects that were doing well in their niche as the general product sense was covering a lot of niche areas ranging from Defi to DEX, NFT, and analysis tools</p>
                         <ul class="mb-4 pl-6 list-disc">
@@ -204,8 +204,8 @@ const imgBtm = ref(true)
             </div>
             <!--Mobile version-->
             <div class="md:hidden my-20">
-                <div class="mb-8 ">
-                    <h3 class="mb-6 font-new-paris-kingsize text-2xl md:text-3xl font-bold">More research</h3>
+                <div class="mb-8">
+                    <h3 class="mb-6 font-new-paris-kingsize text-2xl font-bold">More research</h3>
                     <div>
                         <p class="mb-4">The  next step in the research phase was to take a look at major protocols across several aspects that were doing well in their niche as the general product sense was covering a lot of niche areas ranging from Defi to DEX, NFT, and analysis tools</p>
                         <ul class="mb-4 pl-6 list-disc">
@@ -222,14 +222,14 @@ const imgBtm = ref(true)
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="md:w-1/2 mb-12">
-                <h3 class="mb-6 text-3xl font-new-paris-kingsize">Creating Personas</h3>
+                <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-new-paris-kingsize">Creating Personas</h3>
                 <p>The personas created were aim at having a mental picture of the type of users we would have in order to be able to properly empathize with the users</p>
             </div>
             <CreatePersonas :personas="personasArr" />
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <div class="md:w-1/2">
-                <h1 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Brainstorming with  HMW (How might we).</h1>
+            <div class="md:w-2/3">
+                <h1 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-new-paris-kingsize">Brainstorming with  HMW (How might we).</h1>
                 <p class="mb-12">Taking further steps to refine the problems with how might we help to see, think of the solutions from the user's pain points and find the best ways to offer value and solutions to the users. More simple and flexible flows</p>
             </div>
             <div><img class="w-full" src="../assets/arc/hmw.png" alt="Notes" /></div>
@@ -251,13 +251,13 @@ const imgBtm = ref(true)
         </section>
         <section class="my-20 md:my-40">
             <div class="max-w-7xl mx-auto px-6">
-                <h3 class="mb-4 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Mobile Views</h3>
+                <h3 class="mb-4 text-2xl md:text-3xl lg:text-4xl font-bold font-new-paris-kingsize">Mobile Views</h3>
                 <p class="mb-12">Majority of Arc’s users were mobile users from the research so high priority had to be placed on the mobile designs to optimize the experience</p>
             </div>
             <div><img class="w-full" src="../assets/arc/mobile-views.png" alt="Mobile screens" /></div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h1 class="mb-12 text-3xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
+            <h1 class="mb-12 text-3xl md:text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
             <div class="mb-16">
                 <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Learnings</h2>
                 <p class="mb-6">This is by far one of the most interesting web3 projects I have worked on and it allowed me to understand more in-depth the complexities of the DeFi and NFT space, it also allowed me to prioritize user needs and provide simplicity to their burdensome activities to give maximum value.</p>

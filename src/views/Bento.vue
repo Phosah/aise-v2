@@ -142,7 +142,7 @@ const themeMode = "light"
         </section>
         <section class="max-w-7xl mx-auto my-20 px-6">
             <div class="mb-12">
-                <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">The briefings began</h3>
+                <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl lg:text-4xl font-bold">The briefings began</h3>
                 <p class="mb-4">During the first week of joining the team and the People by Bento project, I was briefed about the overall scope of what Bento as a brand was trying to solve and what led to the vision of People</p>
                 <p class="mb-4">The next step was to have scheduled calls with people from the sales team as they are the ones that have been on the field and gotten direct hints on the feedback of some of the customers who use the Bento Payroll product for their organization and had issues managing their organization as well.</p>
                 <p class="mb-4">The next few days were a series of calls with the support team and support team lead and this was to get insights on issues that have been reported as bento runs open support and feedback channel that takes user's requests and issues to process so the support team has had direct info on the user's pain points</p>
@@ -162,7 +162,7 @@ const themeMode = "light"
         <section class="max-w-7xl mx-auto md:my-40 my-20 px-6">
             <div class="md:flex md:items-center md:space-x-12">
                 <div class="md:flex-1 mb-12 md:mb-0">
-                    <h3 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Sneak peak on Competitors</h3>
+                    <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-new-paris-kingsize">Sneak peak on Competitors</h3>
                     <p class="mb-4"> After successful interviews I decided to take a peek at what competitors were doing, sadly there was no competitor in the Nigerian space to see how the solutions were structured for the current market and identify the lapses so the competitive analysis was focused on foreign companies.</p>
                     <p>Even tho the psychology and the mode of operations of the business in various countries differ as this would affect the way HR works, it was still goo room to understand the core functionalities needed for an HR/ employee management software the flows and value proposition</p>
                 </div>
@@ -189,13 +189,13 @@ const themeMode = "light"
             </div>
         </section>
         <section class="max-w-7xl mx-auto my-20 px-6">
-            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl font-bold">Interviews With HR’s</h3>
+            <h3 class="font-new-paris-kingsize mb-4 text-2xl md:text-3xl lg:text-4xl font-bold">Interviews With HR’s</h3>
             <p class="mb-4">After the competitive study was done the next step was to interview HRs in the Nigerian space as this aimed to understand the mode of operations of a standard HR and its operations in an organization before building a tool to ease the processes and make life easier</p>
             <p class="mb-4">About 3 HRs were interviewed and valuable insights were gotten. One of the major insights gotten was HR practices were dynamic and a couple of times specific to the organization</p>
         </section>
         <section class="my-20 md:my-40">
             <div class="max-w-7xl mx-auto px-6">
-                <h1 class="mb-8 text-2xl md:text-3xl font-bold font-new-paris-kingsize">HMW (How might we).</h1>
+                <h1 class="mb-8 text-2xl md:text-3xl lg:text-4xl font-bold font-new-paris-kingsize">HMW (How might we).</h1>
             </div>
             <div><img class="w-full" src="../assets/bento/hmw.png" alt="How might we" /></div>
         </section>
@@ -213,7 +213,7 @@ const themeMode = "light"
             </div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h1 class="mb-12 text-3xl md:text-5xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
+            <h1 class="mb-12 text-4xl md:text-6xl font-bold font-new-paris-kingsize">Key Takeaways</h1>
             <div class="mb-16">
                 <h2 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">Learnings</h2>
                 <p class="mb-6">While working on this project, I learned to understand how HRs perform activities and how versatile they can be and this in turn made me better at inclusive designs as I had to give users the best means to solve their problems and carry out their tasks but at the same time give enough room for customization and flexibility as the methods of carrying out operations differs from organization to organization</p>

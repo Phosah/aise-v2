@@ -181,7 +181,7 @@ const imgBtm = ref(true)
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
             <div class="mb-12">
-                <h3 class="mb-6 text-3xl font-new-paris-kingsize">My Role & Approach</h3>
+                <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-new-paris-kingsize">My Role & Approach</h3>
                 <p>Based on the data gotten from the research as the only UX/UI designer on the project, I was responsible for the overall process of the design of the product which included the research, sketches, and final high-fidelity design. My process encompassed 4 stages</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8">
@@ -224,7 +224,7 @@ const imgBtm = ref(true)
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
              <div class="mb-12">
-                <h3 class="mb-6 text-3xl font-new-paris-kingsize">Surveys</h3>
+                <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-new-paris-kingsize">Surveys</h3>
                 <p>The next step of the process i carried out was creating a survey document to be able to gather as much quantitative data to be able to have even deeper insights for the project</p>
             </div>
             <div class="grid md:grid-cols-2 gap-6">
@@ -241,7 +241,7 @@ const imgBtm = ref(true)
             </div>
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
-            <h1 class="mb-6 text-2xl md:text-3xl font-bold font-new-paris-kingsize">User Journey Map</h1>
+            <h1 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-new-paris-kingsize">User Journey Map</h1>
             <p class="mb-10 text-base">The user journey map for the purchasing of an index as the core of the product
                 was the first to be done as it would help us identify the users experience within the process for us to create the
                 best experience and product</p>
@@ -249,7 +249,7 @@ const imgBtm = ref(true)
         </section>
         <section class="max-w-7xl mx-auto my-20 md:my-40 px-6">
              <div class="md:w-1/2 mb-12">
-                <h3 class="mb-6 text-3xl font-new-paris-kingsize">Creating Personas</h3>
+                <h3 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-new-paris-kingsize">Creating Personas</h3>
                 <p>The personas created were aimed at having a mental picture of the type of users we would have in order to be able to properly empathize with the users</p>
             </div>
             <CreatePersonas :personas="personasArr" />

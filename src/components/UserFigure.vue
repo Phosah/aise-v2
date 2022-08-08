@@ -7,8 +7,8 @@ defineProps({
 })
 </script>
 <template>
-    <section class="max-w-7xl mx-auto py-10 md:py-20 md:px-16 text-sm md:text-base">
-        <div class="mb-8 px-4">
+    <section class="max-w-7xl mx-auto py-10 md:py-20 px-6 md:px-16 text-sm md:text-base">
+        <div class="mb-8">
             <h2 class="mb-6 text-2xl md:text-3xl lg:text-4xl font-bold font-playfair">User Personas</h2>
             <p>Based on the generative user research I conducted, I created user personas that capture the
                 essence of my target group. Jasmine and Richard helped me to always keep the needs of the users

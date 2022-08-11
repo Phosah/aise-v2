@@ -1,17 +1,6 @@
 <script setup>
 import { computed, ref } from "vue"
 import { useStore } from "vuex"
-
-// let prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-// let currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("navbar").style.top = "0";
-//   } else {
-//     document.getElementById("navbar").style.top = "-150px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
 const store = useStore();
 const menu_is_active = computed(() => store.state.menu_is_active)
 const openMenu = computed(() => {
